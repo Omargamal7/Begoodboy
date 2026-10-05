@@ -22,6 +22,11 @@ function chromePath() {
   await p.goto(ROOT);
   await p.screenshot({ path: SHOT + 'home.png', fullPage: true });
   const ids = (await p.evaluate(() => Object.keys(window.LESSONS))).filter(i => i.indexOf(FILTER) !== -1);
+  const notes = [];
+  if (!ids.length) {
+    console.log('No lessons match "' + FILTER + '". Is the lesson file added to index.html, and does the filter match the lesson ids?');
+    process.exitCode = 1; await b.close(); return;
+  }
   const shots = {};
   let report = [];
   for (const id of ids) {
@@ -75,22 +80,33 @@ function chromePath() {
         }
         else if (t === 'textpractice') { await p.fill('#paste-box', sc.sentence); await p.click('#go'); }
         else if (t === 'htmleditor') {
-          await p.fill('#html-in', '<h1>My Minecraft page</h1>\n<p>I like <strong>building</strong>.</p>\n<a href="https://www.ekb.eg">EKB</a><script>alert(1)</script>');
-          const pv = await p.innerHTML('#preview');
-          if (await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) errs.push(id + ': sideways scroll after typing html');
-          if (/script/i.test(pv)) errs.push(id + ': unsafe tag in preview');
-          await p.screenshot({ path: SHOT + 'html.png', fullPage: true });
-          await p.click('#go');
+          // Safety check on every editor: a script tag must never reach the preview.
+          await p.fill('#html-in', '<p>test</p><script>alert(1)</script><img src=x onerror=alert(1)>');
+          if (/script|onerror/i.test(await p.innerHTML('#preview'))) errs.push(id + ': unsafe tag in preview');
+          if (!sc.testInput) { notes.push(id + ': htmleditor "' + sc.title + '" has no testInput, so its tasks were skipped'); await p.click('#skip'); }
+          else {
+            await p.fill('#html-in', sc.testInput);
+            if (await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) errs.push(id + ': sideways scroll after typing html');
+            await p.screenshot({ path: SHOT + 'html.png', fullPage: true });
+            if (await p.isHidden('#go')) { errs.push(id + ': htmleditor testInput does not finish every task'); await p.click('#skip'); }
+            else await p.click('#go');
+          }
         }
         else if (t === 'grid') {
-          const put = async (ref, v) => { await p.click('#cell-' + ref); await p.fill('#cell-' + ref, v); await p.press('#cell-' + ref, 'Enter'); };
-          await put('A4', '3'); await put('A5', '1'); await put('A6', '2'); await put('A7', '=A4+A5+A6');
-          await put('A8', '1'); await put('B8', '2'); await put('C8', '3'); await put('D8', '=A8+B8+C8');
-          await p.click('#data-tab'); await p.click('#sort-btn');
-          const a7 = await p.inputValue('#cell-A7'), d8 = await p.inputValue('#cell-D8'), e2 = await p.inputValue('#cell-E2');
-          if (a7 !== '6' || d8 !== '6' || e2 !== 'Al Ahly') errs.push(id + ': grid values ' + a7 + ' ' + d8 + ' ' + e2);
-          await p.screenshot({ path: SHOT + 'grid.png', fullPage: true });
-          await p.click('#go');
+          const ti = sc.testInput;
+          if (!ti) { notes.push(id + ': grid "' + sc.title + '" has no testInput, so its tasks were skipped'); await p.click('#skip'); }
+          else {
+            const put = async (ref, v) => { await p.click('#cell-' + ref); await p.fill('#cell-' + ref, v); await p.press('#cell-' + ref, 'Enter'); };
+            for (const ref of Object.keys(ti.cells || {})) await put(ref, ti.cells[ref]);
+            if (ti.sort) { await p.click('#data-tab'); await p.click('#sort-btn'); }
+            for (const ref of Object.keys(ti.expect || {})) {
+              const v = await p.inputValue('#cell-' + ref);
+              if (v !== ti.expect[ref]) errs.push(id + ': grid cell ' + ref + ' shows "' + v + '", expected "' + ti.expect[ref] + '"');
+            }
+            await p.screenshot({ path: SHOT + 'grid.png', fullPage: true });
+            if (await p.isHidden('#go')) { errs.push(id + ': grid testInput does not finish every task'); await p.click('#skip'); }
+            else await p.click('#go');
+          }
         }
         else if (t === 'trade') {
           await p.click('#broker'); await p.click('#broker-done'); await p.click('#app-buy'); await p.click('#app-sell');
@@ -114,6 +130,7 @@ function chromePath() {
   console.log(report.join('\n'));
   const real = errs.filter(e => !/Failed to load resource/.test(e));
   console.log('Screenshots in', SHOT);
+  notes.forEach(n => console.log('note:', n));
   console.log('lessons checked:', ids.length, 'problems:', real.length); real.forEach(e => console.log(' -', e));
   if (real.length) process.exitCode = 1;
   await b.close();

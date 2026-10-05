@@ -359,6 +359,8 @@
           { label: "Click **Data**, then **Sort A to Z**, to put the clubs in column E in alphabetical order.", check: function (r) { var l = ["E2", "E3", "E4", "E5", "E6"].map(function (c) { return r[c] || ""; }); return l.join("|") === l.slice().sort(function (a, b) { return a.localeCompare(b); }).join("|"); } }
         ],
         sort: { col: "E", from: 2, to: 6 },
+        testInput: { cells: { A4: "3", A5: "1", A6: "2", A7: "=A4+A5+A6", A8: "1", B8: "2", C8: "3", D8: "=A8+B8+C8" }, sort: true,
+          expect: { A7: "6", D8: "6", E2: "Al Ahly", E6: "Zamalek" } },
         parent: "Parent: the numbers can be any goals Jimmy chooses.",
         done: "You used formulas and sorted a list, like in Excel." },
       Q.practice("Which sign multiplies in Excel?", ["+", "-", "*"], 2, "The star sign ( * ) multiplies.", "Look at the formulas card: + adds, - subtracts."),
