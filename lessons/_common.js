@@ -25,7 +25,7 @@
      Three sittings per lesson: learn the cards, do the activities, answer the booklet questions. */
   window.murad = function (d) {
     window.LESSONS[d.id] = {
-      id: d.id, order: d.order, child: "Murad", grade: "Primary 6", where: d.where, title: d.title,
+      id: d.id, order: d.order, child: "Murad", grade: "Primary 6", subject: d.subject || "ICT", dir: d.dir || "ltr", where: d.where, title: d.title,
       sittingMinutes: 10,
       rewards: [
         { id: "game", label: "Minecraft or Roblox time", icon: "game" },
@@ -54,7 +54,7 @@
      Two sittings per lesson. They can be done back to back in one go. */
   window.jimmy = function (d) {
     window.LESSONS[d.id] = {
-      id: d.id, order: d.order, child: "Jimmy", grade: "Primary 5", where: d.where, title: d.title,
+      id: d.id, order: d.order, child: "Jimmy", grade: "Primary 5", subject: d.subject || "ICT", dir: d.dir || "ltr", where: d.where, title: d.title,
       sittingMinutes: 20,
       rewards: [{ id: "game", label: "Game or screen time", icon: "game" }],
       answerHint: "Read the question. Tap your answer.",

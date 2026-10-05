@@ -1,0 +1,120 @@
+/* Clicks through every sitting of every lesson (or only lessons whose id contains the first argument)
+   and reports script errors, unfinished activities, broken wrong-answer paths and sideways scrolling.
+   Usage: node tools/check.js            (all lessons)
+          node tools/check.js murad-math (only lessons whose id contains "murad-math")
+   Needs Playwright: npm i playwright. Set CHROMIUM=/path/to/chrome if Playwright has no browser. */
+const { chromium } = require('playwright');
+const path = require('path'), fs = require('fs'), os = require('os');
+const SHOT = fs.mkdtempSync(path.join(os.tmpdir(), 'sheets-')) + '/';
+const ROOT = 'file://' + path.resolve(__dirname, '..', 'index.html');
+const FILTER = process.argv[2] || '';
+function chromePath() {
+  if (process.env.CHROMIUM) return process.env.CHROMIUM;
+  try { return require('child_process').execSync('ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome 2>/dev/null | head -1').toString().trim() || undefined; } catch (e) { return undefined; }
+}
+(async () => {
+  const b = await chromium.launch(chromePath() ? { executablePath: chromePath() } : {});
+  const p = await b.newPage({ viewport: { width: 412, height: 900 } });
+  const errs = [];
+  p.on('pageerror', e => errs.push('pageerror: ' + e.message));
+  p.on('console', m => { if (m.type() === 'error' && !/ERR_CERT|fonts/.test(m.text())) errs.push('console: ' + m.text()); });
+  await p.route(/fonts\.(googleapis|gstatic)\.com/, r => r.abort());
+  await p.goto(ROOT);
+  await p.screenshot({ path: SHOT + 'home.png', fullPage: true });
+  const ids = (await p.evaluate(() => Object.keys(window.LESSONS))).filter(i => i.indexOf(FILTER) !== -1);
+  const shots = {};
+  let report = [];
+  for (const id of ids) {
+    const L = await p.evaluate(i => { const x = window.LESSONS[i]; return JSON.parse(JSON.stringify(x, (k, v) => typeof v === 'function' ? undefined : v)); }, id);
+    await p.evaluate(i => { location.hash = '#' + i; }, id);
+    await p.waitForSelector('#sit-1');
+    let scoredSeen = 0, wrongTested = false;
+    for (let n = 1; n <= L.sittings.length; n++) {
+      const sit = L.sittings[n - 1];
+      await p.click('#sit-' + n);
+      await p.click('#go'); // first-then
+      const screens = [];
+      sit.screens.forEach(sc => { if (sc.type === 'fact') { screens.push({ type: 'fact', id: sc.id }); const f = L.facts.find(x => x.id === sc.id); if (f && f.pick) screens.push({ type: 'pick', id: sc.id, f }); } else screens.push(sc); });
+      for (const sc of screens) {
+        const t = sc.type;
+        if (await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) errs.push(id + ': sideways scroll on ' + t + ' ' + (sc.title || sc.id || sc.stem || ''));
+        if (t === 'fact') { await p.click('#go'); }
+        else if (t === 'pick') { await p.click('#opt-' + sc.f.pick.answer); await p.click('#fb #go'); }
+        else if (t === 'tf' || t === 'mcq') {
+          let ans = t === 'tf' ? (sc.answer === null ? null : (sc.answer ? 0 : 1)) : sc.answer;
+          if (ans === null || ans === undefined) { await p.click('#opt-0'); }
+          else {
+            if (!sc.practice && !wrongTested) {
+              const wrong = ans === 0 ? 1 : 0; await p.click('#opt-' + wrong);
+              const eb = await p.textContent('.eyebrow');
+              if (!/again/i.test(eb)) errs.push(id + ': wrong answer did not show the card again');
+              await p.click('#go'); wrongTested = true;
+            }
+            await p.click('#opt-' + ans);
+          }
+          if (!shots[t + (sc.answer === null ? 'open' : '')]) { shots[t + (sc.answer === null ? 'open' : '')] = 1; await p.screenshot({ path: SHOT + 'q_' + t + (sc.answer === null ? 'open' : '') + '.png', fullPage: true }); }
+          await p.click('#fb #go');
+        }
+        else if (t === 'sort') {
+          for (let k = 0; k < sc.cards.length; k++) { await p.click(`.chip[data-card="c${k}"]`); await p.click(`.dropbox[data-target="${sc.cards[k].box}"] h3`); }
+          if (await p.isHidden('#go')) errs.push(id + ': sort not finished: ' + sc.title);
+          if (!shots['sort' + sc.boxes.length]) { shots['sort' + sc.boxes.length] = 1; await p.screenshot({ path: SHOT + 'sort' + sc.boxes.length + '.png', fullPage: true }); }
+          await p.click('#go');
+        }
+        else if (t === 'photosort') { await p.click('#skip'); }
+        else if (t === 'builder') {
+          for (const c of sc.chain) { await p.click(`.chip[data-card="${c.id}"]`); await p.click('#slot-' + c.id); }
+          for (let d = 0; d < sc.devices.length; d++) { await p.click(`.chip[data-card="${sc.devices[d]}"]`); await p.click('#slot-dev' + (d + 1)); }
+          if (await p.isHidden('#go')) errs.push(id + ': builder not finished');
+          await p.click('#go');
+        }
+        else if (t === 'steps') {
+          for (let k = 0; k < sc.steps.length; k++) await p.click('#st-' + k);
+          if (!shots.steps) { shots.steps = 1; await p.screenshot({ path: SHOT + 'steps.png', fullPage: true }); }
+          await p.click('#go');
+        }
+        else if (t === 'textpractice') { await p.fill('#paste-box', sc.sentence); await p.click('#go'); }
+        else if (t === 'htmleditor') {
+          await p.fill('#html-in', '<h1>My Minecraft page</h1>\n<p>I like <strong>building</strong>.</p>\n<a href="https://www.ekb.eg">EKB</a><script>alert(1)</script>');
+          const pv = await p.innerHTML('#preview');
+          if (await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) errs.push(id + ': sideways scroll after typing html');
+          if (/script/i.test(pv)) errs.push(id + ': unsafe tag in preview');
+          await p.screenshot({ path: SHOT + 'html.png', fullPage: true });
+          await p.click('#go');
+        }
+        else if (t === 'grid') {
+          const put = async (ref, v) => { await p.click('#cell-' + ref); await p.fill('#cell-' + ref, v); await p.press('#cell-' + ref, 'Enter'); };
+          await put('A4', '3'); await put('A5', '1'); await put('A6', '2'); await put('A7', '=A4+A5+A6');
+          await put('A8', '1'); await put('B8', '2'); await put('C8', '3'); await put('D8', '=A8+B8+C8');
+          await p.click('#data-tab'); await p.click('#sort-btn');
+          const a7 = await p.inputValue('#cell-A7'), d8 = await p.inputValue('#cell-D8'), e2 = await p.inputValue('#cell-E2');
+          if (a7 !== '6' || d8 !== '6' || e2 !== 'Al Ahly') errs.push(id + ': grid values ' + a7 + ' ' + d8 + ' ' + e2);
+          await p.screenshot({ path: SHOT + 'grid.png', fullPage: true });
+          await p.click('#go');
+        }
+        else if (t === 'trade') {
+          await p.click('#broker'); await p.click('#broker-done'); await p.click('#app-buy'); await p.click('#app-sell');
+          await p.screenshot({ path: SHOT + 'trade.png', fullPage: true });
+          await p.click('#go');
+        }
+        else errs.push(id + ': unknown type ' + t);
+      }
+      const done = await p.textContent('#card');
+      if (!/You finished/.test(done)) errs.push(id + ' sitting ' + n + ': did not reach Done');
+      const stat = (done.match(/Right the first time(\d+) of (\d+)/) || []).slice(1).join('/');
+      report.push(id + ' s' + n + ' ' + stat);
+      const hs = await p.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
+      if (hs) errs.push(id + ': horizontal scroll');
+      await p.click('#card #go'); // back to lesson page
+      await p.waitForSelector('#sit-1');
+    }
+  }
+  await p.goto(ROOT);
+  await p.screenshot({ path: SHOT + 'home-after.png', fullPage: true });
+  console.log(report.join('\n'));
+  const real = errs.filter(e => !/Failed to load resource/.test(e));
+  console.log('Screenshots in', SHOT);
+  console.log('lessons checked:', ids.length, 'problems:', real.length); real.forEach(e => console.log(' -', e));
+  if (real.length) process.exitCode = 1;
+  await b.close();
+})();

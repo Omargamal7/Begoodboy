@@ -140,6 +140,7 @@
     }).join("");
     var mins = S ? Math.floor((Date.now() - S.start) / 60000) : 0;
     var meta = esc(L.child) + " · " + esc(L.where) + (S ? ' · <span id="clock">Minute ' + (mins + 1) + " of " + L.sittingMinutes + "</span>" : "");
+    app.setAttribute("dir", L.dir || "ltr");
     app.innerHTML =
       '<div class="wrap"><header class="top"><h1>' + esc(L.title) + '</h1><span class="meta">' + meta + "</span></header>" +
       '<ol class="strip" aria-label="Schedule">' + strip + "</ol>" +
@@ -156,17 +157,18 @@
   function home() {
     stopTimer();
     L = null; S = null;
+    app.setAttribute("dir", "ltr");
     if (location.hash) { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) { /* ignore */ } }
     var groups = {};
     var order = [];
     Object.keys(window.LESSONS).forEach(function (id) {
       var x = window.LESSONS[id];
-      if (!groups[x.child]) { groups[x.child] = []; order.push(x.child); }
-      groups[x.child].push(x);
+      var g = x.child + " · " + x.grade + " · " + (x.subject || "ICT");
+      if (!groups[g]) { groups[g] = []; order.push(g); }
+      groups[g].push(x);
     });
-    var html = order.map(function (child) {
-      var list = groups[child].slice().sort(function (a, b) { return a.order - b.order; });
-      var grade = list[0].grade;
+    var html = order.map(function (g) {
+      var list = groups[g].slice().sort(function (a, b) { return a.order - b.order; });
       var tiles = list.map(function (x) {
         var m = load(x.id);
         var done = 0;
@@ -174,9 +176,9 @@
         return '<a class="tile lesson" href="#' + x.id + '"><span class="eyebrow">' + esc(x.where) + "</span><span><b>" + esc(x.title) + "</b></span>" +
           '<span class="progress">' + done + " of " + x.sittings.length + " sittings done</span></a>";
       }).join("");
-      return '<section class="card"><h2>' + esc(child) + " · " + esc(grade) + '</h2><div class="tiles">' + tiles + "</div></section>";
+      return '<section class="card" dir="' + (list[0].dir || "ltr") + '"><h2>' + esc(g) + '</h2><div class="tiles">' + tiles + "</div></section>";
     }).join("");
-    app.innerHTML = '<div class="wrap"><header class="top"><h1>ICT lesson sheets</h1><span class="meta">First term · Choose a lesson</span></header>' + html + "</div>";
+    app.innerHTML = '<div class="wrap"><header class="top"><h1>Lesson sheets</h1><span class="meta">Choose a lesson</span></header>' + html + "</div>";
     window.scrollTo(0, 0);
   }
 
