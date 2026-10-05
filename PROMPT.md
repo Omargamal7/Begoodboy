@@ -111,7 +111,8 @@ You only write content.
    lessons/_common.js and before the line that calls SheetEngine.boot.
 6. Run: node --check lessons/<file>.js   then   node tools/check.js <child>-<subject>
    (first time only: npm install playwright, then npx playwright install chromium if no browser is found)
-   It must end with "problems: 0". Fix every problem it lists and run it again.
+   It must end with "problems: 0" and print no "note:" lines. Fix every problem and run it again.
+   If it says no lessons match, the file is missing from index.html or the ids do not match.
 7. Open index.html in a browser at phone width and look at one sheet of each activity type.
 8. Commit, push, and open a pull request. In the description, list every Q.open question and
    every fact card that came from a different lesson than the question.
@@ -197,6 +198,11 @@ BUILDER (put devices or things in a chain from top to bottom, then a row underne
 
 HTMLEDITOR, GRID (spreadsheet), TRADE (pretend buying and selling):
   see murad-t1.js Lesson 6, jimmy-t1.js Lesson 6, murad-t2.js Lesson 4.
+  HTMLEDITOR and GRID must include testInput, so tools/check.js can finish them:
+  - htmleditor: testInput: "<the HTML a child would type that completes every task>"
+  - grid: testInput: { cells: { A4: "3", A7: "=A4+A5" }, sort: true|false,
+                       expect: { A7: "the value the cell must show" } }
+  Without testInput the checker skips that activity and prints a note.
 
 Good activity choices by subject (use only facts from the booklet):
 - Science: sort living / non-living; order the stages of a cycle; photo sort of things at home.

@@ -397,6 +397,7 @@
           { label: "Add a link to EKB: **<a href=\"https://www.ekb.eg\">EKB</a>**", test: "<a\\s+href=\"https?://[^\"]+\"[^>]*>[\\s\\S]+</a>" }
         ],
         parent: "Parent: this works on the tablet and the laptop. On the laptop, Murad can also type the same HTML in a text editor, save it as **mypage.html**, and open it in the web browser.",
+        testInput: "<h1>My Minecraft page</h1>\n<p>I like <strong>building</strong>.</p>\n<a href=\"https://www.ekb.eg\">EKB</a>",
         done: "You are a web designer. Your page has a heading, a paragraph, bold text and a link." }
     ],
     checks: [
