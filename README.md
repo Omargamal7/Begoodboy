@@ -13,3 +13,10 @@ Linux laptop. Nothing is printed and nothing is installed.
 Every fact and question comes from the school booklets. A question whose answer
 is not written in the booklet is shown but not scored, with a note to check it
 with the teacher.
+
+## Adding another subject
+
+`PROMPT.md` is a ready prompt for any model: attach a booklet, fill in the child and the
+subject, and it adds the new lessons in the same format. `tools/check.js` clicks through
+every sitting and reports problems (`node tools/check.js`, needs `npm install playwright`).
+

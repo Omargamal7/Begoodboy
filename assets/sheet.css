@@ -207,3 +207,7 @@ table.sheet .cell:focus { outline: 3px solid var(--accent); outline-offset: -3px
 table.sheet tbody th, table.sheet thead th:first-child { position: sticky; left: 0; z-index: 1; }
 .tile.lesson b { font-size: 0.95rem; }
 .tile.lesson span { overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+/* Right-to-left lessons (for subjects taught in Arabic) */
+[dir="rtl"] ol.howto, [dir="rtl"] ol.tasks { padding-left: 0; padding-right: 24px; }
+[dir="rtl"] .parent { border-left: 0; padding-left: 0; border-right: 3px solid var(--line); padding-right: 10px; }
+[dir="rtl"] .tile.lesson { text-align: right; }
