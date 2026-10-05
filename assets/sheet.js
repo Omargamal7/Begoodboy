@@ -376,6 +376,7 @@
         cards.push(c);
         document.getElementById("tray").insertAdjacentHTML("beforeend", chip(c.id, c.label, null, url));
         input.value = "";
+        document.getElementById("go").hidden = true; // the new photo still has to be sorted
         say("Photo " + count + " added. Tap it, then tap its box.");
       });
       on("skip", next);
