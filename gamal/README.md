@@ -7,9 +7,8 @@ School materials pulled from Toddle (Misr Language Schools), class **prim5 A (Gr
 | English (AL) | [`english/`](english/) | 19 |
 | Arabic | [`arabic/`](arabic/) | 1 |
 | Computer / ICT | [`computer/`](computer/) | 1 |
-| French | [`french/`](french/) | 1 |
 
-Total: 22 files in this folder.
+Total: 21 files in this folder.
 
 ## Contents
 
@@ -45,11 +44,9 @@ Total: 22 files in this folder.
 - 1st term binder grade 5new 2025-2026 - for merge.docx
 - teacher-notes.md
 
-### French
+## Languages
 
-- Modele de reponse de la Révision 5ème prim26-27.pdf
-- teacher-notes.md
-
+Jimmy studies **German**, not French. His Toddle account lists a "prim5 A French" course but no German course, so the French material was left out and there is no German material to copy yet (checked 2026-10-06).
 
 ## Courses with nothing posted yet
 
