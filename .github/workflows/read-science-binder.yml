@@ -17,22 +17,32 @@ jobs:
           mkdir -p source-output
           gh release download school-term1-2026 --repo "$GITHUB_REPOSITORY" --pattern murad-science-primary-6-first-term-binder.pdf --dir source-output
           python3 -m pip install --quiet --disable-pip-version-check --user --break-system-packages pymupdf
-      - name: Extract source text and digestion page images
+      - name: Extract source text and relevant page images
         run: |
           python3 - <<'PY'
-          import base64, hashlib, json
+          import hashlib, json
           from pathlib import Path
           import fitz
-          p = Path("source-output/murad-science-primary-6-first-term-binder.pdf")
+          out = Path("source-output")
+          p = out / "murad-science-primary-6-first-term-binder.pdf"
           assert hashlib.sha256(p.read_bytes()).hexdigest() == "25336920caa1d2c7e9fd2c65265dd2fd54f789909d39593bd550b5d878f4f999"
           doc = fitz.open(p)
           pages = [{"physical_page": i + 1, "text": page.get_text()} for i, page in enumerate(doc)]
+          (out / "binder-text.json").write_text(json.dumps(pages))
           print("BEGIN_SOURCE_TEXT_JSON")
           print(json.dumps(pages))
           print("END_SOURCE_TEXT_JSON")
-          for i in range(18, min(26, len(doc))):
-              pix = doc[i].get_pixmap(matrix=fitz.Matrix(1.5, 1.5))
-              print("BEGIN_SOURCE_PNG_" + str(i + 1))
-              print(base64.b64encode(pix.tobytes("png")).decode())
-              print("END_SOURCE_PNG_" + str(i + 1))
+          selected = sorted(set(list(range(18, min(27, len(doc)))) + list(range(72, min(89, len(doc))))))
+          excerpt = fitz.open()
+          for i in selected:
+              excerpt.insert_pdf(doc, from_page=i, to_page=i)
+              doc[i].get_pixmap(matrix=fitz.Matrix(1.5, 1.5)).save(out / ("page-" + str(i + 1) + ".png"))
+          excerpt.save(out / "digestion-and-exercise-source-pages.pdf")
+          p.unlink()
           PY
+      - name: Keep the extracted pages for lesson authoring
+        uses: actions/upload-artifact@v4
+        with:
+          name: science-binder-source
+          path: source-output/
+          retention-days: 1
