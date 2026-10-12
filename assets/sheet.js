@@ -105,6 +105,15 @@
   function md(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
   function plain(s) { return String(s).replace(/\*\*/g, ""); }
 
+  /* Optional binder diagrams. Existing lessons keep their usual card layout. */
+  function figures(f) {
+    var items = f.figures || (f.figure ? [f.figure] : []);
+    return items.map(function (pic) {
+      return '<figure class="lesson-figure"><img src="' + esc(pic.src) + '" alt="' + esc(pic.alt || "Binder diagram") + '" decoding="async">' +
+        (pic.caption ? '<figcaption>' + esc(pic.caption) + '</figcaption>' : '') + '</figure>';
+    }).join("");
+  }
+
   /* ---------- per-device memory (convenience only; the sheet works without it) ---------- */
   function key(id) { return "begoodboy:" + id; }
   function load(id) { try { return JSON.parse(localStorage.getItem(key(id))) || {}; } catch (e) { return {}; } }
@@ -289,7 +298,7 @@
       var f = factById(sc.id);
       var lines = f.lines.map(function (t) { return "<p>" + md(t) + "</p>"; }).join("");
       frame((again ? '<p class="eyebrow">Look at this card again</p>' : '<p class="eyebrow">Card</p>') +
-        '<div class="fact">' + icon(f.icon, "big-ic") + '<div class="lines"><h2>' + esc(f.term) + "</h2>" + lines + "</div></div>" +
+        '<div class="fact">' + icon(f.icon, "big-ic") + '<div class="lines"><h2>' + esc(f.term) + "</h2>" + lines + "</div></div>" + figures(f) +
         '<p class="parent">Parent: read the card aloud. Wait 10 seconds before the next step.</p>' +
         '<div class="row end"><button class="primary" id="go">' + (again ? "Try the question again" : "Show the next step") + "</button></div>", part);
       on("go", again ? show : next);
@@ -363,7 +372,11 @@
   function question(sc, part, opts, answer) {
     var scored = !sc.practice && answer !== null && answer !== undefined;
     if (scored && !S.seen[S.i]) { S.seen[S.i] = true; S.total++; }
-    var stem = esc(sc.stem).replace(/_{3,}/, '<span class="blank" id="blank">&nbsp;</span>');
+    var blankIndex = 0, targetBlank = sc.blankIndex || 0;
+    var stem = esc(sc.stem).replace(/_{3,}/g, function () {
+      var current = blankIndex++ === targetBlank;
+      return '<span class="blank' + (current ? ' current' : '') + '"' + (current ? ' id="blank"' : '') + '>&nbsp;</span>';
+    });
     var tiles = opts.map(function (o, k) {
       return '<button class="tile" id="opt-' + k + '">' + (o.icon ? icon(o.icon) : "") + "<span>" + esc(o.label) + "</span></button>";
     }).join("");
