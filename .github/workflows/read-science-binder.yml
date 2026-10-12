@@ -34,15 +34,10 @@ jobs:
           print("END_SOURCE_TEXT_JSON")
           selected = sorted(set(list(range(18, min(27, len(doc)))) + list(range(72, min(89, len(doc))))))
           excerpt = fitz.open()
-          for i in selected:
-              excerpt.insert_pdf(doc, from_page=i, to_page=i)
-              doc[i].get_pixmap(matrix=fitz.Matrix(1.5, 1.5)).save(out / ("page-" + str(i + 1) + ".png"))
-          excerpt.save(out / "digestion-and-exercise-source-pages.pdf")
-          p.unlink()
           PY
       - name: Keep the extracted pages for lesson authoring
         uses: actions/upload-artifact@v4
         with:
           name: science-binder-source
-          path: source-output/
+          path: source-output/murad-science-primary-6-first-term-binder.pdf
           retention-days: 1
