@@ -1,8 +1,9 @@
 # Begoodboy lesson sheets
 
-Interactive lesson sheets for two brothers, built from their school booklets
-(first term 2025-2026). Open `index.html` in a browser on the Android tablet or the
-Linux laptop. Nothing is printed and nothing is installed.
+Interactive lesson sheets for two brothers, built from their school materials.
+ICT uses the first-term 2025-2026 booklets; Science uses the 2026-2027 binder.
+Open `index.html` in a browser on the Android tablet or the Linux laptop.
+Nothing is printed and nothing is installed.
 
 - `index.html` is the home page. It lists all 26 lessons; tapping one opens it.
 - `assets/sheet.js` and `assets/sheet.css` are the shared sheet engine.
