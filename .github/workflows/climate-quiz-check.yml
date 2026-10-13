@@ -1,0 +1,37 @@
+name: Climate Quest verification
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/climate-quiz-check.yml
+      - assets/jimmy-climate/**
+      - lessons/jimmy-climate-quiz-data.js
+      - tools/build-climate-quiz.js
+      - tools/check-climate-quiz.js
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser test library
+        run: npm install --no-save playwright
+      - name: Rebuild and check
+        env:
+          CHROMIUM: /usr/bin/google-chrome
+        run: |
+          node --check assets/jimmy-climate/app.js
+          node --check lessons/jimmy-climate-quiz-data.js
+          node tools/build-climate-quiz.js
+          node tools/check-climate-quiz.js
+      - name: Save review screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: climate-quiz-review
+          path: qa-climate
+          retention-days: 1

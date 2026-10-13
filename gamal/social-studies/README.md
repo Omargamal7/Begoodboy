@@ -1,5 +1,15 @@
 # Jimmy · Social Studies
 
+## Current school assessment · 14 October 2026
+
+**Egypt's climate / مناخ مصر** is ready in `jimmy-climate-quest.html`.
+
+The four school pages supplied on 13 October set this assessment's scope. This separate pack uses picture scenes, the original worksheet pictures, approximate English pronunciation aids, phrase building, and parent-checked spoken recall. It includes all 15 question parts in models A, B and C. Two missing answers have labelled Ministry support; one hypothetical is unscored. Both conflicting answers to the flat-land question are retained in the parent's guide.
+
+Source map: `climate-quiz-source-map.md`. Build: `node tools/build-climate-quiz.js`. Browser check: `node tools/check-climate-quiz.js`.
+
+The earlier coordinates lesson below remains a reference lesson. It is not part of the quiz scope supplied in these four pages.
+
 ## Ready
 
 Unit 1, Lesson 1: **Egypt’s coordinates / موقع مصر الفلكي**.
@@ -42,4 +52,4 @@ The Ministry preface says numbers, dates, ratios and enrichment activities are i
 10. Water resources.
 11. National projects and Egypt’s future.
 
-The remaining ten lessons are not yet authored. Obtain the current school material before treating this reference map as the school’s assigned sequence.
+The climate assessment pack is now authored from the supplied school pages. The other nine topics after the coordinates reference are not yet authored. Obtain current school material before treating this reference map as the school's assigned sequence.
