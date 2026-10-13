@@ -39,6 +39,6 @@ const links=JSON.parse(fs.readFileSync(path.join(pack,'lesson-list.json'),'utf8'
    }
   }
  }
- assert(!errors.length,errors.join('\n'));assert(!requests.length,'External requests '+requests.length);
+ await page.emulateMedia({colorScheme:'dark'}); await page.setViewportSize({width:360,height:900}); await page.goto('file://'+path.join(pack,'START_HERE.html')); await fits('dark menu'); await page.screenshot({path:path.join(qa,'dark-menu.png'),fullPage:true}); assert(!errors.length,errors.join('\n'));assert(!requests.length,'External requests '+requests.length);
  console.log('Standalone lessons checked: '+links.length+'; widths: 360, 768, 1280; external requests: 0; problems: 0');await browser.close();
 })().catch(e=>{console.error(e);process.exit(1);});

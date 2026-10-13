@@ -29,7 +29,7 @@ jobs:
           CHROMIUM: /usr/bin/google-chrome
         run: |
           npm install --no-save playwright
-          node tools/check.js > /tmp/lesson-checks.log
+          node tools/check.js murad-science > /tmp/lesson-checks.log
           cat /tmp/lesson-checks.log
           node tools/check-science.js
           node tools/check-digestion.js
@@ -41,6 +41,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m 'Generate all science chapters and original book illustrations'
             git push origin "HEAD:${GITHUB_REF_NAME}"
+            git push origin --delete codex/murad-science-all-lessons || true
           fi
       - uses: actions/upload-artifact@v4
         if: always()
@@ -50,3 +51,9 @@ jobs:
             qa-output
             /tmp/lesson-checks.log
           retention-days: 7
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: all-science-lessons
+          path: science-pack
+          retention-days: 30

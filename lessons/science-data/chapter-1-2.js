@@ -41,7 +41,7 @@ lesson('1-2', [
  f('Oxygen', ['**Oxygen** supports combustion and breathing.', 'A candle in oxygen keeps burning.', 'A lit incense stick in oxygen **burns brightly**.', 'More oxygen can make a fire burn faster and hotter.']),
  f('Nitrogen and carbon dioxide', ['**Nitrogen** makes up the greatest part of air.', '**Nitrogen and carbon dioxide** do not support combustion.', 'A candle in either gas goes out.', 'A lit incense stick in carbon dioxide goes out.']),
  f('Collecting gas', ['For **water displacement**, fill a gas jar completely with water.', 'Invert the jar in a **water basin**.', 'A **bent tube** carries gas from a gas cylinder into the jar.', 'Gas **displaces water**, so the water level falls.', 'The book says collect gas until about **70%** of the jar contains gas.']),
- f('Compare gases', ['The candle experiment prepares **equal amounts** of oxygen, nitrogen and carbon dioxide.', 'Compare what happens to a candle in each jar.', '**Combustion** means burning.', 'Fresh **air** must flow in and out for burning to continue.'])
+ f('Compare gases', ['The candle experiment prepares **equal amounts** of oxygen, nitrogen and carbon dioxide.', 'Compare what happens to a candle in each jar.', '**Combustion** means burning.', 'Fresh **air** must flow in and out for burning to continue.', 'In a closed jar, the candle consumes the oxygen and then goes out.'])
 ], [['Oxygen','Supports combustion'],['Nitrogen','Largest part of air'],['Carbon dioxide','Does not support combustion'],['Bent tube','Carries gas to the jar']], ['Fill the jar with water','Invert the jar in the water basin','Gas enters through a bent tube','Gas displaces water','Collect until about 70% contains gas'], () => {
  p(75,'Try');
  r('In the experiment of burning a standing candle inside a jar, what happens to the flame if you put a lid on the jar to stop air from coming in and out?','It goes out after the oxygen is used up.',4);
@@ -57,13 +57,13 @@ lesson('1-2', [
  m('Which gas represents about one-fifth of the volume of air?',['Nitrogen','Oxygen','Carbon dioxide','Water vapor'],1,0);
  m('Which pair of gases does NOT support combustion?',['Oxygen and nitrogen','Nitrogen and carbon dioxide','Oxygen and carbon dioxide','Oxygen and water vapor'],1,2);
  m('Which tool carries gas from a gas cylinder to the collecting jar?',['Water basin','Candle holder','Bent tube','Lid'],2,3);
- m('About how much of the jar should be filled with gas before collecting is stopped, according to the procedure?',['10%','21%','50%','70%'],3,3);
+ m('About how much of the jar should be filled with gas before it is removed from the water basin?',['10%','21%','50%','70%'],3,3);
  p(76,'B. Complete the following');
  r('Air surrounds the _____ and is made up of several different gases.','Earth.',0);
  r('Oxygen supports _____, while nitrogen and carbon dioxide do not.','Combustion.',1);
  r('To collect a gas by water displacement, the gas jar is first completely filled with _____.','Water.',3);
  r('As gas enters the inverted jar, it _____ the water inside the jar.','Displaces / pushes out.',3);
- r('During water displacement, the gas jar is placed _____ the water basin.','In / inside.',3);
+ r('During water displacement, the gas jar is placed _____ in the water basin.','Upside down / inverted.',3);
  p(76,'C. Write True or False');
  t('Water vapor is one of the gases that may be found in air.',true,0);
  t('Nitrogen is present in a smaller amount than oxygen in air.',false,0);

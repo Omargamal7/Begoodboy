@@ -70,8 +70,8 @@ lesson('4-1', [
  p(94,'C. Complete the Following');
  r('The heart works like a _____ that keeps blood moving around the body.','Pump.',0);
  r('Blood carries oxygen and _____ to the body cells.','Nutrients.',1);
- r('Blood flows around the body through tubes called blood _____.','Vessels.',0);
  r('Carbon dioxide produced by body cells is collected by the _____.','Blood.',1);
+ r('Blood flows around the body through tubes called blood _____.','Vessels.',0);
  r('Blood returning from the body is sent to the _____ to exchange carbon dioxide for oxygen.','Lungs.',2);
  p(95,'D. What Happens When...?');
  r('You exercise and your body needs more oxygen?','Your heart beats faster and your pulse increases to send more blood to muscles.',5);
