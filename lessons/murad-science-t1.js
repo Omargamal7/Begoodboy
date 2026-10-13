@@ -253,7 +253,7 @@ window.LESSONS["murad-science-t1-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Candle burns in a closed jar: . Oxygen in the jar is consumed: . Not enough oxygen remains: . Flame goes out: ",
+          "done": "Candle burns in a closed jar → Oxygen in the jar is consumed → Not enough oxygen remains → Flame goes out",
           "boxes": [
             {
               "id": "0",
@@ -888,7 +888,8 @@ window.LESSONS["murad-science-t1-l2"] = {
         "The candle experiment prepares **equal amounts** of oxygen, nitrogen and carbon dioxide.",
         "Compare what happens to a candle in each jar.",
         "**Combustion** means burning.",
-        "Fresh **air** must flow in and out for burning to continue."
+        "Fresh **air** must flow in and out for burning to continue.",
+        "In a closed jar, the candle consumes the oxygen and then goes out."
       ],
       "icon": "book",
       "sourcePages": [
@@ -1018,7 +1019,7 @@ window.LESSONS["murad-science-t1-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Fill the jar with water: . Invert the jar in the water basin: . Gas enters through a bent tube: . Gas displaces water: . Collect until about 70% contains gas: ",
+          "done": "Fill the jar with water → Invert the jar in the water basin → Gas enters through a bent tube → Gas displaces water → Collect until about 70% contains gas",
           "boxes": [
             {
               "id": "0",
@@ -1269,7 +1270,7 @@ window.LESSONS["murad-science-t1-l2"] = {
         },
         {
           "type": "mcq",
-          "stem": "About how much of the jar should be filled with gas before collecting is stopped, according to the procedure?",
+          "stem": "About how much of the jar should be filled with gas before it is removed from the water basin?",
           "answer": 3,
           "options": [
             "10%",
@@ -1352,11 +1353,11 @@ window.LESSONS["murad-science-t1-l2"] = {
         },
         {
           "type": "recall",
-          "stem": "During water displacement, the gas jar is placed _____ the water basin.",
-          "answer": "In / inside.",
+          "stem": "During water displacement, the gas jar is placed _____ in the water basin.",
+          "answer": "Upside down / inverted.",
           "fact": "fact-3",
           "kind": "Page 76 · B. Complete the following · 5",
-          "right": "In / inside.",
+          "right": "Upside down / inverted.",
           "source": {
             "page": 76,
             "section": "B. Complete the following",
@@ -1395,7 +1396,7 @@ window.LESSONS["murad-science-t1-l2"] = {
           "answer": true,
           "fact": "fact-4",
           "kind": "Page 76 · C. Write True or False · 3",
-          "right": "The candle experiment prepares **equal amounts** of oxygen, nitrogen and carbon dioxide. Compare what happens to a candle in each jar. **Combustion** means burning. Fresh **air** must flow in and out for burning to continue.",
+          "right": "The candle experiment prepares **equal amounts** of oxygen, nitrogen and carbon dioxide. Compare what happens to a candle in each jar. **Combustion** means burning. Fresh **air** must flow in and out for burning to continue. In a closed jar, the candle consumes the oxygen and then goes out.",
           "source": {
             "page": 76,
             "section": "C. Write True or False",
@@ -2044,7 +2045,7 @@ window.LESSONS["murad-science-t1-l3"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Candle burns: . Oxygen is consumed: . Carbon dioxide is produced: . Limewater is added and shaken: . Limewater becomes milky white: ",
+          "done": "Candle burns → Oxygen is consumed → Carbon dioxide is produced → Limewater is added and shaken → Limewater becomes milky white",
           "boxes": [
             {
               "id": "0",

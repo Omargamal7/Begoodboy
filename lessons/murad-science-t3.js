@@ -1820,7 +1820,7 @@ window.LESSONS["murad-science-t3-l3"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Food is digested: . Nutrients become small and simple: . Nutrients enter blood in the small intestine: . Nutrients pass through the liver: . Nutrients reach the rest of the body: ",
+          "done": "Food is digested → Nutrients become small and simple → Nutrients enter blood in the small intestine → Nutrients pass through the liver → Nutrients reach the rest of the body",
           "boxes": [
             {
               "id": "0",

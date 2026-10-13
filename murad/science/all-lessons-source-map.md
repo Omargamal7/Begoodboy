@@ -78,12 +78,12 @@ Combustion and continuous fresh air are borrowed from pages 3-4. More oxygen cau
 - p. 76 A. Choose the correct answer 2 — Which gas represents about one-fifth of the volume of air? → Card 1: Oxygen
 - p. 76 A. Choose the correct answer 3 — Which pair of gases does NOT support combustion? → Card 3: Nitrogen and carbon dioxide
 - p. 76 A. Choose the correct answer 4 — Which tool carries gas from a gas cylinder to the collecting jar? → Card 4: Bent tube
-- p. 76 A. Choose the correct answer 5 — About how much of the jar should be filled with gas before collecting is stopped, according to the procedure? → Card 4: 70%
+- p. 76 A. Choose the correct answer 5 — About how much of the jar should be filled with gas before it is removed from the water basin? → Card 4: 70%
 - p. 76 B. Complete the following 1 — Air surrounds the _____ and is made up of several different gases. → Card 1: Earth.
 - p. 76 B. Complete the following 2 — Oxygen supports _____, while nitrogen and carbon dioxide do not. → Card 2: Combustion.
 - p. 76 B. Complete the following 3 — To collect a gas by water displacement, the gas jar is first completely filled with _____. → Card 4: Water.
 - p. 76 B. Complete the following 4 — As gas enters the inverted jar, it _____ the water inside the jar. → Card 4: Displaces / pushes out.
-- p. 76 B. Complete the following 5 — During water displacement, the gas jar is placed _____ the water basin. → Card 4: In / inside.
+- p. 76 B. Complete the following 5 — During water displacement, the gas jar is placed _____ in the water basin. → Card 4: Upside down / inverted.
 - p. 76 C. Write True or False 1 — Water vapor is one of the gases that may be found in air. → Card 1: True
 - p. 76 C. Write True or False 2 — Nitrogen is present in a smaller amount than oxygen in air. → Card 1: False
 - p. 76 C. Write True or False 3 — Equal amounts of gases should be used when comparing their effects on a candle. → Card 5: True
@@ -269,8 +269,8 @@ The exhaled-air and limewater facts used by page 84 are borrowed from pages 14-1
 - p. 94 B. Write True or False 5 — Oxygen-rich blood is pumped from the heart to different parts of the body. → Card 3: True
 - p. 94 C. Complete the Following 1 — The heart works like a _____ that keeps blood moving around the body. → Card 1: Pump.
 - p. 94 C. Complete the Following 2 — Blood carries oxygen and _____ to the body cells. → Card 2: Nutrients.
-- p. 94 C. Complete the Following 3 — Blood flows around the body through tubes called blood _____. → Card 1: Vessels.
-- p. 94 C. Complete the Following 4 — Carbon dioxide produced by body cells is collected by the _____. → Card 2: Blood.
+- p. 94 C. Complete the Following 3 — Carbon dioxide produced by body cells is collected by the _____. → Card 2: Blood.
+- p. 94 C. Complete the Following 4 — Blood flows around the body through tubes called blood _____. → Card 1: Vessels.
 - p. 94 C. Complete the Following 5 — Blood returning from the body is sent to the _____ to exchange carbon dioxide for oxygen. → Card 3: Lungs.
 - p. 95 D. What Happens When...? 1 — You exercise and your body needs more oxygen? → Card 6: Your heart beats faster and your pulse increases to send more blood to muscles.
 - p. 95 D. What Happens When...? 2 — Oxygen-rich blood leaves the heart and travels to the body cells? → Card 2: It delivers oxygen and nutrients to the cells.

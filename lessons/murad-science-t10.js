@@ -104,6 +104,7 @@ window.LESSONS["murad-science-t10-l1"] = {
         "**Hydrochloric acid** has the formula **HCl**.",
         "Dilute HCl reacts with **aluminium** and **iron / steel wool**.",
         "It produces **bubbles of gas** and the metal becomes hot.",
+        "The surface of the **steel wool** changes.",
         "Aluminium pieces become smaller and some may disappear.",
         "The book identifies this gas as **hydrogen**."
       ],
@@ -301,7 +302,7 @@ window.LESSONS["murad-science-t10-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Put aluminium and iron in separate tubes: . Add dilute hydrochloric acid with pipettes: . Observe bubbles: . Observe the metal becoming hot: . Record the changes: ",
+          "done": "Put aluminium and iron in separate tubes → Add dilute hydrochloric acid with pipettes → Observe bubbles → Observe the metal becoming hot → Record the changes",
           "boxes": [
             {
               "id": "0",
@@ -982,7 +983,7 @@ window.LESSONS["murad-science-t10-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Aluminium reacts with dilute HCl: . Clear solution is collected: . Solution is heated gently: . Liquid evaporates leaving white powder: . Powder is tested again with dilute HCl: ",
+          "done": "Aluminium reacts with dilute HCl → Clear solution is collected → Solution is heated gently → Liquid evaporates leaving white powder → Powder is tested again with dilute HCl",
           "boxes": [
             {
               "id": "0",

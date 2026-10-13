@@ -305,7 +305,7 @@ window.LESSONS["murad-science-t5-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Soften leaf in hot water: . Remove green colour with ethanol: . Rinse with warm water: . Add dilute iodine: . Observe blue-black or yellow/brown: ",
+          "done": "Soften leaf in hot water → Remove green colour with ethanol → Rinse with warm water → Add dilute iodine → Observe blue-black or yellow/brown",
           "boxes": [
             {
               "id": "0",
@@ -1152,7 +1152,7 @@ window.LESSONS["murad-science-t5-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Seal plant in a transparent bag and add breath: . Measure oxygen and carbon dioxide: . Leave plant in sunlight for one hour: . Measure both gases again: . Compare oxygen increase and carbon dioxide decrease: ",
+          "done": "Seal plant in a transparent bag and add breath → Measure oxygen and carbon dioxide → Leave plant in sunlight for one hour → Measure both gases again → Compare oxygen increase and carbon dioxide decrease",
           "boxes": [
             {
               "id": "0",

@@ -334,7 +334,7 @@ window.LESSONS["murad-science-t4-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Heart pumps oxygen-rich blood: . Body cells get oxygen and nutrients: . Blood collects carbon dioxide and wastes: . Blood returns to the heart: . Blood goes to the lungs for gas exchange: . Oxygen-rich blood returns to the heart: ",
+          "done": "Heart pumps oxygen-rich blood → Body cells get oxygen and nutrients → Blood collects carbon dioxide and wastes → Blood returns to the heart → Blood goes to the lungs for gas exchange → Oxygen-rich blood returns to the heart",
           "boxes": [
             {
               "id": "0",
@@ -703,11 +703,11 @@ window.LESSONS["murad-science-t4-l1"] = {
         },
         {
           "type": "recall",
-          "stem": "Blood flows around the body through tubes called blood _____.",
-          "answer": "Vessels.",
-          "fact": "fact-0",
+          "stem": "Carbon dioxide produced by body cells is collected by the _____.",
+          "answer": "Blood.",
+          "fact": "fact-1",
           "kind": "Page 94 · C. Complete the Following · 3",
-          "right": "Vessels.",
+          "right": "Blood.",
           "source": {
             "page": 94,
             "section": "C. Complete the Following",
@@ -716,11 +716,11 @@ window.LESSONS["murad-science-t4-l1"] = {
         },
         {
           "type": "recall",
-          "stem": "Carbon dioxide produced by body cells is collected by the _____.",
-          "answer": "Blood.",
-          "fact": "fact-1",
+          "stem": "Blood flows around the body through tubes called blood _____.",
+          "answer": "Vessels.",
+          "fact": "fact-0",
           "kind": "Page 94 · C. Complete the Following · 4",
-          "right": "Blood.",
+          "right": "Vessels.",
           "source": {
             "page": 94,
             "section": "C. Complete the Following",
@@ -1177,7 +1177,7 @@ window.LESSONS["murad-science-t4-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Kidneys make urine: . Ureters carry urine: . Bladder stores urine: . Urethra carries urine out: ",
+          "done": "Kidneys make urine → Ureters carry urine → Bladder stores urine → Urethra carries urine out",
           "boxes": [
             {
               "id": "0",
@@ -1928,7 +1928,7 @@ window.LESSONS["murad-science-t4-l3"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Lungs take in oxygen: . Heart pumps blood: . Blood delivers oxygen and nutrients: . Blood collects wastes: . Kidneys filter waste from blood: ",
+          "done": "Lungs take in oxygen → Heart pumps blood → Blood delivers oxygen and nutrients → Blood collects wastes → Kidneys filter waste from blood",
           "boxes": [
             {
               "id": "0",

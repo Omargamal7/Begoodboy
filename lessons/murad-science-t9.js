@@ -288,7 +288,7 @@ window.LESSONS["murad-science-t9-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Place red and blue litmus on filter paper: . Add solution with a glass rod: . Observe both colours: . Classify acidic, neutral or alkaline: . Rinse and wipe rod before the next solution: ",
+          "done": "Place red and blue litmus on filter paper → Add solution with a glass rod → Observe both colours → Classify acidic, neutral or alkaline → Rinse and wipe rod before the next solution",
           "boxes": [
             {
               "id": "0",
@@ -1100,7 +1100,7 @@ window.LESSONS["murad-science-t9-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Transfer solution to an evaporating dish: . Heat gently: . Water changes to vapour: . Stop heating with some liquid left: . Let dish cool and observe what remains: ",
+          "done": "Transfer solution to an evaporating dish → Heat gently → Water changes to vapour → Stop heating with some liquid left → Let dish cool and observe what remains",
           "boxes": [
             {
               "id": "0",

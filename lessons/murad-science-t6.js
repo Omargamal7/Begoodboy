@@ -298,7 +298,7 @@ window.LESSONS["murad-science-t6-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Roots absorb water: . Water moves up the stem: . Water reaches leaves: . Water changes to vapour: . Vapour leaves through stomata: ",
+          "done": "Roots absorb water → Water moves up the stem → Water reaches leaves → Water changes to vapour → Vapour leaves through stomata",
           "boxes": [
             {
               "id": "0",
@@ -1028,7 +1028,7 @@ window.LESSONS["murad-science-t6-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Water enters through root hairs: . Water enters xylem in roots: . Water travels up stem in xylem: . Water reaches leaves: . Water vapour leaves through stomata: ",
+          "done": "Water enters through root hairs → Water enters xylem in roots → Water travels up stem in xylem → Water reaches leaves → Water vapour leaves through stomata",
           "boxes": [
             {
               "id": "0",

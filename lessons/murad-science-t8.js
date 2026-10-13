@@ -306,7 +306,7 @@ window.LESSONS["murad-science-t8-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Algae and water plants: . Nile tilapia: . Nile perch: . Nile crocodile: ",
+          "done": "Algae and water plants → Nile tilapia → Nile perch → Nile crocodile",
           "boxes": [
             {
               "id": "0",

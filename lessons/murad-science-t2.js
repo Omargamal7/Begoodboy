@@ -252,7 +252,7 @@ window.LESSONS["murad-science-t2-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Fill one bag with exhaled air: . Fill another bag with room air: . Add the same amount of limewater to both: . Shake both bags: . Compare how quickly they turn milky: ",
+          "done": "Fill one bag with exhaled air → Fill another bag with room air → Add the same amount of limewater to both → Shake both bags → Compare how quickly they turn milky",
           "boxes": [
             {
               "id": "0",
@@ -1030,7 +1030,7 @@ window.LESSONS["murad-science-t2-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Nose: . Trachea: . Bronchi: . Bronchioles: . Alveoli: ",
+          "done": "Nose → Trachea → Bronchi → Bronchioles → Alveoli",
           "boxes": [
             {
               "id": "0",

@@ -295,7 +295,7 @@ window.LESSONS["murad-science-t7-l1"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Grass: . Grasshopper: . Frog: . Snake: . Eagle: ",
+          "done": "Grass → Grasshopper → Frog → Snake → Eagle",
           "boxes": [
             {
               "id": "0",
@@ -912,7 +912,7 @@ window.LESSONS["murad-science-t7-l2"] = {
           "title": "Put the steps in order",
           "intro": "Say the next step. Tap a card, then tap its numbered place.",
           "hint": "Use the words and pictures you learned.",
-          "done": "Water evaporates: . Water vapour condenses into clouds: . Rain falls: . Plants absorb water: . Plants release water vapour: ",
+          "done": "Water evaporates → Water vapour condenses into clouds → Rain falls → Plants absorb water → Plants release water vapour",
           "boxes": [
             {
               "id": "0",
