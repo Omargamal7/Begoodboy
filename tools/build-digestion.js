@@ -3,7 +3,7 @@
 const fs = require("fs"), path = require("path");
 const root = path.resolve(__dirname, "..");
 const read = name => fs.readFileSync(path.join(root, name), "utf8");
-let lessons = read("lessons/murad-science-t3.js");
+let lessons = read("lessons/science-data/digestion-base.js");
 lessons = lessons.replace(/"assets\/science\/([^"/]+\.jpg)"/g, (_, name) => {
   const bytes = fs.readFileSync(path.join(root, "assets/science", name));
   return JSON.stringify("data:image/jpeg;base64," + bytes.toString("base64"));

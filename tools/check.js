@@ -60,6 +60,19 @@ function chromePath() {
           if (!shots[t + (sc.answer === null ? 'open' : '')]) { shots[t + (sc.answer === null ? 'open' : '')] = 1; await p.screenshot({ path: SHOT + 'q_' + t + (sc.answer === null ? 'open' : '') + '.png', fullPage: true }); }
           await p.click('#fb #go');
         }
+        else if (t === 'recall') {
+          await p.click('#reveal');
+          if (!wrongTested) {
+            await p.click('#retry');
+            if (!/again/i.test(await p.textContent('.eyebrow'))) errs.push(id + ': recall retry did not show its card');
+            await p.click('#go'); await p.click('#reveal'); wrongTested = true;
+          }
+          await p.click('#matched'); await p.click('#fb #go');
+        }
+        else if (t === 'multi') {
+          for (const index of sc.answer) await p.click('#opt-' + index);
+          await p.click('#answer'); await p.click('#fb #go');
+        }
         else if (t === 'sort') {
           for (let k = 0; k < sc.cards.length; k++) { await p.click(`.chip[data-card="c${k}"]`); await p.click(`.dropbox[data-target="${sc.cards[k].box}"] h3`); }
           if (await p.isHidden('#go')) errs.push(id + ': sort not finished: ' + sc.title);

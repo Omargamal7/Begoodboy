@@ -1,0 +1,52 @@
+name: Full science pack verification
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/science-all-check.yml, assets/sheet.js, assets/sheet.css, lessons/_common.js, lessons/science-data/**, tools/build-science.js, tools/render-science-pages.py, tools/check-science.js, tools/check.js]
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Restore original binder and render book illustrations
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/science-source
+          gh release download school-term1-2026 --repo "$GITHUB_REPOSITORY" --pattern murad-science-primary-6-first-term-binder.pdf --dir /tmp/science-source
+          python3 -m pip install --user --break-system-packages pymupdf Pillow
+          python3 tools/render-science-pages.py /tmp/science-source/murad-science-primary-6-first-term-binder.pdf
+          node tools/build-science.js
+          node tools/build-digestion.js
+      - name: Browser checks
+        env:
+          CHROMIUM: /usr/bin/google-chrome
+        run: |
+          npm install --no-save playwright
+          node tools/check.js > /tmp/lesson-checks.log
+          cat /tmp/lesson-checks.log
+          node tools/check-science.js
+          node tools/check-digestion.js
+      - name: Save generated chapters and original book images
+        run: |
+          git config user.name 'Science lesson build'
+          git config user.email 'science-build@users.noreply.github.com'
+          git add lessons/murad-science-t*.js assets/science murad/science/all-lessons-source-map.md index.html tools/science-build-summary.json murad-science-digestion.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate all science chapters and original book illustrations'
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: all-science-qa
+          path: |
+            qa-output
+            /tmp/lesson-checks.log
+          retention-days: 7

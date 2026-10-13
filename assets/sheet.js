@@ -216,11 +216,13 @@
       return '<button class="tile" id="rw-' + r.id + '" aria-pressed="' + (r.id === reward.id) + '">' + icon(r.icon) + "<span>" + esc(r.label) + "</span></button>";
     }).join("");
     var notes = L.parentNotes.map(function (t) { return "<li>" + md(t) + "</li>"; }).join("");
+    var refs = L.references && L.references.length ? '<details class="source-pages"><summary>See the original book pages</summary>' + figures({ figures: L.references }) + '</details>' : '';
     frame(
       '<p class="eyebrow">' + esc(L.where) + "</p><h2>" + esc(L.title) + "</h2>" +
       "<p>Choose the sitting for today.</p><div class=\"tiles\">" + sits + "</div>" +
       "<p>Choose the reward for the Then box.</p><div class=\"tiles\">" + rewards + "</div>" +
       '<details class="parent-notes"><summary>Notes for the parent</summary><ul>' + notes + "</ul></details>" +
+      refs +
       '<div class="row"><button id="surprise">Show the surprise card</button><a class="btn" href="#">Go to all lessons</a></div>',
       1
     );
@@ -260,7 +262,7 @@
   function partOf(sc) {
     if (sc.type === "firstthen") return 2;
     if (sc.type === "fact" || sc.type === "pick") return 3;
-    if ((sc.type === "tf" || sc.type === "mcq") && !sc.practice) return 5;
+    if ((sc.type === "tf" || sc.type === "mcq" || sc.type === "recall" || sc.type === "multi") && !sc.practice) return 5;
     if (sc.type === "sittingdone") return S.sit.parts.indexOf(6) !== -1 ? 6 : S.sit.parts[S.sit.parts.length - 1];
     return 4;
   }
@@ -329,6 +331,8 @@
     mcq: function (sc, part) {
       question(sc, part, sc.options.map(function (o, k) { return { label: String.fromCharCode(97 + k) + ". " + o, icon: null, fill: o }; }), sc.answer);
     },
+    recall: function (sc, part) { recall(sc, part); },
+    multi: function (sc, part) { multiple(sc, part); },
 
     sort: function (sc, part) { placer(sc, part, false); },
     photosort: function (sc, part) { placer(sc, part, true); },
@@ -414,6 +418,43 @@
   }
 
   /* ---------- move-a-card engine: tap a card then tap its place, or drag it ---------- */
+  function recall(sc, part) {
+    if (!S.seen[S.i]) { S.seen[S.i] = true; S.total++; }
+    frame('<p class="eyebrow">' + esc(sc.kind) + '</p><h2 class="stem">' + esc(sc.stem) + '</h2>' +
+      '<p>Say your answer first.</p><p class="parent">Parent: listen before showing the answer. Check the meaning, not the exact words.</p>' +
+      '<button class="primary" id="reveal">Show the answer</button><div id="fb"></div>', part);
+    on("reveal", function () {
+      $("reveal").disabled = true;
+      $("fb").innerHTML = '<div class="feedback">' + md(sc.answer) + '</div><p class="parent">Parent: compare this with the answer Murad said.</p>' +
+        '<div class="row"><button class="primary" id="matched">Parent: answer matched</button><button id="retry">Practise again</button></div>';
+      on("matched", function () {
+        if (S.firstTry) S.right++;
+        $("fb").innerHTML = '<div class="feedback"><strong>Checked.</strong> ' + md(sc.answer) + '</div><div class="row end"><button class="primary" id="go">' + nextLabel() + '</button></div>';
+        on("go", next);
+      });
+      on("retry", function () { S.firstTry = false; RENDER.fact({ id: sc.fact }, part, true); });
+    });
+  }
+  function multiple(sc, part) {
+    var selected = {};
+    if (!S.seen[S.i]) { S.seen[S.i] = true; S.total++; }
+    var tiles = sc.options.map(function (option, index) {
+      return '<button class="tile" id="opt-' + index + '" aria-pressed="false">' + esc(String.fromCharCode(65 + index) + '. ' + option) + '</button>';
+    }).join('');
+    frame('<p class="eyebrow">' + esc(sc.kind) + '</p><h2 class="stem">' + esc(sc.stem) + '</h2>' +
+      '<p>Say your answers. Tap every correct answer.</p><div class="tiles">' + tiles + '</div><button class="primary" id="answer">Check these answers</button><div id="fb"></div>', part);
+    sc.options.forEach(function (_, index) { on('opt-' + index, function () { selected[index] = !selected[index]; $('opt-' + index).setAttribute('aria-pressed', String(selected[index])); }); });
+    on('answer', function () {
+      var correct = sc.options.every(function (_, index) { return !!selected[index] === (sc.answer.indexOf(index) !== -1); });
+      if (!correct) { S.firstTry = false; RENDER.fact({ id: sc.fact }, part, true); return; }
+      if (S.firstTry) S.right++;
+      $('answer').disabled = true;
+      sc.options.forEach(function (_, index) { $('opt-' + index).disabled = true; });
+      $('fb').innerHTML = '<div class="feedback"><strong>Yes.</strong> ' + md(sc.right) + '</div><div class="row end"><button class="primary" id="go">' + nextLabel() + '</button></div>';
+      on('go', next);
+    });
+  }
+
   function makeMovable(root, onDrop) {
     var selected = null;
     var lastDrag = 0;

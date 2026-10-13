@@ -14,6 +14,8 @@
     mcq: function (stem, options, answer, fact, right) { return { type: "mcq", kind: MC, stem: stem, options: options, answer: answer, fact: fact, right: right }; },
     word: function (stem, bank, answer, fact, right) { return { type: "mcq", kind: CW, stem: stem, options: bank, answer: answer, fact: fact, right: right }; },
     match: function (stem, options, answer, fact, right) { return { type: "mcq", kind: MA, stem: stem, options: options, answer: answer, fact: fact, right: right }; },
+    recall: function (stem, answer, fact) { return { type: "recall", kind: "Say your answer", stem: stem, answer: answer, fact: fact }; },
+    multi: function (stem, options, answer, fact, right) { return { type: "multi", kind: "Choose all correct answers", stem: stem, options: options, answer: answer, fact: fact, right: right }; },
     /* a question whose answer is not written in the booklet: shown, never scored */
     open: function (kind, stem, options) {
       return { type: kind === "tf" ? "tf" : "mcq", kind: kind === "tf" ? TF : MC, stem: stem, options: options, answer: null };
