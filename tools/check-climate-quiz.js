@@ -27,7 +27,7 @@ const assert=(ok,msg)=>{if(!ok)throw Error(msg);};
    if(D.terms[i].id==='flat'){await p.click('[data-demo="flat"]');assert(/ALL FLAT/.test(await p.locator('.visual-panel').innerText()),'Terrain control failed');await p.click('[data-demo="flat"]');}
    if(D.terms[i].id==='sun'){await p.click('[data-demo="sun"]');assert(/WHAT IF: 21 MARCH/.test(await p.locator('.visual-panel').innerText()),'What-if flag missing');await p.click('[data-demo="sun"]');}
   }
-  await p.locator('.lesson-strip [data-learn="0"]').click();await p.click('#clue-toggle');assert(await p.locator('.pronounce').count()===0,'Pronunciation still shown when English help off');await p.click('#clue-toggle');
+  await p.locator('.lesson-strip [data-learn="3"]').click();await p.click('#clue-toggle');assert(await p.locator('.pronounce').count()===0,'Pronunciation still shown when English help off');assert(await p.locator('.visual-panel svg text').count()===0,'English diagram clue still visible');assert(await p.locator('.memory-cue').count()===0,'English mnemonic still visible');assert((await p.locator('.lesson-strip').innerText()).includes('الطقس'),'Arabic-only card selector missing');await p.click('#clue-toggle');
   await p.locator('.bottom-nav [data-route="play"]').click();
   let n=0;
   while(!(await p.evaluate(()=>window.CLIMATE_TEST.play.finished))){
