@@ -1,0 +1,30 @@
+name: Verify Jimmy Social Studies starter
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/ss-lesson-check.yml, lessons/jimmy-social-studies-t1.js, assets/social-studies/**, tools/build-social-studies.js, tools/check-social-studies.js]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build and check the first lesson
+        env:
+          CHROMIUM: /usr/bin/google-chrome
+        run: |
+          npm install --no-save playwright
+          node --check lessons/jimmy-social-studies-t1.js
+          node tools/build-social-studies.js
+          node tools/check.js jimmy-social-studies
+          node tools/check-social-studies.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jimmy-ss-qa
+          path: qa-ss
+          retention-days: 3
