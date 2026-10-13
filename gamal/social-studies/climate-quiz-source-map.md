@@ -57,3 +57,5 @@ Practice moves from picture recognition with English/approximate pronunciation c
 `node tools/build-climate-quiz.js` produces `jimmy-climate-quest.html` with the data, CSS, JavaScript, artwork and all four original school pages embedded. The app sources live under `assets/jimmy-climate/`, the content under `lessons/jimmy-climate-quiz-data.js`, and the browser check in `tools/check-climate-quiz.js`.
 
 The shared sheet engine and previously delivered science and coordinates lessons are not changed. Work is committed directly to main as requested by the parent.
+
+Verification passed on 13 October 2026: 360, 412, 768 and 1280 pixel widths; every card, interactive diagram control, phrase builder and question part; wrong-answer retry; parent-marked targeted recall; storage persistence and denied-storage fallback; all four embedded sources; English clue removal; no horizontal overflow, JavaScript errors or external runtime requests. Phone screenshots were visually inspected, including the revised original-picture crop. Final code verification: GitHub Actions run `38441622214`, job `115449372255`, commit `4bf682a681dc262a9ecc961de70d542da511213b`.
