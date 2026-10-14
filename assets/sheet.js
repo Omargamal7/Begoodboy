@@ -216,7 +216,7 @@
       return '<button class="tile" id="rw-' + r.id + '" aria-pressed="' + (r.id === reward.id) + '">' + icon(r.icon) + "<span>" + esc(r.label) + "</span></button>";
     }).join("");
     var notes = L.parentNotes.map(function (t) { return "<li>" + md(t) + "</li>"; }).join("");
-    var refs = L.references && L.references.length ? '<details class="source-pages"><summary>See the original book pages</summary>' + figures({ figures: L.references }) + '</details>' : '';
+    var refs = L.references && L.references.length ? '<details class="source-pages"><summary>See the original school pages</summary>' + figures({ figures: L.references }) + '</details>' : '';
     frame(
       '<p class="eyebrow">' + esc(L.where) + "</p><h2>" + esc(L.title) + "</h2>" +
       "<p>Choose the sitting for today.</p><div class=\"tiles\">" + sits + "</div>" +
@@ -425,7 +425,7 @@
       '<button class="primary" id="reveal">Show the answer</button><div id="fb"></div>', part);
     on("reveal", function () {
       $("reveal").disabled = true;
-      $("fb").innerHTML = '<div class="feedback">' + md(sc.answer) + '</div><p class="parent">Parent: compare this with the answer Murad said.</p>' +
+      $("fb").innerHTML = '<div class="feedback">' + md(sc.answer) + '</div><p class="parent">Parent: compare this with the spoken answer.</p>' +
         '<div class="row"><button class="primary" id="matched">Parent: answer matched</button><button id="retry">Practise again</button></div>';
       on("matched", function () {
         if (S.firstTry) S.right++;
