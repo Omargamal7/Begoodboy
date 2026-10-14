@@ -45,3 +45,12 @@ Each original test is a separate sitting. Jimmy speaks before a parent reveals a
 `jimmy-science-chapter-02.html` embeds the engine, styles, lesson data, six SVG diagrams and all five original screenshots. It needs no internet or installation. Rebuild with `node tools/build-jimmy-science-ch2.js`.
 
 The shared engine has two copy-only corrections: the source-page label now says “school pages” and the recall prompt says “spoken answer” instead of hard-coding Murad's name. The full lesson regression check is required for that shared change. Work is committed directly to main as the parent requested; no new branch or PR is used.
+
+## Verified build
+
+GitHub Actions run `38595538244` tested code commit `9bd5fc4ad0813a804c6536b3288071262bbc8191` on 14 October 2026. Both jobs passed:
+
+- Standalone revision at 360, 412, 768 and 1280 pixels: all six cards, three activities and fifteen original questions; answer reveal, retry, source images, persistence and layout; zero external requests and zero problems.
+- Full shared-engine regression: all 48 lessons checked, zero problems.
+
+Phone screenshots were visually reviewed for the yearly cycle, hibernation, recall-answer view, opening screen and ordering activity. The temporary verification workflow was removed after completion. The ZIP contains the same verified standalone HTML and these source notes.
