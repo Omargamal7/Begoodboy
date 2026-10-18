@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-18T06:43:05Z",
+  "repository_source_blobs_before": 109,
+  "new_repository_files": [
+    {
+      "child": "Murad",
+      "subject": "Mathematics",
+      "toddle_title": "Integers - Activity Sheet - Wednesday (7/10/2026)",
+      "phone_download_name": "Toddle-4d5ebcf1-38ca-49bb-bf35-d3a78e5f7d4f-Integers - Activity Sheet.pdf",
+      "repository_path": "sources/murad/mathematics/activities/Integers - Activity Sheet.pdf",
+      "bytes": 284108,
+      "sha256": "08099c3c97af8e532e6edf07ef95bb8bfcddfa46a068fb14f0c0772a1a5222ad",
+      "git_blob_sha": "eca9ec5622158e2913a4647836ee74fed82ecd30",
+      "receipt": "verified_phone_bytes"
+    }
+  ],
+  "reconciled_existing_files": [
+    {
+      "child": "Gamal",
+      "subject": "Computer",
+      "toddle_title": "1st term binder grade 5new 2025-2026 - for merge",
+      "repository_path": "sources/gamal/ict/booklets/1st term binder grade 5new 2025-2026 - for merge.docx",
+      "bytes": 8018399,
+      "sha256": "aff0155fec575e0e66d0a138574caaa02f6437a4d91c6da4bd6cf055ff5f7f96",
+      "git_blob_sha": "b89a0685f09da48b52ed7b39f02f508caaff5d30",
+      "receipt": "verified_phone_bytes_already_in_repository"
+    },
+    {
+      "child": "Murad",
+      "subject": "Science",
+      "toddle_title": "primary 6 first term binder",
+      "release_asset": "murad-science-primary-6-first-term-binder.pdf",
+      "release_tag": "school-term1-2026",
+      "bytes": 35412343,
+      "sha256": "25336920caa1d2c7e9fd2c65265dd2fd54f789909d39593bd550b5d878f4f999",
+      "receipt": "verified_phone_bytes_match_release_asset"
+    }
+  ],
+  "observed_not_archived": {
+    "Murad/Arabic": ["الاسم النكرة والاسم المعرفة 6 ب"],
+    "Murad/English OL": [
+      "Gr. 6 O Level Book Term 1",
+      "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3"
+    ],
+    "Murad/Mathematics": ["Prim 6 homework Binder 1st term 2026-2027"],
+    "Murad/Science": [
+      "Monthly_Exam_1_Model_Answers_",
+      "4th week assessment model answers",
+      "Assessment book homework p. 19 model answers",
+      "Assessment book homework page 9 model answers",
+      "2nd week assessment model answers",
+      "chapter 2 Homework Model Answers",
+      "chapter 1 Homework Model Answers"
+    ],
+    "Murad/Social Studies": [
+      "وطننا العربي المناخ و النبات الطبيعي",
+      "درس التحديات البيئية"
+    ],
+    "Gamal/Arabic": ["حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027"],
+    "Gamal/English AL": [
+      "Fiction Organizer",
+      "Gr. 5 Grammar and Sentence Structure Booklet 2026-2027 - Model Answers- Up to p. 12",
+      "Vocabulary for Writing- Prompt 1 Words",
+      "Gr. 5 Weekly Outline Term 1 Week 4",
+      "Gr. 5 Weekly Outline Term 1 Week 3",
+      "Living Better Thanks to Inventions",
+      "Gr. 5 Home Dictation 2 - Regular Speed",
+      "Gr. 5 Home Dictation 2- Regular Speed",
+      "Gr. 5 Home Dictation 2"
+    ]
+  },
+  "limits": [
+    "Toddle's live download control did not yield a verifiable download receipt during this sweep.",
+    "An observed label is not marked archived unless repository, release or phone bytes were verified."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-18T06:43:05Z",
+  "platform_id": "289164276797572330",
+  "counts": {
+    "children": 2,
+    "courses": 25,
+    "resources_observed": 12,
+    "blank_or_preparing": 13
+  },
+  "courses": [
+    {"child":"Murad","grade":6,"subject":"Arabic","course_id":"425277950422719800","status":"resources_observed","resource_count":6},
+    {"child":"Murad","grade":6,"subject":"Art","course_id":"425277951467101497","status":"blank_or_preparing","resource_count":0},
+    {"child":"Murad","grade":6,"subject":"Computer","course_id":"425277952440180026","status":"resources_observed","resource_count":7},
+    {"child":"Murad","grade":6,"subject":"English AL","course_id":"425277953404869947","status":"resources_observed","resource_count":28},
+    {"child":"Murad","grade":6,"subject":"English OL","course_id":"425277954369559868","status":"resources_observed","resource_count":3},
+    {"child":"Murad","grade":6,"subject":"Mathematics","course_id":"425277957011971390","status":"resources_observed","resource_count":16},
+    {"child":"Murad","grade":6,"subject":"Music","course_id":"425277958421257535","status":"blank_or_preparing","resource_count":0},
+    {"child":"Murad","grade":6,"subject":"P.E.","course_id":"425277959901846848","status":"blank_or_preparing","resource_count":0},
+    {"child":"Murad","grade":6,"subject":"Professional Skills","course_id":"425277961332104513","status":"blank_or_preparing","resource_count":0},
+    {"child":"Murad","grade":6,"subject":"Religion","course_id":"425277962779139394","status":"resources_observed","resource_count":1},
+    {"child":"Murad","grade":6,"subject":"Science","course_id":"425277964196814147","status":"resources_observed","resource_count":13},
+    {"child":"Murad","grade":6,"subject":"Social Studies","course_id":"425277965639654724","status":"resources_observed","resource_count":7},
+
+    {"child":"Gamal","grade":5,"subject":"Arabic","course_id":"425277732675427479","status":"resources_observed","resource_count":8},
+    {"child":"Gamal","grade":5,"subject":"Art","course_id":null,"status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Computer","course_id":"425277735292673177","status":"resources_observed","resource_count":5},
+    {"child":"Gamal","grade":5,"subject":"English AL","course_id":"425277736345443482","status":"resources_observed","resource_count":28},
+    {"child":"Gamal","grade":5,"subject":"English OL","course_id":"425277737305939099","status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"German","course_id":"428324090462383857","status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Mathematics","course_id":"425277740049013917","status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Music","course_id":null,"status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"P.E.","course_id":null,"status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Professional Skills","course_id":null,"status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Religion","course_id":"425277745933622433","status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Science","course_id":"425277747372268706","status":"blank_or_preparing","resource_count":0},
+    {"child":"Gamal","grade":5,"subject":"Social Studies","course_id":"425277748773166243","status":"resources_observed","resource_count":1}
+  ],
+  "murad_science_resources": [
+    "Monthly_Exam_1_Model_Answers_",
+    "4th week assessment model answers",
+    "Assessment book homework p. 19 model answers",
+    "Assessment book homework page 14 & 15",
+    "model answers of the 3rd weekly assessment",
+    "Assessment book homework page 9 model answers",
+    "2nd week assessment model answers",
+    "chapter 3 homework model answers",
+    "chapter 2 Homework Model Answers",
+    "chapter 1 Homework Model Answers",
+    "Assessment book model answers P. 4&5",
+    "primary 6 first term binder",
+    "investigating the effect of saliva on starch"
+  ],
+  "murad_social_studies_resources": [
+    "الدرس الأول : وطننا العربي - الموقع و الاهمية",
+    "التقييم الاول الوطن العربي الموقع و الاهمية",
+    "اطلس الخرائط االدرس الاول",
+    "الدرس الثاني / تضاريس وطننا العربي",
+    "اطلس الخرائط الدرس الثاني",
+    "وطننا العربي المناخ و النبات الطبيعي",
+    "درس التحديات البيئية"
+  ]
+}
