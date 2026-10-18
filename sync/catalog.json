@@ -1,0 +1,1718 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-10-18",
+  "timezone": "Africa/Cairo",
+  "complete_toddle_sync": false,
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Arabic",
+      "course_id": "425277950422719800",
+      "status": "resources_observed",
+      "resource_count": 6
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Art",
+      "course_id": "425277951467101497",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Computer",
+      "course_id": "425277952440180026",
+      "status": "resources_observed",
+      "resource_count": 7
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English AL",
+      "course_id": "425277953404869947",
+      "status": "resources_observed",
+      "resource_count": 28
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English OL",
+      "course_id": "425277954369559868",
+      "status": "resources_observed",
+      "resource_count": 3
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Mathematics",
+      "course_id": "425277957011971390",
+      "status": "resources_observed",
+      "resource_count": 16
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Music",
+      "course_id": "425277958421257535",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "P.E.",
+      "course_id": "425277959901846848",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Professional Skills",
+      "course_id": "425277961332104513",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Religion",
+      "course_id": "425277962779139394",
+      "status": "resources_observed",
+      "resource_count": 1
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Science",
+      "course_id": "425277964196814147",
+      "status": "resources_observed",
+      "resource_count": 13
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Social Studies",
+      "course_id": "425277965639654724",
+      "status": "resources_observed",
+      "resource_count": 7
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Arabic",
+      "course_id": "425277732675427479",
+      "status": "resources_observed",
+      "resource_count": 8
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Art",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Computer",
+      "course_id": "425277735292673177",
+      "status": "resources_observed",
+      "resource_count": 5
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English AL",
+      "course_id": "425277736345443482",
+      "status": "resources_observed",
+      "resource_count": 28
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English OL",
+      "course_id": "425277737305939099",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "German",
+      "course_id": "428324090462383857",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Mathematics",
+      "course_id": "425277740049013917",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Music",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "P.E.",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Professional Skills",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Religion",
+      "course_id": "425277745933622433",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Science",
+      "course_id": "425277747372268706",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Social Studies",
+      "course_id": "425277748773166243",
+      "status": "resources_observed",
+      "resource_count": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Answers.pdf",
+      "bytes": 138689,
+      "git_blob_sha": "4052ea1a6ae08031399c976e732e60a9138f5e37",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Worksheet.pdf",
+      "bytes": 137426,
+      "git_blob_sha": "5437406745a1193dcb35a65447f2340297277c16",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Answers.pdf",
+      "bytes": 140670,
+      "git_blob_sha": "4950411eb7942d32151fd7cb910ef19a8ba752f0",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf",
+      "bytes": 135137,
+      "git_blob_sha": "5be3eca8c2173a44761fd1f00755d09fefe62960",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf",
+      "bytes": 1128145,
+      "git_blob_sha": "1a8182c4403c7c1010354d590650b22567627a51",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf",
+      "bytes": 7113244,
+      "git_blob_sha": "80d468cef32f12394efff159d7183602bd408140",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Grammar and Sentence Structure Booklet 2026-2027.pdf",
+      "bytes": 5499133,
+      "git_blob_sha": "1ce9864196cdf9b8284998915c9b89918a4e9fbd",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 5508901,
+      "git_blob_sha": "6920007daffa68d99d5cba9f2463451aae5d7d09",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Wonders Leveled Readers 2026-2027.pdf",
+      "bytes": 5445167,
+      "git_blob_sha": "1db211f03286ff5ccf70fed7ec0d3f2006a7ecc0",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 897498,
+      "git_blob_sha": "399e6855ce48dcf1a8fa7df8abb3f34339d9bf8a",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Writing Booklet 2026-2027 First Term.pdf",
+      "bytes": 2646259,
+      "git_blob_sha": "b6ce5070122448e8c864bb41497807c0899ea6e2",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/Home Dictation Routine.pdf",
+      "bytes": 135645,
+      "git_blob_sha": "d5f2aa14d8956885b4e8a894aeb2ab951f632a66",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1- Regular Speed.m4a",
+      "bytes": 273460,
+      "git_blob_sha": "80103f1ac72890b9dfdab626776ae217de82218e",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1- Slow Speed.m4a",
+      "bytes": 3835136,
+      "git_blob_sha": "52949de2981320b67fa7ae71934197967e782b38",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1.pdf",
+      "bytes": 106854,
+      "git_blob_sha": "4ba9b13879e35dcbcfe908512cca7f24e94773a0",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/model-answers/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term Model Answer- up to p. 6.pdf",
+      "bytes": 547443,
+      "git_blob_sha": "37d58aa1643b48eeb827ba94c76b608a352cd7af",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/model-answers/Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term Model Answer- up to p. 7.pdf",
+      "bytes": 406660,
+      "git_blob_sha": "2a5fd149f9a7d7c6ed0ed8441bbe3b686e519032",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-0/Gr. 5 Weekly Outline Term 1 Week 0.pdf",
+      "bytes": 97288,
+      "git_blob_sha": "0525d426f456584bceb5e59fcd79cbebe5c6d1b1",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-1/Gr. 5 Weekly Outline Term 1 Week 1.pdf",
+      "bytes": 100440,
+      "git_blob_sha": "bf8feff2660c530566825a68880697c65095c868",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-2/A Fresh Idea.pdf",
+      "bytes": 234526,
+      "git_blob_sha": "b0b99007c993a9cc2ba2f539e0e7c218d2723b86",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-2/Gr. 5 Weekly Outline Term 1 Week 2.pdf",
+      "bytes": 97629,
+      "git_blob_sha": "344e579a811561f1cd0182a103b0786ca4aec021",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/gamal/english/wonders/graphic-organizers/Nonfiction Organizer.png",
+      "bytes": 2080677,
+      "git_blob_sha": "ff7aad6077b6c8a6f386d0d06d92acd90a72e978",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/wonders/graphic-organizers/Story Elements Organizer.png",
+      "bytes": 1593762,
+      "git_blob_sha": "0ab6a4e154b7171206fb23b63ec5ce80c202130e",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/wonders/unit-1-week-1/Unit 1 Week 1 Essential Question- How do we get the things we need.pdf",
+      "bytes": 111064,
+      "git_blob_sha": "88e190d54c55d7889ee44edf8f70c1c8511d2d23",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/english/wonders/unit-1-week-1/Unit 1 Week 1 Finding a Way.mp3",
+      "bytes": 4533654,
+      "git_blob_sha": "86d81720eb9a6932884f3637527a7b562f7776b6",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/ict/booklets/1st term binder grade 5new 2025-2026 - for merge.docx",
+      "bytes": 8018399,
+      "git_blob_sha": "b89a0685f09da48b52ed7b39f02f508caaff5d30",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/ict/evaluations/week-01.docx",
+      "bytes": 57888,
+      "git_blob_sha": "c9f2808fee207551c1474e5b5d8a8da7839b9982",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "ict",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/ict/evaluations/week-02.docx",
+      "bytes": 58363,
+      "git_blob_sha": "edd2e6473a7dc2e1cce4aae41473594b5ed6efb2",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "ict",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/gamal/ict/evaluations/week-03.docx",
+      "bytes": 59896,
+      "git_blob_sha": "b9a5c36bc097eb763ef6dab4a033ed2c56570ba6",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "ict",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/gamal/ict/revision/2026-10/revsion prim5 october.doc",
+      "bytes": 52736,
+      "git_blob_sha": "dd75a75a9f224926a5db04fbfbf0ea7a00db8909",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf",
+      "bytes": 1105474,
+      "git_blob_sha": "13a80ab194e7518458fd34fc3f60d7999599c37d",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "religion",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
+      "bytes": 138505,
+      "git_blob_sha": "bb055cabe5555ce293513410072b0554ddce107a",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "bytes": 158217,
+      "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/science/assessments/chapter-02/source-1.jpg",
+      "bytes": 114611,
+      "git_blob_sha": "1d4560daa620fe8e385ae80e7b910ebcdcd65eba",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/science/assessments/chapter-02/source-2.jpg",
+      "bytes": 84582,
+      "git_blob_sha": "c9ce6e831d7ad63ba3384a3277e7009bce85e139",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/science/assessments/chapter-02/source-3.jpg",
+      "bytes": 106735,
+      "git_blob_sha": "3cbd62a0633f239290b39f0f7a3e2b3b56b8020c",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/science/assessments/chapter-02/source-4.jpg",
+      "bytes": 75155,
+      "git_blob_sha": "3b81fef1a6da1413262e0ca8ad151ae707f82150",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/science/assessments/chapter-02/source-5.jpg",
+      "bytes": 78057,
+      "git_blob_sha": "7a48a7ecdd6cacb99765a62870014c2fe72d44cd",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/social-studies/assessments/climate/school-page-1.jpg",
+      "bytes": 94778,
+      "git_blob_sha": "f2b8c33b144bacfd3918542b16c478a502384a65",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/social-studies/assessments/climate/school-page-2.jpg",
+      "bytes": 200742,
+      "git_blob_sha": "6b9ccd5b560f0445d6d17d6f984977e2cf06a254",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/social-studies/assessments/climate/school-page-3.jpg",
+      "bytes": 139863,
+      "git_blob_sha": "28aa68e4cade8706a6fac868c9bb1b4397c8defe",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/social-studies/assessments/climate/school-page-4.jpg",
+      "bytes": 189721,
+      "git_blob_sha": "22c10a2e9d5268e4c0bcc5b8be1d4070b1210693",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/social-studies/اجابة التقيمات.pdf",
+      "bytes": 1897049,
+      "git_blob_sha": "459a60b4d880f800356be0ff668cdb4a91bb12a8",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
+      "bytes": 766203,
+      "git_blob_sha": "64c53e7854b07755ba51ff2710bf77abf7d5f725",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf",
+      "bytes": 6713431,
+      "git_blob_sha": "8086fe9d0b6a5e10346f017ecd0454556f264868",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Assessment Book Term 1.pdf",
+      "bytes": 7171950,
+      "git_blob_sha": "7d2094fcf1c6afdb42c8445cc33309acdfcb1a47",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf",
+      "bytes": 1493301,
+      "git_blob_sha": "b75b2840742c7d60dfef922a20846c0f57852cc7",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Wonders Fiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 1521491,
+      "git_blob_sha": "990bf34923c33e434de805d0be685bfadef47865",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Wonders Leveled Readers 2026-2027.pdf",
+      "bytes": 5756146,
+      "git_blob_sha": "b62d491f5b40284f458d70fd65d39f565e1b6b66",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 2033625,
+      "git_blob_sha": "a7e270bd867dae18435a3b482d5ebdd9b3966e44",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Writing Booklet First Term 2026-2027.pdf",
+      "bytes": 2193303,
+      "git_blob_sha": "2b089df57ad13a96b12f7ad9b66ccd67202a22c4",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1- Regular Speed.m4a",
+      "bytes": 253757,
+      "git_blob_sha": "1a067aa7daa970b270e7ea3eb99d0c4ba9c45e3d",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1- Slow Speed.m4a",
+      "bytes": 3337583,
+      "git_blob_sha": "7d9d3ee213fb236dc8f944598b56708cafab8c95",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1.pdf",
+      "bytes": 107520,
+      "git_blob_sha": "492994fd371c30c09aacfa25ea21b65b14db2661",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Normal Speed.m4a",
+      "bytes": 302977,
+      "git_blob_sha": "c4cf2e2738a281e72f4df1feeade8b343c74397b",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Slow Speed.m4a",
+      "bytes": 4622327,
+      "git_blob_sha": "a0c6888ba579dad0645f71c7edcb569d19836aa4",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2.pdf",
+      "bytes": 110590,
+      "git_blob_sha": "fcb6cb71fb7898db8481b5b299fcba459ee66166",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Compound Sentences--Model Answers.pdf",
+      "bytes": 129687,
+      "git_blob_sha": "63f59eac51bc4809e63e16ca2deb2c874a150751",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Compound Sentences.pdf",
+      "bytes": 128508,
+      "git_blob_sha": "f0e2f1060584d6190032fef666377f434ac84986",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf",
+      "bytes": 134020,
+      "git_blob_sha": "00e0c4d5d9cecca1ab1defe1795f84c8a27f708a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences.pdf",
+      "bytes": 130817,
+      "git_blob_sha": "1a42cde742ed40641ce4e40d08f774efe8249200",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/lesson-distribution/Lesson Distribution - - 6G.pdf",
+      "bytes": 70242,
+      "git_blob_sha": "9250f3fe11cceb7f73d41c830db99cb752cf2f06",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/model-answers/Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term- up to p. 12.pdf",
+      "bytes": 862707,
+      "git_blob_sha": "a019cf4d97981041bcb8ca9a95697a66f975b6b1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/model-answers/Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 8.pdf",
+      "bytes": 648653,
+      "git_blob_sha": "c57fb992019f60f363116a8274a9d0709b275dda",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 6.pdf",
+      "bytes": 490062,
+      "git_blob_sha": "456e5ef63936ac001685ccb8a9a21569c838099a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/weekly/week-0/Deserts and People.pdf",
+      "bytes": 232757,
+      "git_blob_sha": "d08655f4144822147955ccd552518b87f0e8102d",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/murad/english/weekly/week-0/Gr. 6 Weekly Outline Term 1 Week 0.pdf",
+      "bytes": 95962,
+      "git_blob_sha": "af6b8ef33fa0938451e909370c06f118ba13a420",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/murad/english/weekly/week-1/Gr. 6 Weekly Outline Term 1 Week 1.pdf",
+      "bytes": 103202,
+      "git_blob_sha": "7827357540f98e79a1a5795193d9f25a4b918387",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/english/weekly/week-2/Cow Music.pdf",
+      "bytes": 251416,
+      "git_blob_sha": "c16b1dad54dca27583e629c73f2dd02e1c7ed6e2",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/english/weekly/week-2/Gr. 6 Weekly Outline Term 1 Week 2.pdf",
+      "bytes": 98608,
+      "git_blob_sha": "6be3e9153771bc391d71ac5f8c65d66410e9ec8e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/english/weekly/week-3/Gr. 6 Weekly Outline Term 1 Week 3.pdf",
+      "bytes": 98251,
+      "git_blob_sha": "15d911fbd65a93734660cabfe160011795c9ff04",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/murad/english/weekly/week-4/Gr. 6 Weekly Outline Term 1 Week 4.pdf",
+      "bytes": 100312,
+      "git_blob_sha": "315995b04ae70cb92cea7b63d1e3e1d171eab92f",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 4
+    },
+    {
+      "path": "sources/murad/english/wonders/unit-1-week-1/Crossing the Creek.mp4",
+      "bytes": 2649182,
+      "git_blob_sha": "c8d72e514ce9a823d480a4e6d3274c7ed85239a1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/english/wonders/unit-1-week-1/U1 W1 How do new experiences offer new perspectives.pdf",
+      "bytes": 3929751,
+      "git_blob_sha": "3780a12c4dc3df6caf23d9e6a95523391e583db2",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx",
+      "bytes": 13764281,
+      "git_blob_sha": "991b701ef44f48121d8331ae7146fab93e5af9f7",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/ict/evaluations/week-01.docx",
+      "bytes": 57917,
+      "git_blob_sha": "1427e6e6ec35fb9137066a7ade415cd54ba53d34",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/ict/evaluations/week-02.docx",
+      "bytes": 60228,
+      "git_blob_sha": "5c85e702a83239e52f1a53585568d51b71b2afaf",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/ict/evaluations/week-03.docx",
+      "bytes": 61115,
+      "git_blob_sha": "746f99e138b8405570b724b079aee034d6fa15a1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/murad/ict/handouts/Prim 6 lesson 1.docx",
+      "bytes": 17031,
+      "git_blob_sha": "71908e6a7121814113846dcfe372cab6eac27c5f",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/ict/handouts/prim 6 lesson 2.docx",
+      "bytes": 1198217,
+      "git_blob_sha": "56e9ae3d6edd72ff82b31dd683d40aa64deb3c1e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/ict/revision/2026-10/revision prim 6 october.docx",
+      "bytes": 24435,
+      "git_blob_sha": "b730ce3c04e5ffb08386a2171eab7e8f84680373",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/activities/Integers - Activity Sheet.pdf",
+      "bytes": 284108,
+      "git_blob_sha": "eca9ec5622158e2913a4647836ee74fed82ecd30",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "bytes": 5730304,
+      "git_blob_sha": "20acc598d823019fb231d4561100bd41e71a8ba5",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/model-answers/Model Answer - Unit (1) - Lessons (1-3).pdf",
+      "bytes": 2646924,
+      "git_blob_sha": "19fd7c079707ba0b95769e88f949f663c5b37e20",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf",
+      "bytes": 3027257,
+      "git_blob_sha": "f2db6df986691c0aa8e14c3e49664adefcf0960a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/revision/2026-10/October Revision Sheet.pdf",
+      "bytes": 233032,
+      "git_blob_sha": "fd40c87ecd671d107dcebd150c9a1f12dcd93711",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-01/1st Day at School (Mona Gehad).pptx",
+      "bytes": 5177600,
+      "git_blob_sha": "6d9804991f731b4f40236316c4496b26d922534e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-01/Crosswords - General Revision - Week (1).pdf",
+      "bytes": 149398,
+      "git_blob_sha": "e5bee22c387f394fb2d322afc91f46ce3820e26d",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-01/School is Cool Crosswords - Week (1).jpeg",
+      "bytes": 73069,
+      "git_blob_sha": "54ae99dca02c1d1c648e0aba38f5a6f9e2b573ee",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility Extra Sheet in Math Classwork Copybook - Monday (21-9-2026) - Week (2).pdf",
+      "bytes": 400437,
+      "git_blob_sha": "d9d833172d5fd6b7c8a993cfb9d007a23dc98126",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility PPT Presentation - Monday (21-9-2026) - Week (2).pptx",
+      "bytes": 237412,
+      "git_blob_sha": "2d71d1a448c22d35f7eeea72f35ab2fa6e17213e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22-9-2026) - Week (2).pdf",
+      "bytes": 330923,
+      "git_blob_sha": "c9fa73fa05a46ca432f8ba591cba062e2ee8fbec",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility Rules in Math Classwork Copybook - Monday (21-9-2026) - Week (2).docx",
+      "bytes": 436049,
+      "git_blob_sha": "211fe8821050695a4aa08a32d28f3ac49439b50a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/worksheets/Revision Sheet (1) - Week (1).pdf",
+      "bytes": 205143,
+      "git_blob_sha": "1edd3a55b59356b6ca1e7d2fc2d98caad639d133",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/worksheets/Revision Sheet (2) - Week (1).pdf",
+      "bytes": 420758,
+      "git_blob_sha": "53fb2da628fddd8c8186547e01274644ec008019",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/worksheets/Worksheet (1) - Week (2).pdf",
+      "bytes": 167592,
+      "git_blob_sha": "d60172c319de54486f25677a2e79db551045a3e5",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/religion/Islamic_Education_Primary6_T1.pdf",
+      "bytes": 14124807,
+      "git_blob_sha": "56fb0231d228e6eab31b099a67e5ce3724287dcf",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "religion",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
+      "bytes": 1515823,
+      "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "religion",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
+      "bytes": 157773,
+      "git_blob_sha": "bf015fb180a957977163797f30782a4695691433",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "bytes": 141364,
+      "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/activities/investigating the effect of saliva on starch.pdf",
+      "bytes": 431111,
+      "git_blob_sha": "f4cd358a075bac4eef83744683ebab38ff6580db",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment book homework page 14 & 15.pdf",
+      "bytes": 155467,
+      "git_blob_sha": "92fc7cc5cd53ae79c418f845e67581b4c5381e88",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment book model answers P. 4&5.pdf",
+      "bytes": 23813,
+      "git_blob_sha": "8405ad8a731572be442b8b542f9a4438d93825d7",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/chapter 3 homework model answers.pdf",
+      "bytes": 1864006,
+      "git_blob_sha": "0ebd7d72b4b2e423e08cdff331a1fb17a86783f3",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/model answers of the 3rd weekly assessment.pdf",
+      "bytes": 207883,
+      "git_blob_sha": "40328a055b5c1890a9cb1a0c2337bc121d99e1f1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/social-studies/atlases/اطلس الخرائط االدرس الاول.pdf",
+      "bytes": 2799539,
+      "git_blob_sha": "4ba03e1475cb922a3a4ddb725f013c41472be5f8",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/social-studies/atlases/اطلس الخرائط الدرس الثاني.pdf",
+      "bytes": 2199996,
+      "git_blob_sha": "0b81be2df496a76d44b645478174b2f8c5b6e8ce",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/social-studies/weekly/week-02/التقييم الاول الوطن العربي الموقع و الاهمية.pdf",
+      "bytes": 263114,
+      "git_blob_sha": "ea49c5ad55b90dab47b95a872175891da06ec4d0",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "social-studies",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/social-studies/weekly/week-02/الدرس الأول - وطننا العربي - الموقع و الاهمية.pdf",
+      "bytes": 14938817,
+      "git_blob_sha": "940fca0183b01c754149bc17a5c2e49a7a3cbceb",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "social-studies",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/shared/school/announcements/2026-10-07-general-assembly.jpeg",
+      "bytes": 135102,
+      "git_blob_sha": "d55b7371ed158154d6910f56fc455c89e01b4cef",
+      "storage": "repository_blob",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "bytes": 158710,
+      "sha256": "faf1d4b7fc5d141f06e8bd6a16f6e3ad21595fd734bb0da7b5587b948169b871",
+      "git_blob_sha": "f1dca98e2ef4ddea748cb67663e145bdf8a09cde",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "child": "gamal",
+      "subject": "announcements",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "git_blob_sha": "054c38b97d556da74dadcd1641e6c9c5998a018c",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0ba3c325c9f4b59b77d8eafe2d2c5ead2e1c199d646095e0987d22528820e370",
+          "git_blob_sha": "8ef4109cab6d7b6fdf219466db11fdd0136e7d65"
+        },
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0002.bin",
+          "bytes": 3358756,
+          "sha256": "6480bc130b1a2447997e5d20bebfce10ec22582a41bb3c85e48baa8d074e18f4",
+          "git_blob_sha": "05088a2297cb1a9ad02a20908a6a4a93df9d4c49"
+        }
+      ],
+      "archive_path": "jimmy_gamal/courses/Arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "bytes": 108610,
+      "sha256": "3b854e3076d91cb135ddb9680f03b0d3d9182ff278793dcc69d2fcca5dc73d97",
+      "git_blob_sha": "498304ae0c33eb8c87595c1ec25d94f3fba25dfc",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "bytes": 268909,
+      "sha256": "dd66296dce7503fec2d5571e88e3d5fb588e0a20c75f99c13b092ac425cb6132",
+      "git_blob_sha": "b26bea2a7beaee0d8f5ea075849bcb7d702820fa",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "bytes": 5964976,
+      "sha256": "cfe7ef7afb04d157008a4661a9c09402fb1660e4867f218f563fa5844b4b932d",
+      "git_blob_sha": "6bcc651321175964ce2a1a469b89b9c8773e71a7",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Fiction_Organizer.png",
+      "bytes": 1952526,
+      "sha256": "c629e41a36aba453a86f5e165862a15e6bc8f7fd48c2897697937494fc1a9d47",
+      "git_blob_sha": "0879f6b84a3fefd905ec7ed3105f73feda14edf5",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Fiction_Organizer.png",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf",
+      "bytes": 4271269,
+      "sha256": "ea8b79594736f0da091c6376e7a79245384b69bbc535d85279b47c1306e304e9",
+      "git_blob_sha": "9f336f19b153819f965fb8e2f9426890e7e525e3",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Grammar_Model_Answers_Up_to_p12.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "bytes": 387472,
+      "sha256": "d62f7ce546924da590d0ab9435b1050fa279cf76ad6e65fcde92c8544fe9fd18",
+      "git_blob_sha": "c36a7455b0ea7fa503b34a27fce2b746c6c3b0ef",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "bytes": 127736,
+      "sha256": "3ac28f1e49a88db02afffbfb865617dda65cf284edb9efd1ee042142a048ee0c",
+      "git_blob_sha": "98152ffa554e3180dc895402ea65d275f0f42482",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/gamal/english/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "bytes": 99243,
+      "sha256": "8fe92adacb493e9ac46f24c3c035381c8f796c901aa21d85b3f0ccfdf862c0f6",
+      "git_blob_sha": "897a45d9799f5da328451fe1a9f4aef4a3306ec7",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/gamal/english/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "bytes": 97334,
+      "sha256": "60f1359513584c6ce28cfc90e75e02f02c724e64a5b1de6d5768c7cd14db8a99",
+      "git_blob_sha": "ccdf62fa82d2ce19709760196edeb79faf123150",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 4
+    },
+    {
+      "path": "sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "bytes": 21810058,
+      "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312",
+      "git_blob_sha": "91da766dccb998ed4466cb49dc1cfae4d91f50bf",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0001.bin",
+          "bytes": 8388608,
+          "sha256": "9821e61639a2af57e51aeaa0bb090d98e0c6873906465be3381ff54f1b4a606f",
+          "git_blob_sha": "7683ed563ac11935c5a82cf07d8b0c84a9e01c55"
+        },
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0002.bin",
+          "bytes": 8388608,
+          "sha256": "ea884f869b0a358d60e70e290c9de062672ea8ee7119b61e66652f8e8e6d7d82",
+          "git_blob_sha": "0bd141a9e6a1ec6876ea79c5525341e65aecc591"
+        },
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0003.bin",
+          "bytes": 5032842,
+          "sha256": "89ac22280b45de01a6998845438d70e785c9392c483e2a4fe0820809ef22204b",
+          "git_blob_sha": "0dc89670423a225e772de8af7f6d51b6c638daa9"
+        }
+      ],
+      "archive_path": "murad/courses/Arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "child": "murad",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "bytes": 6291456,
+      "sha256": "1250dfe3c3ea8ac5fb2a343f030198a7de087d81b2d9cdb4b709da426b9678f4",
+      "git_blob_sha": "54a4170d770fc3ef92774632656d05e8e63b1b49",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/English_OL/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8ad194f45ac580a44d957a0e48ccc5104980794b79e9858fcc9df484ebea85a3",
+          "git_blob_sha": "232671b1d56682dc18fb1de0d3e75e87ffe3da96"
+        },
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0002.bin",
+          "bytes": 3915416,
+          "sha256": "7d1a1471aa8b88a8e3025c21b4a887a8e581a59da6ef7fc23141bf99d499938b",
+          "git_blob_sha": "5158373f2baae68596f1a44972bf0185c355c8f8"
+        }
+      ],
+      "archive_path": "murad/courses/English_OL/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41470bb746d3c31566936f2a1cb7d9b1d22cfca492efc9aaf0296923bb2aee46",
+          "git_blob_sha": "359c54ffe2ce881ba5983cf75fd03a973ff0d69f"
+        },
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0002.bin",
+          "bytes": 7568095,
+          "sha256": "3a3c24f3e4d4891031295b04c2970ca008170898946f7ce508ed5f5c02e34861",
+          "git_blob_sha": "1cc24b5146a4b99d3040cc421a55d433682b20a6"
+        }
+      ],
+      "archive_path": "murad/courses/English_OL/Gr_6_O_Level_Book_Term_1.pdf",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "bytes": 2330624,
+      "sha256": "05064ff60d672f4e0255ccc0310386dfa93db546e5eae5a56bb2a3dbd1f720a6",
+      "git_blob_sha": "55e4e570d11c5f3910a5fa7131daf8b49b994f5d",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/2nd_Week_Assessment_Model_Answers.pdf",
+      "bytes": 99440,
+      "sha256": "c2f10cdfc12b72a6da7e054009894890fa2face1ff1ad48b3ff146713d75553c",
+      "git_blob_sha": "73fb5a5013c82a3fe94c5db0977c3a385d453b48",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/2nd_Week_Assessment_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/4th_Week_Assessment_Model_Answers.pdf",
+      "bytes": 133802,
+      "sha256": "64fedb2d5c2b2fb1e97ebaae07dbc6d0dd84fdbea7404b32b12e9f3476f324d6",
+      "git_blob_sha": "33acba609ace201e8b89fdba3cfd07a5d18af75d",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/4th_Week_Assessment_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "bytes": 88117,
+      "sha256": "b89dda8c9ea972349896dca3e5070536ec58ae0c4b11d2070bb8610fe1532d4c",
+      "git_blob_sha": "080bd911d409580e5089a96c2ec6621149e8a04d",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "bytes": 90617,
+      "sha256": "8a248f2d746f51bc39ac57b83dbe7ad770acc38ec2aebe1bd1c36fcbc73f5777",
+      "git_blob_sha": "498b4927c806c940af2670554a1eefd13a7c6cfe",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Chapter1_Homework_Model_Answers.pdf",
+      "bytes": 2929469,
+      "sha256": "43498fd40490de84fb22945475ac3a24fc1435ac7df14834e95b2b40c02245f8",
+      "git_blob_sha": "46e65149c94bfb12c1c78fdafa261f10da2a04b2",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Chapter1_Homework_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Chapter2_Homework_Model_Answers.pdf",
+      "bytes": 1422981,
+      "sha256": "8796b36b17d6c92d3b6f7335d37b0a784d128de000ebd7f545a6c1fe4f0fc68d",
+      "git_blob_sha": "e9d6d91ced77b0359a82c660c7e5af2edced19b2",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Chapter2_Homework_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Monthly_Exam_1_Model_Answers.pdf",
+      "bytes": 216169,
+      "sha256": "a818bf22352d93c0f6ae361ab51e39b064b3f76ab88d1999dbbccffd744ca2a4",
+      "git_blob_sha": "888f33cebbf9a070b379ddacabbd873f44289533",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Monthly_Exam_1_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
+      "git_blob_sha": "8e45e1970a2212498296329d65c38f0e6e680ece",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0001.bin",
+          "bytes": 8388608,
+          "sha256": "44ae8c190d7cca0e93ebaa75b2a14130314700f42fbf01d4f131101cde41112e",
+          "git_blob_sha": "4a1cbbd87cd330a94a2c014374486a72c74425e5"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0002.bin",
+          "bytes": 8388608,
+          "sha256": "5a27a64575e16d37dfbf4c09770fa0541a8b616a943192c8d6fe2e7edd2896d2",
+          "git_blob_sha": "f4fee493d6fff43e6c1631eb822957eef1ca6da1"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0003.bin",
+          "bytes": 1061730,
+          "sha256": "1c31cc4a27116ded905c98d85df8e2b5866c73d213eeccaa9b0d4dffbe53005e",
+          "git_blob_sha": "af057a7d68037092f2ebc579fde745fee05fc511"
+        }
+      ],
+      "archive_path": "murad/courses/Social_Studies/درس_التحديات_البيئية.pdf",
+      "child": "murad",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
+      "git_blob_sha": "6065d1abb51496cfb02490e106a37bc92a58d3ed",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0001.bin",
+          "bytes": 8388608,
+          "sha256": "91c646bd7334f7ab6a031c1884a5a82ac94d7b82359c4c26499c7121402d4178",
+          "git_blob_sha": "b55a6ee9e89bca7efb07e06eca940ac5e8b59663"
+        },
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0002.bin",
+          "bytes": 5579429,
+          "sha256": "c9c1f0639093cd53ba09320f47b7f5890349630fe7b2b59284205c518d10dfa6",
+          "git_blob_sha": "51e0afddc15806e77a25a33b198ae706aeb5195a"
+        }
+      ],
+      "archive_path": "murad/courses/Social_Studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "child": "murad",
+      "subject": "social-studies",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf",
+      "bytes": 13153407,
+      "sha256": "97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df",
+      "git_blob_sha": "037676487157c566efa2456a3bf7a03d0d0c2d90",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41156a8b040df29002dbf5e65520c167506967ce6dfe12d621e8b0fb3335a2cb",
+          "git_blob_sha": "efd9f5237ac8c1f4bef2b4c8c0f76a7b40f3d522"
+        },
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0002.bin",
+          "bytes": 4764799,
+          "sha256": "c6a4e44b250877748e4de9070eae0257e6b9e4a78b147773a3c891ec133b2e77",
+          "git_blob_sha": "322a45f307424156f7124ea1f449882b85332e65"
+        }
+      ],
+      "archive_path": "shared_announcements/Back_to_School_Guide_2026-27.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/Entry_Schedule_2026-09-10.jpg",
+      "bytes": 221954,
+      "sha256": "8a4ded72f5d2a34be98fa995952b11f1478258b947ae938b80a169ceac1722b3",
+      "git_blob_sha": "5772104d538206c1ff27089bf4c4250c7afd86e7",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/Entry_Schedule_2026-09-10.jpg",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/Letter_Bus_National_2026-27.pdf",
+      "bytes": 187533,
+      "sha256": "5bfae9c1fabf47352739060a57b61104cbe58891dfc0c322eb280630d8df6bfb",
+      "git_blob_sha": "47383da5ded5a049d1162d59937d54da7125cea5",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/Letter_Bus_National_2026-27.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/جواب_القسم_المصري_2026-2027.pdf",
+      "bytes": 3504388,
+      "sha256": "e0c5abf572046793ea23ee87d5f78349cb4fee6f7a6e2a7f374d483e6dadde98",
+      "git_blob_sha": "369e652e8d5e9bcbef4986679a98571fd318c953",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/جواب_القسم_المصري_2026-2027.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/نشرة_القسم_المصري_2026-2027.pdf",
+      "bytes": 3483350,
+      "sha256": "08669b726352edc93636b6a92febf70b18dae965c1a8c68633b3d61026929417",
+      "git_blob_sha": "34a8a16c740c29c39396bf1a41c8018b6663296e",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/نشرة_القسم_المصري_2026-2027.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-arabic-Arabic_Primary6_T1.pdf",
+      "bytes": 46419486,
+      "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-arabic-ministry-assessments-term1-2027.pdf",
+      "bytes": 12463048,
+      "sha256": "f5be76dd415f691b223062c4d5452b0f949ee75c451180cd734210b2e542cdcb",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-ministry-assessments-term1-2027.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-religion-Islamic_Education_Primary6_T1.pdf",
+      "bytes": 14124807,
+      "sha256": "093d44068a9c1a5a1d283ec9b80cc7357bf69ec2648dd89330b6bbe5b881d2f9",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-religion-Islamic_Education_Primary6_T1.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-science-primary-6-first-term-binder.pdf",
+      "bytes": 35412343,
+      "sha256": "25336920caa1d2c7e9fd2c65265dd2fd54f789909d39593bd550b5d878f4f999",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-science-primary-6-first-term-binder.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-social-studies-week3-lesson2-arab-world-terrain.pdf",
+      "bytes": 20161909,
+      "sha256": "60434d9eca7639cea28e3e786f283e821d232eb3382ebc310be2ac72fe9b095d",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-social-studies-week3-lesson2-arab-world-terrain.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    }
+  ]
+}

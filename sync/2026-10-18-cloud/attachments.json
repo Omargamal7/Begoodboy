@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "complete_toddle_sync": false,
+  "files": [
+    {
+      "archive_path": "jimmy_gamal/announcements/Primary_5_Monthly_Tests_October_2026.pdf",
+      "bytes": 158217,
+      "sha256": "ae345b92a7580a4e4d25274d9f972b126d3c709e6de47ee04a0586b805ff0444",
+      "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
+      "repository_path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "bytes": 158710,
+      "sha256": "faf1d4b7fc5d141f06e8bd6a16f6e3ad21595fd734bb0da7b5587b948169b871",
+      "git_blob_sha": "f1dca98e2ef4ddea748cb67663e145bdf8a09cde",
+      "repository_path": "sources/gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/announcements/تقديم_المفعول_به_على_الفاعل.pdf",
+      "bytes": 135137,
+      "sha256": "5dbf6f25faf2aba4fe8296e55b2836078a69379d3a9cf5e84fff9ede7056f6c9",
+      "git_blob_sha": "5be3eca8c2173a44761fd1f00755d09fefe62960",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/Arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "git_blob_sha": "054c38b97d556da74dadcd1641e6c9c5998a018c",
+      "repository_path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0ba3c325c9f4b59b77d8eafe2d2c5ead2e1c199d646095e0987d22528820e370",
+          "git_blob_sha": "8ef4109cab6d7b6fdf219466db11fdd0136e7d65"
+        },
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0002.bin",
+          "bytes": 3358756,
+          "sha256": "6480bc130b1a2447997e5d20bebfce10ec22582a41bb3c85e48baa8d074e18f4",
+          "git_blob_sha": "05088a2297cb1a9ad02a20908a6a4a93df9d4c49"
+        }
+      ]
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "bytes": 108610,
+      "sha256": "3b854e3076d91cb135ddb9680f03b0d3d9182ff278793dcc69d2fcca5dc73d97",
+      "git_blob_sha": "498304ae0c33eb8c87595c1ec25d94f3fba25dfc",
+      "repository_path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "bytes": 268909,
+      "sha256": "dd66296dce7503fec2d5571e88e3d5fb588e0a20c75f99c13b092ac425cb6132",
+      "git_blob_sha": "b26bea2a7beaee0d8f5ea075849bcb7d702820fa",
+      "repository_path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "bytes": 5964976,
+      "sha256": "cfe7ef7afb04d157008a4661a9c09402fb1660e4867f218f563fa5844b4b932d",
+      "git_blob_sha": "6bcc651321175964ce2a1a469b89b9c8773e71a7",
+      "repository_path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Fiction_Organizer.png",
+      "bytes": 1952526,
+      "sha256": "c629e41a36aba453a86f5e165862a15e6bc8f7fd48c2897697937494fc1a9d47",
+      "git_blob_sha": "0879f6b84a3fefd905ec7ed3105f73feda14edf5",
+      "repository_path": "sources/gamal/english/Fiction_Organizer.png",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Grammar_Model_Answers_Up_to_p12.pdf",
+      "bytes": 4271269,
+      "sha256": "ea8b79594736f0da091c6376e7a79245384b69bbc535d85279b47c1306e304e9",
+      "git_blob_sha": "9f336f19b153819f965fb8e2f9426890e7e525e3",
+      "repository_path": "sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "bytes": 387472,
+      "sha256": "d62f7ce546924da590d0ab9435b1050fa279cf76ad6e65fcde92c8544fe9fd18",
+      "git_blob_sha": "c36a7455b0ea7fa503b34a27fce2b746c6c3b0ef",
+      "repository_path": "sources/gamal/english/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "bytes": 127736,
+      "sha256": "3ac28f1e49a88db02afffbfb865617dda65cf284edb9efd1ee042142a048ee0c",
+      "git_blob_sha": "98152ffa554e3180dc895402ea65d275f0f42482",
+      "repository_path": "sources/gamal/english/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "bytes": 99243,
+      "sha256": "8fe92adacb493e9ac46f24c3c035381c8f796c901aa21d85b3f0ccfdf862c0f6",
+      "git_blob_sha": "897a45d9799f5da328451fe1a9f4aef4a3306ec7",
+      "repository_path": "sources/gamal/english/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "bytes": 97334,
+      "sha256": "60f1359513584c6ce28cfc90e75e02f02c724e64a5b1de6d5768c7cd14db8a99",
+      "git_blob_sha": "ccdf62fa82d2ce19709760196edeb79faf123150",
+      "repository_path": "sources/gamal/english/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/announcements/Grammar_Revision_Model_Answers.pdf",
+      "bytes": 134020,
+      "sha256": "8e1627535e01eb6e38bdd6664c4c8fc6cd7fb30e604d40a19c7ff239fcea20bd",
+      "git_blob_sha": "00e0c4d5d9cecca1ab1defe1795f84c8a27f708a",
+      "repository_path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/announcements/Lesson_Distribution_6G.pdf",
+      "bytes": 70242,
+      "sha256": "d6ae580d9ff90d44e1036073f2403a35f6c17cd93c5605718c5821790bdb6916",
+      "git_blob_sha": "9250f3fe11cceb7f73d41c830db99cb752cf2f06",
+      "repository_path": "sources/murad/english/lesson-distribution/Lesson Distribution - - 6G.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/announcements/Monthly_Tests_October_2026_Primary6.pdf",
+      "bytes": 157773,
+      "sha256": "f64f696d692c0e7a8e5c894eb2023f204d7836c9091856e2847fe58e2fd5a598",
+      "git_blob_sha": "bf015fb180a957977163797f30782a4695691433",
+      "repository_path": "sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/announcements/Weekly_Assessment_Schedule_Primary6.pdf",
+      "bytes": 141364,
+      "sha256": "3d4bf563d060469b89a99acbac3a1911e994e96d874902d308a1196f0dfd96f3",
+      "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
+      "repository_path": "sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Arabic/Arabic_Primary6_T1.pdf",
+      "bytes": 46419486,
+      "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
+      "git_blob_sha": "6136da630548372e51cd6f7560bc0baaabb10b01",
+      "repository_path": "sources/murad/arabic/Arabic_Primary6_T1.pdf",
+      "status": "verified_existing_release_asset",
+      "release_asset": "murad-arabic-Arabic_Primary6_T1.pdf",
+      "release_url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf"
+    },
+    {
+      "archive_path": "murad/courses/Arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "bytes": 21810058,
+      "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312",
+      "git_blob_sha": "91da766dccb998ed4466cb49dc1cfae4d91f50bf",
+      "repository_path": "sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0001.bin",
+          "bytes": 8388608,
+          "sha256": "9821e61639a2af57e51aeaa0bb090d98e0c6873906465be3381ff54f1b4a606f",
+          "git_blob_sha": "7683ed563ac11935c5a82cf07d8b0c84a9e01c55"
+        },
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0002.bin",
+          "bytes": 8388608,
+          "sha256": "ea884f869b0a358d60e70e290c9de062672ea8ee7119b61e66652f8e8e6d7d82",
+          "git_blob_sha": "0bd141a9e6a1ec6876ea79c5525341e65aecc591"
+        },
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0003.bin",
+          "bytes": 5032842,
+          "sha256": "89ac22280b45de01a6998845438d70e785c9392c483e2a4fe0820809ef22204b",
+          "git_blob_sha": "0dc89670423a225e772de8af7f6d51b6c638daa9"
+        }
+      ]
+    },
+    {
+      "archive_path": "murad/courses/Arabic/تقييمات_الوزارة_لغة_عربية_ترم_1_2027.pdf",
+      "bytes": 12463048,
+      "sha256": "f5be76dd415f691b223062c4d5452b0f949ee75c451180cd734210b2e542cdcb",
+      "git_blob_sha": "7bcb0d9f21f6fd00b06847db02a231a9841cc9a8",
+      "repository_path": "sources/murad/arabic/تقييمات_الوزارة_لغة_عربية_ترم_1_2027.pdf",
+      "status": "verified_existing_release_asset",
+      "release_asset": "murad-arabic-ministry-assessments-term1-2027.pdf",
+      "release_url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-ministry-assessments-term1-2027.pdf"
+    },
+    {
+      "archive_path": "murad/courses/Arabic/مراجعة_الوحدة_الأولى_الصف_السادس_تيرم_أول.pdf",
+      "bytes": 766203,
+      "sha256": "821a98e24215d78f3f6d8d15f5a2514e3542b467cf9e006672dbd6a165161bd9",
+      "git_blob_sha": "64c53e7854b07755ba51ff2710bf77abf7d5f725",
+      "repository_path": "sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Arabic/معدلة_ملزمة_الصف_السادس_ترم_اول.pdf",
+      "bytes": 6713431,
+      "sha256": "d667ff4f8da26252abcc8d79634cd1e3ed2a654e716e0415622aaf43c3e73140",
+      "git_blob_sha": "8086fe9d0b6a5e10346f017ecd0454556f264868",
+      "repository_path": "sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Arabic/وحدة_اولى_مراجعة_دين_الصف_السادس.pdf",
+      "bytes": 1515823,
+      "sha256": "e64627070ea07c6d4fc1f5ba175aac4b671feb4ed3c0c1d6fc5dc230f43a6c6c",
+      "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
+      "repository_path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/ICT_Primary6_Term1_Booklet.docx",
+      "bytes": 13764281,
+      "sha256": "69b80c1fdb07f43aa00bec08a2276887d74346af65cfdbd520123c6c9c274d69",
+      "git_blob_sha": "991b701ef44f48121d8331ae7146fab93e5af9f7",
+      "repository_path": "sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/Revision_Primary6_October.docx",
+      "bytes": 24435,
+      "sha256": "77da89165798f00331afc8dc1a205b631a6c46f1f67717b1860dfdefc4b28e9e",
+      "git_blob_sha": "b730ce3c04e5ffb08386a2171eab7e8f84680373",
+      "repository_path": "sources/murad/ict/revision/2026-10/revision prim 6 october.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/prim6_lesson1.docx",
+      "bytes": 17031,
+      "sha256": "4842d8e477aa1956e49ad4d82d6f72445e017d2465750431d864e93fe7f3779d",
+      "git_blob_sha": "71908e6a7121814113846dcfe372cab6eac27c5f",
+      "repository_path": "sources/murad/ict/handouts/Prim 6 lesson 1.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/prim6_lesson2.docx",
+      "bytes": 1198217,
+      "sha256": "45af870170b9b0b2b7f26537e01dc457d981d7a8f29414004191d0bd57aa62c5",
+      "git_blob_sha": "56e9ae3d6edd72ff82b31dd683d40aa64deb3c1e",
+      "repository_path": "sources/murad/ict/handouts/prim 6 lesson 2.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/week1.docx",
+      "bytes": 57917,
+      "sha256": "5c20b944536eccf20ee099d31f85968a73914c0809b22c1c59adf901a6783fc6",
+      "git_blob_sha": "1427e6e6ec35fb9137066a7ade415cd54ba53d34",
+      "repository_path": "sources/murad/ict/evaluations/week-01.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/week2.docx",
+      "bytes": 60228,
+      "sha256": "00cc3eec51e35ec39f4cc6a0f843e0eac0d35f9d794f17899b5f4f2c3364a83f",
+      "git_blob_sha": "5c85e702a83239e52f1a53585568d51b71b2afaf",
+      "repository_path": "sources/murad/ict/evaluations/week-02.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/week3.docx",
+      "bytes": 61115,
+      "sha256": "040a754e107772822d4b6eaed403742fbb86901a5ed5a864214015230131f8a3",
+      "git_blob_sha": "746f99e138b8405570b724b079aee034d6fa15a1",
+      "repository_path": "sources/murad/ict/evaluations/week-03.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/English_OL/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "bytes": 6291456,
+      "sha256": "1250dfe3c3ea8ac5fb2a343f030198a7de087d81b2d9cdb4b709da426b9678f4",
+      "git_blob_sha": "54a4170d770fc3ef92774632656d05e8e63b1b49",
+      "repository_path": "sources/murad/english/ordinary-level/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/English_OL/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
+      "repository_path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8ad194f45ac580a44d957a0e48ccc5104980794b79e9858fcc9df484ebea85a3",
+          "git_blob_sha": "232671b1d56682dc18fb1de0d3e75e87ffe3da96"
+        },
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0002.bin",
+          "bytes": 3915416,
+          "sha256": "7d1a1471aa8b88a8e3025c21b4a887a8e581a59da6ef7fc23141bf99d499938b",
+          "git_blob_sha": "5158373f2baae68596f1a44972bf0185c355c8f8"
+        }
+      ]
+    },
+    {
+      "archive_path": "murad/courses/English_OL/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
+      "repository_path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41470bb746d3c31566936f2a1cb7d9b1d22cfca492efc9aaf0296923bb2aee46",
+          "git_blob_sha": "359c54ffe2ce881ba5983cf75fd03a973ff0d69f"
+        },
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0002.bin",
+          "bytes": 7568095,
+          "sha256": "3a3c24f3e4d4891031295b04c2970ca008170898946f7ce508ed5f5c02e34861",
+          "git_blob_sha": "1cc24b5146a4b99d3040cc421a55d433682b20a6"
+        }
+      ]
+    },
+    {
+      "archive_path": "murad/courses/Mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "bytes": 2330624,
+      "sha256": "05064ff60d672f4e0255ccc0310386dfa93db546e5eae5a56bb2a3dbd1f720a6",
+      "git_blob_sha": "55e4e570d11c5f3910a5fa7131daf8b49b994f5d",
+      "repository_path": "sources/murad/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/2nd_Week_Assessment_Model_Answers.pdf",
+      "bytes": 99440,
+      "sha256": "c2f10cdfc12b72a6da7e054009894890fa2face1ff1ad48b3ff146713d75553c",
+      "git_blob_sha": "73fb5a5013c82a3fe94c5db0977c3a385d453b48",
+      "repository_path": "sources/murad/science/model-answers/2nd_Week_Assessment_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/4th_Week_Assessment_Model_Answers.pdf",
+      "bytes": 133802,
+      "sha256": "64fedb2d5c2b2fb1e97ebaae07dbc6d0dd84fdbea7404b32b12e9f3476f324d6",
+      "git_blob_sha": "33acba609ace201e8b89fdba3cfd07a5d18af75d",
+      "repository_path": "sources/murad/science/model-answers/4th_Week_Assessment_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "bytes": 88117,
+      "sha256": "b89dda8c9ea972349896dca3e5070536ec58ae0c4b11d2070bb8610fe1532d4c",
+      "git_blob_sha": "080bd911d409580e5089a96c2ec6621149e8a04d",
+      "repository_path": "sources/murad/science/model-answers/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "bytes": 90617,
+      "sha256": "8a248f2d746f51bc39ac57b83dbe7ad770acc38ec2aebe1bd1c36fcbc73f5777",
+      "git_blob_sha": "498b4927c806c940af2670554a1eefd13a7c6cfe",
+      "repository_path": "sources/murad/science/model-answers/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/Chapter1_Homework_Model_Answers.pdf",
+      "bytes": 2929469,
+      "sha256": "43498fd40490de84fb22945475ac3a24fc1435ac7df14834e95b2b40c02245f8",
+      "git_blob_sha": "46e65149c94bfb12c1c78fdafa261f10da2a04b2",
+      "repository_path": "sources/murad/science/model-answers/Chapter1_Homework_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/Chapter2_Homework_Model_Answers.pdf",
+      "bytes": 1422981,
+      "sha256": "8796b36b17d6c92d3b6f7335d37b0a784d128de000ebd7f545a6c1fe4f0fc68d",
+      "git_blob_sha": "e9d6d91ced77b0359a82c660c7e5af2edced19b2",
+      "repository_path": "sources/murad/science/model-answers/Chapter2_Homework_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Science/Monthly_Exam_1_Model_Answers.pdf",
+      "bytes": 216169,
+      "sha256": "a818bf22352d93c0f6ae361ab51e39b064b3f76ab88d1999dbbccffd744ca2a4",
+      "git_blob_sha": "888f33cebbf9a070b379ddacabbd873f44289533",
+      "repository_path": "sources/murad/science/model-answers/Monthly_Exam_1_Model_Answers.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Social_Studies/درس_التحديات_البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
+      "git_blob_sha": "8e45e1970a2212498296329d65c38f0e6e680ece",
+      "repository_path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0001.bin",
+          "bytes": 8388608,
+          "sha256": "44ae8c190d7cca0e93ebaa75b2a14130314700f42fbf01d4f131101cde41112e",
+          "git_blob_sha": "4a1cbbd87cd330a94a2c014374486a72c74425e5"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0002.bin",
+          "bytes": 8388608,
+          "sha256": "5a27a64575e16d37dfbf4c09770fa0541a8b616a943192c8d6fe2e7edd2896d2",
+          "git_blob_sha": "f4fee493d6fff43e6c1631eb822957eef1ca6da1"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0003.bin",
+          "bytes": 1061730,
+          "sha256": "1c31cc4a27116ded905c98d85df8e2b5866c73d213eeccaa9b0d4dffbe53005e",
+          "git_blob_sha": "af057a7d68037092f2ebc579fde745fee05fc511"
+        }
+      ]
+    },
+    {
+      "archive_path": "murad/courses/Social_Studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
+      "git_blob_sha": "6065d1abb51496cfb02490e106a37bc92a58d3ed",
+      "repository_path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0001.bin",
+          "bytes": 8388608,
+          "sha256": "91c646bd7334f7ab6a031c1884a5a82ac94d7b82359c4c26499c7121402d4178",
+          "git_blob_sha": "b55a6ee9e89bca7efb07e06eca940ac5e8b59663"
+        },
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0002.bin",
+          "bytes": 5579429,
+          "sha256": "c9c1f0639093cd53ba09320f47b7f5890349630fe7b2b59284205c518d10dfa6",
+          "git_blob_sha": "51e0afddc15806e77a25a33b198ae706aeb5195a"
+        }
+      ]
+    },
+    {
+      "archive_path": "shared_announcements/Back_to_School_Guide_2026-27.pdf",
+      "bytes": 13153407,
+      "sha256": "97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df",
+      "git_blob_sha": "037676487157c566efa2456a3bf7a03d0d0c2d90",
+      "repository_path": "sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41156a8b040df29002dbf5e65520c167506967ce6dfe12d621e8b0fb3335a2cb",
+          "git_blob_sha": "efd9f5237ac8c1f4bef2b4c8c0f76a7b40f3d522"
+        },
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0002.bin",
+          "bytes": 4764799,
+          "sha256": "c6a4e44b250877748e4de9070eae0257e6b9e4a78b147773a3c891ec133b2e77",
+          "git_blob_sha": "322a45f307424156f7124ea1f449882b85332e65"
+        }
+      ]
+    },
+    {
+      "archive_path": "shared_announcements/Entry_Schedule_2026-09-10.jpg",
+      "bytes": 221954,
+      "sha256": "8a4ded72f5d2a34be98fa995952b11f1478258b947ae938b80a169ceac1722b3",
+      "git_blob_sha": "5772104d538206c1ff27089bf4c4250c7afd86e7",
+      "repository_path": "sources/shared/school/announcements/Entry_Schedule_2026-09-10.jpg",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "shared_announcements/General_Assembly_2026-10-07.jpeg",
+      "bytes": 135102,
+      "sha256": "5b80ea7cccd0a734d8cb25b0889da35b86f045162fca8fb3f07a992ca6d950f0",
+      "git_blob_sha": "d55b7371ed158154d6910f56fc455c89e01b4cef",
+      "repository_path": "sources/shared/school/announcements/2026-10-07-general-assembly.jpeg",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "shared_announcements/Letter_Bus_National_2026-27.pdf",
+      "bytes": 187533,
+      "sha256": "5bfae9c1fabf47352739060a57b61104cbe58891dfc0c322eb280630d8df6bfb",
+      "git_blob_sha": "47383da5ded5a049d1162d59937d54da7125cea5",
+      "repository_path": "sources/shared/school/announcements/Letter_Bus_National_2026-27.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "shared_announcements/جواب_القسم_المصري_2026-2027.pdf",
+      "bytes": 3504388,
+      "sha256": "e0c5abf572046793ea23ee87d5f78349cb4fee6f7a6e2a7f374d483e6dadde98",
+      "git_blob_sha": "369e652e8d5e9bcbef4986679a98571fd318c953",
+      "repository_path": "sources/shared/school/announcements/جواب_القسم_المصري_2026-2027.pdf",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "shared_announcements/نشرة_القسم_المصري_2026-2027.pdf",
+      "bytes": 3483350,
+      "sha256": "08669b726352edc93636b6a92febf70b18dae965c1a8c68633b3d61026929417",
+      "git_blob_sha": "34a8a16c740c29c39396bf1a41c8018b6663296e",
+      "repository_path": "sources/shared/school/announcements/نشرة_القسم_المصري_2026-2027.pdf",
+      "status": "archived_verified_repository_blob"
+    }
+  ]
+}

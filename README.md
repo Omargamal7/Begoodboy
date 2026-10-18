@@ -14,6 +14,6 @@ Open [index.html](index.html) from a downloaded copy of the repository to use th
 
 The lesson menu contains 48 shared-engine lessons, including all 22 numbered lessons from Murad’s Science binder. Jimmy’s separate Climate Quest pack uses the supplied school assessment pages.
 
-The [18 October Toddle sweep](sync/2026-10-18/README.md) checked all 25 course plans, both assignment dashboards, school announcements and messaging. Attachment gaps remain explicit rather than being counted from unverified download clicks.
+The [18 October Toddle sweep](sync/2026-10-18/README.md) checked all 25 course plans, both assignment dashboards, school announcements and messaging. The subsequent [Cloud Browser recovery](sync/2026-10-18-cloud/README.md) closes its 23 named attachment gaps and preserves 30 additional originals. The [combined source catalogue](sync/catalog.json) records storage and provenance; full structural Toddle coverage is still being verified.
 
 School originals are preserved unchanged. Source maps record unsupported or disputed answers; those questions must remain unscored or parent-checked. See the dated revision reports for answer-key caveats.

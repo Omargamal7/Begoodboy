@@ -9,3 +9,5 @@ Original files are organized by child, then subject. These are school documents 
 - [17 October downloaded-file index](../sync/2026-10-17/downloads.md)
 
 Use the original edition and wording when checking a source. Answer-key mistakes are documented separately; original bytes are never silently corrected. Large materials already attached to the [school-term1-2026 release](https://github.com/Omargamal7/Begoodboy/releases/tag/school-term1-2026) remain there.
+
+Additional originals from the [Cloud Browser recovery](../sync/2026-10-18-cloud/README.md) are included in the [combined catalogue](../sync/catalog.json). Seven larger originals use verified binary parts. Run `python3 tools/source/restore-originals.py` from the repository root to reconstruct and checksum them; the earlier release assets remain unchanged.

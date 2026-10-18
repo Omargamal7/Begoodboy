@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "resolved_count": 23,
+  "files": [
+    {
+      "course": "Murad/Arabic",
+      "toddle_title": "الاسم النكرة والاسم المعرفة 6 ب",
+      "repository_path": "sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "bytes": 21810058,
+      "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312",
+      "git_blob_sha": "91da766dccb998ed4466cb49dc1cfae4d91f50bf",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Murad/English OL",
+      "toddle_title": "Gr. 6 O Level Book Term 1",
+      "repository_path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Murad/English OL",
+      "toddle_title": "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3",
+      "repository_path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Murad/Mathematics",
+      "toddle_title": "Prim 6 homework Binder 1st term 2026-2027",
+      "repository_path": "sources/murad/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "bytes": 2330624,
+      "sha256": "05064ff60d672f4e0255ccc0310386dfa93db546e5eae5a56bb2a3dbd1f720a6",
+      "git_blob_sha": "55e4e570d11c5f3910a5fa7131daf8b49b994f5d",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "Monthly_Exam_1_Model_Answers_",
+      "repository_path": "sources/murad/science/model-answers/Monthly_Exam_1_Model_Answers.pdf",
+      "bytes": 216169,
+      "sha256": "a818bf22352d93c0f6ae361ab51e39b064b3f76ab88d1999dbbccffd744ca2a4",
+      "git_blob_sha": "888f33cebbf9a070b379ddacabbd873f44289533",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "4th week assessment model answers",
+      "repository_path": "sources/murad/science/model-answers/4th_Week_Assessment_Model_Answers.pdf",
+      "bytes": 133802,
+      "sha256": "64fedb2d5c2b2fb1e97ebaae07dbc6d0dd84fdbea7404b32b12e9f3476f324d6",
+      "git_blob_sha": "33acba609ace201e8b89fdba3cfd07a5d18af75d",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "Assessment book homework p. 19 model answers",
+      "repository_path": "sources/murad/science/model-answers/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "bytes": 88117,
+      "sha256": "b89dda8c9ea972349896dca3e5070536ec58ae0c4b11d2070bb8610fe1532d4c",
+      "git_blob_sha": "080bd911d409580e5089a96c2ec6621149e8a04d",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "Assessment book homework page 9 model answers",
+      "repository_path": "sources/murad/science/model-answers/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "bytes": 90617,
+      "sha256": "8a248f2d746f51bc39ac57b83dbe7ad770acc38ec2aebe1bd1c36fcbc73f5777",
+      "git_blob_sha": "498b4927c806c940af2670554a1eefd13a7c6cfe",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "2nd week assessment model answers",
+      "repository_path": "sources/murad/science/model-answers/2nd_Week_Assessment_Model_Answers.pdf",
+      "bytes": 99440,
+      "sha256": "c2f10cdfc12b72a6da7e054009894890fa2face1ff1ad48b3ff146713d75553c",
+      "git_blob_sha": "73fb5a5013c82a3fe94c5db0977c3a385d453b48",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "chapter 2 Homework Model Answers",
+      "repository_path": "sources/murad/science/model-answers/Chapter2_Homework_Model_Answers.pdf",
+      "bytes": 1422981,
+      "sha256": "8796b36b17d6c92d3b6f7335d37b0a784d128de000ebd7f545a6c1fe4f0fc68d",
+      "git_blob_sha": "e9d6d91ced77b0359a82c660c7e5af2edced19b2",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Science",
+      "toddle_title": "chapter 1 Homework Model Answers",
+      "repository_path": "sources/murad/science/model-answers/Chapter1_Homework_Model_Answers.pdf",
+      "bytes": 2929469,
+      "sha256": "43498fd40490de84fb22945475ac3a24fc1435ac7df14834e95b2b40c02245f8",
+      "git_blob_sha": "46e65149c94bfb12c1c78fdafa261f10da2a04b2",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Murad/Social Studies",
+      "toddle_title": "وطننا العربي المناخ و النبات الطبيعي",
+      "repository_path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
+      "git_blob_sha": "6065d1abb51496cfb02490e106a37bc92a58d3ed",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Murad/Social Studies",
+      "toddle_title": "درس التحديات البيئية",
+      "repository_path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
+      "git_blob_sha": "8e45e1970a2212498296329d65c38f0e6e680ece",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Gamal/Arabic",
+      "toddle_title": "حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027",
+      "repository_path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "git_blob_sha": "054c38b97d556da74dadcd1641e6c9c5998a018c",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Fiction Organizer",
+      "repository_path": "sources/gamal/english/Fiction_Organizer.png",
+      "bytes": 1952526,
+      "sha256": "c629e41a36aba453a86f5e165862a15e6bc8f7fd48c2897697937494fc1a9d47",
+      "git_blob_sha": "0879f6b84a3fefd905ec7ed3105f73feda14edf5",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Gr. 5 Grammar and Sentence Structure Booklet 2026-2027 - Model Answers- Up to p. 12",
+      "repository_path": "sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf",
+      "bytes": 4271269,
+      "sha256": "ea8b79594736f0da091c6376e7a79245384b69bbc535d85279b47c1306e304e9",
+      "git_blob_sha": "9f336f19b153819f965fb8e2f9426890e7e525e3",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Vocabulary for Writing- Prompt 1 Words",
+      "repository_path": "sources/gamal/english/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "bytes": 387472,
+      "sha256": "d62f7ce546924da590d0ab9435b1050fa279cf76ad6e65fcde92c8544fe9fd18",
+      "git_blob_sha": "c36a7455b0ea7fa503b34a27fce2b746c6c3b0ef",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Gr. 5 Weekly Outline Term 1 Week 4",
+      "repository_path": "sources/gamal/english/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "bytes": 97334,
+      "sha256": "60f1359513584c6ce28cfc90e75e02f02c724e64a5b1de6d5768c7cd14db8a99",
+      "git_blob_sha": "ccdf62fa82d2ce19709760196edeb79faf123150",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Gr. 5 Weekly Outline Term 1 Week 3",
+      "repository_path": "sources/gamal/english/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "bytes": 99243,
+      "sha256": "8fe92adacb493e9ac46f24c3c035381c8f796c901aa21d85b3f0ccfdf862c0f6",
+      "git_blob_sha": "897a45d9799f5da328451fe1a9f4aef4a3306ec7",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Living Better Thanks to Inventions",
+      "repository_path": "sources/gamal/english/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "bytes": 127736,
+      "sha256": "3ac28f1e49a88db02afffbfb865617dda65cf284edb9efd1ee042142a048ee0c",
+      "git_blob_sha": "98152ffa554e3180dc895402ea65d275f0f42482",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Gr. 5 Home Dictation 2 - Regular Speed",
+      "repository_path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "bytes": 268909,
+      "sha256": "dd66296dce7503fec2d5571e88e3d5fb588e0a20c75f99c13b092ac425cb6132",
+      "git_blob_sha": "b26bea2a7beaee0d8f5ea075849bcb7d702820fa",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Gr. 5 Home Dictation 2- Regular Speed",
+      "repository_path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "bytes": 5964976,
+      "sha256": "cfe7ef7afb04d157008a4661a9c09402fb1660e4867f218f563fa5844b4b932d",
+      "git_blob_sha": "6bcc651321175964ce2a1a469b89b9c8773e71a7",
+      "storage": "archived_verified_repository_blob"
+    },
+    {
+      "course": "Gamal/English AL",
+      "toddle_title": "Gr. 5 Home Dictation 2",
+      "repository_path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "bytes": 108610,
+      "sha256": "3b854e3076d91cb135ddb9680f03b0d3d9182ff278793dcc69d2fcca5dc73d97",
+      "git_blob_sha": "498304ae0c33eb8c87595c1ec25d94f3fba25dfc",
+      "storage": "archived_verified_repository_blob"
+    }
+  ]
+}

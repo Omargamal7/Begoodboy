@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "parts": [
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0ba3c325c9f4b59b77d8eafe2d2c5ead2e1c199d646095e0987d22528820e370",
+          "git_blob_sha": "8ef4109cab6d7b6fdf219466db11fdd0136e7d65"
+        },
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0002.bin",
+          "bytes": 3358756,
+          "sha256": "6480bc130b1a2447997e5d20bebfce10ec22582a41bb3c85e48baa8d074e18f4",
+          "git_blob_sha": "05088a2297cb1a9ad02a20908a6a4a93df9d4c49"
+        }
+      ]
+    },
+    {
+      "path": "sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "bytes": 21810058,
+      "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312",
+      "parts": [
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0001.bin",
+          "bytes": 8388608,
+          "sha256": "9821e61639a2af57e51aeaa0bb090d98e0c6873906465be3381ff54f1b4a606f",
+          "git_blob_sha": "7683ed563ac11935c5a82cf07d8b0c84a9e01c55"
+        },
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0002.bin",
+          "bytes": 8388608,
+          "sha256": "ea884f869b0a358d60e70e290c9de062672ea8ee7119b61e66652f8e8e6d7d82",
+          "git_blob_sha": "0bd141a9e6a1ec6876ea79c5525341e65aecc591"
+        },
+        {
+          "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0003.bin",
+          "bytes": 5032842,
+          "sha256": "89ac22280b45de01a6998845438d70e785c9392c483e2a4fe0820809ef22204b",
+          "git_blob_sha": "0dc89670423a225e772de8af7f6d51b6c638daa9"
+        }
+      ]
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "parts": [
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8ad194f45ac580a44d957a0e48ccc5104980794b79e9858fcc9df484ebea85a3",
+          "git_blob_sha": "232671b1d56682dc18fb1de0d3e75e87ffe3da96"
+        },
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0002.bin",
+          "bytes": 3915416,
+          "sha256": "7d1a1471aa8b88a8e3025c21b4a887a8e581a59da6ef7fc23141bf99d499938b",
+          "git_blob_sha": "5158373f2baae68596f1a44972bf0185c355c8f8"
+        }
+      ]
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "parts": [
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41470bb746d3c31566936f2a1cb7d9b1d22cfca492efc9aaf0296923bb2aee46",
+          "git_blob_sha": "359c54ffe2ce881ba5983cf75fd03a973ff0d69f"
+        },
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0002.bin",
+          "bytes": 7568095,
+          "sha256": "3a3c24f3e4d4891031295b04c2970ca008170898946f7ce508ed5f5c02e34861",
+          "git_blob_sha": "1cc24b5146a4b99d3040cc421a55d433682b20a6"
+        }
+      ]
+    },
+    {
+      "path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
+      "parts": [
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0001.bin",
+          "bytes": 8388608,
+          "sha256": "44ae8c190d7cca0e93ebaa75b2a14130314700f42fbf01d4f131101cde41112e",
+          "git_blob_sha": "4a1cbbd87cd330a94a2c014374486a72c74425e5"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0002.bin",
+          "bytes": 8388608,
+          "sha256": "5a27a64575e16d37dfbf4c09770fa0541a8b616a943192c8d6fe2e7edd2896d2",
+          "git_blob_sha": "f4fee493d6fff43e6c1631eb822957eef1ca6da1"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0003.bin",
+          "bytes": 1061730,
+          "sha256": "1c31cc4a27116ded905c98d85df8e2b5866c73d213eeccaa9b0d4dffbe53005e",
+          "git_blob_sha": "af057a7d68037092f2ebc579fde745fee05fc511"
+        }
+      ]
+    },
+    {
+      "path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
+      "parts": [
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0001.bin",
+          "bytes": 8388608,
+          "sha256": "91c646bd7334f7ab6a031c1884a5a82ac94d7b82359c4c26499c7121402d4178",
+          "git_blob_sha": "b55a6ee9e89bca7efb07e06eca940ac5e8b59663"
+        },
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0002.bin",
+          "bytes": 5579429,
+          "sha256": "c9c1f0639093cd53ba09320f47b7f5890349630fe7b2b59284205c518d10dfa6",
+          "git_blob_sha": "51e0afddc15806e77a25a33b198ae706aeb5195a"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf",
+      "bytes": 13153407,
+      "sha256": "97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df",
+      "parts": [
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41156a8b040df29002dbf5e65520c167506967ce6dfe12d621e8b0fb3335a2cb",
+          "git_blob_sha": "efd9f5237ac8c1f4bef2b4c8c0f76a7b40f3d522"
+        },
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0002.bin",
+          "bytes": 4764799,
+          "sha256": "c6a4e44b250877748e4de9070eae0257e6b9e4a78b147773a3c891ec133b2e77",
+          "git_blob_sha": "322a45f307424156f7124ea1f449882b85332e65"
+        }
+      ]
+    }
+  ]
+}
