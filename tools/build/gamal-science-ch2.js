@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('fs'),path=require('path');const root=path.resolve(__dirname,'../..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const script=s=>'<script>\n'+s.replace(/<\/script/gi,'<\\/script')+'\n</script>';
+const media=file=>'data:'+(file.endsWith('.svg')?'image/svg+xml':'image/jpeg')+';base64,'+fs.readFileSync(path.join(root,file.startsWith('source-')?'sources/gamal/science/assessments/chapter-02':'app/assets/gamal/science/chapter-02',file)).toString('base64');
+const lesson=read('app/lessons/gamal/science/chapter-02-assessment.js');
+const assets=Object.fromEntries([...fs.readdirSync(path.join(root,'app/assets/gamal/science/chapter-02')),...fs.readdirSync(path.join(root,'sources/gamal/science/assessments/chapter-02'))].filter(x=>/\.(svg|jpg)$/.test(x)).map(x=>[x,media(x)]));
+const embed='(function(){var L=window.LESSONS["jimmy-science-t2-l1"],A='+JSON.stringify(assets)+';L.facts.forEach(function(f){f.figure.src=A[f.figure.src.split("/").pop()];});L.references.forEach(function(f){f.src=A[f.src.split("/").pop()];});})();';
+const html='<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Jimmy · Science · Chapter 2 assessment revision</title><style>'+read('app/engine/sheet.css')+'</style></head><body><div id="app"></div>'+script(read('app/engine/sheet.js'))+script(read('app/engine/common.js'))+script(lesson)+script(embed)+script('SheetEngine.boot(document.getElementById("app"));if(!location.hash)location.hash="#jimmy-science-t2-l1";')+'</body></html>\n';
+fs.mkdirSync(path.join(root,'packs/gamal/science'),{recursive:true});fs.writeFileSync(path.join(root,'packs/gamal/science/chapter-02-assessment.html'),html);
+console.log('Built Jimmy Science Chapter 2 · '+Buffer.byteLength(html)+' bytes · six diagrams and five original screenshots embedded');
