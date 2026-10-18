@@ -12,7 +12,7 @@
       "git_blob_sha": "459a60b4d880f800356be0ff668cdb4a91bb12a8",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/gamal/social-studies/اجابة التقيمات.pdf",
+      "repository_path": "gamal/social-studies/اجابة التقيمات.pdf",
       "archive_status": "new_original"
     },
     {
@@ -24,7 +24,7 @@
       "git_blob_sha": "b9a5c36bc097eb763ef6dab4a033ed2c56570ba6",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/gamal/ict/week3.docx",
+      "repository_path": "gamal/computer/october-2026/week3.docx",
       "archive_status": "new_original"
     },
     {
@@ -36,7 +36,7 @@
       "git_blob_sha": "edd2e6473a7dc2e1cce4aae41473594b5ed6efb2",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/gamal/ict/week2.docx",
+      "repository_path": "gamal/computer/october-2026/week2.docx",
       "archive_status": "new_original"
     },
     {
@@ -48,7 +48,7 @@
       "git_blob_sha": "c9f2808fee207551c1474e5b5d8a8da7839b9982",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/gamal/ict/week 1.docx",
+      "repository_path": "gamal/computer/october-2026/week 1.docx",
       "archive_status": "new_original"
     },
     {
@@ -60,7 +60,7 @@
       "git_blob_sha": "dd75a75a9f224926a5db04fbfbf0ea7a00db8909",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/gamal/ict/revsion prim5 october.doc",
+      "repository_path": "gamal/computer/october-2026/revsion prim5 october.doc",
       "archive_status": "new_original"
     },
     {
@@ -72,7 +72,7 @@
       "git_blob_sha": "0b81be2df496a76d44b645478174b2f8c5b6e8ce",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "\"murad/social-studies/week-3/\\330\\247\\330\\267\\331\\204\\330\\263 \\330\\247\\331\\204\\330\\256\\330\\261\\330\\247\\330\\246\\330\\267 \\330\\247\\331\\204\\330\\257\\330\\261\\330\\263 \\330\\247\\331\\204\\330\\253\\330\\247\\331\\206\\331\\212.pdf\"",
+      "repository_path": "murad/social-studies/week-3/اطلس الخرائط الدرس الثاني.pdf",
       "archive_status": "already_present_or_duplicate"
     },
     {
@@ -84,7 +84,7 @@
       "git_blob_sha": "4ba03e1475cb922a3a4ddb725f013c41472be5f8",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "\"murad/social-studies/atlas/\\330\\247\\330\\267\\331\\204\\330\\263 \\330\\247\\331\\204\\330\\256\\330\\261\\330\\247\\330\\246\\330\\267 \\330\\247\\330\\247\\331\\204\\330\\257\\330\\261\\330\\263 \\330\\247\\331\\204\\330\\247\\331\\210\\331\\204.pdf\"",
+      "repository_path": "murad/social-studies/atlas/اطلس الخرائط االدرس الاول.pdf",
       "archive_status": "already_present_or_duplicate"
     },
     {
@@ -96,7 +96,7 @@
       "git_blob_sha": "ea49c5ad55b90dab47b95a872175891da06ec4d0",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "\"murad/social-studies/week-2/\\330\\247\\331\\204\\330\\252\\331\\202\\331\\212\\331\\212\\331\\205 \\330\\247\\331\\204\\330\\247\\331\\210\\331\\204 \\330\\247\\331\\204\\331\\210\\330\\267\\331\\206 \\330\\247\\331\\204\\330\\271\\330\\261\\330\\250\\331\\212 \\330\\247\\331\\204\\331\\205\\331\\210\\331\\202\\330\\271 \\331\\210 \\330\\247\\331\\204\\330\\247\\331\\207\\331\\205\\331\\212\\330\\251.pdf\"",
+      "repository_path": "murad/social-studies/week-2/التقييم الاول الوطن العربي الموقع و الاهمية.pdf",
       "archive_status": "already_present_or_duplicate"
     },
     {
@@ -108,7 +108,7 @@
       "git_blob_sha": "f4cd358a075bac4eef83744683ebab38ff6580db",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/science/investigating the effect of saliva on starch.pdf",
+      "repository_path": "murad/science/activities/investigating the effect of saliva on starch.pdf",
       "archive_status": "new_original"
     },
     {
@@ -120,7 +120,7 @@
       "git_blob_sha": "0ebd7d72b4b2e423e08cdff331a1fb17a86783f3",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/science/chapter 3 homework model answers.pdf",
+      "repository_path": "murad/science/model-answers/chapter 3 homework model answers.pdf",
       "archive_status": "new_original"
     },
     {
@@ -132,7 +132,7 @@
       "git_blob_sha": "40328a055b5c1890a9cb1a0c2337bc121d99e1f1",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/science/model answers of the 3rd weekly assessment.pdf",
+      "repository_path": "murad/science/model-answers/model answers of the 3rd weekly assessment.pdf",
       "archive_status": "new_original"
     },
     {
@@ -144,7 +144,7 @@
       "git_blob_sha": "92fc7cc5cd53ae79c418f845e67581b4c5381e88",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/science/Assessment book homework page 14 & 15.pdf",
+      "repository_path": "murad/science/model-answers/Assessment book homework page 14 & 15.pdf",
       "archive_status": "new_original"
     },
     {
@@ -156,7 +156,7 @@
       "git_blob_sha": "20acc598d823019fb231d4561100bd41e71a8ba5",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/mathematics/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "repository_path": "murad/math/binders/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
       "archive_status": "new_original"
     },
     {
@@ -168,7 +168,7 @@
       "git_blob_sha": "f2db6df986691c0aa8e14c3e49664adefcf0960a",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/mathematics/Model Answer - October Revision Sheet.pdf",
+      "repository_path": "murad/math/october-2026/Model Answer - October Revision Sheet.pdf",
       "archive_status": "new_original"
     },
     {
@@ -180,7 +180,7 @@
       "git_blob_sha": "fd40c87ecd671d107dcebd150c9a1f12dcd93711",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/mathematics/October Revision Sheet.pdf",
+      "repository_path": "murad/math/october-2026/October Revision Sheet.pdf",
       "archive_status": "new_original"
     },
     {
@@ -192,7 +192,7 @@
       "git_blob_sha": "7d2094fcf1c6afdb42c8445cc33309acdfcb1a47",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/english/Gr. 6 Assessment Book Term 1.pdf",
+      "repository_path": "murad/english/booklets/Gr. 6 Assessment Book Term 1.pdf",
       "archive_status": "new_original"
     },
     {
@@ -252,7 +252,7 @@
       "git_blob_sha": "fcb6cb71fb7898db8481b5b299fcba459ee66166",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/english/Gr. 6 Home Dictation 2.pdf",
+      "repository_path": "murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2.pdf",
       "archive_status": "new_original"
     },
     {
@@ -264,7 +264,7 @@
       "git_blob_sha": "a0c6888ba579dad0645f71c7edcb569d19836aa4",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/english/Gr. 6 Home Dictation 2- Slow Speed.m4a",
+      "repository_path": "murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Slow Speed.m4a",
       "archive_status": "new_original"
     },
     {
@@ -276,7 +276,7 @@
       "git_blob_sha": "c4cf2e2738a281e72f4df1feeade8b343c74397b",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/english/Gr. 6 Home Dictation 2- Normal Speed.m4a",
+      "repository_path": "murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Normal Speed.m4a",
       "archive_status": "new_original"
     },
     {
@@ -348,7 +348,7 @@
       "git_blob_sha": "15d911fbd65a93734660cabfe160011795c9ff04",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/english/Gr. 6 Weekly Outline Term 1 Week 3.pdf",
+      "repository_path": "murad/english/weekly/week-3/Gr. 6 Weekly Outline Term 1 Week 3.pdf",
       "archive_status": "new_original"
     },
     {
@@ -360,7 +360,7 @@
       "git_blob_sha": "315995b04ae70cb92cea7b63d1e3e1d171eab92f",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/english/Gr. 6 Weekly Outline Term 1 Week 4.pdf",
+      "repository_path": "murad/english/weekly/week-4/Gr. 6 Weekly Outline Term 1 Week 4.pdf",
       "archive_status": "new_original"
     },
     {
@@ -576,7 +576,7 @@
       "git_blob_sha": "746f99e138b8405570b724b079aee034d6fa15a1",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/ict/week3.docx",
+      "repository_path": "murad/computer/october-2026/week3.docx",
       "archive_status": "new_original"
     },
     {
@@ -588,7 +588,7 @@
       "git_blob_sha": "5c85e702a83239e52f1a53585568d51b71b2afaf",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/ict/week2.docx",
+      "repository_path": "murad/computer/october-2026/week2.docx",
       "archive_status": "new_original"
     },
     {
@@ -600,7 +600,7 @@
       "git_blob_sha": "1427e6e6ec35fb9137066a7ade415cd54ba53d34",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/ict/week1.docx",
+      "repository_path": "murad/computer/october-2026/week1.docx",
       "archive_status": "new_original"
     },
     {
@@ -612,7 +612,7 @@
       "git_blob_sha": "b730ce3c04e5ffb08386a2171eab7e8f84680373",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/ict/revision prim 6 october.docx",
+      "repository_path": "murad/computer/october-2026/revision prim 6 october.docx",
       "archive_status": "new_original"
     },
     {
@@ -624,7 +624,7 @@
       "git_blob_sha": "56fb0231d228e6eab31b099a67e5ce3724287dcf",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/murad/religion/Islamic_Education_Primary6_T1.pdf",
+      "repository_path": "murad/religion/Islamic_Education_Primary6_T1.pdf",
       "archive_status": "new_original"
     },
     {
@@ -636,7 +636,7 @@
       "git_blob_sha": "8086fe9d0b6a5e10346f017ecd0454556f264868",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "\"murad/arabic/\\331\\205\\330\\271\\330\\257\\331\\204\\330\\251 \\331\\205\\331\\204\\330\\262\\331\\205\\330\\251 \\330\\247\\331\\204\\330\\265\\331\\201 \\330\\247\\331\\204\\330\\263\\330\\247\\330\\257\\330\\263 \\330\\252\\330\\261\\331\\205 \\330\\247\\331\\210\\331\\204.pdf\"",
+      "repository_path": "murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf",
       "archive_status": "already_present_or_duplicate"
     },
     {
@@ -648,7 +648,7 @@
       "git_blob_sha": "80d468cef32f12394efff159d7183602bd408140",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "\"gamal/arabic/\\331\\205\\331\\204\\330\\262\\331\\205\\330\\251 \\330\\247\\331\\204\\330\\265\\331\\201 \\330\\247\\331\\204\\330\\256\\330\\247\\331\\205\\330\\263 \\330\\247\\331\\204\\330\\247\\330\\250\\330\\252\\330\\257\\330\\247\\330\\246\\331\\212 \\330\\252\\330\\261\\331\\205 \\330\\243\\331\\210\\331\\204 \\331\\203\\330\\247\\331\\205\\331\\204\\330\\251 2027_260627_190514.pdf\"",
+      "repository_path": "gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf",
       "archive_status": "already_present_or_duplicate"
     },
     {
@@ -660,8 +660,11 @@
       "git_blob_sha": "64c53e7854b07755ba51ff2710bf77abf7d5f725",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Murad/Arabic_Unit1_Revision_Grade6.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "murad/arabic/revision-october-2026/Arabic_Unit1_Revision_Grade6.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+      "pdf_pages": 14,
+      "original_filename": "مراجعة الوحدة الأولى الصف السادس تيرم أول.pdf"
     },
     {
       "original_name": "وحدة اولى مراجعة دين الصف السادس (2).pdf",
@@ -672,8 +675,11 @@
       "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Murad/Religion_Unit1_Revision_Grade6.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "murad/religion/revision-october-2026/Religion_Unit1_Revision_Grade6.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+      "pdf_pages": 6,
+      "original_filename": "وحدة اولى مراجعة دين الصف السادس (2).pdf"
     },
     {
       "original_name": "إجابات تقديم المفعول به على الفاعل-.pdf",
@@ -684,8 +690,11 @@
       "git_blob_sha": "4950411eb7942d32151fd7cb910ef19a8ba752f0",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Arabic_Object_Before_Subject_Answers.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Object_Before_Subject_Answers.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "إجابات تقديم المفعول به على الفاعل-.pdf"
     },
     {
       "original_name": "تقديم المفعول به على الفاعل.pdf",
@@ -696,8 +705,11 @@
       "git_blob_sha": "5be3eca8c2173a44761fd1f00755d09fefe62960",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Arabic_Object_Before_Subject_Worksheet.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Object_Before_Subject_Worksheet.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "تقديم المفعول به على الفاعل.pdf"
     },
     {
       "original_name": "إعراب الفاعل والمفعول به المثنى.pdf",
@@ -708,8 +720,11 @@
       "git_blob_sha": "5437406745a1193dcb35a65447f2340297277c16",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Arabic_Dual_Subject_Object_Worksheet.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Dual_Subject_Object_Worksheet.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "إعراب الفاعل والمفعول به المثنى.pdf"
     },
     {
       "original_name": "إجابات إعراب الفاعل والمفعول به المثنى.pdf",
@@ -720,8 +735,11 @@
       "git_blob_sha": "4052ea1a6ae08031399c976e732e60a9138f5e37",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Arabic_Dual_Subject_Object_Answers.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Dual_Subject_Object_Answers.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "إجابات إعراب الفاعل والمفعول به المثنى.pdf"
     },
     {
       "original_name": "مراجعة الوحدة الأولى الصف الخامس تيرم أول.pdf",
@@ -732,8 +750,11 @@
       "git_blob_sha": "1a8182c4403c7c1010354d590650b22567627a51",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Arabic_Unit1_Revision_Grade5.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Unit1_Revision_Grade5.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 24,
+      "original_filename": "مراجعة الوحدة الأولى الصف الخامس تيرم أول.pdf"
     },
     {
       "original_name": "دين صف خامس مراجعة الوحدة الأوبى (2).pdf",
@@ -744,8 +765,11 @@
       "git_blob_sha": "13a80ab194e7518458fd34fc3f60d7999599c37d",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Religion_Unit1_Revision_Grade5.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/religion/revision-october-2026/Religion_Unit1_Revision_Grade5.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 5,
+      "original_filename": "دين صف خامس مراجعة الوحدة الأوبى (2).pdf"
     },
     {
       "original_name": "WhatsApp Image 2026-10-07 at 10.54.39.jpeg",
@@ -756,7 +780,7 @@
       "git_blob_sha": "d55b7371ed158154d6910f56fc455c89e01b4cef",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/downloads/shared/school-notices/WhatsApp Image 2026-10-07 at 10.54.39.jpeg",
+      "repository_path": "school/announcements/2026-10-07-general-assembly.jpeg",
       "archive_status": "new_original"
     },
     {
@@ -792,8 +816,11 @@
       "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Murad/Weekly_Assessments_Primary6_Term1_2026.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/432553667749520243",
+      "pdf_pages": 1,
+      "original_filename": "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6"
     },
     {
       "original_name": "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6.pdf",
@@ -804,8 +831,11 @@
       "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Murad/Weekly_Assessments_Primary6_Term1_2026.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/432553667749520243",
+      "pdf_pages": 1,
+      "original_filename": "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6"
     },
     {
       "original_name": "Assessment Exam Schedule 1st term 2026-2027 Pr 5 (1).pdf",
@@ -816,8 +846,11 @@
       "git_blob_sha": "bb055cabe5555ce293513410072b0554ddce107a",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277747372268706/circulars/436379155479705564",
+      "pdf_pages": 1,
+      "original_filename": "Assessment Exam Schedule 1st term 2026-2027 Pr 5.pdf"
     },
     {
       "original_name": "Primary 6 Monthly Tests October 2026.pdf",
@@ -828,8 +861,11 @@
       "git_blob_sha": "bf015fb180a957977163797f30782a4695691433",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Murad/Primary6_Monthly_Tests_October_2026.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870350743672537",
+      "pdf_pages": 1,
+      "original_filename": "Primary 6 Monthly Tests October 2026.pdf"
     },
     {
       "original_name": "Primary 5 Monthly Tests October 2026 (1).pdf",
@@ -840,8 +876,11 @@
       "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Primary5_Monthly_Tests_October_2026.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870955319039708",
+      "pdf_pages": 1,
+      "original_filename": "Primary 5 Monthly Tests October 2026.pdf"
     },
     {
       "original_name": "Primary 5 Monthly Tests October 2026.pdf",
@@ -852,8 +891,11 @@
       "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "toddle-sync/2026-10-17/Gamal/Primary5_Monthly_Tests_October_2026.pdf",
-      "archive_status": "already_present_or_duplicate"
+      "repository_path": "gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870955319039708",
+      "pdf_pages": 1,
+      "original_filename": "Primary 5 Monthly Tests October 2026.pdf"
     }
   ]
 }

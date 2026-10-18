@@ -20,7 +20,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870955319039708",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf"
     },
     {
       "child": "Gamal",
@@ -35,7 +36,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277747372268706/circulars/436379155479705564",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf"
     },
     {
       "child": "Gamal",
@@ -50,7 +52,8 @@
       "pdf_pages": 5,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/religion/revision-october-2026/Religion_Unit1_Revision_Grade5.pdf"
     },
     {
       "child": "Gamal",
@@ -65,7 +68,8 @@
       "pdf_pages": 24,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Unit1_Revision_Grade5.pdf"
     },
     {
       "child": "Gamal",
@@ -80,7 +84,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Dual_Subject_Object_Answers.pdf"
     },
     {
       "child": "Gamal",
@@ -95,7 +100,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Dual_Subject_Object_Worksheet.pdf"
     },
     {
       "child": "Gamal",
@@ -110,7 +116,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Object_Before_Subject_Answers.pdf"
     },
     {
       "child": "Gamal",
@@ -125,7 +132,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "gamal/arabic/revision-october-2026/Arabic_Object_Before_Subject_Worksheet.pdf"
     },
     {
       "child": "Murad",
@@ -140,7 +148,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870350743672537",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "murad/schedules/Primary6_Monthly_Tests_October_2026.pdf"
     },
     {
       "child": "Murad",
@@ -155,7 +164,8 @@
       "pdf_pages": 1,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/432553667749520243",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf"
     },
     {
       "child": "Murad",
@@ -170,7 +180,8 @@
       "pdf_pages": 14,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "murad/arabic/revision-october-2026/Arabic_Unit1_Revision_Grade6.pdf"
     },
     {
       "child": "Murad",
@@ -185,7 +196,9 @@
       "pdf_pages": 6,
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
       "integrity_verified": true,
-      "source_original_unchanged": true
+      "source_original_unchanged": true,
+      "repository_path": "murad/religion/revision-october-2026/Religion_Unit1_Revision_Grade6.pdf"
     }
-  ]
+  ],
+  "layout_note": "archive_path records the original checkpoint ZIP layout; repository_path is the current canonical source location."
 }

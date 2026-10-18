@@ -28,3 +28,13 @@ with the teacher.
 subject, and it adds the new lessons in the same format. `tools/check.js` clicks through
 every sitting and reports problems (`node tools/check.js`, needs `npm install playwright`).
 
+
+## School materials and sync records
+
+- [Gamal / Jimmy: source files](gamal/)
+- [Murad: source files](murad/)
+- [All downloaded school originals](toddle-sync/2026-10-17/DOWNLOAD_INDEX.md)
+- [Toddle sync status and revision guide](toddle-sync/2026-10-17/README.md)
+- `school/announcements/`: shared school notices.
+
+Keep source files under each child’s subject folder. Keep dated summaries and provenance under `toddle-sync/`. Generated extracts, temporary downloads and browser screenshots do not belong in the repository.

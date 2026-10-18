@@ -114,8 +114,9 @@ You only write content.
    It must end with "problems: 0" and print no "note:" lines. Fix every problem and run it again.
    If it says no lessons match, the file is missing from index.html or the ids do not match.
 7. Open index.html in a browser at phone width and look at one sheet of each activity type.
-8. Commit, push, and open a pull request. In the description, list every Q.open question and
-   every fact card that came from a different lesson than the question.
+8. Commit and push directly to main. Do not create a branch or pull request for this educational
+   repository. In the commit or source notes, list every Q.open question and every fact card
+   that came from a different lesson than the question.
 
 ==================================================================
 6. LESSON FILE FORMAT (copy this shape exactly)
@@ -221,14 +222,14 @@ Good activity choices by subject (use only facts from the booklet):
 [ ] Every real-device step also has an on-screen activity in the same lesson.
 [ ] node tools/check.js <child>-<subject> ends with "problems: 0".
 [ ] index.html loads the new file(s), and the home page shows the new subject.
-[ ] The pull request lists the Q.open questions and any borrowed fact cards.
+[ ] The source notes list the Q.open questions and any borrowed fact cards.
 
 ==================================================================
 9. DO NOT
 ==================================================================
 - Do not change assets/sheet.js, assets/sheet.css or lessons/_common.js unless an activity
   truly cannot be expressed with the existing types. If you must, keep the change small,
-  run tools/check.js on ALL lessons, and say why in the pull request.
+  run tools/check.js on ALL lessons, and say why in the source notes.
 - Do not add sounds, timers that beep, animations, or new colours.
 - Do not invent facts, answers, menu names, or statistics.
 - Do not merge questions, skip questions, or reword the booklet's questions.
