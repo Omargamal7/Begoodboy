@@ -1,23 +1,30 @@
 # Murad — Grade 6G
 
-Current repository inventory; this is not a declaration that Toddle sync or the formal syllabus is complete.
+Repository navigation refreshed 20 October 2026. This is a file inventory, not a complete Toddle export or verified examination syllabus.
 
-| Subject | Original files |
-|---|---|
+| Subject | Directly tracked files |
+|---|---:|
 | [arabic](../../../sources/murad/arabic/) | 2 |
 | [english](../../../sources/murad/english/) | 29 |
 | [ict](../../../sources/murad/ict/) | 7 |
-| [mathematics](../../../sources/murad/mathematics/) | 15 |
+| [mathematics](../../../sources/murad/mathematics/) | 16 |
 | [religion](../../../sources/murad/religion/) | 2 |
 | [schedules](../../../sources/murad/schedules/) | 2 |
-| [science](../../../sources/murad/science/) | 5 |
+| [science](../../../sources/murad/science/) | 12 |
 | [social-studies](../../../sources/murad/social-studies/) | 4 |
 
-- [October lesson-by-lesson explanation and short assessments](../../../packs/murad/revision/october-lessons.html)
-- [English revision fieldbook — Units 1–3](../../../packs/murad/english/october-fieldbook.html)
-- [Interactive lesson menu](../../../index.html)
-- [Offline packs](../../../packs/README.md)
-- [Latest Toddle record](../../../sync/2026-10-18/README.md)
-- [Source maps and answer limitations](../../provenance/murad/)
+Counts exclude incomplete-download candidates and originals stored as binary parts or release assets. The source catalogue and dated provenance records describe those separately.
 
-All 22 numbered Science lessons are authored. Other source folders contain materials that may not yet have interactive lessons. The earlier Science binder and other large files remain in the school release.
+- [Complete English revision](../../../packs/murad/english/october-revision.html)
+- [Mathematics revision](../../../packs/murad/mathematics/october-2026.html)
+- [October subject summaries](../../../packs/murad/revision/october-lessons.html)
+- [Lesson menu](../../../index.html)
+- [All offline packs](../../../packs/README.md)
+- [Archive reconciliation and pending downloads](../../../sync/2026-10-20-reconciliation/README.md)
+
+## Source limits
+
+- [English coverage and limitations](../../../sync/2026-10-19-english/README.md). The uploaded assessment original prints 2025/2026; preserve the edition.
+- [Maths source and coverage limits](../../provenance/mathematics-2026-10-19.md). The generated practice does not establish complete Unit 2 coverage.
+- All 22 Science lessons remain available in the lesson menu; the larger Science original is also listed in the existing school release.
+- The latest reported Toddle course list contained no German course for Murad; do not infer Jimmy's syllabus applies to him.

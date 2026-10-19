@@ -1,0 +1,54 @@
+child,subject,path,storage,status,expected_bytes
+gamal,arabic,sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf,repository_blob,pending_transfer,7113244
+gamal,english,sources/gamal/english/booklets/Gr. 5 Grammar and Sentence Structure Booklet 2026-2027.pdf,repository_blob,pending_transfer,5499133
+gamal,english,sources/gamal/english/booklets/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term.pdf,repository_blob,pending_transfer,5508901
+gamal,english,sources/gamal/english/booklets/Gr. 5 Wonders Leveled Readers 2026-2027.pdf,repository_blob,pending_transfer,5445167
+gamal,english,sources/gamal/english/booklets/Gr. 5 Writing Booklet 2026-2027 First Term.pdf,repository_blob,pending_transfer,2646259
+gamal,english,sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1- Slow Speed.m4a,repository_blob,pending_transfer,3835136
+gamal,english,sources/gamal/english/wonders/graphic-organizers/Nonfiction Organizer.png,repository_blob,pending_transfer,2080677
+gamal,english,sources/gamal/english/wonders/graphic-organizers/Story Elements Organizer.png,repository_blob,pending_transfer,1593762
+gamal,english,sources/gamal/english/wonders/unit-1-week-1/Unit 1 Week 1 Finding a Way.mp3,repository_blob,pending_transfer,4533654
+gamal,ict,sources/gamal/ict/booklets/1st term binder grade 5new 2025-2026 - for merge.docx,repository_blob,pending_transfer,8018399
+gamal,social-studies,sources/gamal/social-studies/اجابة التقيمات.pdf,repository_blob,pending_transfer,1897049
+murad,arabic,sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf,repository_blob,pending_transfer,6713431
+murad,english,sources/murad/english/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf,repository_blob,pending_transfer,1493301
+murad,english,sources/murad/english/booklets/Gr. 6 Wonders Fiction Booklet 2026-2027 First Term.pdf,repository_blob,pending_transfer,1521491
+murad,english,sources/murad/english/booklets/Gr. 6 Wonders Leveled Readers 2026-2027.pdf,repository_blob,pending_transfer,5756146
+murad,english,sources/murad/english/booklets/Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term.pdf,repository_blob,pending_transfer,2033625
+murad,english,sources/murad/english/booklets/Gr. 6 Writing Booklet First Term 2026-2027.pdf,repository_blob,pending_transfer,2193303
+murad,english,sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1- Slow Speed.m4a,repository_blob,pending_transfer,3337583
+murad,english,sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Slow Speed.m4a,repository_blob,pending_transfer,4622327
+murad,english,sources/murad/english/wonders/unit-1-week-1/Crossing the Creek.mp4,repository_blob,pending_transfer,2649182
+murad,english,sources/murad/english/wonders/unit-1-week-1/U1 W1 How do new experiences offer new perspectives.pdf,repository_blob,pending_transfer,3929751
+murad,ict,sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx,repository_blob,pending_transfer,13764281
+murad,ict,sources/murad/ict/handouts/prim 6 lesson 2.docx,repository_blob,pending_transfer,1198217
+murad,mathematics,sources/murad/mathematics/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf,repository_blob,pending_transfer,5730304
+murad,mathematics,sources/murad/mathematics/model-answers/Model Answer - Unit (1) - Lessons (1-3).pdf,repository_blob,pending_transfer,2646924
+murad,mathematics,sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf,repository_blob,pending_transfer,3027257
+murad,mathematics,sources/murad/mathematics/weekly/week-01/1st Day at School (Mona Gehad).pptx,repository_blob,pending_transfer,5177600
+murad,religion,sources/murad/religion/Islamic_Education_Primary6_T1.pdf,repository_blob,pending_transfer,14124807
+murad,science,sources/murad/science/model-answers/chapter 3 homework model answers.pdf,repository_blob,pending_transfer,1864006
+murad,social-studies,sources/murad/social-studies/atlases/اطلس الخرائط االدرس الاول.pdf,repository_blob,pending_transfer,2799539
+murad,social-studies,sources/murad/social-studies/atlases/اطلس الخرائط الدرس الثاني.pdf,repository_blob,pending_transfer,2199996
+murad,social-studies,sources/murad/social-studies/weekly/week-02/الدرس الأول - وطننا العربي - الموقع و الاهمية.pdf,repository_blob,pending_transfer,14938817
+gamal,arabic,sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf,repository_parts,pending_parts,11747364
+gamal,english,sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a,repository_blob,pending_transfer,5964976
+gamal,english,sources/gamal/english/Fiction_Organizer.png,repository_blob,pending_transfer,1952526
+gamal,english,sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf,repository_blob,pending_transfer,4271269
+murad,arabic,sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx,repository_parts,pending_parts,21810058
+murad,english,sources/murad/english/ordinary-level/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q,repository_blob,pending_transfer,6291456
+murad,english,sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf,repository_parts,pending_parts,12304024
+murad,english,sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf,repository_parts,pending_parts,15956703
+murad,mathematics,sources/murad/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf,repository_blob,pending_transfer,2330624
+murad,science,sources/murad/science/model-answers/Chapter1_Homework_Model_Answers.pdf,repository_blob,pending_transfer,2929469
+murad,science,sources/murad/science/model-answers/Chapter2_Homework_Model_Answers.pdf,repository_blob,pending_transfer,1422981
+murad,social-studies,sources/murad/social-studies/درس_التحديات_البيئية.pdf,repository_parts,pending_parts,17838946
+murad,social-studies,sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf,repository_parts,pending_parts,13968037
+shared,school,sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf,repository_parts,pending_parts,13153407
+shared,school,sources/shared/school/announcements/جواب_القسم_المصري_2026-2027.pdf,repository_blob,pending_transfer,3504388
+shared,school,sources/shared/school/announcements/نشرة_القسم_المصري_2026-2027.pdf,repository_blob,pending_transfer,3483350
+murad,school,murad-arabic-Arabic_Primary6_T1.pdf,github_release,pending_release_download,46419486
+murad,school,murad-arabic-ministry-assessments-term1-2027.pdf,github_release,pending_release_download,12463048
+murad,school,murad-religion-Islamic_Education_Primary6_T1.pdf,github_release,pending_release_download,14124807
+murad,school,murad-science-primary-6-first-term-binder.pdf,github_release,pending_release_download,35412343
+murad,school,murad-social-studies-week3-lesson2-arab-world-terrain.pdf,github_release,pending_release_download,20161909

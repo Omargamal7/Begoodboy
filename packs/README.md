@@ -2,6 +2,17 @@
 
 Each HTML file contains its own code. The English fieldbooks and older assessment packs also embed their original page images; the new October subject summaries link to original school source files instead of embedding the PDFs. Download the individual file and open it in a browser.
 
+## Current complete English and German editions
+
+- [Jimmy — complete English revision](gamal/english/october-revision.html)
+- [Murad — complete English revision](murad/english/october-revision.html)
+- [Grade 5 class English — optional Arabic](class/grade5/english/october-arabic-help.html)
+- [Grade 6 class English — optional Arabic](class/grade6/english/october-arabic-help.html)
+- [Jimmy — German October revision](gamal/german/october-revision.html)
+- [Grade 5 class German — optional Arabic](class/grade5/german/october-arabic-help.html)
+
+The older fieldbooks below remain available. Use the dated [English](../sync/2026-10-19-english/README.md) and [German](../sync/2026-10-19-german/README.md) records for coverage, disputed answers and verification limits. Archive reconciliation is tracked [separately](../sync/2026-10-20-reconciliation/README.md).
+
 | Child | Pack |
 |---|---|
 | Gamal / Jimmy | [October lesson explanations and short assessments — 24 lessons](gamal/revision/october-lessons.html) |
