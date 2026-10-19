@@ -1,9 +1,13 @@
 # Offline study packs
 
-Each HTML file embeds its own lesson code and images. Download the individual file and open it in a browser.
+Each HTML file contains its own code. The English fieldbooks and older assessment packs also embed their original page images; the new October subject summaries link to original school source files instead of embedding the PDFs. Download the individual file and open it in a browser.
 
 | Child | Pack |
 |---|---|
+| Gamal / Jimmy | [October lesson explanations and short assessments — 24 lessons](gamal/revision/october-lessons.html) |
+| Murad | [October lesson explanations and short assessments — 24 lessons](murad/revision/october-lessons.html) |
+| Gamal / Jimmy | [English Field Club — Units 1–3, 18 models](gamal/english/october-fieldbook.html) |
+| Murad | [English Field Club — Units 1–3, 9 models](murad/english/october-fieldbook.html) |
 | Gamal / Jimmy | [Climate Quest assessment](gamal/social-studies/climate-quest.html) |
 | Gamal / Jimmy | [Science Chapter 2 assessment revision](gamal/science/chapter-02-assessment.html) |
 | Gamal / Jimmy | [Egypt’s coordinates reference](gamal/social-studies/egypt-coordinates.html) |

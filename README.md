@@ -12,6 +12,15 @@ Open [index.html](index.html) from a downloaded copy of the repository to use th
 | Toddle synchronization | [sync/](sync/README.md) |
 | Authoring and maintenance | [Repository structure](docs/structure.md) · [Lesson instructions](docs/authoring.md) · [Tools](tools/README.md) |
 
+## October 2026: child-specific interactive revision
+
+- **Jimmy (Grade 5A):** [24 illustrated/explained lesson sections and 40 new interactive checks](packs/gamal/revision/october-lessons.html), organized into eight assessment groups.
+- **Murad (Grade 6G):** [24 explained lesson sections and 33 new interactive checks](packs/murad/revision/october-lessons.html), organized into seven assessment groups.
+- **English full fieldbooks:** [Jimmy — Units 1–3, 18 assessment models](packs/gamal/english/october-fieldbook.html) · [Murad — Units 1–3, 9 assessment models](packs/murad/english/october-fieldbook.html).
+- **More binder-derived activities:** the original [lesson engine](index.html), Science and ICT packs, and source-page assessments remain unchanged.
+
+All four new HTML files open offline, work on Android or desktop and store practice progress locally. Source links inside them may need the full repository downloaded or an internet connection. The newly written short practice checks **are not school-issued assessments**; see the linked school originals for source questions. [Coverage and limitations](docs/provenance/revision-2026-10-19.md).
+
 The lesson menu contains 48 shared-engine lessons, including all 22 numbered lessons from Murad’s Science binder. Jimmy’s separate Climate Quest pack uses the supplied school assessment pages.
 
 The [18 October Toddle sweep](sync/2026-10-18/README.md) checked all 25 course plans, both assignment dashboards, school announcements and messaging. The subsequent [Cloud Browser recovery](sync/2026-10-18-cloud/README.md) closes its 23 named attachment gaps and preserves 30 additional originals. The [combined source catalogue](sync/catalog.json) records storage and provenance; full structural Toddle coverage is still being verified.

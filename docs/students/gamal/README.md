@@ -12,6 +12,8 @@ Current repository inventory; this is not a declaration that Toddle sync or the 
 | [science](../../../sources/gamal/science/) | 5 |
 | [social-studies](../../../sources/gamal/social-studies/) | 5 |
 
+- [October lesson-by-lesson explanation and short assessments](../../../packs/gamal/revision/october-lessons.html)
+- [English revision fieldbook — Units 1–3](../../../packs/gamal/english/october-fieldbook.html)
 - [Interactive lesson menu](../../../index.html)
 - [Offline packs](../../../packs/README.md)
 - [Latest Toddle record](../../../sync/2026-10-18/README.md)
