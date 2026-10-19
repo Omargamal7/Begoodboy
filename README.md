@@ -26,3 +26,11 @@ The lesson menu contains 48 shared-engine lessons, including all 22 numbered les
 The [18 October Toddle sweep](sync/2026-10-18/README.md) checked all 25 course plans, both assignment dashboards, school announcements and messaging. The subsequent [Cloud Browser recovery](sync/2026-10-18-cloud/README.md) closes its 23 named attachment gaps and preserves 30 additional originals. The [combined source catalogue](sync/catalog.json) records storage and provenance; full structural Toddle coverage is still being verified.
 
 School originals are preserved unchanged. Source maps record unsupported or disputed answers; those questions must remain unscored or parent-checked. See the dated revision reports for answer-key caveats.
+
+
+## Mathematics interactive revision · 19 October 2026
+
+- **Jimmy · Grade 5A:** [Decimal Lab — eight lessons and two assessments](packs/gamal/mathematics/decimal-lab-october-2026.html). Based on the supplied lesson video: 24 lesson checks and 15 mixed-assessment checks.
+- **Murad · Grade 6G:** [Mathematics October revision — five lessons and two assessments](packs/murad/mathematics/october-2026.html). Divisibility, prime factorization, GCF/LCM, signed numbers and rational-number comparisons. Fifteen lesson checks and 15 mixed-assessment checks.
+
+Both HTML files are standalone and work offline, with hints, worked examples, checking and separate saved progress. The questions were authored for practice, not transcribed from school assessments. Jimmy's official maths scope was not verified because the Grade 5 maths course-plan snapshot had no posted resources; Murad's original October revision worksheet and school model answers are linked in his pack. See [maths provenance and limitations](docs/provenance/mathematics-2026-10-19.md).
