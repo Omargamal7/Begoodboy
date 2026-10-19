@@ -16,3 +16,11 @@ Each HTML file contains its own code. The English fieldbooks and older assessmen
 The full 22-lesson Science export is rebuilt with `node tools/build/science.js` from the repository root. Its local output is `build/packs/murad/science/START_HERE.html`; the large generated export is not checked in. All 22 Science lessons are also available through the main `index.html`.
 
 Coverage and answer limitations are recorded under [docs/provenance/](../docs/provenance/).
+
+
+## Maths · October 2026
+
+- [Jimmy — Decimal Lab, eight video lessons](gamal/mathematics/decimal-lab-october-2026.html)
+- [Murad — Grade 6 October maths revision](murad/mathematics/october-2026.html)
+
+Both packs open independently offline and save individual progress in the current browser. Practice questions are new, not official school question transcriptions.
