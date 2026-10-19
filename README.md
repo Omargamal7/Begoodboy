@@ -34,3 +34,12 @@ School originals are preserved unchanged. Source maps record unsupported or disp
 - **Murad · Grade 6G:** [Mathematics October revision — five lessons and two assessments](packs/murad/mathematics/october-2026.html). Divisibility, prime factorization, GCF/LCM, signed numbers and rational-number comparisons. Fifteen lesson checks and 15 mixed-assessment checks.
 
 Both HTML files are standalone and work offline, with hints, worked examples, checking and separate saved progress. The questions were authored for practice, not transcribed from school assessments. Jimmy's official maths scope was not verified because the Grade 5 maths course-plan snapshot had no posted resources; Murad's original October revision worksheet and school model answers are linked in his pack. See [maths provenance and limitations](docs/provenance/mathematics-2026-10-19.md).
+
+## Complete English revision and class editions
+
+- [Jimmy · complete English revision](packs/gamal/english/october-revision.html)
+- [Murad · complete English revision](packs/murad/english/october-revision.html)
+- [Grade 5 class edition · optional Arabic help](packs/class/grade5/english/october-arabic-help.html)
+- [Grade 6 class edition · optional Arabic help](packs/class/grade6/english/october-arabic-help.html)
+
+[Source coverage, cloud copies and validation](sync/2026-10-19-english/README.md).

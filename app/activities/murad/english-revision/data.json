@@ -1,0 +1,5163 @@
+{
+  "child": "Murad",
+  "slug": "murad",
+  "grade": "6G",
+  "units": [
+    {
+      "id": "u1",
+      "title": "A Day in Egypt",
+      "theme": "nile",
+      "lessonTitles": [
+        "Amazing Places in Egypt",
+        "Ras Mohamed National Park",
+        "Around Egypt",
+        "A Day in My School (Lessons 4 & 5)"
+      ],
+      "tips": [
+        {
+          "title": "Every day: use the present simple",
+          "body": "With he, she or it, add -s or -es. After does or does not, use the base verb.",
+          "example": "He visits. Does he visit? He does not visit."
+        },
+        {
+          "title": "Use the passage",
+          "body": "Find names, places and details in the passage before answering. You do not need to memorise every fact.",
+          "example": "The text says the Nile flows from south to north."
+        },
+        {
+          "title": "Write about 50 words",
+          "body": "Cover the topic, use complete sentences, and check capitals and full stops.",
+          "example": "For an email, add a greeting, your message and your name."
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Our Nature",
+      "theme": "garden",
+      "lessonTitles": [
+        "Caring for Plants",
+        "How’s the Weather in Your City?",
+        "Wonderful Nile River",
+        "Unforgettable Trip to Wadi El Rayan (Lessons 4 & 5)"
+      ],
+      "tips": [
+        {
+          "title": "Happening now",
+          "body": "Use am, is or are with a verb ending in -ing for an action in progress.",
+          "example": "I am studying. She is reading. They are running."
+        },
+        {
+          "title": "Read what is actually there",
+          "body": "Some passage topics do not match the lesson heading. Answer from the supplied passage.",
+          "example": "Wonderful Nile River has a passage about Omar visiting a museum."
+        },
+        {
+          "title": "Nature words",
+          "body": "Review useful combinations: care for plants, pull out weeds, depend on the Nile, and protect yourself from the sun.",
+          "example": "We take care of our plants."
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Community Builders",
+      "theme": "jobs",
+      "lessonTitles": [
+        "Jobs That Help the Community",
+        "Let’s Help Our Community",
+        "The Proud Rose",
+        "A Biography of an Egyptian Hero (Lessons 4 & 5; extra practice)"
+      ],
+      "tips": [
+        {
+          "title": "Can and able to",
+          "body": "Use can plus the base verb. Use am, is or are plus able to and the base verb.",
+          "example": "I can run. I am able to run. She cannot swim."
+        },
+        {
+          "title": "Jobs that help us",
+          "body": "Connect each job with what the person does.",
+          "example": "A paramedic helps patients in emergencies."
+        },
+        {
+          "title": "Read the text, then answer",
+          "body": "The Proud Rose heading has sandwich and ice cream passages in this book. The questions test those supplied passages.",
+          "example": "John Montagu used bread and meat, according to the passage."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "u1-l1-reading",
+      "unit": "u1",
+      "lesson": "l1",
+      "title": "Amazing Places in Egypt · Reading",
+      "kind": "lesson",
+      "extra": false,
+      "page": 4,
+      "pdfPages": [
+        5
+      ],
+      "items": [
+        {
+          "id": "u1-l1-reading-q1",
+          "type": "choice",
+          "prompt": "Ras Mohamed is a famous national park in the ____ of Sinai, Egypt.",
+          "modelAnswer": "south",
+          "explanation": "The first sentence says it is in the south of Sinai.",
+          "hint": "Look at the opening sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 5,
+            "printedPage": 4,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p4",
+          "choices": [
+            "north",
+            "south",
+            "east",
+            "west"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-l1-reading-q2",
+          "type": "choice",
+          "prompt": "The nature in Ras Mohamed National Park is ____.",
+          "modelAnswer": "wonderful",
+          "explanation": "The text calls the nature amazing; wonderful has the same positive meaning.",
+          "hint": "Find a word close in meaning to amazing.",
+          "manual": false,
+          "source": {
+            "pdfPage": 5,
+            "printedPage": 4,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p4",
+          "choices": [
+            "bad",
+            "boring",
+            "wonderful",
+            "far"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-l1-reading-q3",
+          "type": "open",
+          "prompt": "What is Ras Mohamed National Park?",
+          "modelAnswer": "It is a famous national park in the south of Sinai, Egypt.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 5,
+            "printedPage": 4,
+            "question": "CW Activity 1 B Q3"
+          },
+          "evidence": "passage p4"
+        },
+        {
+          "id": "u1-l1-reading-q4",
+          "type": "open",
+          "prompt": "Do you like nature? Why?",
+          "modelAnswer": "Personal answer, for example: Yes, I like nature because I enjoy seeing animals and plants.",
+          "explanation": "Accept a clear personal opinion with a reason; there is no single required opinion.",
+          "hint": "Give your own opinion, then explain it with because.",
+          "manual": true,
+          "source": {
+            "pdfPage": 5,
+            "printedPage": 4,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "parent check"
+        }
+      ],
+      "passage": "Ras Mohamed is a famous national park in the south of Sinai, Egypt. It is known for its beautiful coral reefs, colorful fish, and clear blue sea. People from all over the world visit Ras Mohamed to swim, snorkel, and dive. The nature in Ras Mohamed National Park is amazing. The park is home to many kinds of animals and plants. You can see sea turtles, dolphins, and many types of birds. There are also mountains and mangrove trees near the beach."
+    },
+    {
+      "id": "u1-l1-vocab",
+      "unit": "u1",
+      "lesson": "l1",
+      "title": "Amazing Places in Egypt · Vocabulary",
+      "kind": "lesson",
+      "extra": false,
+      "page": 5,
+      "pdfPages": [
+        6
+      ],
+      "items": [
+        {
+          "id": "u1-l1-vocab-q1",
+          "type": "choice",
+          "prompt": "We ____ souvenirs from Khan El Khalili.",
+          "modelAnswer": "Likely intended answer: buy. “Sell” is also grammatical, so ask a parent to check.",
+          "explanation": "Buy is the likely visitor-context answer. Sell can also make a grammatical sentence, so this item is unscored.",
+          "hint": "Think about a visitor shopping in Khan El Khalili.",
+          "manual": true,
+          "source": {
+            "pdfPage": 6,
+            "printedPage": 5,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "parent check",
+          "choices": [
+            "do",
+            "sell",
+            "buy",
+            "eat"
+          ],
+          "issue": "Both buy and sell are grammatical in the isolated sentence; no context rules out sell."
+        },
+        {
+          "id": "u1-l1-vocab-q2",
+          "type": "choice",
+          "prompt": "Tourists come to Egypt to ____ the ancient sites.",
+          "modelAnswer": "visit",
+          "explanation": "People visit ancient sites.",
+          "hint": "Which verb means go to see a place?",
+          "manual": false,
+          "source": {
+            "pdfPage": 6,
+            "printedPage": 5,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "play",
+            "visit",
+            "have",
+            "read"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-l1-vocab-q3",
+          "type": "choice",
+          "prompt": "Carpenters ____ furniture in Damietta.",
+          "modelAnswer": "make",
+          "explanation": "Carpenters make furniture.",
+          "hint": "Think about a carpenter’s work.",
+          "manual": false,
+          "source": {
+            "pdfPage": 6,
+            "printedPage": 5,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "run",
+            "watch",
+            "write",
+            "make"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u1-l1-vocab-q4",
+          "type": "choice",
+          "prompt": "They spend a great day ____ Aswan.",
+          "modelAnswer": "in",
+          "explanation": "Use in before the city where the day is spent.",
+          "hint": "Which preposition names the city you are in?",
+          "manual": false,
+          "source": {
+            "pdfPage": 6,
+            "printedPage": 5,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "of",
+            "in",
+            "off",
+            "from"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-l1-vocab-q5",
+          "type": "choice",
+          "prompt": "His family learns many new things about the Egyptian ____.",
+          "modelAnswer": "Museum",
+          "explanation": "The intended place name is the Egyptian Museum.",
+          "hint": "Which option completes the familiar Egyptian place name?",
+          "manual": false,
+          "source": {
+            "pdfPage": 6,
+            "printedPage": 5,
+            "question": "CW Activity 2 Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "Stadium",
+            "Science",
+            "Museum",
+            "Math"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "u1-l1-writing",
+      "unit": "u1",
+      "lesson": "l1",
+      "title": "A Day in Egypt · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 5,
+      "pdfPages": [
+        6
+      ],
+      "items": [
+        {
+          "id": "u1-l1-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of fifty words (50) using the following guiding elements: (A day in Egypt - places - buy souvenirs - visit ancient sites).",
+          "modelAnswer": "Last Saturday, I spent a wonderful day in Egypt with my family. We visited ancient sites and learned about their history. Later, we explored a busy market and bought souvenirs for our friends. I enjoyed seeing different places and taking photographs. It was a day I will always remember.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 6,
+            "printedPage": 5,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "a day in Egypt",
+            "places",
+            "buy souvenirs",
+            "visit ancient sites"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1-l2-grammar",
+      "unit": "u1",
+      "lesson": "l2",
+      "title": "Ras Mohamed National Park · Correct the form",
+      "kind": "lesson",
+      "extra": false,
+      "page": 6,
+      "pdfPages": [
+        7
+      ],
+      "items": [
+        {
+          "id": "u1-l2-grammar-q1",
+          "type": "gap",
+          "prompt": "Ibrahim (travel) to a different country every year.",
+          "modelAnswer": "travels",
+          "explanation": "Every year describes a habit. Ibrahim is one person, so use travels.",
+          "hint": "Look for a repeated habit.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 1 Q1"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "travels"
+          ]
+        },
+        {
+          "id": "u1-l2-grammar-q2",
+          "type": "gap",
+          "prompt": "(Does) Remas and Aseel go to work by bus?",
+          "modelAnswer": "Do",
+          "explanation": "Remas and Aseel means they, so use Do.",
+          "hint": "Two people use do or does?",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 1 Q2"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Do"
+          ]
+        },
+        {
+          "id": "u1-l2-grammar-q3",
+          "type": "gap",
+          "prompt": "Lama (don’t) study in the afternoon.",
+          "modelAnswer": "doesn’t",
+          "explanation": "Lama is one person, so the present simple negative uses does not.",
+          "hint": "Use the negative form for she.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 1 Q3"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "doesn’t",
+            "doesn't",
+            "does not"
+          ]
+        },
+        {
+          "id": "u1-l2-grammar-q4",
+          "type": "gap",
+          "prompt": "How (do) Yossif get ready for the exam?",
+          "modelAnswer": "does",
+          "explanation": "Yossif is one person, so the question uses does.",
+          "hint": "Use the question helper for he.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 1 Q4"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "does"
+          ]
+        },
+        {
+          "id": "u1-l2-grammar-q5",
+          "type": "gap",
+          "prompt": "She (usually) eats meat. She hates it very much.",
+          "modelAnswer": "never",
+          "explanation": "Never is the likely intended replacement because she hates meat. Rarely or hardly ever can also fit, so a parent checks this item.",
+          "hint": "Her feeling about meat suggests she eats it very little or not at all.",
+          "manual": true,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 1 Q5"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "never",
+            "rarely",
+            "hardly ever",
+            "seldom"
+          ],
+          "issue": "The sentence permits more than one frequency adverb; the source does not provide a unique choice."
+        }
+      ]
+    },
+    {
+      "id": "u1-l2-vocab",
+      "unit": "u1",
+      "lesson": "l2",
+      "title": "Ras Mohamed National Park · Word bank",
+      "kind": "lesson",
+      "extra": false,
+      "page": 6,
+      "pdfPages": [
+        7
+      ],
+      "items": [
+        {
+          "id": "u1-l2-vocab-q1",
+          "type": "gap",
+          "prompt": "Ras Mohamed is a ____ area, so people must care for it.",
+          "modelAnswer": "protected",
+          "explanation": "A protected area is kept safe.",
+          "hint": "Choose a word or phrase from the box that fits the whole sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "protected"
+          ]
+        },
+        {
+          "id": "u1-l2-vocab-q2",
+          "type": "gap",
+          "prompt": "It’s important to keep the park ____.",
+          "modelAnswer": "clean and safe",
+          "explanation": "The phrase describes how the park should be kept.",
+          "hint": "Choose a word or phrase from the box that fits the whole sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "clean and safe"
+          ]
+        },
+        {
+          "id": "u1-l2-vocab-q3",
+          "type": "gap",
+          "prompt": "People enjoy the quiet and beautiful ____ in Ras Mohamed National Park.",
+          "modelAnswer": "landscape",
+          "explanation": "Landscape means the natural scenery.",
+          "hint": "Choose a word or phrase from the box that fits the whole sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "landscape"
+          ]
+        },
+        {
+          "id": "u1-l2-vocab-q4",
+          "type": "gap",
+          "prompt": "Ras Mohamed is full of animals, plants, and colorful ____ under its sea.",
+          "modelAnswer": "coral reefs",
+          "explanation": "Coral reefs are found under the sea.",
+          "hint": "Choose a word or phrase from the box that fits the whole sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "coral reefs"
+          ]
+        },
+        {
+          "id": "u1-l2-vocab-q5",
+          "type": "gap",
+          "prompt": "Visitors can learn about the ____ of the local people.",
+          "modelAnswer": "culture",
+          "explanation": "Culture includes a community’s traditions and way of life.",
+          "hint": "Choose a word or phrase from the box that fits the whole sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "CW Activity 2 Q5"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "culture"
+          ]
+        }
+      ],
+      "wordBank": [
+        "landscape",
+        "coral reefs",
+        "culture",
+        "protected",
+        "clean and safe"
+      ]
+    },
+    {
+      "id": "u1-l2-writing",
+      "unit": "u1",
+      "lesson": "l2",
+      "title": "Ras Mohamed National Park · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 6,
+      "pdfPages": [
+        7
+      ],
+      "items": [
+        {
+          "id": "u1-l2-writing-q1",
+          "type": "writing",
+          "prompt": "Look at this picture and write a paragraph of 50 words about Ras Mohamed National Park.",
+          "modelAnswer": "Ras Mohamed National Park is a beautiful place in Egypt. Visitors can enjoy the sea, colorful coral reefs and amazing wildlife. I would like to explore its scenery with my family. We should keep the park clean, avoid disturbing animals and leave every natural treasure exactly where we found it.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 7,
+            "printedPage": 6,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "Ras Mohamed National Park",
+            "its scenery or wildlife",
+            "what visitors can do"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1-l3-reading",
+      "unit": "u1",
+      "lesson": "l3",
+      "title": "Around Egypt · The Nile",
+      "kind": "lesson",
+      "extra": false,
+      "page": 7,
+      "pdfPages": [
+        8
+      ],
+      "items": [
+        {
+          "id": "u1-l3-reading-q1",
+          "type": "choice",
+          "prompt": "The Nile is the longest river in the world.",
+          "modelAnswer": "True",
+          "explanation": "This is True according to the opening statement in the supplied passage.",
+          "hint": "Answer what this passage says.",
+          "manual": false,
+          "source": {
+            "pdfPage": 8,
+            "printedPage": 7,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p7",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-l3-reading-q2",
+          "type": "choice",
+          "prompt": "The Nile flows from north to east.",
+          "modelAnswer": "False",
+          "explanation": "The passage says the Nile flows from south to north.",
+          "hint": "Find the direction words in the text.",
+          "manual": false,
+          "source": {
+            "pdfPage": 8,
+            "printedPage": 7,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p7",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-l3-reading-q3",
+          "type": "choice",
+          "prompt": "Crocodiles live in the Nile.",
+          "modelAnswer": "True",
+          "explanation": "The text explicitly says crocodiles live in the river.",
+          "hint": "Look for crocodiles in the passage.",
+          "manual": false,
+          "source": {
+            "pdfPage": 8,
+            "printedPage": 7,
+            "question": "CW Activity 1 A Q3"
+          },
+          "evidence": "passage p7",
+          "choices": [
+            "True",
+            "False"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-l3-reading-q4",
+          "type": "open",
+          "prompt": "How long is the Nile River?",
+          "modelAnswer": "According to the passage, it is about 6,650 kilometers long.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 8,
+            "printedPage": 7,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "passage p7"
+        },
+        {
+          "id": "u1-l3-reading-q5",
+          "type": "open",
+          "prompt": "Name two fish that live in the Nile.",
+          "modelAnswer": "Nile perch and tilapia.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 8,
+            "printedPage": 7,
+            "question": "CW Activity 1 B Q5"
+          },
+          "evidence": "passage p7"
+        }
+      ],
+      "passage": "The Nile is the longest river in the world. It is about 6,650 kilometers long. The Nile flows through Egypt from south to north. It goes through the desert and brings life to the country. Many animals live in and near the Nile. Big fish like Nile perch and tilapia swim in the water. Crocodiles live in the river too. They are dangerous animals. Many birds come to the river to drink and find food. You can see kingfishers, herons, and ducks near the Nile. The Nile is very important for Egyptian people. In the past, the river flooded and brought good soil."
+    },
+    {
+      "id": "u1-l3-vocab",
+      "unit": "u1",
+      "lesson": "l3",
+      "title": "Around Egypt · Village word bank",
+      "kind": "lesson",
+      "extra": false,
+      "page": 8,
+      "pdfPages": [
+        9
+      ],
+      "items": [
+        {
+          "id": "u1-l3-vocab-q1",
+          "type": "gap",
+          "prompt": "In the village, some people are ____.",
+          "modelAnswer": "fishermen",
+          "explanation": "Fishermen catch fish.",
+          "hint": "Choose a word or phrase from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 9,
+            "printedPage": 8,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "fishermen"
+          ]
+        },
+        {
+          "id": "u1-l3-vocab-q2",
+          "type": "gap",
+          "prompt": "In the village, people fish using small ____.",
+          "modelAnswer": "fishing nets",
+          "explanation": "Fishing nets are used to catch fish.",
+          "hint": "Choose a word or phrase from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 9,
+            "printedPage": 8,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "fishing nets"
+          ]
+        },
+        {
+          "id": "u1-l3-vocab-q3",
+          "type": "gap",
+          "prompt": "Farmers in Salma’s village ____ the crops.",
+          "modelAnswer": "harvest",
+          "explanation": "Farmers harvest crops when they are ready.",
+          "hint": "Choose a word or phrase from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 9,
+            "printedPage": 8,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "harvest"
+          ]
+        },
+        {
+          "id": "u1-l3-vocab-q4",
+          "type": "gap",
+          "prompt": "Hassan’s family ____ wool and weaves it on looms.",
+          "modelAnswer": "Word-bank answer: spin. An edited sentence could read: Hassan’s family spins wool and weaves cloth.",
+          "explanation": "Use the source word for the blank, then discuss the agreement error rather than marking it wrong.",
+          "hint": "Choose a word or phrase from the box.",
+          "manual": true,
+          "source": {
+            "pdfPage": 9,
+            "printedPage": 8,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "spin"
+          ],
+          "issue": "The source combines “Hassan’s family spin wool” with “and weaves”, mixing verb agreement. The word bank supplies spin; a consistent edited sentence would use spins/weaves or spin/weave."
+        }
+      ],
+      "wordBank": [
+        "spin",
+        "fishermen",
+        "harvest",
+        "fishing nets"
+      ]
+    },
+    {
+      "id": "u1-l3-writing",
+      "unit": "u1",
+      "lesson": "l3",
+      "title": "Life in the Village · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 8,
+      "pdfPages": [
+        9
+      ],
+      "items": [
+        {
+          "id": "u1-l3-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of 50 words about: (Life in the village).",
+          "modelAnswer": "Life in a village can be peaceful and friendly. Farmers grow crops and look after their animals. Neighbors often know one another and help when someone needs support. Children go to school and play together. I enjoy the open spaces, but I also know that village work can be demanding.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 9,
+            "printedPage": 8,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "life in a village",
+            "people’s daily work or activities",
+            "clear supporting details"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1-weekly-a",
+      "unit": "u1",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment A",
+      "kind": "model",
+      "extra": false,
+      "page": 9,
+      "pdfPages": [
+        10
+      ],
+      "items": [
+        {
+          "id": "u1-weekly-a-q1",
+          "type": "choice",
+          "prompt": "Ahmed (walk – walks – walked – walking) to school every day.",
+          "modelAnswer": "walks",
+          "explanation": "Every day calls for present simple; Ahmed uses walks.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment A Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "walk",
+            "walks",
+            "walked",
+            "walking"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-weekly-a-q2",
+          "type": "choice",
+          "prompt": "Asmaa (visits – visit – is visiting – visited) us every week.",
+          "modelAnswer": "visits",
+          "explanation": "Every week describes a habit; Asmaa visits.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment A Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "visits",
+            "visit",
+            "is visiting",
+            "visited"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-weekly-a-q3",
+          "type": "choice",
+          "prompt": "The moon (go – went – goes – going) round the earth.",
+          "modelAnswer": "goes",
+          "explanation": "Use present simple for this general fact: the moon goes.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment A Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "go",
+            "went",
+            "goes",
+            "going"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-weekly-a-q4",
+          "type": "choice",
+          "prompt": "Sama often (do – does – done – doing) her homework at six.",
+          "modelAnswer": "does",
+          "explanation": "Sama is one person: she does.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment A Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "do",
+            "does",
+            "done",
+            "doing"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-weekly-a-q5",
+          "type": "choice",
+          "prompt": "I sometimes (sweeps – sweep – swept – sweeping) the floor.",
+          "modelAnswer": "sweep",
+          "explanation": "With I, use the base form sweep for a habit.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment A Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "sweeps",
+            "sweep",
+            "swept",
+            "sweeping"
+          ],
+          "correct": 1
+        }
+      ],
+      "model": "A",
+      "series": "u1-week1"
+    },
+    {
+      "id": "u1-weekly-b",
+      "unit": "u1",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment B",
+      "kind": "model",
+      "extra": false,
+      "page": 9,
+      "pdfPages": [
+        10
+      ],
+      "items": [
+        {
+          "id": "u1-weekly-b-q1",
+          "type": "choice",
+          "prompt": "She always (make – made – makes – making) her bed.",
+          "modelAnswer": "makes",
+          "explanation": "She takes makes in the present simple.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment B Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "make",
+            "made",
+            "makes",
+            "making"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-weekly-b-q2",
+          "type": "choice",
+          "prompt": "He never (go – went – goes – going) to school late.",
+          "modelAnswer": "goes",
+          "explanation": "He takes goes, even after never.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment B Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "go",
+            "went",
+            "goes",
+            "going"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-weekly-b-q3",
+          "type": "choice",
+          "prompt": "We always (play – plays – played – playing) football at seven on Friday.",
+          "modelAnswer": "play",
+          "explanation": "We takes the base form play.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment B Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "play",
+            "plays",
+            "played",
+            "playing"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-weekly-b-q4",
+          "type": "choice",
+          "prompt": "Every morning, Ahmed (drink – drank – drinks – drinking) a cup of tea.",
+          "modelAnswer": "drinks",
+          "explanation": "Every morning describes a habit; Ahmed drinks.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment B Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "drink",
+            "drank",
+            "drinks",
+            "drinking"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-weekly-b-q5",
+          "type": "choice",
+          "prompt": "What time (do – does – doing – did) you leave for school every day?",
+          "modelAnswer": "do",
+          "explanation": "A present simple question with you uses do.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment B Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "do",
+            "does",
+            "doing",
+            "did"
+          ],
+          "correct": 0
+        }
+      ],
+      "model": "B",
+      "series": "u1-week1"
+    },
+    {
+      "id": "u1-weekly-c",
+      "unit": "u1",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment C",
+      "kind": "model",
+      "extra": false,
+      "page": 9,
+      "pdfPages": [
+        10
+      ],
+      "items": [
+        {
+          "id": "u1-weekly-c-q1",
+          "type": "choice",
+          "prompt": "He never (play – plays – playing – played) tennis.",
+          "modelAnswer": "plays",
+          "explanation": "He takes plays in the present simple.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment C Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "play",
+            "plays",
+            "playing",
+            "played"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-weekly-c-q2",
+          "type": "choice",
+          "prompt": "She often (study – studies – studying – studied) English.",
+          "modelAnswer": "studies",
+          "explanation": "Change consonant plus y to -ies with she: studies.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment C Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "study",
+            "studies",
+            "studying",
+            "studied"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-weekly-c-q3",
+          "type": "choice",
+          "prompt": "The sun (gives – give – giving – gave) us light.",
+          "modelAnswer": "gives",
+          "explanation": "The sun is singular: gives.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment C Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "gives",
+            "give",
+            "giving",
+            "gave"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-weekly-c-q4",
+          "type": "choice",
+          "prompt": "I usually (read – reads – reading – am reading) stories at night.",
+          "modelAnswer": "read",
+          "explanation": "Usually describes a habit; I read.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment C Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "read",
+            "reads",
+            "reading",
+            "am reading"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-weekly-c-q5",
+          "type": "choice",
+          "prompt": "(Do – Does – Doing – did) he visit you every day?",
+          "modelAnswer": "Does",
+          "explanation": "He uses Does in a present simple question.",
+          "hint": "Look for the time expression and the subject.",
+          "manual": false,
+          "source": {
+            "pdfPage": 10,
+            "printedPage": 9,
+            "question": "Weekly Assessment C Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "Do",
+            "Does",
+            "Doing",
+            "did"
+          ],
+          "correct": 1
+        }
+      ],
+      "model": "C",
+      "series": "u1-week1"
+    },
+    {
+      "id": "u1-l45-writing",
+      "unit": "u1",
+      "lesson": "l45",
+      "title": "A Day in My School · Class writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 10,
+      "pdfPages": [
+        11
+      ],
+      "items": [
+        {
+          "id": "u1-l45-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of about 50 words on (Your school activities).",
+          "modelAnswer": "My school offers many activities that make learning enjoyable. I like playing football, reading in the library and working on art projects. During group activities, my classmates and I share ideas and help one another. These experiences teach us teamwork and responsibility. They also help us discover our own strengths.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 11,
+            "printedPage": 10,
+            "question": "CW Activity 1"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "your school activities",
+            "what you do",
+            "useful details"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1-l45-email",
+      "unit": "u1",
+      "lesson": "l45",
+      "title": "Invite a Friend to Aswan · Homework email",
+      "kind": "writing",
+      "extra": false,
+      "page": 10,
+      "pdfPages": [
+        11
+      ],
+      "items": [
+        {
+          "id": "u1-l45-email-q1",
+          "type": "writing",
+          "prompt": "Write an e-mail to your friend to invite him to visit Aswan.",
+          "modelAnswer": "Dear Sam,\nWould you like to visit Aswan with me during the next holiday? We could see the Nile, visit interesting places and take photographs together. I would love to show you around and share a wonderful day. Please write back and tell me when you are free.\nYour friend,\nMurad",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 11,
+            "printedPage": 10,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "targetPoints": [
+            "greeting",
+            "invite your friend to Aswan",
+            "suggest things to see or do",
+            "closing and your name"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1-review-choice",
+      "unit": "u1",
+      "lesson": "review",
+      "title": "Unit 1 Review · Choose",
+      "kind": "review",
+      "extra": false,
+      "page": 11,
+      "pdfPages": [
+        12
+      ],
+      "items": [
+        {
+          "id": "u1-review-choice-q1",
+          "type": "choice",
+          "prompt": "I can climb the high ____.",
+          "modelAnswer": "mountain",
+          "explanation": "You climb a mountain.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "river",
+            "way",
+            "mountain",
+            "lake"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-review-choice-q2",
+          "type": "choice",
+          "prompt": "____ are a kind of animals.",
+          "modelAnswer": "Kangaroos",
+          "explanation": "Kangaroos are animals.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "Tablets",
+            "Kangaroos",
+            "Shorts",
+            "Vets"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-review-choice-q3",
+          "type": "choice",
+          "prompt": "I like to ____ photos with my phone.",
+          "modelAnswer": "take",
+          "explanation": "The expression is take photos.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "read",
+            "take",
+            "play",
+            "buy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-review-choice-q4",
+          "type": "choice",
+          "prompt": "I ____ fresh food.",
+          "modelAnswer": "like",
+          "explanation": "I takes the base form like.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "like",
+            "likes",
+            "liking",
+            "to like"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-review-choice-q5",
+          "type": "choice",
+          "prompt": "What are you ____?",
+          "modelAnswer": "doing",
+          "explanation": "Are is followed by doing for this continuous question.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "do",
+            "does",
+            "doing",
+            "did"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-review-choice-q6",
+          "type": "choice",
+          "prompt": "Let’s ____ the rubbish out.",
+          "modelAnswer": "take",
+          "explanation": "The expression is take the rubbish out.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q6"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "read",
+            "take",
+            "play",
+            "buy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-review-choice-q7",
+          "type": "choice",
+          "prompt": "He ____ rice very much.",
+          "modelAnswer": "likes",
+          "explanation": "He takes likes in the present simple.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q7"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "like",
+            "likes",
+            "liking",
+            "to like"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-review-choice-q8",
+          "type": "choice",
+          "prompt": "What are you ____ now?",
+          "modelAnswer": "drawing",
+          "explanation": "Now and are call for drawing.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q8"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "draw",
+            "drew",
+            "drawing",
+            "draws"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-review-choice-q9",
+          "type": "choice",
+          "prompt": "We ____ football yesterday.",
+          "modelAnswer": "played",
+          "explanation": "Yesterday calls for past simple: played.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q9"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "play",
+            "plays",
+            "played",
+            "playing"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u1-review-choice-q10",
+          "type": "choice",
+          "prompt": "It ____ snows in summer in Egypt.",
+          "modelAnswer": "never",
+          "explanation": "Never is the expected frequency word in this school sentence.",
+          "hint": "Read the whole sentence and choose the word that fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 1 Q10"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "never",
+            "sometimes",
+            "often",
+            "ever"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "u1-review-form",
+      "unit": "u1",
+      "lesson": "review",
+      "title": "Unit 1 Review · Correct the form",
+      "kind": "review",
+      "extra": false,
+      "page": 11,
+      "pdfPages": [
+        12,
+        13
+      ],
+      "items": [
+        {
+          "id": "u1-review-form-q1",
+          "type": "gap",
+          "prompt": "Nada (not) play tennis every day.",
+          "modelAnswer": "does not",
+          "explanation": "Nada is one person; use does not before the base verb.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 2 Q1"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "does not",
+            "doesn’t",
+            "doesn't"
+          ]
+        },
+        {
+          "id": "u1-review-form-q2",
+          "type": "gap",
+          "prompt": "(Does) you usually watch football matches?",
+          "modelAnswer": "Do",
+          "explanation": "The question helper with you is Do.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 2 Q2"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Do"
+          ]
+        },
+        {
+          "id": "u1-review-form-q3",
+          "type": "gap",
+          "prompt": "They always (tidies) the kitchen for their mum.",
+          "modelAnswer": "tidy",
+          "explanation": "They takes the base verb tidy.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 2 Q3"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "tidy"
+          ]
+        },
+        {
+          "id": "u1-review-form-q4",
+          "type": "gap",
+          "prompt": "The club (close) at 11:00 pm.",
+          "modelAnswer": "closes",
+          "explanation": "A scheduled closing time uses present simple; the club closes.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 2 Q4"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "closes"
+          ]
+        },
+        {
+          "id": "u1-review-form-q5",
+          "type": "gap",
+          "prompt": "It is very cheap; it (don’t) cost much.",
+          "modelAnswer": "does not",
+          "explanation": "It uses does not in the present simple negative.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 12,
+            "printedPage": 11,
+            "question": "Review Activity 2 Q5"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "does not",
+            "doesn’t",
+            "doesn't"
+          ]
+        },
+        {
+          "id": "u1-review-form-q6",
+          "type": "gap",
+          "prompt": "(Be) Omer happy now?",
+          "modelAnswer": "Is",
+          "explanation": "Omer is one person, so use Is.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 2 Q6"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Is"
+          ]
+        },
+        {
+          "id": "u1-review-form-q7",
+          "type": "gap",
+          "prompt": "Aisha never (drink) tea at night.",
+          "modelAnswer": "drinks",
+          "explanation": "Aisha is one person; never does not remove the -s.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 2 Q7"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "drinks"
+          ]
+        },
+        {
+          "id": "u1-review-form-q8",
+          "type": "gap",
+          "prompt": "Eman (goes always) to work early.",
+          "modelAnswer": "always goes",
+          "explanation": "Put always before the main verb goes.",
+          "hint": "Check the subject and the position or form of the verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 2 Q8"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "always goes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1-review-bank",
+      "unit": "u1",
+      "lesson": "review",
+      "title": "Unit 1 Review · Word bank",
+      "kind": "review",
+      "extra": false,
+      "page": 12,
+      "pdfPages": [
+        13
+      ],
+      "items": [
+        {
+          "id": "u1-review-bank-q1",
+          "type": "gap",
+          "prompt": "I usually visit ancient ____ with my friends.",
+          "modelAnswer": "sites",
+          "explanation": "Ancient sites are historic places to visit.",
+          "hint": "Use the context of visiting historic places and the words in the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 3 gap 1"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "sites"
+          ]
+        },
+        {
+          "id": "u1-review-bank-q2",
+          "type": "gap",
+          "prompt": "There are many beautiful doors and buildings with Arabic ____.",
+          "modelAnswer": "designs",
+          "explanation": "Arabic designs decorate the doors and buildings.",
+          "hint": "Use the context of visiting historic places and the words in the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 3 gap 2"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "designs"
+          ]
+        },
+        {
+          "id": "u1-review-bank-q3",
+          "type": "gap",
+          "prompt": "I sometimes buy some ____.",
+          "modelAnswer": "Likely intended: souvenirs. Juice is also grammatical; discuss the full passage and accept another reasonable answer.",
+          "explanation": "The source does not uniquely determine this blank. It remains unscored.",
+          "hint": "Use the context of visiting historic places and the words in the box.",
+          "manual": true,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 3 gap 3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "souvenirs"
+          ],
+          "issue": "Both souvenirs and juice can follow “I sometimes buy some” in this isolated sentence. The word bank alone does not establish a unique answer."
+        }
+      ],
+      "passage": "My name is Amir. I usually visit ancient ____ with my friends. I sometimes go there with my family. My father likes to walk through the old streets. There are many beautiful doors and buildings with Arabic ____. I sometimes buy some ____. I take photos of the places we visit.",
+      "wordBank": [
+        "souvenirs",
+        "sites",
+        "juice",
+        "designs"
+      ]
+    },
+    {
+      "id": "u1-review-reading",
+      "unit": "u1",
+      "lesson": "review",
+      "title": "Unit 1 Review · Healthy Habits",
+      "kind": "review",
+      "extra": false,
+      "page": 12,
+      "pdfPages": [
+        13
+      ],
+      "items": [
+        {
+          "id": "u1-review-reading-q1",
+          "type": "choice",
+          "prompt": "____ is the opposite of the underlined word “outside”.",
+          "modelAnswer": "Inside",
+          "explanation": "Inside is the opposite of outside.",
+          "hint": "Which word means within a place?",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 4 A Q1"
+          },
+          "evidence": "passage p12",
+          "choices": [
+            "Incorrect",
+            "Inside",
+            "Strong",
+            "Helpful"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u1-review-reading-q2",
+          "type": "choice",
+          "prompt": "____ is important for a healthy life.",
+          "modelAnswer": "Good sleep",
+          "explanation": "The passage includes good sleep among healthy habits.",
+          "hint": "Find the list of healthy habits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 4 A Q2"
+          },
+          "evidence": "passage p12",
+          "choices": [
+            "Good sleep",
+            "Video games",
+            "Watching too much TV",
+            "Eating too much"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u1-review-reading-q3",
+          "type": "open",
+          "prompt": "How can you enjoy your life?",
+          "modelAnswer": "By having healthy habits and a balance of play and exercise, healthy food, water, social time and good sleep.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 4 B Q3"
+          },
+          "evidence": "passage p12"
+        },
+        {
+          "id": "u1-review-reading-q4",
+          "type": "open",
+          "prompt": "What happens if you have healthy habits?",
+          "modelAnswer": "You feel strong and happy and have good relationships.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 4 B Q4"
+          },
+          "evidence": "passage p12"
+        }
+      ],
+      "passage": "It's very important to have healthy habits. It's a good way to enjoy your life. Try to find a healthy balance of play and exercise, healthy food, water, social time, and good sleep. When you put together all these things, you can do your best and achieve everything you want. Put your phone away when you enjoy the outside world with your family and friends. If you have healthy habits, you feel strong, happy and have good relationships. We should learn these things from the early beginning."
+    },
+    {
+      "id": "u1-review-writing",
+      "unit": "u1",
+      "lesson": "review",
+      "title": "Unit 1 Review · Egypt, Our Beloved Country",
+      "kind": "writing",
+      "extra": false,
+      "page": 12,
+      "pdfPages": [
+        13
+      ],
+      "items": [
+        {
+          "id": "u1-review-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of about 50 words on the following topic: (Egypt, Our beloved country).",
+          "modelAnswer": "Egypt is our beloved country. The Nile connects many cities and villages, and ancient sites tell fascinating stories about the past. Visitors can explore museums, busy markets and beautiful natural places. I am proud of Egypt and believe we can care for it by respecting people and keeping our surroundings clean.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 13,
+            "printedPage": 12,
+            "question": "Review Activity 5"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "Egypt",
+            "what makes the country special",
+            "clear supporting details"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2-l1-reading",
+      "unit": "u2",
+      "lesson": "l1",
+      "title": "Caring for Plants · Tourism",
+      "kind": "lesson",
+      "extra": false,
+      "page": 13,
+      "pdfPages": [
+        14
+      ],
+      "items": [
+        {
+          "id": "u2-l1-reading-q1",
+          "type": "choice",
+          "prompt": "Plane journeys cause a lot of ____.",
+          "modelAnswer": "pollution",
+          "explanation": "The text says plane journeys create too much carbon dioxide.",
+          "hint": "Which option connects to environmental damage?",
+          "manual": false,
+          "source": {
+            "pdfPage": 14,
+            "printedPage": 13,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p13",
+          "choices": [
+            "pollution",
+            "monuments",
+            "exercise",
+            "station"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-l1-reading-q2",
+          "type": "choice",
+          "prompt": "The underlined word “damage” means ____.",
+          "modelAnswer": "destroy",
+          "explanation": "Destroy is closest in meaning to damage in these choices.",
+          "hint": "Look for a word meaning harm.",
+          "manual": false,
+          "source": {
+            "pdfPage": 14,
+            "printedPage": 13,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p13",
+          "choices": [
+            "save",
+            "keep",
+            "create",
+            "destroy"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-l1-reading-q3",
+          "type": "open",
+          "prompt": "What does tourism damage?",
+          "modelAnswer": "It can damage the natural environment and historical places.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 14,
+            "printedPage": 13,
+            "question": "CW Activity 1 B Q3"
+          },
+          "evidence": "passage p13"
+        },
+        {
+          "id": "u2-l1-reading-q4",
+          "type": "open",
+          "prompt": "Why should people try eco-tourism?",
+          "modelAnswer": "Because it looks after wildlife, monuments and local people.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 14,
+            "printedPage": 13,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "passage p13"
+        }
+      ],
+      "passage": "Tourism is very important to a lot of countries. It gives jobs to local people. It helps tourists learn about new cultures. On the other hand, it can damage the environment. It creates too much carbon dioxide from plane journeys. Tourists can damage the natural environment and historical places. People should try eco-tourism. It looks after wildlife, monuments, and local people."
+    },
+    {
+      "id": "u2-l1-vocab",
+      "unit": "u2",
+      "lesson": "l1",
+      "title": "Caring for Plants · Useful expressions",
+      "kind": "lesson",
+      "extra": false,
+      "page": 14,
+      "pdfPages": [
+        15
+      ],
+      "items": [
+        {
+          "id": "u2-l1-vocab-q1",
+          "type": "choice",
+          "prompt": "I (pull – check – do – eat) out the weeds from the garden every morning.",
+          "modelAnswer": "pull",
+          "explanation": "The expression is pull out the weeds.",
+          "hint": "Think about the words that go together in this expression.",
+          "manual": false,
+          "source": {
+            "pdfPage": 15,
+            "printedPage": 14,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "pull",
+            "check",
+            "do",
+            "eat"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-l1-vocab-q2",
+          "type": "choice",
+          "prompt": "We help my grandpa (care – grow – take – have) for the plants in his garden.",
+          "modelAnswer": "care",
+          "explanation": "Care for means look after.",
+          "hint": "Think about the words that go together in this expression.",
+          "manual": false,
+          "source": {
+            "pdfPage": 15,
+            "printedPage": 14,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "care",
+            "grow",
+            "take",
+            "have"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-l1-vocab-q3",
+          "type": "choice",
+          "prompt": "Every morning, I (make – take – look – pay) for insects on the plants.",
+          "modelAnswer": "look",
+          "explanation": "Look for means try to find.",
+          "hint": "Think about the words that go together in this expression.",
+          "manual": false,
+          "source": {
+            "pdfPage": 15,
+            "printedPage": 14,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "make",
+            "take",
+            "look",
+            "pay"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u2-l1-vocab-q4",
+          "type": "choice",
+          "prompt": "Grandpa (does – has – takes – sells) care of his plants every day.",
+          "modelAnswer": "takes",
+          "explanation": "The expression is takes care of.",
+          "hint": "Think about the words that go together in this expression.",
+          "manual": false,
+          "source": {
+            "pdfPage": 15,
+            "printedPage": 14,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "does",
+            "has",
+            "takes",
+            "sells"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u2-l1-vocab-q5",
+          "type": "choice",
+          "prompt": "What is hibiscus used (from – for – off – of) in the family?",
+          "modelAnswer": "for",
+          "explanation": "Used for introduces a purpose.",
+          "hint": "Think about the words that go together in this expression.",
+          "manual": false,
+          "source": {
+            "pdfPage": 15,
+            "printedPage": 14,
+            "question": "CW Activity 2 Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "from",
+            "for",
+            "off",
+            "of"
+          ],
+          "correct": 1
+        }
+      ]
+    },
+    {
+      "id": "u2-l1-writing",
+      "unit": "u2",
+      "lesson": "l1",
+      "title": "How Plants Help · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 14,
+      "pdfPages": [
+        15
+      ],
+      "items": [
+        {
+          "id": "u2-l1-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of 50 words about: (How do plants help people and the environment?).",
+          "modelAnswer": "Plants help people and the environment in many ways. They give us food, wood and materials for useful products. Trees provide shade, while flowers make places more beautiful. Plants also release oxygen and provide homes for wildlife. We can protect them by caring for gardens and using natural resources thoughtfully.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 15,
+            "printedPage": 14,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "how plants help people",
+            "how plants help the environment",
+            "supporting examples"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2-l2-form",
+      "unit": "u2",
+      "lesson": "l2",
+      "title": "How’s the Weather in Your City? · Present continuous",
+      "kind": "lesson",
+      "extra": false,
+      "page": 15,
+      "pdfPages": [
+        16
+      ],
+      "items": [
+        {
+          "id": "u2-l2-form-q1",
+          "type": "gap",
+          "prompt": "Mohamed ____ (play) tennis in the club now.",
+          "modelAnswer": "is playing",
+          "explanation": "Use is plus playing for Mohamed’s action now.",
+          "hint": "Use am, is or are plus the -ing form. For Q2, write the whole opening “Are you eating”.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 1 Q1"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "is playing"
+          ]
+        },
+        {
+          "id": "u2-l2-form-q2",
+          "type": "gap",
+          "prompt": "____ you ____ (eat) your lunch at the moment? Write the two missing forms, or the complete question.",
+          "modelAnswer": "Are you eating",
+          "explanation": "The complete question is: Are you eating your lunch at the moment?",
+          "hint": "Use am, is or are plus the -ing form. For Q2, write the whole opening “Are you eating”.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 1 Q2"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Are eating",
+            "Are / eating",
+            "Are, eating",
+            "Are you eating",
+            "Are you eating your lunch at the moment?"
+          ]
+        },
+        {
+          "id": "u2-l2-form-q3",
+          "type": "gap",
+          "prompt": "I ____ (not wear) my jacket. It’s hot.",
+          "modelAnswer": "am not wearing",
+          "explanation": "With I, use am not plus wearing.",
+          "hint": "Use am, is or are plus the -ing form. For Q2, write the whole opening “Are you eating”.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 1 Q3"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "am not wearing",
+            "’m not wearing",
+            "'m not wearing"
+          ]
+        },
+        {
+          "id": "u2-l2-form-q4",
+          "type": "gap",
+          "prompt": "My friend and I ____ (visit) London now.",
+          "modelAnswer": "are visiting",
+          "explanation": "My friend and I means we: are visiting.",
+          "hint": "Use am, is or are plus the -ing form. For Q2, write the whole opening “Are you eating”.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 1 Q4"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "are visiting"
+          ]
+        },
+        {
+          "id": "u2-l2-form-q5",
+          "type": "gap",
+          "prompt": "Ahmed ____ (clean) his room right now.",
+          "modelAnswer": "is cleaning",
+          "explanation": "Ahmed is one person: is cleaning.",
+          "hint": "Use am, is or are plus the -ing form. For Q2, write the whole opening “Are you eating”.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 1 Q5"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "is cleaning"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2-l2-bank",
+      "unit": "u2",
+      "lesson": "l2",
+      "title": "How’s the Weather in Your City? · Plants word bank",
+      "kind": "lesson",
+      "extra": false,
+      "page": 15,
+      "pdfPages": [
+        16
+      ],
+      "items": [
+        {
+          "id": "u2-l2-bank-q1",
+          "type": "gap",
+          "prompt": "Since ancient times, people used olives to make ____.",
+          "modelAnswer": "oil",
+          "explanation": "Olives are used to make oil.",
+          "hint": "Choose a word from the box that fits the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "oil"
+          ]
+        },
+        {
+          "id": "u2-l2-bank-q2",
+          "type": "gap",
+          "prompt": "My brother and I have a plant. We ____ it every day.",
+          "modelAnswer": "water",
+          "explanation": "Watering a plant gives it water.",
+          "hint": "Choose a word from the box that fits the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "water"
+          ]
+        },
+        {
+          "id": "u2-l2-bank-q3",
+          "type": "gap",
+          "prompt": "In Egypt, people use ____ like basil in cooking.",
+          "modelAnswer": "herbs",
+          "explanation": "Basil is a herb used in cooking.",
+          "hint": "Choose a word from the box that fits the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "herbs"
+          ]
+        },
+        {
+          "id": "u2-l2-bank-q4",
+          "type": "gap",
+          "prompt": "Farmers ____ fruits like guavas and figs.",
+          "modelAnswer": "grow",
+          "explanation": "Farmers grow fruit.",
+          "hint": "Choose a word from the box that fits the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "grow"
+          ]
+        }
+      ],
+      "wordBank": [
+        "oil",
+        "grow",
+        "herbs",
+        "water"
+      ]
+    },
+    {
+      "id": "u2-l2-writing",
+      "unit": "u2",
+      "lesson": "l2",
+      "title": "The Importance of Plants · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 15,
+      "pdfPages": [
+        16
+      ],
+      "items": [
+        {
+          "id": "u2-l2-writing-q1",
+          "type": "writing",
+          "prompt": "Look at this picture and write a paragraph of 50 words about the importance of plants in our life.",
+          "modelAnswer": "Plants are an important part of our daily lives. We eat fruits, vegetables and grains, and use herbs to add flavor to food. Some plants provide oils, while trees give us wood and shade. By watering plants carefully and protecting green spaces, we help keep our communities healthy and beautiful.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 16,
+            "printedPage": 15,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "importance of plants",
+            "ways people use plants",
+            "supporting examples"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2-l3-reading",
+      "unit": "u2",
+      "lesson": "l3",
+      "title": "Wonderful Nile River · Omar at the museum",
+      "kind": "lesson",
+      "extra": false,
+      "page": 16,
+      "pdfPages": [
+        17
+      ],
+      "items": [
+        {
+          "id": "u2-l3-reading-q1",
+          "type": "choice",
+          "prompt": "We visited a room with lots of ____.",
+          "modelAnswer": "jewelry",
+          "explanation": "Omar says the room had lots of jewelry.",
+          "hint": "Find the sentence about the room.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p16",
+          "choices": [
+            "jewelry",
+            "books",
+            "chairs",
+            "pens"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-l3-reading-q2",
+          "type": "choice",
+          "prompt": "There were bracelets and ____ from Ancient Egypt.",
+          "modelAnswer": "necklaces",
+          "explanation": "The passage lists bracelets, necklaces and rings.",
+          "hint": "Find the list of jewelry.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p16",
+          "choices": [
+            "dresses",
+            "earrings",
+            "necklaces",
+            "shoes"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u2-l3-reading-q3",
+          "type": "open",
+          "prompt": "Where did Omar go last week?",
+          "modelAnswer": "He went to the museum with his family.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 1 B Q3"
+          },
+          "evidence": "passage p16"
+        },
+        {
+          "id": "u2-l3-reading-q4",
+          "type": "open",
+          "prompt": "Were there lots of things to see at the museum?",
+          "modelAnswer": "Yes, there were.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "passage p16"
+        }
+      ],
+      "passage": "I'm Omar. Last week, I went to the museum with my family. There were lots of things to see at it. We visited a room with lots of jewelry. There were bracelets, necklaces and rings from Ancient Egypt. After the jewelry, we saw tools and artifacts. The museum was amazing. I like history. We went back home at twelve o’clock."
+    },
+    {
+      "id": "u2-l3-bank",
+      "unit": "u2",
+      "lesson": "l3",
+      "title": "Wonderful Nile River · Study tips word bank",
+      "kind": "lesson",
+      "extra": false,
+      "page": 16,
+      "pdfPages": [
+        17
+      ],
+      "items": [
+        {
+          "id": "u2-l3-bank-q1",
+          "type": "gap",
+          "prompt": "I (1) ____ for about 30 minutes.",
+          "modelAnswer": "study",
+          "explanation": "Study describes learning or doing schoolwork.",
+          "hint": "Use all five words from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 2 printed gap 1"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "study"
+          ]
+        },
+        {
+          "id": "u2-l3-bank-q2",
+          "type": "gap",
+          "prompt": "I study at the same ____ each day.",
+          "modelAnswer": "time",
+          "explanation": "At the same time describes a regular routine.",
+          "hint": "Use all five words from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 2 unnumbered gap"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "time"
+          ]
+        },
+        {
+          "id": "u2-l3-bank-q3",
+          "type": "gap",
+          "prompt": "People’s brains (2) ____ better if they have a regular routine.",
+          "modelAnswer": "work",
+          "explanation": "Brains work better with a regular routine, according to this text.",
+          "hint": "Use all five words from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 2 printed gap 2"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "work"
+          ]
+        },
+        {
+          "id": "u2-l3-bank-q4",
+          "type": "gap",
+          "prompt": "It’s helpful if you (3) ____ down what you want to do each time you study.",
+          "modelAnswer": "write",
+          "explanation": "The expression is write down.",
+          "hint": "Use all five words from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 2 printed gap 3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "write"
+          ]
+        },
+        {
+          "id": "u2-l3-bank-q5",
+          "type": "gap",
+          "prompt": "Then I check it off the (4) ____ when I finish studying and feel proud!",
+          "modelAnswer": "list",
+          "explanation": "You check a finished task off a list.",
+          "hint": "Use all five words from the box.",
+          "manual": false,
+          "source": {
+            "pdfPage": 17,
+            "printedPage": 16,
+            "question": "CW Activity 2 printed gap 4"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "list"
+          ]
+        }
+      ],
+      "passage": "I have tips for studying. I (1) ____ for about 30 minutes. I study at the same ____ each day. People’s brains (2) ____ better if they have a regular routine. It’s helpful if you (3) ____ down what you want to do each time you study. Then I check it off the (4) ____ when I finish studying and feel proud!",
+      "wordBank": [
+        "work",
+        "time",
+        "study",
+        "write",
+        "list"
+      ]
+    },
+    {
+      "id": "u2-weekly-a",
+      "unit": "u2",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment A",
+      "kind": "model",
+      "extra": false,
+      "page": 17,
+      "pdfPages": [
+        18
+      ],
+      "items": [
+        {
+          "id": "u2-weekly-a-q1",
+          "type": "choice",
+          "prompt": "Horria is reading (everyday – today – day – yesterday).",
+          "modelAnswer": "today",
+          "explanation": "Today fits the present continuous sentence.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment A Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "everyday",
+            "today",
+            "day",
+            "yesterday"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-weekly-a-q2",
+          "type": "choice",
+          "prompt": "Look! They (running – run – are running – runs).",
+          "modelAnswer": "are running",
+          "explanation": "They needs are plus running for the action now.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment A Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "running",
+            "run",
+            "are running",
+            "runs"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u2-weekly-a-q3",
+          "type": "choice",
+          "prompt": "The view from the top of the tower is wonderful. “Wonderful” means (boring – bad – clever – great).",
+          "modelAnswer": "great",
+          "explanation": "Great has the same positive meaning as wonderful.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment A Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "boring",
+            "bad",
+            "clever",
+            "great"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-weekly-a-q4",
+          "type": "choice",
+          "prompt": "Today, many people still depend (on – at – in – of) the Nile for their jobs and food.",
+          "modelAnswer": "on",
+          "explanation": "The expression is depend on.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment A Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "on",
+            "at",
+            "in",
+            "of"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-weekly-a-q5",
+          "type": "choice",
+          "prompt": "(Are – Do – Is – Does) she washing the dishes now?",
+          "modelAnswer": "Is",
+          "explanation": "Use Is with she plus washing.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment A Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "Are",
+            "Do",
+            "Is",
+            "Does"
+          ],
+          "correct": 2
+        }
+      ],
+      "model": "A",
+      "series": "u2-week1"
+    },
+    {
+      "id": "u2-weekly-b",
+      "unit": "u2",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment B",
+      "kind": "model",
+      "extra": false,
+      "page": 17,
+      "pdfPages": [
+        18
+      ],
+      "items": [
+        {
+          "id": "u2-weekly-b-q1",
+          "type": "choice",
+          "prompt": "Look! He is (lying – lie – lied – lies) there.",
+          "modelAnswer": "lying",
+          "explanation": "The -ing form of lie is lying.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment B Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "lying",
+            "lie",
+            "lied",
+            "lies"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-weekly-b-q2",
+          "type": "choice",
+          "prompt": "He is (put – putting – puts – being putting) on his clothes.",
+          "modelAnswer": "putting",
+          "explanation": "Is is followed by putting.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment B Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "put",
+            "putting",
+            "puts",
+            "being putting"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-weekly-b-q3",
+          "type": "choice",
+          "prompt": "Mariam is running (yesterday – at the moment – ago – always).",
+          "modelAnswer": "at the moment",
+          "explanation": "At the moment fits an action in progress.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment B Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "yesterday",
+            "at the moment",
+            "ago",
+            "always"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-weekly-b-q4",
+          "type": "choice",
+          "prompt": "The Nile is very important (for – at – on – from) Egyptian people.",
+          "modelAnswer": "for",
+          "explanation": "The phrase is important for Egyptian people.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment B Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "for",
+            "at",
+            "on",
+            "from"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-weekly-b-q5",
+          "type": "choice",
+          "prompt": "He is (always – still – yesterday – ago) writing his lessons.",
+          "modelAnswer": "Still is the likely intended answer. Always is also grammatical; parent check, unscored.",
+          "explanation": "Still is likely intended, but always is also grammatical with the present continuous.",
+          "hint": "Both an ongoing action and a repeated habit can use the present continuous here.",
+          "manual": true,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment B Q5"
+          },
+          "evidence": "parent check",
+          "choices": [
+            "always",
+            "still",
+            "yesterday",
+            "ago"
+          ],
+          "issue": "Both still and always are grammatical choices; the isolated sentence does not give a unique answer."
+        }
+      ],
+      "model": "B",
+      "series": "u2-week1"
+    },
+    {
+      "id": "u2-weekly-c",
+      "unit": "u2",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment C",
+      "kind": "model",
+      "extra": false,
+      "page": 17,
+      "pdfPages": [
+        18
+      ],
+      "items": [
+        {
+          "id": "u2-weekly-c-q1",
+          "type": "choice",
+          "prompt": "Eman (has – is – have – does) reading English at the moment.",
+          "modelAnswer": "is",
+          "explanation": "Eman is one person: is reading.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment C Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "has",
+            "is",
+            "have",
+            "does"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-weekly-c-q2",
+          "type": "choice",
+          "prompt": "What (do you read – are you reading – you read – have you read) now?",
+          "modelAnswer": "are you reading",
+          "explanation": "Now points to the action in progress: are you reading.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment C Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "do you read",
+            "are you reading",
+            "you read",
+            "have you read"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-weekly-c-q3",
+          "type": "choice",
+          "prompt": "My father (waits – has waited – is waiting – waiting) for me. I must go now.",
+          "modelAnswer": "is waiting",
+          "explanation": "The immediate context points to is waiting.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment C Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "waits",
+            "has waited",
+            "is waiting",
+            "waiting"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u2-weekly-c-q4",
+          "type": "choice",
+          "prompt": "Why (have – are – do – does) you running?",
+          "modelAnswer": "are",
+          "explanation": "You takes are in the present continuous question.",
+          "hint": "Check the time expression, sentence meaning and helping verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 18,
+            "printedPage": 17,
+            "question": "Weekly Assessment C Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "have",
+            "are",
+            "do",
+            "does"
+          ],
+          "correct": 1
+        }
+      ],
+      "model": "C",
+      "series": "u2-week1"
+    },
+    {
+      "id": "u2-l45-reading",
+      "unit": "u2",
+      "lesson": "l45",
+      "title": "Unforgettable Trip to Wadi El Rayan · Community help",
+      "kind": "lesson",
+      "extra": false,
+      "page": 18,
+      "pdfPages": [
+        19
+      ],
+      "items": [
+        {
+          "id": "u2-l45-reading-q1",
+          "type": "choice",
+          "prompt": "The underlined word “pick up” means ____.",
+          "modelAnswer": "collect",
+          "explanation": "Pick up garbage means collect garbage.",
+          "hint": "Which choice means gather things together?",
+          "manual": false,
+          "source": {
+            "pdfPage": 19,
+            "printedPage": 18,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p18",
+          "choices": [
+            "boil",
+            "give",
+            "lase",
+            "collect"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-l45-reading-q2",
+          "type": "choice",
+          "prompt": "We should keep the park ____.",
+          "modelAnswer": "clean",
+          "explanation": "The last sentence says we should keep it clean.",
+          "hint": "Read the final sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 19,
+            "printedPage": 18,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p18",
+          "choices": [
+            "untidy",
+            "clean",
+            "dirty",
+            "polluted"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-l45-reading-q3",
+          "type": "open",
+          "prompt": "How is helping your community very useful for you?",
+          "modelAnswer": "You can learn new skills, make new friends and make your neighborhood a better place.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 19,
+            "printedPage": 18,
+            "question": "CW Activity 1 B Q3"
+          },
+          "evidence": "passage p18"
+        },
+        {
+          "id": "u2-l45-reading-q4",
+          "type": "open",
+          "prompt": "Give a suitable title for this text.",
+          "modelAnswer": "Helping Our Community.",
+          "explanation": "Accept a short title that fits volunteering and helping the community; exact wording is not required.",
+          "hint": "Choose a title that covers the whole passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 19,
+            "printedPage": 18,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "passage p18"
+        }
+      ],
+      "passage": "We all live in a community and we should all help the people who live in it. When you help as a volunteer, it’s a great way to help your community. You can learn new skills, make new friends, and make your neighborhood a better place. We spoke to people in our neighborhood about different ways people can make our community stronger. We can pick up garbage with cousins. Garbage is really annoying. We can use gloves, bags and special sticks to pick up the garbage. The park is a good place to play, so we should keep it clean."
+    },
+    {
+      "id": "u2-l45-writing",
+      "unit": "u2",
+      "lesson": "l45",
+      "title": "The School Sports Day · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 18,
+      "pdfPages": [
+        19
+      ],
+      "items": [
+        {
+          "id": "u2-l45-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of 50 words about: (The school sports day).",
+          "modelAnswer": "Our school sports day was full of energy and excitement. My classmates joined races and team games while everyone cheered. I took part in a running race and helped my team prepare. We congratulated the winners and encouraged our friends. I enjoyed the teamwork and felt proud of our effort.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 19,
+            "printedPage": 18,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "school sports day",
+            "events or activities",
+            "what you did or enjoyed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2-review-choice",
+      "unit": "u2",
+      "lesson": "review",
+      "title": "Unit 2 Review · Choose",
+      "kind": "review",
+      "extra": false,
+      "page": 19,
+      "pdfPages": [
+        20
+      ],
+      "items": [
+        {
+          "id": "u2-review-choice-q1",
+          "type": "choice",
+          "prompt": "When it’s hot, people drink water and rest in the ____.",
+          "modelAnswer": "shade",
+          "explanation": "Resting in the shade helps people stay out of direct sun.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "shade",
+            "sun",
+            "heat",
+            "dust"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-review-choice-q2",
+          "type": "choice",
+          "prompt": "I like looking at the high ____ in the sea.",
+          "modelAnswer": "waves",
+          "explanation": "Waves are in the sea.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "stars",
+            "mountains",
+            "clouds",
+            "waves"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-choice-q3",
+          "type": "choice",
+          "prompt": "It is windy and the sky is full of dark ____.",
+          "modelAnswer": "clouds",
+          "explanation": "Clouds are in the sky.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "waves",
+            "glasses",
+            "plants",
+            "clouds"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-choice-q4",
+          "type": "choice",
+          "prompt": "In ____ weather, people should drink a lot of water.",
+          "modelAnswer": "hot",
+          "explanation": "Hot is the intended weather word.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "rainy",
+            "hot",
+            "cool",
+            "cold"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-review-choice-q5",
+          "type": "choice",
+          "prompt": "The streets are ____ because it is raining heavily.",
+          "modelAnswer": "wet",
+          "explanation": "Heavy rain makes streets wet.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "dry",
+            "wet",
+            "dusty",
+            "rainy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u2-review-choice-q6",
+          "type": "choice",
+          "prompt": "We wear hats to ____ ourselves from the sun.",
+          "modelAnswer": "protect",
+          "explanation": "The expression is protect ourselves from the sun.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q6"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "heat",
+            "clean",
+            "grow",
+            "protect"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-choice-q7",
+          "type": "choice",
+          "prompt": "Some people like to check the ____ to know if it’s hot or cold.",
+          "modelAnswer": "weather",
+          "explanation": "Checking the weather tells you about hot or cold conditions.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q7"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "shops",
+            "beach",
+            "plants",
+            "weather"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-choice-q8",
+          "type": "choice",
+          "prompt": "What are you ____, Nada?",
+          "modelAnswer": "doing",
+          "explanation": "Are you is followed by doing in this question.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q8"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "do",
+            "does",
+            "did",
+            "doing"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-choice-q9",
+          "type": "choice",
+          "prompt": "I’m ____ for the football game.",
+          "modelAnswer": "practicing",
+          "explanation": "Am is followed by practicing.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q9"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "practicing",
+            "practice",
+            "practiced",
+            "practices"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u2-review-choice-q10",
+          "type": "choice",
+          "prompt": "Ali and Tarek aren’t ____ in the park. They are studying for the exam.",
+          "modelAnswer": "running",
+          "explanation": "Aren’t is followed by running in this continuous sentence.",
+          "hint": "Read the whole sentence and choose what fits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 1 Q10"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "run",
+            "runs",
+            "running",
+            "ran"
+          ],
+          "correct": 2
+        }
+      ]
+    },
+    {
+      "id": "u2-review-form",
+      "unit": "u2",
+      "lesson": "review",
+      "title": "Unit 2 Review · Correct the form",
+      "kind": "review",
+      "extra": false,
+      "page": 19,
+      "pdfPages": [
+        20,
+        21
+      ],
+      "items": [
+        {
+          "id": "u2-review-form-q1",
+          "type": "gap",
+          "prompt": "The sun (shine) brightly today.",
+          "modelAnswer": "is shining",
+          "explanation": "Use is plus shining for the action today.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 2 Q1"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "is shining"
+          ]
+        },
+        {
+          "id": "u2-review-form-q2",
+          "type": "gap",
+          "prompt": "She (close) the window because it’s raining.",
+          "modelAnswer": "is closing",
+          "explanation": "Use is plus closing for this current action.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 2 Q2"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "is closing"
+          ]
+        },
+        {
+          "id": "u2-review-form-q3",
+          "type": "gap",
+          "prompt": "Nora (not study) for the test. She is watching TV.",
+          "modelAnswer": "is not studying",
+          "explanation": "Nora’s current action is watching TV, so she is not studying.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 2 Q3"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "is not studying",
+            "isn’t studying",
+            "isn't studying"
+          ]
+        },
+        {
+          "id": "u2-review-form-q4",
+          "type": "gap",
+          "prompt": "Are the birds (fly) in the sky?",
+          "modelAnswer": "flying",
+          "explanation": "The question already has Are; add flying.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 2 Q4"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "flying"
+          ]
+        },
+        {
+          "id": "u2-review-form-q5",
+          "type": "gap",
+          "prompt": "Why (do) they not revising hard?",
+          "modelAnswer": "are",
+          "explanation": "The -ing form revising needs are with they.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 20,
+            "printedPage": 19,
+            "question": "Review Activity 2 Q5"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "are"
+          ]
+        },
+        {
+          "id": "u2-review-form-q6",
+          "type": "gap",
+          "prompt": "We (celebrate) my sister’s birthday tonight.",
+          "modelAnswer": "are celebrating",
+          "explanation": "Present continuous can describe a planned event tonight.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 2 Q6"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "are celebrating"
+          ]
+        },
+        {
+          "id": "u2-review-form-q7",
+          "type": "gap",
+          "prompt": "(Do) your aunts visiting you tonight?",
+          "modelAnswer": "Are",
+          "explanation": "Your aunts is plural, and visiting needs Are.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 2 Q7"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Are"
+          ]
+        },
+        {
+          "id": "u2-review-form-q8",
+          "type": "gap",
+          "prompt": "He (water) the flowers in the garden at the moment.",
+          "modelAnswer": "is watering",
+          "explanation": "At the moment calls for is watering.",
+          "hint": "Use am, is or are with the -ing form where needed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 2 Q8"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "is watering"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2-review-bank",
+      "unit": "u2",
+      "lesson": "review",
+      "title": "Unit 2 Review · A river",
+      "kind": "review",
+      "extra": false,
+      "page": 20,
+      "pdfPages": [
+        21
+      ],
+      "items": [
+        {
+          "id": "u2-review-bank-q1",
+          "type": "gap",
+          "prompt": "It ____ fresh water to people.",
+          "modelAnswer": "carries",
+          "explanation": "Carries means takes or brings something.",
+          "hint": "Use the words from the box and read the whole paragraph.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 3 gap 1"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "carries"
+          ]
+        },
+        {
+          "id": "u2-review-bank-q2",
+          "type": "gap",
+          "prompt": "It ____ through the land, bringing life to the country.",
+          "modelAnswer": "flows",
+          "explanation": "A river flows through the land.",
+          "hint": "Use the words from the box and read the whole paragraph.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 3 gap 2"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "flows"
+          ]
+        },
+        {
+          "id": "u2-review-bank-q3",
+          "type": "gap",
+          "prompt": "Many different kinds of ____ live in its water.",
+          "modelAnswer": "animals",
+          "explanation": "Animals fits the things living in the water.",
+          "hint": "Use the words from the box and read the whole paragraph.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 3 gap 3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "animals"
+          ]
+        },
+        {
+          "id": "u2-review-bank-q4",
+          "type": "gap",
+          "prompt": "Beautiful ____ live near it.",
+          "modelAnswer": "birds",
+          "explanation": "Birds is the fitting remaining word for living things near the river.",
+          "hint": "Use the words from the box and read the whole paragraph.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 3 gap 4"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "birds"
+          ]
+        }
+      ],
+      "passage": "A river is a source of life. It ____ fresh water to people and ____ through the land, bringing life to the country. Many different kinds of ____ live in its water, and beautiful ____ live near it.",
+      "wordBank": [
+        "animals",
+        "carries",
+        "birds",
+        "desert",
+        "flows"
+      ]
+    },
+    {
+      "id": "u2-review-reading",
+      "unit": "u2",
+      "lesson": "review",
+      "title": "Unit 2 Review · Hana’s city life",
+      "kind": "review",
+      "extra": false,
+      "page": 20,
+      "pdfPages": [
+        21
+      ],
+      "items": [
+        {
+          "id": "u2-review-reading-q1",
+          "type": "choice",
+          "prompt": "The underlined word “them” refers to ____.",
+          "modelAnswer": "grandparents",
+          "explanation": "Them refers to Hana’s grandparents in the previous sentence.",
+          "hint": "Who lives on a farm?",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 4 A Q1"
+          },
+          "evidence": "passage p20",
+          "choices": [
+            "the farms",
+            "cities",
+            "parents",
+            "grandparents"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-reading-q2",
+          "type": "choice",
+          "prompt": "The countryside is ____ than Cairo.",
+          "modelAnswer": "quieter",
+          "explanation": "Hana says the countryside is too quiet and Cairo is noisier.",
+          "hint": "Compare the descriptions of the two places.",
+          "manual": false,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 4 A Q2"
+          },
+          "evidence": "passage p20",
+          "choices": [
+            "dirtier",
+            "faster",
+            "noisier",
+            "quieter"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u2-review-reading-q3",
+          "type": "open",
+          "prompt": "What is the main idea of the text?",
+          "modelAnswer": "Hana compares city life with life in the countryside and explains why she prefers city life.",
+          "explanation": "Accept a concise summary about Hana’s preference for city life and her comparison with the countryside.",
+          "hint": "Think about the topic connecting the whole passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 4 B Q4"
+          },
+          "evidence": "passage p20"
+        },
+        {
+          "id": "u2-review-reading-q4",
+          "type": "open",
+          "prompt": "What kind of life does Hana prefer?",
+          "modelAnswer": "She prefers city life.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 21,
+            "printedPage": 20,
+            "question": "Review Activity 4 B Q5"
+          },
+          "evidence": "passage p20"
+        }
+      ],
+      "passage": "My name’s Hana. I live in Cairo and I love city life! Some people think that cities are too noisy. I agree! Cairo is noisier than the countryside and the roads are too busy. There are too many cars and the air is too polluted. But I prefer city life because it’s always exciting! There’s a lot to do and see here. My grandparents live on a farm. When I visit them, I think the countryside is too quiet."
+    },
+    {
+      "id": "u3-l1-reading",
+      "unit": "u3",
+      "lesson": "l1",
+      "title": "Jobs That Help the Community · Children’s needs",
+      "kind": "lesson",
+      "extra": false,
+      "page": 21,
+      "pdfPages": [
+        22
+      ],
+      "items": [
+        {
+          "id": "u3-l1-reading-q1",
+          "type": "choice",
+          "prompt": "Children need good ____.",
+          "modelAnswer": "all of these",
+          "explanation": "The passage lists good food, good health and good education.",
+          "hint": "Check the list of children’s needs.",
+          "manual": false,
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 21,
+            "question": "CW Activity 1 A Q3"
+          },
+          "evidence": "passage p21",
+          "choices": [
+            "food",
+            "education",
+            "health",
+            "all of these"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u3-l1-reading-q2",
+          "type": "choice",
+          "prompt": "The underline word (them) refers to ____.",
+          "modelAnswer": "Children — this correct referent is missing from the printed choices.",
+          "explanation": "Them refers to children. None of the printed choices gives that answer, so this item is unscored.",
+          "hint": "Who should learn how to love, give and help?",
+          "manual": true,
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 21,
+            "question": "CW Activity 1 A Q4"
+          },
+          "evidence": "passage p21",
+          "choices": [
+            "men",
+            "women",
+            "women",
+            "women"
+          ],
+          "issue": "Defective printed choices: them refers to children, but choices are men/women/women/women. Do not assign a correct choice."
+        },
+        {
+          "id": "u3-l1-reading-q3",
+          "type": "open",
+          "prompt": "Why should we care about our children?",
+          "modelAnswer": "Because they are the men and women of the future.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 21,
+            "question": "CW Activity 1 B Q1"
+          },
+          "evidence": "passage p21"
+        },
+        {
+          "id": "u3-l1-reading-q4",
+          "type": "open",
+          "prompt": "What does a child need?",
+          "modelAnswer": "A child needs good food, good health, good education and chances to exercise, as described in the passage.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 21,
+            "question": "CW Activity 1 B Q2"
+          },
+          "evidence": "passage p21"
+        }
+      ],
+      "passage": "Children are the men and women of the future; we should begin with good children. We should give children good food, good health and good education. They should be given the chance to practice exercises and sport to build their bodies. We should teach them how to love, give and help. We should set the examples for our children in what we say and what we do."
+    },
+    {
+      "id": "u3-l1-vocab",
+      "unit": "u3",
+      "lesson": "l1",
+      "title": "Jobs That Help the Community · Job vocabulary",
+      "kind": "lesson",
+      "extra": false,
+      "page": 22,
+      "pdfPages": [
+        23
+      ],
+      "items": [
+        {
+          "id": "u3-l1-vocab-q1",
+          "type": "choice",
+          "prompt": "A (street cleaner – delivery person – nurse – doctor) brings food or packages to places.",
+          "modelAnswer": "delivery person",
+          "explanation": "A delivery person brings food or packages.",
+          "hint": "Match the job with what the person does.",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "street cleaner",
+            "delivery person",
+            "nurse",
+            "doctor"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-l1-vocab-q2",
+          "type": "choice",
+          "prompt": "Water resources (teachers – doctors – engineers – farmers) make sure people get clean water.",
+          "modelAnswer": "engineers",
+          "explanation": "Water resources engineers work on water systems.",
+          "hint": "Match the job with what the person does.",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "teachers",
+            "doctors",
+            "engineers",
+            "farmers"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-l1-vocab-q3",
+          "type": "choice",
+          "prompt": "Mechanics fix (vehicles – computers – televisions – bags).",
+          "modelAnswer": "vehicles",
+          "explanation": "Mechanics fix vehicles.",
+          "hint": "Match the job with what the person does.",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "vehicles",
+            "computers",
+            "televisions",
+            "bags"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-l1-vocab-q4",
+          "type": "choice",
+          "prompt": "The traffic officer helps people (make – cross – put – correct) the road.",
+          "modelAnswer": "cross",
+          "explanation": "The expression is cross the road.",
+          "hint": "Match the job with what the person does.",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "make",
+            "cross",
+            "put",
+            "correct"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-l1-vocab-q5",
+          "type": "choice",
+          "prompt": "A (paramedic – cleaner – policeman – student) helps patients in emergencies.",
+          "modelAnswer": "paramedic",
+          "explanation": "A paramedic helps patients in emergencies.",
+          "hint": "Match the job with what the person does.",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "CW Activity 2 Q5"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "paramedic",
+            "cleaner",
+            "policeman",
+            "student"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    {
+      "id": "u3-l1-homework",
+      "unit": "u3",
+      "lesson": "l1",
+      "title": "Jobs That Help the Community · Volcanoes homework",
+      "kind": "lesson",
+      "extra": false,
+      "page": 22,
+      "pdfPages": [
+        23
+      ],
+      "items": [
+        {
+          "id": "u3-l1-homework-q1",
+          "type": "choice",
+          "prompt": "The text is about ____.",
+          "modelAnswer": "volcanoes",
+          "explanation": "The whole passage describes volcanoes and lava.",
+          "hint": "What subject appears throughout the text?",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "HW Activity A Q1"
+          },
+          "evidence": "passage p22",
+          "choices": [
+            "wonders",
+            "storm-chasers",
+            "volcanoes",
+            "monuments"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-l1-homework-q2",
+          "type": "choice",
+          "prompt": "Scientists try to know when a volcano ____.",
+          "modelAnswer": "erupts",
+          "explanation": "The passage explicitly says scientists try to know when a volcano erupts.",
+          "hint": "Find the sentence about scientists.",
+          "manual": false,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "HW Activity A Q2"
+          },
+          "evidence": "passage p22",
+          "choices": [
+            "travels",
+            "erupts",
+            "melts",
+            "dies"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-l1-homework-q3",
+          "type": "open",
+          "prompt": "What do volcanoes look like?",
+          "modelAnswer": "They look like mountains.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "HW Activity B Q3"
+          },
+          "evidence": "passage p22"
+        },
+        {
+          "id": "u3-l1-homework-q4",
+          "type": "open",
+          "prompt": "Why do you think lava is dangerous?",
+          "modelAnswer": "Because it is very hot and can burn trees, forests and houses.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 22,
+            "question": "HW Activity B Q4"
+          },
+          "evidence": "passage p22"
+        }
+      ],
+      "passage": "Volcanoes look like mountains. Volcanoes can be called fire mountains. There are a lot of volcanoes in the world. Some are sleeping and some are awake. When the volcano is awake, we say the volcano is active. This means hot rocks come out of the top. This can happen fast or slowly. When the rock is very hot, it is called lava. This rock or lava moves like slow water. It can burn trees, forests and even houses. Scientists try to study volcanoes to know when a volcano erupts. This is important to help people be safe."
+    },
+    {
+      "id": "u3-l2-order",
+      "unit": "u3",
+      "lesson": "l2",
+      "title": "Let’s Help Our Community · Put words in order",
+      "kind": "lesson",
+      "extra": false,
+      "page": 23,
+      "pdfPages": [
+        24
+      ],
+      "items": [
+        {
+          "id": "u3-l2-order-q1",
+          "type": "order",
+          "prompt": "play - We - outside - can - tennis.",
+          "modelAnswer": "We can play tennis outside.",
+          "explanation": "Use the subject, then can or a form of be plus able to, then the base verb and the remaining words.",
+          "hint": "Start with the person who does the action.",
+          "manual": false,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 1 Q1"
+          },
+          "evidence": "English language rule",
+          "tokens": [
+            "play",
+            "We",
+            "outside",
+            "can",
+            "tennis"
+          ],
+          "answers": [
+            "We can play tennis outside.",
+            "Outside, we can play tennis."
+          ]
+        },
+        {
+          "id": "u3-l2-order-q2",
+          "type": "order",
+          "prompt": "speak - well - Hassan’s - English - able to - very.",
+          "modelAnswer": "Hassan’s able to speak English very well.",
+          "explanation": "Use the subject, then can or a form of be plus able to, then the base verb and the remaining words.",
+          "hint": "Start with the person who does the action.",
+          "manual": false,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 1 Q2"
+          },
+          "evidence": "English language rule",
+          "tokens": [
+            "speak",
+            "well",
+            "Hassan’s",
+            "English",
+            "able to",
+            "very"
+          ],
+          "answers": [
+            "Hassan’s able to speak English very well.",
+            "Hassan's able to speak English very well.",
+            "Hassan is able to speak English very well."
+          ]
+        },
+        {
+          "id": "u3-l2-order-q3",
+          "type": "order",
+          "prompt": "able to - She - draw - is - beautifully.",
+          "modelAnswer": "She is able to draw beautifully.",
+          "explanation": "Use the subject, then can or a form of be plus able to, then the base verb and the remaining words.",
+          "hint": "Start with the person who does the action.",
+          "manual": false,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 1 Q4"
+          },
+          "evidence": "English language rule",
+          "tokens": [
+            "able to",
+            "She",
+            "draw",
+            "is",
+            "beautifully"
+          ],
+          "answers": [
+            "She is able to draw beautifully."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3-l2-form",
+      "unit": "u3",
+      "lesson": "l2",
+      "title": "Let’s Help Our Community · Can and able to",
+      "kind": "lesson",
+      "extra": false,
+      "page": 23,
+      "pdfPages": [
+        24
+      ],
+      "items": [
+        {
+          "id": "u3-l2-form-q1",
+          "type": "gap",
+          "prompt": "She ____ (not can) walk to school.",
+          "modelAnswer": "cannot",
+          "explanation": "The negative of can is cannot or can’t.",
+          "hint": "Use the negative form of can.",
+          "manual": false,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 2 Q1"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "cannot",
+            "can’t",
+            "can't"
+          ]
+        },
+        {
+          "id": "u3-l2-form-q2",
+          "type": "gap",
+          "prompt": "I am ____ (able) run fast.",
+          "modelAnswer": "able to",
+          "explanation": "The full phrase is am able to run.",
+          "hint": "The phrase able needs a small word before the base verb.",
+          "manual": false,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 2 Q2"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "able to"
+          ]
+        },
+        {
+          "id": "u3-l2-form-q3",
+          "type": "gap",
+          "prompt": "____ (Can’t) they do the research? – Yes, they can.",
+          "modelAnswer": "Can",
+          "explanation": "Can is likely intended as the correction, but Can’t they...? is also a grammatical negative question with the answer Yes, they can. A parent checks it.",
+          "hint": "A positive answer is possible after either a positive or a negative can-question.",
+          "manual": true,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 2 Q3"
+          },
+          "evidence": "parent check",
+          "answers": [
+            "Can",
+            "Can’t",
+            "Can't"
+          ],
+          "issue": "Can they...? and Can’t they...? are both grammatical and can receive Yes, they can. No unique correction is established."
+        },
+        {
+          "id": "u3-l2-form-q4",
+          "type": "gap",
+          "prompt": "(Do) ____ they able to tidy the flat?",
+          "modelAnswer": "Are",
+          "explanation": "Able to needs be; with they use Are.",
+          "hint": "Use the plural form of be.",
+          "manual": false,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "CW Activity 2 Q4"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Are"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3-l2-writing",
+      "unit": "u3",
+      "lesson": "l2",
+      "title": "Healthy Food · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 23,
+      "pdfPages": [
+        24
+      ],
+      "items": [
+        {
+          "id": "u3-l2-writing-q1",
+          "type": "writing",
+          "prompt": "Write a text of 50 words about “healthy food” using the following guiding words: (fresh food, water, fruit, vitamins, vegetables and plenty of proteins).",
+          "modelAnswer": "Healthy food helps us grow and feel ready for the day. I choose fresh food, including fruit and vegetables, which provide vitamins. Foods such as beans, eggs and fish provide protein. I also drink water regularly. Eating a variety of foods and enjoying balanced meals helps me care for myself.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 23,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "fresh food",
+            "water",
+            "fruit",
+            "vitamins",
+            "vegetables",
+            "protein"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3-l3-sandwich",
+      "unit": "u3",
+      "lesson": "l3",
+      "title": "The Proud Rose · Sandwich reading",
+      "kind": "lesson",
+      "extra": false,
+      "page": 24,
+      "pdfPages": [
+        25
+      ],
+      "items": [
+        {
+          "id": "u3-l3-sandwich-q1",
+          "type": "choice",
+          "prompt": "John Montagu used bread and ____ for the first sandwich.",
+          "modelAnswer": "meat",
+          "explanation": "The passage says he used bread and meat.",
+          "hint": "Look at what he used for the first sandwich.",
+          "manual": false,
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 24,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p24",
+          "choices": [
+            "cheese",
+            "eggs",
+            "meat",
+            "chicken"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-l3-sandwich-q2",
+          "type": "choice",
+          "prompt": "He liked to eat a sandwich and play ____.",
+          "modelAnswer": "cards",
+          "explanation": "The text says he liked to play cards.",
+          "hint": "Find what he liked to play.",
+          "manual": false,
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 24,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p24",
+          "choices": [
+            "cards",
+            "tennis",
+            "basketball",
+            "football"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-l3-sandwich-q3",
+          "type": "open",
+          "prompt": "When did John Montagu invent the sandwich?",
+          "modelAnswer": "According to the passage, in 1750.",
+          "explanation": "This answer reports the date supplied by this passage. It is not a separately verified historical claim.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 24,
+            "question": "CW Activity 1 B Q3"
+          },
+          "evidence": "passage p24"
+        },
+        {
+          "id": "u3-l3-sandwich-q4",
+          "type": "open",
+          "prompt": "Where can you buy a sandwich?",
+          "modelAnswer": "In the United States, at sandwich shops and grocery stores, according to the passage.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 24,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "passage p24"
+        }
+      ],
+      "passage": "The sandwich has a long history. In 1750 john Montagu invented the sandwich. He used bread and meat for the first sandwich. He liked to eat a sandwich and play cards. The sandwich is now one of America’s favourite foods. In the United States, there is a sandwich shop in every town and you can buy sandwiches at every grocery store."
+    },
+    {
+      "id": "u3-l3-icecream",
+      "unit": "u3",
+      "lesson": "l3",
+      "title": "The Proud Rose · Ice cream reading",
+      "kind": "lesson",
+      "extra": false,
+      "page": 25,
+      "pdfPages": [
+        26
+      ],
+      "items": [
+        {
+          "id": "u3-l3-icecream-q1",
+          "type": "choice",
+          "prompt": "Ice cream has a long ____.",
+          "modelAnswer": "history",
+          "explanation": "The opening sentence says ice cream has a long history.",
+          "hint": "Read the first sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 25,
+            "question": "CW Activity 2 A Q1"
+          },
+          "evidence": "passage p25",
+          "choices": [
+            "Arabic",
+            "math",
+            "history",
+            "English"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-l3-icecream-q2",
+          "type": "choice",
+          "prompt": "There are a lot of ice cream ____.",
+          "modelAnswer": "flavors",
+          "explanation": "The passage says there are many flavors.",
+          "hint": "Which word means different tastes?",
+          "manual": false,
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 25,
+            "question": "CW Activity 2 A Q2"
+          },
+          "evidence": "passage p25",
+          "choices": [
+            "flavors",
+            "flour",
+            "favor",
+            "flowers"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-l3-icecream-q3",
+          "type": "open",
+          "prompt": "Who invented the first ice cream churn?",
+          "modelAnswer": "Nancy Johnson, according to the passage.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 25,
+            "question": "CW Activity 2 B Q1"
+          },
+          "evidence": "passage p25"
+        },
+        {
+          "id": "u3-l3-icecream-q4",
+          "type": "open",
+          "prompt": "When did the first ice cream factory open?",
+          "modelAnswer": "In 1851, according to the passage.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 25,
+            "question": "CW Activity 2 B Q2"
+          },
+          "evidence": "passage p25"
+        }
+      ],
+      "passage": "Ice cream has a long history. Nancy Johnson invented the first ice cream churn. The first ice cream factory opened in 1851. The first ice cream shop opened in New York in 1876. Now you can buy ice cream at every grocery store. There are a lot of flavors. My favourite flavor is chocolate."
+    },
+    {
+      "id": "u3-l3-writing",
+      "unit": "u3",
+      "lesson": "l3",
+      "title": "The School · Homework writing",
+      "kind": "writing",
+      "extra": false,
+      "page": 25,
+      "pdfPages": [
+        26
+      ],
+      "items": [
+        {
+          "id": "u3-l3-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of about fifty (50) words using the following guiding elements: (The school) — Important role in education; learn good moral; honesty, respect, good behavior; subjects.",
+          "modelAnswer": "School plays an important role in our education. We study subjects such as English, mathematics and science, but we also learn good morals. Honesty, respect and good behavior help us work together. Our teachers encourage us to ask questions, support our classmates and become responsible members of the wider community.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 25,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "school’s role in education",
+            "good morals",
+            "honesty and respect",
+            "good behavior",
+            "subjects"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3-weekly-a",
+      "unit": "u3",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment A",
+      "kind": "model",
+      "extra": false,
+      "page": 26,
+      "pdfPages": [
+        27
+      ],
+      "items": [
+        {
+          "id": "u3-weekly-a-q1",
+          "type": "choice",
+          "prompt": "If you are a pedestrian, you have to be ____.",
+          "modelAnswer": "careful",
+          "explanation": "The final sentence says pedestrians have to be careful.",
+          "hint": "Read the final sentence.",
+          "manual": false,
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 26,
+            "question": "Weekly Assessment A A Q1"
+          },
+          "evidence": "passage p26",
+          "choices": [
+            "kind",
+            "careful",
+            "careless",
+            "bad"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-weekly-a-q2",
+          "type": "choice",
+          "prompt": "Cairo Governorate is ____ populated.",
+          "modelAnswer": "densely",
+          "explanation": "The passage describes Cairo Governorate as densely populated.",
+          "hint": "Find how the text describes Cairo’s population.",
+          "manual": false,
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 26,
+            "question": "Weekly Assessment A A Q2"
+          },
+          "evidence": "passage p26",
+          "choices": [
+            "densely",
+            "sparsely",
+            "slowly",
+            "quickly"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-weekly-a-q3",
+          "type": "open",
+          "prompt": "What does Hana like?",
+          "modelAnswer": "She likes Math and English.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 26,
+            "question": "Weekly Assessment A B Q3"
+          },
+          "evidence": "passage p26"
+        },
+        {
+          "id": "u3-weekly-a-q4",
+          "type": "open",
+          "prompt": "How old is Hana?",
+          "modelAnswer": "She is ten years old.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 26,
+            "question": "Weekly Assessment A B Q4"
+          },
+          "evidence": "passage p26"
+        }
+      ],
+      "passage": "My name is Hana. I’m in primary four. I’m ten years old. I like Math and English. I Live in Cairo Governorate. It is densely populated. There are more than 20 million inhabitants, so it is a very busy place. There are a lot of cars, so there is also congestion. If you are a pedestrian, you have to be careful.",
+      "model": "A",
+      "series": "u3-week1"
+    },
+    {
+      "id": "u3-weekly-b",
+      "unit": "u3",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment B",
+      "kind": "model",
+      "extra": false,
+      "page": 26,
+      "pdfPages": [
+        27,
+        28
+      ],
+      "items": [
+        {
+          "id": "u3-weekly-b-q1",
+          "type": "choice",
+          "prompt": "My ____ cooks food for the family.",
+          "modelAnswer": "mother",
+          "explanation": "Huda says her mother cooks special food.",
+          "hint": "Look for the person who cooks.",
+          "manual": false,
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 26,
+            "question": "Weekly Assessment B A Q1"
+          },
+          "evidence": "passage p26",
+          "choices": [
+            "mother",
+            "sister",
+            "brother",
+            "father"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-weekly-b-q2",
+          "type": "choice",
+          "prompt": "We are having ____ and chicken for lunch today.",
+          "modelAnswer": "potatoes",
+          "explanation": "The final sentence says potatoes and chicken.",
+          "hint": "Look at what they are having today.",
+          "manual": false,
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 26,
+            "question": "Weekly Assessment B A Q2"
+          },
+          "evidence": "passage p26",
+          "choices": [
+            "pasta",
+            "rice",
+            "potatoes",
+            "salad"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-weekly-b-q3",
+          "type": "open",
+          "prompt": "How many meals do they have every day?",
+          "modelAnswer": "They have three meals every day.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 27,
+            "question": "Weekly Assessment B B Q3"
+          },
+          "evidence": "passage p27"
+        },
+        {
+          "id": "u3-weekly-b-q4",
+          "type": "open",
+          "prompt": "What’s Huda’s favorite meal?",
+          "modelAnswer": "Her favorite meal is lunch.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 27,
+            "question": "Weekly Assessment B B Q4"
+          },
+          "evidence": "passage p27"
+        }
+      ],
+      "passage": "My name is Huda. I spend my weekend at home with my family. We have three meals every day; breakfast, lunch, and dinner. I always have milk and eggs for breakfast. My Favorite meal is lunch. I like it because all family sits together to eat and talk. My mother cooks special food for us. Today we are having potatoes and chicken.",
+      "model": "B",
+      "series": "u3-week1"
+    },
+    {
+      "id": "u3-weekly-c",
+      "unit": "u3",
+      "lesson": "weekly1",
+      "title": "Weekly Assessment C",
+      "kind": "model",
+      "extra": false,
+      "page": 27,
+      "pdfPages": [
+        28
+      ],
+      "items": [
+        {
+          "id": "u3-weekly-c-q1",
+          "type": "choice",
+          "prompt": "Exercises help the ____ to move around inside the body.",
+          "modelAnswer": "blood",
+          "explanation": "The passage says exercise helps the blood move around.",
+          "hint": "Find the sentence beginning Exercises.",
+          "manual": false,
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 27,
+            "question": "Weekly Assessment C A Q1"
+          },
+          "evidence": "passage p27",
+          "choices": [
+            "blood",
+            "food",
+            "health",
+            "work"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-weekly-c-q2",
+          "type": "choice",
+          "prompt": "We should sleep to have ____.",
+          "modelAnswer": "rest",
+          "explanation": "The text says the body must have rest.",
+          "hint": "Why does the body need sleep?",
+          "manual": false,
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 27,
+            "question": "Weekly Assessment C A Q2"
+          },
+          "evidence": "passage p27",
+          "choices": [
+            "dreams",
+            "rest",
+            "exercises",
+            "fats"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-weekly-c-q3",
+          "type": "open",
+          "prompt": "Where is protein found?",
+          "modelAnswer": "Protein is found in meat, fish and beans.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 27,
+            "question": "Weekly Assessment C B Q3"
+          },
+          "evidence": "passage p27"
+        },
+        {
+          "id": "u3-weekly-c-q4",
+          "type": "open",
+          "prompt": "Why must we have enough sleep?",
+          "modelAnswer": "So our bodies can rest and we are able to work.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 27,
+            "question": "Weekly Assessment C B Q4"
+          },
+          "evidence": "passage p27"
+        }
+      ],
+      "passage": "Good food, exercise and sleep are the keys to good health. We need to eat foods that contain protein, carbohydrates, fats and vitamins. Protein is found in meat, fish and beans. Carbohydrates are found in bread, rice and macaroni. Fats are found in milk and cheese. Vitamins are found in fruit and vegetables. Exercises help the blood to move around inside the body. Our blood takes food to all parts of our body. The body must have rest, so we must have enough sleep to be able to do work.",
+      "model": "C",
+      "series": "u3-week1"
+    },
+    {
+      "id": "u3-l45-food",
+      "unit": "u3",
+      "lesson": "l45",
+      "title": "A Biography of an Egyptian Hero · Nutrition reading (extra)",
+      "kind": "lesson",
+      "extra": true,
+      "page": 28,
+      "pdfPages": [
+        29
+      ],
+      "items": [
+        {
+          "id": "u3-l45-food-q1",
+          "type": "choice",
+          "prompt": "We shouldn’t eat too ____ sugar or salt.",
+          "modelAnswer": "much",
+          "explanation": "The passage says too much sugar or salt.",
+          "hint": "Sugar and salt are uncountable here.",
+          "manual": false,
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 28,
+            "question": "CW Activity 1 A Q1"
+          },
+          "evidence": "passage p28",
+          "choices": [
+            "few",
+            "little",
+            "much",
+            "many"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-l45-food-q2",
+          "type": "choice",
+          "prompt": "We should eat small amounts of ____.",
+          "modelAnswer": "butter",
+          "explanation": "The passage says small amounts of butter or oil.",
+          "hint": "Find the sentence about small amounts.",
+          "manual": false,
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 28,
+            "question": "CW Activity 1 A Q2"
+          },
+          "evidence": "passage p28",
+          "choices": [
+            "fruit",
+            "butter",
+            "grains",
+            "milk"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-l45-food-q3",
+          "type": "open",
+          "prompt": "Who are nutritionists?",
+          "modelAnswer": "They are scientists who study food.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 28,
+            "question": "CW Activity 1 B Q3"
+          },
+          "evidence": "passage p28"
+        },
+        {
+          "id": "u3-l45-food-q4",
+          "type": "open",
+          "prompt": "What are dairy products?",
+          "modelAnswer": "Foods made from milk, such as milk, cheese and yogurt named in the passage.",
+          "explanation": "Accept milk, cheese and yogurt as examples; a definition about milk-based foods is also suitable.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 28,
+            "question": "CW Activity 1 B Q4"
+          },
+          "evidence": "passage p28"
+        }
+      ],
+      "passage": "We need good food to grow healthy and strong. Scientists who study food are called nutritionists. They say we should eat lots of different vegetables, fruit and nuts. They also advise us to eat lots of grains or food made from grains. Dairy products like milk, cheese and yogurt are good for us. We should eat small amounts of butter or oil. It’s advisable to eat some fish, chicken and meat. We shouldn’t eat too much sugar or salt. Nutritionists say a variety of food is best. Eating different kinds of food gives your body everything it needs."
+    },
+    {
+      "id": "u3-l45-desert",
+      "unit": "u3",
+      "lesson": "l45",
+      "title": "A Biography of an Egyptian Hero · Sahara reading (extra)",
+      "kind": "lesson",
+      "extra": true,
+      "page": 29,
+      "pdfPages": [
+        30
+      ],
+      "items": [
+        {
+          "id": "u3-l45-desert-q1",
+          "type": "choice",
+          "prompt": "They left the hotel at ____.",
+          "modelAnswer": "5:30",
+          "explanation": "Half past five means 5:30.",
+          "hint": "Convert half past five into digits.",
+          "manual": false,
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 29,
+            "question": "CW Activity 2 A Q1"
+          },
+          "evidence": "passage p29",
+          "choices": [
+            "5:15",
+            "4:30",
+            "5:50",
+            "5:30"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u3-l45-desert-q2",
+          "type": "choice",
+          "prompt": "The ____ made tea for them.",
+          "modelAnswer": "camel drivers",
+          "explanation": "The passage says the camel drivers made tea.",
+          "hint": "Find who made the tea.",
+          "manual": false,
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 29,
+            "question": "CW Activity 2 A Q2"
+          },
+          "evidence": "passage p29",
+          "choices": [
+            "camel drivers",
+            "waiters",
+            "girls",
+            "women"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-l45-desert-q3",
+          "type": "open",
+          "prompt": "Where did the writer’s family ride camels?",
+          "modelAnswer": "Into the Sahara Desert.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 29,
+            "question": "CW Activity 2 B Q3"
+          },
+          "evidence": "passage p29"
+        },
+        {
+          "id": "u3-l45-desert-q4",
+          "type": "open",
+          "prompt": "How did camels walk?",
+          "modelAnswer": "They walked into the desert in a line, quietly.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 29,
+            "question": "CW Activity 2 B Q4"
+          },
+          "evidence": "passage p29"
+        }
+      ],
+      "passage": "Yesterday our family rode camels into the Sahara Desert. It was an amazing journey. It was cold when we left the hotel at half past five in the morning. It was also very dark and it was hard to see camels. A camel driver helped me to climb onto a wooden saddle and then the camels walked into the desert in a line. It was very quiet. Even camels’ feet were quiet in the sand. We stopped at the top of a sand dune. The camel drivers made tea for us. We returned to the hotel before it got hot."
+    },
+    {
+      "id": "u3-l45-email",
+      "unit": "u3",
+      "lesson": "l45",
+      "title": "An Email about the Egyptian Museum (extra)",
+      "kind": "writing",
+      "extra": true,
+      "page": 29,
+      "pdfPages": [
+        30
+      ],
+      "items": [
+        {
+          "id": "u3-l45-email-q1",
+          "type": "writing",
+          "prompt": "Write an email of 50 words to your friend Mostafa to tell him about your visit to the Egyptian Museum. Your name is Ali and your email address is ali@yahoo.com and your friend’s email address is mostafa@yahoo.com.",
+          "modelAnswer": "From: ali@yahoo.com\nTo: mostafa@yahoo.com\nSubject: My museum visit\n\nDear Mostafa,\nYesterday, I visited the Egyptian Museum with my family. I saw ancient objects and learned about life in Egypt long ago. The displays were fascinating, and I enjoyed exploring them together. I would love to visit again with you. What would you like to see?\nYour friend,\nAli",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 29,
+            "question": "HW Activity"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "From: ali@yahoo.com",
+            "To: mostafa@yahoo.com",
+            "greeting to Mostafa",
+            "visit to the Egyptian Museum",
+            "closing signed Ali"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3-review-choice",
+      "unit": "u3",
+      "lesson": "review",
+      "title": "Unit 3 Review · Choose (extra)",
+      "kind": "review",
+      "extra": true,
+      "page": 30,
+      "pdfPages": [
+        31
+      ],
+      "items": [
+        {
+          "id": "u3-review-choice-q1",
+          "type": "choice",
+          "prompt": "I went to the ____ to send a letter.",
+          "modelAnswer": "post office",
+          "explanation": "You can send a letter from a post office.",
+          "hint": "Read the whole sentence and check the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 1 Q1"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "bank",
+            "library",
+            "museum",
+            "post office"
+          ],
+          "correct": 3
+        },
+        {
+          "id": "u3-review-choice-q2",
+          "type": "choice",
+          "prompt": "Clean the room by ____, Ali.",
+          "modelAnswer": "yourself",
+          "explanation": "When speaking to Ali, use yourself.",
+          "hint": "Read the whole sentence and check the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 1 Q2"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "yourself",
+            "himself",
+            "herself",
+            "myself"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-review-choice-q3",
+          "type": "choice",
+          "prompt": "My favourite ____ is football.",
+          "modelAnswer": "sport",
+          "explanation": "Football is a sport.",
+          "hint": "Read the whole sentence and check the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 1 Q3"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "sport",
+            "book",
+            "team",
+            "meal"
+          ],
+          "correct": 0
+        },
+        {
+          "id": "u3-review-choice-q4",
+          "type": "choice",
+          "prompt": "I am ____ in watching films.",
+          "modelAnswer": "interested",
+          "explanation": "The expression is interested in.",
+          "hint": "Read the whole sentence and check the meaning.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 1 Q4"
+          },
+          "evidence": "English language rule",
+          "choices": [
+            "interest",
+            "interested",
+            "interesting",
+            "interests"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-review-choice-q5",
+          "type": "choice",
+          "prompt": "____ are your doing now, Adham?",
+          "modelAnswer": "What — corrected full sentence: What are you doing now, Adham?",
+          "explanation": "The likely intended corrected sentence is “What are you doing now, Adham?” The printed sentence has “your” instead of “you”.",
+          "hint": "The question is asking about the action.",
+          "manual": true,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 1 Q5"
+          },
+          "evidence": "parent check",
+          "choices": [
+            "What",
+            "Where",
+            "How",
+            "Why"
+          ],
+          "issue": "Printed typo: “your” should be “you”. Show the corrected model and leave this malformed item unscored."
+        }
+      ]
+    },
+    {
+      "id": "u3-review-reading",
+      "unit": "u3",
+      "lesson": "review",
+      "title": "Unit 3 Review · Hany’s ice cream shop (extra)",
+      "kind": "review",
+      "extra": true,
+      "page": 30,
+      "pdfPages": [
+        31
+      ],
+      "items": [
+        {
+          "id": "u3-review-reading-q1",
+          "type": "choice",
+          "prompt": "Hany goes to his shop ____.",
+          "modelAnswer": "on foot",
+          "explanation": "He always walks, which means he goes on foot.",
+          "hint": "How does he get to his shop?",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 2 A Q1"
+          },
+          "evidence": "passage p30",
+          "choices": [
+            "by car",
+            "by bus",
+            "on foot",
+            "by taxi"
+          ],
+          "correct": 2
+        },
+        {
+          "id": "u3-review-reading-q2",
+          "type": "choice",
+          "prompt": "Hany doesn’t open his shop on ____.",
+          "modelAnswer": "Friday",
+          "explanation": "The passage says he never opens on Fridays.",
+          "hint": "Find the day when his shop is closed.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 2 A Q2"
+          },
+          "evidence": "passage p30",
+          "choices": [
+            "Saturday",
+            "Friday",
+            "Monday",
+            "Sunday"
+          ],
+          "correct": 1
+        },
+        {
+          "id": "u3-review-reading-q3",
+          "type": "open",
+          "prompt": "Where is Hany’s shop?",
+          "modelAnswer": "In Cairo, across from a museum.",
+          "explanation": "Compare the answer with the relevant detail in the passage.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 2 B Q3"
+          },
+          "evidence": "passage p30"
+        },
+        {
+          "id": "u3-review-reading-q4",
+          "type": "open",
+          "prompt": "Why do you tourists buy ice cream from his shop?",
+          "modelAnswer": "Because there is a museum across from his shop, so tourists visiting the area buy ice cream there.",
+          "explanation": "Accept the reason supplied by the passage: the museum across from the shop brings tourists nearby.",
+          "hint": "Look back at the relevant sentence in the passage.",
+          "manual": true,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 2 B Q4"
+          },
+          "evidence": "passage p30",
+          "issue": "Source typo: “Why do you tourists” appears to mean “Why do tourists”."
+        }
+      ],
+      "passage": "Hany has an ice cream shop in Cairo. He always walks to it. He opens six days a week. He never opens on Fridays. He makes the ice cream by himself. There are a lot of flavours in his shop. Most people like vanilla and chocolate. There is a museum across from his shop, so many tourists buy ice cream from his shop."
+    },
+    {
+      "id": "u3-review-writing",
+      "unit": "u3",
+      "lesson": "review",
+      "title": "Unit 3 Review · Your Family (extra)",
+      "kind": "writing",
+      "extra": true,
+      "page": 30,
+      "pdfPages": [
+        31
+      ],
+      "items": [
+        {
+          "id": "u3-review-writing-q1",
+          "type": "writing",
+          "prompt": "Write a paragraph of 50 words using the following elements: “Your family”. (persons – father – happy).",
+          "modelAnswer": "There are four people in my family: my father, my mother, my brother and me. My father is kind and always makes time for us. We enjoy sharing meals, telling stories and helping one another. I feel happy when we spend time together because my family makes me feel loved.",
+          "explanation": "Parent check: the response addresses the topic and guiding points, is around the requested length, uses clear complete sentences, and has sensible spelling, capitals and punctuation. Accept natural American or British English. This is one original example, not an answer to memorize. Change names and personal details to suit your own ideas. Check picture-specific details against the original page.",
+          "hint": "Plan a beginning, a few useful details, and an ending. Read your writing once before finishing.",
+          "manual": true,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 3"
+          },
+          "evidence": "Original editorial writing example; parent checks against the supplied prompt and guiding points.",
+          "wordTarget": 50,
+          "targetPoints": [
+            "family members",
+            "father",
+            "why or how the family is happy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3-review-punctuation",
+      "unit": "u3",
+      "lesson": "review",
+      "title": "Unit 3 Review · Punctuation (extra)",
+      "kind": "review",
+      "extra": true,
+      "page": 30,
+      "pdfPages": [
+        31
+      ],
+      "items": [
+        {
+          "id": "u3-review-punctuation-q1",
+          "type": "punctuation",
+          "prompt": "did Hany play football yesterday",
+          "modelAnswer": "Did Hany play football yesterday?",
+          "explanation": "Begin with a capital letter, capitalize the proper name, and add the correct end punctuation.",
+          "hint": "Check the first letter, the name and the final punctuation mark.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 4 Q1"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Did Hany play football yesterday?"
+          ]
+        },
+        {
+          "id": "u3-review-punctuation-q2",
+          "type": "punctuation",
+          "prompt": "Yes, there is a bank in aswan",
+          "modelAnswer": "Yes, there is a bank in Aswan.",
+          "explanation": "Begin with a capital letter, capitalize the proper name, and add the correct end punctuation.",
+          "hint": "Check the first letter, the name and the final punctuation mark.",
+          "manual": false,
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 30,
+            "question": "Review Activity 4 Q2"
+          },
+          "evidence": "English language rule",
+          "answers": [
+            "Yes, there is a bank in Aswan."
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "This is a source-grounded revision bank from the uploaded Primary Six Performance Tasks and Assessment book (cover 2025/2026). It is not an official marking key or an exam-cutoff notice.",
+    "All numbered classroom and homework questions in printed pages 4–30 (PDF pages 5–31) are included. Optional oral warm-up discussion prompts are not counted as assessed items.",
+    "Unit 3 Lessons 4–5 and its unit review are extra practice: the observed Toddle answer-key label stopped at Unit 3 Lesson 3. That label does not confirm the exam cutoff.",
+    "Some headings do not match their reading passages. The bank keeps the actual passages and questions.",
+    "Open responses and writing are checked by a parent. Model answers are worked examples grounded in the passage, not an invented official key.",
+    "Spelling variants such as favourite/favorite, practising/practicing, and colour/color should be accepted in free writing when used consistently.",
+    "The Nile longest-river statement is assessed as a statement made by the supplied passage, without requiring a separate geographical claim.",
+    "Source numbering is occasionally duplicated, omitted or out of sequence; source labels preserve the printed question numbers.",
+    "Writing responses are original examples to compare after an attempt. Names and personal details in examples are illustrative, not claims about the child. Tasks with no printed word limit use a suggested practice guide."
+  ],
+  "source": {
+    "filename": "Toddle-3ee1b1f2-5659-4eb6-9338-5f58eba08e8f-Gr.pdf",
+    "sha256": "b74878221f3e4b30c38f63d1cd9dc1585c632bbd41030db6489b4e7426286ed1",
+    "kind": "User-supplied school assessment book"
+  }
+}

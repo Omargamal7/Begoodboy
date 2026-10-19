@@ -1,0 +1,495 @@
+{
+  "units": [
+    {
+      "id": "u1",
+      "titleAr": "يوم في مصر",
+      "introAr": "راجع الأماكن والطبيعة والحياة اليومية. استخدم الجملة كاملة لتختار الكلمة المناسبة، ثم اكتب أفكارك بوضوح.",
+      "tips": [
+        {
+          "titleAr": "المضارع البسيط: شيء يتكرر",
+          "bodyAr": "نستخدمه للعادات والحقائق. مع he أو she أو it نضيف غالبًا s أو es إلى الفعل. مع I أو you أو we أو they نستخدم الفعل في صورته الأساسية.",
+          "example": "She reads comics. They read comics."
+        },
+        {
+          "titleAr": "السؤال والنفي: do و does",
+          "bodyAr": "نستخدم does مع he أو she أو it، وdo مع الباقي. بعد do أو does أو النفي بهما، يعود الفعل إلى صورته الأساسية من دون s.",
+          "example": "Does he draw? He does not draw. Do they draw?"
+        },
+        {
+          "titleAr": "كلمات التكرار",
+          "bodyAr": "كلمات مثل always وusually وsometimes وnever تخبرنا كم مرة يحدث الشيء. تأتي عادة قبل الفعل الرئيسي. اختر الكلمة حسب معنى الجملة.",
+          "example": "We sometimes watch cartoons."
+        },
+        {
+          "titleAr": "فقرة قصيرة وواضحة",
+          "bodyAr": "ابدأ بجملة عن الموضوع، ثم أضف تفاصيل وأمثلة، واختم بجملة مناسبة. راجع عدد الكلمات والحروف الكبيرة وعلامات الترقيم.",
+          "example": "My favorite place is the library. I enjoy reading there."
+        }
+      ],
+      "glossary": [
+        {
+          "en": "souvenirs",
+          "ar": "هدايا تذكارية"
+        },
+        {
+          "en": "ancient sites",
+          "ar": "مواقع أثرية"
+        },
+        {
+          "en": "national park",
+          "ar": "محمية طبيعية"
+        },
+        {
+          "en": "coral reefs",
+          "ar": "شعاب مرجانية"
+        },
+        {
+          "en": "landscape",
+          "ar": "منظر طبيعي"
+        },
+        {
+          "en": "protected area",
+          "ar": "منطقة محمية"
+        },
+        {
+          "en": "culture",
+          "ar": "ثقافة وعادات"
+        },
+        {
+          "en": "local people",
+          "ar": "السكان المحليون"
+        },
+        {
+          "en": "snorkel",
+          "ar": "يسبح بقناع وأنبوب تنفس"
+        },
+        {
+          "en": "dive",
+          "ar": "يغوص"
+        },
+        {
+          "en": "sea turtle",
+          "ar": "سلحفاة بحرية"
+        },
+        {
+          "en": "dolphin",
+          "ar": "دلفين"
+        },
+        {
+          "en": "mangrove trees",
+          "ar": "أشجار المانجروف"
+        },
+        {
+          "en": "mountain",
+          "ar": "جبل"
+        },
+        {
+          "en": "desert",
+          "ar": "صحراء"
+        },
+        {
+          "en": "river",
+          "ar": "نهر"
+        },
+        {
+          "en": "flow",
+          "ar": "يتدفق أو يجري"
+        },
+        {
+          "en": "fishermen",
+          "ar": "صيادون"
+        },
+        {
+          "en": "fishing nets",
+          "ar": "شباك صيد"
+        },
+        {
+          "en": "harvest",
+          "ar": "يحصد المحصول"
+        },
+        {
+          "en": "crops",
+          "ar": "محاصيل زراعية"
+        },
+        {
+          "en": "spin wool",
+          "ar": "يغزل الصوف"
+        },
+        {
+          "en": "loom",
+          "ar": "نول للنسيج"
+        },
+        {
+          "en": "village",
+          "ar": "قرية"
+        },
+        {
+          "en": "furniture",
+          "ar": "أثاث"
+        },
+        {
+          "en": "carpenter",
+          "ar": "نجار"
+        },
+        {
+          "en": "daily routine",
+          "ar": "روتين يومي"
+        },
+        {
+          "en": "invite",
+          "ar": "يدعو شخصًا"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "titleAr": "طبيعتنا",
+      "introAr": "تدرّب على وصف ما يحدث الآن، وراجع كلمات النباتات والطقس. في القراءة، ابحث عن الدليل داخل القطعة نفسها.",
+      "tips": [
+        {
+          "titleAr": "المضارع المستمر: يحدث الآن",
+          "bodyAr": "نستخدم am أو is أو are، وبعدها الفعل مع ing. نستخدم am مع I، وis مع he أو she أو it، وare مع you أو we أو they.",
+          "example": "I am drawing. She is smiling. They are talking."
+        },
+        {
+          "titleAr": "سؤال أم نفي؟",
+          "bodyAr": "في السؤال نضع am أو is أو are قبل الفاعل. في النفي نضيف not بعدها. لا تنسَ الفعل المنتهي بـ ing.",
+          "example": "Are they drawing? They are not drawing."
+        },
+        {
+          "titleAr": "لاحظ كلمات الوقت",
+          "bodyAr": "كلمات مثل now وat the moment تساعدك على معرفة أن الحدث يحدث الآن. كلمات مثل every day قد تدل على عادة. اقرأ المعنى كله قبل الاختيار.",
+          "example": "I walk every day. I am resting now."
+        },
+        {
+          "titleAr": "اقرأ التفاصيل أولًا",
+          "bodyAr": "اقرأ السؤال، ثم ابحث في القطعة عن الجملة التي تدعمه. لا تعتمد على عنوان الدرس وحده. عند طلب الفكرة الرئيسية، فكّر في موضوع القطعة كلها.",
+          "example": "A title can summarize the whole text, not just one detail."
+        }
+      ],
+      "glossary": [
+        {
+          "en": "nature",
+          "ar": "طبيعة"
+        },
+        {
+          "en": "environment",
+          "ar": "بيئة"
+        },
+        {
+          "en": "tourism",
+          "ar": "سياحة"
+        },
+        {
+          "en": "eco-tourism",
+          "ar": "سياحة تراعي البيئة"
+        },
+        {
+          "en": "wildlife",
+          "ar": "حياة برية"
+        },
+        {
+          "en": "monuments",
+          "ar": "آثار"
+        },
+        {
+          "en": "pollution",
+          "ar": "تلوث"
+        },
+        {
+          "en": "damage",
+          "ar": "يضر أو يتلف"
+        },
+        {
+          "en": "carbon dioxide",
+          "ar": "ثاني أكسيد الكربون"
+        },
+        {
+          "en": "care for",
+          "ar": "يعتني بـ"
+        },
+        {
+          "en": "take care of",
+          "ar": "يعتني بـ"
+        },
+        {
+          "en": "weeds",
+          "ar": "أعشاب ضارة"
+        },
+        {
+          "en": "pull out",
+          "ar": "يقتلع أو يسحب للخارج"
+        },
+        {
+          "en": "insects",
+          "ar": "حشرات"
+        },
+        {
+          "en": "herbs",
+          "ar": "أعشاب"
+        },
+        {
+          "en": "basil",
+          "ar": "ريحان"
+        },
+        {
+          "en": "olives",
+          "ar": "زيتون"
+        },
+        {
+          "en": "oil",
+          "ar": "زيت"
+        },
+        {
+          "en": "water a plant",
+          "ar": "يسقي نباتًا"
+        },
+        {
+          "en": "grow",
+          "ar": "يزرع أو ينمو"
+        },
+        {
+          "en": "weather",
+          "ar": "طقس"
+        },
+        {
+          "en": "shade",
+          "ar": "ظل"
+        },
+        {
+          "en": "waves",
+          "ar": "أمواج"
+        },
+        {
+          "en": "clouds",
+          "ar": "سحب"
+        },
+        {
+          "en": "protect",
+          "ar": "يحمي"
+        },
+        {
+          "en": "depend on",
+          "ar": "يعتمد على"
+        },
+        {
+          "en": "volunteer",
+          "ar": "متطوع أو يتطوع"
+        },
+        {
+          "en": "pick up garbage",
+          "ar": "يجمع القمامة"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "titleAr": "بُناة المجتمع",
+      "introAr": "راجع المهن التي تساعد الناس، وكيف نعبّر عن القدرة. اقرأ القطع بعناية، وتدرّب على كتابة رسالة قصيرة ومنظمة.",
+      "tips": [
+        {
+          "titleAr": "بعد can يأتي الفعل الأساسي",
+          "bodyAr": "نستخدم can للتعبير عن القدرة. يأتي بعدها الفعل من دون to ومن دون s. للنفي نستخدم cannot أو can’t، وللسؤال نضع can قبل الفاعل.",
+          "example": "She can ride a bike. Can she ride? She cannot ride today."
+        },
+        {
+          "titleAr": "التعبير be able to",
+          "bodyAr": "يعني يستطيع. اختر am أو is أو are حسب الفاعل، ثم able to، ثم الفعل الأساسي. لا تحذف to.",
+          "example": "They are able to dance. He is able to dance."
+        },
+        {
+          "titleAr": "إلى ماذا يعود الضمير؟",
+          "bodyAr": "عندما يُسأل عن he أو she أو it أو they أو them، ارجع للجملة السابقة وابحث عمّن أو عمّا يتحدث النص. تأكد أن العدد والمعنى مناسبَان.",
+          "example": "The girls have a kite. They share it. “They” means the girls; “it” means the kite."
+        },
+        {
+          "titleAr": "خطوات كتابة البريد الإلكتروني",
+          "bodyAr": "اقرأ المطلوب وحدد المرسل والمستلم والموضوع. ابدأ بتحية، ثم اكتب الرسالة، واختم باسم المرسل المطلوب. راجع العناوين وعدد الكلمات.",
+          "example": "Dear friend, ... Best wishes, ..."
+        }
+      ],
+      "glossary": [
+        {
+          "en": "community",
+          "ar": "مجتمع محلي"
+        },
+        {
+          "en": "delivery person",
+          "ar": "عامل توصيل"
+        },
+        {
+          "en": "street cleaner",
+          "ar": "عامل نظافة الشوارع"
+        },
+        {
+          "en": "water resources engineer",
+          "ar": "مهندس موارد مائية"
+        },
+        {
+          "en": "mechanic",
+          "ar": "ميكانيكي"
+        },
+        {
+          "en": "vehicle",
+          "ar": "مركبة"
+        },
+        {
+          "en": "traffic officer",
+          "ar": "شرطي مرور"
+        },
+        {
+          "en": "cross the road",
+          "ar": "يعبر الطريق"
+        },
+        {
+          "en": "paramedic",
+          "ar": "مسعف"
+        },
+        {
+          "en": "patient",
+          "ar": "مريض"
+        },
+        {
+          "en": "emergency",
+          "ar": "حالة طوارئ"
+        },
+        {
+          "en": "education",
+          "ar": "تعليم"
+        },
+        {
+          "en": "health",
+          "ar": "صحة"
+        },
+        {
+          "en": "research",
+          "ar": "بحث"
+        },
+        {
+          "en": "able to",
+          "ar": "قادر على"
+        },
+        {
+          "en": "volcano",
+          "ar": "بركان"
+        },
+        {
+          "en": "active",
+          "ar": "نشط"
+        },
+        {
+          "en": "lava",
+          "ar": "حمم بركانية"
+        },
+        {
+          "en": "erupt",
+          "ar": "يثور البركان"
+        },
+        {
+          "en": "invent",
+          "ar": "يخترع"
+        },
+        {
+          "en": "ice cream churn",
+          "ar": "آلة لخفق وصنع الآيس كريم"
+        },
+        {
+          "en": "factory",
+          "ar": "مصنع"
+        },
+        {
+          "en": "grocery store",
+          "ar": "متجر بقالة"
+        },
+        {
+          "en": "flavor",
+          "ar": "نكهة"
+        },
+        {
+          "en": "pedestrian",
+          "ar": "أحد المشاة"
+        },
+        {
+          "en": "congestion",
+          "ar": "ازدحام مروري"
+        },
+        {
+          "en": "protein",
+          "ar": "بروتين"
+        },
+        {
+          "en": "dairy products",
+          "ar": "منتجات الألبان"
+        },
+        {
+          "en": "densely populated",
+          "ar": "كثيف السكان"
+        },
+        {
+          "en": "inhabitants",
+          "ar": "سكان"
+        },
+        {
+          "en": "carbohydrates",
+          "ar": "كربوهيدرات؛ مواد تمد الجسم بالطاقة"
+        },
+        {
+          "en": "vitamins",
+          "ar": "فيتامينات"
+        },
+        {
+          "en": "rest",
+          "ar": "راحة"
+        }
+      ]
+    }
+  ],
+  "writingPoints": {
+    "Egypt": "مصر",
+    "From: ali@yahoo.com": "خانة المرسل: انسخ عنوان البريد المعطى في السؤال",
+    "Ras Mohamed National Park": "محمية رأس محمد",
+    "To: mostafa@yahoo.com": "خانة المستلم: انسخ عنوان البريد المعطى في السؤال",
+    "a day in Egypt": "يوم في مصر",
+    "buy souvenirs": "شراء هدايا تذكارية",
+    "clear supporting details": "تفاصيل واضحة تدعم الفكرة",
+    "closing and your name": "عبارة ختامية واسمك",
+    "closing signed Ali": "عبارة ختامية وتوقيع باسم المرسل المطلوب",
+    "events or activities": "أحداث أو أنشطة",
+    "family members": "أفراد الأسرة",
+    "father": "الأب",
+    "fresh food": "طعام طازج",
+    "fruit": "فاكهة",
+    "good behavior": "سلوك حسن",
+    "good morals": "أخلاق حسنة",
+    "greeting": "تحية في البداية",
+    "greeting to Mostafa": "تحية إلى المستلم المذكور في السؤال",
+    "honesty and respect": "الصدق والاحترام",
+    "how plants help people": "كيف تفيد النباتات الناس",
+    "how plants help the environment": "كيف تفيد النباتات البيئة",
+    "importance of plants": "أهمية النباتات",
+    "invite your friend to Aswan": "دعوة صديقك لزيارة أسوان",
+    "its scenery or wildlife": "مناظرها الطبيعية أو حياتها البرية",
+    "life in a village": "الحياة في قرية",
+    "people’s daily work or activities": "أعمال الناس أو أنشطتهم اليومية",
+    "places": "أماكن",
+    "protein": "بروتين",
+    "school sports day": "اليوم الرياضي المدرسي",
+    "school’s role in education": "دور المدرسة في التعليم",
+    "subjects": "المواد الدراسية",
+    "suggest things to see or do": "اقترح أشياء يمكن مشاهدتها أو القيام بها",
+    "supporting examples": "أمثلة تدعم الفكرة",
+    "useful details": "تفاصيل مفيدة",
+    "vegetables": "خضراوات",
+    "visit ancient sites": "زيارة مواقع أثرية",
+    "visit to the Egyptian Museum": "زيارة المتحف المصري",
+    "vitamins": "فيتامينات",
+    "water": "ماء",
+    "ways people use plants": "طرق استخدام الناس للنباتات",
+    "what makes the country special": "ما يميز البلد",
+    "what visitors can do": "ما يستطيع الزوار القيام به",
+    "what you did or enjoyed": "ما فعلته أو استمتعت به",
+    "what you do": "ما تفعله",
+    "why or how the family is happy": "لماذا أو كيف تكون الأسرة سعيدة",
+    "your school activities": "أنشطتك المدرسية"
+  }
+}

@@ -25,7 +25,7 @@ The two overlapping sync manifests are consolidated into `sync/2026-10-17/source
 
 ## Build outputs and future work
 
-Keep the four published offline exports under `packs/`. The larger 22-lesson Science export, QA screenshots, extracted intermediates and build summaries go under ignored `build/`. Do not add browser screenshots, temporary downloads, `node_modules`, partial files or ZIP copies to the source tree.
+Keep the published offline exports under `packs/`; this now includes the personal English revisions and anonymous class editions. Every future subject is synced to both cloud and GitHub, with a dated verification record. The larger 22-lesson Science export, QA screenshots, extracted intermediates and build summaries go under ignored `build/`. Do not add browser screenshots, temporary downloads, `node_modules`, partial files or ZIP copies to the source tree.
 
 All educational updates go directly to `main`, as requested. Validate changes before pushing; a folder move must update builders, browser checks, documentation, metadata and the study menu together. Sync completion remains separate from file-archive completion and lesson-authoring completion.
 
@@ -36,3 +36,4 @@ All five builders completed. Rebuilding Science a second time produced the same 
 A before/after lesson-data comparison preserved all 48 lesson IDs, all 906 question steps, all 41 unscored steps and their reasons, and all 149 image references after normalizing moved paths. All 109 school originals retain their Git blob hashes. The 71 download names still map to 67 unique contents with their recorded metadata.
 
 Browser interaction tests could not launch because the workspace sandbox blocks Chromium sockets. Those tests have not been marked as passed.
+

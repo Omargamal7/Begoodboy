@@ -1,0 +1,505 @@
+{
+  "units": [
+    {
+      "id": "u1",
+      "titleAr": "الطعام والطبيعة والثقافة",
+      "introAr": "تعلّم كلمات عن النيل والصحراء والأشجار والطعام، وتدرّب على فهم المطلوب قبل الإجابة.",
+      "tips": [
+        {
+          "titleAr": "كم مرة يحدث الشيء؟",
+          "bodyAr": "كلمات التكرار توضّح عدد مرات حدوث الفعل. ابحث عن دليل مثل كل يوم أو مرة في الأسبوع. قد يناسب بعض الجمل أكثر من اختيار.",
+          "example": "I usually read after dinner. / I sometimes draw."
+        },
+        {
+          "titleAr": "مكان كلمة التكرار",
+          "bodyAr": "تأتي كلمة التكرار غالبًا قبل الفعل الأساسي، وبعد فعل be. اقرأ الجملة كاملة لتعرف مكانها الصحيح.",
+          "example": "She often smiles. / She is often cheerful."
+        },
+        {
+          "titleAr": "تجمّع الحروف الساكنة",
+          "bodyAr": "قد يأتي حرفان ساكنان أو أكثر معًا، ونسمع صوت كل حرف. انطق الكلمة ببطء لتسمع الأصوات.",
+          "example": "green → gr / smile → sm"
+        },
+        {
+          "titleAr": "ترتيب الخطوات وفهم التعليمات",
+          "bodyAr": "استخدم كلمات الترتيب عند شرح طريقة عمل شيء. وإذا طُلب تصحيح كلمة، فاسأل نفسك: هل أغيّر صيغتها أم أحتاج كلمة أخرى تناسب المعنى؟",
+          "example": "First, wash the cup. Then, fill it. Finally, put it on the table."
+        }
+      ],
+      "glossary": [
+        {
+          "en": "river",
+          "ar": "نهر"
+        },
+        {
+          "en": "nature",
+          "ar": "طبيعة"
+        },
+        {
+          "en": "culture",
+          "ar": "ثقافة"
+        },
+        {
+          "en": "water weeds",
+          "ar": "نباتات مائية"
+        },
+        {
+          "en": "crocodile",
+          "ar": "تمساح"
+        },
+        {
+          "en": "insect",
+          "ar": "حشرة"
+        },
+        {
+          "en": "desert",
+          "ar": "صحراء"
+        },
+        {
+          "en": "lizard",
+          "ar": "سحلية"
+        },
+        {
+          "en": "owl",
+          "ar": "بومة"
+        },
+        {
+          "en": "rock",
+          "ar": "صخرة"
+        },
+        {
+          "en": "shade",
+          "ar": "ظل"
+        },
+        {
+          "en": "trunk",
+          "ar": "جذع شجرة"
+        },
+        {
+          "en": "branch",
+          "ar": "غصن"
+        },
+        {
+          "en": "leaf",
+          "ar": "ورقة شجر"
+        },
+        {
+          "en": "selfish",
+          "ar": "أناني"
+        },
+        {
+          "en": "generous",
+          "ar": "كريم"
+        },
+        {
+          "en": "crown",
+          "ar": "تاج"
+        },
+        {
+          "en": "recipe",
+          "ar": "وصفة طعام"
+        },
+        {
+          "en": "ingredients",
+          "ar": "مكوّنات"
+        },
+        {
+          "en": "delicious",
+          "ar": "لذيذ"
+        },
+        {
+          "en": "flyer",
+          "ar": "منشور إعلاني"
+        },
+        {
+          "en": "heading",
+          "ar": "عنوان رئيسي"
+        },
+        {
+          "en": "sub-heading",
+          "ar": "عنوان فرعي"
+        },
+        {
+          "en": "menu",
+          "ar": "قائمة طعام"
+        },
+        {
+          "en": "image",
+          "ar": "صورة"
+        },
+        {
+          "en": "call to action",
+          "ar": "دعوة لفعل شيء"
+        },
+        {
+          "en": "consonant cluster",
+          "ar": "تجمّع حروف ساكنة"
+        },
+        {
+          "en": "sequence words",
+          "ar": "كلمات ترتيب الخطوات"
+        },
+        {
+          "en": "lentils",
+          "ar": "عدس"
+        },
+        {
+          "en": "chickpeas",
+          "ar": "حمص"
+        },
+        {
+          "en": "crispy",
+          "ar": "مقرمش"
+        },
+        {
+          "en": "pour",
+          "ar": "يسكب"
+        },
+        {
+          "en": "fry",
+          "ar": "يقلي"
+        },
+        {
+          "en": "stir",
+          "ar": "يقلّب"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "titleAr": "جسمي السليم",
+      "introAr": "تعلّم كلمات عن الجسم والعادات الصحية، واكتب أفكارك في جمل قصيرة وواضحة.",
+      "tips": [
+        {
+          "titleAr": "اختيار a أو an",
+          "bodyAr": "استمع إلى أول صوت في الكلمة. نستخدم a قبل الصوت الساكن، وan قبل الصوت المتحرك. الصوت هو المهم، وليس اسم الحرف.",
+          "example": "a bike / an umbrella"
+        },
+        {
+          "titleAr": "استخدام some وany",
+          "bodyAr": "نستخدم some غالبًا في الجملة المثبتة، وany غالبًا في النفي والسؤال العادي. وقد نستخدم some في عرض شيء أو طلبه بلطف.",
+          "example": "I have some pencils. / I do not have any pencils. / Do you have any pencils?"
+        },
+        {
+          "titleAr": "القراءة والبحث عن دليل",
+          "bodyAr": "اقرأ السؤال، ثم ابحث في الفقرة عن الجملة التي تساعدك. اشرح الفكرة بكلماتك عندما يُطلب منك إجابة كاملة.",
+          "example": "Question: What helps the child feel calm? → Find the sentence about feeling calm."
+        },
+        {
+          "titleAr": "فقرة قصيرة منظّمة",
+          "bodyAr": "حوّل كل فكرة مطلوبة إلى جملة. ابدأ الجمل بحرف كبير، وضع علامة ترقيم في النهاية، ثم راجع عدد الكلمات والإملاء.",
+          "example": "Plan → Write → Count → Check"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "heart",
+          "ar": "قلب"
+        },
+        {
+          "en": "lung",
+          "ar": "رئة"
+        },
+        {
+          "en": "blood",
+          "ar": "دم"
+        },
+        {
+          "en": "muscles",
+          "ar": "عضلات"
+        },
+        {
+          "en": "bones",
+          "ar": "عظام"
+        },
+        {
+          "en": "oxygen",
+          "ar": "أكسجين"
+        },
+        {
+          "en": "nutrients",
+          "ar": "مواد غذائية"
+        },
+        {
+          "en": "blood vessels",
+          "ar": "أوعية دموية"
+        },
+        {
+          "en": "carbon dioxide",
+          "ar": "ثاني أكسيد الكربون"
+        },
+        {
+          "en": "organ",
+          "ar": "عضو من أعضاء الجسم"
+        },
+        {
+          "en": "pump",
+          "ar": "مضخة"
+        },
+        {
+          "en": "fist",
+          "ar": "قبضة يد"
+        },
+        {
+          "en": "habit",
+          "ar": "عادة"
+        },
+        {
+          "en": "fit",
+          "ar": "لائق بدنيًا"
+        },
+        {
+          "en": "weight",
+          "ar": "وزن"
+        },
+        {
+          "en": "mental health",
+          "ar": "الصحة النفسية"
+        },
+        {
+          "en": "stress",
+          "ar": "توتر"
+        },
+        {
+          "en": "anxiety",
+          "ar": "قلق"
+        },
+        {
+          "en": "teamwork",
+          "ar": "العمل الجماعي"
+        },
+        {
+          "en": "discipline",
+          "ar": "انضباط"
+        },
+        {
+          "en": "healthcare workers",
+          "ar": "العاملون بالرعاية الصحية"
+        },
+        {
+          "en": "doctor",
+          "ar": "طبيب"
+        },
+        {
+          "en": "nurse",
+          "ar": "ممرّض أو ممرّضة"
+        },
+        {
+          "en": "pharmacist",
+          "ar": "صيدلي"
+        },
+        {
+          "en": "paramedic",
+          "ar": "مسعف"
+        },
+        {
+          "en": "diagnose",
+          "ar": "يشخّص المرض"
+        },
+        {
+          "en": "medicine",
+          "ar": "دواء"
+        },
+        {
+          "en": "syllable",
+          "ar": "مقطع صوتي"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "titleAr": "عندما تتغيّر الطبيعة",
+      "introAr": "تعلّم كلمات الطقس، وراجع الماضي البسيط وأجزاء القصة خطوة بخطوة.",
+      "tips": [
+        {
+          "titleAr": "الماضي البسيط",
+          "bodyAr": "نستخدم الماضي البسيط لحدث انتهى. ابحث عن كلمات مثل yesterday وlast week. نضيف ed إلى كثير من الأفعال، لكن بعض الأفعال لها صيغة مختلفة.",
+          "example": "Yesterday, I painted. / Last week, I saw a rainbow."
+        },
+        {
+          "titleAr": "بعد did يعود الفعل إلى أصله",
+          "bodyAr": "في السؤال والنفي، تحمل did معنى الماضي. لذلك نستخدم بعدها الفعل في صورته الأصلية دون إضافة علامة الماضي.",
+          "example": "Did she visit the museum? / She did not visit the museum."
+        },
+        {
+          "titleAr": "أجزاء القصة",
+          "bodyAr": "ابدأ بالشخصيات والزمان والمكان. ثم قدّم المشكلة وتطوّر الأحداث حتى اللحظة الأكثر إثارة، وبعدها النهاية. ابحث عن العبرة من أحداث القصة.",
+          "example": "Beginning → Problem → Middle → Climax → Ending"
+        },
+        {
+          "titleAr": "حرفا علة لصوت واحد",
+          "bodyAr": "قد يُكتب حرفان من حروف العلة معًا ليمثّلا صوتًا واحدًا. لاحظ الحرفين، ثم انطق الكلمة واستمع إلى الصوت.",
+          "example": "rain → ai / boat → oa"
+        }
+      ],
+      "glossary": [
+        {
+          "en": "weather",
+          "ar": "طقس"
+        },
+        {
+          "en": "thunderstorm",
+          "ar": "عاصفة رعدية"
+        },
+        {
+          "en": "thunder",
+          "ar": "رعد"
+        },
+        {
+          "en": "lightning",
+          "ar": "برق"
+        },
+        {
+          "en": "sandstorm",
+          "ar": "عاصفة رملية"
+        },
+        {
+          "en": "flood",
+          "ar": "فيضان"
+        },
+        {
+          "en": "drought",
+          "ar": "جفاف"
+        },
+        {
+          "en": "heatwave",
+          "ar": "موجة حارة"
+        },
+        {
+          "en": "wildfire",
+          "ar": "حريق غابات"
+        },
+        {
+          "en": "dust",
+          "ar": "غبار"
+        },
+        {
+          "en": "temperature",
+          "ar": "درجة الحرارة"
+        },
+        {
+          "en": "crops",
+          "ar": "محاصيل"
+        },
+        {
+          "en": "canal",
+          "ar": "قناة مائية"
+        },
+        {
+          "en": "irrigation",
+          "ar": "ريّ"
+        },
+        {
+          "en": "floodwater",
+          "ar": "مياه الفيضان"
+        },
+        {
+          "en": "mud brick",
+          "ar": "طوبة طينية"
+        },
+        {
+          "en": "pond",
+          "ar": "بركة ماء"
+        },
+        {
+          "en": "well",
+          "ar": "بئر"
+        },
+        {
+          "en": "leap",
+          "ar": "يقفز"
+        },
+        {
+          "en": "moral",
+          "ar": "العبرة من القصة"
+        },
+        {
+          "en": "fiction",
+          "ar": "خيال قصصي"
+        },
+        {
+          "en": "character",
+          "ar": "شخصية في القصة"
+        },
+        {
+          "en": "setting",
+          "ar": "زمان القصة ومكانها"
+        },
+        {
+          "en": "problem",
+          "ar": "مشكلة"
+        },
+        {
+          "en": "climax",
+          "ar": "ذروة الأحداث"
+        },
+        {
+          "en": "ending",
+          "ar": "نهاية"
+        },
+        {
+          "en": "collage",
+          "ar": "لوحة من صور وقصاصات مجمّعة"
+        },
+        {
+          "en": "vowel digraph",
+          "ar": "حرفا علة يمثّلان صوتًا واحدًا"
+        },
+        {
+          "en": "past simple",
+          "ar": "الماضي البسيط"
+        },
+        {
+          "en": "base verb",
+          "ar": "صورة الفعل الأصلية"
+        }
+      ]
+    }
+  ],
+  "writingPoints": {
+    "What a tree is": "ما الشجرة؟",
+    "Why trees are important": "لماذا الأشجار مهمة؟",
+    "Things we get from trees": "أشياء نحصل عليها من الأشجار",
+    "Name your recipe and ingredients": "اذكر اسم وصفتك ومكوّناتها",
+    "First": "أولًا",
+    "Then": "ثم",
+    "After that": "بعد ذلك",
+    "Next": "في الخطوة التالية",
+    "Finally": "أخيرًا",
+    "Eat": "تناول الطعام",
+    "Fit": "اللياقة البدنية",
+    "Sports": "الرياضة",
+    "In the past": "في الماضي",
+    "Now": "الآن",
+    "Doctors": "الأطباء",
+    "Paramedics": "المسعفون",
+    "Diagnose": "تشخيص المرض",
+    "Three posters": "ثلاثة ملصقات",
+    "A healthy action on each poster": "سلوك صحي في كل ملصق",
+    "A short readable message": "رسالة قصيرة واضحة",
+    "Picture or design supports the message": "صورة أو تصميم يوضّح الرسالة",
+    "Lose weight": "إنقاص الوزن",
+    "Bones stronger": "عظام أقوى",
+    "Mental health": "الصحة النفسية",
+    "Sleep better": "نوم أفضل",
+    "Muscles": "العضلات",
+    "Increase energy": "زيادة النشاط والطاقة",
+    "The two friends and their original home": "الصديقان وموطنهما الأول",
+    "Why they looked for a new home": "لماذا بحثا عن موطن جديد؟",
+    "What they found": "ماذا وجدا؟",
+    "Their decision and the story’s lesson, checked against the Student’s Book": "قرارهما والعبرة من القصة، مع مراجعة كتاب الطالب",
+    "Beginning": "البداية",
+    "Problem": "المشكلة",
+    "Middle": "وسط القصة",
+    "Climax": "ذروة الأحداث",
+    "Ending": "النهاية",
+    "Several pictures combined": "دمج عدة صور",
+    "Different nature or weather moods": "حالات مختلفة للطبيعة أو الطقس",
+    "A clear arrangement": "ترتيب واضح",
+    "Short labels if helpful": "عناوين قصيرة إذا كانت مفيدة",
+    "Give us oxygen": "تمنحنا الأكسجين",
+    "Make shade": "توفّر الظل",
+    "Give food": "توفّر الطعام",
+    "Make places beautiful": "تجعل الأماكن جميلة"
+  }
+}

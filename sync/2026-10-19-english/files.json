@@ -1,0 +1,209 @@
+{
+  "observed_date": "2026-10-19",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2352,
+      "sha256": "0d90d85d1339921260b5bac16b6896daf99e6a933f0aabeb52052e7441b596a9",
+      "git_blob": "a2ca57f46e4e3f1cde43cf3ec00cd030004bbd60"
+    },
+    {
+      "path": "app/activities/class/grade5/arabic-support.json",
+      "bytes": 15415,
+      "sha256": "bb4690b3f55e4da15acda70518f8b90d646f2ec804a37a5df016cf3d7546d593",
+      "git_blob": "fd378204200ec9aa0a161eb8186be430d26b83d0"
+    },
+    {
+      "path": "app/activities/class/grade5/data.json",
+      "bytes": 266792,
+      "sha256": "8f55a24c3901087966e26b3bba1c66ff42337273f4f388958fea7a38e1ad2fcb",
+      "git_blob": "b3ab58ec0ed20cba284ec68b5ae3350be3025dc4"
+    },
+    {
+      "path": "app/activities/class/grade6/arabic-support.json",
+      "bytes": 16156,
+      "sha256": "b9bfc5e71b43f696577928a70e2df276404da02ac44bdbd768a48d5a4822eede",
+      "git_blob": "e9fd4402b3321d692d015e2abc5097a27a613efa"
+    },
+    {
+      "path": "app/activities/class/grade6/data.json",
+      "bytes": 199113,
+      "sha256": "c0b733ae805037f71aaa9179596741b34e879d8e904c795962326fb67f75cf26",
+      "git_blob": "de93c0a838c5af6794fee5c91500b5f4b2c50415"
+    },
+    {
+      "path": "app/activities/gamal/english-revision/data.json",
+      "bytes": 250773,
+      "sha256": "02870300ea554296d7a805979940149c711818607fb4a30e4ca1fffe0d6132fb",
+      "git_blob": "9c35493bcde7cbc4caf441fa0a18a638d0f1e3ae"
+    },
+    {
+      "path": "app/activities/murad/english-revision/data.json",
+      "bytes": 180477,
+      "sha256": "a763c3e4ca2147b1cefbe4600c090acdbefe0cbc5b114b8cdf33aa0f0789f306",
+      "git_blob": "7d7dbebe3ff7fe7cb98b27a30cd21256686b2c90"
+    },
+    {
+      "path": "app/activities/shared/english-class/app.css",
+      "bytes": 24097,
+      "sha256": "1030bb08a87c44dc41ca9131866c6657085e1a1304c1a127e95d6996793c450c",
+      "git_blob": "542f791d129b63f7589534876620f0c29a9cce2b"
+    },
+    {
+      "path": "app/activities/shared/english-class/app.html",
+      "bytes": 2908,
+      "sha256": "57b673e55699ed0a5fcf5e05cdf9912402e9b523bcf549ff0266cf5770e37705",
+      "git_blob": "e07cd73f6033c2c73f4a91786ac5779e7a22c96f"
+    },
+    {
+      "path": "app/activities/shared/english-class/app.js",
+      "bytes": 49446,
+      "sha256": "347f240b838554258d00338bb6749d58dbabd7ed0c27d1fbc36e5fa026069290",
+      "git_blob": "43201bb69b0067e008381d43b15c437d71889415"
+    },
+    {
+      "path": "app/activities/shared/english-class-arabic.css",
+      "bytes": 4186,
+      "sha256": "6ca1005cbc24af4cdc0309674a215da89693071a3196a736ddd9d3dfb8a15fc4",
+      "git_blob": "5097a41e816beea794a80e146a1f6b66d810bd4f"
+    },
+    {
+      "path": "app/activities/shared/english-class-arabic.js",
+      "bytes": 18606,
+      "sha256": "5f0f8ed475bf24241b5296a8a3c4d1c599960ad64edac376d9b255354b62b83c",
+      "git_blob": "c4c1b56414f963c888292065289e0271454ec975"
+    },
+    {
+      "path": "app/activities/shared/english-revision/app.css",
+      "bytes": 19910,
+      "sha256": "bb5f4e6f71109617e1152b36c84bd01e3579d18b0ff4621689a7018c13c1178f",
+      "git_blob": "8ec525497f36ca8f9fd1f3771043d74dacab0c12"
+    },
+    {
+      "path": "app/activities/shared/english-revision/app.html",
+      "bytes": 2138,
+      "sha256": "e22040f87b89e98c53ab49691ebc7d3b8147ca39c155969d27b652e05557d0d6",
+      "git_blob": "b2b2e34eb6509e11a925e1d86d6f7f34c7467b14"
+    },
+    {
+      "path": "app/activities/shared/english-revision/app.js",
+      "bytes": 33814,
+      "sha256": "3a828392ef0b7052c75d61db3e1b36dfeacc22dd4be189fa951186660de7dcaf",
+      "git_blob": "279dda2ec44e4d8718277dd273c83e2ad19b6fc2"
+    },
+    {
+      "path": "app/assets/gamal/english/assessment-pages.json",
+      "bytes": 3667767,
+      "sha256": "6d0bdd651328d0109fb706c9ed1e9654fa16dd5a0d8dc34ebe529522bcd99bdd",
+      "git_blob": "48b419faa574a4e3da2517a4a169deddba9c6f4c"
+    },
+    {
+      "path": "app/assets/murad/english/assessment-pages.json",
+      "bytes": 3387301,
+      "sha256": "1f4e0ae1543e83623805c30b865d60ed9b0410ae615bd4e082204db3306359ef",
+      "git_blob": "157731d787f37f9450467f58f1370b81a0a5ef04"
+    },
+    {
+      "path": "docs/authoring.md",
+      "bytes": 16539,
+      "sha256": "11a3202ab9f2c9ed3aded0d1652b2bdfb6bf27dccd7016a7ab55a540ce9532c1",
+      "git_blob": "f878c46800ac6c9980a3a5dde196c69bec43325e"
+    },
+    {
+      "path": "docs/provenance/english-editorial-notes.md",
+      "bytes": 1940,
+      "sha256": "d144970263802453669d199995b314702b6db7781db7c5a09068e4551819a914",
+      "git_blob": "eee9461cf59191a27225c58b8a68b180e59b6f6f"
+    },
+    {
+      "path": "docs/provenance/gamal/english/october-coverage.md",
+      "bytes": 7304,
+      "sha256": "64fcd22a1037c34b64e03870c8a12f19a217f33be46da2fe49f98cddca775516",
+      "git_blob": "48ca61d6b12ae89a186ffc8079d4afe5c9644f48"
+    },
+    {
+      "path": "docs/provenance/murad/english/october-coverage.md",
+      "bytes": 7595,
+      "sha256": "9f6157ad5bdd54b6d631a43d161bd77d250e55e453de51449c2a94fffb9f7be8",
+      "git_blob": "d4cc501b83a56414d0d3cffa02a2275ac74dae08"
+    },
+    {
+      "path": "docs/structure.md",
+      "bytes": 4565,
+      "sha256": "f5ab4c6534e15a3bc439bf034713aa097e13ce6ff1166081a445035ff02bc411",
+      "git_blob": "bcbd214d8bffa90a910a45a96a13fe1f02a3b454"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3096,
+      "sha256": "62a5dd584b8f7537bb690e9aacaefb77b64492dd8d9087e281e7afeebcbabd53",
+      "git_blob": "4c743136ee7d289ef45fe95163d52e46d4f6c6f1"
+    },
+    {
+      "path": "packs/class/grade5/english/october-arabic-help.html",
+      "bytes": 3924568,
+      "sha256": "548f42db54ff61a91397a410e9c2eb7259e8e1eb5c75f763572596bea2c437f8",
+      "git_blob": "282508ba79ec16df16ce6ad5aeb3b5db54b78480"
+    },
+    {
+      "path": "packs/class/grade6/english/october-arabic-help.html",
+      "bytes": 3598300,
+      "sha256": "a95609c6b9c12e84cf3656d8ed468325267e8cdfb4278d7ff86443c05370101a",
+      "git_blob": "8e2540c4a11e917efe28a33a11c90a8426889acb"
+    },
+    {
+      "path": "packs/gamal/english/october-revision.html",
+      "bytes": 3894209,
+      "sha256": "c1b998937e7b3d2593760c9d0981c39677be98383059e7e211a6116d0cddfeb6",
+      "git_blob": "3c83e61be7d5ebfe8a7e45a6309f2bf73f44f92d"
+    },
+    {
+      "path": "packs/murad/english/october-revision.html",
+      "bytes": 3565630,
+      "sha256": "d64ad2d4094ccba580e7e7e45a55066db3bf1eb6f2b2a6f3b7444b453751a579",
+      "git_blob": "cca4d6c6be3d9e60364e1fba62f0c2f4cf8e1bfa"
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr5_Assessment_Book_Term1.pdf",
+      "bytes": 1966329,
+      "sha256": "72745f3add1102805f457b07fd0e6e8874c3efb729906a111c08c351bb7bdc0d",
+      "git_blob": "44e4c63822b0ff61b220b99562d7d5d84e64a425"
+    },
+    {
+      "path": "sync/2026-10-19-english/README.md",
+      "bytes": 3729,
+      "sha256": "e418b735eebcb7c9b041d2b65c58abfd0d27af7fce2448ffe428390efcc62314",
+      "git_blob": "3f82e5aad18bed7e90bbcad7f2c9a025981b7ba6"
+    },
+    {
+      "path": "tools/build/english-class.js",
+      "bytes": 8131,
+      "sha256": "14544ce83e6ec99d802b4d67addfe8d9356361699446ba8e46c2cb780e4b9a35",
+      "git_blob": "9b2b584287a66fd00a452220ae9ace4eeb16ed8c"
+    },
+    {
+      "path": "tools/build/english-revision.js",
+      "bytes": 1376,
+      "sha256": "ce4628087be2ff31c2227009822eccc0e37f5fbe4cc6636b7985a2cf9653a266",
+      "git_blob": "60980004d48a64dce42b5fe31f0603f47d36f03a"
+    },
+    {
+      "path": "tools/check/english-class-interactions.js",
+      "bytes": 6543,
+      "sha256": "faea57e45bc375f13b03cc9db14a80f96b60d588107a5fa2dade808cbe983b99",
+      "git_blob": "42342cd121b105aeb35ad7657e59a12e0b2f617e"
+    },
+    {
+      "path": "tools/check/english-interactions.js",
+      "bytes": 5452,
+      "sha256": "41608f31a5ead94468baf29a03e40c0a33901d25f62028f048c37f0af8da4276",
+      "git_blob": "385f3686c74591355293f600bf51abdd95deefb4"
+    },
+    {
+      "path": "tools/check/english-revision.js",
+      "bytes": 3014,
+      "sha256": "375adef0ed47a4abc20811bd3d73b95b8ad47132ec176262693f219f2f0643a0",
+      "git_blob": "4bc92b29044aa3cb7c3acfe688721dfaae5bbd28"
+    }
+  ]
+}

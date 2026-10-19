@@ -2,6 +2,10 @@
 
 Use this to turn any school booklet (any subject) into interactive sheets, with any model, without re-planning.
 
+## Standing sync rule · all subjects
+
+For every subject covered, sync the finished revision and its editable content/source references to both the user's cloud and this GitHub repository. Include personal and class editions when created. Verify the saved versions and the pushed `main` commit. Record any inaccessible source or incomplete upload honestly; a local-only file is not a completed sync. Do not send materials to WhatsApp or other people unless explicitly instructed.
+
 **How to use it**
 
 1. Read [the repository structure](structure.md), then start a session that has this repository (`Omargamal7/Begoodboy`). If the model cannot use the repository, it still works: the model returns one file, and you add it yourself (see "No repository access" at the end).
@@ -247,3 +251,4 @@ Q.open questions. Do not return anything else.
 - The engine, design and child profiles are already decided, so the model only writes content.
 - The worked example files show every activity type, so the model copies a pattern instead of designing one.
 - `tools/check/lessons.js` replaces long manual testing: one command finds broken answers, unfinished activities and layout problems.
+
