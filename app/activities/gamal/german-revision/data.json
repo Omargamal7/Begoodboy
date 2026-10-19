@@ -1,0 +1,3651 @@
+{
+  "student": "Jimmy",
+  "grade": 5,
+  "groups": [
+    {
+      "id": "oct-i",
+      "title": "October worksheet · I. Choose the correct word",
+      "source": "worksheet",
+      "page": 1,
+      "questions": [
+        {
+          "id": "oct-i-01a",
+          "prompt": "____ bist du? — Ich bin Ahmed.",
+          "type": "choice",
+          "answers": [
+            "Wer"
+          ],
+          "explanation": "Wer asks who someone is.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Wer",
+            "Wie",
+            "Wo"
+          ]
+        },
+        {
+          "id": "oct-i-01b",
+          "prompt": "Wer bist du? — ____ bin Ahmed.",
+          "type": "choice",
+          "answers": [
+            "Ich"
+          ],
+          "explanation": "Ich is I; it goes with bin.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Ich",
+            "Du",
+            "Er"
+          ]
+        },
+        {
+          "id": "oct-i-02a",
+          "prompt": "____ ist dein Name? — Mein Name ist Monika.",
+          "type": "choice",
+          "answers": [
+            "Wie"
+          ],
+          "explanation": "Wie ist dein Name? is the name question in the key.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Wer",
+            "Wie",
+            "Wo"
+          ]
+        },
+        {
+          "id": "oct-i-02b",
+          "prompt": "Wie ist dein Name? — ____ Name ist Monika.",
+          "type": "choice",
+          "answers": [
+            "Mein"
+          ],
+          "explanation": "Mein Name means my name.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Ich",
+            "Mein",
+            "Du"
+          ]
+        },
+        {
+          "id": "oct-i-03",
+          "prompt": "____ heißt du? — Ich heiße Omar.",
+          "type": "choice",
+          "answers": [
+            "Wie"
+          ],
+          "explanation": "Use Wie with heißt to ask someone’s name.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Wer",
+            "Wie",
+            "Wo"
+          ]
+        },
+        {
+          "id": "oct-i-04",
+          "prompt": "____ geht es dir? — Danke, gut.",
+          "type": "choice",
+          "answers": [
+            "Wie"
+          ],
+          "explanation": "Wie geht es dir? asks how someone is.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Wer",
+            "Wie",
+            "Wo"
+          ]
+        },
+        {
+          "id": "oct-i-05a",
+          "prompt": "____ alt bist du? — Ich bin 7 Jahre alt.",
+          "type": "choice",
+          "answers": [
+            "Wie"
+          ],
+          "explanation": "Wie alt means how old.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Wer",
+            "Wie",
+            "Wo"
+          ]
+        },
+        {
+          "id": "oct-i-05b",
+          "prompt": "Wie alt bist du? — Ich ____ 7 Jahre alt.",
+          "type": "choice",
+          "answers": [
+            "bin"
+          ],
+          "explanation": "Use ich bin, not ich bist or ich ist.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "bin",
+            "bist",
+            "ist"
+          ]
+        },
+        {
+          "id": "oct-i-06",
+          "prompt": "Wie alt bist ____? — Ich bin 9.",
+          "type": "choice",
+          "answers": [
+            "du"
+          ],
+          "explanation": "Bist is the form used with du.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "ich",
+            "sie",
+            "du"
+          ]
+        },
+        {
+          "id": "oct-i-07",
+          "prompt": "Wie heißt ____? — Ich heiße Hans.",
+          "type": "choice",
+          "answers": [
+            "du"
+          ],
+          "explanation": "Heißt is the form used with du in this question.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "ich",
+            "du",
+            "wir"
+          ]
+        },
+        {
+          "id": "oct-i-08a",
+          "prompt": "____ du Ali? — Ja, ich bin Ali.",
+          "type": "choice",
+          "answers": [
+            "Bist"
+          ],
+          "explanation": "A yes/no question with du starts with Bist.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Bist",
+            "Bin",
+            "Ist"
+          ]
+        },
+        {
+          "id": "oct-i-08b",
+          "prompt": "Bist du Ali? — ____, ich bin Ali.",
+          "type": "choice",
+          "answers": [
+            "Ja"
+          ],
+          "explanation": "The reply confirms the same name, so it begins Ja.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Ja",
+            "Nein",
+            "Nicht"
+          ]
+        },
+        {
+          "id": "oct-i-09a",
+          "prompt": "____ du Hans? — Nein, ich heiße Frank.",
+          "type": "choice",
+          "answers": [
+            "Heißt",
+            "Heisst"
+          ],
+          "explanation": "Heißt goes with du.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Heiße",
+            "Heißen",
+            "Heißt"
+          ]
+        },
+        {
+          "id": "oct-i-09b",
+          "prompt": "Heißt du Hans? — ____, ich heiße Frank.",
+          "type": "choice",
+          "answers": [
+            "Nein"
+          ],
+          "explanation": "The speaker gives a different name, so the answer begins Nein.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Ja",
+            "Nein",
+            "Nicht"
+          ]
+        },
+        {
+          "id": "oct-i-10",
+          "prompt": "Ist dein Name Mona? — Nein, mein Name ist ____ Mona.",
+          "type": "choice",
+          "answers": [
+            "nicht"
+          ],
+          "explanation": "Nein answers the question; nicht negates the name inside the sentence.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "ja",
+            "nicht",
+            "nein"
+          ]
+        },
+        {
+          "id": "oct-i-11",
+          "prompt": "Ich heiße ____ Maria.",
+          "type": "choice",
+          "answers": [
+            "Frau"
+          ],
+          "explanation": "The supplied key selects Frau in this example.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Frau",
+            "Herr"
+          ]
+        },
+        {
+          "id": "oct-i-12",
+          "prompt": "Ich heiße ____ Hans.",
+          "type": "choice",
+          "answers": [
+            "Herr"
+          ],
+          "explanation": "The supplied key selects Herr in this example.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Frau",
+            "Herr"
+          ]
+        },
+        {
+          "id": "oct-i-13",
+          "prompt": "Mein Name ist ____ Adel.",
+          "type": "choice",
+          "answers": [
+            "Herr"
+          ],
+          "explanation": "The supplied key selects Herr. The printed distractor Faru is normalized to Frau.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Frau",
+            "Herr"
+          ],
+          "reviewNote": "The source prints Faru; corrected to Frau as an obvious spelling error. The answer remains the highlighted Herr."
+        },
+        {
+          "id": "oct-i-14",
+          "prompt": "Ich bin ____ Menna.",
+          "type": "choice",
+          "answers": [
+            "Frau"
+          ],
+          "explanation": "The supplied key selects Frau in this example.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Frau",
+            "Herr"
+          ]
+        },
+        {
+          "id": "oct-i-15",
+          "prompt": "Mein Name ____ Paula.",
+          "type": "choice",
+          "answers": [
+            "ist"
+          ],
+          "explanation": "Mein Name is third-person singular and takes ist.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "bin",
+            "bist",
+            "ist"
+          ]
+        },
+        {
+          "id": "oct-i-16",
+          "prompt": "Ich ____ Mona.",
+          "type": "choice",
+          "answers": [
+            "heiße",
+            "heisse"
+          ],
+          "explanation": "With ich, the form of heißen is heiße.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "heiße",
+            "heißen",
+            "heißt"
+          ]
+        },
+        {
+          "id": "oct-i-17",
+          "prompt": "Ich ____ Anna.",
+          "type": "choice",
+          "answers": [
+            "bin"
+          ],
+          "explanation": "With ich, use bin.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "bin",
+            "bist",
+            "ist"
+          ]
+        },
+        {
+          "id": "oct-i-18",
+          "prompt": "Mein Vater heißt ____ Ahmed.",
+          "type": "choice",
+          "answers": [
+            "Herr"
+          ],
+          "explanation": "Vater means father; the key uses the title Herr.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Herr",
+            "Frau"
+          ]
+        },
+        {
+          "id": "oct-i-19",
+          "prompt": "Meine Tante heißt ____ Maya.",
+          "type": "choice",
+          "answers": [
+            "Frau"
+          ],
+          "explanation": "Tante means aunt; the key uses the title Frau.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Herr",
+            "Frau"
+          ]
+        },
+        {
+          "id": "oct-i-20",
+          "prompt": "Wie geht’s? — Danke, ____.",
+          "type": "choice",
+          "answers": [
+            "gut"
+          ],
+          "explanation": "Gut means well. Rot and grau are colors.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "gut",
+            "rot",
+            "grau"
+          ]
+        },
+        {
+          "id": "oct-i-21",
+          "prompt": "Geht es dir gut? — ____, schlecht.",
+          "type": "choice",
+          "answers": [
+            "Nein"
+          ],
+          "explanation": "The speaker feels bad, so they deny feeling good.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Ja",
+            "Nein",
+            "Nicht"
+          ],
+          "reviewNote": "The source misspells schlecht as schelcht; spelling normalized without changing the highlighted answer."
+        },
+        {
+          "id": "oct-i-22",
+          "prompt": "Geht es dir schlecht? — ____, schlecht.",
+          "type": "choice",
+          "answers": [
+            "Ja"
+          ],
+          "explanation": "The speaker confirms feeling bad.",
+          "hint": "Read the whole question and reply before choosing.",
+          "sourcePage": 1,
+          "options": [
+            "Ja",
+            "Nein",
+            "Nicht"
+          ],
+          "reviewNote": "The source misspells schlecht as schelcht; spelling normalized without changing the highlighted answer."
+        }
+      ],
+      "sourceFile": "october-worksheet.pdf"
+    },
+    {
+      "id": "oct-ii",
+      "title": "October worksheet · II. Build correct sentences",
+      "source": "worksheet",
+      "page": 2,
+      "questions": [
+        {
+          "id": "oct-ii-1",
+          "prompt": "Ordne und bilde einen richtigen Satz: Wie – dein – Name – ist?",
+          "type": "text",
+          "answers": [
+            "Wie ist dein Name?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-2",
+          "prompt": "Ordne und bilde einen richtigen Satz: Wie – es – geht – dir?",
+          "type": "text",
+          "answers": [
+            "Wie geht es dir?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-3",
+          "prompt": "Ordne und bilde einen richtigen Satz: Ich – alt – bin – zwölf – Jahre.",
+          "type": "text",
+          "answers": [
+            "Ich bin zwölf Jahre alt.",
+            "Ich bin zwoelf Jahre alt."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-4",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – Wie – heißt?",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-5",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – Karen – Heißt?",
+          "type": "text",
+          "answers": [
+            "Heißt du Karen?",
+            "Heisst du Karen?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-6",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – Wer – bist?",
+          "type": "text",
+          "answers": [
+            "Wer bist du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-7",
+          "prompt": "Ordne und bilde einen richtigen Satz: dir – es – Hallo, – Wie – geht?",
+          "type": "text",
+          "answers": [
+            "Hallo, wie geht es dir?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        },
+        {
+          "id": "oct-ii-8",
+          "prompt": "Ordne und bilde einen richtigen Satz: bist – du – Wie – alt?",
+          "type": "text",
+          "answers": [
+            "Wie alt bist du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 2
+        }
+      ],
+      "sourceFile": "october-worksheet.pdf"
+    },
+    {
+      "id": "oct-iii",
+      "title": "October worksheet · III. Odd one out",
+      "source": "worksheet",
+      "page": 2,
+      "questions": [
+        {
+          "id": "oct-iii-1",
+          "prompt": "Was passt hier nicht? Wer – Wie – Wo – Du",
+          "type": "choice",
+          "answers": [
+            "Du"
+          ],
+          "explanation": "Wer, Wie and Wo are question words; Du is a pronoun.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "Wer",
+            "Wie",
+            "Wo",
+            "Du"
+          ]
+        },
+        {
+          "id": "oct-iii-2",
+          "prompt": "Was passt hier nicht? Ich – gut – Du – Er",
+          "type": "choice",
+          "answers": [
+            "gut"
+          ],
+          "explanation": "Ich, Du and Er are pronouns; gut describes a feeling.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "Ich",
+            "gut",
+            "Du",
+            "Er"
+          ]
+        },
+        {
+          "id": "oct-iii-3",
+          "prompt": "Was passt hier nicht? Morgen – super – Tag – Abend",
+          "type": "choice",
+          "answers": [
+            "super"
+          ],
+          "explanation": "Morgen, Tag and Abend name times of day; super does not.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "Morgen",
+            "super",
+            "Tag",
+            "Abend"
+          ]
+        },
+        {
+          "id": "oct-iii-4",
+          "prompt": "Was passt hier nicht? Ich – Er – Sie – Wie",
+          "type": "choice",
+          "answers": [
+            "Wie"
+          ],
+          "explanation": "Ich, Er and Sie are pronouns; Wie is a question word.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "Ich",
+            "Er",
+            "Sie",
+            "Wie"
+          ]
+        },
+        {
+          "id": "oct-iii-5",
+          "prompt": "Was passt hier nicht? super – toll – schlecht – prima",
+          "type": "choice",
+          "answers": [
+            "schlecht"
+          ],
+          "explanation": "The other words express a positive feeling; schlecht means bad.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "super",
+            "toll",
+            "schlecht",
+            "prima"
+          ]
+        },
+        {
+          "id": "oct-iii-6",
+          "prompt": "Was passt hier nicht? heiße – heißt – ist – heißen",
+          "type": "choice",
+          "answers": [
+            "ist"
+          ],
+          "explanation": "Heiße, heißt and heißen belong to heißen. Ist belongs to sein.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "heiße",
+            "heißt",
+            "ist",
+            "heißen"
+          ]
+        },
+        {
+          "id": "oct-iii-7",
+          "prompt": "Was passt hier nicht? sechs – acht – Nein – sieben",
+          "type": "choice",
+          "answers": [
+            "Nein"
+          ],
+          "explanation": "The other three words are numbers; Nein means no.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "sechs",
+            "acht",
+            "Nein",
+            "sieben"
+          ]
+        },
+        {
+          "id": "oct-iii-8",
+          "prompt": "Was passt hier nicht? du – Ich – sie – neun",
+          "type": "manual",
+          "answers": [
+            "School key: Ich.",
+            "Grammar-based answer: neun."
+          ],
+          "explanation": "The highlighted key conflicts with the natural grammatical grouping.",
+          "hint": "Compare pronouns with number words.",
+          "sourcePage": 2,
+          "reviewNote": "The rendered model key highlights Ich. However du, ich and sie are pronouns and neun is a number. This disputed item is unscored; do not teach the highlighted key as a grammar rule."
+        },
+        {
+          "id": "oct-iii-9",
+          "prompt": "Was passt hier nicht? Tschüss – Grüß dich – Hallo – Hi",
+          "type": "choice",
+          "answers": [
+            "Tschüss",
+            "Tschuess"
+          ],
+          "explanation": "Tschüss is a farewell; the other expressions are greetings.",
+          "hint": "Look for the category shared by three words.",
+          "sourcePage": 2,
+          "options": [
+            "Tschüss",
+            "Grüß dich",
+            "Hallo",
+            "Hi"
+          ]
+        }
+      ],
+      "sourceFile": "october-worksheet.pdf"
+    },
+    {
+      "id": "oct-iv-a",
+      "title": "October worksheet · IV. Match dialogue set 1",
+      "source": "worksheet",
+      "page": 3,
+      "questions": [
+        {
+          "id": "oct-iv-a-1",
+          "prompt": "Was passt zusammen? Guten Morgen!",
+          "type": "choice",
+          "answers": [
+            "Grüß dich!",
+            "Gruess dich!"
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, toll.",
+            "Nein, ich bin Sara.",
+            "Grüß dich!",
+            "Ich heiße Malek."
+          ]
+        },
+        {
+          "id": "oct-iv-a-2",
+          "prompt": "Was passt zusammen? Bist du Mariam?",
+          "type": "choice",
+          "answers": [
+            "Nein, ich bin Sara."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, toll.",
+            "Nein, ich bin Sara.",
+            "Grüß dich!",
+            "Ich heiße Malek."
+          ]
+        },
+        {
+          "id": "oct-iv-a-3",
+          "prompt": "Was passt zusammen? Wie geht es?",
+          "type": "choice",
+          "answers": [
+            "Danke, toll."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, toll.",
+            "Nein, ich bin Sara.",
+            "Grüß dich!",
+            "Ich heiße Malek."
+          ]
+        },
+        {
+          "id": "oct-iv-a-4",
+          "prompt": "Was passt zusammen? Wie heißt du?",
+          "type": "choice",
+          "answers": [
+            "Ich heiße Malek.",
+            "Ich heisse Malek."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, toll.",
+            "Nein, ich bin Sara.",
+            "Grüß dich!",
+            "Ich heiße Malek."
+          ]
+        }
+      ],
+      "sourceFile": "october-worksheet.pdf"
+    },
+    {
+      "id": "oct-iv-b",
+      "title": "October worksheet · IV. Match dialogue set 2",
+      "source": "worksheet",
+      "page": 3,
+      "questions": [
+        {
+          "id": "oct-iv-b-1",
+          "prompt": "Was passt zusammen? Guten Tag!",
+          "type": "choice",
+          "answers": [
+            "Grüß dich!",
+            "Gruess dich!"
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, gut.",
+            "Nein, ich heiße Anna.",
+            "Mein Name ist Layan.",
+            "Grüß dich!"
+          ]
+        },
+        {
+          "id": "oct-iv-b-2",
+          "prompt": "Was passt zusammen? Ist dein Name Hana?",
+          "type": "choice",
+          "answers": [
+            "Nein, ich heiße Anna.",
+            "Nein, ich heisse Anna."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, gut.",
+            "Nein, ich heiße Anna.",
+            "Mein Name ist Layan.",
+            "Grüß dich!"
+          ]
+        },
+        {
+          "id": "oct-iv-b-3",
+          "prompt": "Was passt zusammen? Wie geht es?",
+          "type": "choice",
+          "answers": [
+            "Danke, gut."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, gut.",
+            "Nein, ich heiße Anna.",
+            "Mein Name ist Layan.",
+            "Grüß dich!"
+          ]
+        },
+        {
+          "id": "oct-iv-b-4",
+          "prompt": "Was passt zusammen? Wie ist dein Name?",
+          "type": "choice",
+          "answers": [
+            "Mein Name ist Layan."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Danke, gut.",
+            "Nein, ich heiße Anna.",
+            "Mein Name ist Layan.",
+            "Grüß dich!"
+          ]
+        }
+      ],
+      "sourceFile": "october-worksheet.pdf"
+    },
+    {
+      "id": "oct-iv-c",
+      "title": "October worksheet · IV. Match dialogue set 3",
+      "source": "worksheet",
+      "page": 3,
+      "questions": [
+        {
+          "id": "oct-iv-c-1",
+          "prompt": "Was passt zusammen? Wie alt bist du?",
+          "type": "choice",
+          "answers": [
+            "Ich bin 11 Jahre alt."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Ahmed.",
+            "Nein, ich bin 11 Jahre alt.",
+            "Grüß dich!",
+            "Ich bin 11 Jahre alt."
+          ]
+        },
+        {
+          "id": "oct-iv-c-2",
+          "prompt": "Was passt zusammen? Bist du 10 Jahre alt?",
+          "type": "choice",
+          "answers": [
+            "Nein, ich bin 11 Jahre alt."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Ahmed.",
+            "Nein, ich bin 11 Jahre alt.",
+            "Grüß dich!",
+            "Ich bin 11 Jahre alt."
+          ]
+        },
+        {
+          "id": "oct-iv-c-3",
+          "prompt": "Was passt zusammen? Guten Abend!",
+          "type": "choice",
+          "answers": [
+            "Grüß dich!",
+            "Gruess dich!"
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Ahmed.",
+            "Nein, ich bin 11 Jahre alt.",
+            "Grüß dich!",
+            "Ich bin 11 Jahre alt."
+          ]
+        },
+        {
+          "id": "oct-iv-c-4",
+          "prompt": "Was passt zusammen? Wer bist du?",
+          "type": "choice",
+          "answers": [
+            "Ahmed."
+          ],
+          "explanation": "The school key links this question or greeting to this reply.",
+          "hint": "Identify whether the line asks about a name, age, wellbeing or a greeting.",
+          "sourcePage": 3,
+          "options": [
+            "Ahmed.",
+            "Nein, ich bin 11 Jahre alt.",
+            "Grüß dich!",
+            "Ich bin 11 Jahre alt."
+          ]
+        }
+      ],
+      "sourceFile": "october-worksheet.pdf"
+    },
+    {
+      "id": "book-01",
+      "title": "Booklet · Übung 1. Answer the questions using the picture labels",
+      "source": "booklet",
+      "page": 4,
+      "questions": [
+        {
+          "id": "book-01-1",
+          "prompt": "The person’s picture is labeled Frank. Answer as that person: Wer bist du?",
+          "type": "text",
+          "answers": [
+            "Ich bin Frank."
+          ],
+          "explanation": "Use the name printed beneath the photograph, not your own name. The response follows the booklet key.",
+          "hint": "Copy the question pattern: bin, heiße, or Mein Name ist.",
+          "sourcePage": 4
+        },
+        {
+          "id": "book-01-2",
+          "prompt": "The person’s picture is labeled Anna. Answer as that person: Wie heißt du?",
+          "type": "text",
+          "answers": [
+            "Ich heiße Anna.",
+            "Ich heisse Anna."
+          ],
+          "explanation": "Use the name printed beneath the photograph, not your own name. The response follows the booklet key.",
+          "hint": "Copy the question pattern: bin, heiße, or Mein Name ist.",
+          "sourcePage": 4
+        },
+        {
+          "id": "book-01-3",
+          "prompt": "The person’s picture is labeled Mark. Answer as that person: Wie ist dein Name?",
+          "type": "text",
+          "answers": [
+            "Mein Name ist Mark."
+          ],
+          "explanation": "Use the name printed beneath the photograph, not your own name. The response follows the booklet key.",
+          "hint": "Copy the question pattern: bin, heiße, or Mein Name ist.",
+          "sourcePage": 4
+        },
+        {
+          "id": "book-01-4",
+          "prompt": "The person’s picture is labeled Lisa. Answer as that person: Wie ist dein Name?",
+          "type": "text",
+          "answers": [
+            "Mein Name ist Lisa."
+          ],
+          "explanation": "Use the name printed beneath the photograph, not your own name. The response follows the booklet key.",
+          "hint": "Copy the question pattern: bin, heiße, or Mein Name ist.",
+          "sourcePage": 4
+        },
+        {
+          "id": "book-01-5",
+          "prompt": "The person’s picture is labeled Hans. Answer as that person: Wie heißt du?",
+          "type": "text",
+          "answers": [
+            "Ich heiße Hans.",
+            "Ich heisse Hans."
+          ],
+          "explanation": "Use the name printed beneath the photograph, not your own name. The response follows the booklet key.",
+          "hint": "Copy the question pattern: bin, heiße, or Mein Name ist.",
+          "sourcePage": 4
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-02",
+      "title": "Booklet · Übung 2. Build the name questions",
+      "source": "booklet",
+      "page": 5,
+      "questions": [
+        {
+          "id": "book-02-1",
+          "prompt": "Bilde die Frage. Reply: “Ich heiße Karl.”",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "This is the question pattern supplied by the school key for this reply.",
+          "hint": "Match the verb in the reply to the familiar question pattern.",
+          "sourcePage": 5
+        },
+        {
+          "id": "book-02-2",
+          "prompt": "Bilde die Frage. Reply: “Mein Name ist Susi.”",
+          "type": "text",
+          "answers": [
+            "Wie ist dein Name?"
+          ],
+          "explanation": "This is the question pattern supplied by the school key for this reply.",
+          "hint": "Match the verb in the reply to the familiar question pattern.",
+          "sourcePage": 5
+        },
+        {
+          "id": "book-02-3",
+          "prompt": "Bilde die Frage. Reply: “Ich heiße Nina.”",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "This is the question pattern supplied by the school key for this reply.",
+          "hint": "Match the verb in the reply to the familiar question pattern.",
+          "sourcePage": 5
+        },
+        {
+          "id": "book-02-4",
+          "prompt": "Bilde die Frage. Reply: “Ich bin Arno.”",
+          "type": "text",
+          "answers": [
+            "Wer bist du?"
+          ],
+          "explanation": "This is the question pattern supplied by the school key for this reply.",
+          "hint": "Match the verb in the reply to the familiar question pattern.",
+          "sourcePage": 5
+        },
+        {
+          "id": "book-02-5",
+          "prompt": "Bilde die Frage. Reply: “Ich heiße Eva.”",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "This is the question pattern supplied by the school key for this reply.",
+          "hint": "Match the verb in the reply to the familiar question pattern.",
+          "sourcePage": 5
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-03",
+      "title": "Booklet · Übung 3. Order the sentences",
+      "source": "booklet",
+      "page": 6,
+      "questions": [
+        {
+          "id": "book-03-1",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – Wer – bist?",
+          "type": "text",
+          "answers": [
+            "Wer bist du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-2",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – heißt – Wie?",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-3",
+          "prompt": "Ordne und bilde einen richtigen Satz: dein – ist – Name – Wie?",
+          "type": "text",
+          "answers": [
+            "Wie ist dein Name?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-4",
+          "prompt": "Ordne und bilde einen richtigen Satz: bin – Ich – Ahmed.",
+          "type": "text",
+          "answers": [
+            "Ich bin Ahmed."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-5",
+          "prompt": "Ordne und bilde einen richtigen Satz: Ich – Yara – heiße.",
+          "type": "text",
+          "answers": [
+            "Ich heiße Yara.",
+            "Ich heisse Yara."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-6",
+          "prompt": "Ordne und bilde einen richtigen Satz: Name – Ali – ist – Mein.",
+          "type": "text",
+          "answers": [
+            "Mein Name ist Ali."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-7",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – Wie – heißt?",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-8",
+          "prompt": "Ordne und bilde einen richtigen Satz: Mein – ist – Mona – Name.",
+          "type": "text",
+          "answers": [
+            "Mein Name ist Mona."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-9",
+          "prompt": "Ordne und bilde einen richtigen Satz: heiße – Ema – Ich.",
+          "type": "text",
+          "answers": [
+            "Ich heiße Ema.",
+            "Ich heisse Ema."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        },
+        {
+          "id": "book-03-10",
+          "prompt": "Ordne und bilde einen richtigen Satz: Wie – Name – ist – dein?",
+          "type": "text",
+          "answers": [
+            "Wie ist dein Name?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 6
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-04",
+      "title": "Booklet · Übung 4. Match the farewell pictures",
+      "source": "booklet",
+      "page": 8,
+      "questions": [
+        {
+          "id": "book-04-1",
+          "prompt": "Picture 1: Upper left: a sleeping girl beneath a moon and clouds. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Gute Nacht"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        },
+        {
+          "id": "book-04-2",
+          "prompt": "Picture 2: Upper middle: a sleeping child with a teddy bear beneath the moon. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Gute Nacht"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        },
+        {
+          "id": "book-04-3",
+          "prompt": "Picture 3: Upper right: two schoolchildren waving to each other. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Tschüss / Auf Wiedersehen",
+            "Tschuess / Auf Wiedersehen"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        },
+        {
+          "id": "book-04-4",
+          "prompt": "Picture 4: Middle left: a woman walking away while waving to a small child. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Tschüss / Auf Wiedersehen",
+            "Tschuess / Auf Wiedersehen"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        },
+        {
+          "id": "book-04-5",
+          "prompt": "Picture 5: Middle right: a child asleep in bed with a nightcap, with a moon and stars. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Gute Nacht"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        },
+        {
+          "id": "book-04-6",
+          "prompt": "Picture 6: Lower left: a girl in a green shirt waving. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Tschüss / Auf Wiedersehen",
+            "Tschuess / Auf Wiedersehen"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        },
+        {
+          "id": "book-04-7",
+          "prompt": "Picture 7: Lower right: a woman asleep in bed beneath a night sky. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Gute Nacht"
+          ],
+          "explanation": "The colored arrows in the school key connect sleeping scenes with Gute Nacht and leaving/waving scenes with Tschüss / Auf Wiedersehen.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 8,
+          "options": [
+            "Gute Nacht",
+            "Tschüss / Auf Wiedersehen"
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-05",
+      "title": "Booklet · Übung 5. Match six greeting and farewell pictures",
+      "source": "booklet",
+      "page": 9,
+      "questions": [
+        {
+          "id": "book-05-1",
+          "prompt": "Picture 1: Top left: a crescent moon and stars. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Gute Nacht"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 9,
+          "options": [
+            "Guten Abend",
+            "Hallo",
+            "Tschüss",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-05-2",
+          "prompt": "Picture 2: Top middle: a rising sun at the horizon. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Guten Morgen"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 9,
+          "options": [
+            "Guten Abend",
+            "Hallo",
+            "Tschüss",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-05-3",
+          "prompt": "Picture 3: Top right: a girl walking away and waving. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Tschüss",
+            "Tschuess"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 9,
+          "options": [
+            "Guten Abend",
+            "Hallo",
+            "Tschüss",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-05-4",
+          "prompt": "Picture 4: Bottom left: a bright full sun. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Guten Tag"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 9,
+          "options": [
+            "Guten Abend",
+            "Hallo",
+            "Tschüss",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-05-5",
+          "prompt": "Picture 5: Bottom middle: a waving character with a Hi speech bubble. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Hallo"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 9,
+          "options": [
+            "Guten Abend",
+            "Hallo",
+            "Tschüss",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-05-6",
+          "prompt": "Picture 6: Bottom right: a low sun partly behind a blue cloud. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Guten Abend"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 9,
+          "options": [
+            "Guten Abend",
+            "Hallo",
+            "Tschüss",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-06",
+      "title": "Booklet · Übung 6. Complete Hana and Mariam’s dialogue",
+      "source": "booklet",
+      "page": 9,
+      "questions": [
+        {
+          "id": "book-06-1",
+          "prompt": "Hana: ____!\nMariam: Guten Morgen!",
+          "type": "text",
+          "answers": [
+            "Guten Morgen",
+            "Hallo",
+            "Grüß dich",
+            "Gruess dich"
+          ],
+          "explanation": "The key allows Guten Morgen, Hallo or Grüß dich as Hana’s greeting.",
+          "hint": "Start with a greeting.",
+          "sourcePage": 9
+        },
+        {
+          "id": "book-06-2",
+          "prompt": "Hana: ____?\nMariam: Ich heiße Mariam, und du?",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "The following reply gives a name using heiße.",
+          "hint": "Use the name question with heißen.",
+          "sourcePage": 9
+        },
+        {
+          "id": "book-06-3",
+          "prompt": "Mariam: Ich heiße Mariam, und du?\nHana: Ich ____.",
+          "type": "text",
+          "answers": [
+            "heiße Hana",
+            "heisse Hana"
+          ],
+          "explanation": "Hana answers using her own name in this fictional dialogue.",
+          "hint": "Complete Ich with the matching form of heißen and the speaker’s printed name.",
+          "sourcePage": 9
+        },
+        {
+          "id": "book-06-4",
+          "prompt": "Mariam: Auf Wiedersehen, Hana!\nHana: ____, Mariam!",
+          "type": "text",
+          "answers": [
+            "Auf Wiedersehen",
+            "Tschüss",
+            "Tschüs",
+            "Tschuess",
+            "Tschues"
+          ],
+          "explanation": "The key allows either farewell.",
+          "hint": "Reply with a farewell.",
+          "sourcePage": 9
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-07",
+      "title": "Booklet · Übung 7. Order the time-of-day and greeting phrases",
+      "source": "booklet",
+      "page": 10,
+      "questions": [
+        {
+          "id": "book-07-1",
+          "prompt": "Picture 1: Top left: a dark sky with a moon above fields. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Gute Nacht"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 10,
+          "options": [
+            "Guten Abend",
+            "Grüß dich",
+            "Auf Wiedersehen",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-07-2",
+          "prompt": "Picture 2: Top middle: the sun rising just above green fields. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Guten Morgen"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 10,
+          "options": [
+            "Guten Abend",
+            "Grüß dich",
+            "Auf Wiedersehen",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-07-3",
+          "prompt": "Picture 3: Top right: an orange evening sky above hills. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Guten Abend"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 10,
+          "options": [
+            "Guten Abend",
+            "Grüß dich",
+            "Auf Wiedersehen",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-07-4",
+          "prompt": "Picture 4: Bottom left: the sun high over fields in daylight. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Guten Tag"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 10,
+          "options": [
+            "Guten Abend",
+            "Grüß dich",
+            "Auf Wiedersehen",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ]
+        },
+        {
+          "id": "book-07-5",
+          "prompt": "Picture 5: Bottom middle: a child waving, with a Hi speech bubble. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Grüß dich",
+            "Gruess dich"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 10,
+          "options": [
+            "Guten Abend",
+            "Grüß dich",
+            "Auf Wiedersehen",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ],
+          "reviewNote": "The filled key also writes Hallo, but the exercise’s printed word bank supplies Grüß dich. Grüß dich is used here to preserve that bank."
+        },
+        {
+          "id": "book-07-6",
+          "prompt": "Picture 6: Bottom right: a schoolboy with a backpack walking away and waving. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Auf Wiedersehen"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 10,
+          "options": [
+            "Guten Abend",
+            "Grüß dich",
+            "Auf Wiedersehen",
+            "Guten Tag",
+            "Gute Nacht",
+            "Guten Morgen"
+          ],
+          "reviewNote": "The filled key additionally accepts tschüss, although Auf Wiedersehen is the phrase in this exercise’s printed word bank."
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-08",
+      "title": "Booklet · Übung 8. Complete Ali and Omar’s dialogue",
+      "source": "booklet",
+      "page": 10,
+      "questions": [
+        {
+          "id": "book-08-1",
+          "prompt": "Ali: Guten Abend!\nOmar: ____!",
+          "type": "text",
+          "answers": [
+            "Guten Abend"
+          ],
+          "explanation": "The key repeats the evening greeting.",
+          "hint": "Use the same time-of-day greeting.",
+          "sourcePage": 10
+        },
+        {
+          "id": "book-08-2",
+          "prompt": "Ali: Wie heißt du?\nOmar: ____, und du?",
+          "type": "text",
+          "answers": [
+            "Ich heiße Omar",
+            "Ich heisse Omar"
+          ],
+          "explanation": "The named speaker introduces himself.",
+          "hint": "Use Ich heiße and the speaker’s printed name.",
+          "sourcePage": 10
+        },
+        {
+          "id": "book-08-3",
+          "prompt": "Omar: Tschüss, Ali!\nAli: ____!",
+          "type": "text",
+          "answers": [
+            "Tschüss, Omar",
+            "Tschüs, Omar",
+            "Tschuess, Omar",
+            "Tschues, Omar"
+          ],
+          "explanation": "The key gives the farewell and the name of the person being addressed.",
+          "hint": "Ali is speaking to Omar.",
+          "sourcePage": 10
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-09",
+      "title": "Booklet · Übung 9. Match the four wellbeing pictures",
+      "source": "booklet",
+      "page": 12,
+      "questions": [
+        {
+          "id": "book-09-1",
+          "prompt": "Picture 1: Top left: two round yellow characters greeting each other. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Hallo, wie geht es dir?"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        },
+        {
+          "id": "book-09-2",
+          "prompt": "Picture 2: Top right: a yellow frowning face. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Schlecht"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        },
+        {
+          "id": "book-09-3",
+          "prompt": "Picture 3: Bottom left: a yellow face with a straight, level mouth. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Danke, gut"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        },
+        {
+          "id": "book-09-4",
+          "prompt": "Picture 4: Bottom right: a broadly smiling yellow face. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Danke, prima"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-10",
+      "title": "Booklet · Übung 10. Match another four wellbeing pictures",
+      "source": "booklet",
+      "page": 12,
+      "questions": [
+        {
+          "id": "book-10-1",
+          "prompt": "Picture 1: Top left: a smiling green face giving a thumbs-up. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Danke, prima"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        },
+        {
+          "id": "book-10-2",
+          "prompt": "Picture 2: Top right: two blue figures greeting or shaking hands. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Hallo, wie geht es dir?"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        },
+        {
+          "id": "book-10-3",
+          "prompt": "Picture 3: Bottom left: a red frowning face giving a thumbs-down. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Schlecht"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        },
+        {
+          "id": "book-10-4",
+          "prompt": "Picture 4: Bottom right: a yellow face with a straight mouth and a hand held level. Which phrase matches the school key?",
+          "type": "choice",
+          "answers": [
+            "Danke, gut"
+          ],
+          "explanation": "This picture-to-phrase match is shown in the supplied booklet answer key.",
+          "hint": "Think about whether this is a greeting, a farewell, a time of day or a feeling.",
+          "sourcePage": 12,
+          "options": [
+            "Hallo, wie geht es dir?",
+            "Danke, gut",
+            "Danke, prima",
+            "Schlecht"
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-11",
+      "title": "Booklet · Übung 11. Match every phrase to its picture",
+      "source": "booklet",
+      "page": 13,
+      "questions": [
+        {
+          "id": "book-11-1",
+          "prompt": "Match the phrase “Wie geht’s?” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Thinking yellow face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-2",
+          "prompt": "Match the phrase “Danke, gut” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Yellow neutral face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-3",
+          "prompt": "Match the phrase “Danke, toll” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Green happy face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-4",
+          "prompt": "Match the phrase “Nicht gut” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Red sad face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-5",
+          "prompt": "Match the phrase “Schlecht” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Red sad face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-6",
+          "prompt": "Match the phrase “Guten Abend” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "House under an evening sunset"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-7",
+          "prompt": "Match the phrase “Grüß dich” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Smiling yellow face waving"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-8",
+          "prompt": "Match the phrase “Danke, prima” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Green happy face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-9",
+          "prompt": "Match the phrase “Auf Wiedersehen” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Waving hand with Bye Bye"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-10",
+          "prompt": "Match the phrase “Guten Tag” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "House in full daylight"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-11",
+          "prompt": "Match the phrase “Gute Nacht” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "House under a moon and stars"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-12",
+          "prompt": "Match the phrase “Guten Morgen” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "House at sunrise"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-13",
+          "prompt": "Match the phrase “Tschüss” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Waving hand with Bye Bye"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-14",
+          "prompt": "Match the phrase “Hallo” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Smiling yellow face waving"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-15",
+          "prompt": "Match the phrase “Danke, es geht” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Yellow neutral face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        },
+        {
+          "id": "book-11-16",
+          "prompt": "Match the phrase “Wie geht es dir?” to the observed picture.",
+          "type": "choice",
+          "answers": [
+            "Thinking yellow face"
+          ],
+          "explanation": "This is the picture assignment shown by the highlighted school key. Several phrases can share a picture.",
+          "hint": "Decide whether the phrase is a time greeting, farewell, question or feeling.",
+          "sourcePage": 13,
+          "options": [
+            "House under an evening sunset",
+            "House in full daylight",
+            "House under a moon and stars",
+            "House at sunrise",
+            "Waving hand with Bye Bye",
+            "Thinking yellow face",
+            "Red sad face",
+            "Green happy face",
+            "Yellow neutral face",
+            "Smiling yellow face waving"
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-12",
+      "title": "Booklet · Übung 12. Order six sentences",
+      "source": "booklet",
+      "page": 14,
+      "questions": [
+        {
+          "id": "book-12-1",
+          "prompt": "Ordne und bilde einen richtigen Satz: Wie – geht – dir – es?",
+          "type": "text",
+          "answers": [
+            "Wie geht es dir?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 14
+        },
+        {
+          "id": "book-12-2",
+          "prompt": "Ordne und bilde einen richtigen Satz: wie – geht’s – Hallo,?",
+          "type": "text",
+          "answers": [
+            "Hallo, wie geht’s?",
+            "Hallo, wie geht's?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 14
+        },
+        {
+          "id": "book-12-3",
+          "prompt": "Ordne und bilde einen richtigen Satz: du – Wie – heißt?",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 14
+        },
+        {
+          "id": "book-12-4",
+          "prompt": "Ordne und bilde einen richtigen Satz: Wer – du – bist?",
+          "type": "text",
+          "answers": [
+            "Wer bist du?"
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 14
+        },
+        {
+          "id": "book-12-5",
+          "prompt": "Ordne und bilde einen richtigen Satz: Ich – Hans – bin.",
+          "type": "text",
+          "answers": [
+            "Ich bin Hans."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 14
+        },
+        {
+          "id": "book-12-6",
+          "prompt": "Ordne und bilde einen richtigen Satz: Mark – Ich – heiße.",
+          "type": "text",
+          "answers": [
+            "Ich heiße Mark.",
+            "Ich heisse Mark."
+          ],
+          "explanation": "The sentence follows the school key. Keep the question word before the verb, or start a yes/no question with its verb.",
+          "hint": "Find the first word and the verb; use every supplied word.",
+          "sourcePage": 14
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-13",
+      "title": "Booklet · Übung 13. Match eight questions and replies",
+      "source": "booklet",
+      "page": 16,
+      "questions": [
+        {
+          "id": "book-13-1",
+          "prompt": "Was passt zusammen? Heißt du Julia?",
+          "type": "choice",
+          "answers": [
+            "Ja, ich heiße Julia.",
+            "Ja, ich heisse Julia."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-2",
+          "prompt": "Was passt zusammen? Bist du Frank?",
+          "type": "choice",
+          "answers": [
+            "Nein, ich bin Tom."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-3",
+          "prompt": "Was passt zusammen? Ist dein Name Mariam?",
+          "type": "choice",
+          "answers": [
+            "Nein, mein Name ist Aya."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-4",
+          "prompt": "Was passt zusammen? Heißt du Hans?",
+          "type": "choice",
+          "answers": [
+            "Nein, ich heiße nicht Hans.",
+            "Nein, ich heisse nicht Hans."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-5",
+          "prompt": "Was passt zusammen? Bist du Monika?",
+          "type": "choice",
+          "answers": [
+            "Ja, ich bin Monika."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-6",
+          "prompt": "Was passt zusammen? Wie geht es?",
+          "type": "choice",
+          "answers": [
+            "Danke, prima."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-7",
+          "prompt": "Was passt zusammen? Wie ist dein Name?",
+          "type": "choice",
+          "answers": [
+            "Mein Name ist Peter."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        },
+        {
+          "id": "book-13-8",
+          "prompt": "Was passt zusammen? Wer bist du?",
+          "type": "choice",
+          "answers": [
+            "Ich bin Nina."
+          ],
+          "explanation": "The lettered reply matches this question in the supplied school key.",
+          "hint": "Check the name, the question pattern and whether the response is yes or no.",
+          "sourcePage": 16,
+          "options": [
+            "Nein, ich bin Tom.",
+            "Ja, ich heiße Julia.",
+            "Nein, ich heiße nicht Hans.",
+            "Nein, mein Name ist Aya.",
+            "Danke, prima.",
+            "Mein Name ist Peter.",
+            "Ich bin Nina.",
+            "Ja, ich bin Monika."
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-14",
+      "title": "Booklet · Übung 14. Answer about yourself · personal responses",
+      "source": "booklet",
+      "page": 17,
+      "questions": [
+        {
+          "id": "book-14-1",
+          "prompt": "Wie heißt du?",
+          "type": "manual",
+          "answers": [
+            "Ich heiße … ."
+          ],
+          "explanation": "Use your own chosen name in the frame; no particular name is required.",
+          "hint": "Use the correct sentence pattern, then supply your own information.",
+          "sourcePage": 17,
+          "reviewNote": "Personal response: unscored. The key supplies sentence frames, not one fixed personal answer."
+        },
+        {
+          "id": "book-14-2",
+          "prompt": "Wer bist du?",
+          "type": "manual",
+          "answers": [
+            "Ich bin … ."
+          ],
+          "explanation": "Use your own chosen name; no identity is assumed.",
+          "hint": "Use the correct sentence pattern, then supply your own information.",
+          "sourcePage": 17,
+          "reviewNote": "Personal response: unscored. The key supplies sentence frames, not one fixed personal answer."
+        },
+        {
+          "id": "book-14-3",
+          "prompt": "Wie ist dein Name?",
+          "type": "manual",
+          "answers": [
+            "Mein Name ist … ."
+          ],
+          "explanation": "Use your own chosen name in the sentence frame.",
+          "hint": "Use the correct sentence pattern, then supply your own information.",
+          "sourcePage": 17,
+          "reviewNote": "Personal response: unscored. The key supplies sentence frames, not one fixed personal answer."
+        },
+        {
+          "id": "book-14-4",
+          "prompt": "Wie geht es?",
+          "type": "manual",
+          "answers": [
+            "For example: Danke, gut. / Danke, prima. / Schlecht."
+          ],
+          "explanation": "Give an honest feeling. Several responses are valid.",
+          "hint": "Use the correct sentence pattern, then supply your own information.",
+          "sourcePage": 17,
+          "reviewNote": "Personal response: unscored. The key supplies sentence frames, not one fixed personal answer."
+        },
+        {
+          "id": "book-14-5",
+          "prompt": "Heißt du Nada?",
+          "type": "manual",
+          "answers": [
+            "Ja, ich heiße Nada. / Nein, ich heiße … ."
+          ],
+          "explanation": "The answer depends on the learner’s own name. Do not assume yes or no.",
+          "hint": "Use the correct sentence pattern, then supply your own information.",
+          "sourcePage": 17,
+          "reviewNote": "Personal response: unscored. The key supplies sentence frames, not one fixed personal answer."
+        },
+        {
+          "id": "book-14-6",
+          "prompt": "Bist du Adam?",
+          "type": "manual",
+          "answers": [
+            "Ja, ich bin Adam. / Nein, ich bin … ."
+          ],
+          "explanation": "The answer depends on the learner’s own name. Do not assume yes or no.",
+          "hint": "Use the correct sentence pattern, then supply your own information.",
+          "sourcePage": 17,
+          "reviewNote": "Personal response: unscored. The key supplies sentence frames, not one fixed personal answer."
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-15",
+      "title": "Booklet · Übung 15. Answer yes/no using the picture labels",
+      "source": "booklet",
+      "page": 18,
+      "questions": [
+        {
+          "id": "book-15-1",
+          "prompt": "The pictured person is labeled Frank. Answer as that person: Heißt du Karl?",
+          "type": "text",
+          "answers": [
+            "Nein, ich heiße Frank.",
+            "Nein, ich heisse Frank."
+          ],
+          "explanation": "Compare the name in the question with the picture label, then use the key’s yes/no response.",
+          "hint": "Same name: Ja. Different name: Nein, followed by the printed name.",
+          "sourcePage": 18
+        },
+        {
+          "id": "book-15-2",
+          "prompt": "The pictured person is labeled Anna. Answer as that person: Bist du Anna?",
+          "type": "text",
+          "answers": [
+            "Ja, ich bin Anna."
+          ],
+          "explanation": "Compare the name in the question with the picture label, then use the key’s yes/no response.",
+          "hint": "Same name: Ja. Different name: Nein, followed by the printed name.",
+          "sourcePage": 18
+        },
+        {
+          "id": "book-15-3",
+          "prompt": "The pictured person is labeled Mark. Answer as that person: Heißt du Mark?",
+          "type": "text",
+          "answers": [
+            "Ja, ich heiße Mark.",
+            "Ja, ich heisse Mark."
+          ],
+          "explanation": "Compare the name in the question with the picture label, then use the key’s yes/no response.",
+          "hint": "Same name: Ja. Different name: Nein, followed by the printed name.",
+          "sourcePage": 18
+        },
+        {
+          "id": "book-15-4",
+          "prompt": "The pictured person is labeled Lisa. Answer as that person: Bist du Lea?",
+          "type": "text",
+          "answers": [
+            "Nein, ich bin Lisa."
+          ],
+          "explanation": "Compare the name in the question with the picture label, then use the key’s yes/no response.",
+          "hint": "Same name: Ja. Different name: Nein, followed by the printed name.",
+          "sourcePage": 18
+        },
+        {
+          "id": "book-15-5",
+          "prompt": "The pictured person is labeled Hans. Answer as that person: Heißt du Hans?",
+          "type": "text",
+          "answers": [
+            "Ja, ich heiße Hans.",
+            "Ja, ich heisse Hans."
+          ],
+          "explanation": "Compare the name in the question with the picture label, then use the key’s yes/no response.",
+          "hint": "Same name: Ja. Different name: Nein, followed by the printed name.",
+          "sourcePage": 18
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-16",
+      "title": "Booklet · Übung 16. Match all twelve printed numerals to number words",
+      "source": "booklet",
+      "page": 20,
+      "questions": [
+        {
+          "id": "book-16-1",
+          "prompt": "The picture shows the numeral 7. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "sieben"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-2",
+          "prompt": "The picture shows the numeral 11. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "elf"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-3",
+          "prompt": "The picture shows the numeral 6. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "sechs"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-4",
+          "prompt": "The picture shows the numeral 8. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "acht"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-5",
+          "prompt": "The picture shows the numeral 10. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "zehn"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-6",
+          "prompt": "The picture shows the numeral 2. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "zwei"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-7",
+          "prompt": "The picture shows the numeral 5. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "fünf",
+            "fuenf"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-8",
+          "prompt": "The picture shows the numeral 9. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "neun"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-9",
+          "prompt": "The picture shows the numeral 3. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "drei"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-10",
+          "prompt": "The picture shows the numeral 4. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "vier"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-11",
+          "prompt": "The picture shows the numeral 12. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "zwölf",
+            "zwoelf"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        },
+        {
+          "id": "book-16-12",
+          "prompt": "The picture shows the numeral 1. Match it to its German word.",
+          "type": "choice",
+          "answers": [
+            "eins"
+          ],
+          "explanation": "The colored answer arrow connects this numeral to this German number word.",
+          "hint": "Read the numeral first; then find its German name.",
+          "sourcePage": 20,
+          "options": [
+            "sechs",
+            "fünf",
+            "drei",
+            "elf",
+            "neun",
+            "sieben",
+            "zehn",
+            "zwölf",
+            "vier",
+            "eins",
+            "acht",
+            "zwei"
+          ]
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-17",
+      "title": "Booklet · Übung 17. Write the number names for twelve numeral pictures",
+      "source": "booklet",
+      "page": 21,
+      "questions": [
+        {
+          "id": "book-17-1",
+          "prompt": "Picture 1, reading left to right by rows: the numeral is 5. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "fünf",
+            "fuenf"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-2",
+          "prompt": "Picture 2, reading left to right by rows: the numeral is 1. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "eins"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-3",
+          "prompt": "Picture 3, reading left to right by rows: the numeral is 10. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "zehn"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-4",
+          "prompt": "Picture 4, reading left to right by rows: the numeral is 2. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "zwei"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-5",
+          "prompt": "Picture 5, reading left to right by rows: the numeral is 7. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "sieben"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-6",
+          "prompt": "Picture 6, reading left to right by rows: the numeral is 12. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "zwölf",
+            "zwoelf"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-7",
+          "prompt": "Picture 7, reading left to right by rows: the numeral is 9. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "neun"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-8",
+          "prompt": "Picture 8, reading left to right by rows: the numeral is 3. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "drei"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-9",
+          "prompt": "Picture 9, reading left to right by rows: the numeral is 11. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "elf"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-10",
+          "prompt": "Picture 10, reading left to right by rows: the numeral is 6. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "sechs"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-11",
+          "prompt": "Picture 11, reading left to right by rows: the numeral is 8. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "acht"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        },
+        {
+          "id": "book-17-12",
+          "prompt": "Picture 12, reading left to right by rows: the numeral is 4. Wie heißt die Zahl?",
+          "type": "text",
+          "answers": [
+            "vier"
+          ],
+          "explanation": "This number spelling is written beneath the numeral in the supplied key.",
+          "hint": "Write the German number word, including its umlaut if it has one.",
+          "sourcePage": 21
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-18",
+      "title": "Booklet · Übung 18. Build four age mini-dialogues",
+      "source": "booklet",
+      "page": 23,
+      "questions": [
+        {
+          "id": "book-18-1a",
+          "prompt": "Scene 1: the birthday picture shows age 12. A: ____?",
+          "type": "text",
+          "answers": [
+            "Wie alt bist du?"
+          ],
+          "explanation": "The question asks an age, using Wie alt.",
+          "hint": "Ask how old the person is.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-1b",
+          "prompt": "Scene 1: the birthday picture shows age 12. A: Wie alt bist du? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ich bin 12 Jahre alt.",
+            "Ich bin zwölf Jahre alt.",
+            "Ich bin zwoelf Jahre alt."
+          ],
+          "explanation": "The age in the reply matches the pictured birthday number and the key.",
+          "hint": "Use Ich bin + the pictured age + Jahre alt.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-2a",
+          "prompt": "Scene 2: the birthday picture shows age 10. A: ____?",
+          "type": "text",
+          "answers": [
+            "Wie alt bist du?"
+          ],
+          "explanation": "The question asks an age, using Wie alt.",
+          "hint": "Ask how old the person is.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-2b",
+          "prompt": "Scene 2: the birthday picture shows age 10. A: Wie alt bist du? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ich bin 10 Jahre alt.",
+            "Ich bin zehn Jahre alt."
+          ],
+          "explanation": "The age in the reply matches the pictured birthday number and the key.",
+          "hint": "Use Ich bin + the pictured age + Jahre alt.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-3a",
+          "prompt": "Scene 3: the birthday picture shows age 9. A: ____?",
+          "type": "text",
+          "answers": [
+            "Wie alt bist du?"
+          ],
+          "explanation": "The question asks an age, using Wie alt.",
+          "hint": "Ask how old the person is.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-3b",
+          "prompt": "Scene 3: the birthday picture shows age 9. A: Wie alt bist du? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ich bin 9 Jahre alt.",
+            "Ich bin neun Jahre alt."
+          ],
+          "explanation": "The age in the reply matches the pictured birthday number and the key.",
+          "hint": "Use Ich bin + the pictured age + Jahre alt.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-4a",
+          "prompt": "Scene 4: the birthday picture shows age 11. A: ____?",
+          "type": "text",
+          "answers": [
+            "Wie alt bist du?"
+          ],
+          "explanation": "The question asks an age, using Wie alt.",
+          "hint": "Ask how old the person is.",
+          "sourcePage": 23
+        },
+        {
+          "id": "book-18-4b",
+          "prompt": "Scene 4: the birthday picture shows age 11. A: Wie alt bist du? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ich bin 11 Jahre alt.",
+            "Ich bin elf Jahre alt."
+          ],
+          "explanation": "The age in the reply matches the pictured birthday number and the key.",
+          "hint": "Use Ich bin + the pictured age + Jahre alt.",
+          "sourcePage": 23
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-19",
+      "title": "Booklet · Übung 19. Complete four yes/no age mini-dialogues",
+      "source": "booklet",
+      "page": 24,
+      "questions": [
+        {
+          "id": "book-19-1a",
+          "prompt": "Scene 1: birthday picture age 11. Complete the question using the given age word “elf”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du elf Jahre alt?",
+            "Bist du 11 Jahre alt?"
+          ],
+          "explanation": "The printed cue fixes the age being asked about; it may differ from the picture’s actual age.",
+          "hint": "Use Bist du + the given age word + Jahre alt?",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-1b",
+          "prompt": "Scene 1: birthday picture age 11. A: Bist du elf Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ja, ich bin 11 Jahre alt.",
+            "Ja, ich bin elf Jahre alt."
+          ],
+          "explanation": "The yes/no word compares the asked age with the picture; the reply states the pictured age.",
+          "hint": "Compare the two ages before choosing Ja or Nein.",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-2a",
+          "prompt": "Scene 2: birthday picture age 10. Complete the question using the given age word “zehn”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du zehn Jahre alt?",
+            "Bist du 10 Jahre alt?"
+          ],
+          "explanation": "The printed cue fixes the age being asked about; it may differ from the picture’s actual age.",
+          "hint": "Use Bist du + the given age word + Jahre alt?",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-2b",
+          "prompt": "Scene 2: birthday picture age 10. A: Bist du zehn Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ja, ich bin 10 Jahre alt.",
+            "Ja, ich bin zehn Jahre alt."
+          ],
+          "explanation": "The yes/no word compares the asked age with the picture; the reply states the pictured age.",
+          "hint": "Compare the two ages before choosing Ja or Nein.",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-3a",
+          "prompt": "Scene 3: birthday picture age 11. Complete the question using the given age word “neun”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du neun Jahre alt?",
+            "Bist du 9 Jahre alt?"
+          ],
+          "explanation": "The printed cue fixes the age being asked about; it may differ from the picture’s actual age.",
+          "hint": "Use Bist du + the given age word + Jahre alt?",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-3b",
+          "prompt": "Scene 3: birthday picture age 11. A: Bist du neun Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Nein, ich bin 11 Jahre alt.",
+            "Nein, ich bin elf Jahre alt."
+          ],
+          "explanation": "The yes/no word compares the asked age with the picture; the reply states the pictured age.",
+          "hint": "Compare the two ages before choosing Ja or Nein.",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-4a",
+          "prompt": "Scene 4: birthday picture age 12. Complete the question using the given age word “elf”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du elf Jahre alt?",
+            "Bist du 11 Jahre alt?"
+          ],
+          "explanation": "The printed cue fixes the age being asked about; it may differ from the picture’s actual age.",
+          "hint": "Use Bist du + the given age word + Jahre alt?",
+          "sourcePage": 24
+        },
+        {
+          "id": "book-19-4b",
+          "prompt": "Scene 4: birthday picture age 12. A: Bist du elf Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Nein, ich bin 12 Jahre alt.",
+            "Nein, ich bin zwölf Jahre alt.",
+            "Nein, ich bin zwoelf Jahre alt."
+          ],
+          "explanation": "The yes/no word compares the asked age with the picture; the reply states the pictured age.",
+          "hint": "Compare the two ages before choosing Ja or Nein.",
+          "sourcePage": 24
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-20",
+      "title": "Booklet · Übung 20. Complete four more yes/no age mini-dialogues",
+      "source": "booklet",
+      "page": 25,
+      "questions": [
+        {
+          "id": "book-20-1a",
+          "prompt": "Scene 1: birthday picture age 11. Complete the question using the printed cue “neun”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du neun Jahre alt?",
+            "Bist du 9 Jahre alt?"
+          ],
+          "explanation": "The question uses the age cue printed in that line, as shown by the filled key.",
+          "hint": "Start a yes/no question with Bist du.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-1b",
+          "prompt": "Scene 1: birthday picture age 11. A: Bist du neun Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Nein, ich bin 11 Jahre alt.",
+            "Nein, ich bin elf Jahre alt."
+          ],
+          "explanation": "This is the complete response supplied by the key.",
+          "hint": "Answer Ja or Nein, then state the age shown by the picture.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-2a",
+          "prompt": "Scene 2: birthday picture age 10. Complete the question using the printed cue “zehn”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du zehn Jahre alt?",
+            "Bist du 10 Jahre alt?"
+          ],
+          "explanation": "The question uses the age cue printed in that line, as shown by the filled key.",
+          "hint": "Start a yes/no question with Bist du.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-2b",
+          "prompt": "Scene 2: birthday picture age 10. A: Bist du zehn Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ja, ich bin 10 Jahre alt.",
+            "Ja, ich bin zehn Jahre alt."
+          ],
+          "explanation": "This is the complete response supplied by the key.",
+          "hint": "Answer Ja or Nein, then state the age shown by the picture.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-3a",
+          "prompt": "Scene 3: birthday picture age 9. Complete the question using the printed cue “elf”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du elf Jahre alt?",
+            "Bist du 11 Jahre alt?"
+          ],
+          "explanation": "The question uses the age cue printed in that line, as shown by the filled key.",
+          "hint": "Start a yes/no question with Bist du.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-3b",
+          "prompt": "Scene 3: birthday picture age 9. A: Bist du elf Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Nein, ich bin 9 Jahre alt.",
+            "Nein, ich bin neun Jahre alt."
+          ],
+          "explanation": "This is the complete response supplied by the key.",
+          "hint": "Answer Ja or Nein, then state the age shown by the picture.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-4a",
+          "prompt": "Scene 4: birthday picture age 12. Complete the question using the printed cue “zwölf”: A: ____?",
+          "type": "text",
+          "answers": [
+            "Bist du zwölf Jahre alt?",
+            "Bist du 12 Jahre alt?",
+            "Bist du zwoelf Jahre alt?"
+          ],
+          "explanation": "The question uses the age cue printed in that line, as shown by the filled key.",
+          "hint": "Start a yes/no question with Bist du.",
+          "sourcePage": 25
+        },
+        {
+          "id": "book-20-4b",
+          "prompt": "Scene 4: birthday picture age 12. A: Bist du zwölf Jahre alt? B: ____.",
+          "type": "text",
+          "answers": [
+            "Ja, ich bin 12 Jahre alt.",
+            "Ja, ich bin zwölf Jahre alt.",
+            "Ja, ich bin zwoelf Jahre alt."
+          ],
+          "explanation": "This is the complete response supplied by the key.",
+          "hint": "Answer Ja or Nein, then state the age shown by the picture.",
+          "sourcePage": 25
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-21",
+      "title": "Booklet · Übung 21. Complete Mark and Peter’s dialogue",
+      "source": "booklet",
+      "page": 26,
+      "questions": [
+        {
+          "id": "book-21-1",
+          "prompt": "Mark: ____!\nPeter: Guten Morgen!",
+          "type": "text",
+          "answers": [
+            "Guten Morgen"
+          ],
+          "explanation": "The highlighted school answer is the morning greeting.",
+          "hint": "Use the greeting given in the next line.",
+          "sourcePage": 26
+        },
+        {
+          "id": "book-21-2",
+          "prompt": "Mark: ____?\nPeter: Ich heiße Peter, und du?",
+          "type": "text",
+          "answers": [
+            "Wie heißt du?",
+            "Wie heisst du?"
+          ],
+          "explanation": "Peter’s reply gives his name with heiße.",
+          "hint": "Ask the name question with heißen.",
+          "sourcePage": 26
+        },
+        {
+          "id": "book-21-3",
+          "prompt": "Peter: Ich heiße Peter, und du?\nMark: Ich ____.",
+          "type": "text",
+          "answers": [
+            "heiße Mark",
+            "heisse Mark"
+          ],
+          "explanation": "The fictional speaker Mark introduces himself.",
+          "hint": "Complete Ich with heiße and the speaker’s printed name.",
+          "sourcePage": 26
+        },
+        {
+          "id": "book-21-4",
+          "prompt": "Mark: Wie geht es, Peter?\nPeter: ____.",
+          "type": "text",
+          "answers": [
+            "Danke, gut"
+          ],
+          "explanation": "The key gives this short wellbeing response.",
+          "hint": "Reply to the question about how Peter is.",
+          "sourcePage": 26
+        },
+        {
+          "id": "book-21-5",
+          "prompt": "Mark: ____?\nPeter: Ich bin 10 Jahre alt.",
+          "type": "text",
+          "answers": [
+            "Wie alt bist du?"
+          ],
+          "explanation": "The response gives an age, so the question asks Wie alt.",
+          "hint": "Look for Jahre alt in the reply.",
+          "sourcePage": 26
+        },
+        {
+          "id": "book-21-6",
+          "prompt": "Mark: Tschüss, Peter!\nPeter: ____, Mark!",
+          "type": "text",
+          "answers": [
+            "Tschüss",
+            "Tschüs",
+            "Tschuess",
+            "Tschues"
+          ],
+          "explanation": "The key repeats the farewell.",
+          "hint": "Use a goodbye word.",
+          "sourcePage": 26
+        },
+        {
+          "id": "book-21-7",
+          "prompt": "Mark: Tschüss, Peter!\nPeter: Tschüss, ____!",
+          "type": "text",
+          "answers": [
+            "Mark"
+          ],
+          "explanation": "Peter addresses the person who just spoke to him, Mark.",
+          "hint": "Check who is speaking and who is being addressed.",
+          "sourcePage": 26
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    },
+    {
+      "id": "book-22",
+      "title": "Booklet · Übung 22. Complete Lilly and Mariam’s dialogue",
+      "source": "booklet",
+      "page": 27,
+      "questions": [
+        {
+          "id": "book-22-1",
+          "prompt": "Lilly: ____!\nMariam: Grüß dich!",
+          "type": "text",
+          "answers": [
+            "Grüß dich",
+            "Gruess dich"
+          ],
+          "explanation": "This is the greeting highlighted by the key.",
+          "hint": "Use the greeting in the next line.",
+          "sourcePage": 27
+        },
+        {
+          "id": "book-22-2",
+          "prompt": "Lilly: Wie heißt du?\nMariam: ____, und du?",
+          "type": "text",
+          "answers": [
+            "Ich heiße Mariam",
+            "Ich heisse Mariam"
+          ],
+          "explanation": "The fictional speaker Mariam gives her name.",
+          "hint": "Use Ich heiße and the speaker’s printed name.",
+          "sourcePage": 27
+        },
+        {
+          "id": "book-22-3",
+          "prompt": "Lilly: ____, Mariam?\nMariam: Danke, gut.",
+          "type": "text",
+          "answers": [
+            "Wie geht es dir"
+          ],
+          "explanation": "This question asks about wellbeing; Mariam’s reply says she is well.",
+          "hint": "Use the how-are-you question; Mariam is already written after the comma.",
+          "sourcePage": 27
+        },
+        {
+          "id": "book-22-4",
+          "prompt": "Lilly: Wie alt bist du?\nMariam: ____. The birthday illustration shows a large 9.",
+          "type": "manual",
+          "answers": [
+            "School key: Ich bin zehn/elf Jahre alt.",
+            "Picture-based answer: Ich bin neun Jahre alt."
+          ],
+          "explanation": "The supplied key and the pictured birthday number disagree. This item cannot fairly have one scored answer.",
+          "hint": "Read the birthday number and compare it with the source key.",
+          "sourcePage": 27,
+          "reviewNote": "Verified on rendered PDF page 27: the illustration has 9, but the highlighted key explicitly says zehn/elf. Keep this source conflict visible and unscored; it does not describe the learner’s own age."
+        },
+        {
+          "id": "book-22-5",
+          "prompt": "Lilly: Auf Wiedersehen, Mariam!\nMariam: ____, Lilly!",
+          "type": "text",
+          "answers": [
+            "Auf Wiedersehen"
+          ],
+          "explanation": "The highlighted key repeats the farewell, with the standard spelling Wiedersehen.",
+          "hint": "Reply with the same farewell.",
+          "sourcePage": 27,
+          "reviewNote": "The earlier source line misspells Auf Widersehen. It is normalized to Auf Wiedersehen."
+        },
+        {
+          "id": "book-22-6",
+          "prompt": "Lilly: Auf Wiedersehen, Mariam!\nMariam: Auf Wiedersehen, ____!",
+          "type": "text",
+          "answers": [
+            "Lilly"
+          ],
+          "explanation": "Mariam is speaking to Lilly.",
+          "hint": "Use the name of the person being addressed.",
+          "sourcePage": 27
+        }
+      ],
+      "sourceFile": "booklet-answers-exercises-01-22.pdf"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "names",
+      "title": "Three ways to ask a name",
+      "explanation": "Wer bist du? means Who are you? Wie heißt du? and Wie ist dein Name? ask a name. Keep the reply’s pattern consistent.",
+      "example": "Wer bist du? → Ich bin Eva. / Wie heißt du? → Ich heiße Eva.",
+      "supportAr": "السؤال عن الاسم: من أنت؟ أو ما اسمك؟ انتبه إلى شكل الجملة."
+    },
+    {
+      "id": "pronouns",
+      "title": "Ich, du and the matching verb",
+      "explanation": "Use ich bin and du bist. With heißen, use ich heiße and du heißt. Mein Name takes ist.",
+      "example": "Ich bin da. Du bist da. Mein Name ist Lea.",
+      "supportAr": "أنا: ich bin وich heiße. أنت: du bist وdu heißt."
+    },
+    {
+      "id": "question-order",
+      "title": "Question order",
+      "explanation": "A W-question starts with the question word, then the verb. A yes/no question starts with the verb.",
+      "example": "Wie heißt du? / Heißt du Lea?",
+      "supportAr": "السؤال بكلمة استفهام يبدأ بها، ثم الفعل. سؤال نعم أو لا يبدأ بالفعل."
+    },
+    {
+      "id": "yes-no",
+      "title": "Ja, nein and nicht",
+      "explanation": "Ja confirms. Nein is a negative answer to a question. Nicht negates something inside a sentence.",
+      "example": "Bist du Tom? → Nein, ich bin nicht Tom.",
+      "supportAr": "Ja تعني نعم، وNein تعني لا، وnicht تنفي جزءًا داخل الجملة."
+    },
+    {
+      "id": "greetings",
+      "title": "Greetings during the day",
+      "explanation": "Guten Morgen is for morning, Guten Tag for daytime and Guten Abend for evening. Hallo and Grüß dich are general greetings.",
+      "example": "Guten Morgen! / Guten Tag! / Guten Abend!",
+      "supportAr": "تحية الصباح، وتحية النهار، وتحية المساء."
+    },
+    {
+      "id": "farewells",
+      "title": "Goodbye or good night",
+      "explanation": "Tschüss and Auf Wiedersehen are goodbyes. Gute Nacht is for saying good night, especially at bedtime.",
+      "example": "Tschüss! / Auf Wiedersehen! / Gute Nacht!",
+      "supportAr": "فرّق بين الوداع وقول تصبح على خير."
+    },
+    {
+      "id": "feelings",
+      "title": "Ask how someone is",
+      "explanation": "Wie geht es dir? and Wie geht’s? ask how someone is. A reply can be positive, neutral or negative.",
+      "example": "Danke, prima. / Danke, gut. / Danke, es geht. / Schlecht.",
+      "supportAr": "السؤال عن الحال: كيف حالك؟ اختر ردًا يناسب الشعور."
+    },
+    {
+      "id": "titles",
+      "title": "Herr and Frau",
+      "explanation": "Herr is a title for a man and Frau is a title for a woman. This worksheet pairs the titles with its fictional names.",
+      "example": "Herr / Frau",
+      "supportAr": "Herr لقب للرجل، وFrau لقب للمرأة. أمثلة الورقة أسماء لشخصيات تعليمية."
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers from zero to twelve",
+      "explanation": "Learn the spellings as whole words. Pay special attention to fünf, sechs, sieben and zwölf.",
+      "example": "null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf",
+      "supportAr": "تدرّب على كتابة الأعداد، وانتبه إلى النقطتين فوق الحرف في fünf وzwölf."
+    },
+    {
+      "id": "ages",
+      "title": "Ask and answer ages",
+      "explanation": "Wie alt bist du? asks age. Answer Ich bin + number + Jahre alt. Use only the age in a pictured task; personal tasks have no fixed age.",
+      "example": "Wie alt bist du? → Ich bin acht Jahre alt.",
+      "supportAr": "للسؤال عن العمر: Wie alt bist du؟ وفي السؤال الشخصي اكتب عمرك أنت."
+    },
+    {
+      "id": "age-yes-no",
+      "title": "Yes/no questions about age",
+      "explanation": "Compare the age in Bist du … Jahre alt? with the picture. Use Ja when it matches and Nein when it does not.",
+      "example": "Picture age 8: Bist du sieben Jahre alt? → Nein, ich bin acht Jahre alt.",
+      "supportAr": "قارن العمر في السؤال بالعمر في الصورة قبل اختيار نعم أو لا."
+    },
+    {
+      "id": "spelling",
+      "title": "German letters and useful spellings",
+      "explanation": "The PDFs sometimes print Greek β where German ß is needed. This revision uses ß. Umlauts change spelling: ä, ö, ü. Standard keyboard alternatives ae, oe, ue and ss are included for typed practice.",
+      "example": "heiße / heißt / Grüß dich / Tschüss / zwölf",
+      "supportAr": "استخدم ß بدل الرمز β الموجود أحيانًا في الملف. ويمكن كتابة ae وoe وue عند عدم وجود لوحة مفاتيح ألمانية."
+    }
+  ],
+  "coverageNotes": [
+    "Complete source inventory: October worksheet pp1–3 plus its separate highlighted model key pp1–3, and Grade 5 booklet answer PDF pp1–27. Every numbered October item and every booklet exercise 1–22 is represented.",
+    "The October page-1 and page-2 highlights were checked visually. Its page-3 matching numbers were checked against the model key. Booklet image scenes, colored matching arrows, number pictures and birthday numerals were inspected from rendered pages.",
+    "The supplied October worksheet header says 6.KLASSE. The supplied booklet cover says 5. This bank retains the requested Grade 5 student assignment and makes no claim that the mismatched worksheet header has been corrected by the school.",
+    "October I has 22 numbered questions; its two-part items 1, 2, 5, 8 and 9 are split into both independent answer parts, yielding 27 choice items. October II has 8 ordering items, III has 9 odd-one-out items, and IV has three four-item matching sets.",
+    "October III.8 is disputed: the actual highlight selects Ich, but neun is the number among three pronouns. It is manual and unscored.",
+    "Booklet Übung 22 age is disputed: the picture shows 9 while the highlighted answer says zehn/elf. It is manual and unscored. Do not assume this is the learner’s age.",
+    "Booklet Übung 14 asks personal questions. All six responses are manual; the key’s frames are shown without assuming a name, age, wellbeing or yes/no answer.",
+    "Booklet Übung 4 contains seven individual pictured scenes, all retained. Übung 11 contains sixteen bank phrases assigned to ten observed pictures, including pictures that accept two phrases; all sixteen assignments are retained.",
+    "Booklet Übungen 18–20 retain both lines of all four pictured mini-dialogues, including the already-completed first model in Übungen 18 and 19. A multi-blank question line is practiced as one complete question, not silently dropped.",
+    "Booklet Übung 6 includes the highlighted heiße Hana response as well as the three other answer lines. Übungen 21 and 22 split each final farewell and addressee blank so every keyed part is covered.",
+    "Spelling normalization with source provenance: Greek β is replaced with German ß throughout; Wӓhle/Sӓtze are rendered as Wähle/Sätze; October I.13 Faru becomes Frau; October I.21–22 schelcht becomes schlecht; booklet Übung 22 Auf Widersehen becomes Auf Wiedersehen. These changes do not alter the supplied key selection.",
+    "Tschüss and Tschüs variants in the source are both accepted in typed farewell responses. Straight and curly apostrophes are provided as alternatives where relevant. ASCII transliterations of umlauts and ß are included for keyboard access.",
+    "Where a time-of-day illustration could be interpreted differently, the observed scene is described and the actual highlighted school phrase is used. The booklet’s neutral-face Danke, gut assignments are preserved rather than silently reinterpreted.",
+    "Cover, contents and instructional overview pages are represented by the lesson notes rather than additional scored questions. The paste-your-photo instruction above Übung 14 is a paper personalization activity and is not required for language revision.",
+    "This bank follows the supplied school key. It does not claim an independently verified exam date, cutoff or official grading scheme."
+  ]
+}

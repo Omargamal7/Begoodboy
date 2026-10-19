@@ -43,3 +43,11 @@ Both HTML files are standalone and work offline, with hints, worked examples, ch
 - [Grade 6 class edition · optional Arabic help](packs/class/grade6/english/october-arabic-help.html)
 
 [Source coverage, cloud copies and validation](sync/2026-10-19-english/README.md).
+
+## German · October revision
+
+- [Jimmy · Primary 5A German](packs/gamal/german/october-revision.html)
+- [Grade 5 class edition · optional Arabic help](packs/class/grade5/german/october-arabic-help.html)
+
+212 question parts cover the October worksheet and all 22 booklet exercises. Includes 33 original page images and six lesson reminders. Eight personal/disputed items are parent checked. The worksheet says 6.KLASSE despite its Grade 5A course; the grade label and exact exam cutoff remain unverified. Murad's current Toddle list has no German course. [Sources and cloud sync](sync/2026-10-19-german/README.md).
+

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "booklet-answers-exercises-01-22.pdf",
+    "bytes": 2487383,
+    "sha256": "1a1a3e134b9315a96935be5c953ee0e2f5b23d06ca0320cc64cd51209434d16a",
+    "pages": 27
+  },
+  {
+    "file": "october-worksheet.pdf",
+    "bytes": 553717,
+    "sha256": "93da2418efbfafaa7d4c96c9106e1f7b20d40977e107571de3695d923d3a61ef",
+    "pages": 3
+  },
+  {
+    "file": "october-model-answers.pdf",
+    "bytes": 558284,
+    "sha256": "8c017b4ca920661ec82377bf1573d5cbe81a82b3f13a8cebcc721b881bfe5127",
+    "pages": 3
+  }
+]

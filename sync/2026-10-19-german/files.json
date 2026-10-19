@@ -1,0 +1,102 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4982,
+    "sha": "75b6456330becfb19e6d1dc1db2398840d1c9c4a"
+  },
+  {
+    "path": "app/activities/gamal/german-revision/data.json",
+    "bytes": 134797,
+    "sha": "de857a8e2bfae48894ce26539eb1fc47e9505d36"
+  },
+  {
+    "path": "app/activities/gamal/german-revision/lessons.json",
+    "bytes": 9944,
+    "sha": "24e7df448603c13736c98bf3a76eec9cf1cf8dbf"
+  },
+  {
+    "path": "app/activities/shared/german-revision/app.js",
+    "bytes": 17163,
+    "sha": "0ede5a662e6e8a8d7fdf59e9b40f68f2d6f51b65"
+  },
+  {
+    "path": "app/activities/shared/german-revision/german.css",
+    "bytes": 2220,
+    "sha": "aae2c1278c12e57038d0ab543a1c0c69dcd0a2f7"
+  },
+  {
+    "path": "app/activities/shared/german-revision/style.css",
+    "bytes": 19910,
+    "sha": "8ec525497f36ca8f9fd1f3771043d74dacab0c12"
+  },
+  {
+    "path": "app/activities/shared/german-revision/template.html",
+    "bytes": 1608,
+    "sha": "70f665e164fcada7f23dc1a9a9b86449c8778c6b"
+  },
+  {
+    "path": "app/assets/gamal/german/assessment-pages.json",
+    "bytes": 3421557,
+    "sha": "2de05997251aa986add6452846d71b86e5114e0b"
+  },
+  {
+    "path": "docs/provenance/german-2026-10-19-review.md",
+    "bytes": 9418,
+    "sha": "d16d04ea377cc62e98d5947260ebee1afa4443ea"
+  },
+  {
+    "path": "docs/provenance/german-2026-10-19.md",
+    "bytes": 2984,
+    "sha": "c1ceb35935c7765f369ff490096c2c8721cb9b01"
+  },
+  {
+    "path": "index.html",
+    "bytes": 5283,
+    "sha": "ced2ee370ab2e4989c6266cc8382981ad002404e"
+  },
+  {
+    "path": "packs/class/grade5/german/october-arabic-help.html",
+    "bytes": 3558837,
+    "sha": "534a971a693a192645a5dac808b5be8be6126fb4"
+  },
+  {
+    "path": "packs/gamal/german/october-revision.html",
+    "bytes": 3558810,
+    "sha": "2dfe6e409d2d7013332a6b04d5967bbd74c0a416"
+  },
+  {
+    "path": "sources/gamal/german/revision/2026-10/booklet-answers-exercises-01-22.pdf",
+    "bytes": 2487383,
+    "sha": "b7a3d772b43f789ba3374a0261078ff956dfe94e"
+  },
+  {
+    "path": "sources/gamal/german/revision/2026-10/october-model-answers.pdf",
+    "bytes": 558284,
+    "sha": "e8d24bd625a52a80e08444db4784e759f2026754"
+  },
+  {
+    "path": "sources/gamal/german/revision/2026-10/october-worksheet.pdf",
+    "bytes": 553717,
+    "sha": "4c3752ee51db96c83d53fa3395a6e97210621e4a"
+  },
+  {
+    "path": "sync/2026-10-19-german/README.md",
+    "bytes": 2974,
+    "sha": "d472ecbd773aea65914a3a171e2544ac1dfe2e35"
+  },
+  {
+    "path": "sync/2026-10-19-german/source-files.json",
+    "bytes": 515,
+    "sha": "7c8713aa64d9845fd776c0866911992b422787f9"
+  },
+  {
+    "path": "tools/build/german-revision.js",
+    "bytes": 1482,
+    "sha": "874e9a8f85a731ed350974b0133c07d9e8ae06f8"
+  },
+  {
+    "path": "tools/check/german-revision.js",
+    "bytes": 5563,
+    "sha": "ac5ff814a5a9a7526059bad58136f6d0323f1441"
+  }
+]
