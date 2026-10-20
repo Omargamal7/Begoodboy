@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Conditions for Germination</title>
+<style>
+  :root {
+    --main: #0284c7;
+    --main-dark: #075985;
+    --main-light: #e0f2fe;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 3</span>
+    <h1>Chapter 3: Conditions for Germination</h1>
+    <div class="ar">الفصل الثالث: شروط الإنبات</div>
+    <p>Lessons 3-1 to 3-5 · book pages 28–43</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "3-1", "title": "What's Inside a Seed", "ar": "ما بداخل البذرة", "page": "28–29", "question": "What is inside a bean seed? And where is the food it needs to grow?", "blocks": [{"say": "There's something that looks like a tiny plant inside the seed!", "who": "🐶"}, {"h": "Learn: Seed structure and its food", "badge": "تعلَّم", "points": ["The young plant coming out of the seed and starting to grow is called <b class=\"key\">germination<\/b> <span class=\"ar-term\">(الإنبات)<\/span>.", "A seed contains a part that will become a new plant (it grows into leaves, a stem and roots — the <b class=\"key\">embryo<\/b> <span class=\"ar-term\">(الجنين)<\/span>), and another part that <b>stores the food<\/b> the young plant needs.", "<b class=\"key\">Cotyledon<\/b> <span class=\"ar-term\">(الفلقة)<\/span>: the part that makes up most of the seed, as in bean seeds. It is <b>rich in starch<\/b> (النشا), which is the food source needed for germination. A bean seed has <b>two cotyledons<\/b> (الفلقتان).", "<b>Iodine test for starch:<\/b> we can check for starch using brown-yellow <b class=\"key\">iodine solution<\/b> <span class=\"ar-term\">(محلول اليود)<\/span>. When we put iodine on something that contains starch, its colour turns <b class=\"key\">dark blue<\/b> <span class=\"ar-term\">(الأزرق الداكن)<\/span>."]}, {"activity": {"title": "Let's open a seed and examine it!", "steps": ["<b>Remove the bean's coat:<\/b> soak a bean in water overnight, gently peel off its outer coat, and split it with your fingers into two equal halves. Each half is called a <b>cotyledon<\/b>.", "<b>Observe:<\/b> look closely with a magnifying glass at the inside of the split seed. Find a very small part that looks like a tiny plant — this is the <b>embryo<\/b> (الجنين).", "<b>Add iodine:<\/b> put half of an un-sprouted seed on a small plate and add one drop of iodine to the inner surface. If the colour turns <b>dark blue<\/b>, there is <b>starch<\/b> — food stored in the seed.", "<b>Discover:<\/b> take a cotyledon from a bean that has sprouted for a few days, add iodine, and see whether the colour changes. (Less blue — the young plant has used up the starch.)"]}}], "terms": [["Germination", "الإنبات", "The young plant coming out of the seed and starting to grow"], ["Cotyledon", "الفلقة", "Biggest part of the seed; stores starch (food)"], ["Embryo", "الجنين", "Tiny plant inside the seed → leaves, stem, roots"], ["Starch", "النشا", "The food stored in the cotyledons"], ["Iodine test", "محلول اليود", "Brown-yellow; turns DARK BLUE with starch"]]}, {"num": "3-2", "title": "Water and Germination", "ar": "الماء والإنبات", "page": "30–31", "question": "Is water necessary for seeds to germinate?", "blocks": [{"say": "🐶: \"How can we know whether water is necessary?\" 🐱: \"When I planted seeds, I watered them!\"", "who": "🐱"}, {"h": "Learn: Comparing under the same conditions (a fair test)", "badge": "تعلَّم", "points": ["To test ONE condition, change <b>only<\/b> the condition you want to test, and keep all the other conditions <b class=\"key\">the same<\/b> <span class=\"ar-term\">(كما هي)<\/span>.", "How do we check whether water is necessary for germination?", "<b>The condition we change:<\/b> <b class=\"key\">water or no water<\/b> <span class=\"ar-term\">(وجود الماء أو عدم وجوده)<\/span>.", "<b>Conditions we keep the same:<\/b> temperature, air, light."]}, {"say": "If you change TWO conditions, you won't know which one is necessary!", "who": "🐔"}, {"activity": {"title": "Do seeds need water to sprout?", "steps": ["<b>You need:<\/b> bean seeds, two clear plastic cups, pieces of cotton.", "<b>Change the condition:<\/b> put cotton in both cups and some red bean seeds on top. Wet the cotton in cup <b>(A)<\/b> with enough water, and leave cup <b>(B)<\/b> dry.", "<b>Observe:<\/b> leave both cups in the same warm place for a few days and check every day. Which one sprouts?", "<b>Careful:<\/b> don't put too much water — the seeds must still touch the air. Don't let cup (A) run out of water.", "<b>Result:<\/b> only cup (A) — the WET one — sprouts. ✅ Water is necessary."]}}], "terms": [["Fair test", "المقارنة في ظروف متماثلة", "Change only ONE condition, keep the rest the same"], ["Changed condition", "الشرط الذي نغيره", "Here: water or no water"], ["Kept the same", "الشروط الثابتة", "Temperature, air, light"]]}, {"num": "3-3", "title": "Air and Germination", "ar": "الهواء والإنبات", "page": "34–35", "question": "Is air necessary for seeds to germinate?", "blocks": [{"say": "🐱: \"Will the seeds sprout even if they are under water?\" 🐶: \"It seems they can't breathe under water.\"", "who": "🐶"}, {"h": "Learn: Air and germination", "badge": "تعلَّم", "points": ["Seeds are <b>living things<\/b>, just like humans, and they need <b class=\"key\">air<\/b> <span class=\"ar-term\">(الهواء)<\/span> to sprout.", "How do we test this? By blocking the air.", "<b>The condition we change:<\/b> <b class=\"key\">exposed to air or not<\/b> <span class=\"ar-term\">(التعرض للهواء أو عدم التعرض للهواء)<\/span>.", "<b>Conditions we keep the same:<\/b> temperature, light, water."]}, {"activity": {"title": "Seeds with air vs. seeds without air", "steps": ["<b>You need:<\/b> bean seeds, two clear glass or plastic cups, pieces of cotton.", "<b>Change the condition:<\/b> in glass <b>(A)<\/b> put cotton wet with water and a few beans on top. In glass <b>(B)<\/b> put water until the seeds are <b>completely covered<\/b>, so they are not exposed to air.", "<b>Observe:<\/b> keep both in the same warm place for a few days and check every day.", "<b>Careful:<\/b> don't let either glass run out of water.", "<b>Result:<\/b> (A) exposed to air sprouts ✅; (B) under water does NOT sprout ❌. Air is necessary."]}}, {"say": "If we cover the seeds with water, they are not exposed to air.", "who": "🐔"}], "terms": [["Air", "الهواء", "Needed for germination — seeds are alive"], ["Submerged", "مغمورة في الماء", "Seeds under water get no air → no sprouting"]]}, {"num": "3-4", "title": "Temperature and Germination", "ar": "درجة الحرارة والإنبات", "page": "36–37", "question": "Is there a suitable temperature for seeds to germinate?", "blocks": [{"say": "What would happen if we put the seeds in the fridge, even with water and air?", "who": "🐔"}, {"h": "Learn: Temperature and germination", "badge": "تعلَّم", "points": ["Seeds need a <b class=\"key\">suitable temperature<\/b> <span class=\"ar-term\">(درجة حرارة مناسبة)<\/span> (warmth) to sprout.", "<b>The condition we change:<\/b> <b class=\"key\">temperature<\/b> <span class=\"ar-term\">(درجة الحرارة)<\/span> — we compare seeds in a warm place with seeds in a cold place.", "<b>Conditions we keep the same:<\/b> water, air, light."]}, {"say": "We must keep all conditions the same except the one we're comparing!", "who": "🐶"}, {"activity": {"title": "Seeds in a warm place vs. seeds in a cold place", "steps": ["<b>You need:<\/b> bean seeds, cotton, a cardboard box, small pieces of wood, two clear plastic cups, water, a fridge.", "<b>Change the condition:<\/b> put wet cotton in both cups with a few beans on top. Put cup <b>(A)<\/b> in a warm place, and cup <b>(B)<\/b> in the fridge.", "Because the inside of the fridge is <b>dark<\/b>, cover cup (A) with a cardboard box so it is also dark and light has no effect. Put small pieces of wood under the box to leave a gap so <b>air<\/b> can get in.", "<b>Observe:<\/b> after a few days, check which cup has sprouted seeds.", "<b>Result:<\/b> warm cup (A) sprouts ✅; fridge cup (B) does NOT ❌ (it was too cold, about 5 °C)."]}}], "terms": [["Suitable temperature", "درجة حرارة مناسبة", "Warmth needed for germination"], ["Why the box?", "الصندوق الكرتون", "To make it dark like the fridge — so only temperature is different"], ["Wood pieces", "قطع خشبية", "Leave a gap so air can still get in"]]}, {"num": "3-5", "title": "Germination Summary", "ar": "ملخص الإنبات", "page": "40–43", "question": "Let's sum up the three conditions needed for germination that we learned from the experiments.", "blocks": [{"say": "Water, air and a suitable temperature are all necessary for seeds to germinate.", "who": "🐱"}, {"h": "Learn: 3 conditions necessary for germination", "badge": "تعلَّم", "points": ["From the results of our experiments, we found that these <b>three conditions<\/b> are necessary for seeds to germinate:", "① <b class=\"key\">Water<\/b> <span class=\"ar-term\">(الماء)<\/span> &nbsp; ② <b class=\"key\">Air<\/b> <span class=\"ar-term\">(الهواء)<\/span> &nbsp; ③ <b class=\"key\">A suitable temperature<\/b> <span class=\"ar-term\">(درجة حرارة مناسبة)<\/span>", "If <b>any one<\/b> of these conditions is missing, the seeds will <b>not<\/b> sprout."]}, {"say": "<b>Sunlight and fertilizer<\/b> (ضوء الشمس والسماد) are needed for <b>growth after<\/b> germination, but they are <b>not<\/b> needed for germination itself.", "who": "🐔"}, {"h": "Summary of all the experiments", "icon": "📋", "table": [["Experiment", "Changed condition", "Kept the same", "Sprouts?"], ["Water", "Water added", "Room temperature, air", "✅ Yes"], ["Water", "No water", "Room temperature, air", "❌ No"], ["Air", "Exposed to air", "Same water, room temperature", "✅ Yes"], ["Air", "Not exposed (under water)", "Same water, room temperature", "❌ No"], ["Temperature", "Warm place", "Same water, air", "✅ Yes"], ["Temperature", "Cold place (fridge)", "Same water, air", "❌ No"]]}, {"h": "Seeds of familiar plants (p. 43)", "icon": "🌻", "text": "Sunflower (دوار الشمس) · Wheat (القمح) · Cotton (القطن) · Chickpeas (الحمص) · Corn (الذرة) · Date palm (النخل) — seeds come in many shapes and colours."}], "terms": [["Water", "الماء", "Condition ① for germination"], ["Air", "الهواء", "Condition ② for germination"], ["Suitable temperature", "درجة حرارة مناسبة", "Condition ③ for germination"], ["Light & fertilizer", "الضوء والسماد", "Needed for GROWTH after germination — not for germination"]]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it — lessons 3-1 & 3-2 (حاول, p. 32)", "qs": [{"type": "short", "q": "What do we call the part inside a bean seed that contains the food needed for growth, such as starch?", "a": "The <b>cotyledon<\/b> (الفلقة)."}, {"type": "short", "q": "Write the name of the chemical used to test for starch.", "a": "<b>Iodine solution<\/b> (محلول اليود)."}, {"type": "short", "q": "What do we call the young plant coming out of the seed and starting to grow?", "a": "<b>Germination<\/b> (الإنبات)."}, {"type": "mc", "q": "In the experiment on water and germination, what condition do we change between the two cups?", "opts": ["Water or no water.", "Air or no air.", "Temperature, high or low."], "ans": 0}, {"type": "mc", "q": "In the experiment on water and germination, in which cup will the seeds sprout?", "opts": ["The cup with no water added.", "The cup with water added.", "Neither of them sprouts."], "ans": 1}]}, {"title": "Practise — lessons 3-1 & 3-2 (تدرَّب, p. 33)", "qs": [{"type": "mc", "q": "What colour do bean cotyledons turn when iodine solution is added?", "opts": ["Red", "Dark blue", "Green"], "ans": 1}, {"type": "multi", "q": "Choose ALL the correct answers about bean seeds:", "opts": ["The cotyledons do not contain food like starch.", "Inside the seed there is a part that will finally become roots and a stem.", "The starch inside it is food needed for germination."], "ans": [1, 2]}, {"type": "multi", "q": "In the experiment on water and germination, choose ALL the conditions that must be kept the SAME in both cups:", "opts": ["The temperature of the place where we put them.", "The amount of water.", "The amount of light."], "ans": [0, 2], "why": "Water is the condition we CHANGE, so it is not kept the same."}, {"type": "short", "q": "Is water necessary for seeds to germinate?", "a": "<b>Yes.<\/b> The seeds on wet cotton sprouted; the seeds on dry cotton did not."}]}, {"title": "Try it — lessons 3-3 & 3-4 (حاول, p. 38)", "qs": [{"type": "mc", "q": "In the experiment testing whether air is necessary, what do we do to the seeds in cup (B) to compare?", "opts": ["Cover them completely with water.", "Put them in a dry place.", "Put them in the fridge."], "ans": 0}, {"type": "multi", "q": "In the air experiment, choose ALL the conditions that must stay the same in cups (A) and (B):", "opts": ["Put both in a place with air.", "Put both in a place with the same temperature.", "Add water to both."], "ans": [1, 2], "why": "Air is the condition being tested, so it is the one that is different."}, {"type": "mc", "q": "In the experiment on temperature and germination, what condition do we change between the two cups?", "opts": ["Water or no water.", "Air or no air.", "Temperature, high or low."], "ans": 2}, {"type": "fill", "q": "Why didn't the seeds in the fridge sprout? Because the ___ was very low.", "bank": [["water", "temperature", "light"]], "ans": [1]}]}, {"title": "Practise — lessons 3-3 & 3-4 (تدرَّب, p. 39)", "qs": [{"type": "mc", "q": "Why didn't the seeds under water sprout?", "opts": ["Because the water was cold.", "Because they were not exposed to air.", "Because there was no food in the water."], "ans": 1}, {"type": "short", "q": "Write what you learned from the experiment that tests whether air is necessary for germination.", "a": "<b>Air is necessary for germination.<\/b> Seeds under water (no air) did not sprout; seeds exposed to air did."}, {"type": "mc", "q": "In the temperature experiment, why were the seeds in the warm place covered with a box?", "opts": ["To make the temperature higher.", "To make the light the same as in the fridge (dark).", "To stop them getting air."], "ans": 1}, {"type": "mc", "q": "Which sentence explains the link between germination and temperature correctly?", "opts": ["Seeds sprout even in a very cold place, like ice.", "A suitable temperature is necessary for seeds to germinate.", "There is no link between germination and temperature."], "ans": 1}]}, {"title": "Lesson 3-5: complete the results table (نشاط, p. 41)", "qs": [{"type": "table", "q": "Choose Yes or No: did the seeds sprout?", "head": ["Changed condition", "Kept the same"], "rows": [[["Water added", "Room temperature, exposed to air"], "Yes"], [["No water", "Room temperature, exposed to air"], "No"], [["Exposed to air", "Same water, room temperature"], "Yes"], [["Not exposed to air", "Same water, room temperature"], "No"], [["Warm place", "Same water, exposed to air"], "Yes"], [["Cold place in the fridge", "Same water, exposed to air"], "No"]]}]}, {"title": "Try it — lesson 3-5 (حاول, p. 42)", "qs": [{"type": "short", "q": "Write the three conditions needed for seeds to germinate.", "a": "<b>Water, air, and a suitable temperature.<\/b>"}, {"type": "fill", "q": "In the experiment testing the link between temperature and germination, the 'condition we change' between the two glasses is ___.", "bank": [["water", "air", "temperature"]], "ans": [2]}, {"type": "short", "q": "Seeds were put on wet cotton and placed in the fridge. Will they sprout?", "a": "<b>No.<\/b> The temperature in the fridge is too low (not suitable), even though there is water and air."}]}, {"title": "Practise — lesson 3-5 (تدرَّب, p. 42)", "qs": [{"type": "mc", "q": "Which sentence explains the conditions for germination correctly?", "opts": ["If any one of the three conditions is missing, the seeds won't sprout.", "As long as there is water, seeds will sprout whether or not there is air or a suitable temperature."], "ans": 0}, {"type": "fill", "q": "Light and ___ are necessary for growth after germination, but they are not necessary for germination itself.", "bank": [["water", "fertilizer", "air"]], "ans": [1]}, {"type": "short", "q": "Seeds were put on wet cotton inside a completely dark box in a warm room. Will they sprout?", "a": "<b>Yes.<\/b> They have water, air and a suitable (warm) temperature. Light is <b>not<\/b> needed for germination."}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

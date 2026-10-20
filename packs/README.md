@@ -35,3 +35,13 @@ Coverage and answer limitations are recorded under [docs/provenance/](../docs/pr
 - [Murad — Grade 6 October maths revision](murad/mathematics/october-2026.html)
 
 Both packs open independently offline and save individual progress in the current browser. Practice questions are new, not official school question transcriptions.
+
+
+## Science · Arabic ministry book, Chapters 1–3 · 20 October 2026
+
+- [Jimmy — Chapter 1: Bones and Muscles](gamal/science/arabic-book-term1/chapter-1-bones-and-muscles.html)
+- [Jimmy — Chapter 2: Changes in the Seasons](gamal/science/arabic-book-term1/chapter-2-changes-in-seasons.html)
+- [Jimmy — Chapter 3: Conditions for Germination](gamal/science/arabic-book-term1/chapter-3-germination.html)
+- [Jimmy — Revision, Chapters 1–3](gamal/science/arabic-book-term1/revision-chapters-1-3.html)
+
+English translation of the Arabic Grade 5 Science book (Term 1), with Arabic key terms. Each chapter has an Explanation tab and an Assessment tab with every حاول/تدرَّب question; answers are authored. [Provenance](../docs/provenance/science-arabic-book-2026-10-20.md).

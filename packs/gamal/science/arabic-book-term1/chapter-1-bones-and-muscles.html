@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bones and Muscles</title>
+<style>
+  :root {
+    --main: #16a34a;
+    --main-dark: #166534;
+    --main-light: #dcfce7;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 1</span>
+    <h1>Chapter 1: Bones and Muscles</h1>
+    <div class="ar">الفصل الأول: العظام والعضلات</div>
+    <p>Lessons 1-1 to 1-4 and the camel enrichment corner · book pages 6–19</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "1-1", "title": "Bones and Muscles", "ar": "العظام والعضلات", "page": "6–7", "question": "What happens to our muscles when we bend and stretch our arms?", "blocks": [{"say": "When you bend your arm, the arm muscles become tight and bulge out. Let's try it!", "who": "🐶"}, {"h": "Learn: Muscles contract and relax", "badge": "تعلَّم", "points": ["The human body has strong, hard <b class=\"key\">bones<\/b> <span class=\"ar-term\">(عظام)<\/span> and flexible <b class=\"key\">muscles<\/b> <span class=\"ar-term\">(عضلات)<\/span>.", "Muscles are the soft parts inside our body. They <b>pull the bones<\/b> to help us move.", "We can move because muscles <b class=\"key\">contract<\/b> <span class=\"ar-term\">(تنقبض)<\/span> and <b class=\"key\">relax<\/b> <span class=\"ar-term\">(تنبسط)<\/span>. When you bend your arm, the muscle <b>contracts and becomes hard<\/b> <span class=\"ar-term\">(صلبة)<\/span>.", "<b>Bending the arm:<\/b> the FRONT muscle of the arm contracts, and the BACK muscle relaxes.", "<b>Straightening (stretching) the arm:<\/b> the BACK muscle contracts, and the FRONT muscle relaxes.", "The part where the arm bends is where the bones are connected. It is called a <b class=\"key\">joint<\/b> <span class=\"ar-term\">(المفصل)<\/span>."]}, {"table": [["", "Bend your arm 💪", "Straighten your arm"], ["Front muscle (bending muscle)", "<b>Contracts<\/b> (منقبضة)", "Relaxes (منبسطة)"], ["Back muscle (straightening muscle)", "Relaxes (منبسطة)", "<b>Contracts<\/b> (منقبضة)"]]}, {"say": "Muscles work in <b>pairs<\/b>: when one contracts, the other relaxes. Muscles can only <b>PULL<\/b>, never push!", "who": "🐔"}, {"activity": {"title": "Let's observe our muscles!", "steps": ["<b>Bending:<\/b> bend your arm strongly so the arm muscle sticks out. Touch the front and back muscles with your other hand. Which one is harder?", "<b>Stretching:<\/b> straighten your arm. How did the hardness of the muscle change?", "<b>Discover:<\/b> notice how the two muscles take turns when you move your arm, and what happens to your muscles when you carry something heavy."]}}], "terms": [["Bones", "العظام", "Hard, strong parts that support the body"], ["Muscles", "العضلات", "Soft, flexible parts that pull the bones to move us"], ["Contract", "تنقبض", "The muscle gets shorter, tighter and harder"], ["Relax", "تنبسط", "The muscle loosens and becomes soft"], ["Joint", "المفصل", "The place where bones meet and the body can bend"]]}, {"num": "1-2", "title": "Structure of Bones", "ar": "تركيب العظام", "page": "8–9", "question": "What are the jobs of bones? And how are they connected to each other?", "blocks": [{"say": "Bones are very hard, but joints let them bend freely. Is there something that stops bones rubbing directly against each other?", "who": "🐱"}, {"h": "Learn: Bones and joints", "badge": "تعلَّم", "points": ["<b>Bones are very hard.<\/b> They have an important role in <b class=\"key\">supporting the body<\/b> <span class=\"ar-term\">(دعم الجسم)<\/span> and <b>protecting vital organs<\/b> such as the <b>brain<\/b> and the <b>heart<\/b>.", "A <b class=\"key\">joint<\/b> <span class=\"ar-term\">(المفصل)<\/span> is the place where two or more bones meet.", "Joints contain <b class=\"key\">cartilage<\/b> <span class=\"ar-term\">(غضاريف)<\/span>. Cartilage works like a <b>cushion (pillow)<\/b> between the ends of the bones, so the bones don't rub against each other, and it protects them from wearing away during movement."]}, {"activity": {"title": "Find the joints in your body", "steps": ["Let's count the joints (the parts that can bend) that you can find in your body.", "<b>Arms and hands:<\/b> shoulders, elbows, wrists and fingers. How many joints are in your fingers?", "<b>Legs:<\/b> bend your hips, knees and ankles.", "<b>Notice the movement:<\/b> the <b>elbow<\/b> joint can only bend in <b>one direction<\/b>, but the <b>shoulder<\/b> joint can turn in <b>all directions<\/b>. Movement is different depending on the joint."]}}, {"say": "Not all joints move the same way: the direction and amount of bending depend on <b>where the joint is<\/b>.", "who": "🐔"}], "terms": [["Joint", "المفصل", "Where two or more bones meet and allow movement"], ["Cartilage", "غضاريف", "Cushion inside joints that stops bones rubbing and wearing"], ["Support", "دعم الجسم", "Bones hold the body up and give it shape"], ["Protect", "حماية", "Bones protect organs like the brain and heart"]]}, {"num": "1-3", "title": "The Complete Skeleton", "ar": "الهيكل العظمي الكامل للجسم", "page": "12–13", "question": "How are all the bones in the body connected together to support the body?", "blocks": [{"say": "The human body is made of about <b>206 bones<\/b> joined together! 🐶: \"Wow, that's a lot of bones!\"", "who": "🐔"}, {"h": "Learn: The frame that supports the whole body", "badge": "تعلَّم", "points": ["The structure in which many bones join together to form the shape of the whole body is called the <b class=\"key\">skeleton<\/b> <span class=\"ar-term\">(الهيكل العظمي)<\/span>.", "<b class=\"key\">Skull<\/b> <span class=\"ar-term\">(الجمجمة)<\/span>: works like a <b>helmet<\/b> and protects the <b>brain<\/b>.", "<b class=\"key\">Ribs<\/b> <span class=\"ar-term\">(الضلوع)<\/span>: form a <b>cage<\/b> that protects the <b>heart and lungs<\/b>.", "<b class=\"key\">Backbone / spine<\/b> <span class=\"ar-term\">(العمود الفقري)<\/span>: a main pillar that carries the body. Because it is made of <b>many small connected bones<\/b>, it makes the body <b>flexible<\/b> and helps us bend and move in different directions."]}, {"say": "Bones don't only support the body — they also <b>protect<\/b> it.", "who": "🐱"}, {"activity": {"title": "Get to know your bones", "steps": ["<b>Touch your head:<\/b> it feels hard wherever you touch. That is the strong bone (skull) protecting your brain.", "<b>Touch your chest bones:<\/b> breathe in deeply, then gently press the sides of your chest — you can feel the ribs under the skin.", "<b>Touch your back bones:<\/b> feel the middle of your back — the bumpy bones in a vertical line are the backbone."]}}], "terms": [["Skeleton", "الهيكل العظمي", "All the bones joined together forming the body's shape"], ["Skull", "الجمجمة", "Works like a helmet — protects the brain"], ["Ribs", "الضلوع", "A cage that protects the heart and lungs"], ["Backbone", "العمود الفقري", "Many small bones; carries the body and lets it bend"], ["206", "٢٠٦ عظمة", "About how many bones a human body has"]]}, {"num": "1-4", "title": "Animal Bodies", "ar": "أجسام الحيوانات", "page": "14–15", "question": "Do other animals have the same bones-and-muscles system as humans?", "blocks": [{"say": "Dogs have a backbone too! Do they have many parts similar to humans?", "who": "🐱"}, {"h": "Learn: How animal bones and muscles are similar to ours", "badge": "تعلَّم", "points": ["Many animals — like dogs, cats and rabbits — move using bones and muscles in a way <b>similar to humans<\/b>.", "<b>Similar skeleton:<\/b> many animals have a <b class=\"key\">backbone<\/b> <span class=\"ar-term\">(عمود فقري)<\/span> like humans, and they also have <b class=\"key\">joints<\/b> <span class=\"ar-term\">(مفاصل)<\/span> in their front and back legs (limbs).", "<b>Differences in movement:<\/b> the <b>length of the bones<\/b> and how muscles attach to them are a little different, depending on the animal's <b>way of life<\/b> — for example running fast, or flying in the sky.", "<b>How they move:<\/b> all these animals move by <b>contracting their muscles and pulling their bones<\/b>."]}, {"say": "Shapes are different depending on the animal, but moving the body using bones and muscles is very similar to how humans move.", "who": "🐔"}, {"activity": {"title": "Let's look for joints in humans and animals!", "steps": ["Use science books or pictures of animal skeletons and compare them with the human skeleton.", "<b>Look at a dog's front leg:<\/b> where is the part that matches the human <b>elbow<\/b>? It is higher up from the ground.", "<b>Look at a rabbit's back leg:<\/b> find the part that matches the human <b>knee<\/b>. Rabbits have long bones in their back legs that help them jump easily.", "<b>Discover:<\/b> if you focus on the joints (the bending parts), you'll see human and animal bodies share many things."]}}], "terms": [["Backbone", "عمود فقري", "Dogs, cats and rabbits have one, like us"], ["Way of life", "طريقة المعيشة", "Running, jumping or flying changes bone length and shape"], ["Same mechanism", "نفس الآلية", "Animals move by contracting muscles that pull bones"]]}, {"enrich": true, "title": "Enrichment corner: How does the desert runner (the camel) move?", "ar": "ركن إثرائي: الميكانيكا الحيوية للجمل", "page": "18–19", "blocks": [{"h": "1. Secret of the 'Ship of the Desert': bones and muscles", "icon": "🐪", "points": ["A camel can carry heavy loads and walk tens of kilometres in very hot deserts. Its secret is the special shape of its bones and muscles.", "<b>Knee shock-absorbers:<\/b> when a camel kneels (sits), the joints touching the ground are covered with thick skin called <b>calluses<\/b> (الثفنات), several centimetres thick. Very soft tissue inside acts like a <b>cushion<\/b>, so shocks on the joints are as small as possible.", "<b>Toe bones that change shape:<\/b> the toe bones spread out sideways the moment they touch the ground, so the foot covers a bigger area. The camel's weight is spread out, so its feet don't sink into soft sand."]}, {"h": "2. The hump", "icon": "🐫", "points": ["People used to think the hump was full of water. <b>It is not!<\/b> It is a big store of food called <b>fat<\/b> (الدهون).", "The camel breaks down this fat to make <b>energy<\/b>, which helps its muscles keep moving on long trips.", "<b>Helps heat escape:<\/b> if the fat were spread all over the body it would act like a warm blanket. Keeping it all in the hump lets the rest of the body lose heat easily, so the muscles keep working even in extreme heat."]}, {"say": "To survive in the harsh desert, even with no food, camels store food as fat inside their humps.", "who": "🐔"}]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it — lessons 1-1 & 1-2 (حاول, p. 10)", "qs": [{"type": "mc", "q": "When you bend your arm, what happens to the FRONT muscle of the upper arm?", "opts": ["It loosens and relaxes.", "It contracts and becomes harder."], "ans": 1}, {"type": "fill", "q": "Muscles pull the bones by ___.", "bank": [["relaxation", "contraction", "stretching"]], "ans": [1], "why": "Muscles contract (انقباض) to pull bones."}, {"type": "short", "q": "What do we call the place where two bones meet and which allows movement?", "a": "A <b>joint<\/b> (المفصل)."}, {"type": "mc", "q": "Which sentence describes joint movement correctly?", "opts": ["All joints in the body can turn in any direction.", "The direction and amount of bending depend on where the joint is."], "ans": 1, "why": "The elbow bends one way only; the shoulder turns in all directions."}, {"type": "fill", "q": "Joints contain ___ which works like a cushion so bones don't rub directly against each other and wear away.", "bank": [["muscles", "cartilage", "skin"]], "ans": [1]}]}, {"title": "Practise — lessons 1-1 & 1-2 (تدرَّب, p. 11)", "qs": [{"type": "mc", "q": "Which is correct about the muscles when you STRAIGHTEN your arm?", "opts": ["The back muscle contracts and the front muscle relaxes.", "The front muscle contracts and the back muscle relaxes."], "ans": 0}, {"type": "mc", "q": "Which sentence describes how the human body moves correctly?", "opts": ["Muscles move the body by PUSHING the bones.", "Muscles move the body by PULLING the bones."], "ans": 1}, {"type": "mc", "q": "Which of these is NOT a function of bones?", "opts": ["They support the body strongly.", "They protect important organs like the brain and heart.", "They can contract and move by themselves like muscles."], "ans": 2, "why": "Only muscles contract. Bones support and protect."}, {"type": "short", "q": "What do we call the part inside joints that works like a cushion so bones don't rub against each other?", "a": "<b>Cartilage<\/b> (الغضاريف)."}]}, {"title": "Try it — lessons 1-3 & 1-4 (حاول, p. 16)", "qs": [{"type": "short", "q": "What do we call the frame of bones that gives the body its shape?", "a": "The <b>skeleton<\/b> (الهيكل العظمي)."}, {"type": "multi", "pick": "TWO correct answers", "q": "Which important organs do the ribs protect, like a cage?", "opts": ["The brain", "The heart", "The lungs", "The stomach"], "ans": [1, 2], "why": "The skull protects the brain; the ribs protect the heart and lungs."}, {"type": "fill", "q": "Animals like dogs and horses also move by contracting their ___ and pulling their ___, just like humans.", "bank": [["muscles", "skin"], ["bones", "hair"]], "ans": [0, 0]}, {"type": "mc", "q": "What do differences in the length and shape of bones between animals depend on?", "opts": ["The colour of the body.", "The way of life (how it runs, flies, etc.)."], "ans": 1}]}, {"title": "Practise — lessons 1-3 & 1-4 (تدرَّب, p. 17)", "qs": [{"type": "fill", "q": "The main job of the skull is to protect the ___.", "bank": [["heart", "brain", "lungs"]], "ans": [1]}, {"type": "mc", "q": "Which sentence about the backbone is correct?", "opts": ["The backbone is one long bone that doesn't bend.", "The backbone is made of many small connected bones, so you can bend your body."], "ans": 1}, {"type": "mc", "q": "Which sentence describes the structure of a dog's front legs correctly?", "opts": ["They have joints — parts that can bend like a human's.", "They are one solid connected bone that doesn't bend anywhere."], "ans": 0}, {"type": "mc", "q": "Which sentence describes animal bodies correctly?", "opts": ["Bone shapes differ from animal to animal because each animal is adapted to certain kinds of movement.", "Muscles move bones by completely different rules in humans and animals."], "ans": 0}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

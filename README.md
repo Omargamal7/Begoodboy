@@ -51,3 +51,10 @@ Both HTML files are standalone and work offline, with hints, worked examples, ch
 
 212 question parts cover the October worksheet and all 22 booklet exercises. Includes 33 original page images and six lesson reminders. Eight personal/disputed items are parent checked. The worksheet says 6.KLASSE despite its Grade 5A course; the grade label and exact exam cutoff remain unverified. Murad's current Toddle list has no German course. [Sources and cloud sync](sync/2026-10-19-german/README.md).
 
+
+
+## Science · Arabic book Chapters 1–3 (English translation) · 20 October 2026
+
+- **Jimmy (Grade 5A):** [Ch 1 Bones and Muscles](packs/gamal/science/arabic-book-term1/chapter-1-bones-and-muscles.html) · [Ch 2 Changes in the Seasons](packs/gamal/science/arabic-book-term1/chapter-2-changes-in-seasons.html) · [Ch 3 Conditions for Germination](packs/gamal/science/arabic-book-term1/chapter-3-germination.html) · [Revision Ch 1–3](packs/gamal/science/arabic-book-term1/revision-chapters-1-3.html)
+
+Each chapter has an Explanation tab (translated lessons, activities, Arabic key words, read-aloud) and an Assessment tab with all of the book's حاول/تدرَّب questions, auto-checked. The book has no answer key, so answers are authored; one disputed item is noted in the [provenance](docs/provenance/science-arabic-book-2026-10-20.md).
