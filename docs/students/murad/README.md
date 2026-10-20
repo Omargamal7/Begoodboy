@@ -21,10 +21,11 @@ Counts exclude incomplete-download candidates and originals stored as binary par
 - [Lesson menu](../../../index.html)
 - [All offline packs](../../../packs/README.md)
 - [Archive reconciliation and pending downloads](../../../sync/2026-10-20-reconciliation/README.md)
+- [20 October learning handoff](handoff-2026-10-20.md) and [source index](../../source-index-2026-10-20.md).
 
 ## Source limits
 
 - [English coverage and limitations](../../../sync/2026-10-19-english/README.md). The uploaded assessment original prints 2025/2026; preserve the edition.
 - [Maths source and coverage limits](../../provenance/mathematics-2026-10-19.md). The generated practice does not establish complete Unit 2 coverage.
 - All 22 Science lessons remain available in the lesson menu; the larger Science original is also listed in the existing school release.
-- The latest reported Toddle course list contained no German course for Murad; do not infer Jimmy's syllabus applies to him.
+- The parent confirms that Murad does not take German. Do not add it from Jimmy's syllabus or the grade-wide schedule's generic language row.

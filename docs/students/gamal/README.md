@@ -22,6 +22,7 @@ Counts exclude incomplete-download candidates and originals stored as binary par
 - [Lesson menu](../../../index.html)
 - [All offline packs](../../../packs/README.md)
 - [Archive reconciliation and pending downloads](../../../sync/2026-10-20-reconciliation/README.md)
+- [20 October learning handoff](handoff-2026-10-20.md) and [source index](../../source-index-2026-10-20.md).
 
 ## German and naming
 
