@@ -15,7 +15,8 @@
       "download_filenames_matched": [
         "إجابات إعراب الفاعل والمفعول به المثنى.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Worksheet.pdf",
@@ -26,7 +27,8 @@
       "download_filenames_matched": [
         "إعراب الفاعل والمفعول به المثنى.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Answers.pdf",
@@ -35,7 +37,8 @@
       "sha256": "29e3333bc707fb9c519b947b2684ae1a93bbe4199aa32aa6c5fd91711c55bd1d",
       "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf",
@@ -44,27 +47,30 @@
       "sha256": "5dbf6f25faf2aba4fe8296e55b2836078a69379d3a9cf5e84fff9ede7056f6c9",
       "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf",
       "bytes": 1128145,
       "git_blob_sha": "1a8182c4403c7c1010354d590650b22567627a51",
       "sha256": "833ada14ac2583072bbac37f495f538e821a76c9d53491fb6eb3e5ce88b43a2a",
-      "bytes_recovered_in_workspace": false,
+      "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [
         "مراجعة الوحدة الأولى الصف الخامس تيرم أول.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/german/revision/2026-10/booklet-answers-exercises-01-22.pdf",
       "bytes": 2487383,
       "git_blob_sha": "b7a3d772b43f789ba3374a0261078ff956dfe94e",
-      "sha256": null,
-      "bytes_recovered_in_workspace": false,
+      "sha256": "1a1a3e134b9315a96935be5c953ee0e2f5b23d06ca0320cc64cd51209434d16a",
+      "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/german/revision/2026-10/october-model-answers.pdf",
@@ -73,7 +79,8 @@
       "sha256": "8c017b4ca920661ec82377bf1573d5cbe81a82b3f13a8cebcc721b881bfe5127",
       "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/german/revision/2026-10/october-worksheet.pdf",
@@ -82,7 +89,8 @@
       "sha256": "93da2418efbfafaa7d4c96c9106e1f7b20d40977e107571de3695d923d3a61ef",
       "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/ict/revision/2026-10/revsion prim5 october.doc",
@@ -93,18 +101,20 @@
       "download_filenames_matched": [
         "revsion prim5 october.doc"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf",
       "bytes": 1105474,
       "git_blob_sha": "13a80ab194e7518458fd34fc3f60d7999599c37d",
       "sha256": "fa7325447d9003f0283156c9e2b5e8bf0a1bb5b4ffd9453ec045c96a395c1798",
-      "bytes_recovered_in_workspace": false,
+      "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [
         "دين صف خامس مراجعة الوحدة الأوبى (2).pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
@@ -113,7 +123,8 @@
       "sha256": "93f758670b38f868198581915f6be660d90ae46481948dbf7c5f899a4862d343",
       "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
@@ -125,18 +136,20 @@
         "Primary 5 Monthly Tests October 2026.pdf",
         "Primary 5 Monthly Tests October 2026 (1).pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/gamal/social-studies/اجابة التقيمات.pdf",
       "bytes": 1897049,
       "git_blob_sha": "459a60b4d880f800356be0ff668cdb4a91bb12a8",
       "sha256": "dee33b5dc5ff094b39aebb364503277ed978afab971ef5f35fc54aaeb3ab95e0",
-      "bytes_recovered_in_workspace": false,
+      "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [
         "اجابة التقيمات.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
@@ -147,7 +160,8 @@
       "download_filenames_matched": [
         "مراجعة الوحدة الأولى الصف السادس تيرم أول.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/ict/revision/2026-10/revision prim 6 october.docx",
@@ -158,18 +172,20 @@
       "download_filenames_matched": [
         "revision prim 6 october.docx"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf",
       "bytes": 3027257,
       "git_blob_sha": "f2db6df986691c0aa8e14c3e49664adefcf0960a",
       "sha256": "2ff0ea87000a6397bbd1e5c551e9fc100623b8dc26a81e781e71cbf2aea9490f",
-      "bytes_recovered_in_workspace": false,
+      "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [
         "Model Answer - October Revision Sheet.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/mathematics/revision/2026-10/October Revision Sheet.pdf",
@@ -180,18 +196,20 @@
       "download_filenames_matched": [
         "October Revision Sheet.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
       "bytes": 1515823,
       "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
       "sha256": "e64627070ea07c6d4fc1f5ba175aac4b671feb4ed3c0c1d6fc5dc230f43a6c6c",
-      "bytes_recovered_in_workspace": false,
+      "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [
         "وحدة اولى مراجعة دين الصف السادس (2).pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
@@ -202,7 +220,8 @@
       "download_filenames_matched": [
         "Primary 6 Monthly Tests October 2026.pdf"
       ],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     },
     {
       "repository_path": "sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
@@ -211,7 +230,9 @@
       "sha256": "3d4bf563d060469b89a99acbac3a1911e994e96d874902d308a1196f0dfd96f3",
       "bytes_recovered_in_workspace": true,
       "download_filenames_matched": [],
-      "project_upload_verified": false
+      "project_upload_verified": false,
+      "desktop_original_verified": true
     }
-  ]
+  ],
+  "latest_receipt": "../2026-10-20-live/README.md"
 }

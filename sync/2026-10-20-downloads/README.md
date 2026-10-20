@@ -1,5 +1,11 @@
 # Downloads reconciliation — 20 October 2026
 
+Latest verification: all 20 priority originals are now recovered and hash-verified. Original Project uploads remain unverified. [Current live collection receipt](../2026-10-20-live/README.md) supersedes the transfer/access limitations below; those paragraphs describe the earlier checkpoint only.
+
+## Earlier checkpoint — retained historical receipt
+
+# Downloads reconciliation — 20 October 2026
+
 The parent authorized use of school PDFs in Downloads. This checkpoint compares original file hashes with the existing private repository. It does not represent a new authenticated Toddle collection.
 
 ## Results

@@ -1,0 +1,46 @@
+{
+  "observed_date": "2026-10-20",
+  "timezone": "Africa/Cairo",
+  "complete_toddle_sync": false,
+  "school_announcements_full_text": {
+    "jimmy": 44,
+    "murad": 43
+  },
+  "current_class_feeds_checked": {
+    "jimmy": 13,
+    "murad": 12
+  },
+  "class_announcements_full_text": {
+    "jimmy": 7,
+    "murad": 11
+  },
+  "priority_originals_verified": 20,
+  "priority_original_bytes": 14497319,
+  "announcement_attachment_files_verified": 15,
+  "announcement_attachment_bytes": 21911216,
+  "private_portfolio_originals_verified": 46,
+  "project_dated_text_handoffs_verified": [
+    "School HQ",
+    "Jimmy Learning Hub",
+    "Murad Learning Hub"
+  ],
+  "new_project_original_uploads_verified": 0,
+  "historical_source_catalogue": {
+    "date": "2026-10-18",
+    "records": 145,
+    "observed_courses": 25
+  },
+  "monitoring": {
+    "automation_id": "6acfdaa2fca88191a375f78ffd7a7947",
+    "enabled_configuration_verified": true,
+    "schedule_local": [
+      "08:00",
+      "15:00",
+      "20:00"
+    ],
+    "timezone": "Africa/Cairo",
+    "start_date": "2026-10-21",
+    "new_scheduled_run_verified": false,
+    "next_run_time_returned": null
+  }
+}

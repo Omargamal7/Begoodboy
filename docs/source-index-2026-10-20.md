@@ -2,6 +2,10 @@
 
 Inventory checked against `65096635174c656a41aa8a9990c6d0735a603625`. This is a dated source index, not the current exam syllabus or a complete Toddle export.
 
+## Latest verification
+
+All 20 priority originals are now recovered and verified; Project original uploads remain unverified. The [live receipt](../sync/2026-10-20-live/README.md) records current announcement and attachment coverage. The catalogue below retains its historical date.
+
 ## Coverage
 
 The historical 18 October catalogue contains 145 source records and 25 observed courses. Later English/German work has separate dated records. The tables below preserve that catalogue rather than relabelling it as a fresh full sync.
@@ -9,18 +13,18 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | Child / group | Subject | Catalogue records | Exact Downloads matches | Bodies in current reference package |
 |---|---|---:|---:|---:|
 | gamal | announcements | 1 | 0 | 0 |
-| gamal | arabic | 7 | 4 | 4 |
+| gamal | arabic | 7 | 4 | 5 |
 | gamal | english | 28 | 2 | 0 |
 | gamal | ict | 5 | 2 | 1 |
-| gamal | religion | 1 | 1 | 0 |
+| gamal | religion | 1 | 1 | 1 |
 | gamal | schedules | 2 | 1 | 2 |
 | gamal | science | 5 | 0 | 0 |
-| gamal | social-studies | 5 | 1 | 0 |
+| gamal | social-studies | 5 | 1 | 1 |
 | murad | arabic | 3 | 2 | 1 |
 | murad | english | 32 | 24 | 0 |
 | murad | ict | 7 | 4 | 1 |
-| murad | mathematics | 16 | 3 | 1 |
-| murad | religion | 2 | 2 | 0 |
+| murad | mathematics | 16 | 3 | 2 |
+| murad | religion | 2 | 2 | 1 |
 | murad | schedules | 2 | 1 | 2 |
 | murad | school | 5 | 0 | 0 |
 | murad | science | 12 | 4 | 0 |
@@ -32,7 +36,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 - An original school document takes priority over a generated pack. A pack is not proof of full syllabus coverage.
 - Exact Downloads matches establish file identity, not that the source was posted recently or remains assigned.
 - A catalogue record may refer to a direct blob, reconstructed parts or an existing release asset; absence from this small package does not imply loss.
-- The six larger priority originals are pending transfer, not pending discovery. See the priority-reference JSON for exact status.
+- The earlier six larger priority transfers are now complete. See the priority-reference JSON for exact verified hashes and the separate Project-upload status.
 - Murad does not take German, confirmed by the parent. Do not copy Jimmy’s subject coverage into his plan.
 
 ## Catalogue files
@@ -49,7 +53,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | gamal | arabic | `sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Worksheet.pdf` | repository_blob | exact | verified original |
 | gamal | arabic | `sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Answers.pdf` | repository_blob | not matched | verified original |
 | gamal | arabic | `sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf` | repository_blob | not matched | verified original |
-| gamal | arabic | `sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf` | repository_blob | exact | not transferred here |
+| gamal | arabic | `sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf` | repository_blob | exact | verified original |
 | gamal | arabic | `sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf` | repository_parts | not matched | not transferred here |
 | gamal | arabic | `sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf` | repository_blob | exact | not transferred here |
 | gamal | english | `sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2.pdf` | repository_blob | not matched | not transferred here |
@@ -85,7 +89,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | gamal | ict | `sources/gamal/ict/evaluations/week-02.docx` | repository_blob | not matched | not transferred here |
 | gamal | ict | `sources/gamal/ict/evaluations/week-03.docx` | repository_blob | not matched | not transferred here |
 | gamal | ict | `sources/gamal/ict/revision/2026-10/revsion prim5 october.doc` | repository_blob | exact | verified original |
-| gamal | religion | `sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf` | repository_blob | exact | not transferred here |
+| gamal | religion | `sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf` | repository_blob | exact | verified original |
 | gamal | schedules | `sources/gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf` | repository_blob | not matched | verified original |
 | gamal | schedules | `sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf` | repository_blob | exact | verified original |
 | gamal | science | `sources/gamal/science/assessments/chapter-02/source-1.jpg` | repository_blob | not matched | not transferred here |
@@ -97,7 +101,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | gamal | social-studies | `sources/gamal/social-studies/assessments/climate/school-page-2.jpg` | repository_blob | not matched | not transferred here |
 | gamal | social-studies | `sources/gamal/social-studies/assessments/climate/school-page-3.jpg` | repository_blob | not matched | not transferred here |
 | gamal | social-studies | `sources/gamal/social-studies/assessments/climate/school-page-4.jpg` | repository_blob | not matched | not transferred here |
-| gamal | social-studies | `sources/gamal/social-studies/اجابة التقيمات.pdf` | repository_blob | exact | not transferred here |
+| gamal | social-studies | `sources/gamal/social-studies/اجابة التقيمات.pdf` | repository_blob | exact | verified original |
 | murad | arabic | `sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf` | repository_blob | exact | verified original |
 | murad | arabic | `sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx` | repository_parts | not matched | not transferred here |
 | murad | arabic | `sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf` | repository_blob | exact | not transferred here |
@@ -144,7 +148,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | murad | mathematics | `sources/murad/mathematics/activities/Integers - Activity Sheet.pdf` | repository_blob | not matched | not transferred here |
 | murad | mathematics | `sources/murad/mathematics/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf` | repository_blob | exact | not transferred here |
 | murad | mathematics | `sources/murad/mathematics/model-answers/Model Answer - Unit (1) - Lessons (1-3).pdf` | repository_blob | not matched | not transferred here |
-| murad | mathematics | `sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf` | repository_blob | exact | not transferred here |
+| murad | mathematics | `sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf` | repository_blob | exact | verified original |
 | murad | mathematics | `sources/murad/mathematics/revision/2026-10/October Revision Sheet.pdf` | repository_blob | exact | verified original |
 | murad | mathematics | `sources/murad/mathematics/weekly/week-01/1st Day at School (Mona Gehad).pptx` | repository_blob | not matched | not transferred here |
 | murad | mathematics | `sources/murad/mathematics/weekly/week-01/Crosswords - General Revision - Week (1).pdf` | repository_blob | not matched | not transferred here |
@@ -157,7 +161,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | murad | mathematics | `sources/murad/mathematics/worksheets/Revision Sheet (2) - Week (1).pdf` | repository_blob | not matched | not transferred here |
 | murad | mathematics | `sources/murad/mathematics/worksheets/Worksheet (1) - Week (2).pdf` | repository_blob | not matched | not transferred here |
 | murad | religion | `sources/murad/religion/Islamic_Education_Primary6_T1.pdf` | repository_blob | exact | not transferred here |
-| murad | religion | `sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf` | repository_blob | exact | not transferred here |
+| murad | religion | `sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf` | repository_blob | exact | verified original |
 | murad | schedules | `sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf` | repository_blob | exact | verified original |
 | murad | schedules | `sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf` | repository_blob | not matched | verified original |
 | murad | science | `sources/murad/science/activities/investigating the effect of saliva on starch.pdf` | repository_blob | exact | not transferred here |
@@ -189,7 +193,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 
 The 19 October German record supersedes the older claim that Jimmy had no usable German originals. Three PDFs support the personal/class packs. The worksheet’s 6.KLASSE heading conflicts with its Grade 5A course attribution; the precise exam cutoff remains unverified.
 
-- `sources/gamal/german/revision/2026-10/booklet-answers-exercises-01-22.pdf` — body pending transfer.
+- `sources/gamal/german/revision/2026-10/booklet-answers-exercises-01-22.pdf` — verified original in the current reference package.
 - `sources/gamal/german/revision/2026-10/october-model-answers.pdf` — verified body in current package.
 - `sources/gamal/german/revision/2026-10/october-worksheet.pdf` — verified body in current package.
 
