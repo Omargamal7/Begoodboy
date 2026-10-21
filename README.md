@@ -72,3 +72,10 @@ Same format as Chapters 1–3; together they cover the whole Term 1 Science book
 - **iPad/phone:** all pages are bundled behind one private link, https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY
 
 See the [provenance](docs/provenance/gamal/social-studies/october-test-unit1-2026-10-21.md).
+
+## Social Studies · Grade 6 Unit 1 «وطننا العربي» (Arabic + English) · 21 October 2026
+
+- **Murad (Grade 6):** [Lesson 1](packs/murad/social-studies/unit1-lesson1-location-importance-hybrid.html) · [Lesson 2](packs/murad/social-studies/unit1-lesson2-landforms-hybrid.html) · [Lesson 3](packs/murad/social-studies/unit1-lesson3-climate-plants-hybrid.html) · [Lesson 4](packs/murad/social-studies/unit1-lesson4-environmental-challenges-hybrid.html) · [Test revision, Lessons 1–4](packs/murad/social-studies/october-test-unit1-hybrid.html)
+- **iPad/phone:** the same hub link now has a Murad shelf: https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY
+
+See the [provenance](docs/provenance/murad/social-studies/october-test-unit1-2026-10-21.md).

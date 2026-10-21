@@ -69,3 +69,16 @@ Completes the Term 1 book (pages 44–107) in the same format as Chapters 1–3.
 - [Jimmy — All 3 lessons on one page (Arabic + English)](gamal/social-studies/unit1-lessons-hybrid.html)
 
 Built from the Ministry Grade 5 Social Studies book (pp. 8–29) and the school's Toddle answer sheet «اجابة التقيمات». Each lesson page has Explanation → Classwork & homework → Weekly test (Models A/B/C) → quiz. All 18 Grade 5 pages (these plus Science) now carry the tap-to-read bar from `tools/readaloud/`. iPad/phone hub: https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY (private; share from its Share menu). [Provenance](../docs/provenance/gamal/social-studies/october-test-unit1-2026-10-21.md).
+
+## Social Studies · Grade 6 Unit 1 «وطننا العربي» October test · 21 October 2026
+
+- [Murad — Lesson 1: location and importance](murad/social-studies/unit1-lesson1-location-importance-hybrid.html)
+- [Murad — Lesson 2: landforms](murad/social-studies/unit1-lesson2-landforms-hybrid.html)
+- [Murad — Lesson 3: climate and natural plants](murad/social-studies/unit1-lesson3-climate-plants-hybrid.html)
+- [Murad — Lesson 4: environmental challenges](murad/social-studies/unit1-lesson4-environmental-challenges-hybrid.html)
+- [Murad — Test revision, Lessons 1–4 (Arabic + English)](murad/social-studies/october-test-unit1-hybrid.html)
+- [Murad — Test revision (English only)](murad/social-studies/october-test-unit1-english.html)
+- [Murad — Test revision (Arabic only)](murad/social-studies/october-test-unit1-arabic.html)
+- [Murad — All 4 lessons on one page](murad/social-studies/unit1-lessons-hybrid.html)
+
+Same format as Jimmy's Unit 1 pages (Arabic with English help, Explanation → Classwork → Models A/B/C → quiz), with the book's own maps, a blank-map country hunt, a waterways hunt and an Asian/African wing sorting game. Hub for iPad/phone: https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY. [Provenance](../docs/provenance/murad/social-studies/october-test-unit1-2026-10-21.md).

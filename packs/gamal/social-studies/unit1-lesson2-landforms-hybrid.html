@@ -529,7 +529,7 @@ const UIS={
   seasonsQ:"Tap the season when the Sun is straight over the",won:"Well done, champ! 🎉"}
 };
 let UI=UIS[LANG];
-const QR=[[0,10],[10,24],[24,36]];if(ONE>=0){DATA.mcq=DATA.mcq.slice(...QR[ONE])}
+const QR=[[0,10],[10,24],[24,36]];if(ONE>=0){DATA.mcq=DATA.mcq.some(q=>q.l)?DATA.mcq.filter(q=>q.l===DATA.lessons[ONE].id):DATA.mcq.slice(...QR[ONE])}
 if(ONE>=0){UIS.ar.quizIntro="أسئلة سريعة من هذا الدرس. احصل على ٣ نجوم!";UIS.en.quizIntro="Quick questions from this lesson. Get 3 stars!"}
 if(HY){UI={...UIS.ar};const strip=s=>s.replace(/^[^\p{L}\p{N}]+\s/u,"");
  for(const k of ["home","learn","map","games","school","cards","quiz","parent","show","got","again","next","start","playAgain","correct","wrong","findLine","mapExplore","mapHunt","mapRegions","examWords","onlyMissed","all","reset","score","won","flipHint","tapLine","tapPlace","huntQ","regionQ"])UI[k]=`<bdi>${UIS.ar[k]}</bdi> · <bdi dir="ltr">${strip(UIS.en[k])}</bdi>`;
@@ -542,9 +542,10 @@ const enx=(x,pre="")=>{if(!HY||x==null)return"";const v=typeof x==="string"?x:x.
 const eno=x=>HY&&x&&x.en?` <small class="eno" dir="ltr">· ${esc(x.en)}</small>`:"";
 const ARR=LANG==="ar"?"⬅":"➜";
 const exHTML=s=>LANG==="ar"?`<b>${esc(s)}</b>`:`<span class="ar" lang="ar">${esc(s)}</span>`;
+if(DATA.meta){const M=DATA.meta;UI.hello=HY?M.hello.ar+"<br><small>"+M.hello.en+"</small>":t(M.hello);UI.helloSub=HY?M.helloSub.ar+`<div class="en">🇬🇧 ${M.helloSub.en} Every blue box explains the Arabic in simple English – tap 🔊 to hear it.</div>`:t(M.helloSub);UI.sheet=HY?"أسئلة المدرسة والكتاب · School & book questions":LANG==="ar"?"أسئلة المدرسة والكتاب":"School & book questions"}
 
 // ---------- state ----------
-const KEY="ss-unit1-"+LANG+(HY?"-hy-"+MODE:"")+(ONE>=0?"-"+ONE:"");
+const KEY=(DATA.meta&&DATA.meta.key?DATA.meta.key+"-":"ss-unit1-")+LANG+(HY?"-hy-"+MODE:"")+(ONE>=0?"-"+ONE:"");
 let S={stars:0,seen:{},school:{},best:0,snd:true};
 try{Object.assign(S,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){};$("#starPill").textContent="⭐ "+S.stars};
@@ -560,7 +561,7 @@ document.addEventListener("click",e=>{const b=e.target.closest(".say2");if(!b)re
 $("#sndBtn").onclick=()=>{S.snd=!S.snd;save();$("#sndBtn").classList.toggle("off",!S.snd)};$("#sndBtn").classList.toggle("off",!S.snd);
 
 // ---------- nav ----------
-const TABS=MODE==="one"?["exp","cw","wk","quiz"]:MODE==="lessons"?["home","l1","l2","l3","map","quiz","parent"]:["home","learn","map","games","school","cards","quiz","parent"];
+const TABS=MODE==="one"?["exp","cw","wk","quiz"]:MODE==="lessons"?["home",...DATA.lessons.map(l=>l.id),"map","quiz","parent"]:["home","learn","map","games","school","cards","quiz","parent"];
 if(MODE==="one"){const b=(a,e)=>HY?`<bdi>${a}</bdi> · <bdi dir="ltr">${e}</bdi>`:LANG==="ar"?a:e;UI.exp="📖 "+b("الشرح","Explanation");UI.cw="📝 "+b("الأداء الصفي والواجب","Classwork & homework");UI.wk="🏁 "+b("التقييم – ٣ نماذج","Weekly test – 3 models");UI.quiz="🏆 "+b("اختبر نفسك","Quick quiz")}
 if(MODE==="lessons")DATA.lessons.forEach((L,i)=>{UI[L.id]=L.icon+" "+t(L.title).split(":")[0]+(HY?" · Lesson "+(i+1):"")});
 let cur="home";
@@ -575,7 +576,7 @@ function pct(kind){if(/^l\d$/.test(kind)){const L=DATA.lessons.find(l=>l.id===ki
 // ---------- views ----------
 const VIEWS={};
 VIEWS.home=m=>{
- const ms=MODE==="lessons"?[["l1","🌍"],["l2","🏜️"],["l3","⛅"],["map","🗺️"],["quiz","🏆"]]:[["learn","📖"],["map","🗺️"],["games","🎮"],["school","📝"],["cards","🃏"],["quiz","🏆"]];
+ const ms=MODE==="lessons"?[...DATA.lessons.map(l=>[l.id,l.icon]),["map","🗺️"],["quiz","🏆"]]:[["learn","📖"],["map","🗺️"],["games","🎮"],["school","📝"],["cards","🃏"],["quiz","🏆"]];
  m.innerHTML=`<div class="card" style="background:linear-gradient(135deg,#fef3c7,#fde68a)"><div class="kid">🎒 ${UI.hello}</div><p>${UI.helloSub}</p></div>
  <div class="grid">${ms.map(([k,e])=>{const p=pct(k);return `<div class="card mission" data-go="${k}"><div class="big">${e}</div><h3>${UI[k].replace(/^\S+\s/,"")}</h3>${MODE==="lessons"&&/^l\d$/.test(k)?`<div class="muted">${t(DATA.lessons[+k[1]-1].title).split(":")[1]||""}</div>`:""}${p==null?"":`<div class="bar"><i style="width:${Math.round(p*100)}%"></i></div><small class="muted">${Math.round(p*100)}%</small>`}</div>`}).join("")}</div>
  <div class="card"><h3>📚 ${DATA.lessons.map(l=>`${l.icon} ${t(l.title)}`).join("<br>📚 ")}</h3></div>
@@ -606,9 +607,8 @@ function renderLesson(m,L){
   c.onclick=e=>{if(e.target.closest(".say2"))return;if(!S.seen[k]){S.seen[k]=1;star();beep(true);c.querySelector("h3 span").insertAdjacentText("afterbegin","✅ ")}};
  });
  const w=m.querySelector("#widgets");
- if(L.id==="l1"){w.append(globeWidget());w.append(timeWidget())}
- if(L.id==="l2"){const d=document.createElement("div");d.className="card widget";d.innerHTML=`<h3>${UI.mapRegions}</h3>`;d.append(mapWidget("regions"));w.append(d)}
- if(L.id==="l3"){w.append(seasonWidget());const d=document.createElement("div");d.className="card widget";d.innerHTML=`<h3>${UI.climate}</h3>`;d.append(mapWidget("climate"));w.append(d)}
+ const WG=DATA.widgets||{l1:["globe","time"],l2:["egyptRegions"],l3:["seasons","egyptClimate"]};
+ (WG[L.id]||[]).forEach(n=>w.append(widget(n)));
 };
 
 // ---------- globe ----------
@@ -694,6 +694,37 @@ function seasonWidget(){
  return d;
 }
 
+// ---------- widget factory ----------
+function cardWith(title,el){const d=document.createElement("div");d.className="card widget";d.innerHTML=`<h3>${title}</h3>`;d.append(el);return d}
+function widget(n){
+ if(n==="globe")return globeWidget(); if(n==="time")return timeWidget(); if(n==="seasons")return seasonWidget();
+ if(n==="egyptRegions")return cardWith(UI.mapRegions,mapWidget("regions"));
+ if(n==="egyptClimate")return cardWith(UI.climate,mapWidget("climate"));
+ if(n.startsWith("img:"))return imgCard(n.slice(4));
+ if(n.startsWith("hunt:"))return huntCard(n.slice(5));
+ return document.createElement("div")}
+function imgCard(k){const I=DATA.images[k],d=document.createElement("div");d.className="card widget";
+ d.innerHTML=`<h3>🗺️ ${esc(t(I.cap))}</h3>${enx(I.cap)}<img src="${I.src}" alt="${esc(t(I.cap))}" style="width:100%;border-radius:10px;cursor:zoom-in;margin-top:8px"><div class="muted" style="font-size:.8rem">${HY?"اضغط على الخريطة لتكبيرها · Tap the map to zoom":LANG==="ar"?"اضغط على الخريطة لتكبيرها":"Tap the map to zoom"}</div>`;
+ const im=d.querySelector("img");im.onclick=()=>{const z=im.style.width==="200%";im.style.width=z?"100%":"200%";im.parentElement.style.overflowX=z?"":"auto"};return d}
+function huntCard(k){const H=DATA.hunts[k],I=DATA.images[H.img],d=document.createElement("div");d.className="card widget";
+ let pool,round,score,tgt,tries;
+ const start=()=>{pool=shuffle(H.spots).slice(0,Math.min(10,H.spots.length));round=0;score=0;
+  d.innerHTML=`<h3>${t(H.title)}${eno(H.title)}</h3><div class="row"><b class="hq"></b><span class="pill" style="background:#fde68a">🎯 <span class="hs">0</span>/${pool.length}</span></div>
+  <div style="position:relative;margin-top:8px"><img src="${I.src}" alt="" style="width:100%;display:block;border-radius:10px">${H.spots.map(p=>`<button class="spot" data-s="${p.id}" style="position:absolute;left:${p.x}%;top:${p.y}%;transform:translate(-50%,-50%);width:26px;height:26px;border-radius:50%;border:3px solid #111;background:#fff;cursor:pointer;padding:0"></button>`).join("")}</div><div class="info hi"></div>`;ask()};
+ const ask=()=>{if(round>=pool.length){d.querySelector(".hq").innerHTML=UI.won;d.querySelector(".hi").innerHTML=`<div class="result">${UI.score}: ${score}/${pool.length}</div><button class="btn again">${UI.playAgain}</button>`;d.querySelector(".again").onclick=start;if(score>=pool.length*.8)confetti();return}
+  tgt=pool[round];tries=0;d.querySelector(".hq").innerHTML=`${UI.huntQ} ${esc(t(tgt.n))}${eno(tgt.n)}`;say(t(tgt.n))};
+ d.addEventListener("click",e=>{const b=e.target.closest(".spot");if(!b||round>=pool.length)return;
+  if(b.dataset.s===tgt.id){if(tries===0){score++;star()}beep(true);b.style.background="#22c55e";d.querySelector(".hs").textContent=score;d.querySelector(".hi").innerHTML=`✔ <b>${esc(t(tgt.n))}</b>${eno(tgt.n)}`;round++;setTimeout(()=>{b.style.background="#fff";ask()},1000)}
+  else{tries++;beep(false);const nm=H.spots.find(p=>p.id===b.dataset.s);d.querySelector(".hi").innerHTML=`✘ ${esc(t(nm.n))}${eno(nm.n)}`;if(tries>=2){const c=d.querySelector(`[data-s="${tgt.id}"]`);c.style.background="#facc15";c.classList.add("flash")}}});
+ start();return d}
+function sortGame(box){const G=DATA.sort,items=shuffle(G.items).slice(0,12);let i=0,score=0;
+ const show=()=>{if(i>=items.length){box.innerHTML=`<div class="card result">${UI.score}: ${score}/${items.length} ${score>=11?"⭐⭐⭐":score>=8?"⭐⭐":"⭐"}<br><button class="btn" id="sa">${UI.playAgain}</button></div>`;if(score>=10)confetti();box.querySelector("#sa").onclick=()=>sortGame(box);return}
+  const it=items[i];box.innerHTML=`<div class="card"><h3>${t(G.title)}${eno(G.title)}</h3><b>${i+1}/${items.length}</b><p class="q" style="font-size:1.6rem;text-align:center">${esc(LANG==="en"?it[1]:it[0])}${HY?` <small class="eno" dir="ltr">· ${esc(it[1])}</small>`:""}</p>
+  <div class="row" style="justify-content:center">${G.bins.map((b,k)=>`<button class="btn ${k?"green":"blue"}" data-b="${k}">${esc(t(b))}${eno(b)}</button>`).join("")}</div><div class="info" id="si"></div></div>`;
+  box.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{const ok=+b.dataset.b===it[2];if(ok){score++;star()}beep(ok);box.querySelectorAll("[data-b]").forEach(x=>x.disabled=true);
+   box.querySelector("#si").innerHTML=`${ok?"✔ "+UI.correct:"✘ "+UI.right+" <b>"+esc(t(G.bins[it[2]]))+"</b>"}<br><button class="btn" id="sn">${UI.next}</button>`;box.querySelector("#sn").onclick=()=>{i++;show()}})};
+ show()}
+
 // ---------- Egypt map ----------
 const P=(lo,la)=>[((lo-24.4)*50).toFixed(1),((31.95-la)*50).toFixed(1)];
 const pts=a=>a.map(([lo,la])=>P(lo,la).join(",")).join(" ");
@@ -735,6 +766,7 @@ function mapWidget(mode){
  return d;
 }
 VIEWS.map=m=>{
+ if(DATA.images){m.innerHTML="";Object.keys(DATA.hunts||{}).forEach(k=>m.append(huntCard(k)));Object.keys(DATA.images).filter(k=>k!=="blank").forEach(k=>m.append(imgCard(k)));return}
  m.innerHTML=`<div class="tabs2"><button class="btn on" data-m="explore">${UI.mapExplore}</button><button class="btn" data-m="hunt">${UI.mapHunt}</button><button class="btn" data-m="rhunt">${UI.mapRegions}</button></div><div class="card widget" id="mapBox"></div>`;
  const box=$("#mapBox");
  const set=mode=>{m.querySelectorAll("[data-m]").forEach(b=>b.classList.toggle("on",b.dataset.m===mode));box.innerHTML="";
@@ -755,8 +787,8 @@ VIEWS.map=m=>{
 
 // ---------- games ----------
 VIEWS.games=m=>{
- m.innerHTML=`<div class="tabs2"><button class="btn on" data-g="match">${UI.matchTitle}</button><button class="btn" data-g="tf">${UI.tfTitle}</button><button class="btn" data-g="time">${UI.timeTitle}</button></div><div id="gBox"></div>`;
- const set=g=>{m.querySelectorAll("[data-g]").forEach(b=>b.classList.toggle("on",b.dataset.g===g));const box=$("#gBox");box.innerHTML="";({match:matchGame,tf:tfGame,time:timeGame})[g](box)};
+ m.innerHTML=`<div class="tabs2"><button class="btn on" data-g="match">${UI.matchTitle}</button><button class="btn" data-g="tf">${UI.tfTitle}</button>${DATA.sort?`<button class="btn" data-g="sort">${t(DATA.sort.title)}</button>`:`<button class="btn" data-g="time">${UI.timeTitle}</button>`}</div><div id="gBox"></div>`;
+ const set=g=>{m.querySelectorAll("[data-g]").forEach(b=>b.classList.toggle("on",b.dataset.g===g));const box=$("#gBox");box.innerHTML="";({match:matchGame,tf:tfGame,time:timeGame,sort:sortGame})[g](box)};
  m.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>set(b.dataset.g));set("match");
 };
 function matchGame(box){
@@ -807,7 +839,7 @@ function bindSQ(m){m.querySelectorAll(".sq").forEach(el=>{const k=el.dataset.k,[
   el.querySelectorAll(".mk").forEach(b=>b.onclick=()=>{const was=S.school[k];S.school[k]=b.dataset.v;if(b.dataset.v==="ok"&&was!=="ok"){star();beep(true)}else if(b.dataset.v==="no")beep(false);save();
    const mark=el.querySelector(".q .done-ok,.q .done-no");if(mark)mark.remove();el.querySelector(".q").insertAdjacentHTML("afterbegin",b.dataset.v==="ok"?'<span class="done-ok">✔ </span>':'<span class="done-no">↻ </span>');
    if(b.dataset.v==="ok"&&allSchool.every(x=>S.school[x]==="ok")){confetti();toast(UI.won)}})})}
-const srcTag=sh=>sh.src==="book"?` <span class="srcbook">📕 ${HY?"من تدريبات الكتاب · from the book's exercises":LANG==="ar"?"من تدريبات الكتاب":"from the book's exercises"}</span>`:"";
+const srcTag=sh=>sh.src==="authored"?` <span class="srcbook">✍️ ${HY?"الإجابات من كتابتنا · answers written by us":LANG==="ar"?"الإجابات من كتابتنا":"answers written by us"}</span>`:sh.src==="book"?` <span class="srcbook">📕 ${HY?"من تدريبات الكتاب · from the book's exercises":LANG==="ar"?"من تدريبات الكتاب":"from the book's exercises"}</span>`:"";
 VIEWS.school=m=>{
  const ok=allSchool.filter(k=>S.school[k]==="ok").length;
  m.innerHTML=`<div class="card"><h2>📝 ${UI.sheet}</h2><p>${LANG==="ar"?"اقرأ السؤال، فكّر وقل الإجابة بصوت عالٍ، ثم اضغط «أظهر الإجابة».":"Read the question, say your answer out loud, then tap “Show answer”. The Arabic answer is what you write in the test."}</p>${enx("Read the question, say your answer out loud, then tap Show answer. Write the Arabic answer in the test.")}
@@ -821,14 +853,14 @@ function lessonView(i){return m=>{const L=DATA.lessons[i];
  m.innerHTML=`<div class="phase">📖 ${HY?"الشرح · Explanation":LANG==="ar"?"الشرح":"Explanation"}</div><div id="lx"></div>
  <div class="phase">📝 ${HY?"الأداء الصفي والواجب · Classwork & homework":LANG==="ar"?"الأداء الصفي والواجب":"Classwork & homework"}</div><div id="cw"></div>
  <div class="phase">🏁 ${HY?"التقييم الأسبوعي – ٣ نماذج · Weekly test – 3 models":LANG==="ar"?"التقييم الأسبوعي – ٣ نماذج":"Weekly test – 3 models"}</div><div id="wk"></div>
- <div class="card" style="text-align:center">${i<2?`<button class="btn" id="nx">${HY?"الدرس التالي · Next lesson":"➜"}</button>`:`<button class="btn" id="nx">🏆 ${UI.quiz}</button>`}</div>`;
+ <div class="card" style="text-align:center">${i<DATA.lessons.length-1?`<button class="btn" id="nx">${HY?"الدرس التالي · Next lesson":"➜"}</button>`:`<button class="btn" id="nx">🏆 ${UI.quiz}</button>`}</div>`;
  renderLesson(m.querySelector("#lx"),L);
  const cw=m.querySelector("#cw"),wk=m.querySelector("#wk");
  DATA.school.forEach((sh,si)=>{if(sh.lesson!==L.id)return;const hasM=sh.qs.some(q=>q.m);
   if(!hasM){cw.insertAdjacentHTML("beforeend",`<details class="card sheet" open><summary>${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</summary>${sh.qs.map((q,qi)=>sqHTML(si,qi)).join("")}</details>`);return}
   const groups={};sh.qs.forEach((q,qi)=>{(groups[q.m]=groups[q.m]||[]).push(qi)});
   wk.insertAdjacentHTML("beforeend",`<h3 style="margin-top:14px">${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</h3><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(290px,1fr))">${Object.entries(groups).map(([mm,qis])=>`<div class="card model"><h3>🧾 ${HY?"نموذج "+mm.split("/")[0].trim()+" · Model "+mm.split("/")[1].trim():LANG==="ar"?"نموذج "+mm.split("/")[0]:"Model "+mm.split("/")[1]}</h3>${qis.map(qi=>sqHTML(si,qi)).join("")}</div>`).join("")}</div>`)});
- bindSQ(m);m.querySelector("#nx").onclick=()=>go(i<2?"l"+(i+2):"quiz");
+ bindSQ(m);m.querySelector("#nx").onclick=()=>go(i<DATA.lessons.length-1?DATA.lessons[i+1].id:"quiz");
 }}
 if(MODE==="lessons")DATA.lessons.forEach((L,i)=>VIEWS[L.id]=lessonView(i));
 if(MODE==="one"){const L=DATA.lessons[ONE];
@@ -869,6 +901,10 @@ function runQuiz(m){
 
 // ---------- parents ----------
 VIEWS.parent=m=>{
+ if(DATA.meta&&DATA.meta.parentIntro){const M=DATA.meta,L2=(a,e)=>HY?a+" · "+e:LANG==="ar"?a:e;
+  m.innerHTML=`<div class="card"><h2>👪 ${L2("المنهج والمصادر","Scope and sources")}</h2><p>${esc(t(M.parentIntro))}</p>${enx(M.parentIntro)}<p><b>${esc(t(M.verdict))}</b></p>${enx(M.verdict)}
+  <table><tr><th>${L2("الموضوع","Topic")}</th><th>${L2("المصدر","Source")}</th></tr>${DATA.coverage.map(c=>`<tr><td>${esc(t(c.t))}${eno(c.t)}</td><td>${c.key?"✅ "+L2("من المدرسة / المعلم","school / teacher"):"📕 "+L2("كتبناه من الكتاب","written by us from the book")}</td></tr>`).join("")}</table></div>
+  <div class="card"><h3>⚠️ ${L2("ملاحظات","Notes")}</h3><ul>${M.notes.map(n=>`<li>${esc(t(n))}${enx(n)}</li>`).join("")}</ul></div>`;return}
  m.innerHTML=`<div class="card"><h2>👪 ${UI.cover}</h2>
  <p>${LANG==="ar"?"قائمة المدرسة لامتحان أكتوبر (الدراسات الاجتماعية): «من الأول حتى مناخ مصر» = الوحدة الأولى، الدروس ١–٣ (كتاب الوزارة ص ٨–٢٩). موعد الامتحان: الخميس ٢٢/١٠/٢٠٢٦ (الحصة الثانية).":"School's October list for Social Studies: “from the first lesson up to Egypt's climate” = Unit 1, Lessons 1–3 (Ministry book pp. 8–29). Test: Thursday 22/10/2026, 2nd lesson."}</p>
  <p><b>${LANG==="ar"?"النتيجة: نعم، ورقة الإجابة تغطي الدروس الثلاثة كلها (أداء صفي + واجب + تقييمات أسبوعية أ/ب/ج). لكن الكتاب فيه بعض النقاط غير الموجودة في الورقة، وأضفناها في الصفحة:":"Verdict: yes, the answer sheet covers all three lessons (classwork, homework and weekly tests A/B/C). The book has a few points the sheet never asks, and this page adds them:"}</b></p>
