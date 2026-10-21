@@ -64,3 +64,11 @@ Each chapter has an Explanation tab (translated lessons, activities, Arabic key 
 - **Jimmy (Grade 5A):** [Ch 4 Conditions for Growth](packs/gamal/science/arabic-book-term1/chapter-4-conditions-for-growth.html) · [Ch 5 From Flower to Fruit](packs/gamal/science/arabic-book-term1/chapter-5-from-flower-to-fruit.html) · [Ch 6 Human Growth](packs/gamal/science/arabic-book-term1/chapter-6-human-growth-and-reproduction.html) · [Ch 7 Animal Growth](packs/gamal/science/arabic-book-term1/chapter-7-animal-growth-and-reproduction.html) · [Ch 8 Weather Changes](packs/gamal/science/arabic-book-term1/chapter-8-weather-changes.html) · [Ch 9 Water Cycle](packs/gamal/science/arabic-book-term1/chapter-9-water-cycle.html) · [Revision Ch 4–9](packs/gamal/science/arabic-book-term1/revision-chapters-4-9.html)
 
 Same format as Chapters 1–3; together they cover the whole Term 1 Science book. Answers are authored; see the [provenance](docs/provenance/science-arabic-book-chapters-4-9-2026-10-21.md).
+
+## Social Studies · Unit 1 October test (Arabic + English) · 21 October 2026
+
+- **Jimmy (Grade 5A):** [Lesson 1: Egypt's astronomical location](packs/gamal/social-studies/unit1-lesson1-astronomical-location-hybrid.html) · [Lesson 2: Egypt's landforms](packs/gamal/social-studies/unit1-lesson2-landforms-hybrid.html) · [Lesson 3: Egypt's climate](packs/gamal/social-studies/unit1-lesson3-climate-hybrid.html) · [Test revision, Lessons 1–3](packs/gamal/social-studies/october-test-unit1-hybrid.html) · [Test revision](packs/gamal/social-studies/october-test-unit1-english.html) · [Test revision](packs/gamal/social-studies/october-test-unit1-arabic.html) · [All 3 lessons on one page](packs/gamal/social-studies/unit1-lessons-hybrid.html)
+- **Read-aloud:** every Grade 5 page has a tap-to-read bar that reads both Arabic and English; reuse it with `python3 -I tools/readaloud/add-readaloud.py page.html`.
+- **iPad/phone:** all pages are bundled behind one private link, https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY
+
+See the [provenance](docs/provenance/gamal/social-studies/october-test-unit1-2026-10-21.md).

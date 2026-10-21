@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 3 – Egypt's Climate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8ec;--card:#fff;--ink:#1f2937;--muted:#6b7280;--line:#f1e3c8;--accent:#f59e0b;--good:#16a34a;--bad:#dc2626;--blue:#2563eb;--sea:#bfe3ff;--sand:#f5d79a;--soft:#fef3c7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Nunito,Cairo,system-ui,sans-serif;font-size:17px;line-height:1.6}
+html[lang=ar] body{font-family:Cairo,system-ui,sans-serif}
+.ar{font-family:Cairo,system-ui,sans-serif;direction:rtl;unicode-bidi:isolate}
+header{background:linear-gradient(135deg,#f59e0b,#ef4444 55%,#8b5cf6);color:#fff;padding:14px 16px 10px;position:sticky;top:0;z-index:20;box-shadow:0 4px 14px #0002}
+.hrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;max-width:1000px;margin:auto}
+h1{font-size:1.25rem;margin:0;flex:1;min-width:200px;line-height:1.3}
+.pill{background:#fff3;border-radius:999px;padding:4px 12px;font-weight:800;white-space:nowrap}
+.ibtn{background:#fff3;border:0;color:#fff;border-radius:10px;padding:6px 10px;font-size:1rem;cursor:pointer}
+.ibtn.off{opacity:.45}
+nav{display:flex;gap:6px;overflow-x:auto;max-width:1000px;margin:10px auto 0;padding-bottom:2px;scrollbar-width:none}
+nav button{border:0;background:#fff3;color:#fff;font:inherit;font-weight:800;padding:8px 12px;border-radius:12px 12px 0 0;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--bg);color:#b45309}
+main{max-width:1000px;margin:auto;padding:16px}
+.card{background:var(--card);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 3px 0 var(--line),0 6px 18px #0000000d;border:2px solid var(--line)}
+h2{margin:.2em 0 .4em;font-size:1.35rem}
+h3{margin:.2em 0;font-size:1.1rem}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.mission{cursor:pointer;text-align:center;transition:transform .15s}
+.mission:hover{transform:translateY(-3px) rotate(-1deg)}
+.mission .big{font-size:2.6rem}
+.bar{height:10px;background:#eee;border-radius:9px;overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,#22c55e,#84cc16);width:0;transition:width .4s}
+.btn{border:0;font:inherit;font-weight:800;border-radius:12px;padding:9px 16px;cursor:pointer;background:var(--accent);color:#fff;box-shadow:0 3px 0 #b45309;margin:4px}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 #b45309}
+.btn.ghost{background:#fff;color:#92400e;border:2px solid #fcd34d;box-shadow:none}
+.btn.blue{background:var(--blue);box-shadow:0 3px 0 #1e40af}
+.btn.green{background:var(--good);box-shadow:0 3px 0 #166534}
+.btn.red{background:var(--bad);box-shadow:0 3px 0 #991b1b}
+.tabs2{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.tabs2 .btn{background:#fff;color:#374151;border:2px solid var(--line);box-shadow:none}
+.tabs2 .btn.on{background:#fde68a;border-color:#f59e0b}
+.fact{border-inline-start:6px solid var(--c,#f59e0b);background:#fffdf7}
+.fact h3{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.say{border:0;background:#fef3c7;border-radius:50%;width:34px;height:34px;cursor:pointer;flex:none}
+.exam{background:#ecfdf5;border:2px dashed #34d399;border-radius:12px;padding:8px 12px;margin-top:8px;font-size:.98rem}
+.exam b{color:#047857}
+.bookonly{display:inline-block;background:#ede9fe;color:#6d28d9;border-radius:8px;padding:0 8px;font-size:.8rem;font-weight:800}
+.widget{background:#f0f9ff;border:2px solid #bae6fd}
+svg{max-width:100%;height:auto;display:block;margin:auto;direction:ltr}
+.info{min-height:70px;background:#fff;border-radius:12px;padding:10px 14px;border:2px solid #e5e7eb;margin-top:10px}
+.q{font-weight:800;font-size:1.08rem}
+.opts{display:grid;gap:8px;margin-top:10px}
+.opt{text-align:start;border:2px solid #e5e7eb;background:#fff;border-radius:12px;padding:10px 14px;font:inherit;cursor:pointer}
+.opt:hover{border-color:#f59e0b}
+.opt.ok{background:#dcfce7;border-color:#16a34a}
+.opt.no{background:#fee2e2;border-color:#dc2626}
+.ans{display:none;background:#ecfdf5;border-radius:12px;padding:10px 14px;margin-top:8px;white-space:pre-line}
+.ans.show{display:block;animation:pop .25s}
+.note{background:#fff7ed;border:2px solid #fdba74;border-radius:10px;padding:6px 10px;font-size:.9rem;margin-top:6px}
+.sq{border-bottom:2px dashed var(--line);padding:12px 0}
+.sq:last-child{border:0}
+.tag{display:inline-block;background:#e0e7ff;color:#3730a3;border-radius:8px;padding:0 8px;font-size:.8rem;font-weight:800;margin-inline-end:6px}
+.done-ok{color:var(--good);font-weight:900}
+.done-no{color:var(--bad);font-weight:900}
+details.sheet{margin:10px 0}
+details.sheet summary{cursor:pointer;font-weight:800;font-size:1.05rem;padding:6px 0}
+.pairs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{border:2px solid #e5e7eb;border-radius:12px;padding:10px;background:#fff;cursor:pointer;font:inherit;min-height:56px}
+.tile.sel{border-color:#2563eb;background:#dbeafe}
+.tile.gone{visibility:hidden}
+.tile.wrong{animation:shake .3s;border-color:#dc2626}
+.flip{perspective:900px;cursor:pointer;height:170px}
+.flip .in{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .fa,.flip .fb{position:absolute;inset:0;backface-visibility:hidden;border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;font-weight:800}
+.flip .fa{background:linear-gradient(135deg,#fde68a,#fca5a5)}
+.flip .fb{background:#ecfdf5;transform:rotateY(180deg);font-weight:600;font-size:.95rem}
+.big-emoji{font-size:3rem;text-align:center}
+.result{text-align:center;font-size:1.3rem;font-weight:900}
+.stars{font-size:2.2rem;letter-spacing:4px}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #e5e7eb;padding:8px;text-align:start;vertical-align:top}
+th{background:#fef3c7}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) scale(.8);background:#111827;color:#fff;padding:10px 18px;border-radius:999px;font-weight:800;opacity:0;transition:.25s;z-index:50;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) scale(1)}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:40}
+.clocks{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;text-align:center}
+input[type=range]{width:100%}
+.timer{height:8px;background:#e5e7eb;border-radius:9px;overflow:hidden}
+.timer i{display:block;height:100%;background:#f97316}
+.mapwrap{position:relative}
+.place{cursor:pointer}
+.place:hover circle{r:9}
+.region{cursor:pointer;transition:filter .15s}
+.region:hover{filter:brightness(1.08) saturate(1.2)}
+.flash{animation:flash .8s 2}
+@keyframes pop{from{transform:scale(.95);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@keyframes flash{50%{opacity:.25}}
+.hide{display:none}
+.en{direction:ltr;text-align:left;background:#eaf3ff;border-inline-start:4px solid #3b82f6;border-radius:10px;padding:6px 10px;margin-top:6px;font-family:Nunito,system-ui,sans-serif;font-size:.95rem;color:#1e3a8a;line-height:1.5}
+.en .say2{border:0;background:#dbeafe;border-radius:50%;width:28px;height:28px;cursor:pointer;margin-right:4px}
+.eno{font-family:Nunito,system-ui,sans-serif;color:#1d4ed8;font-weight:600}
+.phase{background:linear-gradient(90deg,#fde68a,#fff);border-radius:14px;padding:10px 16px;margin:22px 0 6px;font-size:1.25rem;font-weight:900}
+.model{border:3px solid #c7d2fe}
+.model>h3{background:#e0e7ff;margin:-16px -16px 10px;padding:10px 16px;border-radius:15px 15px 0 0}
+.srcbook{background:#ede9fe;color:#5b21b6;border-radius:8px;padding:2px 8px;font-size:.8rem;font-weight:800}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.muted{color:var(--muted)}
+.kid{font-size:1.4rem}
+@media (max-width:600px){body{font-size:16px}.pairs{gap:6px}.tile{padding:8px;font-size:.9rem}h1{font-size:1.05rem}}
+@media print{header,nav,.btn,.say{display:none!important}.ans{display:block!important}.card{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<header>
+ <div class="hrow">
+  <h1>⛅ الدرس الثالث: مناخ مصر<br><small>Lesson 3: Egypt's climate – Arabic + English</small></h1>
+  <span class="pill" id="starPill">⭐ 0</span>
+  <button class="ibtn" id="sndBtn" title="sound">🔊</button>
+ </div>
+ <nav id="nav"></nav>
+</header>
+<main id="main"></main>
+<canvas id="confetti"></canvas>
+<div class="toast" id="toast"></div>
+<script>
+const LANG="ar",HY=true,MODE="one",ONE=2;
+
+// Bilingual content: {ar, en}. "ex" = the Arabic words to write in the exam.
+const DATA = {
+lessons: [
+ {id:"l1", icon:"🌍", color:"#2563eb",
+  title:{ar:"الدرس الأول: موقع مصر الفلكي", en:"Lesson 1: Egypt's Astronomical Location"},
+  pages:{ar:"الكتاب ص ٨–١٣", en:"Book pages 8–13"},
+  facts:[
+   {h:{ar:"شبكة الإحداثيات", en:"The coordinate grid"},
+    t:{ar:"شبكة الإحداثيات هي خطوط الطول ودوائر العرض.", en:"The coordinate grid = lines of longitude + circles of latitude."},
+    ex:"شبكة الإحداثيات: خطوط الطول ودوائر العرض"},
+   {h:{ar:"خطوط الطول", en:"Lines of longitude"},
+    t:{ar:"أنصاف دوائر رأسية تصل بين القطبين الشمالي والجنوبي. عددها ٣٦٠ خطًّا. الخط الرئيسي: خط جرينتش (صفر). أهميتها: تحديد المواقع شرقًا وغربًا ومعرفة فرق التوقيت.", en:"Vertical HALF-circles joining the North and South Poles. There are 360 of them. The main one is Greenwich (0°). Use: finding places east/west and working out the time difference."},
+    ex:"أنصاف دوائر رأسية تصل بين القطب الشمالي والقطب الجنوبي – ٣٦٠ خط – خط جرينتش – تفيد في تحديد المواقع وفرق التوقيت"},
+   {h:{ar:"دوائر العرض", en:"Circles of latitude"},
+    t:{ar:"دوائر أفقية غير متساوية الطول تُرسم حول الكرة الأرضية. عددها ١٨٠ دائرة. الدائرة الرئيسية: دائرة الاستواء (صفر). أهميتها: تحديد المواقع شمالًا وجنوبًا ودراسة المناخ.", en:"Horizontal circles of DIFFERENT lengths drawn around the globe. There are 180 of them. The main one is the Equator (0°). Use: finding places north/south and studying climate."},
+    ex:"دوائر أفقية غير متساوية الطول تُرسم حول الكرة الأرضية – ١٨٠ دائرة – دائرة الاستواء – تفيد في تحديد المواقع ومعرفة المناخ"},
+   {h:{ar:"وجه الشبه", en:"How they are alike"},
+    t:{ar:"كلاهما خطوط وهمية رسمها العلماء على الخرائط والمجسمات لتحديد موقع الأماكن بدقة.", en:"Both are IMAGINARY lines that scientists drew on maps and globes to find places exactly."},
+    ex:"كلاهما خطوط وهمية تساعد في تحديد المواقع"},
+   {h:{ar:"دوران الأرض", en:"Earth spinning"},
+    t:{ar:"تدور الأرض حول نفسها مرة كل ٢٤ ساعة من الغرب إلى الشرق، فتشرق الشمس على المناطق الشرقية قبل الغربية. لو توقفت لن يحدث تعاقب الليل والنهار.", en:"Earth spins on itself once every 24 hours from WEST to EAST, so the Sun rises first on eastern places. If it stopped, day and night would not take turns."},
+    ex:"تدور الأرض حول نفسها مرة كل ٢٤ ساعة من الغرب إلى الشرق"},
+   {h:{ar:"فرق التوقيت", en:"Time difference"},
+    t:{ar:"الفرق بين كل خط طول والذي يليه ٤ دقائق، وكل ١٥° = ساعة واحدة. المدن شرق جرينتش تسبقها في التوقيت. القاهرة على خط ٣٠° شرقًا، فهي تسبق لندن بساعتين.", en:"Each line of longitude is 4 minutes from the next, so 15° = 1 hour. Cities EAST of Greenwich are AHEAD in time. Cairo is on 30°E, so Cairo is 2 hours ahead of London."},
+    ex:"الفرق الزمني بين كل خط طول والذي يليه ٤ دقائق – كل ١٥° = ساعة",
+    book:true},
+   {h:{ar:"دوائر العرض الرئيسية", en:"The main circles of latitude"},
+    t:{ar:"دائرة الاستواء (صفر) تقسم الأرض لنصفين شمالي وجنوبي متساويين – مدار السرطان ٢٣٫٥° شمالًا – مدار الجدي ٢٣٫٥° جنوبًا – الدائرة القطبية الشمالية ٦٦٫٥° شمالًا – الدائرة القطبية الجنوبية ٦٦٫٥° جنوبًا. أكبرها دائرة الاستواء.", en:"Equator 0° (cuts Earth into equal north and south halves, and it is the BIGGEST) – Tropic of Cancer 23.5°N – Tropic of Capricorn 23.5°S – Arctic Circle 66.5°N – Antarctic Circle 66.5°S."},
+    ex:"دائرة الاستواء – مدار السرطان – مدار الجدي – الدائرة القطبية الشمالية – الدائرة القطبية الجنوبية"},
+   {h:{ar:"موقع مصر الفلكي", en:"Egypt's astronomical location"},
+    t:{ar:"الموقع الفلكي: الموقع بالنسبة لخطوط الطول ودوائر العرض. تقع مصر بين دائرتي عرض ٢٢° و٣١° ٣٦َ شمالًا، وبين خطي طول ٢٥° و٣٧° شرق جرينتش. يمر مدار السرطان بجنوب مصر. مصر في النصف الشمالي والشرقي للكرة الأرضية.", en:"Astronomical location = location using longitude and latitude. Egypt lies between latitudes 22° and 31°36′ NORTH, and longitudes 25° and 37° EAST of Greenwich. The Tropic of Cancer passes through SOUTH Egypt. Egypt is in the northern and eastern halves of the Earth."},
+    ex:"الموقع الفلكي: الموقع بالنسبة لخطوط الطول ودوائر العرض"},
+   {h:{ar:"المصريون القدماء والفلك", en:"Ancient Egyptians and astronomy"},
+    t:{ar:"اهتم المصريون القدماء بعلم الفلك واستخدموه في تحديد المواقع وتوقيت الزراعة وتنظيم الأعياد الدينية وبناء الأهرامات.", en:"Ancient Egyptians cared about astronomy. They used it to find places, time farming, organise religious festivals and build the pyramids."},
+    ex:"استخدموا علم الفلك في تحديد المواقع ومواقيت الزراعة وتنظيم الأعياد الدينية وبناء الأهرامات"}
+  ]},
+ {id:"l2", icon:"🏜️", color:"#d97706",
+  title:{ar:"الدرس الثاني: مظاهر سطح مصر", en:"Lesson 2: Egypt's Landforms"},
+  pages:{ar:"الكتاب ص ١٤–٢١", en:"Book pages 14–21"},
+  facts:[
+   {h:{ar:"أربع وحدات تضاريسية", en:"Four landform regions"},
+    t:{ar:"ينقسم سطح مصر إلى: ١) وادي النيل والدلتا ومنخفض الفيوم ٢) الصحراء الغربية ٣) الصحراء الشرقية ٤) شبه جزيرة سيناء.", en:"Egypt's surface has 4 parts: 1) the Nile Valley, Delta and Fayoum Depression 2) the Western Desert 3) the Eastern Desert 4) the Sinai Peninsula."},
+    ex:"وادي النيل والدلتا ومنخفض الفيوم – الصحراء الغربية – الصحراء الشرقية – شبه جزيرة سيناء"},
+   {h:{ar:"وادي النيل والدلتا ومنخفض الفيوم", en:"Nile Valley, Delta and Fayoum"},
+    t:{ar:"أصغر أقسام سطح مصر مساحة. الدلتا: أرض خصبة كوّنها النيل من ترسيب الطمي عند المصب، شكلها مثلث، وبها حوالي نصف الأراضي الزراعية. وادي النيل: يمتد من الحدود الجنوبية حتى القاهرة. منخفض الفيوم: تصله مياه النيل والطمي عن طريق ترعة بحر يوسف، لذلك هو بيئة زراعية رغم وقوعه في الصحراء الغربية.", en:"The SMALLEST region. The Delta: fertile land made by the Nile dropping silt (طمي) at its mouth. It is a triangle and has about HALF of Egypt's farmland. The Nile Valley runs from the southern border up to CAIRO. The Fayoum Depression gets Nile water through the Bahr Youssef canal, so it is farmland even though it is in the Western Desert."},
+    ex:"منخفض الفيوم يتصل بنهر النيل عن طريق ترعة بحر يوسف"},
+   {h:{ar:"الصحراء الغربية", en:"The Western Desert"},
+    t:{ar:"أكبر الوحدات التضاريسية مساحة، ويغلب عليها المظهر الهضبي. الهضاب: الجلف الكبير (جنوبًا) ومارمريكا (شمال غرب). الجبال: جبل العوينات (جنوب غرب). الكثبان الرملية: بحر الرمال العظيم. المنخفضات: أكبرها منخفض القطارة وهو نادر السكان، ومنخفضات مأهولة لوجود المياه الجوفية: سيوة – الداخلة – الخارجة – البحرية – الفرافرة.", en:"The BIGGEST region, mostly PLATEAUS (flat high land). Plateaus: Gilf Kebir (south) and Marmarica (north-west). Mountain: Gebel Uweinat (south-west). Sand dunes: the Great Sand Sea. Depressions: the biggest is QATTARA and almost nobody lives there (no water). People live in Siwa, Dakhla, Kharga, Bahariya and Farafra because of GROUNDWATER (المياه الجوفية)."},
+    ex:"أكبر الوحدات مساحة – يغلب عليها المظهر الهضبي – منخفض القطارة أكبر منخفض ونادر السكان لندرة المياه"},
+   {h:{ar:"الصحراء الشرقية", en:"The Eastern Desert"},
+    t:{ar:"صحراء جبلية هضبية. الهضاب: هضبة المعازة (شمالًا) والعبابدة (جنوبًا). الجبال: سلسلة جبال البحر الأحمر وأعلى قممها جبل شايب البنات. الأودية الجافة: كانت تملؤها المياه قديمًا ثم جفت مثل وادي قنا، وتُستخدم لتخزين مياه السيول. غنية بالمعادن كالذهب وبها البترول والغاز الطبيعي.", en:"Mountains + plateaus. Plateaus: Ma'aza (north) and Ababda (south). Mountains: the Red Sea Mountains, and the highest peak is Gebel Shayeb El Banat. Dry valleys: valleys that had water long ago and then dried up, like Wadi Qena. They are used to STORE flash-flood water. Rich in minerals like GOLD, and has OIL and natural GAS."},
+    ex:"غنية بالمعادن كالذهب ومصادر الطاقة كالبترول والغاز الطبيعي – الأودية الجافة تستخدم في تخزين مياه السيول"},
+   {h:{ar:"شبه جزيرة سيناء", en:"The Sinai Peninsula"},
+    t:{ar:"الجنوب: جبال وعرة مثل جبل سانت كاترين وجبل موسى. الوسط: هضاب مثل هضبة التيه تقطعها أودية جافة مثل وادي العريش. الشمال: سهول ساحلية وبعض الجبال مثل جبل الحلال.", en:"SOUTH: rugged mountains like St Catherine and Mount Musa (Moses). MIDDLE: plateaus like the Tih Plateau, cut by dry valleys like Wadi El Arish. NORTH: coastal plains and some mountains like Gebel El Halal."},
+    ex:"الجنوب: جبل سانت كاترين وجبل موسى – الوسط: هضبة التيه – الشمال: السهول الساحلية وجبل الحلال"},
+   {h:{ar:"عوامل تشكيل سطح مصر", en:"What shaped Egypt's surface"},
+    t:{ar:"العوامل الباطنية: تحدث في باطن الأرض مثل الالتواءات والانكسارات، والانكسارات كونت جبال البحر الأحمر. العوامل الخارجية: تحدث على سطح الأرض مثل التعرية بفعل الرياح (كونت الكثبان الرملية) والتعرية المائية (كونت وادي النيل والأودية الجافة).", en:"INSIDE forces (العوامل الباطنية) happen under the ground: folds and FAULTS (الانكسارات). Faults made the Red Sea Mountains. OUTSIDE forces (العوامل الخارجية) happen on the surface: WIND erosion made the sand dunes, and WATER erosion (التعرية المائية) made the Nile Valley and the dry valleys."},
+    ex:"العوامل الباطنية: الالتواءات والانكسارات – العوامل الخارجية: التعرية بفعل الرياح والتعرية المائية"},
+   {h:{ar:"نتائج تنوع السطح", en:"Why the variety matters"},
+    t:{ar:"أدى تنوع مظاهر السطح إلى تنوع الثروات الطبيعية وتعدد الأنشطة الاقتصادية، والمناظر الخلابة تجذب السياح. ساهمت الزراعة في استقرار المصري القديم حول النيل وقيام الحضارة. استثمر المصريون القدماء الصحاري فأخذوا منها الذهب والنحاس والحديد.", en:"Different landforms gave Egypt many natural resources and many kinds of jobs, and beautiful views bring tourists. Farming made ancient Egyptians settle around the Nile and build their civilisation. They also took gold, copper and iron from the deserts."},
+    ex:"أدى ذلك إلى تنوع الثروات الطبيعية وتعدد الأنشطة الاقتصادية"},
+   {h:{ar:"الصحراء البيضاء والسوداء", en:"The White and Black Deserts"},
+    t:{ar:"الصحراء البيضاء في واحة الفرافرة بالوادي الجديد: تكوينات صخرية جيرية شكلتها الرياح. الصحراء السوداء في الوادي الجديد: يغطيها اللون الأسود من بقايا انفجارات بركانية قديمة.", en:"The White Desert (Farafra, New Valley) has white limestone rocks shaped by the wind. The Black Desert (New Valley) is covered in black rocks left by old volcanoes."},
+    book:true}
+  ]},
+ {id:"l3", icon:"⛅", color:"#059669",
+  title:{ar:"الدرس الثالث: مناخ مصر", en:"Lesson 3: Egypt's Climate"},
+  pages:{ar:"الكتاب ص ٢٢–٢٩", en:"Book pages 22–29"},
+  facts:[
+   {h:{ar:"الطقس والمناخ", en:"Weather vs climate"},
+    t:{ar:"الطقس: وصف حالة الجو (الحرارة والرياح والأمطار) خلال فترة زمنية قصيرة قد تكون يومًا أو أسبوعًا أو شهرًا. المناخ: وصف حالة الجو خلال فترة زمنية طويلة قد تكون فصلًا أو سنة.", en:"WEATHER: what the air is like (heat, wind, rain) over a SHORT time: a day, a week or a month. CLIMATE: the same thing over a LONG time: a season or a year."},
+    ex:"الطقس: حالة الجو من حيث الحرارة والرياح والأمطار في فترة زمنية قصيرة – المناخ: ... في فترة زمنية طويلة"},
+   {h:{ar:"العوامل المؤثرة في مناخ مصر", en:"What controls Egypt's climate"},
+    t:{ar:"١) الموقع الفلكي: سبب وقوع معظم مصر في الإقليم الصحراوي الحار. ٢) القرب أو البعد عن المسطحات المائية: المناطق القريبة من البحر معتدلة الحرارة عن الداخلية. ٣) مظاهر السطح: الحرارة ترتفع في المنخفضات مثل الوديان وتنخفض فوق المرتفعات مثل جبل سانت كاترين.", en:"1) ASTRONOMICAL LOCATION: the reason most of Egypt is in the hot desert climate. 2) DISTANCE FROM WATER: places near the sea are milder than places inland. 3) LANDFORMS: it is hotter in low places like valleys and colder on high places like Mount St Catherine."},
+    ex:"الموقع الفلكي – القرب أو البعد عن المسطحات المائية – مظاهر السطح"},
+   {h:{ar:"الدورة السنوية", en:"The yearly trip"},
+    t:{ar:"تتعاقب فصول السنة الأربعة بانتظام بسبب دوران الأرض حول الشمس مرة كل ٣٦٥ يومًا وربع، وهي الدورة السنوية.", en:"The four seasons come in order because Earth goes around the Sun once every 365¼ days. This is the yearly cycle (الدورة السنوية)."},
+    ex:"بسبب دوران الأرض حول الشمس مرة كل ٣٦٥ يومًا وربع (الدورة السنوية)"},
+   {h:{ar:"❄️ الشتاء – ٢١ ديسمبر", en:"❄️ Winter – 21 December"},
+    t:{ar:"تتعامد الشمس على مدار الجدي. مناخ بارد خاصة في المناطق الجبلية المرتفعة والداخلية، وتسقط الأمطار على معظم أنحاء مصر، وفي بعض المناطق ثلوج مثل جبل سانت كاترين.", en:"The Sun is straight over the Tropic of CAPRICORN. Cold, especially on high mountains and inland. Rain falls on most of Egypt, and there is snow in some places like Mount St Catherine."},
+    ex:"تتعامد الشمس على مدار الجدي"},
+   {h:{ar:"🌸 الربيع – ٢١ مارس", en:"🌸 Spring – 21 March"},
+    t:{ar:"تتعامد الشمس على دائرة الاستواء. مناخ معتدل مع نشاط الرياح خاصة رياح الخماسين المحملة بالرمال والأتربة التي تسبب أمراض الجهاز التنفسي وتضر المحاصيل. لذلك لا يُعد الربيع أفضل الفصول في مصر.", en:"The Sun is straight over the EQUATOR. Mild, but windy: the KHAMASEEN winds carry sand and dust. They cause breathing illnesses and harm crops, so spring is NOT the best season in Egypt."},
+    ex:"تتعامد الشمس على دائرة الاستواء – رياح الخماسين المحملة بالرمال والأتربة"},
+   {h:{ar:"☀️ الصيف – ٢١ يونيو", en:"☀️ Summer – 21 June"},
+    t:{ar:"تتعامد الشمس على مدار السرطان. ارتفاع الحرارة خاصة في المناطق الداخلية والجنوبية، مع اعتدالها فوق الجبال والسواحل الشمالية.", en:"The Sun is straight over the Tropic of CANCER. Hot, especially inland and in the south, but milder on mountains and on the north coast."},
+    ex:"تتعامد الشمس على مدار السرطان"},
+   {h:{ar:"🍂 الخريف – ٢٣ سبتمبر", en:"🍂 Autumn – 23 September"},
+    t:{ar:"تتعامد الشمس على دائرة الاستواء. مناخ معتدل، وقد تسقط أمطار في بعض المناطق خاصة الشرقية عند جبال البحر الأحمر وسيناء.", en:"The Sun is straight over the EQUATOR again. Mild. Some rain may fall, especially in the east on the Red Sea Mountains and Sinai."},
+    ex:"تتعامد الشمس على دائرة الاستواء"},
+   {h:{ar:"الإقليم المناخي", en:"Climate region"},
+    t:{ar:"الإقليم المناخي: مساحة من الأرض لها نفس الخصائص المناخية من حيث الحرارة والرياح والمطر.", en:"A climate region (إقليم مناخي) is an area of land with the SAME climate: the same heat, wind and rain."},
+    ex:"مساحة من الأرض لها نفس الخصائص المناخية من حيث الحرارة والرياح والأمطار"},
+   {h:{ar:"إقليمان في مصر", en:"Egypt's two climate regions"},
+    t:{ar:"إقليم البحر المتوسط: في شمال مصر، حار جاف صيفًا دافئ ممطر شتاءً، والزراعة فيه على مياه الأمطار الشتوية. الإقليم الصحراوي الحار: يمتد في معظم مصر، شديد الحرارة صيفًا بارد شتاءً، والأمطار نادرة وقد تسقط فجأة على شكل سيول.", en:"MEDITERRANEAN region: the NORTH of Egypt. Hot and dry in summer, warm and rainy in winter, and farms use the winter rain. HOT DESERT region: covers MOST of Egypt. Very hot in summer, cold in winter, and rain is rare but can suddenly come as flash floods (سيول)."},
+    ex:"إقليم البحر المتوسط: شمال مصر، حار جاف صيفًا دافئ ممطر شتاءً – الإقليم الصحراوي الحار: معظم مصر، شديد الحرارة صيفًا بارد شتاءً والأمطار نادرة"},
+   {h:{ar:"حقائق تاريخية", en:"History facts"},
+    t:{ar:"عرف المصريون القدماء التقويم الشمسي وقسموا العام إلى ٣٦٥ يومًا، وقسموا السنة الزراعية إلى ثلاثة فصول: الفيضان والزراعة والحصاد. ساعد مناخ مصر الجاف على بقاء الآثار صامدة آلاف السنين.", en:"Ancient Egyptians made a SUN calendar of 365 days, and split the farming year into 3 seasons: flood, planting and harvest. Egypt's DRY climate kept the monuments safe for thousands of years."},
+    book:true}
+  ]}
+],
+
+// Toddle answer sheet ("اجابة التقيمات") – questions in order, with the teacher's model answers
+school: [
+ {lesson:"l1", title:{ar:"الدرس الأول – الفترة الأولى: خطوط الطول ودوائر العرض (ص٤)", en:"Lesson 1 – Period 1: Longitude & latitude (p.4)"}, qs:[
+  {q:{ar:"ما الذي تعبر عنه الخطوط في الصورة (خطوط رأسية من القطب للقطب)؟", en:"What do the lines in the picture show (up-and-down lines from pole to pole)?"}, a:"خطوط الطول", ae:"Lines of longitude"},
+  {q:{ar:"اكتب أهمية واحدة لهذه الخطوط.", en:"Write one use of these lines."}, a:"تفيد في تحديد المواقع وفرق التوقيت", ae:"Finding places and the time difference"},
+  {q:{ar:"صحح: تدور الأرض حول الشمس مرة كل ٢٤ ساعة من الشرق إلى الغرب.", en:"Fix the mistakes: \"The Earth goes around the Sun every 24 hours from east to west.\""}, a:"تدور الأرض حول نفسها مرة كل ٢٤ ساعة من الغرب إلى الشرق", ae:"Earth spins AROUND ITSELF every 24 hours from WEST to EAST"},
+  {q:{ar:"ماذا يحدث إذا لم يتم ترسيم خطوط الطول؟", en:"What would happen if lines of longitude were not drawn?"}, a:"لم نستطع تحديد المواقع بدقة ولا فرق التوقيت", ae:"We could not find places exactly or know the time difference"},
+  {q:{ar:"ما دوائر العرض الرئيسية التي تتضمنها الصورة؟", en:"Which main circles of latitude are in the picture?"}, a:"دائرة الاستواء – مدار السرطان – مدار الجدي – الدائرة القطبية الشمالية والجنوبية", ae:"Equator, Tropic of Cancer, Tropic of Capricorn, Arctic and Antarctic Circles"},
+  {q:{ar:"اكتب أهمية واحدة لدوائر العرض.", en:"Write one use of circles of latitude."}, a:"تفيد في تحديد المواقع ومعرفة المناخ", ae:"Finding places and knowing the climate"},
+  {q:{ar:"صحح: دوائر العرض هي دوائر أفقية متساوية الطول ترسم حول الكرة الأرضية وعددها ٣٦٠ دائرة عرض.", en:"Fix: \"Latitude circles are horizontal circles of EQUAL length, and there are 360.\""}, a:"دوائر العرض هي دوائر أفقية غير متساوية الطول تُرسم حول الكرة الأرضية وعددها ١٨٠ دائرة عرض", ae:"They are NOT equal in length, and there are 180"},
+  {q:{ar:"ماذا يحدث إذا لم يتم ترسيم دوائر العرض؟", en:"What would happen if circles of latitude were not drawn?"}, a:"لم نستطع تحديد المواقع بدقة ولا المناخ", ae:"We could not find places exactly or study climate"}
+ ]},
+ {lesson:"l1", title:{ar:"الدرس الأول – الواجب (ص٥)", en:"Lesson 1 – Homework (p.5)"}, qs:[
+  {q:{ar:"ما المقصود بمصطلح شبكة الإحداثيات؟", en:"What is the coordinate grid?"}, a:"خطوط الطول ودوائر العرض", ae:"Lines of longitude and circles of latitude"},
+  {q:{ar:"قارن بين خطوط الطول ودوائر العرض من حيث: التعريف – الأهمية – العدد – الخط الرئيسي.", en:"Compare longitude and latitude: definition, use, number, main line."}, a:"خطوط الطول: أنصاف دوائر رأسية تصل بين القطب الشمالي والقطب الجنوبي – تفيد في تحديد المواقع وفرق التوقيت – ٣٦٠ خط – خط جرينتش.\nدوائر العرض: دوائر أفقية غير متساوية تُرسم حول الكرة الأرضية – تفيد في تحديد المواقع ومعرفة المناخ – ١٨٠ دائرة – دائرة الاستواء.", ae:"Longitude: vertical half-circles pole to pole, places + time, 360, Greenwich. Latitude: horizontal unequal circles, places + climate, 180, Equator."}
+ ]},
+ {lesson:"l1", title:{ar:"الدرس الأول – الفترة الثانية: الموقع الفلكي لمصر (ص٥)", en:"Lesson 1 – Period 2: Egypt's astronomical location (p.5)"}, qs:[
+  {q:{ar:"في الشكل: ما دائرة العرض رقم (١) في أعلى الكرة؟", en:"In the picture: which latitude circle is number (1), near the top?"}, a:"الدائرة القطبية الشمالية", ae:"The Arctic Circle"},
+  {q:{ar:"ما دائرة العرض رقم (٢) جنوب الاستواء؟ وما درجتها؟", en:"Which circle is number (2), south of the Equator? What is its degree?"}, a:"مدار الجدي – ٢٣٫٥° جنوبًا", ae:"Tropic of Capricorn – 23.5° south"},
+  {q:{ar:"لدوائر العرض الرئيسية في النصف الشمالي نظير في النصف الجنوبي. دلل.", en:"Each main circle in the north has a twin in the south. Prove it."}, a:"مدار السرطان ومدار الجدي – الدائرة القطبية الشمالية والدائرة القطبية الجنوبية – القطب الشمالي والقطب الجنوبي", ae:"Cancer ↔ Capricorn, Arctic ↔ Antarctic Circle, North Pole ↔ South Pole"},
+  {q:{ar:"أي دوائر العرض الرئيسية تمر في مصر؟", en:"Which main circle of latitude passes through Egypt?"}, a:"مدار السرطان (في جنوب مصر)", ae:"The Tropic of Cancer (in south Egypt)"},
+  {q:{ar:"ما المقصود بمصطلح الموقع الفلكي؟", en:"What is 'astronomical location'?"}, a:"الموقع بالنسبة لخطوط الطول ودوائر العرض", ae:"Location using longitude and latitude"},
+  {q:{ar:"كان لعلم الفلك دور مهم في حياة المصريين القدماء. دلل.", en:"Astronomy mattered to ancient Egyptians. Prove it."}, a:"حيث استخدموا علم الفلك في تحديد المواقع ومواقيت الزراعة وتنظيم الأعياد الدينية وبناء الأهرامات", ae:"They used it to find places, time farming, organise festivals and build the pyramids"},
+  {q:{ar:"تتشابه خطوط الطول ودوائر العرض. برهن.", en:"Longitude and latitude are alike. Show how."}, a:"كلاهما خطوط وهمية تساعد في تحديد المواقع", ae:"Both are imaginary lines that help find places"}
+ ]},
+ {lesson:"l1", src:"book", title:{ar:"الدرس الأول – تقييم بثلاثة نماذج (من تدريبات الكتاب ص١٢–١٣)", en:"Lesson 1 – 3-model test (from the book's exercises p.12–13)"}, qs:[
+  {m:"أ / A", q:{ar:"أكمل: يمر مدار السرطان في مصر جهة ....", en:"Complete: the Tropic of Cancer crosses Egypt in the ...."}, a:"الجنوب", ae:"South"},
+  {m:"أ / A", q:{ar:"اختر: يبلغ الفرق الزمني بين كل خط طول والذي يليه (دقيقة واحدة – أربع دقائق – سبع دقائق – عشر دقائق)", en:"Choose: the time gap between one longitude line and the next is (1 / 4 / 7 / 10 minutes)"}, a:"أربع دقائق", ae:"4 minutes"},
+  {m:"أ / A", q:{ar:"صواب أم خطأ مع التصحيح: تقع مصر جنوب دائرة الاستواء.", en:"True or false (and fix it): Egypt is south of the Equator."}, a:"خطأ – تقع مصر شمال دائرة الاستواء", ae:"False – Egypt is NORTH of the Equator"},
+  {m:"أ / A", q:{ar:"ما المقصود بالموقع الفلكي؟", en:"What is astronomical location?"}, a:"الموقع بالنسبة لخطوط الطول ودوائر العرض", ae:"Location using longitude and latitude"},
+  {m:"أ / A", q:{ar:"ماذا يحدث إذا توقف دوران الأرض حول نفسها؟", en:"What if Earth stopped spinning on itself?"}, a:"لا يحدث تعاقب الليل والنهار", ae:"Day and night would stop taking turns"},
+  {m:"ب / B", q:{ar:"أكمل: دائرة العرض الرئيسية التي تقسم الكرة الأرضية لنصفين متساويين هي ....", en:"Complete: the main circle that cuts Earth into two equal halves is ...."}, a:"دائرة الاستواء", ae:"The Equator"},
+  {m:"ب / B", q:{ar:"اختر: يُعرف خط الطول الرئيسي باسم (مدار السرطان – مدار الجدي – خط الاستواء – خط جرينتش)", en:"Choose: the main longitude line is called (Cancer / Capricorn / Equator / Greenwich)"}, a:"خط جرينتش", ae:"Greenwich"},
+  {m:"ب / B", q:{ar:"صواب أم خطأ مع التصحيح: عدد خطوط الطول أقل من عدد دوائر العرض.", en:"True or false (and fix it): there are fewer longitude lines than latitude circles."}, a:"خطأ – عدد خطوط الطول ٣٦٠ وعدد دوائر العرض ١٨٠", ae:"False – longitude 360, latitude 180"},
+  {m:"ب / B", q:{ar:"بم تفسر: أهمية خطوط الطول؟", en:"Explain: why are lines of longitude important?"}, a:"تحديد المواقع شرقًا وغربًا ومعرفة فروق التوقيت بين الدول", ae:"To find places east/west and know time differences"},
+  {m:"ب / B", q:{ar:"مباراة تبدأ الساعة ٦ مساءً بتوقيت لندن (خط صفر). كم الساعة في القاهرة (خط ٣٠° شرقًا)؟ علمًا بأن كل ١٥° = ساعة.", en:"A match starts 6 pm London time (0°). What time in Cairo (30° east)? 15° = 1 hour."}, a:"الساعة ٨ مساءً (٣٠ ÷ ١٥ = ساعتان، والقاهرة شرق جرينتش فتسبق)", ae:"8 pm (30 ÷ 15 = 2 hours, Cairo is east so it is ahead)"},
+  {m:"ج / C", q:{ar:"أكمل: تقع مصر بين خطي طول .... و.... شرق جرينتش.", en:"Complete: Egypt lies between longitudes .... and .... east of Greenwich."}, a:"٢٥° و٣٧°", ae:"25° and 37°"},
+  {m:"ج / C", q:{ar:"اختر: درجة مدار الجدي (٢٣٫٥° جنوبًا – ٦٦٫٥° جنوبًا – صفر)", en:"Choose: the Tropic of Capricorn is at (23.5°S / 66.5°S / 0°)"}, a:"٢٣٫٥° جنوبًا", ae:"23.5° south"},
+  {m:"ج / C", q:{ar:"صواب أم خطأ: تتشابه الدائرة القطبية الشمالية والدائرة القطبية الجنوبية في نفس الدرجة.", en:"True or false: the Arctic and Antarctic Circles have the same degree."}, a:"صواب – كلاهما ٦٦٫٥°", ae:"True – both 66.5°"},
+  {m:"ج / C", q:{ar:"حدد أوجه الشبه والاختلاف بين خط جرينتش ودائرة الاستواء.", en:"How are Greenwich and the Equator alike and different?"}, a:"الشبه: كلاهما خط رئيسي وهمي درجته صفر ويساعد في تحديد المواقع.\nالاختلاف: خط جرينتش خط طول رأسي يمتد من القطب الشمالي إلى الجنوبي، ودائرة الاستواء دائرة عرض أفقية تمتد من الشرق إلى الغرب وتقسم الأرض لنصفين شمالي وجنوبي.", ae:"Alike: both are imaginary main lines at 0°. Different: Greenwich is a vertical longitude line pole to pole; the Equator is a horizontal latitude circle east–west splitting north and south."},
+  {m:"ج / C", q:{ar:"اشرح لماذا تسبق المدن الواقعة شرق خط جرينتش في التوقيت المدن الواقعة غربه.", en:"Why are cities east of Greenwich ahead in time?"}, a:"لأن الأرض تدور حول نفسها من الغرب إلى الشرق فتشرق الشمس على المناطق الشرقية أولًا", ae:"Earth spins west to east, so the Sun rises first in the east"}
+ ]},
+ {lesson:"l2", title:{ar:"الدرس الثاني – الفترة الأولى: الوادي والدلتا ومنخفض الفيوم (ص٦)", en:"Lesson 2 – Period 1: Valley, Delta & Fayoum (p.6)"}, qs:[
+  {q:{ar:"منطقة تعد بيئة زراعية رغم وقوعها في الصحراء الغربية.", en:"A farming area even though it is in the Western Desert."}, a:"منخفض الفيوم", ae:"The Fayoum Depression"},
+  {q:{ar:"ما سبب تركز السكان في المنطقة رقم (٢) (منخفض في الصحراء الغربية)؟", en:"Why do people live in area (2), a depression in the Western Desert?"}, a:"المياه الجوفية", ae:"Groundwater"},
+  {q:{ar:"اكتب أحد أسباب تكون المنطقة رقم (٣) (وادي النيل).", en:"Give one reason area (3), the Nile Valley, formed."}, a:"التعرية المائية", ae:"Water erosion"},
+  {q:{ar:"ما العلاقة بين الزراعة والحضارة المصرية القديمة؟", en:"How is farming linked to ancient Egyptian civilisation?"}, a:"ساهمت الزراعة في استقرار المصريين القدماء حول نهر النيل وقيام الحضارة المصرية القديمة", ae:"Farming made them settle around the Nile and build the civilisation"},
+  {q:{ar:"قدم توقعًا في حال كانت المنطقة رقم (٤) خالية من المياه وتربتها رملية.", en:"Predict: what if area (4) had no water and sandy soil?"}, a:"عدم قيام الزراعة وعدم تركز السكان", ae:"No farming and few people would live there"},
+  {q:{ar:"ماذا يحدث إذا لم تصل ترعة بحر يوسف بين نهر النيل ومنخفض الفيوم؟", en:"What if Bahr Youssef did not join the Nile to Fayoum?"}, a:"لن يصبح بيئة زراعية وسيكون بيئة صحراوية", ae:"It would be desert, not farmland"},
+  {q:{ar:"تتمتع مصر بتنوع مظاهر سطحها وطبيعتها الخلابة. دلل.", en:"Egypt has many different, beautiful landforms. Prove it."}, a:"حيث يجري بها نهر النيل وعلى جانبيه السهول الفيضية والسهول الساحلية والصحاري الشاسعة والجبال الشاهقة", ae:"The Nile with flood plains on both sides, coastal plains, huge deserts and high mountains"}
+ ]},
+ {lesson:"l2", title:{ar:"الدرس الثاني – الفترة الثانية: الصحراء الغربية (ص٦–٧)", en:"Lesson 2 – Period 2: Western Desert (p.6–7)"}, qs:[
+  {q:{ar:"ضع رقم (١) على أكبر الوحدات التضاريسية في مصر مساحة.", en:"Put (1) on Egypt's biggest landform region."}, a:"الصحراء الغربية", ae:"The Western Desert"},
+  {q:{ar:"عن أي مظاهر السطح يعبر رقم (٢)؟ (منخفض الفيوم – منخفض القطارة – هضبة الجلف – هضبة مارمريكا)", en:"Which landform is number (2)? (Fayoum / Qattara / Gilf / Marmarica)"}, a:"منخفض الفيوم", ae:"The Fayoum Depression"},
+  {q:{ar:"ما أكبر منخفض بمصر وأين يوجد؟", en:"What is Egypt's biggest depression and where is it?"}, a:"منخفض القطارة بالصحراء الغربية", ae:"Qattara Depression, in the Western Desert"},
+  {q:{ar:"صحح: معظم أراضي الصحراء الغربية ذات طبيعة جبلية.", en:"Fix: \"Most of the Western Desert is mountains.\""}, a:"معظم أراضي الصحراء الغربية ذات طبيعة هضبية", ae:"Most of it is PLATEAU (هضبية)"},
+  {q:{ar:"تتنوع مظاهر السطح بالصحراء الغربية. دلل.", en:"The Western Desert has many landforms. Prove it."}, a:"حيث يوجد بها الهضاب والجبال والمنخفضات والكثبان الرملية", ae:"It has plateaus, mountains, depressions and sand dunes"},
+  {q:{ar:"يتركز السكان في منخفض البحرية. اذكر السبب.", en:"People live in the Bahariya Depression. Why?"}, a:"لوجود المياه الجوفية", ae:"Because there is groundwater"}
+ ]},
+ {lesson:"l2", title:{ar:"الدرس الثاني – التقييم الأسبوعي: الوادي والصحراء الغربية (ص٧–٨)", en:"Lesson 2 – Weekly test: Valley & Western Desert (p.7–8)"}, qs:[
+  {m:"أ / A", q:{ar:"أكمل: من أمثلة الكثبان الرملية بالصحراء الغربية ....", en:"Complete: an example of sand dunes in the Western Desert is ...."}, a:"بحر الرمال العظيم", ae:"The Great Sand Sea"},
+  {m:"أ / A", q:{ar:"أين توجد هضبة مارمريكا؟", en:"Where is the Marmarica Plateau?"}, a:"شمال غرب الصحراء الغربية", ae:"North-west of the Western Desert"},
+  {m:"أ / A", q:{ar:"تعد التربة في منطقة وادي النيل والدلتا تربة رملية. دلل على خطأ العبارة.", en:"\"The soil in the Nile Valley and Delta is sandy.\" Show it is wrong."}, a:"خطأ، حيث أنها تربة خصبة تكونت من رواسب طمي النيل", ae:"Wrong: it is FERTILE soil made from Nile silt"},
+  {m:"أ / A", q:{ar:"يندر السكان في منخفض القطارة. اذكر السبب.", en:"Few people live in Qattara. Why?"}, a:"لندرة المياه", ae:"Because water is scarce"},
+  {m:"أ / A", q:{ar:"ماذا يحدث إذا كانت مساحة الأراضي الزراعية في الدلتا أكبر مما هي عليه الآن؟", en:"What if the Delta had more farmland than now?"}, a:"سوف يزيد الإنتاج الزراعي وعدد السكان", ae:"More crops and more people"},
+  {m:"ب / B", q:{ar:"أكمل: يمتد وادي النيل في مصر حتى مدينة .... شمالًا.", en:"Complete: the Nile Valley stretches north up to the city of ...."}, a:"القاهرة", ae:"Cairo"},
+  {m:"ب / B", q:{ar:"أين يوجد جبل العوينات؟", en:"Where is Gebel Uweinat?"}, a:"جنوب غرب الصحراء الغربية", ae:"South-west of the Western Desert"},
+  {m:"ب / B", q:{ar:"يتركز السكان في منخفض القطارة. دلل على خطأ العبارة.", en:"\"Many people live in Qattara.\" Show it is wrong."}, a:"منخفض القطارة غير مأهول بالسكان لندرة المياه", ae:"Qattara is almost empty because there is little water"},
+  {m:"ب / B", q:{ar:"يعد منخفض الفيوم أحد مناطق البيئة الزراعية رغم وقوعه في الصحراء الغربية. اذكر السبب.", en:"Fayoum is farmland even though it is in the Western Desert. Why?"}, a:"لأنه يتصل بنهر النيل عن طريق ترعة بحر يوسف", ae:"It is joined to the Nile by the Bahr Youssef canal"},
+  {m:"ب / B", q:{ar:"ماذا يحدث إذا كانت معظم أراضي مصر ذات طبيعة جبلية؟", en:"What if most of Egypt were mountains?"}, a:"عدم وجود بيئة زراعية ووعورة السطح", ae:"No farmland and very rough land"},
+  {m:"ج / C", q:{ar:"أكمل: تتركز نصف مساحة الأراضي الزراعية في منطقة ....", en:"Complete: half of Egypt's farmland is in the ...."}, a:"الدلتا", ae:"Delta"},
+  {m:"ج / C", q:{ar:"أين يوجد منخفض سيوة؟", en:"Where is the Siwa Depression?"}, a:"بالصحراء الغربية", ae:"In the Western Desert"},
+  {m:"ج / C", q:{ar:"يغلب على صحراء مصر الغربية المظهر الجبلي. دلل على خطأ العبارة.", en:"\"The Western Desert is mostly mountains.\" Show it is wrong."}, a:"يغلب عليها المظهر الهضبي لكثرة الهضاب بها مثل مارمريكا والجلف الكبير", ae:"It is mostly plateaus, like Marmarica and Gilf Kebir"},
+  {m:"ج / C", q:{ar:"يتركز السكان في منخفض سيوة. اذكر السبب.", en:"People live in Siwa. Why?"}, a:"لوجود المياه الجوفية", ae:"Because of groundwater"},
+  {m:"ج / C", q:{ar:"ماذا يحدث إذا كانت طبيعة منخفض الداخلة مثل طبيعة منخفض القطارة؟", en:"What if Dakhla were like Qattara?"}, a:"يصبح غير مأهول بالسكان", ae:"Nobody would live there"}
+ ]},
+ {lesson:"l2", title:{ar:"تابع الدرس الثاني – الصحراء الشرقية (ص٨)", en:"Lesson 2 cont. – Eastern Desert (p.8)"}, qs:[
+  {q:{ar:"يشير رقم (١) إلى وادٍ جاف في الصحراء الشرقية وهو ....", en:"Number (1) is a dry valley in the Eastern Desert. It is ...."}, a:"وادي قنا", ae:"Wadi Qena"},
+  {q:{ar:"ما الظاهرة التي تكونت بفعل الانكسارات في الصحراء الشرقية؟", en:"Which landform in the Eastern Desert was made by faults?"}, a:"جبال البحر الأحمر – تكونت بفعل الانكسارات", ae:"The Red Sea Mountains – made by faults (الانكسارات)", note:{ar:"ورقة الإجابة فيها خطأ نسخ في هذا السؤال؛ الإجابة هنا من الكتاب ص١٩.", en:"The answer sheet has a copy slip on this item; this answer is from the book, p.19."}},
+  {q:{ar:"صحح: من المظاهر المميزة للصحراء الشرقية كثرة المنخفضات والجبال.", en:"Fix: \"The Eastern Desert has many depressions and mountains.\""}, a:"من المظاهر المميزة للصحراء الشرقية كثرة الهضاب والجبال", ae:"Many PLATEAUS and mountains (not depressions)"},
+  {q:{ar:"بم تفسر: أهمية الأودية الجافة؟", en:"Explain: why are dry valleys important?"}, a:"تستخدم في تخزين مياه السيول", ae:"They store flash-flood water"},
+  {q:{ar:"للصحراء الشرقية أهمية اقتصادية كبيرة. دلل.", en:"The Eastern Desert is valuable for the economy. Prove it."}, a:"غنية بالمعادن كالذهب ومصادر الطاقة كالبترول والغاز الطبيعي", ae:"Rich in minerals like gold, and energy like oil and natural gas"}
+ ]},
+ {lesson:"l2", title:{ar:"الدرس الثاني – سيناء وعوامل تشكيل السطح (ص٩)", en:"Lesson 2 – Sinai & what shaped the land (p.9)"}, qs:[
+  {q:{ar:"اكتب نتيجة واحدة مترتبة على تنوع مظاهر سطح مصر.", en:"Give one result of Egypt having many landforms."}, a:"أدى ذلك إلى تنوع الثروات الطبيعية وتعدد الأنشطة الاقتصادية", ae:"Many natural resources and many kinds of work"},
+  {q:{ar:"يغلب على شبه جزيرة سيناء المظهر الهضبي. دلل.", en:"Sinai has plateaus. Prove it."}, a:"لوجود الهضاب في الوسط مثل هضبة التيه", ae:"Plateaus in the middle, like the Tih Plateau"},
+  {q:{ar:"قارن بين العوامل الباطنية والخارجية لتشكيل سطح الأرض (التعريف – مثال).", en:"Compare inside and outside forces (definition + example)."}, a:"الباطنية: تحدث في باطن الأرض مثل الالتواءات والانكسارات – مثال: الانكسارات التي شكلت جبال البحر الأحمر.\nالخارجية: تحدث على سطح الأرض مثل تعرية الرياح والتعرية المائية – مثال: الكثبان الرملية بفعل الرياح، ووادي النيل والأودية الجافة بفعل التعرية المائية.", ae:"Inside: under the ground (folds, faults) → Red Sea Mountains. Outside: on the surface (wind, water erosion) → dunes; Nile Valley and dry valleys."},
+  {q:{ar:"تتنوع مظاهر سطح شبه جزيرة سيناء. دلل.", en:"Sinai has many landforms. Prove it."}, a:"حيث توجد الجبال في الجنوب مثل جبل سانت كاترين وجبل موسى، وفي الوسط الهضاب مثل هضبة التيه، وفي الشمال السهول الساحلية وبعض الجبال مثل جبل الحلال", ae:"South: St Catherine and Musa mountains. Middle: Tih Plateau. North: coastal plains and Gebel El Halal."}
+ ]},
+ {lesson:"l2", title:{ar:"الدرس الثاني – التقييم الأسبوعي: الصحراء الشرقية وسيناء (ص١٠)", en:"Lesson 2 – Weekly test: Eastern Desert & Sinai (p.10)"}, qs:[
+  {m:"أ / A", q:{ar:"أكمل: من أشهر الهضاب شمال الصحراء الشرقية ....", en:"Complete: a famous plateau in the north of the Eastern Desert is ...."}, a:"هضبة المعازة", ae:"The Ma'aza Plateau"},
+  {m:"أ / A", q:{ar:"اكتب مثالًا للأودية الجافة في شبه جزيرة سيناء.", en:"Give an example of a dry valley in Sinai."}, a:"وادي العريش", ae:"Wadi El Arish"},
+  {m:"أ / A", q:{ar:"بم تفسر: الأهمية الاقتصادية للصحراء الشرقية؟", en:"Explain the Eastern Desert's economic importance."}, a:"غنية بالمعادن مثل الذهب ومصادر الطاقة مثل البترول والغاز الطبيعي", ae:"Gold, oil and natural gas"},
+  {m:"أ / A", q:{ar:"اكتب ثلاثة من مظاهر السطح بشبه جزيرة سيناء.", en:"Write three landforms in Sinai."}, a:"الجبال – الهضاب – السهول الساحلية – الأودية الجافة", ae:"Mountains, plateaus, coastal plains, dry valleys"},
+  {m:"ب / B", q:{ar:"أكمل: أعلى قمم جبال البحر الأحمر جبل ....", en:"Complete: the highest Red Sea mountain is Gebel ...."}, a:"شايب البنات", ae:"Shayeb El Banat"},
+  {m:"ب / B", q:{ar:"وضح الأهمية الاقتصادية لوادي قنا.", en:"What is Wadi Qena useful for?"}, a:"يخزن مياه السيول", ae:"Storing flash-flood water"},
+  {m:"ب / B", q:{ar:"بم تفسر: تكون وادي النيل؟", en:"Explain how the Nile Valley formed."}, a:"بسبب التعرية المائية", ae:"By water erosion"},
+  {m:"ب / B", q:{ar:"تعد الصحراء الشرقية صحراء جبلية هضبية. دلل.", en:"The Eastern Desert is mountains + plateaus. Prove it."}, a:"لوجود جبال البحر الأحمر والهضاب مثل هضبة المعازة والعبابدة", ae:"Red Sea Mountains and the Ma'aza and Ababda plateaus"},
+  {m:"ب / B", q:{ar:"اكتب اسم العامل الذي ساعد في تشكيل وادي العريش.", en:"What shaped Wadi El Arish?"}, a:"التعرية المائية", ae:"Water erosion"},
+  {m:"ج / C", q:{ar:"أكمل: من أشهر الجبال التي تتواجد شمال سيناء جبل ....", en:"Complete: a famous mountain in north Sinai is Gebel ...."}, a:"الحلال", ae:"El Halal"},
+  {m:"ج / C", q:{ar:"وضح أثر التعرية المائية على سطح مصر.", en:"What did water erosion do to Egypt's land?"}, a:"ساهمت في تشكيل وادي النيل والأودية الجافة", ae:"It made the Nile Valley and the dry valleys"},
+  {m:"ج / C", q:{ar:"بم تفسر: تكون جبال البحر الأحمر في الصحراء الشرقية؟", en:"Explain how the Red Sea Mountains formed."}, a:"بسبب الانكسارات (عوامل باطنية)", ae:"By faults (inside forces)"},
+  {m:"ج / C", q:{ar:"يغلب المظهر الجبلي على شبه جزيرة سيناء. دلل.", en:"Sinai has many mountains. Prove it."}, a:"لكثرة الجبال مثل جبل سانت كاترين وجبل موسى جنوبًا وجبل الحلال شمالًا", ae:"St Catherine and Musa in the south, El Halal in the north"},
+  {m:"ج / C", q:{ar:"اكتب اسم العامل الذي ساعد في تشكيل جبال البحر الأحمر.", en:"What made the Red Sea Mountains?"}, a:"العوامل الباطنية مثل الانكسارات", ae:"Inside forces, like faults"}
+ ]},
+ {lesson:"l3", title:{ar:"الدرس الثالث – الفترة الأولى: الشتاء والربيع (ص١١)", en:"Lesson 3 – Period 1: Winter & spring (p.11)"}, qs:[
+  {q:{ar:"(قطعة: برودة الجو والمطر والملابس الثقيلة) عن أي فصول السنة تتحدث الفقرة؟", en:"(Text: cold air, rain, heavy clothes.) Which season is it?"}, a:"فصل الشتاء", ae:"Winter"},
+  {q:{ar:"ما مظاهر الفصل المناخي الذي تعرضه الفقرة؟", en:"Describe that season's weather."}, a:"مناخ بارد خاصة في المناطق الداخلية والجبلية مع سقوط الأمطار وبعض الثلوج فوق الجبال", ae:"Cold, especially inland and on mountains, with rain and some snow on mountains"},
+  {q:{ar:"صوّب: تتعامد الشمس على مدار السرطان في الفصل المناخي بالفقرة.", en:"Fix: \"In this season the Sun is straight over the Tropic of Cancer.\""}, a:"مدار الجدي", ae:"Tropic of CAPRICORN"},
+  {q:{ar:"ما المقصود بمصطلح المناخ؟", en:"What is climate?"}, a:"وصف حالة الجو من حيث الحرارة والرياح والأمطار في فترة زمنية طويلة", ae:"What the air is like (heat, wind, rain) over a LONG time"},
+  {q:{ar:"(صورة: يوسف على قمة جبل وعمر أسفله) تختلف ملابس عمر ويوسف. اذكر السبب.", en:"(Picture: Youssef on a mountain top, Omar at the bottom.) Why are their clothes different?"}, a:"لأن يوسف في منطقة مرتفعة حيث تقل الحرارة وعمر في منطقة منخفضة حيث ترتفع الحرارة", ae:"Youssef is high up where it is colder; Omar is low down where it is hotter"},
+  {q:{ar:"للموقع الفلكي تأثير على مناخ مصر. دلل.", en:"Astronomical location affects Egypt's climate. Prove it."}, a:"الموقع الفلكي سبب في وقوع معظم مساحة مصر في الإقليم الصحراوي الحار", ae:"It is why most of Egypt is in the hot desert region"},
+  {q:{ar:"لا يعد فصل الربيع أفضل فصول السنة في مصر. برهن.", en:"Spring is not Egypt's best season. Prove it."}, a:"بسبب رياح الخماسين المحملة بالرمال والأتربة", ae:"Because of the Khamaseen winds full of sand and dust"}
+ ]},
+ {lesson:"l3", title:{ar:"الدرس الثالث – الواجب والفترة الثانية (ص١٢–١٣)", en:"Lesson 3 – Homework & Period 2 (p.12–13)"}, qs:[
+  {q:{ar:"قارن بين الشتاء والربيع من حيث تعامد الشمس والمظاهر المميزة.", en:"Compare winter and spring: where the Sun is straight overhead, and what each is like."}, a:"الشتاء: مدار الجدي – مناخ بارد خاصة في المناطق الداخلية والجبلية مع سقوط الأمطار وبعض الثلوج فوق الجبال.\nالربيع: دائرة الاستواء – نشاط حركة الرياح خاصة رياح الخماسين المحملة بالرمال والأتربة.", ae:"Winter: Capricorn, cold + rain + snow on mountains. Spring: Equator, windy with Khamaseen."},
+  {q:{ar:"تتعاقب فصول السنة الأربعة على مصر بانتظام. اذكر السبب.", en:"The four seasons come in order. Why?"}, a:"بسبب الدورة السنوية: دوران الأرض حول الشمس مرة كل ٣٦٥ يومًا وربع", ae:"The yearly cycle: Earth goes around the Sun every 365¼ days"},
+  {q:{ar:"يتشابه مناخ المناطق الداخلية مع المناطق الساحلية. أثبت خطأ العبارة.", en:"\"Inland climate is the same as the coast.\" Show it is wrong."}, a:"المناطق الساحلية تتميز باعتدال درجة الحرارة عن المناطق الداخلية", ae:"The coast is milder than inland"},
+  {q:{ar:"(صورة أ: شاطئ ومظلة) أي فصول السنة تعبر عنه الصورة؟", en:"(Picture A: beach umbrella.) Which season?"}, a:"فصل الصيف", ae:"Summer"},
+  {q:{ar:"(صورة ب: أشجار معتدلة) يتميز المناخ بالصورة بالاعتدال. اذكر السبب.", en:"(Picture B: mild trees.) Why is it mild?"}, a:"لتعامد الشمس على دائرة الاستواء", ae:"The Sun is straight over the Equator"},
+  {q:{ar:"ما المقصود بمصطلح إقليم مناخي؟", en:"What is a climate region?"}, a:"مساحة من الأرض لها نفس الخصائص المناخية من حيث الحرارة والرياح والأمطار", ae:"An area with the same heat, wind and rain"},
+  {q:{ar:"تمتد جميع الأراضي المصرية في الإقليم الصحراوي الحار. أثبت خطأ العبارة.", en:"\"ALL of Egypt is in the hot desert region.\" Show it is wrong."}, a:"تمتد معظم الأراضي المصرية في الإقليم الصحراوي", ae:"MOST of Egypt (the north is Mediterranean)"},
+  {q:{ar:"قارن بين الصيف والخريف (تعامد الشمس – المظاهر).", en:"Compare summer and autumn."}, a:"الصيف: مدار السرطان – ارتفاع الحرارة خاصة في المناطق الداخلية والجنوبية واعتدالها فوق المرتفعات والمناطق الساحلية.\nالخريف: دائرة الاستواء – اعتدال الحرارة وسقوط الأمطار في بعض أنحاء مصر خاصة المناطق الشرقية على جبال البحر الأحمر وسيناء.", ae:"Summer: Cancer, hot inland and south, milder on high land and coasts. Autumn: Equator, mild, some rain in the east."},
+  {q:{ar:"قارن بين إقليم مناخ البحر المتوسط والإقليم الصحراوي الحار (الموقع – الخصائص).", en:"Compare the Mediterranean and hot desert regions."}, a:"البحر المتوسط: شمال مصر – حار جاف صيفًا دافئ ممطر شتاءً.\nالصحراوي الحار: يمتد في معظم مساحة مصر – شديد الحرارة صيفًا بارد شتاءً والأمطار نادرة وقد تسقط فجأة على شكل سيول.", ae:"Mediterranean: the north; hot dry summer, warm rainy winter. Hot desert: most of Egypt; very hot summer, cold winter, rare rain and sudden floods."}
+ ]},
+ {lesson:"l3", title:{ar:"الدرس الثالث – التقييم الأسبوعي (ص١٤)", en:"Lesson 3 – Weekly test (p.14)"}, qs:[
+  {m:"أ / A", q:{ar:"(صورة مطر ومظلات) عن أي فصول السنة تعبر الصورة؟ ومتى يبدأ؟", en:"(Picture: rain and umbrellas.) Which season? When does it start?"}, a:"فصل الشتاء – ٢١ ديسمبر", ae:"Winter – 21 December"},
+  {m:"أ / A", q:{ar:"ما المقصود بمصطلح الطقس؟", en:"What is weather?"}, a:"حالة الجو من حيث الحرارة والرياح والأمطار في فترة زمنية قصيرة", ae:"The air's heat, wind and rain over a SHORT time"},
+  {m:"أ / A", q:{ar:"بم تفسر: تكوّن الثلوج على جبل سانت كاترين شتاءً؟", en:"Why is there snow on Mount St Catherine in winter?"}, a:"بسبب الارتفاع", ae:"Because it is very high (altitude)"},
+  {m:"أ / A", q:{ar:"ماذا يحدث إذا توقفت الأرض عن الدوران حول نفسها؟", en:"What if Earth stopped spinning?"}, a:"لا يحدث تعاقب الليل والنهار", ae:"Day and night would stop taking turns"},
+  {m:"ب / B", q:{ar:"(صورة شاطئ) تعبر الصورة عن فصل .... ومتى يبدأ؟", en:"(Beach picture.) Which season? When does it start?"}, a:"الصيف – ٢١ يونيو", ae:"Summer – 21 June"},
+  {m:"ب / B", q:{ar:"ما المقصود بمصطلح المناخ؟", en:"What is climate?"}, a:"حالة الجو من حيث الحرارة والرياح والأمطار في فترة زمنية طويلة", ae:"The air's heat, wind and rain over a LONG time"},
+  {m:"ب / B", q:{ar:"بم تفسر: تختلف أحوال المناخ في مصر من مكان لآخر ومن فترة لأخرى؟", en:"Why does Egypt's climate change from place to place?"}, a:"بسبب الموقع الفلكي والقرب أو البعد عن المسطحات المائية ومظاهر السطح", ae:"Astronomical location, distance from water, and landforms"},
+  {m:"ب / B", q:{ar:"ماذا يحدث إذا كانت كل الأراضي في مصر سهلية منبسطة؟", en:"What if all of Egypt were flat?"}, a:"عدم تنوع مظاهر السطح وتأثر مناخ مصر بعامل الارتفاع", ae:"No variety of landforms; climate would not change with height", note:{ar:"ورقة إجابة أخرى من المدرسة كتبت إجابة مختلفة لهذا السؤال؛ الإجابة هنا هي فكرة الكتاب (مظاهر السطح تؤثر في المناخ).", en:"Another school sheet gave a different answer here; this one follows the book (landforms affect climate)."}},
+  {m:"ج / C", q:{ar:"(صورة أشجار) تعبر الصورة عن فصل .... ومتى يبدأ؟", en:"(Trees picture.) Which season? When does it start?"}, a:"الخريف (٢٣ سبتمبر) أو الربيع (٢١ مارس)", ae:"Autumn (23 September) or spring (21 March)"},
+  {m:"ج / C", q:{ar:"ما المقصود بمصطلح الإقليم المناخي؟", en:"What is a climate region?"}, a:"مساحة من الأرض لها نفس الخصائص المناخية من حيث الحرارة والرياح والأمطار", ae:"An area with the same heat, wind and rain"},
+  {m:"ج / C", q:{ar:"بم تفسر: وقوع معظم مساحة مصر في الإقليم الصحراوي الحار؟", en:"Why is most of Egypt in the hot desert region?"}, a:"بسبب موقعها الفلكي", ae:"Because of its astronomical location"},
+  {m:"ج / C", q:{ar:"ماذا يحدث إذا تعامدت الشمس على مدار السرطان يوم ٢١ مارس؟", en:"What if the Sun were over Cancer on 21 March?"}, a:"يحل فصل الصيف بدلًا من الربيع", ae:"Summer would come instead of spring"}
+ ]}
+],
+
+// Quick-fire quiz pool (multiple choice). ans = index of correct option.
+mcq: [
+ {q:{ar:"عدد خطوط الطول:", en:"How many lines of longitude?"}, o:[{ar:"٣٦٠",en:"360"},{ar:"١٨٠",en:"180"},{ar:"٢٤",en:"24"}], ans:0},
+ {q:{ar:"عدد دوائر العرض:", en:"How many circles of latitude?"}, o:[{ar:"٣٦٠",en:"360"},{ar:"١٨٠",en:"180"},{ar:"٩٠",en:"90"}], ans:1},
+ {q:{ar:"خط الطول الرئيسي هو:", en:"The main line of longitude is:"}, o:[{ar:"دائرة الاستواء",en:"The Equator"},{ar:"خط جرينتش",en:"Greenwich"},{ar:"مدار السرطان",en:"Tropic of Cancer"}], ans:1},
+ {q:{ar:"أكبر دوائر العرض الرئيسية:", en:"The biggest main circle of latitude:"}, o:[{ar:"مدار الجدي",en:"Tropic of Capricorn"},{ar:"الدائرة القطبية الشمالية",en:"Arctic Circle"},{ar:"دائرة الاستواء",en:"The Equator"}], ans:2},
+ {q:{ar:"يبلغ الفرق الزمني بين كل خط طول والذي يليه:", en:"Time gap between one longitude line and the next:"}, o:[{ar:"دقيقة واحدة",en:"1 minute"},{ar:"٤ دقائق",en:"4 minutes"},{ar:"١٠ دقائق",en:"10 minutes"}], ans:1},
+ {q:{ar:"كل ١٥° من خطوط الطول = ", en:"Every 15° of longitude = "}, o:[{ar:"ساعة واحدة",en:"1 hour"},{ar:"٤ ساعات",en:"4 hours"},{ar:"١٥ دقيقة",en:"15 minutes"}], ans:0},
+ {q:{ar:"يمر مدار السرطان في مصر جهة:", en:"The Tropic of Cancer crosses Egypt in the:"}, o:[{ar:"الشمال",en:"north"},{ar:"الجنوب",en:"south"},{ar:"الشرق",en:"east"}], ans:1},
+ {q:{ar:"درجة مدار الجدي:", en:"The Tropic of Capricorn is at:"}, o:[{ar:"٢٣٫٥° جنوبًا",en:"23.5° south"},{ar:"٦٦٫٥° جنوبًا",en:"66.5° south"},{ar:"صفر",en:"0°"}], ans:0},
+ {q:{ar:"تقع مصر بين خطي طول:", en:"Egypt lies between longitudes:"}, o:[{ar:"٢٥° و٣٧° شرقًا",en:"25° and 37° east"},{ar:"٢٢° و٣١° شرقًا",en:"22° and 31° east"},{ar:"٢٥° و٣٧° غربًا",en:"25° and 37° west"}], ans:0},
+ {q:{ar:"تدور الأرض حول نفسها من:", en:"Earth spins from:"}, o:[{ar:"الشرق إلى الغرب",en:"east to west"},{ar:"الغرب إلى الشرق",en:"west to east"},{ar:"الشمال إلى الجنوب",en:"north to south"}], ans:1},
+ {q:{ar:"أصغر أقسام سطح مصر مساحة:", en:"Egypt's SMALLEST landform region:"}, o:[{ar:"شبه جزيرة سيناء",en:"Sinai"},{ar:"الوادي والدلتا ومنخفض الفيوم",en:"Nile Valley, Delta & Fayoum"},{ar:"الصحراء الشرقية",en:"Eastern Desert"}], ans:1},
+ {q:{ar:"أكبر الوحدات التضاريسية مساحة:", en:"Egypt's BIGGEST landform region:"}, o:[{ar:"الصحراء الغربية",en:"Western Desert"},{ar:"الصحراء الشرقية",en:"Eastern Desert"},{ar:"سيناء",en:"Sinai"}], ans:0},
+ {q:{ar:"أكبر منخفض في مصر:", en:"Egypt's biggest depression:"}, o:[{ar:"الفيوم",en:"Fayoum"},{ar:"سيوة",en:"Siwa"},{ar:"القطارة",en:"Qattara"}], ans:2},
+ {q:{ar:"يتصل منخفض الفيوم بالنيل عن طريق:", en:"Fayoum is joined to the Nile by:"}, o:[{ar:"ترعة بحر يوسف",en:"the Bahr Youssef canal"},{ar:"قناة السويس",en:"the Suez Canal"},{ar:"وادي قنا",en:"Wadi Qena"}], ans:0},
+ {q:{ar:"تتكون جبال البحر الأحمر بفعل:", en:"The Red Sea Mountains were made by:"}, o:[{ar:"الانكسارات",en:"faults"},{ar:"حركة الرياح",en:"wind"},{ar:"حركة المياه",en:"water"}], ans:0},
+ {q:{ar:"أعلى قمم جبال البحر الأحمر:", en:"Highest peak of the Red Sea Mountains:"}, o:[{ar:"جبل سانت كاترين",en:"St Catherine"},{ar:"جبل شايب البنات",en:"Shayeb El Banat"},{ar:"جبل العوينات",en:"Uweinat"}], ans:1},
+ {q:{ar:"يوجد في شبه جزيرة سيناء:", en:"Which is in Sinai?"}, o:[{ar:"جبل سانت كاترين",en:"Mount St Catherine"},{ar:"جبل شايب البنات",en:"Shayeb El Banat"},{ar:"هضبة الجلالة البحرية",en:"North Galala Plateau"}], ans:0},
+ {q:{ar:"تكوّن وادي النيل بفعل:", en:"The Nile Valley was made by:"}, o:[{ar:"التعرية المائية",en:"water erosion"},{ar:"الانكسارات",en:"faults"},{ar:"البراكين",en:"volcanoes"}], ans:0},
+ {q:{ar:"الكثبان الرملية تكونت بفعل:", en:"Sand dunes were made by:"}, o:[{ar:"الرياح",en:"wind"},{ar:"الالتواءات",en:"folds"},{ar:"الأمطار",en:"rain"}], ans:0},
+ {q:{ar:"يغلب على الصحراء الغربية المظهر:", en:"The Western Desert is mostly:"}, o:[{ar:"الجبلي",en:"mountains"},{ar:"الهضبي",en:"plateaus"},{ar:"الساحلي",en:"coast"}], ans:1},
+ {q:{ar:"يتركز السكان في سيوة والبحرية لوجود:", en:"People live in Siwa and Bahariya because of:"}, o:[{ar:"المياه الجوفية",en:"groundwater"},{ar:"البترول",en:"oil"},{ar:"الذهب",en:"gold"}], ans:0},
+ {q:{ar:"وادي جاف في الصحراء الشرقية:", en:"A dry valley in the Eastern Desert:"}, o:[{ar:"وادي العريش",en:"Wadi El Arish"},{ar:"وادي قنا",en:"Wadi Qena"},{ar:"وادي النيل",en:"Nile Valley"}], ans:1},
+ {q:{ar:"هضبة في وسط سيناء:", en:"A plateau in the middle of Sinai:"}, o:[{ar:"هضبة التيه",en:"Tih Plateau"},{ar:"هضبة المعازة",en:"Ma'aza Plateau"},{ar:"هضبة مارمريكا",en:"Marmarica Plateau"}], ans:0},
+ {q:{ar:"يمتد وادي النيل من الحدود الجنوبية حتى:", en:"The Nile Valley runs from the south border to:"}, o:[{ar:"الإسكندرية",en:"Alexandria"},{ar:"القاهرة",en:"Cairo"},{ar:"أسوان",en:"Aswan"}], ans:1},
+ {q:{ar:"تتعامد الشمس على مدار السرطان في فصل:", en:"The Sun is over the Tropic of Cancer in:"}, o:[{ar:"الصيف",en:"summer"},{ar:"الشتاء",en:"winter"},{ar:"الخريف",en:"autumn"}], ans:0},
+ {q:{ar:"يبدأ فصل الشتاء حينما تتعامد الشمس على:", en:"Winter starts when the Sun is over:"}, o:[{ar:"مدار السرطان",en:"Cancer"},{ar:"مدار الجدي",en:"Capricorn"},{ar:"دائرة الاستواء",en:"the Equator"}], ans:1},
+ {q:{ar:"في الربيع والخريف تتعامد الشمس على:", en:"In spring and autumn the Sun is over:"}, o:[{ar:"خط جرينتش",en:"Greenwich"},{ar:"دائرة الاستواء",en:"the Equator"},{ar:"مدار الجدي",en:"Capricorn"}], ans:1},
+ {q:{ar:"يبدأ فصل الصيف يوم:", en:"Summer starts on:"}, o:[{ar:"٢١ يونيو",en:"21 June"},{ar:"٢١ مارس",en:"21 March"},{ar:"٢٣ سبتمبر",en:"23 September"}], ans:0},
+ {q:{ar:"يبدأ فصل الخريف يوم:", en:"Autumn starts on:"}, o:[{ar:"٢١ ديسمبر",en:"21 December"},{ar:"٢٣ سبتمبر",en:"23 September"},{ar:"٢١ يونيو",en:"21 June"}], ans:1},
+ {q:{ar:"تهب رياح الخماسين على مصر في فصل:", en:"The Khamaseen winds blow in:"}, o:[{ar:"الربيع",en:"spring"},{ar:"الصيف",en:"summer"},{ar:"الشتاء",en:"winter"}], ans:0},
+ {q:{ar:"تتراكم الثلوج شتاءً في سيناء على قمة جبل:", en:"Snow piles up in winter on Mount:"}, o:[{ar:"سانت كاترين",en:"St Catherine"},{ar:"الحلال",en:"El Halal"},{ar:"العوينات",en:"Uweinat"}], ans:0},
+ {q:{ar:"ندرة الأمطار من خصائص إقليم:", en:"Very little rain is a feature of the:"}, o:[{ar:"البحر المتوسط",en:"Mediterranean region"},{ar:"الصحراوي الحار",en:"hot desert region"}], ans:1},
+ {q:{ar:"تعتمد الزراعة في شمال مصر على:", en:"Farms in the north of Egypt use:"}, o:[{ar:"الأمطار الشتوية",en:"winter rain"},{ar:"السيول",en:"flash floods"},{ar:"الثلوج",en:"snow"}], ans:0},
+ {q:{ar:"الطقس هو حالة الجو في فترة:", en:"Weather is the air over a ... time:"}, o:[{ar:"قصيرة",en:"short"},{ar:"طويلة",en:"long"}], ans:0},
+ {q:{ar:"المدن الساحلية معتدلة الحرارة بسبب:", en:"Coastal cities are mild because of:"}, o:[{ar:"القرب من المسطحات المائية",en:"being near the sea"},{ar:"الارتفاع",en:"height"},{ar:"الخماسين",en:"Khamaseen"}], ans:0},
+ {q:{ar:"تدور الأرض حول الشمس مرة كل:", en:"Earth goes around the Sun once every:"}, o:[{ar:"٢٤ ساعة",en:"24 hours"},{ar:"٣٦٥ يومًا وربع",en:"365¼ days"},{ar:"٣٠ يومًا",en:"30 days"}], ans:1}
+],
+
+// True / false from the book's exercises (p.13, 21, 29)
+tf: [
+ {s:{ar:"عدد خطوط الطول أقل من عدد دوائر العرض.", en:"There are fewer longitude lines than latitude circles."}, v:false, fix:{ar:"خطوط الطول ٣٦٠ ودوائر العرض ١٨٠.", en:"Longitude 360, latitude 180."}},
+ {s:{ar:"تقع مصر جنوب دائرة الاستواء.", en:"Egypt is south of the Equator."}, v:false, fix:{ar:"تقع شمال دائرة الاستواء.", en:"It is NORTH of the Equator."}},
+ {s:{ar:"تساعدنا خطوط الطول في تحديد الموقع شرقًا وغربًا.", en:"Longitude helps us find places east and west."}, v:true},
+ {s:{ar:"تتشابه الدائرة القطبية الشمالية والجنوبية في نفس الدرجة.", en:"The Arctic and Antarctic Circles have the same degree."}, v:true, fix:{ar:"كلاهما ٦٦٫٥°.", en:"Both are 66.5°."}},
+ {s:{ar:"تقع مصر في النصف الشرقي للكرة الأرضية.", en:"Egypt is in the eastern half of the Earth."}, v:true},
+ {s:{ar:"تدور الأرض حول نفسها مرة كل عام.", en:"Earth spins on itself once a year."}, v:false, fix:{ar:"كل ٢٤ ساعة.", en:"Every 24 hours."}},
+ {s:{ar:"يمتد وادي النيل من حدود مصر الجنوبية حتى مدينة العريش.", en:"The Nile Valley runs from the south border to El Arish."}, v:false, fix:{ar:"حتى القاهرة.", en:"Up to Cairo."}},
+ {s:{ar:"يقع منخفض الفيوم في الصحراء الشرقية قرب نهر النيل.", en:"Fayoum is in the Eastern Desert."}, v:false, fix:{ar:"في الصحراء الغربية.", en:"In the WESTERN Desert."}},
+ {s:{ar:"تُعد هضبة الجلف الكبير أحد مظاهر السطح في الصحراء الغربية.", en:"The Gilf Kebir Plateau is in the Western Desert."}, v:true},
+ {s:{ar:"تُعد الصحراء الشرقية من أغنى مناطق مصر بمعدن الذهب.", en:"The Eastern Desert is one of the richest places for gold."}, v:true},
+ {s:{ar:"تعتمد الزراعة في الوادي والدلتا على المياه الجوفية.", en:"Farming in the Valley and Delta uses groundwater."}, v:false, fix:{ar:"تعتمد على مياه نهر النيل.", en:"It uses NILE water."}},
+ {s:{ar:"أدى تنوع مظاهر سطح مصر إلى تنوع الأنشطة الاقتصادية.", en:"Egypt's varied landforms gave many kinds of jobs."}, v:true},
+ {s:{ar:"يؤثر الموقع الفلكي لمصر على مناخها.", en:"Egypt's astronomical location affects its climate."}, v:true},
+ {s:{ar:"تستغرق الأرض ٢٤ ساعة لتكمل دورة كاملة حول الشمس.", en:"Earth takes 24 hours to go around the Sun."}, v:false, fix:{ar:"٣٦٥ يومًا وربع حول الشمس، و٢٤ ساعة حول نفسها.", en:"365¼ days around the Sun; 24 hours around itself."}},
+ {s:{ar:"تتعامد أشعة الشمس على دائرة الاستواء مرتين كل عام.", en:"The Sun is straight over the Equator twice a year."}, v:true, fix:{ar:"في الربيع والخريف.", en:"Spring and autumn."}},
+ {s:{ar:"يبدأ فصل الربيع في مصر عند تعامد الشمس على مدار السرطان.", en:"Spring starts when the Sun is over Cancer."}, v:false, fix:{ar:"على دائرة الاستواء.", en:"Over the EQUATOR."}},
+ {s:{ar:"تتعامد الشمس على مدار الجدي خلال فصل الخريف في مصر.", en:"The Sun is over Capricorn in autumn."}, v:false, fix:{ar:"في الشتاء.", en:"In WINTER."}},
+ {s:{ar:"تمتد جميع الأراضي المصرية في الإقليم الصحراوي الحار.", en:"ALL of Egypt is in the hot desert region."}, v:false, fix:{ar:"معظم الأراضي، والشمال إقليم البحر المتوسط.", en:"MOST of it. The north is Mediterranean."}},
+ {s:{ar:"منخفض القطارة مأهول بالسكان.", en:"Lots of people live in Qattara."}, v:false, fix:{ar:"نادر السكان لندرة المياه.", en:"Almost empty: no water."}},
+ {s:{ar:"دوائر العرض متساوية الطول.", en:"Latitude circles are all the same length."}, v:false, fix:{ar:"غير متساوية الطول.", en:"They are NOT equal."}}
+],
+
+// Match pairs: term ↔ meaning
+pairs: [
+ [{ar:"خطوط الطول",en:"Longitude"},{ar:"أنصاف دوائر رأسية بين القطبين",en:"Up-down half-circles pole to pole"}],
+ [{ar:"دوائر العرض",en:"Latitude"},{ar:"دوائر أفقية غير متساوية",en:"Side-to-side unequal circles"}],
+ [{ar:"الموقع الفلكي",en:"Astronomical location"},{ar:"الموقع بالنسبة لخطوط الطول ودوائر العرض",en:"Location by longitude + latitude"}],
+ [{ar:"الطقس",en:"Weather"},{ar:"حالة الجو في فترة قصيرة",en:"Air over a SHORT time"}],
+ [{ar:"المناخ",en:"Climate"},{ar:"حالة الجو في فترة طويلة",en:"Air over a LONG time"}],
+ [{ar:"الإقليم المناخي",en:"Climate region"},{ar:"مساحة لها نفس الخصائص المناخية",en:"Area with the same climate"}],
+ [{ar:"الأودية الجافة",en:"Dry valleys"},{ar:"تخزين مياه السيول",en:"Store flood water"}],
+ [{ar:"الانكسارات",en:"Faults"},{ar:"جبال البحر الأحمر",en:"Red Sea Mountains"}],
+ [{ar:"التعرية المائية",en:"Water erosion"},{ar:"وادي النيل",en:"Nile Valley"}],
+ [{ar:"الرياح",en:"Wind"},{ar:"الكثبان الرملية",en:"Sand dunes"}],
+ [{ar:"المياه الجوفية",en:"Groundwater"},{ar:"سكان سيوة والبحرية",en:"People in Siwa & Bahariya"}],
+ [{ar:"ترعة بحر يوسف",en:"Bahr Youssef"},{ar:"زراعة الفيوم",en:"Fayoum's farms"}],
+ [{ar:"رياح الخماسين",en:"Khamaseen"},{ar:"الربيع",en:"Spring"}],
+ [{ar:"مدار الجدي",en:"Capricorn"},{ar:"الشتاء ٢١ ديسمبر",en:"Winter 21 Dec"}],
+ [{ar:"مدار السرطان",en:"Cancer"},{ar:"الصيف ٢١ يونيو",en:"Summer 21 June"}]
+],
+
+// Map places: id, lon, lat, region, kind
+places: [
+ {id:"qattara", lon:27.3, lat:29.6, r:"w", n:{ar:"منخفض القطارة",en:"Qattara Depression"}, d:{ar:"أكبر منخفض – نادر السكان لندرة المياه",en:"Biggest depression – almost empty (no water)"}},
+ {id:"siwa", lon:25.6, lat:29.2, r:"w", n:{ar:"منخفض سيوة",en:"Siwa"}, d:{ar:"مأهول – مياه جوفية",en:"People live here – groundwater"}},
+ {id:"bahariya", lon:28.9, lat:28.3, r:"w", n:{ar:"منخفض البحرية",en:"Bahariya"}, d:{ar:"مأهول – مياه جوفية",en:"People live here – groundwater"}},
+ {id:"farafra", lon:28.0, lat:27.05, r:"w", n:{ar:"منخفض الفرافرة",en:"Farafra"}, d:{ar:"مأهول – وبها الصحراء البيضاء",en:"People live here – the White Desert"}},
+ {id:"dakhla", lon:29.0, lat:25.5, r:"w", n:{ar:"منخفض الداخلة",en:"Dakhla"}, d:{ar:"مأهول – مياه جوفية",en:"People live here – groundwater"}},
+ {id:"kharga", lon:30.55, lat:25.3, r:"w", n:{ar:"منخفض الخارجة",en:"Kharga"}, d:{ar:"مأهول – مياه جوفية",en:"People live here – groundwater"}},
+ {id:"sandsea", lon:25.5, lat:26.6, r:"w", n:{ar:"بحر الرمال العظيم",en:"Great Sand Sea"}, d:{ar:"كثبان رملية كونتها الرياح",en:"Sand dunes made by wind"}},
+ {id:"gilf", lon:26.0, lat:23.4, r:"w", n:{ar:"هضبة الجلف الكبير",en:"Gilf Kebir Plateau"}, d:{ar:"هضبة في الجنوب",en:"Plateau in the south"}},
+ {id:"uweinat", lon:25.3, lat:22.3, r:"w", n:{ar:"جبل العوينات",en:"Gebel Uweinat"}, d:{ar:"جبل في الجنوب الغربي",en:"Mountain in the south-west"}},
+ {id:"marmarica", lon:26.2, lat:30.9, r:"w", n:{ar:"هضبة مارمريكا",en:"Marmarica Plateau"}, d:{ar:"هضبة في الشمال الغربي",en:"Plateau in the north-west"}},
+ {id:"fayoum", lon:30.75, lat:29.3, r:"n", n:{ar:"منخفض الفيوم",en:"Fayoum Depression"}, d:{ar:"بيئة زراعية – ترعة بحر يوسف",en:"Farmland – Bahr Youssef canal"}},
+ {id:"delta", lon:31.0, lat:30.85, r:"n", n:{ar:"الدلتا",en:"The Delta"}, d:{ar:"مثلث خصب – نصف الأراضي الزراعية",en:"Fertile triangle – half the farmland"}},
+ {id:"maaza", lon:31.9, lat:27.9, r:"e", n:{ar:"هضبة المعازة",en:"Ma'aza Plateau"}, d:{ar:"هضبة في شمال الصحراء الشرقية",en:"Plateau, north of the Eastern Desert"}},
+ {id:"ababda", lon:33.4, lat:23.3, r:"e", n:{ar:"هضبة العبابدة",en:"Ababda Plateau"}, d:{ar:"هضبة في جنوب الصحراء الشرقية",en:"Plateau, south of the Eastern Desert"}},
+ {id:"shayeb", lon:33.35, lat:26.95, r:"e", n:{ar:"جبل شايب البنات",en:"Gebel Shayeb El Banat"}, d:{ar:"أعلى قمم جبال البحر الأحمر",en:"Highest Red Sea mountain"}},
+ {id:"qena", lon:32.75, lat:26.6, r:"e", n:{ar:"وادي قنا",en:"Wadi Qena"}, d:{ar:"وادٍ جاف – يخزن مياه السيول",en:"Dry valley – stores flood water"}},
+ {id:"stcath", lon:33.95, lat:28.5, r:"s", n:{ar:"جبل سانت كاترين",en:"Mount St Catherine"}, d:{ar:"جنوب سيناء – ثلوج شتاءً",en:"South Sinai – snow in winter"}},
+ {id:"musa", lon:33.55, lat:28.85, r:"s", n:{ar:"جبل موسى",en:"Mount Musa"}, d:{ar:"جبل في جنوب سيناء",en:"Mountain in south Sinai"}},
+ {id:"tih", lon:33.9, lat:29.55, r:"s", n:{ar:"هضبة التيه",en:"Tih Plateau"}, d:{ar:"هضبة في وسط سيناء",en:"Plateau in middle Sinai"}},
+ {id:"arish", lon:33.55, lat:30.35, r:"s", n:{ar:"وادي العريش",en:"Wadi El Arish"}, d:{ar:"وادٍ جاف في سيناء",en:"Dry valley in Sinai"}},
+ {id:"halal", lon:34.1, lat:30.75, r:"s", n:{ar:"جبل الحلال",en:"Gebel El Halal"}, d:{ar:"جبل في شمال سيناء",en:"Mountain in north Sinai"}}
+],
+regions: {
+ w:{n:{ar:"الصحراء الغربية",en:"Western Desert"}, d:{ar:"أكبر الوحدات مساحة – هضبية – منخفضات وكثبان",en:"Biggest – plateaus, depressions, dunes"}},
+ e:{n:{ar:"الصحراء الشرقية",en:"Eastern Desert"}, d:{ar:"جبلية هضبية – ذهب وبترول وغاز",en:"Mountains + plateaus – gold, oil, gas"}},
+ s:{n:{ar:"شبه جزيرة سيناء",en:"Sinai Peninsula"}, d:{ar:"جبال جنوبًا – هضاب وسطًا – سهول شمالًا",en:"Mountains south, plateaus middle, plains north"}},
+ n:{n:{ar:"وادي النيل والدلتا ومنخفض الفيوم",en:"Nile Valley, Delta & Fayoum"}, d:{ar:"أصغر الوحدات – أخصب الأراضي",en:"Smallest – most fertile"}}
+},
+
+// Coverage check for the parent tab
+coverage: [
+ {t:{ar:"الدرس ١: خطوط الطول ودوائر العرض وأهميتها وعددها",en:"L1: longitude & latitude, uses, numbers"}, key:true},
+ {t:{ar:"الدرس ١: دوائر العرض الرئيسية ودرجاتها",en:"L1: main latitude circles and degrees"}, key:true},
+ {t:{ar:"الدرس ١: الموقع الفلكي – المصريون القدماء والفلك",en:"L1: astronomical location – ancient Egyptians & astronomy"}, key:true},
+ {t:{ar:"الدرس ١: تقييم أسبوعي بنماذج أ/ب/ج (غير موجود في الورقة – كتبناه من تدريبات الكتاب)",en:"L1: weekly test models A/B/C (not on the sheet – written from the book exercises)"}, key:false},
+ {t:{ar:"الدرس ١: فرق التوقيت (٤ دقائق لكل خط – ١٥° = ساعة) وحساب الوقت",en:"L1: time difference (4 min per line, 15° = 1 h) + time sums"}, key:false},
+ {t:{ar:"الدرس ١: إحداثيات مصر ٢٢°–٣١°٣٦َ شمالًا و٢٥°–٣٧° شرقًا",en:"L1: Egypt's coordinates 22°–31°36′N, 25°–37°E"}, key:false},
+ {t:{ar:"الدرس ٢: الوادي والدلتا والفيوم – الصحراء الغربية",en:"L2: Valley, Delta, Fayoum – Western Desert"}, key:true},
+ {t:{ar:"الدرس ٢: الصحراء الشرقية – سيناء – العوامل الباطنية والخارجية",en:"L2: Eastern Desert – Sinai – inside/outside forces"}, key:true},
+ {t:{ar:"الدرس ٢: أسماء المنخفضات المأهولة (الداخلة، الخارجة، الفرافرة) والصحراء البيضاء والسوداء",en:"L2: inhabited oases list (Dakhla, Kharga, Farafra) + White/Black Desert"}, key:false},
+ {t:{ar:"الدرس ٣: الطقس والمناخ – العوامل المؤثرة – الفصول الأربعة – الإقليمان",en:"L3: weather/climate – factors – 4 seasons – 2 regions"}, key:true},
+ {t:{ar:"الدرس ٣: التقويم الشمسي وفصول السنة الزراعية الثلاثة – المناخ الجاف حفظ الآثار",en:"L3: sun calendar, 3 farming seasons, dry climate kept monuments"}, key:false},
+ {t:{ar:"الدرس ٤: النباتات الطبيعية والحيوانات البرية",en:"L4: natural plants & wild animals"}, key:null}
+]
+};
+
+const UIS={
+ ar:{home:"🏠 البداية",learn:"📖 تعلّم",map:"🗺️ الخريطة",games:"🎮 ألعاب",school:"📝 أسئلة المدرسة",cards:"🃏 بطاقات",quiz:"🏆 الاختبار النهائي",parent:"👪 لولي الأمر",
+  hello:"امتحان الدراسات الاجتماعية غدًا الخميس ٢٢/١٠ 💪",helloSub:"المنهج: الوحدة الأولى – الدروس ١ و٢ و٣ (من الأول حتى مناخ مصر). اجمع النجوم ⭐ وأنهِ كل المهمات!",
+  examWords:"✍️ اكتب في الامتحان:",show:"👀 أظهر الإجابة",got:"✅ عرفتها",again:"🔁 أحتاج مراجعة",onlyMissed:"اعرض ما أحتاج مراجعته فقط",all:"الكل",
+  next:"التالي ⬅",start:"ابدأ",correct:"ممتاز! ✔",wrong:"حاول مرة أخرى",right:"الإجابة الصحيحة:",score:"النتيجة",playAgain:"العب مرة أخرى",
+  T:"صح ✔",F:"خطأ ✘",tfTitle:"⚡ صح أم خطأ؟ (سريع!)",matchTitle:"🧩 وصّل المصطلح بمعناه",timeTitle:"⏰ آلة الزمن: فرق التوقيت",seasonTitle:"🌞 رحلة الأرض حول الشمس",globeTitle:"🌐 الكرة الأرضية: دوائر العرض",
+  tapLine:"اضغط على أي خط لتعرف اسمه",findLine:"العب: أين هي؟",find:"أين",mapExplore:"🔍 استكشف",mapHunt:"🎯 لعبة البحث",mapRegions:"🟫 الأقسام الأربعة",climate:"🌦️ الأقاليم المناخية",
+  tapPlace:"اضغط على أي مكان أو منطقة في الخريطة",huntQ:"اضغط على:",regionQ:"اضغط على منطقة:",london:"لندن (جرينتش ٠°)",city:"مدينة على خط طول",east:"شرقًا",west:"غربًا",ahead:"تسبق لندن",behind:"تتأخر عن لندن",same:"نفس توقيت لندن",
+  hours:"ساعة",timeQ:"الساعة في لندن",whatTime:"كم الساعة في مدينة على خط",
+  flipHint:"اضغط على البطاقة لقلبها",quizIntro:"١٥ سؤالًا عشوائيًا من الدروس الثلاثة. احصل على ٣ نجوم!",
+  cover:"هل ورقة الإجابة تغطي كل منهج الامتحان؟",inKey:"في ورقة الإجابة",notKey:"في الكتاب فقط – أضفناه هنا",outScope:"ليس في امتحان أكتوبر",
+  sheet:"ورقة الإجابة (Toddle)",progress:"تقدمك",reset:"ابدأ من جديد",lessonsDone:"حقائق",mapTip:"خريطة مبسطة للتوضيح وليست للرسم",
+  seasonsQ:"اضغط على الفصل الذي تتعامد فيه الشمس على",won:"أحسنت يا بطل! 🎉"},
+ en:{home:"🏠 Start",learn:"📖 Learn",map:"🗺️ Map",games:"🎮 Games",school:"📝 School questions",cards:"🃏 Flashcards",quiz:"🏆 Final test",parent:"👪 Parents",
+  hello:"Social Studies test is TOMORROW, Thursday 22/10 💪",helloSub:"Test covers Unit 1, Lessons 1, 2 and 3 (from the start up to Egypt's climate). The test is in ARABIC, so every answer also shows the Arabic words to write. Collect ⭐ and finish every mission!",
+  examWords:"✍️ Write this in the exam:",show:"👀 Show answer",got:"✅ I knew it",again:"🔁 Need practice",onlyMissed:"Show only the ones I need to practise",all:"All",
+  next:"Next ➜",start:"Start",correct:"Great! ✔",wrong:"Try again",right:"Right answer:",score:"Score",playAgain:"Play again",
+  T:"True ✔",F:"False ✘",tfTitle:"⚡ True or False? (fast!)",matchTitle:"🧩 Match the word to its meaning",timeTitle:"⏰ Time machine: time difference",seasonTitle:"🌞 Earth's trip around the Sun",globeTitle:"🌐 The globe: circles of latitude",
+  tapLine:"Tap any line to see its name",findLine:"Play: where is it?",find:"Find",mapExplore:"🔍 Explore",mapHunt:"🎯 Treasure hunt",mapRegions:"🟫 The 4 regions",climate:"🌦️ Climate regions",
+  tapPlace:"Tap any place or region on the map",huntQ:"Tap:",regionQ:"Tap the region:",london:"London (Greenwich 0°)",city:"City on longitude",east:"east",west:"west",ahead:"ahead of London",behind:"behind London",same:"same time as London",
+  hours:"h",timeQ:"London time is",whatTime:"What time is it in a city at",
+  flipHint:"Tap a card to flip it",quizIntro:"15 random questions from all 3 lessons. Get 3 stars!",
+  cover:"Does the answer sheet cover everything in the test?",inKey:"On the answer sheet",notKey:"Only in the book – added here",outScope:"Not in the October test",
+  sheet:"Answer sheet (Toddle)",progress:"Your progress",reset:"Start again",lessonsDone:"facts",mapTip:"Simple sketch map for learning – not for tracing",
+  seasonsQ:"Tap the season when the Sun is straight over the",won:"Well done, champ! 🎉"}
+};
+let UI=UIS[LANG];
+const QR=[[0,10],[10,24],[24,36]];if(ONE>=0){DATA.mcq=DATA.mcq.slice(...QR[ONE])}
+if(ONE>=0){UIS.ar.quizIntro="أسئلة سريعة من هذا الدرس. احصل على ٣ نجوم!";UIS.en.quizIntro="Quick questions from this lesson. Get 3 stars!"}
+if(HY){UI={...UIS.ar};const strip=s=>s.replace(/^[^\p{L}\p{N}]+\s/u,"");
+ for(const k of ["home","learn","map","games","school","cards","quiz","parent","show","got","again","next","start","playAgain","correct","wrong","findLine","mapExplore","mapHunt","mapRegions","examWords","onlyMissed","all","reset","score","won","flipHint","tapLine","tapPlace","huntQ","regionQ"])UI[k]=`<bdi>${UIS.ar[k]}</bdi> · <bdi dir="ltr">${strip(UIS.en[k])}</bdi>`;
+ UI.T=`<bdi>صح</bdi> · <bdi dir="ltr">True ✔</bdi>`;UI.F=`<bdi>خطأ</bdi> · <bdi dir="ltr">False ✘</bdi>`;UI.hello=UIS.ar.hello+"<br><small>"+UIS.en.hello+"</small>";UI.helloSub=UIS.ar.helloSub+`<div class="en">🇬🇧 The test is written in ARABIC. Every blue box explains the Arabic in simple English – tap 🔊 to hear it. Learn the Arabic words on the green lines for the exam.</div>`;}
+const t=x=>x==null?"":(typeof x==="string"?x:(x[LANG]??x.ar));
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const enx=(x,pre="")=>{if(!HY||x==null)return"";const v=typeof x==="string"?x:x.en;return v?`<div class="en" lang="en" dir="ltr"><button class="say2" title="English">🔊</button> ${pre}${esc(v)}</div>`:""};
+const eno=x=>HY&&x&&x.en?` <small class="eno" dir="ltr">· ${esc(x.en)}</small>`:"";
+const ARR=LANG==="ar"?"⬅":"➜";
+const exHTML=s=>LANG==="ar"?`<b>${esc(s)}</b>`:`<span class="ar" lang="ar">${esc(s)}</span>`;
+
+// ---------- state ----------
+const KEY="ss-unit1-"+LANG+(HY?"-hy-"+MODE:"")+(ONE>=0?"-"+ONE:"");
+let S={stars:0,seen:{},school:{},best:0,snd:true};
+try{Object.assign(S,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){};$("#starPill").textContent="⭐ "+S.stars};
+function star(n=1){S.stars+=n;save();const p=$("#starPill");p.animate([{transform:"scale(1.3)"},{transform:"scale(1)"}],{duration:300})}
+function toast(m){const e=$("#toast");e.innerHTML=m;e.classList.add("show");clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove("show"),1400)}
+let AC;function beep(ok){if(!S.snd)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain();o.connect(g);g.connect(AC.destination);o.type="triangle";const now=AC.currentTime;
+ if(ok){o.frequency.setValueAtTime(660,now);o.frequency.setValueAtTime(880,now+.09)}else{o.frequency.setValueAtTime(220,now);o.frequency.setValueAtTime(180,now+.1)}
+ g.gain.setValueAtTime(.12,now);g.gain.exponentialRampToValueAtTime(.001,now+.25);o.start(now);o.stop(now+.26)}catch(e){}}
+function say(txt,lang){try{if(window.RA)return RA.speak(txt);speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(txt);u.lang=(lang||LANG)==="ar"?"ar-EG":"en-GB";u.rate=.92;speechSynthesis.speak(u)}catch(e){}}
+function confetti(){const c=$("#confetti"),x=c.getContext("2d");c.width=innerWidth;c.height=innerHeight;const P=Array.from({length:140},()=>({x:Math.random()*c.width,y:-20-Math.random()*c.height*.5,vx:(Math.random()-.5)*4,vy:2+Math.random()*4,r:4+Math.random()*5,c:`hsl(${Math.random()*360},90%,60%)`,a:Math.random()*6}));let f=0;
+ (function loop(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.a+=.1;x.fillStyle=p.c;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillRect(-p.r,-p.r/2,p.r*2,p.r);x.restore()});if(++f<170)requestAnimationFrame(loop);else x.clearRect(0,0,c.width,c.height)})()}
+document.addEventListener("click",e=>{const b=e.target.closest(".say2");if(!b)return;e.stopPropagation();say(b.parentElement.textContent.replace("🔊","").trim(),"en")},true);
+$("#sndBtn").onclick=()=>{S.snd=!S.snd;save();$("#sndBtn").classList.toggle("off",!S.snd)};$("#sndBtn").classList.toggle("off",!S.snd);
+
+// ---------- nav ----------
+const TABS=MODE==="one"?["exp","cw","wk","quiz"]:MODE==="lessons"?["home","l1","l2","l3","map","quiz","parent"]:["home","learn","map","games","school","cards","quiz","parent"];
+if(MODE==="one"){const b=(a,e)=>HY?`<bdi>${a}</bdi> · <bdi dir="ltr">${e}</bdi>`:LANG==="ar"?a:e;UI.exp="📖 "+b("الشرح","Explanation");UI.cw="📝 "+b("الأداء الصفي والواجب","Classwork & homework");UI.wk="🏁 "+b("التقييم – ٣ نماذج","Weekly test – 3 models");UI.quiz="🏆 "+b("اختبر نفسك","Quick quiz")}
+if(MODE==="lessons")DATA.lessons.forEach((L,i)=>{UI[L.id]=L.icon+" "+t(L.title).split(":")[0]+(HY?" · Lesson "+(i+1):"")});
+let cur="home";
+function go(tab){cur=tab;document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t===tab));const m=$("#main");m.innerHTML="";VIEWS[tab](m);scrollTo({top:0,behavior:"smooth"})}
+$("#nav").innerHTML=TABS.map(k=>`<button data-t="${k}">${UI[k]}</button>`).join("");
+$("#nav").onclick=e=>{const b=e.target.closest("button");if(b)go(b.dataset.t)};
+
+const totalFacts=DATA.lessons.reduce((n,l)=>n+l.facts.length,0);
+const allSchool=DATA.school.flatMap((s,i)=>s.qs.map((q,j)=>i+"."+j));
+function pct(kind){if(/^l\d$/.test(kind)){const L=DATA.lessons.find(l=>l.id===kind),ks=L.facts.map((f,i)=>L.id+"."+i),qs=allSchool.filter(k=>DATA.school[k.split(".")[0]].lesson===kind);return (ks.filter(k=>S.seen[k]).length+qs.filter(k=>S.school[k]==="ok").length)/(ks.length+qs.length)}if(kind==="learn")return Object.keys(S.seen).length/totalFacts;if(kind==="school")return allSchool.filter(k=>S.school[k]==="ok").length/allSchool.length;if(kind==="quiz")return (S.best||0)/15;return null}
+
+// ---------- views ----------
+const VIEWS={};
+VIEWS.home=m=>{
+ const ms=MODE==="lessons"?[["l1","🌍"],["l2","🏜️"],["l3","⛅"],["map","🗺️"],["quiz","🏆"]]:[["learn","📖"],["map","🗺️"],["games","🎮"],["school","📝"],["cards","🃏"],["quiz","🏆"]];
+ m.innerHTML=`<div class="card" style="background:linear-gradient(135deg,#fef3c7,#fde68a)"><div class="kid">🎒 ${UI.hello}</div><p>${UI.helloSub}</p></div>
+ <div class="grid">${ms.map(([k,e])=>{const p=pct(k);return `<div class="card mission" data-go="${k}"><div class="big">${e}</div><h3>${UI[k].replace(/^\S+\s/,"")}</h3>${MODE==="lessons"&&/^l\d$/.test(k)?`<div class="muted">${t(DATA.lessons[+k[1]-1].title).split(":")[1]||""}</div>`:""}${p==null?"":`<div class="bar"><i style="width:${Math.round(p*100)}%"></i></div><small class="muted">${Math.round(p*100)}%</small>`}</div>`}).join("")}</div>
+ <div class="card"><h3>📚 ${DATA.lessons.map(l=>`${l.icon} ${t(l.title)}`).join("<br>📚 ")}</h3></div>
+ <p style="text-align:center"><button class="btn ghost" id="rst">${UI.reset}</button></p>`;
+ m.onclick=e=>{const g=e.target.closest("[data-go]");if(g)go(g.dataset.go)};
+ $("#rst").onclick=e=>{e.stopPropagation();if(confirmReset()){S={stars:0,seen:{},school:{},best:0,snd:S.snd};save();go("home")}};
+};
+let resetArm=0;function confirmReset(){const n=Date.now();if(n-resetArm<2500)return true;resetArm=n;toast(LANG==="ar"?"اضغط مرة أخرى للتأكيد":"Tap again to confirm");return false}
+
+let curLesson=0;
+VIEWS.learn=m=>{
+ m.innerHTML=`<div class="tabs2">${DATA.lessons.map((l,i)=>`<button class="btn ${i===curLesson?"on":""}" data-l="${i}">${l.icon} ${t(l.title).split(":")[0]}</button>`).join("")}</div><div id="lx"></div>`;
+ m.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{curLesson=+b.dataset.l;go("learn")});
+ renderLesson($("#lx"),DATA.lessons[curLesson]);
+};
+function renderLesson(m,L){
+ m.innerHTML=`<div class="card" style="border-color:${L.color}"><h2>${L.icon} ${t(L.title)}</h2>${enx(L.title)}<div class="muted">${t(L.pages)}</div></div>
+ <div id="widgets"></div>
+ ${L.facts.map((f,i)=>`<div class="card fact" style="--c:${L.color}" data-f="${L.id}.${i}">
+   <h3><span>${S.seen[L.id+"."+i]?"✅ ":""}${t(f.h)} ${f.book?`<span class="bookonly">📕 ${LANG==="ar"?"من الكتاب":"from the book"}</span>`:""}</span><button class="say" title="read">🔊</button></h3>
+   <div>${esc(t(f.t))}</div>${HY?`<div class="en" lang="en" dir="ltr"><button class="say2">🔊</button> <b>${esc(f.h.en)}</b> – ${esc(f.t.en)}</div>`:""}
+   ${f.ex&&LANG==="en"?`<div class="exam">${UI.examWords} ${exHTML(f.ex)} <button class="say" data-ar="1" title="Arabic">🔊</button></div>`:""}
+   ${f.ex&&LANG==="ar"?`<div class="exam">${UI.examWords} ${exHTML(f.ex)}</div>`:""}
+ </div>`).join("")}`;
+ m.querySelectorAll(".fact").forEach(c=>{
+  const k=c.dataset.f,[lid,i]=k.split("."),f=DATA.lessons.find(l=>l.id===lid).facts[+i];
+  c.querySelectorAll(".say").forEach(b=>b.onclick=e=>{e.stopPropagation();b.dataset.ar?say(f.ex,"ar"):say(t(f.h)+". "+t(f.t))});
+  c.onclick=e=>{if(e.target.closest(".say2"))return;if(!S.seen[k]){S.seen[k]=1;star();beep(true);c.querySelector("h3 span").insertAdjacentText("afterbegin","✅ ")}};
+ });
+ const w=m.querySelector("#widgets");
+ if(L.id==="l1"){w.append(globeWidget());w.append(timeWidget())}
+ if(L.id==="l2"){const d=document.createElement("div");d.className="card widget";d.innerHTML=`<h3>${UI.mapRegions}</h3>`;d.append(mapWidget("regions"));w.append(d)}
+ if(L.id==="l3"){w.append(seasonWidget());const d=document.createElement("div");d.className="card widget";d.innerHTML=`<h3>${UI.climate}</h3>`;d.append(mapWidget("climate"));w.append(d)}
+};
+
+// ---------- globe ----------
+const LINES=[
+ {id:"arctic",lat:66.5,n:{ar:"الدائرة القطبية الشمالية",en:"Arctic Circle"},d:{ar:"٦٦٫٥° شمال دائرة الاستواء",en:"66.5° north of the Equator"},c:"#6366f1"},
+ {id:"cancer",lat:23.5,n:{ar:"مدار السرطان",en:"Tropic of Cancer"},d:{ar:"٢٣٫٥° شمالًا – يمر بجنوب مصر – تتعامد عليه الشمس في الصيف",en:"23.5° north – passes through south Egypt – Sun overhead in SUMMER"},c:"#ef4444"},
+ {id:"equator",lat:0,n:{ar:"دائرة الاستواء",en:"The Equator"},d:{ar:"صفر – أكبر دوائر العرض – تقسم الأرض لنصفين متساويين – تتعامد عليها الشمس في الربيع والخريف",en:"0° – the BIGGEST circle – cuts Earth into 2 equal halves – Sun overhead in spring and autumn"},c:"#f59e0b"},
+ {id:"capricorn",lat:-23.5,n:{ar:"مدار الجدي",en:"Tropic of Capricorn"},d:{ar:"٢٣٫٥° جنوبًا – تتعامد عليه الشمس في الشتاء",en:"23.5° south – Sun overhead in WINTER"},c:"#0ea5e9"},
+ {id:"antarctic",lat:-66.5,n:{ar:"الدائرة القطبية الجنوبية",en:"Antarctic Circle"},d:{ar:"٦٦٫٥° جنوب دائرة الاستواء",en:"66.5° south of the Equator"},c:"#8b5cf6"},
+ {id:"greenwich",n:{ar:"خط جرينتش",en:"Greenwich line"},d:{ar:"خط الطول الرئيسي (صفر) – يمر بلندن – من القطب الشمالي للجنوبي",en:"The main LONGITUDE line (0°) – passes London – pole to pole"},c:"#16a34a"}
+];
+function globeWidget(){
+ const d=document.createElement("div");d.className="card widget";
+ const R=120,cx=160,cy=150;
+ let g=`<svg viewBox="0 0 320 300" width="320"><defs><radialGradient id="oc" cx="40%" cy="35%"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#1d4ed8"/></radialGradient></defs>
+ <circle cx="${cx}" cy="${cy}" r="${R}" fill="url(#oc)"/>
+ <path d="M150 70 q30 10 25 40 q-10 20 5 40 q10 30 -10 55 q-10 -30 -25 -40 q-20 -25 -5 -50 z" fill="#86efac" opacity=".9"/>
+ <rect x="168" y="88" width="12" height="10" fill="#ef4444" stroke="#fff"/><text x="184" y="96" font-size="11" fill="#fff" font-weight="bold">${LANG==="ar"?"مصر":"Egypt"}</text>
+ <text x="${cx}" y="${cy-R-8}" text-anchor="middle" font-size="12">${LANG==="ar"?"القطب الشمالي":"North Pole"}</text>
+ <text x="${cx}" y="${cy+R+16}" text-anchor="middle" font-size="12">${LANG==="ar"?"القطب الجنوبي":"South Pole"}</text>`;
+ LINES.forEach(L=>{
+  if(L.id==="greenwich"){g+=`<g class="gl" data-id="greenwich" style="cursor:pointer"><ellipse cx="${cx}" cy="${cy}" rx="34" ry="${R}" fill="none" stroke="#0000" stroke-width="16"/><path d="M${cx} ${cy-R} A34 ${R} 0 0 0 ${cx} ${cy+R}" fill="none" stroke="${L.c}" stroke-width="3"/></g>`;return}
+  const y=cy-R*Math.sin(L.lat*Math.PI/180),hw=R*Math.cos(L.lat*Math.PI/180);
+  g+=`<g class="gl" data-id="${L.id}" style="cursor:pointer"><ellipse cx="${cx}" cy="${y}" rx="${hw}" ry="${hw*.12}" fill="none" stroke="#0000" stroke-width="16"/><ellipse cx="${cx}" cy="${y}" rx="${hw}" ry="${hw*.12}" fill="none" stroke="${L.c}" stroke-width="${L.id==="equator"?4:3}" ${L.id.includes("tic")||L.id==="cancer"||L.id==="capricorn"?'stroke-dasharray="7 4"':""}/></g>`;
+ });
+ g+="</svg>";
+ d.innerHTML=`<h3>${UI.globeTitle}</h3><div class="row"><button class="btn blue" id="gPlay">${UI.findLine}</button><span class="muted">${UI.tapLine}</span></div>${g}<div class="info" id="gInfo">👆</div>`;
+ let target=null;
+ d.querySelectorAll(".gl").forEach(el=>el.onclick=()=>{const L=LINES.find(x=>x.id===el.dataset.id);
+  if(target){if(L.id===target.id){beep(true);star();toast(UI.correct);nextT()}else{beep(false);el.querySelector("ellipse:last-child,path")?.classList.add("flash");toast(UI.wrong)}return}
+  d.querySelector("#gInfo").innerHTML=`<b style="color:${L.c}">${t(L.n)}</b><br>${t(L.d)}`+enx(L.n.en+" – "+L.d.en);say(t(L.n)+". "+t(L.d))});
+ function nextT(){target=shuffle(LINES)[0];d.querySelector("#gInfo").innerHTML=`🎯 <b>${UI.find}: ${t(target.n)}</b>?`+enx("Find: "+target.n.en)}
+ d.querySelector("#gPlay").onclick=nextT;
+ return d;
+}
+
+// ---------- time machine ----------
+function clockSVG(h,m,label){const a=(h%12+m/60)*30,b=m*6;return `<div><svg viewBox="0 0 100 100" width="96"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#334155" stroke-width="4"/>${Array.from({length:12},(_,i)=>`<line x1="50" y1="8" x2="50" y2="14" stroke="#334155" stroke-width="3" transform="rotate(${i*30} 50 50)"/>`).join("")}<line x1="50" y1="50" x2="50" y2="26" stroke="#111" stroke-width="5" stroke-linecap="round" transform="rotate(${a} 50 50)"/><line x1="50" y1="50" x2="50" y2="15" stroke="#ef4444" stroke-width="3" stroke-linecap="round" transform="rotate(${b} 50 50)"/><circle cx="50" cy="50" r="4"/></svg><div style="font-weight:800">${label}</div><div>${fmt(h,m)}</div></div>`}
+const fmt=(h,m)=>{h=((h%24)+24)%24;return `${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`};
+function timeWidget(){
+ const d=document.createElement("div");d.className="card widget";
+ d.innerHTML=`<h3>${UI.timeTitle}</h3>
+ <p>${LANG==="ar"?"كل خط طول = ٤ دقائق، وكل ١٥° = ساعة. شرق جرينتش ⬅ تسبق، غرب جرينتش ⬅ تتأخر.":"Each longitude line = 4 minutes, so 15° = 1 hour. EAST of Greenwich → ahead. WEST → behind."}</p>
+ <label>${UI.timeQ}: <b id="lt"></b></label><input type="range" id="lh" min="0" max="23" value="18">
+ <label>${UI.city}: <b id="lv"></b></label><input type="range" id="lon" min="-90" max="180" step="15" value="30">
+ <div class="clocks" id="clk"></div><div class="info" id="tInfo"></div>
+ <div class="card" style="background:#fff"><b>⚽ ${LANG==="ar"?"مسألة الكتاب ص١٢":"Book problem p.12"}:</b> ${LANG==="ar"?"مباراة الساعة ٦ مساءً بتوقيت لندن (خط صفر). القاهرة على خط ٣٠° شرقًا. متى تُعرض في القاهرة؟":"A match starts at 6 pm London time (0°). Cairo is on 30° east. What time is it in Cairo?"}
+ <div class="opts" id="tq"></div></div>`;
+ const upd=()=>{const h=+d.querySelector("#lh").value,lon=+d.querySelector("#lon").value,diff=lon/15;
+  d.querySelector("#lt").textContent=fmt(h,0);d.querySelector("#lv").textContent=`${Math.abs(lon)}° ${lon>=0?UI.east:UI.west}`;
+  d.querySelector("#clk").innerHTML=clockSVG(h,0,UI.london)+clockSVG(h+diff,0,`${Math.abs(lon)}° ${lon>=0?UI.east:UI.west}`);
+  const rel=diff>0?UI.ahead:diff<0?UI.behind:UI.same;
+  d.querySelector("#tInfo").innerHTML=`${Math.abs(lon)}° ÷ 15 = <b>${Math.abs(diff)} ${UI.hours}</b> ${ARR} ${rel}`+(lon===30?` 🇪🇬 ${LANG==="ar"?"(القاهرة!)":"(Cairo!)"}`:"")};
+ d.querySelector("#lh").oninput=upd;d.querySelector("#lon").oninput=upd;upd();
+ const o=[["٦ مساءً","6 pm"],["٨ مساءً","8 pm"],["٤ مساءً","4 pm"]];
+ d.querySelector("#tq").innerHTML=o.map((x,i)=>`<button class="opt" data-i="${i}">${LANG==="ar"?x[0]:x[1]}</button>`).join("");
+ d.querySelector("#tq").onclick=e=>{const b=e.target.closest(".opt");if(!b)return;if(b.dataset.i==="1"){b.classList.add("ok");beep(true);star();toast(`30 ÷ 15 = 2 ${ARR} 6 + 2 = 8 🎉`)}else{b.classList.add("no");beep(false)}};
+ return d;
+}
+
+// ---------- seasons ----------
+const SEASONS=[
+ {id:"winter",e:"❄️",x:250,y:60,n:{ar:"الشتاء",en:"Winter"},date:{ar:"٢١ ديسمبر",en:"21 December"},sun:"capricorn",d:{ar:"بارد – أمطار – ثلوج على سانت كاترين",en:"Cold – rain – snow on St Catherine"}},
+ {id:"spring",e:"🌸",x:70,y:60,n:{ar:"الربيع",en:"Spring"},date:{ar:"٢١ مارس",en:"21 March"},sun:"equator",d:{ar:"معتدل – رياح الخماسين بالرمال والأتربة",en:"Mild – Khamaseen winds with sand and dust"}},
+ {id:"summer",e:"☀️",x:70,y:220,n:{ar:"الصيف",en:"Summer"},date:{ar:"٢١ يونيو",en:"21 June"},sun:"cancer",d:{ar:"حار خاصة في الداخل والجنوب – معتدل على السواحل والجبال",en:"Hot inland and in the south – milder on coasts and mountains"}},
+ {id:"autumn",e:"🍂",x:250,y:220,n:{ar:"الخريف",en:"Autumn"},date:{ar:"٢٣ سبتمبر",en:"23 September"},sun:"equator",d:{ar:"معتدل – أمطار في الشرق على جبال البحر الأحمر وسيناء",en:"Mild – some rain in the east on Red Sea Mountains and Sinai"}}
+];
+function seasonWidget(){
+ const d=document.createElement("div");d.className="card widget";
+ let g=`<svg viewBox="0 0 320 280" width="340"><ellipse cx="160" cy="140" rx="110" ry="85" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>
+ <circle cx="160" cy="140" r="30" fill="#fbbf24"/><text x="160" y="146" text-anchor="middle" font-size="14" font-weight="bold">${LANG==="ar"?"الشمس":"Sun"}</text>`;
+ SEASONS.forEach(s=>{g+=`<g class="sea" data-id="${s.id}" style="cursor:pointer"><circle cx="${s.x}" cy="${s.y}" r="30" fill="#bfdbfe" stroke="#2563eb" stroke-width="3"/><text x="${s.x}" y="${s.y+2}" text-anchor="middle" font-size="22">${s.e}</text><text x="${s.x}" y="${s.y+48}" text-anchor="middle" font-size="13" font-weight="bold">${t(s.n)}</text></g>`});
+ g+="</svg>";
+ d.innerHTML=`<h3>${UI.seasonTitle}</h3><p>${LANG==="ar"?"الأرض تدور حول الشمس مرة كل ٣٦٥ يومًا وربع (الدورة السنوية). اضغط على كل فصل.":"Earth goes round the Sun once every 365¼ days (the yearly cycle). Tap each season."}</p>
+ <button class="btn blue" id="sPlay">${UI.findLine}</button>${g}<div class="info" id="sInfo">👆</div>`;
+ let target=null;
+ d.querySelectorAll(".sea").forEach(el=>el.onclick=()=>{const s=SEASONS.find(x=>x.id===el.dataset.id),L=LINES.find(l=>l.id===s.sun);
+  if(target){const ok=s.sun===target.id;beep(ok);if(ok){star();toast(UI.correct)}else toast(UI.wrong);if(ok)nextS();return}
+  d.querySelector("#sInfo").innerHTML=`<b>${s.e} ${t(s.n)} – ${t(s.date)}</b><br>☀️ ${LANG==="ar"?"تتعامد الشمس على":"Sun straight over"} <b style="color:${L.c}">${t(L.n)}</b><br>${t(s.d)}`+enx(`${s.n.en} – ${s.date.en}: Sun over the ${L.n.en}. ${s.d.en}`);
+  say(`${t(s.n)}. ${t(s.date)}. ${LANG==="ar"?"تتعامد الشمس على":"The Sun is over the"} ${t(L.n)}. ${t(s.d)}`)});
+ function nextS(){target=LINES.filter(l=>["cancer","capricorn","equator"].includes(l.id))[Math.random()*3|0];d.querySelector("#sInfo").innerHTML=`🎯 ${UI.seasonsQ} <b>${t(target.n)}</b>`}
+ d.querySelector("#sPlay").onclick=nextS;
+ return d;
+}
+
+// ---------- Egypt map ----------
+const P=(lo,la)=>[((lo-24.4)*50).toFixed(1),((31.95-la)*50).toFixed(1)];
+const pts=a=>a.map(([lo,la])=>P(lo,la).join(",")).join(" ");
+const COAST=[[25.15,31.57],[27.24,31.35],[28.95,30.83],[29.9,31.2],[30.4,31.45],[31.8,31.5],[32.3,31.27],[33.8,31.13],[34.24,31.3]];
+const EGYPT=[[25,22],[25,31.4],...COAST,[34.9,29.5],[34.65,29.0],[34.5,28.5],[34.25,27.73],[33.6,28.2],[33.2,28.9],[32.55,29.97],[32.65,29.1],[33.1,28.35],[33.8,27.25],[33.95,26.75],[34.27,26.1],[34.9,25.07],[35.5,23.95],[35.8,23.0],[36.9,22]];
+const SINAI=[[32.3,31.27],[33.8,31.13],[34.24,31.3],[34.9,29.5],[34.65,29.0],[34.5,28.5],[34.25,27.73],[33.6,28.2],[33.2,28.9],[32.55,29.97],[32.35,30.6]];
+const EAST=[[31.35,30.05],[31.2,29.07],[30.85,28.1],[31.28,27.18],[31.75,26.6],[32.3,26.1],[32.8,26.15],[32.75,25.7],[32.95,24.6],[33.0,24.1],[32.95,23.6],[32.0,22.4],[31.7,22],[36.9,22],[35.8,23.0],[35.5,23.95],[34.9,25.07],[34.27,26.1],[33.95,26.75],[33.8,27.25],[33.1,28.35],[32.65,29.1],[32.55,29.97],[32.35,30.6],[32.0,30.7]];
+const DELTA=[[31.2,30.05],[30.1,31.0],[29.9,31.2],[30.4,31.45],[31.8,31.5],[32.25,31.25],[31.9,30.6],[31.35,30.05]];
+const NILE=[[31.7,22],[32.2,23.0],[32.9,24.1],[32.88,24.6],[32.64,25.7],[32.72,26.16],[32.25,26.05],[31.7,26.6],[31.18,27.18],[30.75,28.1],[31.1,29.07],[31.24,30.04]];
+const MED=[...COAST,...COAST.slice().reverse().map(([a,b])=>[a,b-0.55])];
+function mapSVG(mode){
+ const reg=(id,poly,fill)=>`<polygon class="region" data-r="${id}" points="${pts(poly)}" fill="${fill}" stroke="#7c5c2a" stroke-width="1"/>`;
+ const cityP=(lo,la,n)=>{const[x,y]=P(lo,la);return `<circle cx="${x}" cy="${y}" r="3.5" fill="#111"/><text x="${+x+6}" y="${+y+4}" font-size="11">${n}</text>`};
+ const cx=P(31.24,30.04),al=P(29.9,31.2),as=P(32.9,24.09);
+ let s=`<svg viewBox="0 0 650 520" width="650"><rect width="650" height="520" fill="#bfe3ff"/>`;
+ s+=`<polygon points="${pts(EGYPT)}" fill="#f3d38c" class="region" data-r="w" stroke="#7c5c2a" stroke-width="2"/>`;
+ if(mode!=="climate"){s+=reg("e",EAST,"#e9b46a")+reg("s",SINAI,"#d9a36b")+reg("n",DELTA,"#86c96b")}
+ s+=`<polyline class="region" data-r="n" points="${pts(NILE)}" fill="none" stroke="${mode==="climate"?"#3b82f6":"#5fb85a"}" stroke-width="${mode==="climate"?3:10}" stroke-linejoin="round"/>`;
+ s+=`<polyline points="${pts(NILE)}" fill="none" stroke="#2563eb" stroke-width="2.5"/><polyline points="${pts([[31.24,30.04],[30.9,30.6],[30.4,31.45]])}" fill="none" stroke="#2563eb" stroke-width="2"/><polyline points="${pts([[31.24,30.04],[31.5,30.6],[31.8,31.5]])}" fill="none" stroke="#2563eb" stroke-width="2"/>`;
+ s+=`<polyline points="${pts([[31.7,22],[32.6,23.3],[32.9,23.9]])}" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>`;
+ if(mode!=="climate"){const f=P(30.75,29.3);s+=`<circle class="region" data-r="n" cx="${f[0]}" cy="${f[1]}" r="11" fill="#86c96b" stroke="#7c5c2a"/>`;s+=`<polyline points="${pts([[30.95,29.1],[30.85,28.5]])}" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="3 2"/>`}
+ if(mode==="climate"){s+=`<polygon points="${pts(MED)}" fill="#22c55e" opacity=".75"/>`;
+  const a=P(28.5,30.5),b=P(28.5,25.5);s+=`<text x="${a[0]}" y="${+a[1]+30}" font-size="15" font-weight="bold" fill="#14532d" text-anchor="middle">${LANG==="ar"?"⬆ إقليم البحر المتوسط":"⬆ Mediterranean region"}</text><text x="${b[0]}" y="${b[1]}" font-size="18" font-weight="bold" fill="#92400e" text-anchor="middle">${LANG==="ar"?"الإقليم الصحراوي الحار":"Hot desert region"}</text>`}
+ const c1=P(25,23.44),c2=P(36.4,23.44);s+=`<line x1="${c1[0]}" y1="${c1[1]}" x2="${c2[0]}" y2="${c2[1]}" stroke="#dc2626" stroke-width="2" stroke-dasharray="8 5"/><text x="${+c1[0]+4}" y="${+c1[1]-6}" font-size="12" fill="#dc2626" font-weight="bold">${LANG==="ar"?"مدار السرطان ٢٣٫٥°":"Tropic of Cancer 23.5°"}</text>`;
+ s+=cityP(31.24,30.04,LANG==="ar"?"القاهرة":"Cairo")+cityP(29.9,31.2,LANG==="ar"?"الإسكندرية":"Alexandria")+cityP(32.9,24.09,LANG==="ar"?"أسوان":"Aswan");
+ const lab=(lo,la,txt,o="")=>{const[x,y]=P(lo,la);return `<text x="${x}" y="${y}" font-size="14" fill="#1e3a8a" font-weight="bold" text-anchor="middle" ${o}>${txt}</text>`};
+ s+=lab(29,31.75,LANG==="ar"?"البحر المتوسط":"Mediterranean Sea")+lab(36,24.8,LANG==="ar"?"البحر الأحمر":"Red Sea",`transform="rotate(-55 ${P(36,24.8).join(" ")})"`)+lab(24.7,27,LANG==="ar"?"ليبيا":"Libya",`transform="rotate(-90 ${P(24.7,27).join(" ")})" fill="#555"`)+lab(29,21.75,LANG==="ar"?"السودان":"Sudan",`fill="#555"`);
+ s+=`<text x="640" y="20" text-anchor="end" font-size="16" font-weight="bold">${LANG==="ar"?"ش ⬆":"N ⬆"}</text>`;
+ if(mode!=="climate"&&mode!=="regions"){DATA.places.forEach(p=>{const[x,y]=P(p.lon,p.lat);s+=`<g class="place" data-p="${p.id}"><circle cx="${x}" cy="${y}" r="7" fill="#fff" stroke="#111" stroke-width="2.5"/>${mode==="explore"?`<text x="${+x+9}" y="${+y+4}" font-size="10.5" font-weight="bold" paint-order="stroke" stroke="#fff" stroke-width="3">${t(p.n)}</text>`:""}</g>`})}
+ return s+"</svg>";
+}
+function mapWidget(mode){
+ const d=document.createElement("div");
+ d.innerHTML=`<div class="mapwrap">${mapSVG(mode)}</div><div class="muted" style="font-size:.8rem;text-align:center">${UI.mapTip}</div><div class="info">${mode==="climate"?(LANG==="ar"?"إقليم البحر المتوسط: شمال مصر – حار جاف صيفًا، دافئ ممطر شتاءً. الإقليم الصحراوي الحار: معظم مصر – شديد الحرارة صيفًا، بارد شتاءً، أمطار نادرة وسيول.":"Mediterranean region: north Egypt – hot dry summer, warm rainy winter. Hot desert region: most of Egypt – very hot summer, cold winter, rare rain, flash floods."):UI.tapPlace}</div>`;
+ const info=d.querySelector(".info");
+ d.onclick=e=>{const p=e.target.closest("[data-p]"),r=e.target.closest("[data-r]");
+  if(p){const x=DATA.places.find(q=>q.id===p.dataset.p);info.innerHTML=`📍 <b>${t(x.n)}</b> – ${t(DATA.regions[x.r].n)}<br>${t(x.d)}`+enx(`${x.n.en} (${DATA.regions[x.r].n.en}) – ${x.d.en}`);say(t(x.n)+". "+t(x.d));return}
+  if(r&&mode!=="climate"){const x=DATA.regions[r.dataset.r];info.innerHTML=`🟫 <b>${t(x.n)}</b><br>${t(x.d)}`+enx(`${x.n.en} – ${x.d.en}`);say(t(x.n)+". "+t(x.d))}};
+ return d;
+}
+VIEWS.map=m=>{
+ m.innerHTML=`<div class="tabs2"><button class="btn on" data-m="explore">${UI.mapExplore}</button><button class="btn" data-m="hunt">${UI.mapHunt}</button><button class="btn" data-m="rhunt">${UI.mapRegions}</button></div><div class="card widget" id="mapBox"></div>`;
+ const box=$("#mapBox");
+ const set=mode=>{m.querySelectorAll("[data-m]").forEach(b=>b.classList.toggle("on",b.dataset.m===mode));box.innerHTML="";
+  if(mode==="explore"){box.append(mapWidget("explore"));return}
+  // hunt games
+  let round=0,score=0,pool=mode==="hunt"?shuffle(DATA.places).slice(0,10):shuffle(Object.keys(DATA.regions).concat(Object.keys(DATA.regions)));let tgt,tries=0;
+  box.innerHTML=`<div class="row"><b id="hq"></b><span class="pill" style="background:#fde68a">🎯 <span id="hs">0</span>/${pool.length}</span></div><div class="mapwrap">${mapSVG(mode==="hunt"?"hunt":"regions")}</div><div class="info" id="hi"></div>`;
+  const ask=()=>{if(round>=pool.length){box.querySelector("#hq").innerHTML=UI.won;box.querySelector("#hi").innerHTML=`<div class="result">${UI.score}: ${score}/${pool.length}</div><button class="btn" id="again">${UI.playAgain}</button>`;box.querySelector("#again").onclick=()=>set(mode);if(score>=pool.length*.8)confetti();return}
+   tgt=pool[round];tries=0;const name=mode==="hunt"?t(tgt.n):t(DATA.regions[tgt].n);box.querySelector("#hq").innerHTML=(mode==="hunt"?UI.huntQ:UI.regionQ)+" "+esc(name)+eno(mode==="hunt"?tgt.n:DATA.regions[tgt].n);say(name)};
+  box.onclick=e=>{if(round>=pool.length)return;const p=e.target.closest("[data-p]"),r=e.target.closest("[data-r]");
+   const ok=mode==="hunt"?(p&&p.dataset.p===tgt.id):(r&&!p&&r.dataset.r===tgt);
+   if(!p&&mode==="hunt")return;if(!r&&mode!=="hunt")return;
+   if(ok){if(tries===0){score++;star()}beep(true);box.querySelector("#hs").textContent=score;box.querySelector("#hi").innerHTML=`✔ <b>${mode==="hunt"?t(tgt.n):t(DATA.regions[tgt].n)}</b> – ${mode==="hunt"?t(tgt.d):t(DATA.regions[tgt].d)}`;round++;setTimeout(ask,1100)}
+   else{tries++;beep(false);if(mode==="hunt"){const c=box.querySelector(`[data-p="${tgt.id}"] circle`);if(tries>=2){c.setAttribute("fill","#facc15");c.classList.add("flash")}}toast(UI.wrong)}};
+  ask()};
+ m.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>set(b.dataset.m));set("explore");
+};
+
+// ---------- games ----------
+VIEWS.games=m=>{
+ m.innerHTML=`<div class="tabs2"><button class="btn on" data-g="match">${UI.matchTitle}</button><button class="btn" data-g="tf">${UI.tfTitle}</button><button class="btn" data-g="time">${UI.timeTitle}</button></div><div id="gBox"></div>`;
+ const set=g=>{m.querySelectorAll("[data-g]").forEach(b=>b.classList.toggle("on",b.dataset.g===g));const box=$("#gBox");box.innerHTML="";({match:matchGame,tf:tfGame,time:timeGame})[g](box)};
+ m.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>set(b.dataset.g));set("match");
+};
+function matchGame(box){
+ const ps=shuffle(DATA.pairs).slice(0,6);let left=null,done=0,miss=0;
+ const L=shuffle(ps.map((p,i)=>({i,s:t(p[0])}))),R=shuffle(ps.map((p,i)=>({i,s:t(p[1])})));
+ box.innerHTML=`<div class="card"><h3>${UI.matchTitle}</h3><div class="pairs"><div class="opts" id="ml">${L.map(x=>`<button class="tile" data-i="${x.i}">${esc(x.s)}${eno(ps[x.i][0])}</button>`).join("")}</div><div class="opts" id="mr">${R.map(x=>`<button class="tile" data-i="${x.i}">${esc(x.s)}${eno(ps[x.i][1])}</button>`).join("")}</div></div><div class="info" id="mi">👈 👉</div></div>`;
+ box.querySelector("#ml").onclick=e=>{const b=e.target.closest(".tile");if(!b)return;box.querySelectorAll("#ml .tile").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");left=b};
+ box.querySelector("#mr").onclick=e=>{const b=e.target.closest(".tile");if(!b||!left)return;
+  if(b.dataset.i===left.dataset.i){beep(true);star();b.classList.add("gone");left.classList.add("gone");left=null;if(++done===ps.length){box.querySelector("#mi").innerHTML=`<div class="result">${UI.won} ${miss===0?"⭐⭐⭐":miss<3?"⭐⭐":"⭐"}</div><button class="btn" id="ma">${UI.playAgain}</button>`;confetti();box.querySelector("#ma").onclick=()=>matchGame(box)}}
+  else{miss++;beep(false);b.classList.add("wrong");setTimeout(()=>b.classList.remove("wrong"),400)}};
+}
+function tfGame(box){
+ const qs=shuffle(DATA.tf).slice(0,10);let i=0,score=0,timer;
+ const show=()=>{clearInterval(timer);if(i>=qs.length){box.innerHTML=`<div class="card result">${UI.score}: ${score}/${qs.length}<div class="stars">${score>=9?"⭐⭐⭐":score>=6?"⭐⭐":"⭐"}</div><button class="btn" id="ta">${UI.playAgain}</button></div>`;if(score>=8)confetti();box.querySelector("#ta").onclick=()=>tfGame(box);return}
+  const q=qs[i];let left=100;
+  box.innerHTML=`<div class="card"><div class="row" style="justify-content:space-between"><b>${i+1}/${qs.length}</b><span>⭐ ${score}</span></div><div class="timer"><i id="tb" style="width:100%"></i></div><p class="q">${esc(t(q.s))}</p>${enx(q.s)}<div class="row"><button class="btn green" data-v="1">${UI.T}</button><button class="btn red" data-v="0">${UI.F}</button></div><div class="info" id="tfi"></div></div>`;
+  timer=setInterval(()=>{left-=1;const b=box.querySelector("#tb");if(b)b.style.width=left+"%";if(left<=0){answer(null)}},150);
+  const answer=v=>{clearInterval(timer);const ok=v!==null&&(v===q.v);if(ok){score++;star()}beep(ok);
+   box.querySelectorAll("[data-v]").forEach(b=>b.disabled=true);
+   box.querySelector("#tfi").innerHTML=`${ok?"✔ "+UI.correct:"✘ "+(v===null?"⏰":"")+" "+UI.right+" <b>"+(q.v?UI.T:UI.F)+"</b>"}${q.fix?"<br>💡 "+esc(t(q.fix))+enx(q.fix):""}<br><button class="btn" id="tn">${UI.next}</button>`;
+   box.querySelector("#tn").onclick=()=>{i++;show()}};
+  box.querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>answer(b.dataset.v==="1"))};
+ show();
+}
+function timeGame(box){
+ let n=0,score=0;
+ const ask=()=>{if(n>=8){box.innerHTML=`<div class="card result">${UI.score}: ${score}/8 ${score>=7?"⭐⭐⭐":score>=5?"⭐⭐":"⭐"}<br><button class="btn" id="tga">${UI.playAgain}</button></div>`;if(score>=7)confetti();box.querySelector("#tga").onclick=()=>timeGame(box);return}
+  const lon=shuffle([15,30,45,60,90,-15,-30,-45,120])[0],h=6+(Math.random()*10|0),ans=h+lon/15;
+  const opts=shuffle([ans,ans+(lon>0?-2*lon/15:2*Math.abs(lon)/15),ans+1,ans-1].filter((v,i,a)=>a.indexOf(v)===i)).slice(0,3);if(!opts.includes(ans))opts[0]=ans;
+  box.innerHTML=`<div class="card"><b>${n+1}/8</b><p class="q">🕰️ ${UI.timeQ} <b>${fmt(h,0)}</b>. ${UI.whatTime} <b>${Math.abs(lon)}° ${lon>0?UI.east:UI.west}</b>?</p><div class="opts">${shuffle(opts).map(v=>`<button class="opt" data-v="${v}">${fmt(v,0)}</button>`).join("")}</div><div class="info" id="tgi">💡 15° = 1 ${UI.hours}</div></div>`;
+  box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const ok=+b.dataset.v===ans;b.classList.add(ok?"ok":"no");beep(ok);if(ok){score++;star()}
+   box.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.v===ans)x.classList.add("ok")});
+   box.querySelector("#tgi").innerHTML=`${Math.abs(lon)} ÷ 15 = ${Math.abs(lon/15)} ${ARR} ${lon>0?UI.ahead:UI.behind} ${ARR} <b>${fmt(ans,0)}</b><br><button class="btn" id="tgn">${UI.next}</button>`;
+   box.querySelector("#tgn").onclick=()=>{n++;ask()}})};
+ ask();
+}
+
+// ---------- school questions ----------
+let onlyMissed=false;
+function sqHTML(si,qi){const q=DATA.school[si].qs[qi],k=si+"."+qi,st=S.school[k];if(onlyMissed&&st==="ok")return"";
+ return `<div class="sq" data-k="${k}"><div class="q">${q.m&&MODE!=="lessons"?`<span class="tag">${q.m}</span>`:""}${st==="ok"?'<span class="done-ok">✔ </span>':st==="no"?'<span class="done-no">↻ </span>':""}${esc(t(q.q))}</div>${enx(q.q)}
+  <div class="row"><button class="btn ghost shw">${UI.show}</button></div>
+  <div class="ans">${LANG==="en"?`💬 ${esc(q.ae)}<br>${UI.examWords}<br>`:""}${exHTML(q.a)} <button class="say" title="read">🔊</button>${HY?enx(q.ae,"💬 "):""}${q.note?`<div class="note">⚠️ ${esc(t(q.note))}${HY?"<br><span dir=ltr>"+esc(q.note.en)+"</span>":""}</div>`:""}
+  <div class="row"><button class="btn green mk" data-v="ok">${UI.got}</button><button class="btn red mk" data-v="no">${UI.again}</button></div></div></div>`}
+function bindSQ(m){m.querySelectorAll(".sq").forEach(el=>{const k=el.dataset.k,[si,qi]=k.split("."),q=DATA.school[si].qs[qi];
+  el.querySelector(".shw").onclick=()=>el.querySelector(".ans").classList.add("show");
+  el.querySelector(".say").onclick=()=>say(q.a,"ar");
+  el.querySelectorAll(".mk").forEach(b=>b.onclick=()=>{const was=S.school[k];S.school[k]=b.dataset.v;if(b.dataset.v==="ok"&&was!=="ok"){star();beep(true)}else if(b.dataset.v==="no")beep(false);save();
+   const mark=el.querySelector(".q .done-ok,.q .done-no");if(mark)mark.remove();el.querySelector(".q").insertAdjacentHTML("afterbegin",b.dataset.v==="ok"?'<span class="done-ok">✔ </span>':'<span class="done-no">↻ </span>');
+   if(b.dataset.v==="ok"&&allSchool.every(x=>S.school[x]==="ok")){confetti();toast(UI.won)}})})}
+const srcTag=sh=>sh.src==="book"?` <span class="srcbook">📕 ${HY?"من تدريبات الكتاب · from the book's exercises":LANG==="ar"?"من تدريبات الكتاب":"from the book's exercises"}</span>`:"";
+VIEWS.school=m=>{
+ const ok=allSchool.filter(k=>S.school[k]==="ok").length;
+ m.innerHTML=`<div class="card"><h2>📝 ${UI.sheet}</h2><p>${LANG==="ar"?"اقرأ السؤال، فكّر وقل الإجابة بصوت عالٍ، ثم اضغط «أظهر الإجابة».":"Read the question, say your answer out loud, then tap “Show answer”. The Arabic answer is what you write in the test."}</p>${enx("Read the question, say your answer out loud, then tap Show answer. Write the Arabic answer in the test.")}
+ <div class="bar"><i style="width:${ok/allSchool.length*100}%"></i></div><small>${ok}/${allSchool.length}</small>
+ <div class="row" style="margin-top:8px"><button class="btn ${onlyMissed?"":"ghost"}" id="om">${onlyMissed?UI.all:UI.onlyMissed}</button></div></div>
+ ${DATA.lessons.map(L=>`<h2 style="color:${L.color}">${L.icon} ${t(L.title)}</h2>`+DATA.school.map((sh,si)=>sh.lesson!==L.id?"":`<details class="card sheet" ${si===0?"open":""}><summary>${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</summary>${sh.qs.map((q,qi)=>sqHTML(si,qi)).join("")}</details>`).join("")).join("")}`;
+ $("#om").onclick=()=>{onlyMissed=!onlyMissed;go("school")};bindSQ(m);
+};
+// ---------- lesson-by-lesson: explanation then assessment ----------
+function lessonView(i){return m=>{const L=DATA.lessons[i];
+ m.innerHTML=`<div class="phase">📖 ${HY?"الشرح · Explanation":LANG==="ar"?"الشرح":"Explanation"}</div><div id="lx"></div>
+ <div class="phase">📝 ${HY?"الأداء الصفي والواجب · Classwork & homework":LANG==="ar"?"الأداء الصفي والواجب":"Classwork & homework"}</div><div id="cw"></div>
+ <div class="phase">🏁 ${HY?"التقييم الأسبوعي – ٣ نماذج · Weekly test – 3 models":LANG==="ar"?"التقييم الأسبوعي – ٣ نماذج":"Weekly test – 3 models"}</div><div id="wk"></div>
+ <div class="card" style="text-align:center">${i<2?`<button class="btn" id="nx">${HY?"الدرس التالي · Next lesson":"➜"}</button>`:`<button class="btn" id="nx">🏆 ${UI.quiz}</button>`}</div>`;
+ renderLesson(m.querySelector("#lx"),L);
+ const cw=m.querySelector("#cw"),wk=m.querySelector("#wk");
+ DATA.school.forEach((sh,si)=>{if(sh.lesson!==L.id)return;const hasM=sh.qs.some(q=>q.m);
+  if(!hasM){cw.insertAdjacentHTML("beforeend",`<details class="card sheet" open><summary>${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</summary>${sh.qs.map((q,qi)=>sqHTML(si,qi)).join("")}</details>`);return}
+  const groups={};sh.qs.forEach((q,qi)=>{(groups[q.m]=groups[q.m]||[]).push(qi)});
+  wk.insertAdjacentHTML("beforeend",`<h3 style="margin-top:14px">${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</h3><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(290px,1fr))">${Object.entries(groups).map(([mm,qis])=>`<div class="card model"><h3>🧾 ${HY?"نموذج "+mm.split("/")[0].trim()+" · Model "+mm.split("/")[1].trim():LANG==="ar"?"نموذج "+mm.split("/")[0]:"Model "+mm.split("/")[1]}</h3>${qis.map(qi=>sqHTML(si,qi)).join("")}</div>`).join("")}</div>`)});
+ bindSQ(m);m.querySelector("#nx").onclick=()=>go(i<2?"l"+(i+2):"quiz");
+}}
+if(MODE==="lessons")DATA.lessons.forEach((L,i)=>VIEWS[L.id]=lessonView(i));
+if(MODE==="one"){const L=DATA.lessons[ONE];
+ const nxt=(m,to,label)=>{m.insertAdjacentHTML("beforeend",`<div class="card" style="text-align:center"><button class="btn" id="nx">${label}</button></div>`);m.querySelector("#nx").onclick=()=>go(to)};
+ VIEWS.exp=m=>{m.innerHTML='<div id="lx"></div>';renderLesson(m.querySelector("#lx"),L);nxt(m,"cw",UI.cw)};
+ VIEWS.cw=m=>{m.innerHTML=`<div class="card" style="border-color:${L.color}"><h2>${L.icon} ${t(L.title)}</h2>${enx(L.title)}</div>`;DATA.school.forEach((sh,si)=>{if(sh.lesson!==L.id||sh.qs.some(q=>q.m))return;m.insertAdjacentHTML("beforeend",`<details class="card sheet" open><summary>${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</summary>${sh.qs.map((q,qi)=>sqHTML(si,qi)).join("")}</details>`)});bindSQ(m);nxt(m,"wk",UI.wk)};
+ VIEWS.wk=m=>{m.innerHTML=`<div class="card" style="border-color:${L.color}"><h2>${L.icon} ${t(L.title)}</h2>${enx(L.title)}</div>`;DATA.school.forEach((sh,si)=>{if(sh.lesson!==L.id||!sh.qs.some(q=>q.m))return;const groups={};sh.qs.forEach((q,qi)=>{(groups[q.m]=groups[q.m]||[]).push(qi)});
+  m.insertAdjacentHTML("beforeend",`<h3 style="margin-top:14px">${t(sh.title)}${srcTag(sh)}${eno(sh.title)}</h3><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(290px,1fr))">${Object.entries(groups).map(([mm,qis])=>`<div class="card model"><h3>🧾 ${HY?"نموذج "+mm.split("/")[0].trim()+" · Model "+mm.split("/")[1].trim():LANG==="ar"?"نموذج "+mm.split("/")[0]:"Model "+mm.split("/")[1]}</h3>${qis.map(qi=>sqHTML(si,qi)).join("")}</div>`).join("")}</div>`)});bindSQ(m);nxt(m,"quiz",UI.quiz)};
+}
+
+// ---------- flashcards ----------
+VIEWS.cards=m=>{
+ const cards=DATA.lessons.flatMap(L=>L.facts.map(f=>({L,f})));
+ m.innerHTML=`<div class="card"><h2>🃏 ${UI.cards.replace(/^\S+\s/,"")}</h2><p class="muted">${UI.flipHint}</p><button class="btn ghost" id="shf">🔀</button></div><div class="grid" id="cg"></div>`;
+ const draw=list=>{$("#cg").innerHTML=list.map(({L,f})=>`<div class="flip"><div class="in"><div class="fa" style="background:linear-gradient(135deg,${L.color}33,#fde68a)">${L.icon} ${esc(t(f.h))}${eno(f.h)}</div><div class="fb">${f.ex?exHTML(f.ex):esc(t(f.t))}${HY?`<br><small dir="ltr">${esc(f.h.en)}</small>`:""}</div></div></div>`).join("");
+  m.querySelectorAll(".flip").forEach(c=>c.onclick=()=>c.classList.toggle("on"))};
+ draw(cards);$("#shf").onclick=()=>draw(shuffle(cards));
+};
+
+// ---------- final quiz ----------
+VIEWS.quiz=m=>{
+ m.innerHTML=`<div class="card" style="text-align:center"><div class="big-emoji">🏆</div><p>${UI.quizIntro}</p><p>${LANG==="ar"?"أفضل نتيجة":"Best score"}: <b>${S.best||0}/${Math.min(15,DATA.mcq.length)}</b></p><button class="btn" id="qs">${UI.start}</button></div>`;
+ $("#qs").onclick=()=>runQuiz(m);
+};
+function runQuiz(m){
+ const QN=Math.min(15,DATA.mcq.length),qs=shuffle(DATA.mcq).slice(0,QN);let i=0,score=0;
+ const show=()=>{if(i>=qs.length){if(score>(S.best||0)){S.best=score;save()}const f=score/QN,st=f>=.9?"⭐⭐⭐":f>=.7?"⭐⭐":f>=.45?"⭐":"💪";
+   m.innerHTML=`<div class="card result"><div class="stars">${st}</div>${UI.score}: ${score}/${QN}<p>${score/QN>=.7?UI.won:(LANG==="ar"?"راجع قسم «تعلّم» وحاول مرة أخرى!":"Look at Learn again and have another go!")}</p><button class="btn" id="qa">${UI.playAgain}</button></div>`;if(score/QN>=.7)confetti();$("#qa").onclick=()=>runQuiz(m);return}
+  const q=qs[i],order=shuffle(q.o.map((o,k)=>k));
+  m.innerHTML=`<div class="card"><div class="row" style="justify-content:space-between"><b>${i+1}/${QN}</b><span>⭐ ${score}</span></div><div class="bar"><i style="width:${i/QN*100}%"></i></div><p class="q">${esc(t(q.q))} <button class="say">🔊</button></p>${enx(q.q)}<div class="opts">${order.map(k=>`<button class="opt" data-k="${k}">${esc(t(q.o[k]))}${eno(q.o[k])}</button>`).join("")}</div><div id="qn"></div></div>`;
+  m.querySelector(".say").onclick=()=>say(t(q.q));
+  m.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{const ok=+b.dataset.k===q.ans;if(ok){score++;star()}beep(ok);
+   m.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.k===q.ans)x.classList.add("ok")});if(!ok)b.classList.add("no");
+   m.querySelector("#qn").innerHTML=`${LANG==="en"?`<div class="exam">${UI.examWords} ${exHTML(q.q.ar+" "+q.o[q.ans].ar)}</div>`:""}<button class="btn" style="margin-top:8px">${UI.next}</button>`;
+   m.querySelector("#qn .btn").onclick=()=>{i++;show()}})};
+ show();
+}
+
+// ---------- parents ----------
+VIEWS.parent=m=>{
+ m.innerHTML=`<div class="card"><h2>👪 ${UI.cover}</h2>
+ <p>${LANG==="ar"?"قائمة المدرسة لامتحان أكتوبر (الدراسات الاجتماعية): «من الأول حتى مناخ مصر» = الوحدة الأولى، الدروس ١–٣ (كتاب الوزارة ص ٨–٢٩). موعد الامتحان: الخميس ٢٢/١٠/٢٠٢٦ (الحصة الثانية).":"School's October list for Social Studies: “from the first lesson up to Egypt's climate” = Unit 1, Lessons 1–3 (Ministry book pp. 8–29). Test: Thursday 22/10/2026, 2nd lesson."}</p>
+ <p><b>${LANG==="ar"?"النتيجة: نعم، ورقة الإجابة تغطي الدروس الثلاثة كلها (أداء صفي + واجب + تقييمات أسبوعية أ/ب/ج). لكن الكتاب فيه بعض النقاط غير الموجودة في الورقة، وأضفناها في الصفحة:":"Verdict: yes, the answer sheet covers all three lessons (classwork, homework and weekly tests A/B/C). The book has a few points the sheet never asks, and this page adds them:"}</b></p>
+ <table><tr><th>${LANG==="ar"?"الموضوع":"Topic"}</th><th>${LANG==="ar"?"الحالة":"Status"}</th></tr>
+ ${DATA.coverage.map(c=>`<tr><td>${esc(t(c.t))}</td><td>${c.key===true?"✅ "+UI.inKey:c.key===false?"📕 "+UI.notKey:"⛔ "+UI.outScope}</td></tr>`).join("")}</table></div>
+ <div class="card"><h3>⚠️ ${LANG==="ar"?"ملاحظات على ورقة الإجابة":"Notes on the answer sheet"}</h3><ul>
+ <li>${LANG==="ar"?"ص٨ (الصحراء الشرقية): إجابة السؤال (ب) مكتوبة «يصبح غير مأهول بالسكان» وهي خطأ نسخ؛ الكتاب ص١٩: جبال البحر الأحمر تكونت بفعل الانكسارات.":"p.8 (Eastern Desert): item (b) answer reads “becomes uninhabited” – a copy slip. The book (p.19) says the Red Sea Mountains were formed by faults."}</li>
+ <li>${LANG==="ar"?"ص١٤ نموذج (ب) س٤ «لو كانت كل الأراضي سهلية»: ورقة مدرسية أخرى كتبت إجابة مختلفة (زيادة الإنتاج الزراعي). استخدمنا فكرة الكتاب: مظاهر السطح تؤثر في المناخ.":"p.14 model B Q4 “if all land were flat”: another school sheet gave a different answer (more farming). We use the book's idea: landforms affect climate."}</li>
+ <li>${LANG==="ar"?"الإجابات العربية منقولة من ورقة Toddle كما هي تقريبًا لأن الامتحان باللغة العربية.":"Arabic answers are copied almost word-for-word from the Toddle sheet because the test is written in Arabic."}</li>
+ <li>${LANG==="ar"?"الخريطة مبسطة للتوضيح فقط.":"The map is a simplified sketch for learning only."}</li></ul></div>
+ <div class="card"><button class="btn blue" onclick="print()">🖨️ ${LANG==="ar"?"طباعة":"Print"}</button></div>`;
+};
+
+save();go(TABS[0]);
+</script>
+<!-- READ-ALOUD v3: tap-to-read for every page (Arabic + English auto-detected) -->
+<style id="ra-css">
+#ra-bar{position:fixed;bottom:14px;inset-inline-end:14px;z-index:9999;display:flex;gap:6px;align-items:center;font-family:Nunito,Cairo,system-ui,sans-serif}
+#ra-bar button{border:0;border-radius:999px;padding:10px 14px;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 4px 14px #0003;background:#2563eb;color:#fff;font-size:15px}
+#ra-bar #ra-stop{background:#dc2626;display:none}
+#ra-bar #ra-speed{background:#fff;color:#1e3a8a;padding:10px 12px}
+body.ra-on #ra-toggle{background:#16a34a;animation:ra-pulse 1.6s infinite}
+body.ra-on main *:hover,body.ra-on .ra-zone *:hover{outline:2px dashed #16a34a;outline-offset:2px;cursor:help}
+.ra-reading{background:#fef08a!important;outline:3px solid #eab308!important;border-radius:6px}
+@keyframes ra-pulse{50%{box-shadow:0 0 0 8px #16a34a33}}
+@media print{#ra-bar{display:none}}
+</style>
+<div id="ra-bar" dir="ltr">
+ <button id="ra-stop" title="Stop">⏹</button>
+ <button id="ra-speed" title="Speed">1×</button>
+ <button id="ra-toggle" title="Tap any text to hear it">🔊 Tap to read · اضغط لتسمع</button>
+</div>
+<script>
+(function(){
+ if(!("speechSynthesis" in window))return;
+ // Google speech refuses requests that carry a page referrer
+ if(!document.querySelector('meta[name=referrer]')){const m=document.createElement("meta");m.name="referrer";m.content="no-referrer";document.head.appendChild(m)}
+ const AR=/[؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿]/;
+ let rate=0.9,on=false,cur=null;
+ const speeds=[0.75,0.9,1.1];
+ const voices=()=>speechSynthesis.getVoices();
+ const pick=l=>{const v=voices();return l==="ar"?(v.find(x=>/^ar[-_]EG/i.test(x.lang))||v.find(x=>/^ar/i.test(x.lang))):(v.find(x=>/^en[-_]GB/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang)))};
+ // split mixed text into Arabic / non-Arabic runs so each is read by the right voice
+ function runs(text){const out=[];let buf="",lang=null;
+  for(const w of text.replace(/\s+/g," ").trim().split(/(\s+)/)){const l=AR.test(w)?"ar":(/[A-Za-z]/.test(w)?"en":null);
+   if(l&&lang&&l!==lang){out.push([lang,buf]);buf="";}if(l)lang=l;buf+=w}
+  if(buf.trim())out.push([lang||(AR.test(buf)?"ar":"en"),buf]);return out}
+ let queue=[],audio=null,gen=0;
+ function chunks(t,n){const out=[];let c="";for(const w of t.split(" ")){if((c+" "+w).length>n&&c){out.push(c);c=w}else c=c?c+" "+w:w}if(c)out.push(c);return out}
+ function done(){if(cur)cur.classList.remove("ra-reading");document.getElementById("ra-stop").style.display="none"}
+ function next(g){if(g!==gen)return;const it=queue.shift();if(!it)return done();
+  const v=pick(it.l);
+  if(it.l==="ar"&&!v){ // no Arabic voice on this device (e.g. Chrome on Linux): use Google Translate speech
+   audio=new Audio("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&ttsspeed="+(rate<0.8?0.5:1)+"&q="+encodeURIComponent(it.t));
+   audio.playbackRate=rate>1?1.1:1;audio.onended=audio.onerror=()=>next(g);audio.play().catch(()=>next(g));return}
+  const u=new SpeechSynthesisUtterance(it.t);u.lang=it.l==="ar"?"ar-EG":"en-GB";if(v)u.voice=v;u.rate=rate;u.onend=u.onerror=()=>next(g);speechSynthesis.speak(u)}
+ function stop(){gen++;queue=[];speechSynthesis.cancel();if(audio){audio.pause();audio=null}done()}
+ function speak(text,el){stop();cur=el||null;if(cur)cur.classList.add("ra-reading");
+  const parts=runs(String(text).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}️‍]/gu,""));if(!parts.length)return;
+  document.getElementById("ra-stop").style.display="inline-block";
+  parts.forEach(([l,t])=>chunks(t.trim(),l==="ar"&&!pick("ar")?180:600).forEach(c=>queue.push({l,t:c})));next(gen)}
+ window.RA={speak};
+ const SEL="h1,h2,h3,h4,p,li,td,th,summary,label,.q,.opt,.tile,.info,.ans,.exam,.en,.fact>div,.note,.fa,.fb,.result,.say-text,button,div";
+ document.addEventListener("click",e=>{if(!on)return;const bar=e.target.closest("#ra-bar");if(bar)return;
+  let el=e.target.closest(SEL);while(el&&el.tagName==="DIV"&&el.children.length>6)el=null;
+  if(!el)el=e.target;const txt=(el.innerText||el.textContent||"").trim();if(!txt)return;
+  e.preventDefault();e.stopPropagation();speak(txt.slice(0,1200),el)},true);
+ document.getElementById("ra-toggle").onclick=()=>{on=!on;document.body.classList.toggle("ra-on",on);if(!on){stop()}else speak(document.documentElement.lang==="en"?"Tap any words to hear them. Tap the green button again to stop.":"اضغط على أي كلام لتسمعه")};
+ document.getElementById("ra-stop").onclick=stop;
+ document.getElementById("ra-speed").onclick=e=>{rate=speeds[(speeds.indexOf(rate)+1)%speeds.length];e.target.textContent=(rate===0.75?"🐢 ":rate===1.1?"🐇 ":"")+rate+"×"};
+ speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{};
+})();
+</script>
+<!-- /READ-ALOUD -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!-- READ-ALOUD v3: tap-to-read for every page (Arabic + English auto-detected) -->
+<style id="ra-css">
+#ra-bar{position:fixed;bottom:14px;inset-inline-end:14px;z-index:9999;display:flex;gap:6px;align-items:center;font-family:Nunito,Cairo,system-ui,sans-serif}
+#ra-bar button{border:0;border-radius:999px;padding:10px 14px;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 4px 14px #0003;background:#2563eb;color:#fff;font-size:15px}
+#ra-bar #ra-stop{background:#dc2626;display:none}
+#ra-bar #ra-speed{background:#fff;color:#1e3a8a;padding:10px 12px}
+body.ra-on #ra-toggle{background:#16a34a;animation:ra-pulse 1.6s infinite}
+body.ra-on main *:hover,body.ra-on .ra-zone *:hover{outline:2px dashed #16a34a;outline-offset:2px;cursor:help}
+.ra-reading{background:#fef08a!important;outline:3px solid #eab308!important;border-radius:6px}
+@keyframes ra-pulse{50%{box-shadow:0 0 0 8px #16a34a33}}
+@media print{#ra-bar{display:none}}
+</style>
+<div id="ra-bar" dir="ltr">
+ <button id="ra-stop" title="Stop">⏹</button>
+ <button id="ra-speed" title="Speed">1×</button>
+ <button id="ra-toggle" title="Tap any text to hear it">🔊 Tap to read · اضغط لتسمع</button>
+</div>
+<script>
+(function(){
+ if(!("speechSynthesis" in window))return;
+ // Google speech refuses requests that carry a page referrer
+ if(!document.querySelector('meta[name=referrer]')){const m=document.createElement("meta");m.name="referrer";m.content="no-referrer";document.head.appendChild(m)}
+ const AR=/[؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿]/;
+ let rate=0.9,on=false,cur=null;
+ const speeds=[0.75,0.9,1.1];
+ const voices=()=>speechSynthesis.getVoices();
+ const pick=l=>{const v=voices();return l==="ar"?(v.find(x=>/^ar[-_]EG/i.test(x.lang))||v.find(x=>/^ar/i.test(x.lang))):(v.find(x=>/^en[-_]GB/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang)))};
+ // split mixed text into Arabic / non-Arabic runs so each is read by the right voice
+ function runs(text){const out=[];let buf="",lang=null;
+  for(const w of text.replace(/\s+/g," ").trim().split(/(\s+)/)){const l=AR.test(w)?"ar":(/[A-Za-z]/.test(w)?"en":null);
+   if(l&&lang&&l!==lang){out.push([lang,buf]);buf="";}if(l)lang=l;buf+=w}
+  if(buf.trim())out.push([lang||(AR.test(buf)?"ar":"en"),buf]);return out}
+ let queue=[],audio=null,gen=0;
+ function chunks(t,n){const out=[];let c="";for(const w of t.split(" ")){if((c+" "+w).length>n&&c){out.push(c);c=w}else c=c?c+" "+w:w}if(c)out.push(c);return out}
+ function done(){if(cur)cur.classList.remove("ra-reading");document.getElementById("ra-stop").style.display="none"}
+ function next(g){if(g!==gen)return;const it=queue.shift();if(!it)return done();
+  const v=pick(it.l);
+  if(it.l==="ar"&&!v){ // no Arabic voice on this device (e.g. Chrome on Linux): use Google Translate speech
+   audio=new Audio("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&ttsspeed="+(rate<0.8?0.5:1)+"&q="+encodeURIComponent(it.t));
+   audio.playbackRate=rate>1?1.1:1;audio.onended=audio.onerror=()=>next(g);audio.play().catch(()=>next(g));return}
+  const u=new SpeechSynthesisUtterance(it.t);u.lang=it.l==="ar"?"ar-EG":"en-GB";if(v)u.voice=v;u.rate=rate;u.onend=u.onerror=()=>next(g);speechSynthesis.speak(u)}
+ function stop(){gen++;queue=[];speechSynthesis.cancel();if(audio){audio.pause();audio=null}done()}
+ function speak(text,el){stop();cur=el||null;if(cur)cur.classList.add("ra-reading");
+  const parts=runs(String(text).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}️‍]/gu,""));if(!parts.length)return;
+  document.getElementById("ra-stop").style.display="inline-block";
+  parts.forEach(([l,t])=>chunks(t.trim(),l==="ar"&&!pick("ar")?180:600).forEach(c=>queue.push({l,t:c})));next(gen)}
+ window.RA={speak};
+ const SEL="h1,h2,h3,h4,p,li,td,th,summary,label,.q,.opt,.tile,.info,.ans,.exam,.en,.fact>div,.note,.fa,.fb,.result,.say-text,button,div";
+ document.addEventListener("click",e=>{if(!on)return;const bar=e.target.closest("#ra-bar");if(bar)return;
+  let el=e.target.closest(SEL);while(el&&el.tagName==="DIV"&&el.children.length>6)el=null;
+  if(!el)el=e.target;const txt=(el.innerText||el.textContent||"").trim();if(!txt)return;
+  e.preventDefault();e.stopPropagation();speak(txt.slice(0,1200),el)},true);
+ document.getElementById("ra-toggle").onclick=()=>{on=!on;document.body.classList.toggle("ra-on",on);if(!on){stop()}else speak(document.documentElement.lang==="en"?"Tap any words to hear them. Tap the green button again to stop.":"اضغط على أي كلام لتسمعه")};
+ document.getElementById("ra-stop").onclick=stop;
+ document.getElementById("ra-speed").onclick=e=>{rate=speeds[(speeds.indexOf(rate)+1)%speeds.length];e.target.textContent=(rate===0.75?"🐢 ":rate===1.1?"🐇 ":"")+rate+"×"};
+ speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{};
+})();
+</script>
+<!-- /READ-ALOUD -->

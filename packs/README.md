@@ -57,3 +57,15 @@ English translation of the Arabic Grade 5 Science book (Term 1), with Arabic key
 - [Jimmy — Revision, Chapters 4–9](gamal/science/arabic-book-term1/revision-chapters-4-9.html)
 
 Completes the Term 1 book (pages 44–107) in the same format as Chapters 1–3. [Provenance](../docs/provenance/science-arabic-book-chapters-4-9-2026-10-21.md).
+
+## Social Studies · Unit 1 October test · 21 October 2026
+
+- [Jimmy — Lesson 1: Egypt's astronomical location (Arabic + English)](gamal/social-studies/unit1-lesson1-astronomical-location-hybrid.html)
+- [Jimmy — Lesson 2: Egypt's landforms (Arabic + English)](gamal/social-studies/unit1-lesson2-landforms-hybrid.html)
+- [Jimmy — Lesson 3: Egypt's climate (Arabic + English)](gamal/social-studies/unit1-lesson3-climate-hybrid.html)
+- [Jimmy — Test revision, Lessons 1–3 (Arabic + English)](gamal/social-studies/october-test-unit1-hybrid.html)
+- [Jimmy — Test revision (English only)](gamal/social-studies/october-test-unit1-english.html)
+- [Jimmy — Test revision (Arabic only)](gamal/social-studies/october-test-unit1-arabic.html)
+- [Jimmy — All 3 lessons on one page (Arabic + English)](gamal/social-studies/unit1-lessons-hybrid.html)
+
+Built from the Ministry Grade 5 Social Studies book (pp. 8–29) and the school's Toddle answer sheet «اجابة التقيمات». Each lesson page has Explanation → Classwork & homework → Weekly test (Models A/B/C) → quiz. All 18 Grade 5 pages (these plus Science) now carry the tap-to-read bar from `tools/readaloud/`. iPad/phone hub: https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY (private; share from its Share menu). [Provenance](../docs/provenance/gamal/social-studies/october-test-unit1-2026-10-21.md).
