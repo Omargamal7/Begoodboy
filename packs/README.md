@@ -45,3 +45,15 @@ Both packs open independently offline and save individual progress in the curren
 - [Jimmy — Revision, Chapters 1–3](gamal/science/arabic-book-term1/revision-chapters-1-3.html)
 
 English translation of the Arabic Grade 5 Science book (Term 1), with Arabic key terms. Each chapter has an Explanation tab and an Assessment tab with every حاول/تدرَّب question; answers are authored. [Provenance](../docs/provenance/science-arabic-book-2026-10-20.md).
+
+## Science · Arabic ministry book, Chapters 4–9 · 21 October 2026
+
+- [Jimmy — Chapter 4: Conditions for Growth](gamal/science/arabic-book-term1/chapter-4-conditions-for-growth.html)
+- [Jimmy — Chapter 5: From Flower to Fruit](gamal/science/arabic-book-term1/chapter-5-from-flower-to-fruit.html)
+- [Jimmy — Chapter 6: Human Growth and Reproduction](gamal/science/arabic-book-term1/chapter-6-human-growth-and-reproduction.html)
+- [Jimmy — Chapter 7: Animal Growth and Reproduction](gamal/science/arabic-book-term1/chapter-7-animal-growth-and-reproduction.html)
+- [Jimmy — Chapter 8: Weather Changes](gamal/science/arabic-book-term1/chapter-8-weather-changes.html)
+- [Jimmy — Chapter 9: The Water Cycle](gamal/science/arabic-book-term1/chapter-9-water-cycle.html)
+- [Jimmy — Revision, Chapters 4–9](gamal/science/arabic-book-term1/revision-chapters-4-9.html)
+
+Completes the Term 1 book (pages 44–107) in the same format as Chapters 1–3. [Provenance](../docs/provenance/science-arabic-book-chapters-4-9-2026-10-21.md).

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Conditions for Growth</title>
+<style>
+  :root {
+    --main: #ea580c;
+    --main-dark: #9a3412;
+    --main-light: #ffedd5;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 4</span>
+    <h1>Chapter 4: Conditions for Growth</h1>
+    <div class="ar">الفصل الرابع: شروط النمو</div>
+    <p>Lessons 4-1 and 4-2 and the 'magic seeds' enrichment corner · book pages 44–51</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "4-1", "title": "Sunlight and Growth", "ar": "ضوء الشمس والنمو", "page": "44–45", "question": "Do plants need sunlight to grow healthily?", "blocks": [{"say": "The plant that got sunlight has big, strong leaves.", "who": "🐱"}, {"h": "Learn: Sunlight and growth", "badge": "تعلَّم", "points": ["Plants need <b class=\"key\">sunlight<\/b> <span class=\"ar-term\">(ضوء الشمس)<\/span> to grow well <b>after<\/b> they germinate.", "<b>The role of sunlight:<\/b> the first and most important factor is sunlight. The plant uses the sun's rays to make its <b class=\"key\">food<\/b> <span class=\"ar-term\">(غذاءه)<\/span> that it needs to grow.", "Plants that get sunlight have <b class=\"key\">dark green<\/b> <span class=\"ar-term\">(خضراء داكنة)<\/span> leaves, and their stems grow <b class=\"key\">thick and strong<\/b> <span class=\"ar-term\">(سميكة وقوية)<\/span>.", "<b>How do we check whether plants need sunlight to grow?<\/b>", "<b>The condition we change:<\/b> <b class=\"key\">sunlight or no sunlight<\/b> <span class=\"ar-term\">(وجود ضوء الشمس أو غيابه)<\/span>.", "<b>Conditions we keep the same:<\/b> water, air, temperature, fertilizer, type of soil, and type of plant."]}, {"activity": {"title": "Compare plant growth with and without sunlight!", "steps": ["Prepare two seedlings (small plants) of about the same size, and check the effect of sunlight.", "<b>You need:<\/b> two bean seedlings, a cardboard box.", "<b>Change the condition:<\/b> put pot <b>(A)<\/b> in a place that gets enough sunlight. Cover pot <b>(B)<\/b> with a dark box to block the sunlight.", "<b>Observe:<\/b> water both pots for about a week, keeping water and temperature the same, then compare the <b>colour of the leaves<\/b> and the <b>thickness of the stem<\/b>.", "<b>Remember:<\/b> if the soil gets dry, don't forget to water it.", "<b>Result:<\/b> (A) in the sun → dark green leaves, thick strong stem. (B) in the dark → leaves turn <b>yellowish<\/b>, stem becomes <b>thin and long<\/b> (weak)."]}}], "terms": [["Sunlight", "ضوء الشمس", "Plants use it to make their own food"], ["Dark green leaves", "خضراء داكنة", "Sign of a plant that got sunlight"], ["Thick, strong stem", "سميكة وقوية", "Plant that got sunlight"], ["Yellowish leaves, thin long stem", "مائلة إلى الاصفرار / رفيعة وطويلة", "Plant kept in the dark"]]}, {"num": "4-2", "title": "Fertilizer and Growth", "ar": "السماد والنمو", "page": "46–47", "question": "Do plants need fertilizer (nutrients) to grow bigger?", "blocks": [{"say": "🐶: \"The plant that got fertilizer is taller.\" 🐱: \"Both of them got sunlight.\"", "who": "🐶"}, {"h": "Learn: Compare under the same conditions", "badge": "تعلَّم", "points": ["Plants need <b class=\"key\">fertilizer<\/b> <span class=\"ar-term\">(السماد)<\/span> in the soil to grow <b>bigger and stronger<\/b>.", "<b>The role of fertilizer:<\/b> besides water and sunlight, plants absorb <b class=\"key\">nutrients<\/b> <span class=\"ar-term\">(العناصر الغذائية)<\/span> from the fertilizer, so their leaves and stems <b class=\"key\">grow more<\/b> <span class=\"ar-term\">(يزداد نموها)<\/span>.", "<b>How do we check whether plants need fertilizer to grow?<\/b>", "<b>The condition we change:<\/b> <b class=\"key\">fertilizer or no fertilizer<\/b> <span class=\"ar-term\">(وجود السماد أو عدم وجوده)<\/span>.", "<b>Conditions we keep the same:<\/b> water, sunlight, air, temperature, type of soil, and type of plant."]}, {"say": "Fertilizer is like a food supplement for plants!", "who": "🐔"}, {"activity": {"title": "See the difference fertilizer makes!", "steps": ["Notice the difference in growth with and without fertilizer, in the same environment.", "<b>You need:<\/b> two similar bean seedlings, fertilizer.", "<b>Change the condition:<\/b> give pot <b>(B)<\/b> water only, and give pot <b>(A)<\/b> water mixed with a fixed amount of fertilizer.", "<b>Keep the same sunlight and temperature:<\/b> put both pots in the same place that gets enough sunlight.", "<b>Record growth:<\/b> measure the height every few days, then sum up the difference in how they grew.", "<b>Result:<\/b> (A) with fertilizer grows <b>bigger / taller<\/b>, with more leaves."]}}], "terms": [["Fertilizer", "السماد", "Adds nutrients to soil — plant grows bigger and stronger"], ["Nutrients", "العناصر الغذائية", "What the plant absorbs from fertilizer"], ["Changed condition", "الشرط الذي نغيره", "Fertilizer or no fertilizer"], ["Growth needs", "شروط النمو", "Sunlight + fertilizer (after germination) + water, air, temperature"]]}, {"enrich": true, "title": "Enrichment corner (Chapters 3 & 4): Magic seeds that travel through thousands of years", "ar": "ركن إثرائي: البذور السحرية التي تسافر عبر آلاف السنين", "page": "50–51", "blocks": [{"h": "1. A time capsule of sleeping life in the pyramids", "icon": "🏺", "points": ["Egypt gives us an example that explains the germination conditions we learned in Chapter 3.", "<b>A gift from the ancient Egyptians:<\/b> wheat seeds more than <b>3,000 years old<\/b> have been found in pottery jars in the tombs of ancient Egyptian kings. Scientists discovered that the <b>starch<\/b> — the energy source the seed needs to germinate — was still kept inside these ancient grains!", "<b>Survival by 'dormancy'<\/b> (السكون): plants can stop their activity and stay dormant as long as the three germination conditions (water, air, suitable temperature) are not available. Egypt's very dry air helped stop the seeds from rotting, so they stayed preserved for thousands of years."]}, {"h": "2. The Nile and Egypt's black soil", "icon": "🌊", "points": ["The ancient Egyptians called the Nile <b>'the gift of the Nile'<\/b> (هبة النيل). The secret is the fertile soil, rich in nutrients, that makes plants grow — as we learned in Chapter 4.", "<b>Natural liquid fertilizer:<\/b> every year floods brought soil rich in nutrients from the highlands of Ethiopia and left it on the banks. This soil built up over wide lands and made 'the most fertile farmland in the world', where plants grow well without needing factory-made fertilizers.", "<b>A journey of rocks:<\/b> the Nile carries big rocks from its sources thousands of kilometres. As they rub against each other they break into tiny grains and become soft <b>silt<\/b> (تربة طمي ناعمة), which makes it easy for roots to spread and grow."]}]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it (حاول, p. 48)", "qs": [{"type": "fill", "q": "Plants that grow with enough sunlight have leaves that are ___ and stems that are ___.", "bank": [["whitish", "dark green", "yellowish"], ["long and thin", "thin and weak", "thick and strong"]], "ans": [1, 2]}, {"type": "short", "q": "What condition is changed between the two groups in the experiment on the effect of sunlight?", "a": "<b>Sunlight or no sunlight<\/b> (وجود ضوء الشمس أو غيابه)."}, {"type": "mc", "q": "Complete: Seedlings that grow with fertilizer ___ than seedlings that grow without it.", "opts": ["grow bigger", "grow smaller", "die quickly"], "ans": 0}, {"type": "multi", "pick": "TWO correct answers", "q": "Which two conditions must stay the same in the experiment on the effect of fertilizer?", "opts": ["The amount of fertilizer.", "How the sunlight reaches them.", "The amount of water."], "ans": [1, 2], "why": "Fertilizer is the condition we CHANGE."}]}, {"title": "Practise (تدرَّب, p. 49)", "qs": [{"type": "mc", "q": "Which describes a plant growing WITHOUT sunlight correctly?", "opts": ["The leaves get bigger and the stems get thick.", "The leaves turn yellowish and the stems become thin and long.", "It doesn't grow at all."], "ans": 1}, {"type": "mc", "q": "Choose the correct explanation of the link between sunlight and plants:", "opts": ["Plants can keep growing healthily without sunlight as long as they get water.", "Plants need sunlight to grow strong."], "ans": 1}, {"type": "mc", "q": "Which of these is NOT an effect of fertilizer on a plant?", "opts": ["The stems become longer.", "The number of leaves decreases.", "The whole plant becomes bigger."], "ans": 1}, {"type": "fill", "q": "Plants make their food by getting light from ___, and they absorb ___ so their bodies grow bigger.", "bank": [["the sun", "the soil"], ["fertilizer (nutrients)", "air", "light"]], "ans": [0, 0]}]}, {"title": "Extra: enrichment corner check", "note": "Not in the book's exercises — quick check of pages 50–51.", "qs": [{"type": "mc", "q": "Why could 3,000-year-old wheat seeds from the pyramids stay preserved?", "opts": ["They were kept in water.", "The very dry air stopped them rotting, and without the germination conditions they stayed dormant.", "They were kept in the fridge."], "ans": 1}, {"type": "mc", "q": "Why is the Nile valley soil so fertile?", "opts": ["Floods brought nutrient-rich soil from Ethiopia every year.", "It is made of sand.", "Farmers add factory fertilizer only."], "ans": 0}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

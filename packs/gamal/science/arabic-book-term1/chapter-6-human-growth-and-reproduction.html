@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Human Growth</title>
+<style>
+  :root {
+    --main: #db2777;
+    --main-dark: #9d174d;
+    --main-light: #fce7f3;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 6</span>
+    <h1>Chapter 6: Human Growth and Reproduction</h1>
+    <div class="ar">الفصل السادس: نمو الإنسان والتكاثر</div>
+    <p>Lessons 6-1 to 6-3 · book pages 64–71</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "6-1", "title": "Stages of Human Growth", "ar": "مراحل نمو الإنسان", "page": "64–65", "question": "Humans live, grow and reproduce. How do humans grow?", "blocks": [{"say": "When you walk around the city you can see people of all ages, from babies to old people.", "who": "🐱"}, {"h": "Learn: Life is linked to growth", "badge": "تعلَّم", "points": ["<b class=\"key\">Reproduction<\/b> <span class=\"ar-term\">(التكاثر)<\/span> is one of the ways life continues and the species is kept. Through reproduction humans stay on Earth and life continues through the generations.", "<b class=\"key\">Growth<\/b> <span class=\"ar-term\">(النمو)<\/span> is a change that happens to living things such as humans, animals and plants. Over time their bodies become <b class=\"key\">bigger and stronger<\/b> <span class=\"ar-term\">(أكبر وأقوى)<\/span> and more complex. The human body doesn't stay small — it keeps changing through clear stages."]}, {"h": "The main stages of growth", "icon": "👶", "points": ["<b class=\"key\">Infancy (babyhood)<\/b> <span class=\"ar-term\">(مرحلة الرضاعة)<\/span>: starts at <b>birth<\/b>, after about <b>9 months<\/b> inside the mother's body. Babies are very small and depend <b>completely<\/b> on their mothers for food, care and protection.", "<b class=\"key\">Childhood<\/b> <span class=\"ar-term\">(مرحلة الطفولة)<\/span>: the stage when a person starts to <b>walk, talk and go to school<\/b>. Bones and muscles become stronger.", "After childhood (child), growth continues through <b class=\"key\">adolescence<\/b> <span class=\"ar-term\">(المراهقة)<\/span> (teenager), then <b class=\"key\">youth / adulthood<\/b> <span class=\"ar-term\">(الشباب)<\/span> (young adult), then <b class=\"key\">old age<\/b> <span class=\"ar-term\">(الشيخوخة)<\/span> (elderly)."]}, {"table": [["Order", "Stage", "Arabic"], ["1", "Infancy (baby)", "الرضاعة"], ["2", "Childhood (child)", "الطفولة"], ["3", "Adolescence (teenager)", "المراهقة"], ["4", "Youth (young adult)", "الشباب"], ["5", "Old age (elderly)", "الشيخوخة"]]}, {"activity": {"title": "Let's follow the path of growth!", "steps": ["Do you remember your height when you were younger? Were you as tall as you are now? What changed, and why?", "<b>Put them in the right order:<\/b> watch the people around you and record the stages of growth in the correct order.", "<b>Discuss:<\/b> with your classmates, explain the features of each stage of human growth, like infancy and childhood.", "<b>Draw yourself:<\/b> which stage are you in now? Draw yourself in your notebook and sum up what you can do now compared with what you could do as a baby."]}}], "terms": [["Reproduction", "التكاثر", "Keeps the species going through generations"], ["Growth", "النمو", "Body becomes bigger, stronger and more complex"], ["Infancy", "مرحلة الرضاعة", "From birth; baby depends completely on mother"], ["Childhood", "مرحلة الطفولة", "Walking, talking, going to school"], ["Adolescence", "المراهقة", "Teenager stage after childhood"], ["Old age", "الشيخوخة", "Last stage — elderly"]]}, {"num": "6-2", "title": "How Parents and Children Are Alike", "ar": "أوجه التشابه بين الآباء والأبناء", "page": "66–67", "question": "Why do the family members in the picture look alike?", "blocks": [{"say": "Has anyone ever told you: \"You look like one of your parents\"?", "who": "🐔"}, {"h": "Learn: Life continues and the role of parents", "badge": "تعلَّم", "points": ["Every person's life begins from a <b class=\"key\">father<\/b> <span class=\"ar-term\">(أب)<\/span> and a <b class=\"key\">mother<\/b> <span class=\"ar-term\">(أم)<\/span>.", "<b>The role of parents:<\/b> parents take good care of their children and protect them until they grow up.", "<b>Similarities between parents and children:<\/b> children look like their parents because they <b class=\"key\">inherit traits<\/b> <span class=\"ar-term\">(يرثون صفات)<\/span> from their father and mother."]}, {"activity": {"title": "Look for similarities and differences in the family!", "steps": ["Look at the family picture and discuss it with your classmates.", "Can you find traits they share?", "What traits does the boy share with his mother?", "What traits does the girl share with her father?", "Describe the similarities and differences between them."]}}], "terms": [["Father & mother", "أب وأم", "Every human life begins from them"], ["Inherit traits", "يرثون صفات", "Why children look like their parents"], ["Parents' role", "دور الوالدين", "Care for and protect children until they grow up"]]}, {"num": "6-3", "title": "Conditions for Healthy Growth", "ar": "شروط النمو الصحي", "page": "68–69", "question": "What do we need to grow well?", "blocks": [{"say": "What helps a young child grow up? Let's discover the secret of growing strong, healthy bodies!", "who": "🐶"}, {"h": "Learn: Three conditions for healthy growth", "badge": "تعلَّم", "points": ["To grow up strong and healthy, we need to pay attention to <b>three important conditions<\/b>:", "① <b class=\"key\">Healthy food<\/b> <span class=\"ar-term\">(الغذاء الصحي)<\/span>: get the <b class=\"key\">nutrients<\/b> <span class=\"ar-term\">(العناصر الغذائية)<\/span> your body needs by drinking milk and eating vegetables and fruit after washing them well.", "② <b class=\"key\">Enough sleep<\/b> <span class=\"ar-term\">(النوم الكافي)<\/span>: while you sleep, your <b>brain rests<\/b> and your <b>body is built and grows<\/b>.", "③ <b class=\"key\">Suitable exercise<\/b> <span class=\"ar-term\">(التمرين المناسب)<\/span>: moving your body makes your <b>heart and muscles<\/b> stronger."]}, {"activity": {"title": "Let's give advice for building a healthy body!", "steps": ["What advice might teachers and doctors give you to grow strong and healthy? Think with your friends.", "<b>Think of advice:<\/b> imagine you're a teacher or doctor, and give your friends advice for healthy growth.", "Food — example: <i>Let's eat ______ every day!<\/i>", "Sleep — example: <i>Let's go to bed before ______ o'clock in the evening!<\/i>", "Exercise — example: <i>Let's play ______ at break time!<\/i>", "<b>Think about your life:<\/b> do you follow the three conditions well now? Choose one thing you want to work hard on from now on, and present your decision."]}}], "terms": [["Healthy food", "الغذاء الصحي", "Milk, vegetables and washed fruit → nutrients"], ["Enough sleep", "النوم الكافي", "Brain rests; body is built and grows"], ["Suitable exercise", "التمرين المناسب", "Makes the heart and muscles stronger"]]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it (حاول, p. 70)", "qs": [{"type": "mc", "q": "What is the correct order of the stages of human growth?", "opts": ["Childhood → youth → infancy → adolescence → old age", "Infancy → childhood → adolescence → youth → old age", "Infancy → youth → childhood → adolescence → old age"], "ans": 1}, {"type": "short", "q": "What do we call the stage that comes straight after birth, in which a person depends completely on the mother and her care?", "a": "<b>Infancy<\/b> (مرحلة الرضاعة)."}, {"type": "mc", "q": "Who does a person's life begin from?", "opts": ["Brothers and sisters", "A father and a mother", "Teachers and friends"], "ans": 1}, {"type": "mc", "q": "Why do children look like their parents?", "opts": ["Because they always live together.", "Because they eat the same things.", "Because they inherit traits from their parents."], "ans": 2}, {"type": "multi", "q": "What conditions are necessary to grow strong and healthy? Choose ALL the correct answers.", "opts": ["Eating healthy food.", "Watching TV all day.", "Staying up late at night.", "Getting enough sleep.", "Doing suitable exercise."], "ans": [0, 3, 4]}, {"type": "mc", "q": "What is the important role of getting enough sleep?", "opts": ["It lets the brain rest and helps build the body.", "It makes the heart and muscles stronger.", "It fills the stomach."], "ans": 0}]}, {"title": "Practise (تدرَّب, p. 71)", "qs": [{"type": "mc", "q": "Which of these is the correct feature of the 'childhood' stage?", "opts": ["They depend completely on the mother.", "They start walking and talking, and go to school.", "Their bodies are smaller and shorter, and they can't move on their own."], "ans": 1}, {"type": "fill", "q": "What changes happen to a living thing's body during 'growth'? Over time, the body becomes ___, ___ and more complex.", "bank": [["bigger", "smaller"], ["stronger", "weaker"]], "ans": [0, 0]}, {"type": "mc", "q": "What important role do parents play towards their children so human life continues?", "opts": ["Caring for the children until they grow up.", "Going far away before the children grow up.", "Going to school and studying instead of the children."], "ans": 0}, {"type": "fill", "q": "Match each action to its condition: ① drinking milk and eating vegetables and fruit → ___ ; ② moving the body to make the heart and muscles stronger → ___ ; ③ good rest at night to rest the brain and build the body → ___", "bank": [["healthy food", "enough sleep", "suitable exercise"], ["healthy food", "enough sleep", "suitable exercise"], ["healthy food", "enough sleep", "suitable exercise"]], "ans": [0, 2, 1]}, {"type": "short", "q": "If you only ate light snacks every day, stayed up late at night, and didn't exercise, what do you think would happen to your body's growth? Think and write the reasons too.", "a": "The body would <b>not grow strong and healthy<\/b>: snacks don't give all the <b>nutrients<\/b> the body needs; staying up late means the <b>brain can't rest and the body isn't built<\/b>; no exercise means the <b>heart and muscles don't get stronger<\/b>."}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>From Flower to Fruit</title>
+<style>
+  :root {
+    --main: #059669;
+    --main-dark: #065f46;
+    --main-light: #d1fae5;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 5</span>
+    <h1>Chapter 5: From Flower to Fruit</h1>
+    <div class="ar">الفصل الخامس: من الزهرة إلى الثمرة</div>
+    <p>Lessons 5-1 to 5-3 and the plant review page · book pages 52–63</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "5-1", "title": "Structure of the Loofah Flower", "ar": "تركيب زهرة نبات اللوف", "page": "52–53", "question": "What is the difference between the flowers of the loofah plant?", "blocks": [{"say": "Not all loofah flowers are the same! There's a tiny fruit under the flower on the left!", "who": "🐱"}, {"h": "Learn: Male flowers and female flowers", "badge": "تعلَّم", "points": ["Loofah and pumpkin (القرع) plants have <b>two kinds of flowers<\/b> on the same plant.", "<b class=\"key\">Male flower<\/b> <span class=\"ar-term\">(الزهرة المذكرة)<\/span>: has a <b class=\"key\">stamen<\/b> <span class=\"ar-term\">(سداة)<\/span> in the centre of the flower, which produces yellow <b class=\"key\">pollen grains<\/b> <span class=\"ar-term\">(حبوب لقاح)<\/span>.", "<b class=\"key\">Female flower<\/b> <span class=\"ar-term\">(الزهرة المؤنثة)<\/span>: has a <b class=\"key\">pistil<\/b> <span class=\"ar-term\">(كربلة)<\/span> in the centre, and a <b>swelling<\/b> (انتفاخ) at the base of the flower. This swelling will turn into a <b>fruit<\/b>.", "Other parts in the picture: <b class=\"key\">petal<\/b> <span class=\"ar-term\">(بتلة)<\/span> and <b class=\"key\">sepal<\/b> <span class=\"ar-term\">(سبلة)<\/span>."]}, {"table": [["", "Male flower ♂", "Female flower ♀"], ["In the centre", "Stamen (سداة) with pollen", "Pistil (كربلة) with a split tip"], ["At the base", "No swelling", "Swelling → becomes the fruit"], ["Makes", "Yellow pollen grains", "The fruit and seeds"]]}, {"activity": {"title": "How do we tell the two flowers apart?", "steps": ["<b>Look at the base of the flower:<\/b> check whether there is a small swelling, like a tiny fruit, right under the petals.", "<b>Look inside the flower:<\/b> is the part in the centre a stamen covered in powder, or a pistil with a split tip?", "<b>Write on a card:<\/b> the flower with a swelling = <b>female<\/b>; the flower without a swelling = <b>male<\/b>. Write about each flower on a record card."]}}], "terms": [["Male flower", "الزهرة المذكرة", "Has a stamen; makes yellow pollen; no swelling"], ["Female flower", "الزهرة المؤنثة", "Has a pistil and a swelling at its base"], ["Stamen", "سداة", "Makes the yellow powder (pollen)"], ["Pollen grains", "حبوب اللقاح", "The yellow powder made by the stamen"], ["Pistil", "كربلة", "Centre of the female flower"], ["Petal / Sepal", "بتلة / سبلة", "Coloured leaf-like parts / green outer parts"]]}, {"num": "5-2", "title": "How Do We Use a Microscope?", "ar": "كيف نستخدم المجهر؟", "page": "55–59", "question": "How should we use a microscope to make tiny pollen grains look bigger so we can see them clearly?", "blocks": [{"say": "Let's learn how to use the microscope!", "who": "🐶"}, {"h": "Learn: What a microscope does", "badge": "تعلَّم", "points": ["A <b class=\"key\">microscope<\/b> <span class=\"ar-term\">(المجهر)<\/span> makes things that are hard to see with the naked eye or a magnifying glass look bigger, so we can observe them in detail.", "<b class=\"key\">Prepared slide<\/b> <span class=\"ar-term\">(شريحة مُحضَّرة)<\/span>: a sample we want to observe, put between two pieces of glass to make it easy to see under the microscope."]}, {"h": "How to prepare a slide", "icon": "🧫", "points": ["① Put the thing you want to observe on the <b class=\"key\">slide<\/b> <span class=\"ar-term\">(الشريحة)<\/span>. If you need water, add one or two drops.", "② Lower the <b class=\"key\">cover slip<\/b> <span class=\"ar-term\">(الغطاء الزجاجي)<\/span> slowly from one side so no <b>air bubbles<\/b> get in.", "③ Gently remove the extra water around the edges using <b>filter paper<\/b> (ورق الترشيح)."]}, {"h": "Parts of the microscope", "icon": "🔬", "table": [["Part", "Arabic", "Job"], ["Eyepiece (ocular lens)", "العدسة العينية", "The lens you look through"], ["Tube", "الأنبوب", "Holds the eyepiece"], ["Revolving nosepiece", "القرص الدوار", "Turns to change the objective lens"], ["Objective lens", "العدسة الشيئية", "Lens close to the slide; short = low magnification"], ["Arm", "الذراع", "You hold the microscope by it"], ["Adjustment knob", "قرص الضبط", "Moves slide and objective closer / further to focus"], ["Clips", "المشابك", "Hold the slide in place"], ["Stage", "المنضدة", "Flat table where the slide is put"], ["Mirror", "العاكس", "Reflects light up so the view is bright"]]}, {"h": "How to use the microscope", "icon": "📋", "points": ["① Put it on a <b>flat, bright<\/b> place, <b>away from direct sunlight<\/b>.", "② Set the objective lens to the <b>lowest<\/b> magnification.", "③ Look through the eyepiece and adjust the angle of the <b>mirror<\/b> so the view is clear and bright.", "④ Put the prepared slide on the <b>stage<\/b>.", "⑤ <b>While looking from the side<\/b>, turn the adjustment knob to bring the slide and the objective lens <b>as close as possible<\/b>.", "⑥ Look through the eyepiece and focus the image <b>while moving the objective lens away<\/b> from the slide. <b>Reason:<\/b> to stop the objective lens hitting the slide and breaking it."]}, {"h": "How things look in a microscope", "icon": "🔄", "points": ["The image does not look as it really is — it appears <b class=\"key\">upside down and reversed left-to-right<\/b> <span class=\"ar-term\">(مقلوبة من أعلى لأسفل، ومعكوسة من اليمين إلى اليسار)<\/span>.", "So you must move the object in the <b>opposite direction<\/b> to where you want it to go."]}, {"h": "Magnification", "icon": "🔍", "points": ["<b>Low magnification:<\/b> the field of view is <b>wide<\/b> and the image is <b>bright<\/b>.", "<b>High magnification:<\/b> the field of view is <b>narrow<\/b> and the image is <b>dark<\/b>.", "Always <b>start with LOW magnification<\/b>, then move to high. <b>Reason:<\/b> the field of view is wider, so it's easier to find the thing you want to observe.", "<b>Microscope magnification = eyepiece magnification × objective magnification.<\/b> Example: 10× × 40× = <b>400×<\/b>."]}, {"activity": {"title": "Observe pollen grains!", "steps": ["<b>Prepare:<\/b> collect pollen from the stamen of a male loofah flower. Put the microscope on a flat, bright place.", "<b>Make a slide:<\/b> put the pollen on a glass slide, add a few drops of water, and gently lower the cover slip on top.", "<b>Choose the magnification:<\/b> start with the shortest objective lens (low magnification).", "<b>Focus:<\/b> looking from the side, turn the knob to bring the slide and objective as close as possible. Then look through the eyepiece and focus while moving the objective away from the slide.", "<b>Write on a record card.<\/b>"]}}], "terms": [["Microscope", "المجهر", "Makes tiny things look bigger"], ["Prepared slide", "شريحة مُحضَّرة", "Sample between two pieces of glass"], ["Cover slip", "الغطاء الزجاجي", "Lower it slowly from one side — no air bubbles"], ["Eyepiece", "العدسة العينية", "The lens you look through"], ["Objective lens", "العدسة الشيئية", "Lens near the slide"], ["Mirror", "العاكس", "Makes the view bright"], ["Magnification", "قوة التكبير", "Eyepiece × objective (10 × 40 = 400)"], ["Upside down", "مقلوبة ومعكوسة", "Move the slide the OPPOSITE way"]]}, {"num": "5-3", "title": "Pollination and How Fruits Grow", "ar": "التلقيح وكيف تنمو الثمار", "page": "60–61", "question": "What is needed for a flower to turn into a fruit?", "blocks": [{"say": "What job do you think pollen grains do?", "who": "🐔"}, {"h": "Learn: The role of pollination", "badge": "تعلَّم", "points": ["When pollen from a male flower sticks to the <b>tip of the pistil<\/b> in a female flower, this is called <b class=\"key\">pollination<\/b> <span class=\"ar-term\">(التلقيح)<\/span>. For a flower to turn into a fruit, <b>pollination is necessary<\/b>.", "In plants that have separate male and female flowers, like loofah, <b class=\"key\">insects<\/b> <span class=\"ar-term\">(الحشرات)<\/span> such as <b>bees<\/b> carry the pollen to pollinate the flowers.", "After pollination, the <b class=\"key\">pistil<\/b> <span class=\"ar-term\">(الكربلة)<\/span> turns into a <b class=\"key\">fruit<\/b> <span class=\"ar-term\">(ثمرة)<\/span>, and <b class=\"key\">seeds<\/b> <span class=\"ar-term\">(البذور)<\/span> form inside it. Later the seeds sprout and grow, and the plant's life continues."]}, {"table": [["Order", "What happens"], ["1", "Pollination (pollen sticks to the pistil)"], ["2", "The swelling at the base grows"], ["3", "Seeds form inside the fruit"]]}, {"activity": {"title": "Discover the secret of fruit growth!", "steps": ["We compare two female flowers to find out whether pollination is really necessary.", "<b>Prepare:<\/b> two female loofah buds that look like they'll open tomorrow, a male loofah flower, paper bags, a brush or cotton bud.", "① Put a bag over each of the two female flowers.", "② When the flowers open, take the bag off female flower <b>(A)<\/b>, put pollen from the male flower directly onto its pistil, then put the bag back on. Flower <b>(B)<\/b> is not pollinated.", "③ After a few days, when the flowers wither, take off both bags and check for fruit.", "<b>Result:<\/b> only (A) — the pollinated flower — grows a fruit. (B) turns yellow and falls off without growing."]}}], "terms": [["Pollination", "التلقيح", "Pollen sticks to the tip of the pistil of a female flower"], ["Insects / bees", "الحشرات / النحل", "Carry pollen between loofah flowers"], ["Fruit", "الثمرة", "The pistil (swelling) after pollination"], ["Seeds", "البذور", "Form inside the fruit"], ["Not pollinated", "لم يتم تلقيحها", "Turns yellow and falls without growing"]]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it — lesson 5-1 (حاول, p. 54)", "qs": [{"type": "short", "q": "Which loofah flower has a swelling at its base that will turn into a fruit?", "a": "The <b>female flower<\/b> (الزهرة المؤنثة)."}, {"type": "short", "q": "What do we call the part in the male flower that produces the yellow powder?", "a": "The <b>stamen<\/b> (السداة)."}, {"type": "short", "q": "What is the yellow powder in question 2 called?", "a": "<b>Pollen grains<\/b> (حبوب اللقاح)."}]}, {"title": "Practise — lesson 5-1 (تدرَّب, p. 54)", "qs": [{"type": "mc", "q": "Choose the correct answer about loofah flowers:", "opts": ["The stamen and pistil are together in one flower.", "The male flower has a stamen, and the female flower has a pistil and a swelling.", "The male flower has a pistil, and the female flower has a stamen and a swelling."], "ans": 1}, {"type": "short", "q": "What will the swelling at the base of the female flower turn into in the future?", "a": "A <b>fruit<\/b> (ثمرة)."}]}, {"title": "Try it — lesson 5-2 (حاول, p. 59)", "qs": [{"type": "fill", "q": "Label the microscope picture: (a) the top lens = ___, (b) the knob on the side = ___, (c) the round part at the bottom = ___.", "bank": [["eyepiece", "objective lens", "mirror"], ["clips", "adjustment knob", "stage"], ["mirror", "stage", "eyepiece"]], "ans": [0, 1, 0]}, {"type": "fill", "q": "Label the microscope picture: (d) the flat table = ___, (e) the lens pointing down at the slide = ___.", "bank": [["stage", "arm", "tube"], ["eyepiece", "objective lens", "mirror"]], "ans": [0, 1]}, {"type": "mc", "q": "The eyepiece magnification is 10× and the objective magnification is 40×. What is the microscope's magnification?", "opts": ["50×", "400×", "4×", "30×"], "ans": 1, "why": "10 × 40 = 400."}, {"type": "mc", "q": "When observing with a microscope, do we start with low or high magnification?", "opts": ["Low magnification", "High magnification"], "ans": 0, "why": "The field of view is wider, so it's easier to find the object."}]}, {"title": "Practise — lesson 5-2 (تدرَّب, p. 59)", "qs": [{"type": "fill", "q": "The microscope is used on a flat and ___ place, where ___ does not fall on it directly.", "bank": [["bright", "dark", "wet"], ["sunlight", "water", "air"]], "ans": [0, 0]}, {"type": "fill", "q": "In the picture of making a slide: (A) the flat glass at the bottom = ___, (B) the thin glass being lowered = ___.", "bank": [["slide", "cover slip"], ["slide", "cover slip"]], "ans": [0, 1]}, {"type": "mc", "q": "Put the steps for using a microscope in the correct order: (a) focus the image while slowly widening the gap between slide and objective; (b) adjust the mirror so the view is bright; (c) put the slide on the stage; (d) turn the knob to bring the slide close to the objective.", "opts": ["a → b → c → d", "b → c → d → a", "c → b → a → d", "d → c → b → a"], "ans": 1}]}, {"title": "Try it — lesson 5-3 (حاول, p. 62)", "qs": [{"type": "short", "q": "What do we call the process in which pollen grains stick to the tip of the pistil?", "a": "<b>Pollination<\/b> (التلقيح)."}, {"type": "mc", "q": "Choose the correct order of the changes that happen after pollination:", "opts": ["Pollination → the swelling at the base grows → seeds form inside the fruit", "Seeds form inside the fruit → pollination → the swelling grows", "Pollination → seeds form inside the fruit → the swelling grows"], "ans": 0}]}, {"title": "Practise — lesson 5-3 (تدرَّب, p. 62)", "qs": [{"type": "fill", "q": "What carries the pollen of loofah plants to complete pollination? Insects such as ___.", "bank": [["bees", "ants", "flies"]], "ans": [0]}, {"type": "mc", "q": "What happens to a female flower that was NOT pollinated?", "opts": ["The fruit grows slowly.", "It turns yellow and falls off without the fruit growing.", "It simply turns into a seed."], "ans": 1}]}, {"title": "Review and practice — plants (مراجعة وتدريب, p. 63)", "qs": [{"type": "mc", "q": "In the general structure of a flower, what is the correct order of parts from the OUTSIDE to the INSIDE?", "opts": ["Pistil → petal → sepal", "Sepal → petal → pistil"], "ans": 1}, {"type": "mc", "q": "Which loofah flower has a swelling at its base that turns into a fruit?", "opts": ["The male flower", "The female flower"], "ans": 1}, {"type": "short", "q": "What do we call the yellow powder formed at the tip of the stamen in a male loofah flower?", "a": "<b>Pollen grains<\/b> (حبوب اللقاح)."}, {"type": "mc", "q": "When focusing a microscope WHILE LOOKING THROUGH THE LENS, which way do you turn the knob?", "opts": ["The way that brings the objective closer to the slide.", "The way that moves the objective away from the slide."], "ans": 1, "why": "Moving away stops the lens hitting and breaking the slide."}, {"type": "short", "q": "What do we call the process in which pollen from a male flower sticks to the tip of the pistil of a female flower?", "a": "<b>Pollination<\/b> (التلقيح)."}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

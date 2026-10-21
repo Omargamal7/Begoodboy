@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Animal Growth</title>
+<style>
+  :root {
+    --main: #0891b2;
+    --main-dark: #155e75;
+    --main-light: #cffafe;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 7</span>
+    <h1>Chapter 7: Animal Growth and Reproduction</h1>
+    <div class="ar">الفصل السابع: نمو الحيوانات وتكاثرها</div>
+    <p>Lessons 7-1 to 7-3 · book pages 72–79</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "7-1", "title": "Animals That Give Birth", "ar": "حيوانات تلد صغارًا", "page": "72–73", "question": "How are baby animals born?", "blocks": [{"say": "Do all animals hatch from eggs?", "who": "🐱"}, {"h": "Learn: How cats grow and life continues", "badge": "تعلَّم", "points": ["The way a new life begins is different for different animals: some animals <b class=\"key\">give birth to young<\/b> <span class=\"ar-term\">(تلد صغارًا)<\/span>, and some <b class=\"key\">lay eggs<\/b> <span class=\"ar-term\">(تبيض)<\/span>.", "Cats belong to the group of animals that <b>give birth to young<\/b> and <b>feed them milk<\/b> (ترضعها حليبها)."]}, {"h": "Birth of kittens and caring for them", "icon": "🐱", "points": ["The mother cat carries her young <b>inside her body<\/b> with special care for a certain time, then gives birth when their bodies are fully grown.", "After birth, the mother cat cleans her kittens' bodies and looks after them gently, giving them <b class=\"key\">mother's milk<\/b> <span class=\"ar-term\">(حليب الأم)<\/span> until their bodies become strong.", "Kittens are very small at first, but they look just like their father and mother, then they grow over time.", "Baby animals are usually born from <b class=\"key\">a father (male) and a mother (female)<\/b> <span class=\"ar-term\">(أب وهو الذكر، وأم وهي الأنثى)<\/span>, through a process called <b class=\"key\">reproduction<\/b> <span class=\"ar-term\">(التكاثر)<\/span>. This process is very important to keep every kind of animal and human, and for life to continue on Earth."]}, {"activity": {"title": "Let's think about how cats grow!", "steps": ["Are all cats the same size?", "Have you ever seen a small kitten grow up? What changes did you notice?", "Have you seen other animals change shape as they grow?", "How did they change? Do cats give birth or lay eggs?", "Have you ever seen a mother cat caring for her kittens?", "Do all animals give birth to young like cats do?"]}}], "terms": [["Give birth", "تلد صغارًا", "Young grow inside the mother's body — e.g. cats"], ["Lay eggs", "تبيض", "Young hatch from eggs — e.g. fish"], ["Mother's milk", "حليب الأم", "What newborn kittens drink to grow"], ["Reproduction", "التكاثر", "Father (male) + mother (female) → new young"]]}, {"num": "7-2", "title": "Animals That Lay Eggs", "ar": "حيوانات تضع البيض", "page": "74–75", "question": "How do fish have babies?", "blocks": [{"say": "Cats give birth to young — but what about fish living in the river? Let's discover how fish pass life to the next generation!", "who": "🐶"}, {"h": "Learn: How fish grow and life continues", "badge": "تعلَّم", "points": ["Unlike cats, baby fish do <b>not<\/b> grow inside their mothers' bodies.", "The mother fish releases a large number of <b class=\"key\">eggs<\/b> <span class=\"ar-term\">(البيض)<\/span> into the water.", "After a certain time, the young hatch from the eggs laid in the water. This process is called <b class=\"key\">hatching<\/b> <span class=\"ar-term\">(الفقس)<\/span>. Very tiny fish come out of the eggs and start to swim.", "<b>Why lay so many eggs?<\/b> The mother fish releases a large number of eggs into the water to make sure that many baby fish stay <b class=\"key\">alive<\/b> <span class=\"ar-term\">(قيد الحياة)<\/span>, even in open water.", "<b class=\"key\">Reproduction<\/b> <span class=\"ar-term\">(التكاثر)<\/span> is the ability of living things to produce new individuals of the <b class=\"key\">same kind<\/b> <span class=\"ar-term\">(النوع نفسه)<\/span> as themselves, which makes sure they <b class=\"key\">survive<\/b> <span class=\"ar-term\">(بقاءها)<\/span> and continue on Earth."]}, {"table": [["", "Cat 🐱", "Fish 🐟"], ["How babies come", "Gives birth to young", "Lays eggs in water → hatching"], ["Number of babies", "A few at a time", "Too many eggs to count"], ["Where babies grow", "Inside the mother's body", "In eggs in the water"], ["Care", "Mother cleans them and feeds them milk", "Many eggs so some survive"]]}, {"activity": {"title": "Think about the secrets of baby fish", "steps": ["<b>Compare:<\/b> cats give birth to only a few young at a time, but fish lay countless eggs. Why do you think there is this difference? (So that enough baby fish survive in open water.)", "<b>Observe and think:<\/b> do baby fish that just hatched look like their parents? Let's imagine that."]}}], "terms": [["Eggs", "البيض", "Fish release a huge number into the water"], ["Hatching", "الفقس", "Young coming out of the eggs"], ["Stay alive", "قيد الحياة", "Why fish lay so many eggs"], ["Same kind", "النوع نفسه", "Reproduction makes new individuals of the same kind"]]}, {"num": "7-3", "title": "Comparing Animals and Preserving the Species", "ar": "مقارنة الحيوانات والحفاظ على النوع", "page": "76–77", "question": "Let's compare the kinds of animals around us.", "blocks": [{"say": "We learned that different animals have different ways of continuing life. Let's classify the animals around us!", "who": "🐔"}, {"h": "Learn: Preserving the species", "badge": "تعلَّم", "points": ["Reproduction leads to <b class=\"key\">preserving the species<\/b> <span class=\"ar-term\">(الحفاظ على النوع)<\/span>.", "To stop the numbers of important animals on Earth going down, countries create <b class=\"key\">nature reserves<\/b> <span class=\"ar-term\">(محميات طبيعية)<\/span> to protect animals, so they can reproduce safely and their numbers increase.", "Examples in Egypt: <b>White Desert National Park<\/b> (محمية الواحات البيضاء الوطنية) and <b>Ras Mohammed National Park<\/b> (محمية رأس محمد الوطنية)."]}, {"h": "Let's record and compare animals", "icon": "📋", "table": [["Animal", "Gives birth or lays eggs?", "Where it lives", "Similar example"], ["Cat", "Gives birth", "On land", "Dog"], ["Chicken", "Lays eggs", "On land", "Duck"], ["Fish", "Lays eggs", "In water", "e.g. tilapia"], ["Camel", "Gives birth", "On land", "Cow"], ["Frog", "Lays eggs", "In water (eggs) / on land", "Toad"]]}], "terms": [["Preserving the species", "الحفاظ على النوع", "What reproduction leads to"], ["Nature reserve", "محمية طبيعية", "Safe protected place so animals reproduce and increase"], ["Ras Mohammed", "رأس محمد", "A national park in Egypt (Red Sea)"], ["White Desert", "الواحات البيضاء", "A national park in Egypt (desert)"]]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it (حاول, p. 78)", "qs": [{"type": "mc", "q": "How do cats have their young?", "opts": ["They grow from seeds like plants.", "They lay eggs.", "They give birth to young."], "ans": 2}, {"type": "short", "q": "What do newborn kittens drink to grow?", "a": "Their <b>mother's milk<\/b> (حليب الأم)."}, {"type": "mc", "q": "How do fish such as tilapia (البلطي) reproduce?", "opts": ["They give birth to young.", "They lay eggs.", "They reproduce by splitting."], "ans": 1}, {"type": "short", "q": "What do we call baby fish coming out of the eggs?", "a": "<b>Hatching<\/b> (الفقس)."}, {"type": "fill", "q": "Classify the animals [camel / chicken / cat / frog]: animals that give birth to young are ___ ; animals that lay eggs are ___.", "bank": [["camel and cat", "chicken and frog", "camel and frog"], ["camel and cat", "chicken and frog", "cat and chicken"]], "ans": [0, 1]}]}, {"title": "Practise (تدرَّب, p. 79)", "qs": [{"type": "short", "q": "What do we call the process in which a new individual is produced from a father (male) and a mother (female)?", "a": "<b>Reproduction<\/b> (التكاثر)."}, {"type": "mc", "q": "Where does the mother cat carry her young until their bodies are fully grown?", "opts": ["In the water.", "In the soil.", "Inside her body."], "ans": 2}, {"type": "mc", "q": "What is the correct scientific reason why fish lay huge numbers of eggs in water?", "opts": ["Because water is safe, so it's easy to care for them even if many are laid.", "To make sure as many baby fish as possible stay alive in open water.", "To give them as a gift to other fish in the water."], "ans": 1}, {"type": "fill", "q": "What does 'reproduction' mean for living things? The ability of living things to produce new individuals of the ___, which makes sure the species ___ and continues on Earth.", "bank": [["same kind", "different kind"], ["survives", "disappears"]], "ans": [0, 0]}, {"type": "mc", "q": "What do we call the places countries protect to give animals a safe environment to reproduce and to protect their species from decreasing and extinction?", "opts": ["Amusement parks", "Museums", "Nature reserves"], "ans": 2}, {"type": "short", "q": "Name an egg-laying animal you know, and write where it lays its eggs (e.g. in water, on land).", "a": "Examples: <b>fish<\/b> — in water; <b>frog<\/b> — in water; <b>chicken<\/b> — on land; <b>duck<\/b> — on land; <b>turtle<\/b> — on land (sand)."}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

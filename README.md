@@ -58,3 +58,9 @@ Both HTML files are standalone and work offline, with hints, worked examples, ch
 - **Jimmy (Grade 5A):** [Ch 1 Bones and Muscles](packs/gamal/science/arabic-book-term1/chapter-1-bones-and-muscles.html) · [Ch 2 Changes in the Seasons](packs/gamal/science/arabic-book-term1/chapter-2-changes-in-seasons.html) · [Ch 3 Conditions for Germination](packs/gamal/science/arabic-book-term1/chapter-3-germination.html) · [Revision Ch 1–3](packs/gamal/science/arabic-book-term1/revision-chapters-1-3.html)
 
 Each chapter has an Explanation tab (translated lessons, activities, Arabic key words, read-aloud) and an Assessment tab with all of the book's حاول/تدرَّب questions, auto-checked. The book has no answer key, so answers are authored; one disputed item is noted in the [provenance](docs/provenance/science-arabic-book-2026-10-20.md).
+
+## Science · Arabic book Chapters 4–9 (English translation) · 21 October 2026
+
+- **Jimmy (Grade 5A):** [Ch 4 Conditions for Growth](packs/gamal/science/arabic-book-term1/chapter-4-conditions-for-growth.html) · [Ch 5 From Flower to Fruit](packs/gamal/science/arabic-book-term1/chapter-5-from-flower-to-fruit.html) · [Ch 6 Human Growth](packs/gamal/science/arabic-book-term1/chapter-6-human-growth-and-reproduction.html) · [Ch 7 Animal Growth](packs/gamal/science/arabic-book-term1/chapter-7-animal-growth-and-reproduction.html) · [Ch 8 Weather Changes](packs/gamal/science/arabic-book-term1/chapter-8-weather-changes.html) · [Ch 9 Water Cycle](packs/gamal/science/arabic-book-term1/chapter-9-water-cycle.html) · [Revision Ch 4–9](packs/gamal/science/arabic-book-term1/revision-chapters-4-9.html)
+
+Same format as Chapters 1–3; together they cover the whole Term 1 Science book. Answers are authored; see the [provenance](docs/provenance/science-arabic-book-chapters-4-9-2026-10-21.md).

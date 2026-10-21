@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Water Cycle</title>
+<style>
+  :root {
+    --main: #0d9488;
+    --main-dark: #115e59;
+    --main-light: #ccfbf1;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Chapter 9</span>
+    <h1>Chapter 9: The Water Cycle</h1>
+    <div class="ar">الفصل التاسع: دورة الماء</div>
+    <p>Lessons 9-1 to 9-3, the Nile enrichment corner and the science-skills pages · book pages 92–107</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📖 Explanation", "type": "learn", "lessons": [{"num": "9-1", "title": "Evaporation of Water", "ar": "تبخُّر الماء", "page": "92–93", "question": "Why does the water in puddles and wet clothes dry up?", "blocks": [{"say": "The shirt was completely wet a little while ago, but now it's dry! Where did the water go?", "who": "🐱"}, {"h": "Learn: Evaporation", "badge": "تعلَّم", "points": ["The process in which water changes into <b>invisible water vapour<\/b> and moves into the air is called <b class=\"key\">evaporation<\/b> <span class=\"ar-term\">(التبخر)<\/span>.", "The water in wet clothes and puddles does <b>not disappear<\/b> — it changes its state and moves into the air.", "Evaporation happens faster when the <b class=\"key\">temperature is high<\/b> <span class=\"ar-term\">(درجة الحرارة مرتفعة)<\/span>, when the weather is <b class=\"key\">sunny<\/b> <span class=\"ar-term\">(مشمسًا)<\/span>, and when there is <b class=\"key\">wind<\/b> <span class=\"ar-term\">(رياح)<\/span>."]}, {"activity": {"title": "Let's discover where the water goes", "steps": ["<b>Predict:<\/b> remember what happens to a rain puddle when the sun comes out. Which dries faster — a wet cloth hung in the sun, or in the shade? Will water evaporate even if we put a cover on a container full of water?", "<b>You need:<\/b> two glass or plastic cups, plastic wrap, rubber bands.", "① Put the same amount of water in both cups.", "② Cover <b>only one<\/b> cup with plastic wrap and fix it with a rubber band.", "③ Compare the amount of water after 2–3 days.", "<b>Conclusion:<\/b> the uncovered cup loses more water — it evaporated into the air. In the covered cup, the vapour can't escape (you may see drops under the cover)."]}}], "terms": [["Evaporation", "التبخر", "Water → invisible water vapour that goes into the air"], ["Water vapour", "بخار الماء", "Water as an invisible gas in the air"], ["Faster when…", "أسرع عندما", "High temperature, sunny weather, wind"]]}, {"num": "9-2", "title": "Water Vapour in the Air", "ar": "بخار الماء في الهواء", "page": "94–95", "question": "Where do the water drops that form around a cold glass come from?", "blocks": [{"say": "🐱: \"The outside of the glass got wet! Did the water inside pass through the glass and come out?\" (No! It came from the air.)", "who": "🐶"}, {"h": "Learn: When water vapour turns back into water", "badge": "تعلَّم", "points": ["The air contains invisible <b class=\"key\">water vapour<\/b> <span class=\"ar-term\">(بخار ماء)<\/span>, and when it <b>cools<\/b> it turns into <b class=\"key\">water<\/b> <span class=\"ar-term\">(ماء)<\/span>.", "The process of <b>cooling<\/b> the invisible water vapour in the air and turning it into liquid water is called <b class=\"key\">condensation<\/b> <span class=\"ar-term\">(التكثف)<\/span>.", "In nature, water evaporates and turns into <b>water vapour<\/b>, then condenses again to become <b>water<\/b>."]}, {"table": [["Process", "Change", "Needs"], ["Evaporation (التبخر)", "Liquid water → water vapour", "Heat"], ["Condensation (التكثف)", "Water vapour → liquid water", "Cooling"]]}, {"activity": {"title": "Discover how water drops form", "steps": ["Observe the water on the surface of a glass.", "<b>You need:<\/b> ice, a glass, plastic wrap, rubber bands.", "① Put ice in the glass and cover it with plastic wrap and a rubber band.", "② Mark the water level, and leave it for a while.", "<b>Observe:<\/b> small drops of water start to form on the <b>outside<\/b> of the glass. Check that they did not leak from inside (the water level mark hasn't changed).", "<b>Discover:<\/b> discuss other examples of condensation around you (e.g. a foggy cold window in the morning, a cold bottle from the fridge)."]}}], "terms": [["Condensation", "التكثف", "Cooling water vapour → liquid water"], ["Drops on a cold glass", "قطرات على الكأس", "Come from water vapour in the AIR"], ["Cooling", "تبريد", "What makes water vapour condense"]]}, {"num": "9-3", "title": "Where Does the Water Go?", "ar": "إلى أين يذهب الماء؟", "page": "98–99", "question": "Where does water go on its journey around the Earth?", "blocks": [{"say": "🐶: \"Why can't we see water evaporating?\" 🐱: \"All river water flows into the sea, doesn't it?\"", "who": "🐱"}, {"h": "Learn: The water cycle", "badge": "تعلَّم", "points": ["Water on Earth moves in a <b>continuous circular journey<\/b> and changes its state.", "<b class=\"key\">Evaporation<\/b> <span class=\"ar-term\">(التبخر)<\/span>: water changes into an invisible form and rises into the air. The sun heats water in seas and rivers, so it evaporates from the <b class=\"key\">surface<\/b> <span class=\"ar-term\">(السطح)<\/span> and rises to the sky.", "The water that rises to the sky turns into <b>clouds<\/b>, then falls on land as <b>rain<\/b>, becomes a <b>river<\/b>, and returns to the <b>sea<\/b> again.", "This journey that goes round and round — <b>sea → sky → land → sea<\/b> — is called the <b class=\"key\">water cycle<\/b> <span class=\"ar-term\">(دورة الماء)<\/span>."]}, {"say": "Water always moves from place to place, and changes from one state to another.", "who": "🐔"}, {"table": [["Step", "What happens"], ["1. Start at the sea", "Sea water turns into water vapour because of the sun's heat (evaporation)."], ["2. Journey in the sky", "It cools high in the sky and becomes clouds (condensation), then falls as rain."], ["3. Journey back to the sea", "Rain that falls on land becomes rivers and flows back to the sea."]]}, {"activity": {"title": "Follow the water's journey!", "steps": ["Look at the diagram of the water cycle and check the order of the journey.", "<b>Start at the sea:<\/b> sea water turns into water vapour because of the sun's heat.", "<b>Journey in the sky:<\/b> it cools high in the sky and becomes clouds, and finally falls as rain.", "<b>Journey back to the sea:<\/b> water that falls on land becomes rivers and returns to the sea.", "<b>Discover:<\/b> discuss and sum up what you learned about the water's journey."]}}], "terms": [["Water cycle", "دورة الماء", "Sea → sky (clouds) → rain → river → sea"], ["Sun's heat", "حرارة الشمس", "Needed for water to evaporate and rise"], ["Clouds", "السحب", "Water vapour that cooled high in the sky"], ["Rain", "المطر", "Water falling from clouds onto land"]]}, {"enrich": true, "title": "Enrichment corner: The water that disappears and returns — the Nile's water cycle", "ar": "ركن إثرائي: دورة ماء النيل", "page": "102–103", "blocks": [{"h": "1. Discovering the Nile's journey with the sun", "icon": "☀️", "points": ["In Chapter 9 we learned that water evaporates and turns into water vapour in the air. When the sun's rays hit the water's surface, a huge amount turns into vapour that rises into the sky every day.", "<b>A giant evaporation lab:<\/b> Egypt's dry air can absorb a lot of water vapour. That's why clothes dry fast, and the Nile's water level slowly goes down — because of evaporation.", "<b>When invisible water vapour condenses (turns into drops):<\/b> the desert is hot in the day but very cold at night. When the air cools, its water vapour turns into tiny drops on plants — this is condensation. This water is a very important drink for small living things in the desert."]}, {"h": "2. Water's journey around Africa", "icon": "🌍", "points": ["Nile water in Egypt is actually part of the Earth's huge water cycle — it reaches Egypt from far countries to the south.", "<b>From the sea to the clouds, then to the Nile:<\/b> water evaporates from the Indian Ocean and the Red Sea when the sun shines, becomes clouds, and winds carry them to the highlands of Ethiopia and Sudan. Rain falls there and collects into rivers that flow north through Sudan, then Egypt, into the Nile.", "<b>The High Dam at Aswan:<\/b> people control the natural water cycle with the High Dam. Lots of water is stored behind the dam, which is needed to keep water available all year for farming.", "<b>You are part of the cycle too:<\/b> the water you drink also evaporates into the sky and later becomes rain or fog. Caring about water means protecting the cycle of life on our planet."]}]}, {"enrich": true, "title": "Science skills (end of the book)", "ar": "مهارات العلوم", "page": "104–107", "blocks": [{"h": "Fair tests (التجارب العادلة)", "icon": "⚖️", "points": ["The most important thing in Grade 5 science is doing a <b>'fair test'<\/b> by keeping conditions fixed, so you can compare results accurately.", "When you want to know the effect of one factor, change <b>only that factor<\/b> and keep all the other factors the same.", "<b>Example 1 — do seeds need water?<\/b> Factor we change: water or no water. Factors we keep fixed: temperature, air, light…", "<b>Example 2 — do seedlings need sunlight?<\/b> Factor we change: sunlight or no sunlight. Factors we keep fixed: temperature, air, water…"]}, {"h": "Microscope review (المجهر — مراجعة)", "icon": "🔬", "points": ["Parts: eyepiece, microscope tube, microscope arm, adjustment knob, revolving nosepiece, objective lens, slide clips, microscope stage, mirror.", "① Flat, bright place away from direct sunlight. ② Lowest magnification. ③ Adjust the mirror until bright. ④ Slide on the stage. ⑤ From the side, bring slide and objective close. ⑥ Look through the eyepiece and focus while moving the objective AWAY. <b>Reason:<\/b> so the objective doesn't hit and break the slide."]}, {"h": "Recording observations: tracking changes", "icon": "📈", "points": ["We use tables and graphs to track changes over several days, such as plant growth or weather changes.", "Watch the plant after germination and record the number of leaves, stem length and colour. Use iodine to check for starch in seeds or leaves, then draw what you see.", "Book example: week 1 = 5.3 cm (two small leaves) → week 2 = 12 cm (light green) → week 3 = 18 cm (more, dark green leaves) → week 4 = 25 cm (big healthy leaves) → week 5 = 32 cm (grew a lot, dark green)."]}, {"h": "The scientific inquiry cycle — 6 steps", "icon": "🔁", "points": ["① <b>Ask a question<\/b> — 'Why?' or 'How?'", "② <b>Make a prediction<\/b> — guess the answer from your experience.", "③ <b>Plan<\/b> — decide the variable you'll compare and the factors you'll keep fixed.", "④ <b>Do the experiment and record observations.<\/b>", "⑤ <b>Organise the data<\/b> in tables or graphs.", "⑥ <b>Draw a conclusion<\/b> — compare your prediction with the results and sum up what you learned."]}]}]}, {"label": "📝 Assessment", "type": "quiz", "sets": [{"title": "Try it — lessons 9-1 & 9-2 (حاول, p. 96)", "qs": [{"type": "short", "q": "What do we call the process of water changing into invisible water vapour?", "a": "<b>Evaporation<\/b> (التبخر)."}, {"type": "mc", "q": "In which weather do clothes dry fastest?", "opts": ["A day with high temperature and a sky with lots of clouds.", "A day with low temperature and very cloudy weather.", "A rainy day."], "ans": 0, "why": "The only choice with high temperature — heat speeds up evaporation."}, {"type": "short", "q": "What do we call cooling water vapour in the air and turning it into liquid water?", "a": "<b>Condensation<\/b> (التكثف)."}, {"type": "mc", "q": "Why did water drops form on the outside of a glass full of iced water? What cooled down?", "opts": ["The water inside the glass.", "The water vapour in the surrounding air."], "ans": 1}]}, {"title": "Practise — lessons 9-1 & 9-2 (تدرَّب, p. 97)", "qs": [{"type": "mc", "q": "What is the correct explanation for water disappearing from a puddle?", "opts": ["The water disappeared by magic.", "The water turned into water vapour and went into the air.", "The soil absorbed all the water."], "ans": 1}, {"type": "fill", "q": "Water changing into ___ water vapour is called evaporation.", "bank": [["visible", "invisible"]], "ans": [1]}, {"type": "mc", "q": "Which of these is a good example of condensation?", "opts": ["Water turns into ice in the freezer.", "Hot water boils in a pot and steam comes out.", "On a cold morning, the window glass becomes white and foggy, and water drops form."], "ans": 2}, {"type": "fill", "q": "Invisible water vapour in the air appears as water drops when the temperature becomes ___.", "bank": [["high", "low", "stays the same"]], "ans": [1]}]}, {"title": "Try it — lesson 9-3 (حاول, p. 100)", "qs": [{"type": "fill", "q": "Water going round (sea → clouds → rain → river → sea) is called the ___ cycle.", "bank": [["water", "life", "rock"]], "ans": [0]}, {"type": "mc", "q": "When water rises from seas and rivers to the sky, what form is it in?", "opts": ["It stays visible water.", "It becomes solid ice.", "It becomes invisible water vapour."], "ans": 2}]}, {"title": "Practise — lesson 9-3 (تدرَّب, p. 101)", "qs": [{"type": "mc", "q": "Choose the correct order of the water cycle:", "opts": ["Evaporates from the sea → flows into a river → rain falls → returns to the clouds", "Evaporates from the sea → becomes clouds → rain falls → returns to the sea", "Rain falls → evaporates from the sea → returns to the sea → becomes clouds"], "ans": 1}, {"type": "mc", "q": "When water rises to the sky and evaporates, what is needed for that?", "opts": ["The sun's heat (warmth)", "The cold of a very dark night", "Starlight"], "ans": 0}]}, {"title": "Extra: enrichment & science-skills check", "note": "Not in the book's exercises — quick check of pages 102–107.", "qs": [{"type": "mc", "q": "Where does the rain that fills the Nile mostly fall?", "opts": ["In the Egyptian desert", "On the highlands of Ethiopia and Sudan", "On the Mediterranean Sea"], "ans": 1}, {"type": "mc", "q": "What is the FIRST step of the scientific inquiry cycle?", "opts": ["Draw a conclusion", "Ask a question", "Organise the data"], "ans": 1}, {"type": "mc", "q": "In a fair test about whether seedlings need sunlight, what do we change?", "opts": ["Water", "Sunlight or no sunlight", "Temperature"], "ans": 1}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>

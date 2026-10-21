@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Science Revision 4–9</title>
+<style>
+  :root {
+    --main: #7c3aed;
+    --main-dark: #5b21b6;
+    --main-light: #ede9fe;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #cbd5e1;
+    --ok-bg: #dcfce7; --ok: #15803d; --ok-b: #16a34a;
+    --bad-bg: #fee2e2; --bad: #b91c1c; --bad-b: #dc2626;
+    --amber: #b45309; --amber-light: #fef3c7;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 12px; line-height: 1.6; font-size: 17px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  header { background: var(--main); color: #fff; border-radius: 22px; padding: 22px 24px; margin-bottom: 14px; }
+  header .tag { display: inline-block; background: rgba(255,255,255,.22); padding: 2px 12px; border-radius: 99px; font-size: 13px; font-weight: 700; letter-spacing: .3px; }
+  header h1 { margin: 8px 0 2px; font-size: 28px; line-height: 1.2; }
+  header .ar { font-size: 20px; opacity: .95; direction: rtl; }
+  header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+  .tabs { display: flex; gap: 8px; position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 5; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; border: 2px solid var(--main); background: #fff; color: var(--main-dark); font-size: 17px; font-weight: 800; padding: 12px; border-radius: 14px; cursor: pointer; }
+  .tab-btn.active { background: var(--main); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .card { background: var(--card); border-radius: 18px; padding: 20px 22px; margin: 14px 0; box-shadow: 0 6px 20px rgba(0,0,0,.05); border: 1px solid #e2e8f0; }
+  .lesson-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .num { background: var(--main); color: #fff; font-weight: 900; border-radius: 12px; padding: 4px 12px; font-size: 18px; }
+  .lesson-head h2 { margin: 0; font-size: 23px; color: var(--main-dark); }
+  .lesson-head .ar { direction: rtl; color: var(--muted); font-size: 17px; }
+  .page { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .big-q { background: var(--main-light); border-left: 5px solid var(--main); padding: 10px 14px; border-radius: 10px; font-weight: 700; margin: 14px 0; }
+  h3 { margin: 18px 0 6px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  h3 .badge { font-size: 12px; background: var(--main-light); color: var(--main-dark); padding: 2px 10px; border-radius: 99px; }
+  ul.learn { padding-left: 22px; margin: 6px 0; }
+  ul.learn li { margin: 6px 0; }
+  b.key, .key { color: var(--main-dark); background: var(--main-light); padding: 0 5px; border-radius: 5px; font-weight: 800; }
+  .ar-term { direction: rtl; unicode-bidi: isolate; color: var(--muted); font-size: .92em; }
+  .mascot { display: flex; gap: 10px; align-items: flex-start; background: var(--amber-light); border-radius: 14px; padding: 10px 14px; margin: 12px 0; }
+  .mascot .who { font-size: 28px; line-height: 1; }
+  .activity { background: #f1f5f9; border-radius: 14px; padding: 12px 16px; margin: 10px 0; }
+  .activity ol { margin: 6px 0; padding-left: 22px; }
+  .activity li { margin: 5px 0; }
+  .terms { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-top: 10px; }
+  .flip { perspective: 800px; height: 120px; cursor: pointer; }
+  .flip-inner { position: relative; width: 100%; height: 100%; transition: transform .45s; transform-style: preserve-3d; }
+  .flip.on .flip-inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px 10px; }
+  .front { background: var(--main); color: #fff; font-weight: 800; font-size: 18px; }
+  .front small { font-weight: 600; opacity: .9; font-size: 16px; direction: rtl; }
+  .back { background: #fff; border: 2px solid var(--main); transform: rotateY(180deg); font-size: 14px; }
+  .hint { font-size: 13px; color: var(--muted); }
+  table.t { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  table.t th, table.t td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+  table.t th { background: var(--main-light); }
+  .speak { border: none; background: var(--main-light); color: var(--main-dark); border-radius: 99px; padding: 4px 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .enrich { background: linear-gradient(135deg, #fff7ed, #fef3c7); border: 2px dashed #f59e0b; }
+  .enrich h2 { color: var(--amber); margin-top: 0; }
+
+  /* assessment */
+  .scorebar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #fff; border: 2px solid var(--main); border-radius: 16px; padding: 10px 16px; margin: 10px 0; font-weight: 800; }
+  .scorebar .s { font-size: 22px; color: var(--main-dark); }
+  .btn { border: none; background: var(--main); color: #fff; font-weight: 800; padding: 9px 16px; border-radius: 12px; cursor: pointer; font-size: 15px; }
+  .btn.ghost { background: #fff; color: var(--main-dark); border: 2px solid var(--main); }
+  .qset-title { font-weight: 900; color: var(--main-dark); margin: 22px 0 4px; font-size: 19px; }
+  .q { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 14px 16px; margin: 10px 0; }
+  .q .qt { font-weight: 700; margin-bottom: 8px; }
+  .q .qn { color: var(--main-dark); font-weight: 900; margin-right: 6px; }
+  .opts { display: grid; gap: 8px; }
+  .opt { text-align: left; border: 2px solid var(--border); background: #fff; border-radius: 12px; padding: 10px 12px; font-size: 16px; cursor: pointer; color: var(--text); }
+  .opt:hover { border-color: var(--main); }
+  .opt.sel { border-color: var(--main); background: var(--main-light); }
+  .opt.right { border-color: var(--ok-b); background: var(--ok-bg); color: var(--ok); font-weight: 700; }
+  .opt.wrong { border-color: var(--bad-b); background: var(--bad-bg); color: var(--bad); }
+  .opt[disabled] { cursor: default; }
+  .blank { display: inline-block; min-width: 90px; border-bottom: 2px solid var(--main); text-align: center; font-weight: 800; color: var(--main-dark); padding: 0 6px; }
+  .bank { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  .bank .opt { padding: 6px 12px; }
+  .fb { margin-top: 8px; padding: 8px 12px; border-radius: 10px; display: none; font-size: 15px; }
+  .fb.ok { display: block; background: var(--ok-bg); color: var(--ok); }
+  .fb.bad { display: block; background: var(--bad-bg); color: var(--bad); }
+  .fb.info { display: block; background: var(--main-light); color: var(--main-dark); }
+  textarea { width: 100%; min-height: 56px; border: 2px solid var(--border); border-radius: 12px; padding: 8px 10px; font: inherit; font-size: 16px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .done-msg { text-align: center; font-size: 20px; font-weight: 900; }
+  .ytable select { font: inherit; padding: 4px; border-radius: 8px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin: 24px 0 8px; }
+  @media (max-width: 520px) { header h1 { font-size: 23px; } .card { padding: 16px; } .page { margin-left: 0; width: 100%; } }
+  @media print { .tabs, .speak, .btn { display: none !important; } .panel { display: block !important; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <span class="tag">Grade 5 Science · Revision</span>
+    <h1>Revision: Chapters 4 to 9</h1>
+    <div class="ar">مراجعة الفصول من ٤ إلى ٩</div>
+    <p>Quick summary → key-word cards → mixed exam practice for the rest of the book.</p>
+  </header>
+  <div class="tabs" id="tabs"></div>
+  <div id="panels"></div>
+  <footer>Translated from the Grade 5 Science book (Term 1, 2026/2027) · Arabic key words are shown so you can match them to the book and the exam paper.</footer>
+</div>
+<script>
+const DATA = {"tabs": [{"label": "📋 Summary", "type": "learn", "lessons": [{"num": "Ch 4", "title": "Conditions for Growth", "ar": "شروط النمو", "page": "44–51", "blocks": [{"h": "Must-know facts", "points": ["After germination, plants need <b>sunlight<\/b> and <b>fertilizer<\/b> to grow well.", "Sunlight → the plant makes its own <b>food<\/b>. With sun: <b>dark green<\/b> leaves, <b>thick strong<\/b> stem. In the dark: <b>yellowish<\/b> leaves, <b>thin long<\/b> stem.", "Fertilizer gives <b>nutrients<\/b> → leaves and stems grow more; the plant gets <b>bigger<\/b>.", "Fair test: sunlight test changes only sunlight; fertilizer test changes only fertilizer (keep water, sunlight, air, temperature, soil, plant type the same).", "3,000-year-old wheat seeds from the pyramids stayed preserved: dry air + no germination conditions = <b>dormancy<\/b>. The Nile's floods brought fertile soil from Ethiopia."]}]}, {"num": "Ch 5", "title": "From Flower to Fruit", "ar": "من الزهرة إلى الثمرة", "page": "52–63", "blocks": [{"h": "Must-know facts", "points": ["Loofah has <b>male<\/b> flowers (<b>stamen<\/b> → yellow <b>pollen<\/b>) and <b>female<\/b> flowers (<b>pistil<\/b> + <b>swelling<\/b> at the base → fruit).", "Flower parts from outside to inside: <b>sepal → petal → pistil<\/b>.", "Microscope parts: eyepiece, tube, revolving nosepiece, objective lens, arm, adjustment knob, clips, stage, mirror.", "Slide: sample + a drop of water, lower the <b>cover slip<\/b> slowly from one side (no air bubbles), remove extra water with filter paper.", "Use: flat bright place, no direct sun → lowest magnification → mirror → slide on stage → from the SIDE bring objective close → look and focus while moving it AWAY (so the slide doesn't break).", "Image is <b>upside down and reversed<\/b>; move the slide the opposite way. Low magnification = wide, bright; high = narrow, dark. <b>Start low.<\/b> Magnification = eyepiece × objective (10 × 40 = <b>400<\/b>).", "<b>Pollination<\/b> = pollen sticks to the tip of the pistil. Bees carry pollen. Order: pollination → swelling grows → seeds form. Not pollinated → turns yellow and falls."]}]}, {"num": "Ch 6", "title": "Human Growth and Reproduction", "ar": "نمو الإنسان والتكاثر", "page": "64–71", "blocks": [{"h": "Must-know facts", "points": ["<b>Reproduction<\/b> keeps the species and life going; <b>growth<\/b> = body becomes bigger, stronger and more complex.", "Stages: <b>infancy → childhood → adolescence → youth → old age<\/b>.", "Infancy: from birth (after ~9 months inside the mother), depends <b>completely<\/b> on the mother. Childhood: walks, talks, goes to school.", "Every life starts from a <b>father and mother<\/b>; children look like parents because they <b>inherit traits<\/b>. Parents care for children until they grow up.", "Healthy growth = <b>healthy food<\/b> (nutrients: milk, vegetables, washed fruit) + <b>enough sleep<\/b> (brain rests, body is built) + <b>suitable exercise<\/b> (heart and muscles stronger)."]}]}, {"num": "Ch 7", "title": "Animal Growth and Reproduction", "ar": "نمو الحيوانات وتكاثرها", "page": "72–79", "blocks": [{"h": "Must-know facts", "points": ["Some animals <b>give birth<\/b> (cat, camel, dog) — the young grow <b>inside the mother<\/b> and drink <b>mother's milk<\/b>. Some <b>lay eggs<\/b> (fish, chicken, frog, duck).", "Fish release a <b>huge number of eggs<\/b> in water so many babies stay <b>alive<\/b> in open water. Young coming out of eggs = <b>hatching<\/b>.", "Reproduction = making new individuals of the <b>same kind<\/b> from a father (male) and mother (female) → the species <b>survives<\/b>.", "Reproduction → <b>preserving the species<\/b>. Countries make <b>nature reserves<\/b> (Ras Mohammed, White Desert) so animals reproduce safely."]}]}, {"num": "Ch 8", "title": "Weather Changes", "ar": "تغيرات الطقس", "page": "80–91", "blocks": [{"h": "Must-know facts", "points": ["<b>Cloud cover<\/b>: sky = 8 parts. <b>0–6 = sunny<\/b>, <b>7–8 = cloudy<\/b>; any cover + rain/snow = rainy/snowy.", "Clouds move with the wind, usually <b>from west to east<\/b> (Egypt, Japan); weather changes west → east too.", "Observe with a <b>fixed reference point<\/b> (building, tree, tower) and a <b>compass<\/b>, every 15 minutes. Not from a moving car!", "Satellite pictures: <b>white areas = clouds<\/b>. Clouds in the west coming closer → weather gets <b>worse<\/b>; no clouds in the west → <b>sunny continues<\/b>.", "Meteosat (35,800 km above the equator); weather radar uses radio waves. Khamaseen = hot, dry dusty storm between winter and summer."]}]}, {"num": "Ch 9", "title": "The Water Cycle", "ar": "دورة الماء", "page": "92–107", "blocks": [{"h": "Must-know facts", "points": ["<b>Evaporation<\/b> = water → <b>invisible<\/b> water vapour into the air. Faster with <b>high temperature, sun and wind<\/b>.", "<b>Condensation<\/b> = <b>cooling<\/b> water vapour → liquid water (drops on a cold glass come from the AIR; foggy window on a cold morning).", "<b>Water cycle<\/b>: sea → (sun's heat, evaporation) → sky → clouds → rain → land/river → sea.", "Nile water: evaporates from the Indian Ocean & Red Sea → clouds → rain on Ethiopia & Sudan → Nile. High Dam at Aswan stores water for farming all year.", "Inquiry cycle: question → prediction → plan → experiment & record → organise data → conclusion. Fair test: change ONE factor only."]}]}]}, {"label": "🃏 Key words", "type": "cards", "intro": "Tap each card to see its meaning. Try to say the meaning BEFORE you flip it!", "terms": [["Sunlight", "ضوء الشمس", "Plants use it to make their own food"], ["Dark green leaves", "خضراء داكنة", "Sign of a plant that got sunlight"], ["Thick, strong stem", "سميكة وقوية", "Plant that got sunlight"], ["Yellowish leaves, thin long stem", "مائلة إلى الاصفرار / رفيعة وطويلة", "Plant kept in the dark"], ["Fertilizer", "السماد", "Adds nutrients to soil — plant grows bigger and stronger"], ["Nutrients", "العناصر الغذائية", "What the plant absorbs from fertilizer"], ["Changed condition", "الشرط الذي نغيره", "Fertilizer or no fertilizer"], ["Growth needs", "شروط النمو", "Sunlight + fertilizer (after germination) + water, air, temperature"], ["Male flower", "الزهرة المذكرة", "Has a stamen; makes yellow pollen; no swelling"], ["Female flower", "الزهرة المؤنثة", "Has a pistil and a swelling at its base"], ["Stamen", "سداة", "Makes the yellow powder (pollen)"], ["Pollen grains", "حبوب اللقاح", "The yellow powder made by the stamen"], ["Pistil", "كربلة", "Centre of the female flower"], ["Petal / Sepal", "بتلة / سبلة", "Coloured leaf-like parts / green outer parts"], ["Microscope", "المجهر", "Makes tiny things look bigger"], ["Prepared slide", "شريحة مُحضَّرة", "Sample between two pieces of glass"], ["Cover slip", "الغطاء الزجاجي", "Lower it slowly from one side — no air bubbles"], ["Eyepiece", "العدسة العينية", "The lens you look through"], ["Objective lens", "العدسة الشيئية", "Lens near the slide"], ["Mirror", "العاكس", "Makes the view bright"], ["Magnification", "قوة التكبير", "Eyepiece × objective (10 × 40 = 400)"], ["Upside down", "مقلوبة ومعكوسة", "Move the slide the OPPOSITE way"], ["Pollination", "التلقيح", "Pollen sticks to the tip of the pistil of a female flower"], ["Insects / bees", "الحشرات / النحل", "Carry pollen between loofah flowers"], ["Fruit", "الثمرة", "The pistil (swelling) after pollination"], ["Seeds", "البذور", "Form inside the fruit"], ["Not pollinated", "لم يتم تلقيحها", "Turns yellow and falls without growing"], ["Reproduction", "التكاثر", "Keeps the species going through generations"], ["Growth", "النمو", "Body becomes bigger, stronger and more complex"], ["Infancy", "مرحلة الرضاعة", "From birth; baby depends completely on mother"], ["Childhood", "مرحلة الطفولة", "Walking, talking, going to school"], ["Adolescence", "المراهقة", "Teenager stage after childhood"], ["Old age", "الشيخوخة", "Last stage — elderly"], ["Father & mother", "أب وأم", "Every human life begins from them"], ["Inherit traits", "يرثون صفات", "Why children look like their parents"], ["Parents' role", "دور الوالدين", "Care for and protect children until they grow up"], ["Healthy food", "الغذاء الصحي", "Milk, vegetables and washed fruit → nutrients"], ["Enough sleep", "النوم الكافي", "Brain rests; body is built and grows"], ["Suitable exercise", "التمرين المناسب", "Makes the heart and muscles stronger"], ["Give birth", "تلد صغارًا", "Young grow inside the mother's body — e.g. cats"], ["Lay eggs", "تبيض", "Young hatch from eggs — e.g. fish"], ["Mother's milk", "حليب الأم", "What newborn kittens drink to grow"], ["Eggs", "البيض", "Fish release a huge number into the water"], ["Hatching", "الفقس", "Young coming out of the eggs"], ["Stay alive", "قيد الحياة", "Why fish lay so many eggs"], ["Same kind", "النوع نفسه", "Reproduction makes new individuals of the same kind"], ["Preserving the species", "الحفاظ على النوع", "What reproduction leads to"], ["Nature reserve", "محمية طبيعية", "Safe protected place so animals reproduce and increase"], ["Ras Mohammed", "رأس محمد", "A national park in Egypt (Red Sea)"], ["White Desert", "الواحات البيضاء", "A national park in Egypt (desert)"], ["Cloud cover", "غطاء السحب", "How much of the sky (out of 8) clouds cover"], ["Sunny", "مشمس", "Cloud cover 0 to 6"], ["Cloudy", "غائم", "Cloud cover 7 to 8"], ["Rainy", "ممطر", "Rain falling — whatever the cloud cover"], ["West → East", "من الغرب إلى الشرق", "Usual direction clouds move in Egypt"], ["Reference point", "نقطة مرجعية", "Something that doesn't move — building, tree, tower"], ["Compass", "البوصلة", "Tells us which way is west and east"], ["Wind", "الرياح", "Clouds move with it"], ["Weather satellite", "القمر الصناعي للطقس", "Takes pictures of clouds from space"], ["White areas", "المناطق البيضاء", "In satellite pictures = clouds"], ["Forecasting", "التنبؤ بالطقس", "Telling future weather from cloud + wind movement"], ["Clouds in the west", "سحب في الغرب", "Coming closer → weather gets worse"], ["Evaporation", "التبخر", "Water → invisible water vapour that goes into the air"], ["Water vapour", "بخار الماء", "Water as an invisible gas in the air"], ["Faster when…", "أسرع عندما", "High temperature, sunny weather, wind"], ["Condensation", "التكثف", "Cooling water vapour → liquid water"], ["Drops on a cold glass", "قطرات على الكأس", "Come from water vapour in the AIR"], ["Cooling", "تبريد", "What makes water vapour condense"], ["Water cycle", "دورة الماء", "Sea → sky (clouds) → rain → river → sea"], ["Sun's heat", "حرارة الشمس", "Needed for water to evaporate and rise"], ["Clouds", "السحب", "Water vapour that cooled high in the sky"], ["Rain", "المطر", "Water falling from clouds onto land"]]}, {"label": "📝 Practice exam", "type": "quiz", "intro": "Mixed exam practice from Chapters 4–9 — new questions written in the style of the book.", "sets": [{"title": "Chapter 4 — Conditions for Growth", "qs": [{"type": "mc", "q": "A bean plant was kept in a dark box for a week. What will it look like?", "opts": ["Dark green leaves and a thick stem", "Yellowish leaves and a thin, long stem", "Bigger leaves and more flowers"], "ans": 1}, {"type": "multi", "q": "Choose the TWO things plants need to grow well AFTER germination (that they didn't need for germination):", "opts": ["Sunlight", "Fertilizer", "Air", "Water"], "ans": [0, 1]}, {"type": "short", "q": "Why do plants need sunlight?", "a": "To make their own <b>food<\/b> needed for growth."}]}, {"title": "Chapter 5 — From Flower to Fruit", "qs": [{"type": "mc", "q": "Which part of the female loofah flower becomes the fruit?", "opts": ["The stamen", "The petal", "The swelling at the base (pistil)"], "ans": 2}, {"type": "mc", "q": "Eyepiece 10×, objective 10×. Magnification = ?", "opts": ["20×", "100×", "1×"], "ans": 1}, {"type": "mc", "q": "You see a pollen grain at the top-left of the view and want it in the centre. Which way do you move the slide?", "opts": ["Towards the top-left", "Towards the bottom-right"], "ans": 0, "why": "The image is upside down and reversed, so the image moves the OPPOSITE way to the slide. Moving the slide top-left makes the image move bottom-right, into the centre."}, {"type": "mc", "q": "Why do we lower the cover slip slowly from one side?", "opts": ["So no air bubbles get in", "To make it warm", "To add more light"], "ans": 0}, {"type": "short", "q": "What carries pollen from the male flower to the female flower in loofah plants?", "a": "<b>Insects<\/b>, such as <b>bees<\/b>."}]}, {"title": "Chapter 6 — Human Growth", "qs": [{"type": "mc", "q": "Which stage comes straight after childhood?", "opts": ["Infancy", "Adolescence", "Old age"], "ans": 1}, {"type": "mc", "q": "About how long does a baby grow inside the mother before birth?", "opts": ["3 months", "9 months", "2 years"], "ans": 1}, {"type": "fill", "q": "Exercise makes the ___ and muscles stronger.", "bank": [["heart", "hair", "stomach"]], "ans": [0]}]}, {"title": "Chapter 7 — Animal Growth", "qs": [{"type": "multi", "q": "Choose ALL the animals that LAY EGGS:", "opts": ["Chicken", "Cat", "Fish", "Camel", "Frog"], "ans": [0, 2, 4]}, {"type": "mc", "q": "Why do fish lay so many eggs?", "opts": ["Because they don't like their babies.", "So that many babies stay alive in open water.", "Because water is warm."], "ans": 1}, {"type": "short", "q": "Name one nature reserve in Egypt.", "a": "<b>Ras Mohammed<\/b> National Park or the <b>White Desert<\/b> National Park."}]}, {"title": "Chapter 8 — Weather Changes", "qs": [{"type": "mc", "q": "The cloud cover is 8 and it is not raining. The weather is…", "opts": ["Sunny", "Cloudy", "Rainy"], "ans": 1}, {"type": "mc", "q": "The cloud cover is 2 but it is raining. The weather is…", "opts": ["Sunny", "Cloudy", "Rainy"], "ans": 2}, {"type": "mc", "q": "In a satellite picture, a big white mass is in the WEST of Egypt. Tomorrow in Cairo will probably be…", "opts": ["Sunny with no clouds", "Cloudy or rainy"], "ans": 1}, {"type": "mc", "q": "Which is the best reference point to watch clouds move?", "opts": ["A flying bird", "A tall tower", "A moving bus"], "ans": 1}]}, {"title": "Chapter 9 — The Water Cycle", "qs": [{"type": "mc", "q": "Wet clothes dry fastest on a day that is…", "opts": ["Cold and still", "Hot, sunny and windy", "Rainy"], "ans": 1}, {"type": "mc", "q": "A cold bottle from the fridge gets wet on the outside. This is…", "opts": ["Evaporation", "Condensation", "Melting"], "ans": 1}, {"type": "fill", "q": "Water changing into water vapour is ___; water vapour changing into water is ___.", "bank": [["evaporation", "condensation"], ["evaporation", "condensation"]], "ans": [0, 1]}, {"type": "short", "q": "Write the water cycle in order, starting from the sea.", "a": "<b>Sea → (evaporation by the sun's heat) → water vapour rises → clouds → rain → rivers → back to the sea.<\/b>"}]}]}]};
+
+const $ = (s, el = document) => el.querySelector(s);
+const h = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+function speak(text) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ' ').replace(/[؀-ۿ]+/g, ' '));
+    u.lang = 'en-US'; u.rate = 0.9;
+    speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+/* ---------- tabs ---------- */
+const tabs = $('#tabs'), panels = $('#panels');
+DATA.tabs.forEach((t, i) => {
+  const b = h('button', 'tab-btn' + (i === 0 ? ' active' : ''), t.label);
+  const p = h('div', 'panel' + (i === 0 ? ' active' : ''));
+  p.id = 'panel-' + i;
+  b.onclick = () => {
+    document.querySelectorAll('.tab-btn').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    b.classList.add('active'); p.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  tabs.appendChild(b); panels.appendChild(p);
+  if (t.type === 'learn') renderLearn(p, t);
+  if (t.type === 'quiz') renderQuiz(p, t);
+  if (t.type === 'cards') renderCards(p, t);
+});
+
+/* ---------- explanation ---------- */
+function renderLearn(p, t) {
+  t.lessons.forEach(L => {
+    const c = h('div', 'card' + (L.enrich ? ' enrich' : ''));
+    if (L.enrich) {
+      c.appendChild(h('h2', null, '⭐ ' + L.title + (L.ar ? ' <span class="ar-term">' + L.ar + '</span>' : '')));
+    } else {
+      const head = h('div', 'lesson-head');
+      head.appendChild(h('span', 'num', L.num));
+      head.appendChild(h('h2', null, L.title));
+      if (L.ar) head.appendChild(h('span', 'ar', L.ar));
+      if (L.page) head.appendChild(h('span', 'page', 'Book p. ' + L.page));
+      c.appendChild(head);
+    }
+    if (L.question) c.appendChild(h('div', 'big-q', '❓ ' + L.question));
+    (L.blocks || []).forEach(B => {
+      if (B.h) {
+        const hh = h('h3', null, (B.icon || '⭐') + ' ' + B.h + (B.badge ? ' <span class="badge">' + B.badge + '</span>' : ''));
+        if (B.points) {
+          const sp = h('button', 'speak', '🔊 Listen');
+          sp.onclick = () => speak(B.h + '. ' + B.points.join('. '));
+          hh.appendChild(sp);
+        }
+        c.appendChild(hh);
+      }
+      if (B.text) c.appendChild(h('p', null, B.text));
+      if (B.points) {
+        const ul = h('ul', 'learn');
+        B.points.forEach(x => ul.appendChild(h('li', null, x)));
+        c.appendChild(ul);
+      }
+      if (B.table) {
+        const tb = h('table', 't');
+        tb.innerHTML = '<tr>' + B.table[0].map(x => '<th>' + x + '</th>').join('') + '</tr>' +
+          B.table.slice(1).map(r => '<tr>' + r.map(x => '<td>' + x + '</td>').join('') + '</tr>').join('');
+        c.appendChild(tb);
+      }
+      if (B.activity) {
+        const a = h('div', 'activity', '<b>🧪 Activity: ' + B.activity.title + '</b>');
+        const ol = h('ol');
+        B.activity.steps.forEach(s => ol.appendChild(h('li', null, s)));
+        a.appendChild(ol);
+        c.appendChild(a);
+      }
+      if (B.say) c.appendChild(h('div', 'mascot', '<span class="who">' + (B.who || '🐔') + '</span><div>' + B.say + '</div>'));
+      if (B.svg) c.appendChild(h('div', null, B.svg));
+    });
+    if (L.terms) {
+      c.appendChild(h('h3', null, '🃏 Key words <span class="badge">tap a card to flip</span>'));
+      c.appendChild(termGrid(L.terms));
+    }
+    p.appendChild(c);
+  });
+}
+
+function termGrid(terms) {
+  const g = h('div', 'terms');
+  terms.forEach(([en, ar, def]) => {
+    const f = h('div', 'flip');
+    f.innerHTML = '<div class="flip-inner"><div class="face front">' + en + '<small>' + ar + '</small></div><div class="face back">' + def + '</div></div>';
+    f.onclick = () => f.classList.toggle('on');
+    g.appendChild(f);
+  });
+  return g;
+}
+
+function renderCards(p, t) {
+  const c = h('div', 'card');
+  c.appendChild(h('p', null, t.intro));
+  c.appendChild(termGrid(t.terms));
+  const row = h('div', 'row');
+  const b1 = h('button', 'btn ghost', 'Flip all');
+  b1.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.add('on'));
+  const b2 = h('button', 'btn ghost', 'Reset');
+  b2.onclick = () => c.querySelectorAll('.flip').forEach(f => f.classList.remove('on'));
+  row.append(b1, b2); c.appendChild(row);
+  p.appendChild(c);
+}
+
+/* ---------- assessment ---------- */
+function renderQuiz(p, t) {
+  const state = { total: 0, right: 0, answered: 0 };
+  const bar = h('div', 'scorebar');
+  const s = h('span', 's', '0 / 0');
+  const reset = h('button', 'btn ghost', '↺ Start again');
+  bar.append(h('span', null, '🏆 Score:'), s, h('span', 'hint', '(written answers: mark yourself after checking)'), reset);
+  p.appendChild(bar);
+  if (t.intro) p.appendChild(h('p', 'hint', t.intro));
+  const box = h('div');
+  p.appendChild(box);
+  const upd = () => { s.textContent = state.right + ' / ' + state.total + (state.answered === state.total && state.total ? (state.right === state.total ? '  🎉 Perfect!' : '  ✔ Finished') : ''); };
+
+  function build() {
+    box.innerHTML = ''; state.total = 0; state.right = 0; state.answered = 0;
+    let n = 0;
+    t.sets.forEach(set => {
+      box.appendChild(h('div', 'qset-title', set.title));
+      if (set.note) box.appendChild(h('div', 'hint', set.note));
+      set.qs.forEach(q => { n++; state.total++; box.appendChild(makeQ(q, n)); });
+    });
+    upd();
+  }
+  reset.onclick = build;
+
+  function scored(ok) { state.answered++; if (ok) state.right++; upd(); }
+
+  function makeQ(q, n) {
+    const d = h('div', 'q');
+    d.appendChild(h('div', 'qt', '<span class="qn">' + n + '.</span>' + q.q));
+    const fb = h('div', 'fb');
+    const explain = q.why ? ' ' + q.why : '';
+
+    if (q.type === 'mc' || q.type === 'multi') {
+      const multi = q.type === 'multi';
+      const ans = multi ? q.ans : [q.ans];
+      if (multi) d.appendChild(h('div', 'hint', 'Choose ' + (q.pick ? q.pick : 'ALL the correct answers') + ', then press Check.'));
+      const o = h('div', 'opts');
+      const btns = q.opts.map((txt, i) => {
+        const b = h('button', 'opt', String.fromCharCode(97 + i) + ') ' + txt);
+        b.onclick = () => {
+          if (!multi) { finish([i]); return; }
+          b.classList.toggle('sel');
+        };
+        o.appendChild(b); return b;
+      });
+      d.appendChild(o);
+      let chk;
+      if (multi) {
+        chk = h('button', 'btn', 'Check');
+        chk.onclick = () => finish(btns.map((b, i) => b.classList.contains('sel') ? i : -1).filter(i => i >= 0));
+        const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+      }
+      function finish(picked) {
+        btns.forEach((b, i) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (ans.includes(i)) b.classList.add('right');
+          else if (picked.includes(i)) b.classList.add('wrong');
+        });
+        if (chk) chk.remove();
+        const ok = picked.length === ans.length && picked.every(i => ans.includes(i));
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The green answer' + (ans.length > 1 ? 's are' : ' is') + ' correct.') + explain;
+        scored(ok);
+      }
+    } else if (q.type === 'fill') {
+      // q.q contains one or more ___ ; q.bank: array of word-banks (one per blank); q.ans: array of correct indexes
+      const blanks = d.querySelectorAll('.qt');
+      const qt = d.querySelector('.qt');
+      let i = 0;
+      qt.innerHTML = qt.innerHTML.replace(/___/g, () => '<span class="blank" data-b="' + (i++) + '">?</span>');
+      const picked = new Array(q.ans.length).fill(-1);
+      const banks = q.bank.map((words, bi) => {
+        const wrap = h('div');
+        if (q.bank.length > 1) wrap.appendChild(h('div', 'hint', 'Blank (' + (bi + 1) + '):'));
+        const bank = h('div', 'bank');
+        words.forEach((w, wi) => {
+          const b = h('button', 'opt', w);
+          b.onclick = () => {
+            bank.querySelectorAll('.opt').forEach(x => x.classList.remove('sel'));
+            b.classList.add('sel'); picked[bi] = wi;
+            qt.querySelector('[data-b="' + bi + '"]').textContent = w;
+          };
+          bank.appendChild(b);
+        });
+        wrap.appendChild(bank); d.appendChild(wrap);
+        return bank;
+      });
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (picked.includes(-1)) { fb.className = 'fb info'; fb.textContent = 'Fill every blank first.'; return; }
+        const ok = picked.every((p, bi) => p === q.ans[bi]);
+        banks.forEach((bank, bi) => bank.querySelectorAll('.opt').forEach((b, wi) => {
+          b.disabled = true; b.classList.remove('sel');
+          if (wi === q.ans[bi]) b.classList.add('right'); else if (wi === picked[bi]) b.classList.add('wrong');
+        }));
+        q.ans.forEach((a, bi) => qt.querySelector('[data-b="' + bi + '"]').textContent = q.bank[bi][a]);
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Not quite. The right word is shown in green.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    } else if (q.type === 'short') {
+      const ta = h('textarea'); ta.placeholder = 'Write your answer here…';
+      d.appendChild(ta);
+      const show = h('button', 'btn', 'Show answer');
+      const r = h('div', 'row'); r.appendChild(show); d.appendChild(r);
+      show.onclick = () => {
+        fb.className = 'fb info';
+        fb.innerHTML = '📝 <b>Model answer:</b> ' + q.a + '<div class="row"></div>';
+        const rr = fb.querySelector('.row');
+        const y = h('button', 'btn', '✔ I got it right');
+        const nn = h('button', 'btn ghost', '✘ I missed it');
+        y.onclick = () => { rr.remove(); fb.className = 'fb ok'; fb.innerHTML = '✅ Great! ' + q.a; scored(true); };
+        nn.onclick = () => { rr.remove(); fb.className = 'fb bad'; fb.innerHTML = '📌 Remember: ' + q.a; scored(false); };
+        rr.append(y, nn);
+        show.remove();
+      };
+    } else if (q.type === 'table') {
+      // rows: [[cells...], answer 'Yes'|'No']
+      const tb = h('table', 't ytable');
+      tb.innerHTML = '<tr>' + q.head.map(x => '<th>' + x + '</th>').join('') + '<th>Sprouts? (Yes/No)</th></tr>';
+      const sels = q.rows.map(r => {
+        const tr = h('tr'); tr.innerHTML = r[0].map(x => '<td>' + x + '</td>').join('');
+        const td = h('td'); const sel = h('select'); sel.innerHTML = '<option value="">—</option><option>Yes</option><option>No</option>';
+        td.appendChild(sel); tr.appendChild(td); tb.appendChild(tr); return [sel, r[1], td];
+      });
+      d.appendChild(tb);
+      const chk = h('button', 'btn', 'Check');
+      chk.onclick = () => {
+        if (sels.some(([s]) => !s.value)) { fb.className = 'fb info'; fb.textContent = 'Choose Yes or No for every row first.'; return; }
+        let ok = true;
+        sels.forEach(([s, a, td]) => { const g = s.value === a; ok = ok && g; td.innerHTML = (g ? '✅ ' : '❌ ') + '<b>' + a + '</b>'; });
+        chk.remove();
+        fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+        fb.innerHTML = (ok ? '✅ Correct!' : '❌ Check the correct answers in the table.') + explain;
+        scored(ok);
+      };
+      const r = h('div', 'row'); r.appendChild(chk); d.appendChild(r);
+    }
+    d.appendChild(fb);
+    return d;
+  }
+  build();
+}
+</script>
+</body>
+</html>
