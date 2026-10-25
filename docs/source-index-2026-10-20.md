@@ -56,9 +56,9 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | gamal | arabic | `sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf` | repository_blob | exact | verified original |
 | gamal | arabic | `sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf` | repository_parts | not matched | not transferred here |
 | gamal | arabic | `sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf` | repository_blob | exact | not transferred here |
-| gamal | english | `sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2.pdf` | repository_blob | not matched | not transferred here |
-| gamal | english | `sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a` | repository_blob | not matched | not transferred here |
-| gamal | english | `sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a` | repository_blob | not matched | not transferred here |
+| gamal | english | `sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2.pdf` | repository_blob | not matched | not transferred here |
+| gamal | english | `sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording1.m4a` | repository_blob | not matched | not transferred here |
+| gamal | english | `sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording2.m4a` | repository_blob | not matched | not transferred here |
 | gamal | english | `sources/gamal/english/Fiction_Organizer.png` | repository_blob | not matched | not transferred here |
 | gamal | english | `sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf` | repository_blob | not matched | not transferred here |
 | gamal | english | `sources/gamal/english/Vocabulary_for_Writing_Prompt1_Words.pdf` | repository_blob | not matched | not transferred here |

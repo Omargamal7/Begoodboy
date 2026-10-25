@@ -1234,7 +1234,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "path": "sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2.pdf",
       "bytes": 108610,
       "sha256": "3b854e3076d91cb135ddb9680f03b0d3d9182ff278793dcc69d2fcca5dc73d97",
       "git_blob_sha": "498304ae0c33eb8c87595c1ec25d94f3fba25dfc",
@@ -1246,7 +1246,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "path": "sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording1.m4a",
       "bytes": 268909,
       "sha256": "dd66296dce7503fec2d5571e88e3d5fb588e0a20c75f99c13b092ac425cb6132",
       "git_blob_sha": "b26bea2a7beaee0d8f5ea075849bcb7d702820fa",
@@ -1258,7 +1258,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/english/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "path": "sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording2.m4a",
       "bytes": 5964976,
       "sha256": "cfe7ef7afb04d157008a4661a9c09402fb1660e4867f218f563fa5844b4b932d",
       "git_blob_sha": "6bcc651321175964ce2a1a469b89b9c8773e71a7",
