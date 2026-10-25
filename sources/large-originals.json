@@ -584,6 +584,73 @@
           "git_blob_sha": "11377cd6b0a25a43ae6d2b64661c73af25704f16"
         }
       ]
+    },
+    {
+      "path": "sources/shared/science/grade5/Science_Textbook_Grade5_Term1_2026-2027_English.pdf",
+      "bytes": 37801584,
+      "sha256": "7d648f8343f7006a75fcae19169ecae4459cb86de834cb5a5a86c3b6222b674b",
+      "parts": [
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-001.bin",
+          "bytes": 4194288,
+          "sha256": "6a2b265d955a47902849e78e882c927b75f1a6dbb6a7594fcb9ba5cf7056ffca",
+          "git_blob_sha": "c49da12dfbb79a85a044fb739c2262b05732c34b"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-002.bin",
+          "bytes": 4194288,
+          "sha256": "e2e8e99658a9d1c2b7216797d52372a18df93797f984bc9ee00d46023fa022cf",
+          "git_blob_sha": "ec1d7d9781d23f603834847d42d841e4f2f9327e"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-003.bin",
+          "bytes": 4194288,
+          "sha256": "7fa8c308a523e7a29823c9251dca0176c54a4576df323c938872420731964863",
+          "git_blob_sha": "1422ac85c097c0ad1d86c4773f1c2f013fedc206"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-004.bin",
+          "bytes": 4194288,
+          "sha256": "d0cf852dd46aae6d700c9e4a7e448c20b23ca21f29a8030bf418206b86b2967f",
+          "git_blob_sha": "e7f4d0eabe19073c0ebbd6f2024729e03a87dcf1"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-005.bin",
+          "bytes": 4194288,
+          "sha256": "cad377cff11f88813d2f62ce12d6f4c8c1788eeeb252b0f523dbdf239789482e",
+          "git_blob_sha": "a5d98a07cb61cefc82139c9160c9885a8222a1a2"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-006.bin",
+          "bytes": 4194288,
+          "sha256": "b8144664cc6cec4afdccd07b896d847e0fb97fee31d6dca271d3b1c9263c0e14",
+          "git_blob_sha": "de5c4e6429180999abf84f745658d1268db02183"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-007.bin",
+          "bytes": 4194288,
+          "sha256": "4d0b0197a863590776aef1ef507ca17b84f3512dedf1ecb276b9090cf4ab74e5",
+          "git_blob_sha": "e3eb53bd7e2d96ea9e971481e91a89469fbec7fd"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-008.bin",
+          "bytes": 4194288,
+          "sha256": "9053f3f7aa49afce6b5ee9b0ebf273792b41115bafbb4ec6cb0875bfaa8c20e7",
+          "git_blob_sha": "1446790218c9cef30fdebc206b8eae855c82b386"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-009.bin",
+          "bytes": 4194288,
+          "sha256": "5d405316241d7908ea798af04628f431acebc08eda64158d328489b4f196d663",
+          "git_blob_sha": "63b8437b7a203a3a7fed61b16189dfe59255e3c1"
+        },
+        {
+          "path": "sources/shared/science/grade5/textbook-parts/part-010.bin",
+          "bytes": 52992,
+          "sha256": "177df3f45fc928310c0134bbf8d289ffc69810b41e206ee164a4d76c7622818e",
+          "git_blob_sha": "063c2243b061deb16f603e4117fbe265c2d24a5a"
+        }
+      ]
     }
   ]
 }

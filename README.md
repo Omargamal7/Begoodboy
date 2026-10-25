@@ -79,3 +79,7 @@ See the [provenance](docs/provenance/gamal/social-studies/october-test-unit1-202
 - **iPad/phone:** the same hub link now has a Murad shelf: https://claude.ai/artifact/TAfDsBMHRBripePgBN3vzY
 
 See the [provenance](docs/provenance/murad/social-studies/october-test-unit1-2026-10-21.md).
+
+## Science · English textbook and assessment book
+
+[All nine chapters and 28 separate lessons](packs/gamal/science/english-term1/index.html) — explanation, homework and exercises/models tabs, offline source images, read-aloud, saved responses and source-sentence recall. [Source mapping and edition caveats](docs/provenance/science-english-two-books-2026-10-25.md).

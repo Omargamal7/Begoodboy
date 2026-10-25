@@ -10,8 +10,10 @@ Original files are organized by child, then subject. These are school documents 
 
 Use the original edition and wording when checking a source. Answer-key mistakes are documented separately; original bytes are never silently corrected. Large materials already attached to the [school-term1-2026 release](https://github.com/Omargamal7/Begoodboy/releases/tag/school-term1-2026) remain there.
 
-Additional originals from the [Cloud Browser recovery](../sync/2026-10-18-cloud/README.md) are included in the [combined catalogue](../sync/catalog.json). Eight larger originals use verified binary parts. Run `python3 tools/source/restore-originals.py` from the repository root to reconstruct and checksum them; the earlier release assets remain unchanged.
+Additional originals from the [Cloud Browser recovery](../sync/2026-10-18-cloud/README.md) are included in the [combined catalogue](../sync/catalog.json). Nine larger originals use verified binary parts. Run `python3 tools/source/restore-originals.py` from the repository root to reconstruct and checksum them; the earlier release assets remain unchanged.
 
 ## Grade 5 Science — English performance and assessment book
 
 - [Complete first-term PDF and homework scope](shared/science/grade5/homework-scope.md): Homework Performance only, printed pages 18, 19, 22, 23 and 27.
+
+- [English textbook and two-book chapter/lesson collection](shared/science/grade5/textbook.md).
