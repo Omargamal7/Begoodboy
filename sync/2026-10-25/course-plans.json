@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-25T09:00:00Z",
+  "platform_id": "289164276797572330",
+  "method": "TinyFish Browser Context Profile (prof_3ee5e7df49e7425a) via connector; direct course-plan/flow URLs. Content courses extracted live 2026-10-25; blanks without a re-open carry 2026-10-18 status.",
+  "counts": {
+    "children": 2,
+    "courses": 25,
+    "resources_observed": 12,
+    "blank_or_preparing": 13
+  },
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Arabic",
+      "course_id": "425277950422719800",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 7,
+      "outline": [
+        "مصادر اللغة العربية",
+        "مراجعات شهر أكتوبر لغة عربية ودين"
+      ],
+      "resources": [
+        {
+          "title": "مصادر اللغة العربية",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "Arabic_Primary6_T1",
+          "type": "PDF",
+          "note": "in folder مصادر اللغة العربية"
+        },
+        {
+          "title": "📝 6️⃣تقييمات الوزارة.. لغة عربية..ترم ١-٢٠٢٧",
+          "type": "PDF"
+        },
+        {
+          "title": "Arabic_Primary6_T1",
+          "type": "PDF"
+        },
+        {
+          "title": "معدلة ملزمة الصف السادس ترم اول",
+          "type": "PDF"
+        },
+        {
+          "title": "ماتم تدريسه 21/9–25/9: الاستماع / المعرفة والنكرة",
+          "type": "Note"
+        },
+        {
+          "title": "ماتم تدريسه 27/9–1/10: النص المعلوماتي / درس اتخاذ القرار",
+          "type": "Note"
+        }
+      ]
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Art",
+      "course_id": "425277951467101497",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277951467101497/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Confirmed empty 2026-10-25: 'Your learning journey is on its way / teacher is preparing the course'."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Computer",
+      "course_id": "425277952440180026",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277952440180026/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 12,
+      "outline": [
+        "theme 1",
+        "prim 6",
+        "Binder prim 6",
+        "H.W"
+      ],
+      "resources": [
+        {
+          "title": "theme 1",
+          "type": "Folder",
+          "items": 8
+        },
+        {
+          "title": "prim 6",
+          "type": "Folder",
+          "items": 8
+        },
+        {
+          "title": "prim 6 lesson 2",
+          "type": "Word Document"
+        },
+        {
+          "title": "Prim 6 lesson 1",
+          "type": "Word Document"
+        },
+        {
+          "title": "Binder prim 6",
+          "type": "Folder",
+          "items": 6
+        },
+        {
+          "title": "ICT primary 6 booklet 1st term 2025-2026 1",
+          "type": "Word Document"
+        },
+        {
+          "title": "H.W",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Please answer the questions on page 6 and 9",
+          "type": "Note"
+        },
+        {
+          "title": "revision prim 6 october",
+          "type": "Word Document"
+        },
+        {
+          "title": "week1",
+          "type": "Word Document"
+        },
+        {
+          "title": "week2",
+          "type": "Word Document"
+        },
+        {
+          "title": "week3",
+          "type": "Word Document"
+        }
+      ]
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English AL",
+      "course_id": "425277953404869947",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277953404869947/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 11,
+      "outline": [
+        "Booklets",
+        "Wonders",
+        "Unit 1 Week 1",
+        "Grammar",
+        "Booklets Model Answers",
+        "Weekly Covered Material",
+        "Week 5..0",
+        "Home Dictations",
+        "Weekly Lesson Distribution"
+      ],
+      "resources": [
+        {
+          "title": "Booklets",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Gr. 6 Grammar and Sentence Structure 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Wonders Fiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Wonders Leveled Readers 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Writing Booklet First Term 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Wonders",
+          "type": "Folder",
+          "items": 2
+        },
+        {
+          "title": "Unit 1 Week 1",
+          "type": "Folder",
+          "items": 2
+        },
+        {
+          "title": "Crossing the Creek",
+          "type": "Video"
+        },
+        {
+          "title": "U1 W1 How do new experiences offer new perspectives",
+          "type": "PDF"
+        },
+        {
+          "title": "Grammar",
+          "type": "Folder",
+          "items": 4
+        }
+      ],
+      "note": "Additional folders (Booklets Model Answers, weekly material, dictations) present per outline; not fully expanded."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English OL",
+      "course_id": "425277954369559868",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277954369559868/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 3,
+      "resources": [
+        {
+          "title": "Gr. 6 Assessment Book Term 1",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 O Level Book Term 1",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3",
+          "type": "PDF"
+        }
+      ]
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Mathematics",
+      "course_id": "425277957011971390",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277957011971390/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 8,
+      "outline": [
+        "Weekly Covered Material",
+        "Hw",
+        "Extra Sheets",
+        "Classes 6C,6F,6G",
+        "1st Day at School",
+        "Week 2",
+        "Week 4",
+        "Weekly Material Covered",
+        "Weekly Assessments' Study Guide",
+        "HW. Binder Model Answers",
+        "Binders"
+      ],
+      "resources": [
+        {
+          "title": "Extra Sheets",
+          "type": "Folder",
+          "items": 5,
+          "contents": [
+            "Revision Sheet (2) - Week (1)",
+            "Revision Sheet (1) - Week (1)",
+            "Worksheet (1) - Week (2)",
+            "October Revision Sheet",
+            "Modified Model Answer of October Revision Sheet"
+          ]
+        },
+        {
+          "title": "Classes 6C, 6F and 6G",
+          "type": "Folder",
+          "items": 18
+        },
+        {
+          "title": "1st Day at School",
+          "type": "Folder",
+          "items": 3
+        },
+        {
+          "title": "Week (2) 20–24/9/2026",
+          "type": "Folder",
+          "items": 4
+        },
+        {
+          "title": "Week (4) 4–7/10/2026",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "Weekly Material Covered",
+          "type": "Folder",
+          "items": 6,
+          "note": "Weeks 1–6 detailed teaching notes; uses 'Mathematics Ministry Performance and Assessments' book"
+        },
+        {
+          "title": "Weekly Assessments' Study Guide",
+          "type": "Folder",
+          "items": 3
+        },
+        {
+          "title": "Hw",
+          "type": "Folder",
+          "items": 2
+        }
+      ],
+      "note": "Topics: divisibility, prime factorization, GCF/LCM, Unit 2 rational numbers/integers/absolute value. October Monthly Exam 19/10."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Music",
+      "course_id": "425277958421257535",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277958421257535/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18 sweep; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "P.E.",
+      "course_id": "425277959901846848",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277959901846848/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18 sweep; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Professional Skills",
+      "course_id": "425277961332104513",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277961332104513/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18 sweep; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Religion",
+      "course_id": "425277962779139394",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277962779139394/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 2,
+      "outline": [
+        "مصادر التربية الدينية الإسلامية"
+      ],
+      "resources": [
+        {
+          "title": "مصادر التربية الدينية الإسلامية",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "Islamic_Education_Primary6_T1",
+          "type": "PDF"
+        }
+      ]
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Science",
+      "course_id": "425277964196814147",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277964196814147/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 4,
+      "outline": [
+        "First term",
+        "First term booklet",
+        "Model answers"
+      ],
+      "resources": [
+        {
+          "title": "First term",
+          "type": "Folder",
+          "items": 14
+        },
+        {
+          "title": "First term booklet",
+          "type": "Folder",
+          "items": 14
+        },
+        {
+          "title": "performance task and Assessments science g6 1st term 2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Model answers",
+          "type": "Folder",
+          "items": 11,
+          "contents": [
+            "Monthly_Exam_1_Model_Answers_",
+            "4th week assessment model answers",
+            "Assessment book homework p. 19 model answers",
+            "Assessment book homework page 14 & 15",
+            "model answers of the 3rd weekly assessment",
+            "Assessment book homework page 9 model answers",
+            "2nd week assessment model answers",
+            "chapter 3 homework model answers",
+            "chapter 2 Homework Model Answers",
+            "chapter 1 Homework Model Answers",
+            "Assessment book model answers P. 4&5"
+          ]
+        }
+      ]
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Social Studies",
+      "course_id": "425277965639654724",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277965639654724/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 4,
+      "outline": [
+        "الاسبوع الثاني 20–24/9",
+        "اطلس خرائط الوطن العربي",
+        "الاسبوع الثالث 27/9–1/10",
+        "الاسبوع الرابع 4–7/10",
+        "الاسبوع الخامس 11–15/10",
+        "اجابات اسئلة كتاب الوزارة"
+      ],
+      "resources": [
+        {
+          "title": "الاسبوع الثاني 20–24/9/2026",
+          "type": "Folder",
+          "items": 2,
+          "contents": [
+            "الدرس الأول : وطننا العربي - الموقع و الاهمية (PDF)",
+            "التقييم الاول الوطن العربي الموقع و الاهمية (PDF)"
+          ]
+        },
+        {
+          "title": "اطلس خرائط الوطن العربي",
+          "type": "Folder",
+          "items": 1,
+          "contents": [
+            "اطلس الخرائط الدرس الاول (PDF)"
+          ]
+        },
+        {
+          "title": "الاسبوع الثالث 27/9–1/10/2026",
+          "type": "Folder",
+          "items": 2,
+          "contents": [
+            "الدرس الثاني / تضاريس وطننا العربي (PDF)",
+            "اطلس الخرائط الدرس الثاني (PDF)"
+          ]
+        },
+        {
+          "title": "الاسبوع الرابع 4–7/10/2026",
+          "type": "Folder",
+          "items": 1,
+          "contents": [
+            "وطننا العربي المناخ و النبات الطبيعي (PDF)"
+          ]
+        }
+      ]
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Arabic",
+      "course_id": "425277732675427479",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 6,
+      "outline": [
+        "مصادر اللغة العربية",
+        "مراجعات العربي والدين لشهر أكتوبر"
+      ],
+      "resources": [
+        {
+          "title": "مصادر اللغة العربية",
+          "type": "Folder",
+          "items": 2
+        },
+        {
+          "title": "ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027",
+          "type": "PDF"
+        },
+        {
+          "title": "حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027",
+          "type": "PDF"
+        },
+        {
+          "title": "ماتم تدريسه 27/9–1/10: المفعول به / الرسالة الرسمية",
+          "type": "Note"
+        },
+        {
+          "title": "ما تم تدريسه 6–9/10: حكاية عطاء / بطل حل المشكلات",
+          "type": "Note"
+        },
+        {
+          "title": "مراجعات العربي والدين لشهر أكتوبر",
+          "type": "Folder",
+          "items": 6
+        }
+      ]
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Art",
+      "course_id": null,
+      "course_plan_url": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "No course_id exposed; blank at 2026-10-18."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Computer",
+      "course_id": "425277735292673177",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277735292673177/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 9,
+      "outline": [
+        "Binder prim 5",
+        "H.W",
+        "October Revision prim 5"
+      ],
+      "resources": [
+        {
+          "title": "Binder prim 5",
+          "type": "Folder",
+          "items": 6
+        },
+        {
+          "title": "1st term binder grade 5new 2025-2026 - for merge",
+          "type": "Word Document"
+        },
+        {
+          "title": "H.W",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Please answer the questions on page 5 and 8",
+          "type": "Note"
+        },
+        {
+          "title": "October Revision prim 5",
+          "type": "Folder",
+          "items": 4
+        },
+        {
+          "title": "revsion prim5 october",
+          "type": "Word Document"
+        },
+        {
+          "title": "week 1",
+          "type": "Word Document"
+        },
+        {
+          "title": "week2",
+          "type": "Word Document"
+        },
+        {
+          "title": "week3",
+          "type": "Word Document"
+        }
+      ]
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English AL",
+      "course_id": "425277736345443482",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277736345443482/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 10,
+      "outline": [
+        "Booklets",
+        "Wonders",
+        "Story Graphic Organizers",
+        "Unit 1 Week 1",
+        "Booklets Model Answers",
+        "Weekly Material Covered",
+        "Week 5..0",
+        "Home Dictations",
+        "Home Dictation #1/#2"
+      ],
+      "resources": [
+        {
+          "title": "Booklets",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Gr. 5 Grammar and Sentence Structure Booklet 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Wonders Fiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Wonders Leveled Readers 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Writing Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Wonders",
+          "type": "Folder",
+          "items": 4,
+          "contents": [
+            "Gr. 5 Grammar and Sentence Structure Booklet - Model Answers up to p.12",
+            "Vocabulary for Writing- Prompt 1 Words",
+            "Gr. 5 Wonders Fiction Booklet Model Answer up to p.6",
+            "Gr. 5 Wonders NonFiction Booklet Model Answer up to p.7"
+          ]
+        },
+        {
+          "title": "Weekly Material Covered",
+          "type": "Folder",
+          "items": 8
+        },
+        {
+          "title": "Weekly Outline Term 1 Weeks 0,3,4,5",
+          "type": "PDF",
+          "note": "one PDF per weekly folder"
+        },
+        {
+          "title": "Home Dictations",
+          "type": "Folder",
+          "items": 7,
+          "note": "Home Dictation #1 & #2 folders: PDFs + regular/slow-speed Audio"
+        }
+      ]
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English OL",
+      "course_id": "425277737305939099",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277737305939099/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "German",
+      "course_id": "428324090462383857",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/428324090462383857/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Mathematics",
+      "course_id": "425277740049013917",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277740049013917/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank/no posted resources at 2026-10-18; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Music",
+      "course_id": null,
+      "course_plan_url": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "No course_id exposed; blank at 2026-10-18."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "P.E.",
+      "course_id": null,
+      "course_plan_url": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "No course_id exposed; blank at 2026-10-18."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Professional Skills",
+      "course_id": null,
+      "course_plan_url": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "No course_id exposed; blank at 2026-10-18."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Religion",
+      "course_id": "425277745933622433",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277745933622433/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Science",
+      "course_id": "425277747372268706",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277747372268706/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18; not re-opened on 2026-10-25."
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Social Studies",
+      "course_id": "425277748773166243",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277748773166243/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 6,
+      "outline": [
+        "إجابات كتاب التقيمات (الدرس 1،2،3)",
+        "اجابة كتاب الوزارة اول 3 دروس من الوحدة الاولي"
+      ],
+      "resources": [
+        {
+          "title": "إجابات كتاب التقيمات ( الدرس الأول والثاني والثالث )",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "اجابة التقيمات",
+          "type": "PDF"
+        },
+        {
+          "title": "اجابة كتاب الوزارة اول 3 دروس من الوحدة الاولي",
+          "type": "Folder",
+          "items": 3
+        },
+        {
+          "title": "اجابة اسئلة الدرس الأول ( الموقع الفلكي لمصر )",
+          "type": "PDF"
+        },
+        {
+          "title": "إجابات اسئلة الدرس الثاني من كتاب الوزارة ( تضاريس )",
+          "type": "PDF"
+        },
+        {
+          "title": "اجابة درس مناخ مصر",
+          "type": "PDF"
+        }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 | Snapshot | Status |
 |---|---|
+| [25 October 2026](2026-10-25/README.md) | Course-plan sweep via TinyFish connector (saved profile, no local browser): 25/25 classified, 12 with posted books & sources enumerated, 13 blank/preparing. |
 | [18 October 2026](2026-10-18/README.md) | Live sweep complete for 25 course plans, both assignment dashboards, school announcements and messaging. Attachment gaps are explicitly listed. |
 | [17 October 2026](2026-10-17/README.md) | Download archive verified: 71 names / 67 unique contents. Full Toddle synchronization and content review are incomplete. |
 
