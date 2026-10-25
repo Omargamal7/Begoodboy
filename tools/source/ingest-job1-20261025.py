@@ -26,7 +26,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
     else:p.write_bytes(block)
     blob=hashlib.sha1(b'blob '+str(len(block)).encode()+b'\0'+block).hexdigest()
     item['parts'].append({'path':rel,'bytes':len(block),'sha256':sha(block),'git_blob_sha':blob});changed.append(rel)
-   assert sha(b''.join((root[x['path']).read_bytes() for x in item['parts']))==b['sha256']
+   assert sha(b''.join((root[x['path']]).read_bytes() for x in item['parts']))==b['sha256']
    large['files'].append(item)
   else:
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data);assert sha(target.read_bytes())==b['sha256'];changed.append(b['path'])
