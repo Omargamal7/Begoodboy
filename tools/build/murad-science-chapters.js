@@ -1,0 +1,54 @@
+/* Build Murad's source-grounded offline Science chapter/lesson HTMLs.
+   Run: node tools/build/murad-science-chapters.js
+   Generated HTML is deliberately not presented as Ministry-mapped until source PDFs are reconciled. */
+'use strict';
+const fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'../..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),s);};
+const manifest=JSON.parse(read('tools/source/science/manifest.json'));
+for(const n of ['chapter-1-2','chapter-3-4','chapter-5-6','chapter-7-8','chapter-9-10'])require('../source/science/'+n);
+const author=require('../source/science-author');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&quot;',"'":'&#39;'}[c]));
+const out='packs/murad/science/english-term1';
+const byNumber=new Map(author.lessons.map(x=>[x.number,x]));
+const data=manifest.map(x=>({...x,source:byNumber.get(x.number)}));
+if(data.some(x=>!x.source))throw Error('Missing authored source lesson');
+const css=`*{box-sizing:border-box}body{margin:0;background:#eef3f6;color:#142c38;font:17px/1.6 system-ui}header{background:#123f50;color:white;padding:20px}main{max-width:940px;margin:auto;padding:16px}.card{background:white;padding:20px;border-radius:15px;margin:15px 0}nav,.actions{display:flex;gap:8px;flex-wrap:wrap}button,a.link{font:inherit;padding:11px;border-radius:10px;border:1px solid #94aeb8;background:white;color:#123f50;cursor:pointer}button[aria-selected=true]{background:#125e74;color:white}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #e29d32}textarea{width:100%;min-height:105px;font:inherit;padding:10px}small,.muted{color:#496471}.warning{background:#fff2d6;padding:12px;border-left:4px solid #a96c00}img{max-width:100%;height:auto}a{color:#075e74} .hidden{display:none}.question{border-top:1px solid #d7e0e5;padding-top:12px} @media(max-width:500px){main{padding:9px}.card{padding:13px}button{min-height:45px}}`;
+const js=`
+const DATA=__DATA__;
+const KEY='murad-science-chapter-v2:'+DATA.map(x=>x.number).join(',');
+let state={lesson:0,tab:'explanation',question:0,answers:{},done:{}};
+try{const old=JSON.parse(localStorage.getItem(KEY)||'{}');state.answers=old.answers||{};state.done=old.done||{}}catch(e){}
+const E=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&quot;',"'":'&#39;'}[c]));
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify({answers:state.answers,done:state.done}))}catch(e){}};
+const lesson=()=>DATA[state.lesson];
+const key=q=>lesson().number+':'+q;
+function speak(t){if(!('speechSynthesis'in window))return alert('Read-aloud is unavailable on this device.');speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=.85;speechSynthesis.speak(u)}
+function answer(q,v){state.answers[key(q)]=v;save()}
+function exportAnswers(){const blob=new Blob([JSON.stringify({exported:new Date().toISOString(),subject:'Murad Science',lessons:DATA.map(x=>({number:x.number,title:x.title,explanationPages:x.pages,exercisePages:x.exercisePages})),answers:state.answers,completed:state.done},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='science-answers-'+DATA[0].number+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function render(){const L=lesson(),S=L.source;document.querySelector('#lessonSelect').value=state.lesson;document.querySelector('#lessonTitle').textContent=L.number+' · '+L.title;document.querySelector('#pages').textContent='MLS binder printed explanation pp. '+L.pages.join(', ')+'; exercises pp. '+L.exercisePages.join(', ')+'. PDF indices not independently verified.';
+document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===state.tab));
+let h='';
+if(state.tab==='explanation'){h='<p>Read one idea. Say it in your own words. Then continue.</p>'+S.facts.map((f,i)=>'<section class="card"><h3>'+E(f.term)+'</h3>'+f.lines.map(t=>'<p>'+E(t.replace(/\\*\\*/g,''))+'</p>').join('')+'<button data-speak="'+i+'">Read aloud</button><label><input type="checkbox" data-done="'+i+'" '+(state.done[key('fact'+i)]?'checked':'')+'> I understand this idea</label></section>').join('')+'<section class="card"><h3>Explain the idea</h3><p>Describe one example from this lesson in your own words.</p><textarea data-answer="explain" placeholder="Type your explanation"></textarea><p class="muted">Newly authored reflection; parent review, not an official question.</p></section>'}
+if(state.tab==='homework')h='<div class="warning"><strong>Ministry Homework Performance: not yet mapped.</strong> The Ministry booklet was listed in Toddle, but its exact question text and page indices have not been verified. No question is invented or presented as assigned homework.</div><p>Check the teacher-assigned pages against the original Ministry assessment book before entering homework here.</p><textarea data-answer="homework-note" placeholder="Parent: record assigned Ministry question/page once verified"></textarea>';
+if(state.tab==='exercises'){const q=S.checks[state.question];h='<p>MLS binder exercises · '+(state.question+1)+' of '+S.checks.length+'. One question at a time.</p><div class="card question"><p><strong>'+E(q.stem)+'</strong></p><p class="muted">MLS printed p. '+q.source.page+' · '+E(q.source.section)+' · question '+q.source.number+'</p>'+ (q.options?'<p>'+q.options.map((o,i)=>'<label style="display:block"><input type="'+(q.type==='multi'?'checkbox':'radio')+'" name="choice" value="'+i+'"> '+E(o)+'</label>').join('')+'</p>':'')+'<textarea data-answer="q'+state.question+'" placeholder="Write your answer."></textarea><div class="actions"><button id="speakQ">Read question</button><button id="reviewQ">Check / parent review</button></div><p id="feedback" aria-live="polite"></p></div><div class="actions"><button id="prevQ" '+(state.question===0?'disabled':'')+'>Previous</button><button id="nextQ" '+(state.question===S.checks.length-1?'disabled':'')+'>Next question</button></div><p class="muted">Original MLS exercise transcription; grading evidence may be incomplete. Teacher-assigned homework and Ministry models are not included here.</p>'}
+if(state.tab==='sources')h='<div class="card"><h3>MLS original references</h3><p>Explanation printed pages: '+L.pages.join(', ')+'</p><p>Exercises printed pages: '+L.exercisePages.join(', ')+'</p><p>Exercise questions in this lesson: '+S.checks.length+'</p><p>Answer evidence: existing authored MLS source map. Questions with no supported answer require parent review.</p><p><a href="https://github.com/Omargamal7/Begoodboy/blob/main/docs/provenance/murad/science/all-lessons-source-map.md">Full original question provenance</a> (online reference only; lesson itself works offline)</p><div class="warning">Ministry assessment, teacher answer files, and PDF indices are not verified for this build. Do not treat MLS exercises as Ministry homework.</div><button id="export">Export answers (JSON)</button></div>';
+document.querySelector('#content').innerHTML=h;
+document.querySelectorAll('[data-speak]').forEach(b=>b.onclick=()=>speak(S.facts[Number(b.dataset.speak)].lines.join(' ').replace(/\\*\\*/g,'')));
+document.querySelectorAll('[data-done]').forEach(b=>b.onchange=e=>{state.done[key('fact'+b.dataset.done)]=e.target.checked;save()});
+document.querySelectorAll('[data-answer]').forEach(t=>{t.value=state.answers[key(t.dataset.answer)]||'';t.oninput=()=>answer(t.dataset.answer,t.value)});
+if(document.querySelector('#speakQ'))document.querySelector('#speakQ').onclick=()=>speak(S.checks[state.question].stem);
+if(document.querySelector('#reviewQ'))document.querySelector('#reviewQ').onclick=()=>{const q=S.checks[state.question],v=state.answers[key('q'+state.question)]||'';document.querySelector('#feedback').textContent=q.answer===null?'Parent review required: '+(q.reason||'No verified answer evidence.'):(v.trim()?'Answer saved. Ask a parent to check against the MLS source map.':'Write an answer first.');};
+for(const [id,delta] of [['prevQ',-1],['nextQ',1]])if(document.querySelector('#'+id))document.querySelector('#'+id).onclick=()=>{state.question+=delta;render()};
+if(document.querySelector('#export'))document.querySelector('#export').onclick=exportAnswers;
+}
+document.querySelector('#lessonSelect').innerHTML=DATA.map((x,i)=>'<option value="'+i+'">'+E(x.number+' · '+x.title)+'</option>').join('');
+document.querySelector('#lessonSelect').onchange=e=>{state.lesson=Number(e.target.value);state.question=0;render()};
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;render()});render();
+`;
+function make(items,title){const d=JSON.stringify(items).replace(/</g,'\\u003c');return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><style>'+css+'</style></head><body><header><h1>'+esc(title)+'</h1><p>Offline MLS Science study · Source boundaries preserved</p></header><main><p><a href="index.html">Science index</a></p><label for="lessonSelect">Choose lesson</label> <select id="lessonSelect"></select><h2 id="lessonTitle"></h2><p id="pages"></p><nav aria-label="Lesson sections"><button data-tab="explanation">Explanation</button><button data-tab="homework">Homework</button><button data-tab="exercises">Exercises &amp; Models</button><button data-tab="sources">Sources &amp; Review</button></nav><div id="content"></div></main><script>'+js.replace('__DATA__',d).replace(/<\\/script/gi,'<\\\\/script')+'</script></body></html>'}
+let index='<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Murad Science · First Term</title><style>'+css+'</style><header><h1>Murad Science · First Term</h1><p>MLS binder study collection · Ministry mapping pending</p></header><main><p class="warning">These files use verified MLS lesson material. Ministry Homework Performance questions are not yet transcribed or mapped; no assigned homework is claimed.</p>';
+for(let chapter=1;chapter<=10;chapter++){const group=data.filter(x=>Number(x.number.split('-')[0])===chapter),file='chapter-'+String(chapter).padStart(2,'0')+'.html';write(out+'/'+file,make(group,'Science · Chapter '+chapter));index+='<section class="card"><h2><a href="'+file+'">Chapter '+chapter+'</a></h2>'+group.map(x=>{const l='lesson-'+x.number.replace('-','-')+'.html';write(out+'/'+l,make([x],'Science · '+x.number+' · '+x.title));return '<p><a href="'+l+'">'+esc(x.number+' · '+x.title)+'</a></p>'}).join('')+'</section>'}
+index+='</main></html>';write(out+'/index.html',index);
+console.log('Generated 10 chapters, '+data.length+' lessons and index in '+out);
