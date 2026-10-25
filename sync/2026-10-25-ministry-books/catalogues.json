@@ -1,0 +1,1497 @@
+{
+  "retrieved_date": "2026-10-25",
+  "textbook_catalogue_url": "https://ellibrary.moe.gov.eg/Books/Books-Primary/books.json",
+  "assessment_catalogue_url": "https://studentbooks.moe.gov.eg/Performance_Assessments/books.json",
+  "grade5_and_grade6_textbooks": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Arabic_langugae_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/English_language_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_Ar_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_EN_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الفرنسية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_FR_prim5_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Islamic_prim5_tr1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Cristian_reliogion_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Science_Ar_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الفرنسية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Science_FR_prim5_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الدراسات الاجتماعية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Social_studies_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/ICT_ARABIC_Prim5_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "مهارات إدارة الأسرة وريادة الأعمال",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Family_management_Prim5_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "مهارات الزراعة وريادة الأعمال",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Farming_skills_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "المكتبات ومهارات البحث",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Libraries_prim5_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الإنجليزية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Science_EN_Prim5_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Arabic_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/English_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Math_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Math_EN_P6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الفرنسية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Math_FR_P6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Islamic_Education_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Christian_Education_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Science_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الإنجليزية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Science_EN_prim6_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الفرنسية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Science_FR_prim6_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الدراسات الاجتماعية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Social_Studies_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/ICT_ARABIC_Prim6_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "مهارات إدارة الأسرة وريادة الأعمال",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Family_management_Prim6_TR1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "مهارات الزراعة وريادة الأعمال",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Farming_skills_prim6_t1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "المكتبات ومهارات البحث",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Libraries_prim6_t1.pdf"
+    }
+  ],
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة العربية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Arabic_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/English_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Math_ar_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Math_en_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الفرنسية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Math_fr_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الإنجليزية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Science_en_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الفرنسية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Science_fr_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الدراسات الاجتماعية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Social_studies_prim5_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة العربية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Arabic_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/English_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_ar_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_en_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الفرنسية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_fr_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الدراسات الاجتماعية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Social_studies_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الإنجليزية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Science_en_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم باللغة الفرنسية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Science_fr_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/French2_prim5_tr1_w1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Spanish_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Italiano_prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/French2_prim6_tr1_w1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/German_Prim6_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Spanish_Prim6_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Italian_prim6_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية أولى",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/French1_prim5_tr1_w2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Spanish_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Italian_prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية أولى",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/French1_prim6_tr1_w2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/German_Prim6_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Spanish_Prim6_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Italian_prim6_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim6_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_EGLISH_Prim6_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim6_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Spanish_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Italian_prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ENGLISH_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/German_Prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Spanish_Prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Italian_prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_EGLISH_Prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim6_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية أولى",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/French1_prim5_tr1_w4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/French2_prim5_tr1_w4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Italian_prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Spanish_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية أولى",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/French1_prim6_tr1_w4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الفرنسية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/French2_prim6_tr1_w4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Italian_prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/German_Prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Spanish_Prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_EGLISH_Prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim6_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الأول الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary1/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الأول الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary1/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الثانى الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary2/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الثانى الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary2/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الثالث الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary3/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الثالث الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary3/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/Italian_prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/German_Prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/Spanish_Prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الرابع الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim4_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Italian_prim5_TR1_W5..pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Spanish_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ENGLISH_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Italian_prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/German_Prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/Spanish_Prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/ClassrHomeAssessmentsTest/ICT_EGLISH_Prim6_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/German2_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/Italian_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الصينية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/Chineese__prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/Spanish_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكمبيوتر وتكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكمبيوتر وتكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/ICT_English_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الأول الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory1/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prep1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/Italian_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الصينية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/Chineese_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/German2_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/Spanish_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكمبيوتر وتكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكمبيوتر وتكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/ICT_ENGLISH_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثاني الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prep2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/Italian_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الصينية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/Chineese_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/German2_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/Spanish_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكمبيوتر وتكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الإعدادية",
+      "grade": "الصف الثالث الإعدادي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory3/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prep3_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Arabic_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/English_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Math_AR_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Math_EN_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم المتكاملة باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Integrated_science_ARABIC_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "العلوم المتكاملة باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Integrated_science_ENGLISH_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التاريخ",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/History_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "البرمجة والذكاء الإصطناعي باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/AI_AR_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "البرمجة والذكاء الاصطناعي باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/AI_EN_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الفلسفة والمنطق",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/philosophy_AR_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/German_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Spanish_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Christian_AR_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Italian_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الأول الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الصينية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry1/Term1/ClassrHomeAssessmentsTest/Chineese_Sec1_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Arabic_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/English_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكيمياء باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/chemistry_ARABIC_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الكيمياء باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/chemistry_English_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التاريخ",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/History_Sec2_TR2_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "جغرافيا التنمية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/GEOGRAPHY_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات البحتة باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Math_Pure_AR_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات البحتة باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Math_Pure_EN_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات العامة باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Math_General_AR_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات العامة باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Math_General_EN_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تطبيقات الرياضيات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Math_Applied_AR_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تطبيقات الرياضيات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Math_Applied_EN_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/German_sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإسبانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Spanish_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Christian_AR_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإيطالية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Italian_Sec2_TR1_W5.pdf"
+    },
+    {
+      "stage": "الثانوي العام",
+      "grade": "الصف الثاني الثانوي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الصينية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Secondry/Secondry2/Term1/ClassrHomeAssessmentsTest/Chineese_Sec2_TR1_W5.pdf"
+    }
+  ]
+}

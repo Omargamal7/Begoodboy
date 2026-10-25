@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-10-25",
+  "timezone": "Africa/Cairo",
+  "job": "Missing book PDFs only",
+  "complete_toddle_sync": false,
+  "catalogue_sources": [
+    {
+      "url": "https://ellibrary.moe.gov.eg/Books/Books-Primary/books.json",
+      "sha256": "9a2363f46db3015f46ae32f5807a41f446d522d3281d4e82a7f3fa4142602cb6"
+    },
+    {
+      "url": "https://studentbooks.moe.gov.eg/Performance_Assessments/books.json",
+      "sha256": "d57e2368b0b92185f6fc0f23c7af2c181a23e0c19961764affaf448fc65d6fb1"
+    }
+  ],
+  "new_books": [
+    {
+      "path": "sources/shared/arabic/grade5/ministry-2026-2027-term1/Arabic_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "arabic",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Arabic_prim5_t1_Assmt.pdf",
+      "bytes": 11935218,
+      "sha256": "d10c9788fcd75140368487a655939d2fb2a8cc868a197808edd88dd4301c2380",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade5/ministry-2026-2027-term1/English_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "english-ordinary-level",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/English_prim5_t1_Assmt.pdf",
+      "bytes": 11788956,
+      "sha256": "41b01ce8e0530ba2400696a4fad31a063f775980bf2995e9e2687fa23e2d1472",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/mathematics/grade5/ministry-2026-2027-term1/Math_en_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "mathematics",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Math_en_prim5_t1_Assmt.pdf",
+      "bytes": 15121824,
+      "sha256": "921396d58d2bffa7f6b1c1e52566d2894faf4bfd8e70c3e7738a90ffb9c78008",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/science/grade5/ministry-2026-2027-term1/Science_en_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "science",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Science_en_prim5_t1_Assmt.pdf",
+      "bytes": 15303481,
+      "sha256": "c49c98bbbaa07a6080b8c663fd99751929f895cc665f623888d2ad36cffc400f",
+      "pdf_pages": 65,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 65,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/social-studies/grade5/ministry-2026-2027-term1/Social_studies_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "social-studies",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Social_studies_prim5_t1_Assmt.pdf",
+      "bytes": 11291552,
+      "sha256": "0e5433427bf7aea8434c4d7bdf88f4eecd56c9c18e0b286206b5a0f316a1ed0c",
+      "pdf_pages": 66,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 66,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/arabic/grade6/ministry-2026-2027-term1/Arabic_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "arabic",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Arabic_prim6_t1_Assmt.pdf",
+      "bytes": 14491062,
+      "sha256": "166baa74a79cf2a7d5bdc4571515bc3d40e33b566836e2f992da3a632ed9ff58",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "english-ordinary-level",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/English_prim6_t1_Assmt.pdf",
+      "bytes": 33776143,
+      "sha256": "d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/mathematics/grade6/ministry-2026-2027-term1/Math_en_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "mathematics",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_en_prim6_t1_Assmt.pdf",
+      "bytes": 8888316,
+      "sha256": "12ec5627a20b226ba07ccf35b95f7dd02bd8997ea828ea0cd157cf0612b4f658",
+      "pdf_pages": 66,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 66,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/social-studies/grade6/ministry-2026-2027-term1/Social_studies_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "social-studies",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Social_studies_prim6_t1_Assmt.pdf",
+      "bytes": 3202082,
+      "sha256": "a2d833a4dffaf610895b91140e0d74c67b5308bef37a513b1f48c926b023d428",
+      "pdf_pages": 72,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 72,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "repository_pdf"
+    },
+    {
+      "path": "sources/shared/science/grade6/ministry-2026-2027-term1/Science_en_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "science",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Science_en_prim6_t1_Assmt.pdf",
+      "bytes": 15021176,
+      "sha256": "c27bf89796efcb56f9fdd951fd720c82316132706d1c757ebf4af856cbcc5ffd",
+      "pdf_pages": 65,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 65,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/arabic/grade5/ministry-2026-2027-term1/Arabic_langugae_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "arabic",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Arabic_langugae_prim5_t1.pdf",
+      "bytes": 37348660,
+      "sha256": "9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8",
+      "pdf_pages": 154,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 154,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade5/ministry-2026-2027-term1/English_language_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "english-ordinary-level",
+      "language": "English",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/English_language_prim5_t1.pdf",
+      "bytes": 18757051,
+      "sha256": "da7e3dd769bbdfc3506a6d4fea96ed6e62ee3a49d95ad15968e4c2bbcf7513f4",
+      "pdf_pages": 113,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 113,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/mathematics/grade5/ministry-2026-2027-term1/Math_EN_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "mathematics",
+      "language": "English",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_EN_prim5_t1.pdf",
+      "bytes": 37186734,
+      "sha256": "35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa",
+      "pdf_pages": 140,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 140,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/religion/grade5/ministry-2026-2027-term1/Islamic_prim5_tr1.pdf",
+      "grade": 5,
+      "subject": "religion",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Islamic_prim5_tr1.pdf",
+      "bytes": 26572786,
+      "sha256": "ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45",
+      "pdf_pages": 96,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 96,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/social-studies/grade5/ministry-2026-2027-term1/Social_studies_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "social-studies",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Social_studies_prim5_t1.pdf",
+      "bytes": 23753863,
+      "sha256": "6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4",
+      "pdf_pages": 98,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 98,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_Primary6_T1.pdf",
+      "grade": 6,
+      "subject": "english-ordinary-level",
+      "language": "English",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/English_Primary6_T1.pdf",
+      "bytes": 41312275,
+      "sha256": "79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819",
+      "pdf_pages": 113,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 113,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/social-studies/grade6/ministry-2026-2027-term1/Social_Studies_Primary6_T1.pdf",
+      "grade": 6,
+      "subject": "social-studies",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Social_Studies_Primary6_T1.pdf",
+      "bytes": 94365877,
+      "sha256": "de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296",
+      "pdf_pages": 114,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 114,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ],
+  "reused_books": [
+    {
+      "path": "sources/shared/science/grade5/Science_Textbook_Grade5_Term1_2026-2027_English.pdf",
+      "storage": "existing binary parts",
+      "note": "110 pages, complete 2026-2027 English first-term text; no duplicate official scan added"
+    },
+    {
+      "path": "sources/murad/religion/Islamic_Education_Primary6_T1.pdf",
+      "sha256": "093d44068a9c1a5a1d283ec9b80cc7357bf69ec2648dd89330b6bbe5b881d2f9",
+      "pdf_pages": 98,
+      "official_source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Islamic_Education_Primary6_T1.pdf",
+      "verification": "Exact hash match with current official Ministry original; edition 2026-2027 verified in imprint"
+    },
+    {
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf",
+      "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
+      "pdf_pages": 154,
+      "official_source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Arabic_Primary6_T1.pdf",
+      "verification": "Exact hash match with current official Ministry original; no duplicate archived"
+    }
+  ],
+  "limits": [
+    "No lesson HTMLs changed.",
+    "School syllabus match uses existing originals, dated provenance and course catalogue, not a fresh Toddle collection.",
+    "Complete books absent from the official catalogue are not declared nonexistent.",
+    "Current official assessment originals are distinct from old scans, model answers or previous-year books; old bytes remain unchanged."
+  ]
+}

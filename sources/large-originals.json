@@ -651,6 +651,466 @@
           "git_blob_sha": "063c2243b061deb16f603e4117fbe265c2d24a5a"
         }
       ]
+    },
+    {
+      "path": "sources/shared/arabic/grade5/ministry-2026-2027-term1/Arabic_prim5_t1_Assmt.pdf",
+      "bytes": 11935218,
+      "sha256": "d10c9788fcd75140368487a655939d2fb2a8cc868a197808edd88dd4301c2380",
+      "parts": [
+        {
+          "path": "sources/.parts/d10c9788fcd75140368487a655939d2fb2a8cc868a197808edd88dd4301c2380/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8b570924a282ec74cbd72e6dc38ebfae96d5154eca4839ee21a53936d248b0db",
+          "git_blob_sha": "cee5239e2f5305362165905792a72b35ce1f07be"
+        },
+        {
+          "path": "sources/.parts/d10c9788fcd75140368487a655939d2fb2a8cc868a197808edd88dd4301c2380/0002.bin",
+          "bytes": 3546610,
+          "sha256": "0a9c24fa0d8b8ca5933d175ca6907eb393ad6560c44c63bd58dd0b0f57dcfb7f",
+          "git_blob_sha": "d13a3eab514139e513d9d6f073fb51b9b4f1ffd7"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade5/ministry-2026-2027-term1/English_prim5_t1_Assmt.pdf",
+      "bytes": 11788956,
+      "sha256": "41b01ce8e0530ba2400696a4fad31a063f775980bf2995e9e2687fa23e2d1472",
+      "parts": [
+        {
+          "path": "sources/.parts/41b01ce8e0530ba2400696a4fad31a063f775980bf2995e9e2687fa23e2d1472/0001.bin",
+          "bytes": 8388608,
+          "sha256": "b2fc573fa89876d0ff3aca460e7a6f8373cd85c440956adbaddfd07b904e4cd6",
+          "git_blob_sha": "d9e98393ff2d5cc397031115707c3df2efaebf37"
+        },
+        {
+          "path": "sources/.parts/41b01ce8e0530ba2400696a4fad31a063f775980bf2995e9e2687fa23e2d1472/0002.bin",
+          "bytes": 3400348,
+          "sha256": "dcdce1f37e6e1328a4b042b7b71242b0545a115a1d59f5906e45aae3e853d34f",
+          "git_blob_sha": "29c69518a6755784d0a22830837b5ba4347464d5"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/mathematics/grade5/ministry-2026-2027-term1/Math_en_prim5_t1_Assmt.pdf",
+      "bytes": 15121824,
+      "sha256": "921396d58d2bffa7f6b1c1e52566d2894faf4bfd8e70c3e7738a90ffb9c78008",
+      "parts": [
+        {
+          "path": "sources/.parts/921396d58d2bffa7f6b1c1e52566d2894faf4bfd8e70c3e7738a90ffb9c78008/0001.bin",
+          "bytes": 8388608,
+          "sha256": "88b1882e472e7dca8337c06f94248e6d2d1df0e2f58916700b9cb814b09d4fc4",
+          "git_blob_sha": "679b6f080087bb18b787450e5cfbbc81ca6ee762"
+        },
+        {
+          "path": "sources/.parts/921396d58d2bffa7f6b1c1e52566d2894faf4bfd8e70c3e7738a90ffb9c78008/0002.bin",
+          "bytes": 6733216,
+          "sha256": "e2588304794e1c5a27554761e75eedca8c695cf181a8d2d3439556cfcade4485",
+          "git_blob_sha": "4d9cfdfabce307b395fc8a3772d006142ae0d7e4"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/science/grade5/ministry-2026-2027-term1/Science_en_prim5_t1_Assmt.pdf",
+      "bytes": 15303481,
+      "sha256": "c49c98bbbaa07a6080b8c663fd99751929f895cc665f623888d2ad36cffc400f",
+      "parts": [
+        {
+          "path": "sources/.parts/c49c98bbbaa07a6080b8c663fd99751929f895cc665f623888d2ad36cffc400f/0001.bin",
+          "bytes": 8388608,
+          "sha256": "1f112790ae7c5d89d0618dc04f1c9c8f59ec14f986d235fa825c0dfaaac51736",
+          "git_blob_sha": "8de1be6969d7d3a456a394a5daba1decd8fbfac0"
+        },
+        {
+          "path": "sources/.parts/c49c98bbbaa07a6080b8c663fd99751929f895cc665f623888d2ad36cffc400f/0002.bin",
+          "bytes": 6914873,
+          "sha256": "95ec37e1de9bdce94a4a28d0b317613f173d092edf56200284d7ea42fdfec48d",
+          "git_blob_sha": "cd87726085fa06014648bd1e4273171aa971d549"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/social-studies/grade5/ministry-2026-2027-term1/Social_studies_prim5_t1_Assmt.pdf",
+      "bytes": 11291552,
+      "sha256": "0e5433427bf7aea8434c4d7bdf88f4eecd56c9c18e0b286206b5a0f316a1ed0c",
+      "parts": [
+        {
+          "path": "sources/.parts/0e5433427bf7aea8434c4d7bdf88f4eecd56c9c18e0b286206b5a0f316a1ed0c/0001.bin",
+          "bytes": 8388608,
+          "sha256": "cb1ab403cfd2c6b431a376193fdd8da6b73248923a5ffd1169430a99c748a779",
+          "git_blob_sha": "6f056265878809cec6599fff1cd66396dcafb7e1"
+        },
+        {
+          "path": "sources/.parts/0e5433427bf7aea8434c4d7bdf88f4eecd56c9c18e0b286206b5a0f316a1ed0c/0002.bin",
+          "bytes": 2902944,
+          "sha256": "f13ce0f2dda6ad372b891f0b1eae39b0a1db60d680d9a75cf32a94c1b386f689",
+          "git_blob_sha": "4029126527214f34b2ad034dec2dd7452d9b4c70"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/arabic/grade6/ministry-2026-2027-term1/Arabic_prim6_t1_Assmt.pdf",
+      "bytes": 14491062,
+      "sha256": "166baa74a79cf2a7d5bdc4571515bc3d40e33b566836e2f992da3a632ed9ff58",
+      "parts": [
+        {
+          "path": "sources/.parts/166baa74a79cf2a7d5bdc4571515bc3d40e33b566836e2f992da3a632ed9ff58/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8c81789d8ff2052e0aaea57208380d9bd609f1f0c8acab182b7202ca0e6a7b6e",
+          "git_blob_sha": "790c71496c6676968fa41edd026de5dfeec1b668"
+        },
+        {
+          "path": "sources/.parts/166baa74a79cf2a7d5bdc4571515bc3d40e33b566836e2f992da3a632ed9ff58/0002.bin",
+          "bytes": 6102454,
+          "sha256": "61ad8c9d858ff40a1454ae27f428c209fd854ceffad94ce1c6b9b54a0f419ebf",
+          "git_blob_sha": "9ab07c7b54456795f96c8e9c2c75b134e0a6f18e"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_prim6_t1_Assmt.pdf",
+      "bytes": 33776143,
+      "sha256": "d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed",
+      "parts": [
+        {
+          "path": "sources/.parts/d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed/0001.bin",
+          "bytes": 8388608,
+          "sha256": "862e77be0da8e2ffab0096456232f7ee481a75d8be43e40a7ba7bac7d5491f93",
+          "git_blob_sha": "7d3c5dcd0145ec2d310341fd2fbbcb477e68b5d1"
+        },
+        {
+          "path": "sources/.parts/d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed/0002.bin",
+          "bytes": 8388608,
+          "sha256": "4e00344dbec209d77aeb7972945bba1fd24e9eebf72daf6b7aaa41d2fe82ab9d",
+          "git_blob_sha": "b19b077b5429c16a7a1b3519a495826f405802d3"
+        },
+        {
+          "path": "sources/.parts/d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed/0003.bin",
+          "bytes": 8388608,
+          "sha256": "ef62c9aeb3ec961ec7fe53ac115732eaba870fe6ac861273c93cb271dff90059",
+          "git_blob_sha": "6ccb116693eae2aedabb723e8c6c08e8499da133"
+        },
+        {
+          "path": "sources/.parts/d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed/0004.bin",
+          "bytes": 8388608,
+          "sha256": "87e05b4dbecac76a0183dde5a1116c073b97be89bc128f855bf2fb42be0e0d18",
+          "git_blob_sha": "b5380495fb99df34e19b33d3080dd0904cb8980a"
+        },
+        {
+          "path": "sources/.parts/d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed/0005.bin",
+          "bytes": 221711,
+          "sha256": "146246b39002eb357301aaeb460a2b063153bf9524d271e88030c0a6c1592c53",
+          "git_blob_sha": "0df9c867631ea1f936a30ac2b5586e776d26daca"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/mathematics/grade6/ministry-2026-2027-term1/Math_en_prim6_t1_Assmt.pdf",
+      "bytes": 8888316,
+      "sha256": "12ec5627a20b226ba07ccf35b95f7dd02bd8997ea828ea0cd157cf0612b4f658",
+      "parts": [
+        {
+          "path": "sources/.parts/12ec5627a20b226ba07ccf35b95f7dd02bd8997ea828ea0cd157cf0612b4f658/0001.bin",
+          "bytes": 8388608,
+          "sha256": "f066f4c0e49cc7789d9a543eaa37c9bbe7179c581b65c5e1620c25ba55219c99",
+          "git_blob_sha": "b4a896b4970482f8bba42ab959f365067e13ba99"
+        },
+        {
+          "path": "sources/.parts/12ec5627a20b226ba07ccf35b95f7dd02bd8997ea828ea0cd157cf0612b4f658/0002.bin",
+          "bytes": 499708,
+          "sha256": "60019d8ba55d1c7ff444f1befdbf9e54783b4deeebde59a47e565349a3482cdc",
+          "git_blob_sha": "278da530a57936a9de6c07821b65462c7575f34d"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/science/grade6/ministry-2026-2027-term1/Science_en_prim6_t1_Assmt.pdf",
+      "bytes": 15021176,
+      "sha256": "c27bf89796efcb56f9fdd951fd720c82316132706d1c757ebf4af856cbcc5ffd",
+      "parts": [
+        {
+          "path": "sources/.parts/c27bf89796efcb56f9fdd951fd720c82316132706d1c757ebf4af856cbcc5ffd/0001.bin",
+          "bytes": 8388608,
+          "sha256": "7ee254a82a703420c6ec06a2c1131c45389f43b147f7ac2eda62b1e440e922f1",
+          "git_blob_sha": "e87409ae924e54767e5b8838316127478745493e"
+        },
+        {
+          "path": "sources/.parts/c27bf89796efcb56f9fdd951fd720c82316132706d1c757ebf4af856cbcc5ffd/0002.bin",
+          "bytes": 6632568,
+          "sha256": "d6a2161321f114b2f22e32fcad6be0fd11dae73a67024f8de5bd4b4757a42d51",
+          "git_blob_sha": "daa98c640826249d7d5a49340f10c4bea99fba95"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/arabic/grade5/ministry-2026-2027-term1/Arabic_langugae_prim5_t1.pdf",
+      "bytes": 37348660,
+      "sha256": "9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8",
+      "parts": [
+        {
+          "path": "sources/.parts/9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8/0001.bin",
+          "bytes": 8388608,
+          "sha256": "179ecbd3c52d3189beaa21bc922efd02c77d97c8f9efaaffff4077d9131cfb84",
+          "git_blob_sha": "49fc864a183ecff4aaee16d2662d4f66863ddd20"
+        },
+        {
+          "path": "sources/.parts/9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8/0002.bin",
+          "bytes": 8388608,
+          "sha256": "cb47bcae903830cb1d79c86cac7e6a4b99eede62b31d2671bcf393a660cd3164",
+          "git_blob_sha": "a594b8e802bfb24a5215c18c773ecb72a948b466"
+        },
+        {
+          "path": "sources/.parts/9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8/0003.bin",
+          "bytes": 8388608,
+          "sha256": "965da95d116eb43143bd5856bdff7732c556ebbad282848a27597735db2b9ea4",
+          "git_blob_sha": "c1152b157cfd43c751839c526f6106084b3581fc"
+        },
+        {
+          "path": "sources/.parts/9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8/0004.bin",
+          "bytes": 8388608,
+          "sha256": "e6b4153220c6f2753da650122f5e4f3557e3b736bec5e81872c80f977db1a831",
+          "git_blob_sha": "7c0e4a65895015cdeaab9730d9202763b1a2c2b9"
+        },
+        {
+          "path": "sources/.parts/9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8/0005.bin",
+          "bytes": 3794228,
+          "sha256": "3a99b81aaf23381623174dc651829b3c0af737baffc7a513e8628d60c11141b0",
+          "git_blob_sha": "c7898b157a2afba9d3713926508c277151bd66e2"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade5/ministry-2026-2027-term1/English_language_prim5_t1.pdf",
+      "bytes": 18757051,
+      "sha256": "da7e3dd769bbdfc3506a6d4fea96ed6e62ee3a49d95ad15968e4c2bbcf7513f4",
+      "parts": [
+        {
+          "path": "sources/.parts/da7e3dd769bbdfc3506a6d4fea96ed6e62ee3a49d95ad15968e4c2bbcf7513f4/0001.bin",
+          "bytes": 8388608,
+          "sha256": "fa2ef482d8593bfd397915a9b944c0b7a4b65639dc0f92df2fdea04bdcc1672a",
+          "git_blob_sha": "a559060e2d010b6d2d1bfb3abe88db7e755d74a9"
+        },
+        {
+          "path": "sources/.parts/da7e3dd769bbdfc3506a6d4fea96ed6e62ee3a49d95ad15968e4c2bbcf7513f4/0002.bin",
+          "bytes": 8388608,
+          "sha256": "2a34b762a0fd5742036dd35028c21957612d8ab1bc72a43290a8362f76bab14b",
+          "git_blob_sha": "c55426218ae62d736618698c999350151d967fde"
+        },
+        {
+          "path": "sources/.parts/da7e3dd769bbdfc3506a6d4fea96ed6e62ee3a49d95ad15968e4c2bbcf7513f4/0003.bin",
+          "bytes": 1979835,
+          "sha256": "133a1655810206d734d0b7a9c0a210dfd74aa918d039b9dd473ed93c5325b6b3",
+          "git_blob_sha": "ac711bd3593f74a7ea0bbbedf8ec8320c307b9b7"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/mathematics/grade5/ministry-2026-2027-term1/Math_EN_prim5_t1.pdf",
+      "bytes": 37186734,
+      "sha256": "35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa",
+      "parts": [
+        {
+          "path": "sources/.parts/35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0dc6f8646f9f35ba81090c614585d065f09292517177b138c8ebb88e2333bb8b",
+          "git_blob_sha": "a6858db0146219ec903e6c1135182ff67ab85886"
+        },
+        {
+          "path": "sources/.parts/35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa/0002.bin",
+          "bytes": 8388608,
+          "sha256": "e1799fefcabf8b31d9bfccf52184fc4def60bc8e9206fc61186357c5278fd827",
+          "git_blob_sha": "43a3c84c3a94188f4374b2010aaa596a3c92cf38"
+        },
+        {
+          "path": "sources/.parts/35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa/0003.bin",
+          "bytes": 8388608,
+          "sha256": "7e38974e24588dc7677e4aaa9e625b70f7954e0e178539da2ce91417e5f10b56",
+          "git_blob_sha": "e76f200e53602c8631c846c17c2714f9cb969e57"
+        },
+        {
+          "path": "sources/.parts/35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa/0004.bin",
+          "bytes": 8388608,
+          "sha256": "d759d66a28d73500418084b2417fcab1aef2d5747647d982314ee3d1ea9800d5",
+          "git_blob_sha": "5ca6f41aee67fedd6df73acea089a9020d4815e6"
+        },
+        {
+          "path": "sources/.parts/35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa/0005.bin",
+          "bytes": 3632302,
+          "sha256": "2f029fe012ffbb88c0e3d8ed9a5e176bf08bfd5abf5cc250b9d61e79de43263b",
+          "git_blob_sha": "d29630fe160a036de66d8978c34818c6467772b1"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/religion/grade5/ministry-2026-2027-term1/Islamic_prim5_tr1.pdf",
+      "bytes": 26572786,
+      "sha256": "ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45",
+      "parts": [
+        {
+          "path": "sources/.parts/ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0e13d575752539c63776ef771021eec2026d618dfd84080148a8c5193915a648",
+          "git_blob_sha": "54179c8f86dffa9ed906ff6a74f649ccdb8ea1d2"
+        },
+        {
+          "path": "sources/.parts/ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45/0002.bin",
+          "bytes": 8388608,
+          "sha256": "9c07b9dffe802975f9ff6226bc445bced7cf4b2a41316d043ccb50f560c1a4f1",
+          "git_blob_sha": "a4e6b3972400b1d1acf01f19429f133b053ca876"
+        },
+        {
+          "path": "sources/.parts/ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45/0003.bin",
+          "bytes": 8388608,
+          "sha256": "456050c51c15bd4d44e87a4061e0f35d0e973afb8f0ab953950f520075f5fa2e",
+          "git_blob_sha": "e4957625c69f278e3a3bf7578b67b28268ac98c2"
+        },
+        {
+          "path": "sources/.parts/ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45/0004.bin",
+          "bytes": 1406962,
+          "sha256": "8c6e82c2d07d6f0257b7b910a163d6c7d5203db2c2668664e27e756dab3244d3",
+          "git_blob_sha": "7c01e28f46b6af10523b84a1f86904376edcf6ce"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/social-studies/grade5/ministry-2026-2027-term1/Social_studies_prim5_t1.pdf",
+      "bytes": 23753863,
+      "sha256": "6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4",
+      "parts": [
+        {
+          "path": "sources/.parts/6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4/0001.bin",
+          "bytes": 8388608,
+          "sha256": "2f4cd46ababeb50691622f1ab489596b1e15a8bb22e5dc6539cd4b06db4e1bff",
+          "git_blob_sha": "a904756e2b8972a1d3e8ae56e79d59f394e91a7a"
+        },
+        {
+          "path": "sources/.parts/6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4/0002.bin",
+          "bytes": 8388608,
+          "sha256": "50d1d18f58128fe8cfe307ab0a5bcf0d0d21a6cc62867545b61fe5b3232346aa",
+          "git_blob_sha": "8d43b4f7232c73041fb294414b8b8e4cf936b8ad"
+        },
+        {
+          "path": "sources/.parts/6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4/0003.bin",
+          "bytes": 6976647,
+          "sha256": "b017a2c50a862f895e561675e5a049aebf546594384c0efb06cc8174532590d6",
+          "git_blob_sha": "827be2d79ca20896abd5f086a58ba2cfe435d325"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_Primary6_T1.pdf",
+      "bytes": 41312275,
+      "sha256": "79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819",
+      "parts": [
+        {
+          "path": "sources/.parts/79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819/0001.bin",
+          "bytes": 8388608,
+          "sha256": "25c9d073485709f427b6154d82660c7ec187da3470044d078a0db8153ac65d3f",
+          "git_blob_sha": "2b68f410fad06fb7dd2335a10df6289c2b3fd3f6"
+        },
+        {
+          "path": "sources/.parts/79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819/0002.bin",
+          "bytes": 8388608,
+          "sha256": "bc82d410e90f2cf0afe77845fe2ee4d84390238859a41a62e1fe1bf4ef16f066",
+          "git_blob_sha": "f0a5e917ee8a4e1bc76eeb1718fcd086745d5890"
+        },
+        {
+          "path": "sources/.parts/79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819/0003.bin",
+          "bytes": 8388608,
+          "sha256": "291a1726581a654bce8940d538df49e0019433b4060b2b826d542c5253fef3f8",
+          "git_blob_sha": "1110c1c713911ee3b91ab5f0fd144b99e11c55c2"
+        },
+        {
+          "path": "sources/.parts/79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819/0004.bin",
+          "bytes": 8388608,
+          "sha256": "c35d0ff6179ed735250649e253a5dfbcbce7f04172541ae0e590d000b2411fa4",
+          "git_blob_sha": "18f1e8289c388e505307968d94063cf3690370b3"
+        },
+        {
+          "path": "sources/.parts/79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819/0005.bin",
+          "bytes": 7757843,
+          "sha256": "d48935151f27acf6336c12fc10032d52d9cc31016b73db3729e7ae54d8268fd7",
+          "git_blob_sha": "6e10579a4b84fac99ffc4614e7b00beef79843f2"
+        }
+      ]
+    },
+    {
+      "path": "sources/shared/social-studies/grade6/ministry-2026-2027-term1/Social_Studies_Primary6_T1.pdf",
+      "bytes": 94365877,
+      "sha256": "de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296",
+      "parts": [
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0001.bin",
+          "bytes": 8388608,
+          "sha256": "3d6e6c924af52289f018baa271ecb8c3dcefbe52ea290962c7ea15f118674cc8",
+          "git_blob_sha": "f18ad0f7a1466b7f312e248b4502f3093690c316"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0002.bin",
+          "bytes": 8388608,
+          "sha256": "62ef9ae6fdef2a2feeb906dcf91c3e6619e24e325db7cbbf74b3bfffdafc78b0",
+          "git_blob_sha": "79ecbad1e5a61a6f0d33be093da021cf05a10a89"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0003.bin",
+          "bytes": 8388608,
+          "sha256": "b325b12f7ef7c50cb33744e1b358561311e82569e5c0b124034339089004eb35",
+          "git_blob_sha": "df77cd0c5a3e6eeea5c787659632e0ac568813bc"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0004.bin",
+          "bytes": 8388608,
+          "sha256": "694b76d724bf3729cc7792b107f1712e6f203cc43e8f0f106bf3010dfbc2963a",
+          "git_blob_sha": "a647a3e812a22f882b647ab2a7d1080e6b613dc4"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0005.bin",
+          "bytes": 8388608,
+          "sha256": "31630a8d3bb83a65ac8017fc7177ac13d077cd2bf0bc4be7cc95cfd80f592380",
+          "git_blob_sha": "534a10a1c0e47e14e00f3fcf61af7a50c8ce6594"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0006.bin",
+          "bytes": 8388608,
+          "sha256": "3c5b388faabd3859eb6d36a1970fef8a331a06f8adb841d7b2d0402258b60a03",
+          "git_blob_sha": "dc998381487943c4c37643a3b90e5e54cdc83846"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0007.bin",
+          "bytes": 8388608,
+          "sha256": "07650bbf1f4b55b46fe87495add8653a513da558abb99027f455b3cdf41ba2ba",
+          "git_blob_sha": "b0dc07db3877f5ab40bcc23defeb4302045bdb03"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0008.bin",
+          "bytes": 8388608,
+          "sha256": "33bc7fd6670571ac1e54d02626cb37a4879ce1e99a90102de866c7b750b3a1f4",
+          "git_blob_sha": "2e4b2dab24832fe2938ab117fab10ce04748d1cf"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0009.bin",
+          "bytes": 8388608,
+          "sha256": "34cc37e225392aff5382cd683d200986aa6368c59a8b5791d6be943cc31a61bd",
+          "git_blob_sha": "9d083e335c6223651fbe7843ad7378a2f45c9c6c"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0010.bin",
+          "bytes": 8388608,
+          "sha256": "8ea1541a2c4ec5cc2af08a33d2f806bf4894355fced6ed51a2c79212e2de5d88",
+          "git_blob_sha": "9e9b98343ab597b1f6c8c9e95ae68d03b1fc5f24"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0011.bin",
+          "bytes": 8388608,
+          "sha256": "7ecf2be0154fed74857d4053960c9ae371f14be0049bd79b33988abf4e5c2387",
+          "git_blob_sha": "85e8bb7229f5f8b6ac354fe3f1b57078e2239f91"
+        },
+        {
+          "path": "sources/.parts/de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296/0012.bin",
+          "bytes": 2091189,
+          "sha256": "85693002659e0575049c42def19c0edd6c2edddb3bd0d21500b9b6ad2ba0bd19",
+          "git_blob_sha": "6caf893f21c3fc486df77c550258cd4985df81e2"
+        }
+      ]
     }
   ]
 }

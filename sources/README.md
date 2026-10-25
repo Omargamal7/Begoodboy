@@ -17,3 +17,7 @@ Additional originals from the [Cloud Browser recovery](../sync/2026-10-18-cloud/
 - [Complete first-term PDF and homework scope](shared/science/grade5/homework-scope.md): Homework Performance only, printed pages 18, 19, 22, 23 and 27.
 
 - [English textbook and two-book chapter/lesson collection](shared/science/grade5/textbook.md).
+
+## Ministry books audit — 25 October 2026
+
+[Coverage and remaining gaps](../docs/ministry-book-coverage.md) · [Official book URLs and SHA-256 manifest](../sync/2026-10-25-ministry-books/books.json). Reuse adequate school binders. Restore large original PDFs with `python3 tools/source/restore-originals.py`. No lesson HTMLs changed.
