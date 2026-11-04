@@ -1,0 +1,11 @@
+# Pass 4
+- release murad-arabic-Arabic_Primary6_T1.pdf -> murad/arabic/sources/Arabic_Primary6_T1_Ministry_Textbook.pdf
+- release murad-arabic-ministry-assessments-term1-2027.pdf -> murad/arabic/sources/Arabic_Primary6_T1_Ministry_Assessments.pdf
+- release murad-religion-Islamic_Education_Primary6_T1.pdf -> murad/religion/sources/Islamic_Education_Primary6_T1.pdf
+- release murad-science-primary-6-first-term-binder.pdf -> murad/science/sources/Science_Primary6_T1_MLS_Binder.pdf
+- release murad-social-studies-week3-lesson2-arab-world-terrain.pdf -> murad/social-studies/sources/weekly/Week3_Lesson2_Arab_World_Terrain.pdf
+- rebuilt gamal/science/sources/shared/grade5/Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf (sha ok)
+- rebuilt gamal/science/sources/shared/grade5/Science_Grade5_Term1_2026-2027_English_Textbook.pdf (sha ok)
+- gamal/science/sources/shared/grade5 -> gamal/science/sources/ministry
+- app/assets/murad/english/assessment-pages.json -> murad/english/sources/
+- app/assets/gamal/english/assessment-pages.json -> gamal/english/sources/
