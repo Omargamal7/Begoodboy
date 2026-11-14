@@ -1,0 +1,17 @@
+{
+  "source": "sync/2026-10-18/attachments.json",
+  "scope": "murad/mathematics",
+  "new_repository_files": [
+    {
+      "child": "Murad",
+      "subject": "Mathematics",
+      "toddle_title": "Integers - Activity Sheet - Wednesday (7/10/2026)",
+      "phone_download_name": "Toddle-4d5ebcf1-38ca-49bb-bf35-d3a78e5f7d4f-Integers - Activity Sheet.pdf",
+      "repository_path": "sources/murad/mathematics/activities/Integers - Activity Sheet.pdf",
+      "bytes": 284108,
+      "sha256": "08099c3c97af8e532e6edf07ef95bb8bfcddfa46a068fb14f0c0772a1a5222ad",
+      "git_blob_sha": "eca9ec5622158e2913a4647836ee74fed82ecd30",
+      "receipt": "verified_phone_bytes"
+    }
+  ]
+}

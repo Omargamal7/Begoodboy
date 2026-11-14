@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "murad/mathematics",
+  "files": [
+    {
+      "archive_path": "murad/courses/Mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "bytes": 2330624,
+      "sha256": "05064ff60d672f4e0255ccc0310386dfa93db546e5eae5a56bb2a3dbd1f720a6",
+      "git_blob_sha": "55e4e570d11c5f3910a5fa7131daf8b49b994f5d",
+      "repository_path": "sources/murad/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "status": "archived_verified_repository_blob"
+    }
+  ]
+}

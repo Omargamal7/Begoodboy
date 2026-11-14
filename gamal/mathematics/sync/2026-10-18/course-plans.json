@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "gamal/mathematics",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Mathematics",
+      "course_id": "425277740049013917",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ]
+}

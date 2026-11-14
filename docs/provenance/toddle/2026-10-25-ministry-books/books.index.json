@@ -1,0 +1,54 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "snapshot": "2026-10-25-ministry-books",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "new_books": {
+      "records": 17,
+      "placed": {
+        "gamal/arabic/sync/2026-10-25-ministry-books/books.json": 2,
+        "gamal/english/sync/2026-10-25-ministry-books/books.json": 2,
+        "gamal/mathematics/sync/2026-10-25-ministry-books/books.json": 2,
+        "gamal/religion/sync/2026-10-25-ministry-books/books.json": 1,
+        "gamal/science/sync/2026-10-25-ministry-books/books.json": 1,
+        "gamal/social-studies/sync/2026-10-25-ministry-books/books.json": 2,
+        "murad/arabic/sync/2026-10-25-ministry-books/books.json": 1,
+        "murad/english/sync/2026-10-25-ministry-books/books.json": 2,
+        "murad/mathematics/sync/2026-10-25-ministry-books/books.json": 1,
+        "murad/science/sync/2026-10-25-ministry-books/books.json": 1,
+        "murad/social-studies/sync/2026-10-25-ministry-books/books.json": 2
+      }
+    },
+    "reused_books": {
+      "records": 3,
+      "placed": {
+        "gamal/science/sync/2026-10-25-ministry-books/books.json": 1,
+        "murad/arabic/sync/2026-10-25-ministry-books/books.json": 1,
+        "murad/religion/sync/2026-10-25-ministry-books/books.json": 1
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "recorded_date": "2026-10-25",
+    "timezone": "Africa/Cairo",
+    "job": "Missing book PDFs only",
+    "complete_toddle_sync": false,
+    "catalogue_sources": [
+      {
+        "url": "https://ellibrary.moe.gov.eg/Books/Books-Primary/books.json",
+        "sha256": "9a2363f46db3015f46ae32f5807a41f446d522d3281d4e82a7f3fa4142602cb6"
+      },
+      {
+        "url": "https://studentbooks.moe.gov.eg/Performance_Assessments/books.json",
+        "sha256": "d57e2368b0b92185f6fc0f23c7af2c181a23e0c19961764affaf448fc65d6fb1"
+      }
+    ],
+    "limits": [
+      "No lesson HTMLs changed.",
+      "School syllabus match uses existing originals, dated provenance and course catalogue, not a fresh Toddle collection.",
+      "Complete books absent from the official catalogue are not declared nonexistent.",
+      "Current official assessment originals are distinct from old scans, model answers or previous-year books; old bytes remain unchanged."
+    ]
+  }
+}

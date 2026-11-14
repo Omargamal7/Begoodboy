@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "gamal/general",
+  "files": [
+    {
+      "archive_path": "jimmy_gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "bytes": 158710,
+      "sha256": "faf1d4b7fc5d141f06e8bd6a16f6e3ad21595fd734bb0da7b5587b948169b871",
+      "git_blob_sha": "f1dca98e2ef4ddea748cb67663e145bdf8a09cde",
+      "repository_path": "sources/gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "status": "archived_verified_repository_blob"
+    }
+  ]
+}

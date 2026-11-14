@@ -1,0 +1,36 @@
+{
+  "source": "sync/2026-10-20-downloads/priority-references.json",
+  "scope": "gamal/german",
+  "files": [
+    {
+      "repository_path": "sources/gamal/german/revision/2026-10/booklet-answers-exercises-01-22.pdf",
+      "bytes": 2487383,
+      "git_blob_sha": "b7a3d772b43f789ba3374a0261078ff956dfe94e",
+      "sha256": "1a1a3e134b9315a96935be5c953ee0e2f5b23d06ca0320cc64cd51209434d16a",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    },
+    {
+      "repository_path": "sources/gamal/german/revision/2026-10/october-model-answers.pdf",
+      "bytes": 558284,
+      "git_blob_sha": "e8d24bd625a52a80e08444db4784e759f2026754",
+      "sha256": "8c017b4ca920661ec82377bf1573d5cbe81a82b3f13a8cebcc721b881bfe5127",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    },
+    {
+      "repository_path": "sources/gamal/german/revision/2026-10/october-worksheet.pdf",
+      "bytes": 553717,
+      "git_blob_sha": "4c3752ee51db96c83d53fa3395a6e97210621e4a",
+      "sha256": "93da2418efbfafaa7d4c96c9106e1f7b20d40977e107571de3695d923d3a61ef",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    }
+  ]
+}

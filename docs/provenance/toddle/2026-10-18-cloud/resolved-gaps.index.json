@@ -1,0 +1,23 @@
+{
+  "source": "sync/2026-10-18-cloud/resolved-gaps.json",
+  "snapshot": "2026-10-18-cloud",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "files": {
+      "records": 23,
+      "placed": {
+        "gamal/arabic/sync/2026-10-18-cloud/resolved-gaps.json": 1,
+        "gamal/english/sync/2026-10-18-cloud/resolved-gaps.json": 9,
+        "murad/arabic/sync/2026-10-18-cloud/resolved-gaps.json": 1,
+        "murad/english/sync/2026-10-18-cloud/resolved-gaps.json": 2,
+        "murad/mathematics/sync/2026-10-18-cloud/resolved-gaps.json": 1,
+        "murad/science/sync/2026-10-18-cloud/resolved-gaps.json": 7,
+        "murad/social-studies/sync/2026-10-18-cloud/resolved-gaps.json": 2
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "resolved_count": 23
+  }
+}

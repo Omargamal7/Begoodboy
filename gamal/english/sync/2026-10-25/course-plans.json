@@ -1,0 +1,90 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "gamal/english",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English AL",
+      "course_id": "425277736345443482",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277736345443482/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 10,
+      "outline": [
+        "Booklets",
+        "Wonders",
+        "Story Graphic Organizers",
+        "Unit 1 Week 1",
+        "Booklets Model Answers",
+        "Weekly Material Covered",
+        "Week 5..0",
+        "Home Dictations",
+        "Home Dictation #1/#2"
+      ],
+      "resources": [
+        {
+          "title": "Booklets",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Gr. 5 Grammar and Sentence Structure Booklet 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Wonders Fiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Wonders Leveled Readers 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 5 Writing Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Wonders",
+          "type": "Folder",
+          "items": 4,
+          "contents": [
+            "Gr. 5 Grammar and Sentence Structure Booklet - Model Answers up to p.12",
+            "Vocabulary for Writing- Prompt 1 Words",
+            "Gr. 5 Wonders Fiction Booklet Model Answer up to p.6",
+            "Gr. 5 Wonders NonFiction Booklet Model Answer up to p.7"
+          ]
+        },
+        {
+          "title": "Weekly Material Covered",
+          "type": "Folder",
+          "items": 8
+        },
+        {
+          "title": "Weekly Outline Term 1 Weeks 0,3,4,5",
+          "type": "PDF",
+          "note": "one PDF per weekly folder"
+        },
+        {
+          "title": "Home Dictations",
+          "type": "Folder",
+          "items": 7,
+          "note": "Home Dictation #1 & #2 folders: PDFs + regular/slow-speed Audio"
+        }
+      ]
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English OL",
+      "course_id": "425277737305939099",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277737305939099/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18; not re-opened on 2026-10-25."
+    }
+  ]
+}

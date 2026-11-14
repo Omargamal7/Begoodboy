@@ -1,0 +1,47 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "gamal/social-studies",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Social Studies",
+      "course_id": "425277748773166243",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277748773166243/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 6,
+      "outline": [
+        "إجابات كتاب التقيمات (الدرس 1،2،3)",
+        "اجابة كتاب الوزارة اول 3 دروس من الوحدة الاولي"
+      ],
+      "resources": [
+        {
+          "title": "إجابات كتاب التقيمات ( الدرس الأول والثاني والثالث )",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "اجابة التقيمات",
+          "type": "PDF"
+        },
+        {
+          "title": "اجابة كتاب الوزارة اول 3 دروس من الوحدة الاولي",
+          "type": "Folder",
+          "items": 3
+        },
+        {
+          "title": "اجابة اسئلة الدرس الأول ( الموقع الفلكي لمصر )",
+          "type": "PDF"
+        },
+        {
+          "title": "إجابات اسئلة الدرس الثاني من كتاب الوزارة ( تضاريس )",
+          "type": "PDF"
+        },
+        {
+          "title": "اجابة درس مناخ مصر",
+          "type": "PDF"
+        }
+      ]
+    }
+  ]
+}

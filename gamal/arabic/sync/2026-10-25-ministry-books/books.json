@@ -1,0 +1,48 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "gamal/arabic",
+  "new_books": [
+    {
+      "path": "sources/shared/arabic/grade5/ministry-2026-2027-term1/Arabic_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "arabic",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Arabic_prim5_t1_Assmt.pdf",
+      "bytes": 11935218,
+      "sha256": "d10c9788fcd75140368487a655939d2fb2a8cc868a197808edd88dd4301c2380",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/arabic/grade5/ministry-2026-2027-term1/Arabic_langugae_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "arabic",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Arabic_langugae_prim5_t1.pdf",
+      "bytes": 37348660,
+      "sha256": "9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8",
+      "pdf_pages": 154,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 154,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ]
+}

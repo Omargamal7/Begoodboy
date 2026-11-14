@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "murad/computer",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Computer",
+      "course_id": "425277952440180026",
+      "status": "resources_observed",
+      "resource_count": 7
+    }
+  ]
+}

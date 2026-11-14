@@ -10,7 +10,7 @@ The repository now has six purpose-based folders. The root keeps `README.md`, `i
 | `sources/` | `<child>/<subject>/` contains original school files. Use `booklets/`, `handouts/`, `worksheets/`, `revision/YYYY-MM/`, `evaluations/`, `weekly/`, `atlases/` and `assessments/` where applicable. Keep the file’s supplied name except where a documented canonical evaluation name removes a duplicate download suffix. `shared/` holds school-wide material. |
 | `packs/` | `<child>/<subject>/` contains the four checked-in, ready-to-open, self-contained HTML exports. |
 | `docs/` | `students/` holds child guides and teacher notes; `provenance/` holds source maps and answer limitations; `authoring.md` describes how to add lessons. |
-| `sync/` | Each date contains summaries, a revision guide, checksums and one canonical `sources.json`. Source bytes live only in `sources/`; metadata points to them. |
+| `<child>/<subject>/sync/` | Toddle records split by child and subject, beside `packs/` and `sources/`. Cross-child notes and `.index.json` files live in `docs/provenance/toddle/`. Source bytes stay in `<child>/<subject>/sources/`. |
 | `tools/` | `build/` creates lesson registrations and offline packs; `check/` validates browser flows; `source/` holds extraction tools and the Science authoring inputs. |
 
 ## Naming
@@ -21,7 +21,7 @@ Use `gamal` for repository paths; Jimmy remains his display name and an accepted
 
 The main `index.html` stays at the same URL and continues to host the lesson app. Lesson IDs, progress-storage keys, question wording, answers, unscored reasons and the original school bytes remain unchanged. Source links and runtime asset paths are migrated. Release assets remain in their existing GitHub release.
 
-The two overlapping sync manifests are consolidated into `sync/2026-10-17/sources.json`; known URLs, hashes, original download names, page counts and checkpoint metadata are retained. The unused single-lesson redirect and generated Science build summary are removed from tracking. Their history remains available in Git.
+The two overlapping sync manifests are consolidated into `docs/provenance/toddle/2026-10-17/sources.index.json` and into per-subject `sources.json` files under `<child>/<subject>/sync/2026-10-17/`; known URLs, hashes, original download names, page counts and checkpoint metadata are retained. The unused single-lesson redirect and generated Science build summary are removed from tracking. Their history remains available in Git.
 
 ## Build outputs and future work
 

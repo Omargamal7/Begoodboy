@@ -1,0 +1,24 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "murad/schedules",
+  "files": [
+    {
+      "path": "sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
+      "bytes": 157773,
+      "git_blob_sha": "bf015fb180a957977163797f30782a4695691433",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "bytes": 141364,
+      "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    }
+  ]
+}

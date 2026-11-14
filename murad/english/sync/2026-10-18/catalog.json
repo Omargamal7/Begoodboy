@@ -1,0 +1,347 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "murad/english",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English AL",
+      "course_id": "425277953404869947",
+      "status": "resources_observed",
+      "resource_count": 28
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English OL",
+      "course_id": "425277954369559868",
+      "status": "resources_observed",
+      "resource_count": 3
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Assessment Book Term 1.pdf",
+      "bytes": 7171950,
+      "git_blob_sha": "7d2094fcf1c6afdb42c8445cc33309acdfcb1a47",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf",
+      "bytes": 1493301,
+      "git_blob_sha": "b75b2840742c7d60dfef922a20846c0f57852cc7",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Wonders Fiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 1521491,
+      "git_blob_sha": "990bf34923c33e434de805d0be685bfadef47865",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Wonders Leveled Readers 2026-2027.pdf",
+      "bytes": 5756146,
+      "git_blob_sha": "b62d491f5b40284f458d70fd65d39f565e1b6b66",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 2033625,
+      "git_blob_sha": "a7e270bd867dae18435a3b482d5ebdd9b3966e44",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/booklets/Gr. 6 Writing Booklet First Term 2026-2027.pdf",
+      "bytes": 2193303,
+      "git_blob_sha": "2b089df57ad13a96b12f7ad9b66ccd67202a22c4",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1- Regular Speed.m4a",
+      "bytes": 253757,
+      "git_blob_sha": "1a067aa7daa970b270e7ea3eb99d0c4ba9c45e3d",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1- Slow Speed.m4a",
+      "bytes": 3337583,
+      "git_blob_sha": "7d9d3ee213fb236dc8f944598b56708cafab8c95",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-1/Gr. 6 Home Dictation 1.pdf",
+      "bytes": 107520,
+      "git_blob_sha": "492994fd371c30c09aacfa25ea21b65b14db2661",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Normal Speed.m4a",
+      "bytes": 302977,
+      "git_blob_sha": "c4cf2e2738a281e72f4df1feeade8b343c74397b",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2- Slow Speed.m4a",
+      "bytes": 4622327,
+      "git_blob_sha": "a0c6888ba579dad0645f71c7edcb569d19836aa4",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/dictations/dictation-2/Gr. 6 Home Dictation 2.pdf",
+      "bytes": 110590,
+      "git_blob_sha": "fcb6cb71fb7898db8481b5b299fcba459ee66166",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Compound Sentences--Model Answers.pdf",
+      "bytes": 129687,
+      "git_blob_sha": "63f59eac51bc4809e63e16ca2deb2c874a150751",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Compound Sentences.pdf",
+      "bytes": 128508,
+      "git_blob_sha": "f0e2f1060584d6190032fef666377f434ac84986",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf",
+      "bytes": 134020,
+      "git_blob_sha": "00e0c4d5d9cecca1ab1defe1795f84c8a27f708a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences.pdf",
+      "bytes": 130817,
+      "git_blob_sha": "1a42cde742ed40641ce4e40d08f774efe8249200",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/lesson-distribution/Lesson Distribution - - 6G.pdf",
+      "bytes": 70242,
+      "git_blob_sha": "9250f3fe11cceb7f73d41c830db99cb752cf2f06",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/model-answers/Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term- up to p. 12.pdf",
+      "bytes": 862707,
+      "git_blob_sha": "a019cf4d97981041bcb8ca9a95697a66f975b6b1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/model-answers/Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 8.pdf",
+      "bytes": 648653,
+      "git_blob_sha": "c57fb992019f60f363116a8274a9d0709b275dda",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 6.pdf",
+      "bytes": 490062,
+      "git_blob_sha": "456e5ef63936ac001685ccb8a9a21569c838099a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/weekly/week-0/Deserts and People.pdf",
+      "bytes": 232757,
+      "git_blob_sha": "d08655f4144822147955ccd552518b87f0e8102d",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/murad/english/weekly/week-0/Gr. 6 Weekly Outline Term 1 Week 0.pdf",
+      "bytes": 95962,
+      "git_blob_sha": "af6b8ef33fa0938451e909370c06f118ba13a420",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/murad/english/weekly/week-1/Gr. 6 Weekly Outline Term 1 Week 1.pdf",
+      "bytes": 103202,
+      "git_blob_sha": "7827357540f98e79a1a5795193d9f25a4b918387",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/english/weekly/week-2/Cow Music.pdf",
+      "bytes": 251416,
+      "git_blob_sha": "c16b1dad54dca27583e629c73f2dd02e1c7ed6e2",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/english/weekly/week-2/Gr. 6 Weekly Outline Term 1 Week 2.pdf",
+      "bytes": 98608,
+      "git_blob_sha": "6be3e9153771bc391d71ac5f8c65d66410e9ec8e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/english/weekly/week-3/Gr. 6 Weekly Outline Term 1 Week 3.pdf",
+      "bytes": 98251,
+      "git_blob_sha": "15d911fbd65a93734660cabfe160011795c9ff04",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/murad/english/weekly/week-4/Gr. 6 Weekly Outline Term 1 Week 4.pdf",
+      "bytes": 100312,
+      "git_blob_sha": "315995b04ae70cb92cea7b63d1e3e1d171eab92f",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 4
+    },
+    {
+      "path": "sources/murad/english/wonders/unit-1-week-1/Crossing the Creek.mp4",
+      "bytes": 2649182,
+      "git_blob_sha": "c8d72e514ce9a823d480a4e6d3274c7ed85239a1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/english/wonders/unit-1-week-1/U1 W1 How do new experiences offer new perspectives.pdf",
+      "bytes": 3929751,
+      "git_blob_sha": "3780a12c4dc3df6caf23d9e6a95523391e583db2",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "bytes": 6291456,
+      "sha256": "1250dfe3c3ea8ac5fb2a343f030198a7de087d81b2d9cdb4b709da426b9678f4",
+      "git_blob_sha": "54a4170d770fc3ef92774632656d05e8e63b1b49",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/English_OL/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8ad194f45ac580a44d957a0e48ccc5104980794b79e9858fcc9df484ebea85a3",
+          "git_blob_sha": "232671b1d56682dc18fb1de0d3e75e87ffe3da96"
+        },
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0002.bin",
+          "bytes": 3915416,
+          "sha256": "7d1a1471aa8b88a8e3025c21b4a887a8e581a59da6ef7fc23141bf99d499938b",
+          "git_blob_sha": "5158373f2baae68596f1a44972bf0185c355c8f8"
+        }
+      ],
+      "archive_path": "murad/courses/English_OL/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41470bb746d3c31566936f2a1cb7d9b1d22cfca492efc9aaf0296923bb2aee46",
+          "git_blob_sha": "359c54ffe2ce881ba5983cf75fd03a973ff0d69f"
+        },
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0002.bin",
+          "bytes": 7568095,
+          "sha256": "3a3c24f3e4d4891031295b04c2970ca008170898946f7ce508ed5f5c02e34861",
+          "git_blob_sha": "1cc24b5146a4b99d3040cc421a55d433682b20a6"
+        }
+      ],
+      "archive_path": "murad/courses/English_OL/Gr_6_O_Level_Book_Term_1.pdf",
+      "child": "murad",
+      "subject": "english",
+      "week_in_archive_path": null
+    }
+  ]
+}

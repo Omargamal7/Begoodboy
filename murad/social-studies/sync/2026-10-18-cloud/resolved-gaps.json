@@ -1,0 +1,24 @@
+{
+  "source": "sync/2026-10-18-cloud/resolved-gaps.json",
+  "scope": "murad/social-studies",
+  "files": [
+    {
+      "course": "Murad/Social Studies",
+      "toddle_title": "وطننا العربي المناخ و النبات الطبيعي",
+      "repository_path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
+      "git_blob_sha": "6065d1abb51496cfb02490e106a37bc92a58d3ed",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Murad/Social Studies",
+      "toddle_title": "درس التحديات البيئية",
+      "repository_path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
+      "git_blob_sha": "8e45e1970a2212498296329d65c38f0e6e680ece",
+      "storage": "archived_verified_repository_parts"
+    }
+  ]
+}

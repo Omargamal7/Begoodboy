@@ -1,0 +1,36 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "murad/arabic",
+  "new_books": [
+    {
+      "path": "sources/shared/arabic/grade6/ministry-2026-2027-term1/Arabic_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "arabic",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Arabic_prim6_t1_Assmt.pdf",
+      "bytes": 14491062,
+      "sha256": "166baa74a79cf2a7d5bdc4571515bc3d40e33b566836e2f992da3a632ed9ff58",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ],
+  "reused_books": [
+    {
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf",
+      "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
+      "pdf_pages": 154,
+      "official_source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Arabic_Primary6_T1.pdf",
+      "verification": "Exact hash match with current official Ministry original; no duplicate archived"
+    }
+  ]
+}

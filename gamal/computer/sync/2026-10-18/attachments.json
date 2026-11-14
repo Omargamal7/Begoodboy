@@ -1,0 +1,16 @@
+{
+  "source": "sync/2026-10-18/attachments.json",
+  "scope": "gamal/computer",
+  "reconciled_existing_files": [
+    {
+      "child": "Gamal",
+      "subject": "Computer",
+      "toddle_title": "1st term binder grade 5new 2025-2026 - for merge",
+      "repository_path": "sources/gamal/ict/booklets/1st term binder grade 5new 2025-2026 - for merge.docx",
+      "bytes": 8018399,
+      "sha256": "aff0155fec575e0e66d0a138574caaa02f6437a4d91c6da4bd6cf055ff5f7f96",
+      "git_blob_sha": "b89a0685f09da48b52ed7b39f02f508caaff5d30",
+      "receipt": "verified_phone_bytes_already_in_repository"
+    }
+  ]
+}

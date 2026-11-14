@@ -1,0 +1,64 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "snapshot": "2026-10-18",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "courses": {
+      "records": 25,
+      "placed": {
+        "gamal/arabic/sync/2026-10-18/course-plans.json": 1,
+        "gamal/computer/sync/2026-10-18/course-plans.json": 1,
+        "gamal/english/sync/2026-10-18/course-plans.json": 2,
+        "gamal/general/sync/2026-10-18/course-plans.json": 4,
+        "gamal/german/sync/2026-10-18/course-plans.json": 1,
+        "gamal/mathematics/sync/2026-10-18/course-plans.json": 1,
+        "gamal/religion/sync/2026-10-18/course-plans.json": 1,
+        "gamal/science/sync/2026-10-18/course-plans.json": 1,
+        "gamal/social-studies/sync/2026-10-18/course-plans.json": 1,
+        "murad/arabic/sync/2026-10-18/course-plans.json": 1,
+        "murad/computer/sync/2026-10-18/course-plans.json": 1,
+        "murad/english/sync/2026-10-18/course-plans.json": 2,
+        "murad/general/sync/2026-10-18/course-plans.json": 4,
+        "murad/mathematics/sync/2026-10-18/course-plans.json": 1,
+        "murad/religion/sync/2026-10-18/course-plans.json": 1,
+        "murad/science/sync/2026-10-18/course-plans.json": 1,
+        "murad/social-studies/sync/2026-10-18/course-plans.json": 1
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "observed_at_utc": "2026-10-18T06:43:05Z",
+    "platform_id": "289164276797572330",
+    "counts": {
+      "children": 2,
+      "courses": 25,
+      "resources_observed": 12,
+      "blank_or_preparing": 13
+    },
+    "murad_science_resources": [
+      "Monthly_Exam_1_Model_Answers_",
+      "4th week assessment model answers",
+      "Assessment book homework p. 19 model answers",
+      "Assessment book homework page 14 & 15",
+      "model answers of the 3rd weekly assessment",
+      "Assessment book homework page 9 model answers",
+      "2nd week assessment model answers",
+      "chapter 3 homework model answers",
+      "chapter 2 Homework Model Answers",
+      "chapter 1 Homework Model Answers",
+      "Assessment book model answers P. 4&5",
+      "primary 6 first term binder",
+      "investigating the effect of saliva on starch"
+    ],
+    "murad_social_studies_resources": [
+      "الدرس الأول : وطننا العربي - الموقع و الاهمية",
+      "التقييم الاول الوطن العربي الموقع و الاهمية",
+      "اطلس الخرائط االدرس الاول",
+      "الدرس الثاني / تضاريس وطننا العربي",
+      "اطلس الخرائط الدرس الثاني",
+      "وطننا العربي المناخ و النبات الطبيعي",
+      "درس التحديات البيئية"
+    ]
+  }
+}

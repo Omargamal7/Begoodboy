@@ -1,0 +1,29 @@
+{
+  "source": "sync/2026-10-20-reconciliation/pending-originals.csv",
+  "snapshot": "2026-10-20-reconciliation",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "columns": [
+    "child",
+    "subject",
+    "path",
+    "storage",
+    "status",
+    "expected_bytes"
+  ],
+  "rows": 53,
+  "placed": {
+    "docs/provenance/toddle/2026-10-20-reconciliation/pending-originals.unassigned.csv": 3,
+    "gamal/arabic/sync/2026-10-20-reconciliation/pending-originals.csv": 2,
+    "gamal/computer/sync/2026-10-20-reconciliation/pending-originals.csv": 1,
+    "gamal/english/sync/2026-10-20-reconciliation/pending-originals.csv": 11,
+    "gamal/social-studies/sync/2026-10-20-reconciliation/pending-originals.csv": 1,
+    "murad/arabic/sync/2026-10-20-reconciliation/pending-originals.csv": 2,
+    "murad/computer/sync/2026-10-20-reconciliation/pending-originals.csv": 2,
+    "murad/english/sync/2026-10-20-reconciliation/pending-originals.csv": 12,
+    "murad/general/sync/2026-10-20-reconciliation/pending-originals.csv": 5,
+    "murad/mathematics/sync/2026-10-20-reconciliation/pending-originals.csv": 5,
+    "murad/religion/sync/2026-10-20-reconciliation/pending-originals.csv": 1,
+    "murad/science/sync/2026-10-20-reconciliation/pending-originals.csv": 3,
+    "murad/social-studies/sync/2026-10-20-reconciliation/pending-originals.csv": 5
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "murad/mathematics",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Mathematics",
+      "course_id": "425277957011971390",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277957011971390/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 8,
+      "outline": [
+        "Weekly Covered Material",
+        "Hw",
+        "Extra Sheets",
+        "Classes 6C,6F,6G",
+        "1st Day at School",
+        "Week 2",
+        "Week 4",
+        "Weekly Material Covered",
+        "Weekly Assessments' Study Guide",
+        "HW. Binder Model Answers",
+        "Binders"
+      ],
+      "resources": [
+        {
+          "title": "Extra Sheets",
+          "type": "Folder",
+          "items": 5,
+          "contents": [
+            "Revision Sheet (2) - Week (1)",
+            "Revision Sheet (1) - Week (1)",
+            "Worksheet (1) - Week (2)",
+            "October Revision Sheet",
+            "Modified Model Answer of October Revision Sheet"
+          ]
+        },
+        {
+          "title": "Classes 6C, 6F and 6G",
+          "type": "Folder",
+          "items": 18
+        },
+        {
+          "title": "1st Day at School",
+          "type": "Folder",
+          "items": 3
+        },
+        {
+          "title": "Week (2) 20–24/9/2026",
+          "type": "Folder",
+          "items": 4
+        },
+        {
+          "title": "Week (4) 4–7/10/2026",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "Weekly Material Covered",
+          "type": "Folder",
+          "items": 6,
+          "note": "Weeks 1–6 detailed teaching notes; uses 'Mathematics Ministry Performance and Assessments' book"
+        },
+        {
+          "title": "Weekly Assessments' Study Guide",
+          "type": "Folder",
+          "items": 3
+        },
+        {
+          "title": "Hw",
+          "type": "Folder",
+          "items": 2
+        }
+      ],
+      "note": "Topics: divisibility, prime factorization, GCF/LCM, Unit 2 rational numbers/integers/absolute value. October Monthly Exam 19/10."
+    }
+  ]
+}

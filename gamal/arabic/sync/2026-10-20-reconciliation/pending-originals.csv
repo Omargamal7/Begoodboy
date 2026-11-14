@@ -1,0 +1,3 @@
+child,subject,path,storage,status,expected_bytes
+gamal,arabic,sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf,repository_blob,pending_transfer,7113244
+gamal,arabic,sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf,repository_parts,pending_parts,11747364

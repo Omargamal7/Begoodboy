@@ -1,0 +1,74 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "murad/english",
+  "files": [
+    {
+      "archive_path": "murad/announcements/Grammar_Revision_Model_Answers.pdf",
+      "bytes": 134020,
+      "sha256": "8e1627535e01eb6e38bdd6664c4c8fc6cd7fb30e604d40a19c7ff239fcea20bd",
+      "git_blob_sha": "00e0c4d5d9cecca1ab1defe1795f84c8a27f708a",
+      "repository_path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/announcements/Lesson_Distribution_6G.pdf",
+      "bytes": 70242,
+      "sha256": "d6ae580d9ff90d44e1036073f2403a35f6c17cd93c5605718c5821790bdb6916",
+      "git_blob_sha": "9250f3fe11cceb7f73d41c830db99cb752cf2f06",
+      "repository_path": "sources/murad/english/lesson-distribution/Lesson Distribution - - 6G.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/English_OL/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "bytes": 6291456,
+      "sha256": "1250dfe3c3ea8ac5fb2a343f030198a7de087d81b2d9cdb4b709da426b9678f4",
+      "git_blob_sha": "54a4170d770fc3ef92774632656d05e8e63b1b49",
+      "repository_path": "sources/murad/english/ordinary-level/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q",
+      "status": "archived_verified_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/English_OL/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
+      "repository_path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0001.bin",
+          "bytes": 8388608,
+          "sha256": "8ad194f45ac580a44d957a0e48ccc5104980794b79e9858fcc9df484ebea85a3",
+          "git_blob_sha": "232671b1d56682dc18fb1de0d3e75e87ffe3da96"
+        },
+        {
+          "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0002.bin",
+          "bytes": 3915416,
+          "sha256": "7d1a1471aa8b88a8e3025c21b4a887a8e581a59da6ef7fc23141bf99d499938b",
+          "git_blob_sha": "5158373f2baae68596f1a44972bf0185c355c8f8"
+        }
+      ]
+    },
+    {
+      "archive_path": "murad/courses/English_OL/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
+      "repository_path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41470bb746d3c31566936f2a1cb7d9b1d22cfca492efc9aaf0296923bb2aee46",
+          "git_blob_sha": "359c54ffe2ce881ba5983cf75fd03a973ff0d69f"
+        },
+        {
+          "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0002.bin",
+          "bytes": 7568095,
+          "sha256": "3a3c24f3e4d4891031295b04c2970ca008170898946f7ce508ed5f5c02e34861",
+          "git_blob_sha": "1cc24b5146a4b99d3040cc421a55d433682b20a6"
+        }
+      ]
+    }
+  ]
+}

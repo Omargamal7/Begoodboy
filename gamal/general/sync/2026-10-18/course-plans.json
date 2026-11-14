@@ -1,0 +1,38 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "gamal/general",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Art",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Music",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "P.E.",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Professional Skills",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ]
+}

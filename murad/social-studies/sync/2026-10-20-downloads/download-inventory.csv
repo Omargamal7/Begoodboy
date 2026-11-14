@@ -1,0 +1,4 @@
+download_filename,bytes,sha256,git_blob_sha,repository_path,status
+التقييم الاول الوطن العربي الموقع و الاهمية.pdf,263114,d884debe6883faf86cbd60759a8348469497c022988f56998889714efd71ae99,ea49c5ad55b90dab47b95a872175891da06ec4d0,sources/murad/social-studies/weekly/week-02/التقييم الاول الوطن العربي الموقع و الاهمية.pdf,exact_git_blob_match
+اطلس الخرائط االدرس الاول.pdf,2799539,18e63993f181290e32bb579d487db61ea41cc5b60f2ee596f9319fafe9e1335b,4ba03e1475cb922a3a4ddb725f013c41472be5f8,sources/murad/social-studies/atlases/اطلس الخرائط االدرس الاول.pdf,exact_git_blob_match
+اطلس الخرائط الدرس الثاني.pdf,2199996,a717c987d7ec6e3a7111e8d4a93631459451f85cb7293ccc780b6ceffac509ed,0b81be2df496a76d44b645478174b2f8c5b6e8ce,sources/murad/social-studies/atlases/اطلس الخرائط الدرس الثاني.pdf,exact_git_blob_match

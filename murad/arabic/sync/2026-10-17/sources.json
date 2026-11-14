@@ -1,0 +1,80 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "murad/arabic",
+  "files": [
+    {
+      "child": "murad",
+      "subject": "arabic",
+      "bytes": 6713431,
+      "sha256": "d667ff4f8da26252abcc8d79634cd1e3ed2a654e716e0415622aaf43c3e73140",
+      "git_blob_sha": "8086fe9d0b6a5e10346f017ecd0454556f264868",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "download_names": [
+        "معدلة ملزمة الصف السادس ترم اول.pdf"
+      ]
+    },
+    {
+      "child": "murad",
+      "subject": "arabic",
+      "bytes": 766203,
+      "sha256": "821a98e24215d78f3f6d8d15f5a2514e3542b467cf9e006672dbd6a165161bd9",
+      "git_blob_sha": "64c53e7854b07755ba51ff2710bf77abf7d5f725",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+      "pdf_pages": 14,
+      "original_filename": "مراجعة الوحدة الأولى الصف السادس تيرم أول.pdf",
+      "download_names": [
+        "مراجعة الوحدة الأولى الصف السادس تيرم أول.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Murad",
+        "grade": 6,
+        "archive_path": "Murad/Arabic_Unit1_Revision_Grade6.pdf",
+        "original_filename": "مراجعة الوحدة الأولى الصف السادس تيرم أول.pdf",
+        "title": "Arabic Unit 1 - seven exercise / model pairs",
+        "tag": "Start tonight",
+        "description": "14 pages · writing task included",
+        "pdf_pages": 14,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "murad",
+      "subject": "arabic",
+      "bytes": 1515823,
+      "sha256": "e64627070ea07c6d4fc1f5ba175aac4b671feb4ed3c0c1d6fc5dc230f43a6c6c",
+      "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+      "pdf_pages": 6,
+      "original_filename": "وحدة اولى مراجعة دين الصف السادس (2).pdf",
+      "download_names": [
+        "وحدة اولى مراجعة دين الصف السادس (2).pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Murad",
+        "grade": 6,
+        "archive_path": "Murad/Religion_Unit1_Revision_Grade6.pdf",
+        "original_filename": "وحدة اولى مراجعة دين الصف السادس (2).pdf",
+        "title": "Religion Unit 1 - questions and complete key",
+        "tag": "Start tonight",
+        "description": "6 pages · 82 keyed items",
+        "pdf_pages": 6,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    }
+  ]
+}

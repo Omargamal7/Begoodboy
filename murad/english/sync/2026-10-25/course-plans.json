@@ -1,0 +1,100 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "murad/english",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English AL",
+      "course_id": "425277953404869947",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277953404869947/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 11,
+      "outline": [
+        "Booklets",
+        "Wonders",
+        "Unit 1 Week 1",
+        "Grammar",
+        "Booklets Model Answers",
+        "Weekly Covered Material",
+        "Week 5..0",
+        "Home Dictations",
+        "Weekly Lesson Distribution"
+      ],
+      "resources": [
+        {
+          "title": "Booklets",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Gr. 6 Grammar and Sentence Structure 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Wonders Fiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Wonders Leveled Readers 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Writing Booklet First Term 2026-2027",
+          "type": "PDF"
+        },
+        {
+          "title": "Wonders",
+          "type": "Folder",
+          "items": 2
+        },
+        {
+          "title": "Unit 1 Week 1",
+          "type": "Folder",
+          "items": 2
+        },
+        {
+          "title": "Crossing the Creek",
+          "type": "Video"
+        },
+        {
+          "title": "U1 W1 How do new experiences offer new perspectives",
+          "type": "PDF"
+        },
+        {
+          "title": "Grammar",
+          "type": "Folder",
+          "items": 4
+        }
+      ],
+      "note": "Additional folders (Booklets Model Answers, weekly material, dictations) present per outline; not fully expanded."
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "English OL",
+      "course_id": "425277954369559868",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277954369559868/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 3,
+      "resources": [
+        {
+          "title": "Gr. 6 Assessment Book Term 1",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 O Level Book Term 1",
+          "type": "PDF"
+        },
+        {
+          "title": "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3",
+          "type": "PDF"
+        }
+      ]
+    }
+  ]
+}

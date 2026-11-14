@@ -1,0 +1,47 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "gamal/arabic",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Arabic",
+      "course_id": "425277732675427479",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 6,
+      "outline": [
+        "مصادر اللغة العربية",
+        "مراجعات العربي والدين لشهر أكتوبر"
+      ],
+      "resources": [
+        {
+          "title": "مصادر اللغة العربية",
+          "type": "Folder",
+          "items": 2
+        },
+        {
+          "title": "ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027",
+          "type": "PDF"
+        },
+        {
+          "title": "حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027",
+          "type": "PDF"
+        },
+        {
+          "title": "ماتم تدريسه 27/9–1/10: المفعول به / الرسالة الرسمية",
+          "type": "Note"
+        },
+        {
+          "title": "ما تم تدريسه 6–9/10: حكاية عطاء / بطل حل المشكلات",
+          "type": "Note"
+        },
+        {
+          "title": "مراجعات العربي والدين لشهر أكتوبر",
+          "type": "Folder",
+          "items": 6
+        }
+      ]
+    }
+  ]
+}

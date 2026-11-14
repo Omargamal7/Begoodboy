@@ -1,0 +1,95 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "murad/general",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Art",
+      "course_id": "425277951467101497",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Music",
+      "course_id": "425277958421257535",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "P.E.",
+      "course_id": "425277959901846848",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Professional Skills",
+      "course_id": "425277961332104513",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ],
+  "files": [
+    {
+      "path": "murad-arabic-Arabic_Primary6_T1.pdf",
+      "bytes": 46419486,
+      "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-arabic-ministry-assessments-term1-2027.pdf",
+      "bytes": 12463048,
+      "sha256": "f5be76dd415f691b223062c4d5452b0f949ee75c451180cd734210b2e542cdcb",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-ministry-assessments-term1-2027.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-religion-Islamic_Education_Primary6_T1.pdf",
+      "bytes": 14124807,
+      "sha256": "093d44068a9c1a5a1d283ec9b80cc7357bf69ec2648dd89330b6bbe5b881d2f9",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-religion-Islamic_Education_Primary6_T1.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-science-primary-6-first-term-binder.pdf",
+      "bytes": 35412343,
+      "sha256": "25336920caa1d2c7e9fd2c65265dd2fd54f789909d39593bd550b5d878f4f999",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-science-primary-6-first-term-binder.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "murad-social-studies-week3-lesson2-arab-world-terrain.pdf",
+      "bytes": 20161909,
+      "sha256": "60434d9eca7639cea28e3e786f283e821d232eb3382ebc310be2ac72fe9b095d",
+      "storage": "github_release",
+      "release_tag": "school-term1-2026",
+      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-social-studies-week3-lesson2-arab-world-terrain.pdf",
+      "child": "murad",
+      "subject": "school",
+      "week_in_archive_path": null
+    }
+  ]
+}

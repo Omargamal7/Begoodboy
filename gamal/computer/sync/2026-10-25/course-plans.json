@@ -1,0 +1,61 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "gamal/computer",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Computer",
+      "course_id": "425277735292673177",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277735292673177/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 9,
+      "outline": [
+        "Binder prim 5",
+        "H.W",
+        "October Revision prim 5"
+      ],
+      "resources": [
+        {
+          "title": "Binder prim 5",
+          "type": "Folder",
+          "items": 6
+        },
+        {
+          "title": "1st term binder grade 5new 2025-2026 - for merge",
+          "type": "Word Document"
+        },
+        {
+          "title": "H.W",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Please answer the questions on page 5 and 8",
+          "type": "Note"
+        },
+        {
+          "title": "October Revision prim 5",
+          "type": "Folder",
+          "items": 4
+        },
+        {
+          "title": "revsion prim5 october",
+          "type": "Word Document"
+        },
+        {
+          "title": "week 1",
+          "type": "Word Document"
+        },
+        {
+          "title": "week2",
+          "type": "Word Document"
+        },
+        {
+          "title": "week3",
+          "type": "Word Document"
+        }
+      ]
+    }
+  ]
+}

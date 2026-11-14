@@ -1,0 +1,67 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "murad/schedules",
+  "files": [
+    {
+      "child": "murad",
+      "subject": "schedules",
+      "bytes": 141364,
+      "sha256": "3d4bf563d060469b89a99acbac3a1911e994e96d874902d308a1196f0dfd96f3",
+      "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/432553667749520243",
+      "pdf_pages": 1,
+      "original_filename": "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6",
+      "download_names": [
+        "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6 (1).pdf",
+        "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Murad",
+        "grade": 6,
+        "archive_path": "Murad/Weekly_Assessments_Primary6_Term1_2026.pdf",
+        "original_filename": "Weekly Assessment Exam Schedule 1st term 2026-2027 Pr 6",
+        "title": "Class 6G regular assessment timetable",
+        "tag": "Schedule",
+        "description": "1 page",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/432553667749520243",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "murad",
+      "subject": "schedules",
+      "bytes": 157773,
+      "sha256": "f64f696d692c0e7a8e5c894eb2023f204d7836c9091856e2847fe58e2fd5a598",
+      "git_blob_sha": "bf015fb180a957977163797f30782a4695691433",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870350743672537",
+      "pdf_pages": 1,
+      "original_filename": "Primary 6 Monthly Tests October 2026.pdf",
+      "download_names": [
+        "Primary 6 Monthly Tests October 2026.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Murad",
+        "grade": 6,
+        "archive_path": "Murad/Primary6_Monthly_Tests_October_2026.pdf",
+        "original_filename": "Primary 6 Monthly Tests October 2026.pdf",
+        "title": "October monthly test dates",
+        "tag": "Schedule",
+        "description": "1 page",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870350743672537",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    }
+  ]
+}

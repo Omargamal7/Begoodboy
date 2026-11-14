@@ -1,0 +1,46 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "scope": "gamal/german",
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الألمانية-لغة أجنبية ثانية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/German_Prim5_TR1_W5.pdf"
+    }
+  ]
+}

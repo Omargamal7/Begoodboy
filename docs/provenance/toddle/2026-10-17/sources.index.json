@@ -1,0 +1,47 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "snapshot": "2026-10-17",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "files": {
+      "records": 67,
+      "placed": {
+        "docs/provenance/toddle/2026-10-17/sources.unassigned.json": 1,
+        "gamal/arabic/sync/2026-10-17/sources.json": 7,
+        "gamal/computer/sync/2026-10-17/sources.json": 4,
+        "gamal/schedules/sync/2026-10-17/sources.json": 2,
+        "gamal/social-studies/sync/2026-10-17/sources.json": 1,
+        "murad/arabic/sync/2026-10-17/sources.json": 3,
+        "murad/computer/sync/2026-10-17/sources.json": 7,
+        "murad/english/sync/2026-10-17/sources.json": 29,
+        "murad/mathematics/sync/2026-10-17/sources.json": 3,
+        "murad/religion/sync/2026-10-17/sources.json": 1,
+        "murad/schedules/sync/2026-10-17/sources.json": 2,
+        "murad/science/sync/2026-10-17/sources.json": 4,
+        "murad/social-studies/sync/2026-10-17/sources.json": 3
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "date": "2026-10-17",
+    "timezone": "Africa/Cairo",
+    "sync_complete": false,
+    "download_receipts_verified": true,
+    "full_analysis_complete": false,
+    "counts": {
+      "download_names": 71,
+      "unique_contents": 67,
+      "duplicate_names": 4
+    },
+    "revision_checkpoint": {
+      "checkpoint_date": "2026-10-17",
+      "timezone": "Africa/Cairo",
+      "status": "Revision checkpoint; full subject sync ongoing",
+      "original_pdf_count": 12,
+      "total_pdf_pages": 57,
+      "all_originals_integrity_verified": true,
+      "created_at_utc": "2026-10-17T16:40:16.950348+00:00"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "sync/2026-10-18-cloud/resolved-gaps.json",
+  "scope": "murad/english",
+  "files": [
+    {
+      "course": "Murad/English OL",
+      "toddle_title": "Gr. 6 O Level Book Term 1",
+      "repository_path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
+      "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
+      "storage": "archived_verified_repository_parts"
+    },
+    {
+      "course": "Murad/English OL",
+      "toddle_title": "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3",
+      "repository_path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
+      "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
+      "storage": "archived_verified_repository_parts"
+    }
+  ]
+}

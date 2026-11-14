@@ -1,0 +1,15 @@
+{
+  "source": "sync/2026-10-18-cloud/resolved-gaps.json",
+  "scope": "gamal/arabic",
+  "files": [
+    {
+      "course": "Gamal/Arabic",
+      "toddle_title": "حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027",
+      "repository_path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "git_blob_sha": "054c38b97d556da74dadcd1641e6c9c5998a018c",
+      "storage": "archived_verified_repository_parts"
+    }
+  ]
+}

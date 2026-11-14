@@ -1,0 +1,303 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "gamal/english",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English AL",
+      "course_id": "425277736345443482",
+      "status": "resources_observed",
+      "resource_count": 28
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "English OL",
+      "course_id": "425277737305939099",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Grammar and Sentence Structure Booklet 2026-2027.pdf",
+      "bytes": 5499133,
+      "git_blob_sha": "1ce9864196cdf9b8284998915c9b89918a4e9fbd",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 5508901,
+      "git_blob_sha": "6920007daffa68d99d5cba9f2463451aae5d7d09",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Wonders Leveled Readers 2026-2027.pdf",
+      "bytes": 5445167,
+      "git_blob_sha": "1db211f03286ff5ccf70fed7ec0d3f2006a7ecc0",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term.pdf",
+      "bytes": 897498,
+      "git_blob_sha": "399e6855ce48dcf1a8fa7df8abb3f34339d9bf8a",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr. 5 Writing Booklet 2026-2027 First Term.pdf",
+      "bytes": 2646259,
+      "git_blob_sha": "b6ce5070122448e8c864bb41497807c0899ea6e2",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/Home Dictation Routine.pdf",
+      "bytes": 135645,
+      "git_blob_sha": "d5f2aa14d8956885b4e8a894aeb2ab951f632a66",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1- Regular Speed.m4a",
+      "bytes": 273460,
+      "git_blob_sha": "80103f1ac72890b9dfdab626776ae217de82218e",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1- Slow Speed.m4a",
+      "bytes": 3835136,
+      "git_blob_sha": "52949de2981320b67fa7ae71934197967e782b38",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1.pdf",
+      "bytes": 106854,
+      "git_blob_sha": "4ba9b13879e35dcbcfe908512cca7f24e94773a0",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/model-answers/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term Model Answer- up to p. 6.pdf",
+      "bytes": 547443,
+      "git_blob_sha": "37d58aa1643b48eeb827ba94c76b608a352cd7af",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/model-answers/Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term Model Answer- up to p. 7.pdf",
+      "bytes": 406660,
+      "git_blob_sha": "2a5fd149f9a7d7c6ed0ed8441bbe3b686e519032",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-0/Gr. 5 Weekly Outline Term 1 Week 0.pdf",
+      "bytes": 97288,
+      "git_blob_sha": "0525d426f456584bceb5e59fcd79cbebe5c6d1b1",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-1/Gr. 5 Weekly Outline Term 1 Week 1.pdf",
+      "bytes": 100440,
+      "git_blob_sha": "bf8feff2660c530566825a68880697c65095c868",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-2/A Fresh Idea.pdf",
+      "bytes": 234526,
+      "git_blob_sha": "b0b99007c993a9cc2ba2f539e0e7c218d2723b86",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/gamal/english/weekly/week-2/Gr. 5 Weekly Outline Term 1 Week 2.pdf",
+      "bytes": 97629,
+      "git_blob_sha": "344e579a811561f1cd0182a103b0786ca4aec021",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/gamal/english/wonders/graphic-organizers/Nonfiction Organizer.png",
+      "bytes": 2080677,
+      "git_blob_sha": "ff7aad6077b6c8a6f386d0d06d92acd90a72e978",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/wonders/graphic-organizers/Story Elements Organizer.png",
+      "bytes": 1593762,
+      "git_blob_sha": "0ab6a4e154b7171206fb23b63ec5ce80c202130e",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/wonders/unit-1-week-1/Unit 1 Week 1 Essential Question- How do we get the things we need.pdf",
+      "bytes": 111064,
+      "git_blob_sha": "88e190d54c55d7889ee44edf8f70c1c8511d2d23",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/english/wonders/unit-1-week-1/Unit 1 Week 1 Finding a Way.mp3",
+      "bytes": 4533654,
+      "git_blob_sha": "86d81720eb9a6932884f3637527a7b562f7776b6",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2.pdf",
+      "bytes": 108610,
+      "sha256": "3b854e3076d91cb135ddb9680f03b0d3d9182ff278793dcc69d2fcca5dc73d97",
+      "git_blob_sha": "498304ae0c33eb8c87595c1ec25d94f3fba25dfc",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording1.m4a",
+      "bytes": 268909,
+      "sha256": "dd66296dce7503fec2d5571e88e3d5fb588e0a20c75f99c13b092ac425cb6132",
+      "git_blob_sha": "b26bea2a7beaee0d8f5ea075849bcb7d702820fa",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2_Recording1.m4a",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording2.m4a",
+      "bytes": 5964976,
+      "sha256": "cfe7ef7afb04d157008a4661a9c09402fb1660e4867f218f563fa5844b4b932d",
+      "git_blob_sha": "6bcc651321175964ce2a1a469b89b9c8773e71a7",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Dictations/Dictation2/Gr5_Home_Dictation2_Recording2.m4a",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Fiction_Organizer.png",
+      "bytes": 1952526,
+      "sha256": "c629e41a36aba453a86f5e165862a15e6bc8f7fd48c2897697937494fc1a9d47",
+      "git_blob_sha": "0879f6b84a3fefd905ec7ed3105f73feda14edf5",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Fiction_Organizer.png",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf",
+      "bytes": 4271269,
+      "sha256": "ea8b79594736f0da091c6376e7a79245384b69bbc535d85279b47c1306e304e9",
+      "git_blob_sha": "9f336f19b153819f965fb8e2f9426890e7e525e3",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Grammar_Model_Answers_Up_to_p12.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "bytes": 387472,
+      "sha256": "d62f7ce546924da590d0ab9435b1050fa279cf76ad6e65fcde92c8544fe9fd18",
+      "git_blob_sha": "c36a7455b0ea7fa503b34a27fce2b746c6c3b0ef",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Vocabulary_for_Writing_Prompt1_Words.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/english/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "bytes": 127736,
+      "sha256": "3ac28f1e49a88db02afffbfb865617dda65cf284edb9efd1ee042142a048ee0c",
+      "git_blob_sha": "98152ffa554e3180dc895402ea65d275f0f42482",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 0
+    },
+    {
+      "path": "sources/gamal/english/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "bytes": 99243,
+      "sha256": "8fe92adacb493e9ac46f24c3c035381c8f796c901aa21d85b3f0ccfdf862c0f6",
+      "git_blob_sha": "897a45d9799f5da328451fe1a9f4aef4a3306ec7",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/gamal/english/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "bytes": 97334,
+      "sha256": "60f1359513584c6ce28cfc90e75e02f02c724e64a5b1de6d5768c7cd14db8a99",
+      "git_blob_sha": "ccdf62fa82d2ce19709760196edeb79faf123150",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/courses/English_AL/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf",
+      "child": "gamal",
+      "subject": "english",
+      "week_in_archive_path": 4
+    }
+  ]
+}

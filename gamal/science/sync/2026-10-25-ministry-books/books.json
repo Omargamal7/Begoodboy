@@ -1,0 +1,34 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "gamal/science",
+  "new_books": [
+    {
+      "path": "sources/shared/science/grade5/ministry-2026-2027-term1/Science_en_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "science",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Science_en_prim5_t1_Assmt.pdf",
+      "bytes": 15303481,
+      "sha256": "c49c98bbbaa07a6080b8c663fd99751929f895cc665f623888d2ad36cffc400f",
+      "pdf_pages": 65,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 65,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ],
+  "reused_books": [
+    {
+      "path": "sources/shared/science/grade5/Science_Textbook_Grade5_Term1_2026-2027_English.pdf",
+      "storage": "existing binary parts",
+      "note": "110 pages, complete 2026-2027 English first-term text; no duplicate official scan added"
+    }
+  ]
+}

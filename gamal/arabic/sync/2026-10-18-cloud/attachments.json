@@ -1,0 +1,36 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "gamal/arabic",
+  "files": [
+    {
+      "archive_path": "jimmy_gamal/announcements/تقديم_المفعول_به_على_الفاعل.pdf",
+      "bytes": 135137,
+      "sha256": "5dbf6f25faf2aba4fe8296e55b2836078a69379d3a9cf5e84fff9ede7056f6c9",
+      "git_blob_sha": "5be3eca8c2173a44761fd1f00755d09fefe62960",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "jimmy_gamal/courses/Arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "git_blob_sha": "054c38b97d556da74dadcd1641e6c9c5998a018c",
+      "repository_path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0ba3c325c9f4b59b77d8eafe2d2c5ead2e1c199d646095e0987d22528820e370",
+          "git_blob_sha": "8ef4109cab6d7b6fdf219466db11fdd0136e7d65"
+        },
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0002.bin",
+          "bytes": 3358756,
+          "sha256": "6480bc130b1a2447997e5d20bebfce10ec22582a41bb3c85e48baa8d074e18f4",
+          "git_blob_sha": "05088a2297cb1a9ad02a20908a6a4a93df9d4c49"
+        }
+      ]
+    }
+  ]
+}

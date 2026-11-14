@@ -1,0 +1,29 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "snapshot": "2026-10-18-cloud",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "files": {
+      "records": 49,
+      "placed": {
+        "docs/provenance/toddle/2026-10-18-cloud/attachments.unassigned.json": 6,
+        "gamal/arabic/sync/2026-10-18-cloud/attachments.json": 2,
+        "gamal/english/sync/2026-10-18-cloud/attachments.json": 9,
+        "gamal/general/sync/2026-10-18-cloud/attachments.json": 1,
+        "gamal/schedules/sync/2026-10-18-cloud/attachments.json": 1,
+        "murad/arabic/sync/2026-10-18-cloud/attachments.json": 5,
+        "murad/computer/sync/2026-10-18-cloud/attachments.json": 7,
+        "murad/english/sync/2026-10-18-cloud/attachments.json": 5,
+        "murad/mathematics/sync/2026-10-18-cloud/attachments.json": 1,
+        "murad/religion/sync/2026-10-18-cloud/attachments.json": 1,
+        "murad/schedules/sync/2026-10-18-cloud/attachments.json": 2,
+        "murad/science/sync/2026-10-18-cloud/attachments.json": 7,
+        "murad/social-studies/sync/2026-10-18-cloud/attachments.json": 2
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "complete_toddle_sync": false
+  }
+}

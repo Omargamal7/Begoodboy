@@ -11,7 +11,7 @@ Each HTML file contains its own code. The English fieldbooks and older assessmen
 - [Jimmy — German October revision](gamal/german/october-revision.html)
 - [Grade 5 class German — optional Arabic](class/grade5/german/october-arabic-help.html)
 
-The older fieldbooks below remain available. Use the dated [English](../sync/2026-10-19-english/README.md) and [German](../sync/2026-10-19-german/README.md) records for coverage, disputed answers and verification limits. Archive reconciliation is tracked [separately](../sync/2026-10-20-reconciliation/README.md).
+The older fieldbooks below remain available. Use the dated [English](../docs/provenance/toddle/2026-10-19-english/README.md) and [German](../gamal/german/sync/2026-10-19-german/README.md) records for coverage, disputed answers and verification limits. Archive reconciliation is tracked [separately](../docs/provenance/toddle/2026-10-20-reconciliation/README.md).
 
 | Child | Pack |
 |---|---|

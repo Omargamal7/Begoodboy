@@ -1,0 +1,145 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "murad/science",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Science",
+      "course_id": "425277964196814147",
+      "status": "resources_observed",
+      "resource_count": 13
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/murad/science/activities/investigating the effect of saliva on starch.pdf",
+      "bytes": 431111,
+      "git_blob_sha": "f4cd358a075bac4eef83744683ebab38ff6580db",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment book homework page 14 & 15.pdf",
+      "bytes": 155467,
+      "git_blob_sha": "92fc7cc5cd53ae79c418f845e67581b4c5381e88",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment book model answers P. 4&5.pdf",
+      "bytes": 23813,
+      "git_blob_sha": "8405ad8a731572be442b8b542f9a4438d93825d7",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/chapter 3 homework model answers.pdf",
+      "bytes": 1864006,
+      "git_blob_sha": "0ebd7d72b4b2e423e08cdff331a1fb17a86783f3",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/model answers of the 3rd weekly assessment.pdf",
+      "bytes": 207883,
+      "git_blob_sha": "40328a055b5c1890a9cb1a0c2337bc121d99e1f1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/2nd_Week_Assessment_Model_Answers.pdf",
+      "bytes": 99440,
+      "sha256": "c2f10cdfc12b72a6da7e054009894890fa2face1ff1ad48b3ff146713d75553c",
+      "git_blob_sha": "73fb5a5013c82a3fe94c5db0977c3a385d453b48",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/2nd_Week_Assessment_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/4th_Week_Assessment_Model_Answers.pdf",
+      "bytes": 133802,
+      "sha256": "64fedb2d5c2b2fb1e97ebaae07dbc6d0dd84fdbea7404b32b12e9f3476f324d6",
+      "git_blob_sha": "33acba609ace201e8b89fdba3cfd07a5d18af75d",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/4th_Week_Assessment_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "bytes": 88117,
+      "sha256": "b89dda8c9ea972349896dca3e5070536ec58ae0c4b11d2070bb8610fe1532d4c",
+      "git_blob_sha": "080bd911d409580e5089a96c2ec6621149e8a04d",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Assessment_Book_Homework_p19_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "bytes": 90617,
+      "sha256": "8a248f2d746f51bc39ac57b83dbe7ad770acc38ec2aebe1bd1c36fcbc73f5777",
+      "git_blob_sha": "498b4927c806c940af2670554a1eefd13a7c6cfe",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Assessment_Book_Homework_p9_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Chapter1_Homework_Model_Answers.pdf",
+      "bytes": 2929469,
+      "sha256": "43498fd40490de84fb22945475ac3a24fc1435ac7df14834e95b2b40c02245f8",
+      "git_blob_sha": "46e65149c94bfb12c1c78fdafa261f10da2a04b2",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Chapter1_Homework_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Chapter2_Homework_Model_Answers.pdf",
+      "bytes": 1422981,
+      "sha256": "8796b36b17d6c92d3b6f7335d37b0a784d128de000ebd7f545a6c1fe4f0fc68d",
+      "git_blob_sha": "e9d6d91ced77b0359a82c660c7e5af2edced19b2",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Chapter2_Homework_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/science/model-answers/Monthly_Exam_1_Model_Answers.pdf",
+      "bytes": 216169,
+      "sha256": "a818bf22352d93c0f6ae361ab51e39b064b3f76ab88d1999dbbccffd744ca2a4",
+      "git_blob_sha": "888f33cebbf9a070b379ddacabbd873f44289533",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Science/Monthly_Exam_1_Model_Answers.pdf",
+      "child": "murad",
+      "subject": "science",
+      "week_in_archive_path": null
+    }
+  ]
+}

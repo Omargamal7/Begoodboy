@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "gamal/german",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "German",
+      "course_id": "428324090462383857",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ]
+}

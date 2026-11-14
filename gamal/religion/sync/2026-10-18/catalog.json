@@ -1,0 +1,25 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "gamal/religion",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Religion",
+      "course_id": "425277745933622433",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf",
+      "bytes": 1105474,
+      "git_blob_sha": "13a80ab194e7518458fd34fc3f60d7999599c37d",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "religion",
+      "week_in_archive_path": null
+    }
+  ]
+}

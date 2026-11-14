@@ -1,0 +1,32 @@
+{
+  "source": "sync/2026-10-20-downloads/priority-references.json",
+  "snapshot": "2026-10-20-downloads",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "files": {
+      "records": 20,
+      "placed": {
+        "gamal/arabic/sync/2026-10-20-downloads/priority-references.json": 5,
+        "gamal/computer/sync/2026-10-20-downloads/priority-references.json": 1,
+        "gamal/german/sync/2026-10-20-downloads/priority-references.json": 3,
+        "gamal/religion/sync/2026-10-20-downloads/priority-references.json": 1,
+        "gamal/schedules/sync/2026-10-20-downloads/priority-references.json": 2,
+        "gamal/social-studies/sync/2026-10-20-downloads/priority-references.json": 1,
+        "murad/arabic/sync/2026-10-20-downloads/priority-references.json": 1,
+        "murad/computer/sync/2026-10-20-downloads/priority-references.json": 1,
+        "murad/mathematics/sync/2026-10-20-downloads/priority-references.json": 2,
+        "murad/religion/sync/2026-10-20-downloads/priority-references.json": 1,
+        "murad/schedules/sync/2026-10-20-downloads/priority-references.json": 2
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "observed_date": "2026-10-20",
+    "timezone": "Africa/Cairo",
+    "repository": "Omargamal7/Begoodboy",
+    "pinned_source_commit": "65096635174c656a41aa8a9990c6d0735a603625",
+    "complete_toddle_sync": false,
+    "latest_receipt": "../2026-10-20-live/README.md"
+  }
+}

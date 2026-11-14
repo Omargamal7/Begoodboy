@@ -35,9 +35,9 @@ For Unit 2, the live tutoring worksheet identified Lesson 4 as “Comparing and 
 
 ## Test timing
 
-The [archive's October assessment summary](../../sync/2026-10-17/reports/schedule.md) lists Mathematics on Monday, 19 October 2026, in the second school period for both pupils. **The period number is not a curriculum lesson number.** Exam dates do not establish the curriculum scope.
+The [archive's October assessment summary](toddle/2026-10-17/schedule.md) lists Mathematics on Monday, 19 October 2026, in the second school period for both pupils. **The period number is not a curriculum lesson number.** Exam dates do not establish the curriculum scope.
 
-The [18 October course-plan snapshot](../../sync/2026-10-18/course-plans.json) identifies 16 Murad math resources and a blank/preparing Grade 5 maths course plan. The original PDF question text could not be extracted in this session with the GitHub connector because it rejected binary PDFs. Thus no newly authored question is labelled as transcription from a PDF.
+The [18 October course-plan snapshot](toddle/2026-10-18/course-plans.index.json) identifies 16 Murad math resources and a blank/preparing Grade 5 maths course plan. The original PDF question text could not be extracted in this session with the GitHub connector because it rejected binary PDFs. Thus no newly authored question is labelled as transcription from a PDF.
 
 ## Checks performed
 

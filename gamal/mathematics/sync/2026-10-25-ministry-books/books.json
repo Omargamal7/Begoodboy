@@ -1,0 +1,48 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "gamal/mathematics",
+  "new_books": [
+    {
+      "path": "sources/shared/mathematics/grade5/ministry-2026-2027-term1/Math_en_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "mathematics",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Math_en_prim5_t1_Assmt.pdf",
+      "bytes": 15121824,
+      "sha256": "921396d58d2bffa7f6b1c1e52566d2894faf4bfd8e70c3e7738a90ffb9c78008",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/mathematics/grade5/ministry-2026-2027-term1/Math_EN_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "mathematics",
+      "language": "English",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_EN_prim5_t1.pdf",
+      "bytes": 37186734,
+      "sha256": "35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa",
+      "pdf_pages": 140,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 140,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ]
+}

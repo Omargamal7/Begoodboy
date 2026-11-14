@@ -21,12 +21,12 @@ Counts exclude incomplete-download candidates and originals stored as binary par
 - [October subject summaries](../../../packs/gamal/revision/october-lessons.html)
 - [Lesson menu](../../../index.html)
 - [All offline packs](../../../packs/README.md)
-- [Archive reconciliation and pending downloads](../../../sync/2026-10-20-reconciliation/README.md)
+- [Archive reconciliation and pending downloads](../../../docs/provenance/toddle/2026-10-20-reconciliation/README.md)
 - [20 October learning handoff](handoff-2026-10-20.md) and [source index](../../source-index-2026-10-20.md).
 
 ## German and naming
 
-- [German October revision](../../../packs/gamal/german/october-revision.html) and [source/validation record](../../../sync/2026-10-19-german/README.md).
+- [German October revision](../../../packs/gamal/german/october-revision.html) and [source/validation record](../../german/sync/2026-10-19-german/README.md).
 - Three German source PDFs are archived under sources/gamal/german/revision/2026-10/. The worksheet heading 6.KLASSE conflicts with the Grade 5A course attribution; the exact exam cutoff remains unverified.
 - Paths use gamal. Jimmy is his display name; existing jimmy lesson IDs and saved-progress keys remain unchanged.
-- [English coverage and limitations](../../../sync/2026-10-19-english/README.md). The video-grounded maths pack is not proof of the full school maths syllabus.
+- [English coverage and limitations](../../../docs/provenance/toddle/2026-10-19-english/README.md). The video-grounded maths pack is not proof of the full school maths syllabus.

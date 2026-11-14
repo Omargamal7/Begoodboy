@@ -1,0 +1,29 @@
+{
+  "source": "sync/2026-10-20-downloads/priority-references.json",
+  "scope": "gamal/schedules",
+  "files": [
+    {
+      "repository_path": "sources/gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
+      "bytes": 138505,
+      "git_blob_sha": "bb055cabe5555ce293513410072b0554ddce107a",
+      "sha256": "93f758670b38f868198581915f6be660d90ae46481948dbf7c5f899a4862d343",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    },
+    {
+      "repository_path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "bytes": 158217,
+      "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
+      "sha256": "ae345b92a7580a4e4d25274d9f972b126d3c709e6de47ee04a0586b805ff0444",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [
+        "Primary 5 Monthly Tests October 2026.pdf",
+        "Primary 5 Monthly Tests October 2026 (1).pdf"
+      ],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    }
+  ]
+}

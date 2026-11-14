@@ -1,0 +1,62 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "murad/computer",
+  "files": [
+    {
+      "archive_path": "murad/courses/Computer/ICT_Primary6_Term1_Booklet.docx",
+      "bytes": 13764281,
+      "sha256": "69b80c1fdb07f43aa00bec08a2276887d74346af65cfdbd520123c6c9c274d69",
+      "git_blob_sha": "991b701ef44f48121d8331ae7146fab93e5af9f7",
+      "repository_path": "sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/Revision_Primary6_October.docx",
+      "bytes": 24435,
+      "sha256": "77da89165798f00331afc8dc1a205b631a6c46f1f67717b1860dfdefc4b28e9e",
+      "git_blob_sha": "b730ce3c04e5ffb08386a2171eab7e8f84680373",
+      "repository_path": "sources/murad/ict/revision/2026-10/revision prim 6 october.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/prim6_lesson1.docx",
+      "bytes": 17031,
+      "sha256": "4842d8e477aa1956e49ad4d82d6f72445e017d2465750431d864e93fe7f3779d",
+      "git_blob_sha": "71908e6a7121814113846dcfe372cab6eac27c5f",
+      "repository_path": "sources/murad/ict/handouts/Prim 6 lesson 1.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/prim6_lesson2.docx",
+      "bytes": 1198217,
+      "sha256": "45af870170b9b0b2b7f26537e01dc457d981d7a8f29414004191d0bd57aa62c5",
+      "git_blob_sha": "56e9ae3d6edd72ff82b31dd683d40aa64deb3c1e",
+      "repository_path": "sources/murad/ict/handouts/prim 6 lesson 2.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/week1.docx",
+      "bytes": 57917,
+      "sha256": "5c20b944536eccf20ee099d31f85968a73914c0809b22c1c59adf901a6783fc6",
+      "git_blob_sha": "1427e6e6ec35fb9137066a7ade415cd54ba53d34",
+      "repository_path": "sources/murad/ict/evaluations/week-01.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/week2.docx",
+      "bytes": 60228,
+      "sha256": "00cc3eec51e35ec39f4cc6a0f843e0eac0d35f9d794f17899b5f4f2c3364a83f",
+      "git_blob_sha": "5c85e702a83239e52f1a53585568d51b71b2afaf",
+      "repository_path": "sources/murad/ict/evaluations/week-02.docx",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/courses/Computer/week3.docx",
+      "bytes": 61115,
+      "sha256": "040a754e107772822d4b6eaed403742fbb86901a5ed5a864214015230131f8a3",
+      "git_blob_sha": "746f99e138b8405570b724b079aee034d6fa15a1",
+      "repository_path": "sources/murad/ict/evaluations/week-03.docx",
+      "status": "verified_existing_repository_blob"
+    }
+  ]
+}

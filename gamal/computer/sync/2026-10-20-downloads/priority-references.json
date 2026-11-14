@@ -1,0 +1,18 @@
+{
+  "source": "sync/2026-10-20-downloads/priority-references.json",
+  "scope": "gamal/computer",
+  "files": [
+    {
+      "repository_path": "sources/gamal/ict/revision/2026-10/revsion prim5 october.doc",
+      "bytes": 52736,
+      "git_blob_sha": "dd75a75a9f224926a5db04fbfbf0ea7a00db8909",
+      "sha256": "4028031a618e0a1d0f1d8f1ba07995e2ba3f665b659e96838d6e900a2cab3908",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [
+        "revsion prim5 october.doc"
+      ],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    }
+  ]
+}

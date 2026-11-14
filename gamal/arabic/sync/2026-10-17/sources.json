@@ -1,0 +1,200 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "gamal/arabic",
+  "files": [
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 7113244,
+      "sha256": "6ce50fd418d54b6f2550a037661749ab2a9db824e206e4a496dbb328e10e5344",
+      "git_blob_sha": "80d468cef32f12394efff159d7183602bd408140",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "download_names": [
+        "ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf"
+      ]
+    },
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 140670,
+      "sha256": "29e3333bc707fb9c519b947b2684ae1a93bbe4199aa32aa6c5fd91711c55bd1d",
+      "git_blob_sha": "4950411eb7942d32151fd7cb910ef19a8ba752f0",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Answers.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "إجابات تقديم المفعول به على الفاعل-.pdf",
+      "download_names": [
+        "إجابات تقديم المفعول به على الفاعل-.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Arabic_Object_Before_Subject_Answers.pdf",
+        "original_filename": "إجابات تقديم المفعول به على الفاعل-.pdf",
+        "title": "Object before subject - answer key",
+        "tag": "Arabic key",
+        "description": "1 page",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 135137,
+      "sha256": "5dbf6f25faf2aba4fe8296e55b2836078a69379d3a9cf5e84fff9ede7056f6c9",
+      "git_blob_sha": "5be3eca8c2173a44761fd1f00755d09fefe62960",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "تقديم المفعول به على الفاعل.pdf",
+      "download_names": [
+        "تقديم المفعول به على الفاعل.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Arabic_Object_Before_Subject_Worksheet.pdf",
+        "original_filename": "تقديم المفعول به على الفاعل.pdf",
+        "title": "Object before subject - worksheet",
+        "tag": "Arabic practice",
+        "description": "1 page · 10 items",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 137426,
+      "sha256": "768d0138199a6f1baf355734aba3ffa8be6b3120880f021bc52d32a1843abc24",
+      "git_blob_sha": "5437406745a1193dcb35a65447f2340297277c16",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Worksheet.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "إعراب الفاعل والمفعول به المثنى.pdf",
+      "download_names": [
+        "إعراب الفاعل والمفعول به المثنى.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Arabic_Dual_Subject_Object_Worksheet.pdf",
+        "original_filename": "إعراب الفاعل والمفعول به المثنى.pdf",
+        "title": "Dual subject and object - worksheet",
+        "tag": "Arabic practice",
+        "description": "1 page · 10 items",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 138689,
+      "sha256": "31cf45797568129483a8072da4f8b831e50e89c61ed97d2c32e3c695fd540682",
+      "git_blob_sha": "4052ea1a6ae08031399c976e732e60a9138f5e37",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Answers.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 1,
+      "original_filename": "إجابات إعراب الفاعل والمفعول به المثنى.pdf",
+      "download_names": [
+        "إجابات إعراب الفاعل والمفعول به المثنى.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Arabic_Dual_Subject_Object_Answers.pdf",
+        "original_filename": "إجابات إعراب الفاعل والمفعول به المثنى.pdf",
+        "title": "Dual subject and object - answer key",
+        "tag": "Arabic key",
+        "description": "1 page",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 1128145,
+      "sha256": "833ada14ac2583072bbac37f495f538e821a76c9d53491fb6eb3e5ce88b43a2a",
+      "git_blob_sha": "1a8182c4403c7c1010354d590650b22567627a51",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 24,
+      "original_filename": "مراجعة الوحدة الأولى الصف الخامس تيرم أول.pdf",
+      "download_names": [
+        "مراجعة الوحدة الأولى الصف الخامس تيرم أول.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Arabic_Unit1_Revision_Grade5.pdf",
+        "original_filename": "مراجعة الوحدة الأولى الصف الخامس تيرم أول.pdf",
+        "title": "Arabic Unit 1 - seven topics with model answers",
+        "tag": "Start tonight",
+        "description": "24 pages · 12 questions / 12 answers",
+        "pdf_pages": 24,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "gamal",
+      "subject": "arabic",
+      "bytes": 1105474,
+      "sha256": "fa7325447d9003f0283156c9e2b5e8bf0a1bb5b4ffd9453ec045c96a395c1798",
+      "git_blob_sha": "13a80ab194e7518458fd34fc3f60d7999599c37d",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+      "pdf_pages": 5,
+      "original_filename": "دين صف خامس مراجعة الوحدة الأوبى (2).pdf",
+      "download_names": [
+        "دين صف خامس مراجعة الوحدة الأوبى (2).pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Religion_Unit1_Revision_Grade5.pdf",
+        "original_filename": "دين صف خامس مراجعة الوحدة الأوبى (2).pdf",
+        "title": "Religion Unit 1 - questions and complete key",
+        "tag": "Start tonight",
+        "description": "5 pages · 77 keyed items",
+        "pdf_pages": 5,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277732675427479/course-plan/flow",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    }
+  ]
+}

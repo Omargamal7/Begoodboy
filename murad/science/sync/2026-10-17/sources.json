@@ -1,0 +1,62 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "murad/science",
+  "files": [
+    {
+      "child": "murad",
+      "subject": "science",
+      "bytes": 431111,
+      "sha256": "f2a3e4643fa5e6aa4c5ec4832e52b3bab047db38ee2a88f38ed19a0d7f71f58e",
+      "git_blob_sha": "f4cd358a075bac4eef83744683ebab38ff6580db",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/science/activities/investigating the effect of saliva on starch.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "investigating the effect of saliva on starch.pdf"
+      ]
+    },
+    {
+      "child": "murad",
+      "subject": "science",
+      "bytes": 1864006,
+      "sha256": "1a5925a1b231258f8bd5bce9e0953c28f05a0a87ba991aebbf76da9ca26d6b86",
+      "git_blob_sha": "0ebd7d72b4b2e423e08cdff331a1fb17a86783f3",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/science/model-answers/chapter 3 homework model answers.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "chapter 3 homework model answers.pdf"
+      ]
+    },
+    {
+      "child": "murad",
+      "subject": "science",
+      "bytes": 207883,
+      "sha256": "5aa42de7f3086a5f4a0ed458ef93ee7ee619d6b34944358550fee077bbc00e08",
+      "git_blob_sha": "40328a055b5c1890a9cb1a0c2337bc121d99e1f1",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/science/model-answers/model answers of the 3rd weekly assessment.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "model answers of the 3rd weekly assessment.pdf"
+      ]
+    },
+    {
+      "child": "murad",
+      "subject": "science",
+      "bytes": 155467,
+      "sha256": "f47fae5181931989d55c3990deb18155041a1db9d85b5df33196216acf0aebe7",
+      "git_blob_sha": "92fc7cc5cd53ae79c418f845e67581b4c5381e88",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/science/model-answers/Assessment book homework page 14 & 15.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "Assessment book homework page 14 & 15.pdf"
+      ]
+    }
+  ]
+}

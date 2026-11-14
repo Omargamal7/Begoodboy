@@ -1,0 +1,48 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "murad/english",
+  "new_books": [
+    {
+      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "english-ordinary-level",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/English_prim6_t1_Assmt.pdf",
+      "bytes": 33776143,
+      "sha256": "d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed",
+      "pdf_pages": 74,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 74,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_Primary6_T1.pdf",
+      "grade": 6,
+      "subject": "english-ordinary-level",
+      "language": "English",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/English_Primary6_T1.pdf",
+      "bytes": 41312275,
+      "sha256": "79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819",
+      "pdf_pages": 113,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 113,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ]
+}

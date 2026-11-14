@@ -1,0 +1,96 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "scope": "gamal/computer",
+  "grade5_and_grade6_textbooks": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/ICT_ARABIC_Prim5_TR1.pdf"
+    }
+  ],
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(1) تقييمات الأسبوع الأول",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim5_TR1_W1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ENGLISH_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_English_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة العربية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ARABIC_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "تكنولوجيا المعلومات والاتصالات باللغة الإنجليزية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/ICT_ENGLISH_Prim5_TR1_W5.pdf"
+    }
+  ]
+}

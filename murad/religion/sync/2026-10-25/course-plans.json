@@ -1,0 +1,29 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "murad/religion",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Religion",
+      "course_id": "425277962779139394",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277962779139394/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 2,
+      "outline": [
+        "مصادر التربية الدينية الإسلامية"
+      ],
+      "resources": [
+        {
+          "title": "مصادر التربية الدينية الإسلامية",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "Islamic_Education_Primary6_T1",
+          "type": "PDF"
+        }
+      ]
+    }
+  ]
+}

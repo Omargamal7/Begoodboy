@@ -1,0 +1,31 @@
+{
+  "source": "sync/2026-10-20-downloads/download-inventory.csv",
+  "snapshot": "2026-10-20-downloads",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "columns": [
+    "download_filename",
+    "bytes",
+    "sha256",
+    "git_blob_sha",
+    "repository_path",
+    "status"
+  ],
+  "rows": 82,
+  "placed": {
+    "docs/provenance/toddle/2026-10-20-downloads/download-inventory.unassigned.csv": 23,
+    "gamal/arabic/sync/2026-10-20-downloads/download-inventory.csv": 4,
+    "gamal/computer/sync/2026-10-20-downloads/download-inventory.csv": 2,
+    "gamal/english/sync/2026-10-20-downloads/download-inventory.csv": 2,
+    "gamal/religion/sync/2026-10-20-downloads/download-inventory.csv": 1,
+    "gamal/schedules/sync/2026-10-20-downloads/download-inventory.csv": 2,
+    "gamal/social-studies/sync/2026-10-20-downloads/download-inventory.csv": 1,
+    "murad/arabic/sync/2026-10-20-downloads/download-inventory.csv": 2,
+    "murad/computer/sync/2026-10-20-downloads/download-inventory.csv": 6,
+    "murad/english/sync/2026-10-20-downloads/download-inventory.csv": 26,
+    "murad/mathematics/sync/2026-10-20-downloads/download-inventory.csv": 3,
+    "murad/religion/sync/2026-10-20-downloads/download-inventory.csv": 2,
+    "murad/schedules/sync/2026-10-20-downloads/download-inventory.csv": 1,
+    "murad/science/sync/2026-10-20-downloads/download-inventory.csv": 4,
+    "murad/social-studies/sync/2026-10-20-downloads/download-inventory.csv": 3
+  }
+}

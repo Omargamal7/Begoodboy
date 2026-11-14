@@ -1,0 +1,20 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "gamal/social-studies",
+  "files": [
+    {
+      "child": "gamal",
+      "subject": "social-studies",
+      "bytes": 1897049,
+      "sha256": "dee33b5dc5ff094b39aebb364503277ed978afab971ef5f35fc54aaeb3ab95e0",
+      "git_blob_sha": "459a60b4d880f800356be0ff668cdb4a91bb12a8",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/social-studies/اجابة التقيمات.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "اجابة التقيمات.pdf"
+      ]
+    }
+  ]
+}

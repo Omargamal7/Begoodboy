@@ -1,0 +1,18 @@
+{
+  "source": "sync/2026-10-20-downloads/priority-references.json",
+  "scope": "gamal/religion",
+  "files": [
+    {
+      "repository_path": "sources/gamal/religion/revision/2026-10/Religion_Unit1_Revision_Grade5.pdf",
+      "bytes": 1105474,
+      "git_blob_sha": "13a80ab194e7518458fd34fc3f60d7999599c37d",
+      "sha256": "fa7325447d9003f0283156c9e2b5e8bf0a1bb5b4ffd9453ec045c96a395c1798",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [
+        "دين صف خامس مراجعة الوحدة الأوبى (2).pdf"
+      ],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    }
+  ]
+}

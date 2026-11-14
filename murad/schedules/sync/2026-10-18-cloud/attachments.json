@@ -1,0 +1,22 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "murad/schedules",
+  "files": [
+    {
+      "archive_path": "murad/announcements/Monthly_Tests_October_2026_Primary6.pdf",
+      "bytes": 157773,
+      "sha256": "f64f696d692c0e7a8e5c894eb2023f204d7836c9091856e2847fe58e2fd5a598",
+      "git_blob_sha": "bf015fb180a957977163797f30782a4695691433",
+      "repository_path": "sources/murad/schedules/Primary6_Monthly_Tests_October_2026.pdf",
+      "status": "verified_existing_repository_blob"
+    },
+    {
+      "archive_path": "murad/announcements/Weekly_Assessment_Schedule_Primary6.pdf",
+      "bytes": 141364,
+      "sha256": "3d4bf563d060469b89a99acbac3a1911e994e96d874902d308a1196f0dfd96f3",
+      "git_blob_sha": "20cbeddc9b96ddba2d31418938fe802624604eed",
+      "repository_path": "sources/murad/schedules/Weekly_Assessments_Primary6_Term1_2026.pdf",
+      "status": "verified_existing_repository_blob"
+    }
+  ]
+}

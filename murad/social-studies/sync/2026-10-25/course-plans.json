@@ -1,0 +1,59 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "murad/social-studies",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Social Studies",
+      "course_id": "425277965639654724",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277965639654724/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 4,
+      "outline": [
+        "الاسبوع الثاني 20–24/9",
+        "اطلس خرائط الوطن العربي",
+        "الاسبوع الثالث 27/9–1/10",
+        "الاسبوع الرابع 4–7/10",
+        "الاسبوع الخامس 11–15/10",
+        "اجابات اسئلة كتاب الوزارة"
+      ],
+      "resources": [
+        {
+          "title": "الاسبوع الثاني 20–24/9/2026",
+          "type": "Folder",
+          "items": 2,
+          "contents": [
+            "الدرس الأول : وطننا العربي - الموقع و الاهمية (PDF)",
+            "التقييم الاول الوطن العربي الموقع و الاهمية (PDF)"
+          ]
+        },
+        {
+          "title": "اطلس خرائط الوطن العربي",
+          "type": "Folder",
+          "items": 1,
+          "contents": [
+            "اطلس الخرائط الدرس الاول (PDF)"
+          ]
+        },
+        {
+          "title": "الاسبوع الثالث 27/9–1/10/2026",
+          "type": "Folder",
+          "items": 2,
+          "contents": [
+            "الدرس الثاني / تضاريس وطننا العربي (PDF)",
+            "اطلس الخرائط الدرس الثاني (PDF)"
+          ]
+        },
+        {
+          "title": "الاسبوع الرابع 4–7/10/2026",
+          "type": "Folder",
+          "items": 1,
+          "contents": [
+            "وطننا العربي المناخ و النبات الطبيعي (PDF)"
+          ]
+        }
+      ]
+    }
+  ]
+}

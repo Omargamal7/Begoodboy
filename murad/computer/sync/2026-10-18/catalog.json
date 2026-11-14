@@ -1,0 +1,79 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "murad/computer",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Computer",
+      "course_id": "425277952440180026",
+      "status": "resources_observed",
+      "resource_count": 7
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx",
+      "bytes": 13764281,
+      "git_blob_sha": "991b701ef44f48121d8331ae7146fab93e5af9f7",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/ict/evaluations/week-01.docx",
+      "bytes": 57917,
+      "git_blob_sha": "1427e6e6ec35fb9137066a7ade415cd54ba53d34",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/ict/evaluations/week-02.docx",
+      "bytes": 60228,
+      "git_blob_sha": "5c85e702a83239e52f1a53585568d51b71b2afaf",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/ict/evaluations/week-03.docx",
+      "bytes": 61115,
+      "git_blob_sha": "746f99e138b8405570b724b079aee034d6fa15a1",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": 3
+    },
+    {
+      "path": "sources/murad/ict/handouts/Prim 6 lesson 1.docx",
+      "bytes": 17031,
+      "git_blob_sha": "71908e6a7121814113846dcfe372cab6eac27c5f",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/ict/handouts/prim 6 lesson 2.docx",
+      "bytes": 1198217,
+      "git_blob_sha": "56e9ae3d6edd72ff82b31dd683d40aa64deb3c1e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/ict/revision/2026-10/revision prim 6 october.docx",
+      "bytes": 24435,
+      "git_blob_sha": "b730ce3c04e5ffb08386a2171eab7e8f84680373",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "ict",
+      "week_in_archive_path": null
+    }
+  ]
+}

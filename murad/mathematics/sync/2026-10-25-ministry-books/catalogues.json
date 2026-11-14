@@ -1,0 +1,56 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "scope": "murad/mathematics",
+  "grade5_and_grade6_textbooks": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Math_Primary6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Math_EN_P6_T1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الفرنسية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Math_FR_P6_T1.pdf"
+    }
+  ],
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة العربية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_ar_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الإنجليزية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_en_prim6_t1_Assmt.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الرياضيات باللغة الفرنسية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_fr_prim6_t1_Assmt.pdf"
+    }
+  ]
+}

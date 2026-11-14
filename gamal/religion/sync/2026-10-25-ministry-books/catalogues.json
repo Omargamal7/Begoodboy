@@ -1,0 +1,80 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "scope": "gamal/religion",
+  "grade5_and_grade6_textbooks": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Islamic_prim5_tr1.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Cristian_reliogion_prim5_t1.pdf"
+    }
+  ],
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(2) تقييمات الأسبوع الثاني",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W2.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(3) تقييمات الأسبوع الثالث",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim5_TR1_W3.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(4) تقييمات الأسبوع الرابع",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim5_TR1_W4.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية الإسلامية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Islamic_AR_Prim5_TR1_W5.pdf"
+    },
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "التربية الدينية المسيحية",
+      "type": "(5) تقييمات الأسبوع الخامس",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/ClassrHomeAssessmentsTest/Christian_AR_Prim5_TR1_W5.pdf"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "gamal/schedules",
+  "files": [
+    {
+      "archive_path": "jimmy_gamal/announcements/Primary_5_Monthly_Tests_October_2026.pdf",
+      "bytes": 158217,
+      "sha256": "ae345b92a7580a4e4d25274d9f972b126d3c709e6de47ee04a0586b805ff0444",
+      "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
+      "repository_path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "status": "verified_existing_repository_blob"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "gamal/religion",
+  "new_books": [
+    {
+      "path": "sources/shared/religion/grade5/ministry-2026-2027-term1/Islamic_prim5_tr1.pdf",
+      "grade": 5,
+      "subject": "religion",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Islamic_prim5_tr1.pdf",
+      "bytes": 26572786,
+      "sha256": "ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45",
+      "pdf_pages": 96,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 96,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ]
+}

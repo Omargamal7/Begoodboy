@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "murad/social-studies",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Social Studies",
+      "course_id": "425277965639654724",
+      "status": "resources_observed",
+      "resource_count": 7
+    }
+  ]
+}

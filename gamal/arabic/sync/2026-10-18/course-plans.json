@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "gamal/arabic",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Arabic",
+      "course_id": "425277732675427479",
+      "status": "resources_observed",
+      "resource_count": 8
+    }
+  ]
+}

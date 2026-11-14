@@ -1,0 +1,20 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "murad/religion",
+  "files": [
+    {
+      "child": "murad",
+      "subject": "religion",
+      "bytes": 14124807,
+      "sha256": "093d44068a9c1a5a1d283ec9b80cc7357bf69ec2648dd89330b6bbe5b881d2f9",
+      "git_blob_sha": "56fb0231d228e6eab31b099a67e5ce3724287dcf",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/religion/Islamic_Education_Primary6_T1.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "Islamic_Education_Primary6_T1.pdf"
+      ]
+    }
+  ]
+}

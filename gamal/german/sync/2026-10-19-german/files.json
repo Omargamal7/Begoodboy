@@ -1,0 +1,41 @@
+{
+  "source": "sync/2026-10-19-german/files.json",
+  "scope": "gamal/german",
+  "records": [
+    {
+      "path": "app/activities/gamal/german-revision/data.json",
+      "bytes": 134797,
+      "sha": "de857a8e2bfae48894ce26539eb1fc47e9505d36"
+    },
+    {
+      "path": "app/activities/gamal/german-revision/lessons.json",
+      "bytes": 9944,
+      "sha": "24e7df448603c13736c98bf3a76eec9cf1cf8dbf"
+    },
+    {
+      "path": "app/assets/gamal/german/assessment-pages.json",
+      "bytes": 3421557,
+      "sha": "2de05997251aa986add6452846d71b86e5114e0b"
+    },
+    {
+      "path": "packs/gamal/german/october-revision.html",
+      "bytes": 3558810,
+      "sha": "2dfe6e409d2d7013332a6b04d5967bbd74c0a416"
+    },
+    {
+      "path": "sources/gamal/german/revision/2026-10/booklet-answers-exercises-01-22.pdf",
+      "bytes": 2487383,
+      "sha": "b7a3d772b43f789ba3374a0261078ff956dfe94e"
+    },
+    {
+      "path": "sources/gamal/german/revision/2026-10/october-model-answers.pdf",
+      "bytes": 558284,
+      "sha": "e8d24bd625a52a80e08444db4784e759f2026754"
+    },
+    {
+      "path": "sources/gamal/german/revision/2026-10/october-worksheet.pdf",
+      "bytes": 553717,
+      "sha": "4c3752ee51db96c83d53fa3395a6e97210621e4a"
+    }
+  ]
+}

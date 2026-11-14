@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "gamal/religion",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Religion",
+      "course_id": "425277745933622433",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ]
+}

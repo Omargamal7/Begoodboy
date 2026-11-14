@@ -1,0 +1,15 @@
+{
+  "source": "sync/2026-10-18-cloud/resolved-gaps.json",
+  "scope": "murad/arabic",
+  "files": [
+    {
+      "course": "Murad/Arabic",
+      "toddle_title": "الاسم النكرة والاسم المعرفة 6 ب",
+      "repository_path": "sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "bytes": 21810058,
+      "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312",
+      "git_blob_sha": "91da766dccb998ed4466cb49dc1cfae4d91f50bf",
+      "storage": "archived_verified_repository_parts"
+    }
+  ]
+}

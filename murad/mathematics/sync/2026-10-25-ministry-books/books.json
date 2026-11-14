@@ -1,0 +1,27 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "murad/mathematics",
+  "new_books": [
+    {
+      "path": "sources/shared/mathematics/grade6/ministry-2026-2027-term1/Math_en_prim6_t1_Assmt.pdf",
+      "grade": 6,
+      "subject": "mathematics",
+      "language": "English",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/Math_en_prim6_t1_Assmt.pdf",
+      "bytes": 8888316,
+      "sha256": "12ec5627a20b226ba07ccf35b95f7dd02bd8997ea828ea0cd157cf0612b4f658",
+      "pdf_pages": 66,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 66,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ]
+}

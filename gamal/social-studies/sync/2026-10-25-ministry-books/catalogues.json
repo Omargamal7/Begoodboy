@@ -1,0 +1,24 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "scope": "gamal/social-studies",
+  "grade5_and_grade6_textbooks": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الدراسات الاجتماعية",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Social_studies_prim5_t1.pdf"
+    }
+  ],
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف الخامس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "الدراسات الاجتماعية",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Social_studies_prim5_t1_Assmt.pdf"
+    }
+  ]
+}

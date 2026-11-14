@@ -1,0 +1,18 @@
+{
+  "source": "sync/2026-10-19-english/files.json",
+  "snapshot": "2026-10-19-english",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "files": {
+      "records": 34,
+      "placed": {
+        "docs/provenance/toddle/2026-10-19-english/files.unassigned.json": 25,
+        "gamal/english/sync/2026-10-19-english/files.json": 5,
+        "murad/english/sync/2026-10-19-english/files.json": 4
+      }
+    }
+  },
+  "metadata": {
+    "observed_date": "2026-10-19"
+  }
+}

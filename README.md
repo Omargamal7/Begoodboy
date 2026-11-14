@@ -9,7 +9,7 @@ Open [index.html](index.html) from a downloaded copy of the repository to use th
 | Original school files | [sources/](sources/README.md) |
 | Murad, Grade 6G | [Student guide](docs/students/murad/README.md) · [Originals](sources/murad/) |
 | Gamal / Jimmy, Grade 5A | [Student guide](docs/students/gamal/README.md) · [Originals](sources/gamal/) |
-| Toddle synchronization | [sync/](sync/README.md) |
+| Toddle synchronization | [docs/provenance/toddle/](docs/provenance/toddle/README.md) · per-subject records in each `<child>/<subject>/sync/` folder |
 | Authoring and maintenance | [Repository structure](docs/structure.md) · [Lesson instructions](docs/authoring.md) · [Tools](tools/README.md) |
 
 ## October 2026: child-specific interactive revision
@@ -23,7 +23,7 @@ All four new HTML files open offline, work on Android or desktop and store pract
 
 The lesson menu contains 48 shared-engine lessons, including all 22 numbered lessons from Murad’s Science binder. Jimmy’s separate Climate Quest pack uses the supplied school assessment pages.
 
-The [18 October Toddle sweep](sync/2026-10-18/README.md) checked all 25 course plans, both assignment dashboards, school announcements and messaging. The subsequent [Cloud Browser recovery](sync/2026-10-18-cloud/README.md) closes its 23 named attachment gaps and preserves 30 additional originals. The [combined source catalogue](sync/catalog.json) records storage and provenance; full structural Toddle coverage is still being verified.
+The [18 October Toddle sweep](docs/provenance/toddle/2026-10-18/README.md) checked all 25 course plans, both assignment dashboards, school announcements and messaging. The subsequent [Cloud Browser recovery](docs/provenance/toddle/2026-10-18-cloud/README.md) closes its 23 named attachment gaps and preserves 30 additional originals. The [combined source catalogue](docs/provenance/toddle/2026-10-18/catalog.index.json) records storage and provenance; full structural Toddle coverage is still being verified.
 
 School originals are preserved unchanged. Source maps record unsupported or disputed answers; those questions must remain unscored or parent-checked. See the dated revision reports for answer-key caveats.
 
@@ -42,14 +42,14 @@ Both HTML files are standalone and work offline, with hints, worked examples, ch
 - [Grade 5 class edition · optional Arabic help](packs/class/grade5/english/october-arabic-help.html)
 - [Grade 6 class edition · optional Arabic help](packs/class/grade6/english/october-arabic-help.html)
 
-[Source coverage, cloud copies and validation](sync/2026-10-19-english/README.md).
+[Source coverage, cloud copies and validation](docs/provenance/toddle/2026-10-19-english/README.md).
 
 ## German · October revision
 
 - [Jimmy · Primary 5A German](packs/gamal/german/october-revision.html)
 - [Grade 5 class edition · optional Arabic help](packs/class/grade5/german/october-arabic-help.html)
 
-212 question parts cover the October worksheet and all 22 booklet exercises. Includes 33 original page images and six lesson reminders. Eight personal/disputed items are parent checked. The worksheet says 6.KLASSE despite its Grade 5A course; the grade label and exact exam cutoff remain unverified. Murad's current Toddle list has no German course. [Sources and cloud sync](sync/2026-10-19-german/README.md).
+212 question parts cover the October worksheet and all 22 booklet exercises. Includes 33 original page images and six lesson reminders. Eight personal/disputed items are parent checked. The worksheet says 6.KLASSE despite its Grade 5A course; the grade label and exact exam cutoff remain unverified. Murad's current Toddle list has no German course. [Sources and cloud sync](gamal/german/sync/2026-10-19-german/README.md).
 
 
 

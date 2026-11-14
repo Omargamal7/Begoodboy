@@ -1,0 +1,51 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "murad/arabic",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Arabic",
+      "course_id": "425277950422719800",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 7,
+      "outline": [
+        "مصادر اللغة العربية",
+        "مراجعات شهر أكتوبر لغة عربية ودين"
+      ],
+      "resources": [
+        {
+          "title": "مصادر اللغة العربية",
+          "type": "Folder",
+          "items": 1
+        },
+        {
+          "title": "Arabic_Primary6_T1",
+          "type": "PDF",
+          "note": "in folder مصادر اللغة العربية"
+        },
+        {
+          "title": "📝 6️⃣تقييمات الوزارة.. لغة عربية..ترم ١-٢٠٢٧",
+          "type": "PDF"
+        },
+        {
+          "title": "Arabic_Primary6_T1",
+          "type": "PDF"
+        },
+        {
+          "title": "معدلة ملزمة الصف السادس ترم اول",
+          "type": "PDF"
+        },
+        {
+          "title": "ماتم تدريسه 21/9–25/9: الاستماع / المعرفة والنكرة",
+          "type": "Note"
+        },
+        {
+          "title": "ماتم تدريسه 27/9–1/10: النص المعلوماتي / درس اتخاذ القرار",
+          "type": "Note"
+        }
+      ]
+    }
+  ]
+}

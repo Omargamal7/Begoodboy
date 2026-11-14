@@ -1,0 +1,24 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "scope": "murad/english",
+  "grade5_and_grade6_textbooks": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "كتاب الطالب",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/English_Primary6_T1.pdf"
+    }
+  ],
+  "grade5_and_grade6_assessments": [
+    {
+      "stage": "الابتدائية",
+      "grade": "الصف السادس الابتدائي",
+      "term": "الفصل الدراسى الأول",
+      "subject": "اللغة الإنجليزية-لغة أجنبية أولى",
+      "type": "كتاب الأداءات والتقييمات",
+      "link": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/Book_of_Performance_and_Evaluations/English_prim6_t1_Assmt.pdf"
+    }
+  ]
+}

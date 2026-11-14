@@ -1,0 +1,11 @@
+{
+  "source": "sync/2026-10-18/checksums.sha256",
+  "snapshot": "2026-10-18",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lines": 3,
+  "placed": {
+    "docs/provenance/toddle/2026-10-18/checksums.unassigned.sha256": 1,
+    "gamal/computer/sync/2026-10-18/checksums.sha256": 1,
+    "murad/mathematics/sync/2026-10-18/checksums.sha256": 1
+  }
+}

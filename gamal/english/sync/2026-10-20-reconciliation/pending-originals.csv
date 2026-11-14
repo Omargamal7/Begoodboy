@@ -1,0 +1,12 @@
+child,subject,path,storage,status,expected_bytes
+gamal,english,sources/gamal/english/booklets/Gr. 5 Grammar and Sentence Structure Booklet 2026-2027.pdf,repository_blob,pending_transfer,5499133
+gamal,english,sources/gamal/english/booklets/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term.pdf,repository_blob,pending_transfer,5508901
+gamal,english,sources/gamal/english/booklets/Gr. 5 Wonders Leveled Readers 2026-2027.pdf,repository_blob,pending_transfer,5445167
+gamal,english,sources/gamal/english/booklets/Gr. 5 Writing Booklet 2026-2027 First Term.pdf,repository_blob,pending_transfer,2646259
+gamal,english,sources/gamal/english/dictations/dictation-1/Gr. 5 Home Dictation 1- Slow Speed.m4a,repository_blob,pending_transfer,3835136
+gamal,english,sources/gamal/english/wonders/graphic-organizers/Nonfiction Organizer.png,repository_blob,pending_transfer,2080677
+gamal,english,sources/gamal/english/wonders/graphic-organizers/Story Elements Organizer.png,repository_blob,pending_transfer,1593762
+gamal,english,sources/gamal/english/wonders/unit-1-week-1/Unit 1 Week 1 Finding a Way.mp3,repository_blob,pending_transfer,4533654
+gamal,english,sources/gamal/english/dictations/dictation-2/Gr5_Home_Dictation2_Recording2.m4a,repository_blob,pending_transfer,5964976
+gamal,english,sources/gamal/english/Fiction_Organizer.png,repository_blob,pending_transfer,1952526
+gamal,english,sources/gamal/english/Grammar_Model_Answers_Up_to_p12.pdf,repository_blob,pending_transfer,4271269

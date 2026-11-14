@@ -1,0 +1,38 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "murad/general",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Art",
+      "course_id": "425277951467101497",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Music",
+      "course_id": "425277958421257535",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "P.E.",
+      "course_id": "425277959901846848",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Professional Skills",
+      "course_id": "425277961332104513",
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ]
+}

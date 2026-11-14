@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18/course-plans.json",
+  "scope": "murad/religion",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Religion",
+      "course_id": "425277962779139394",
+      "status": "resources_observed",
+      "resource_count": 1
+    }
+  ]
+}

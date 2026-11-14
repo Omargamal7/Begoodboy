@@ -1,0 +1,75 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "murad/computer",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Computer",
+      "course_id": "425277952440180026",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277952440180026/course-plan/flow",
+      "status": "resources_observed",
+      "resource_count": 12,
+      "outline": [
+        "theme 1",
+        "prim 6",
+        "Binder prim 6",
+        "H.W"
+      ],
+      "resources": [
+        {
+          "title": "theme 1",
+          "type": "Folder",
+          "items": 8
+        },
+        {
+          "title": "prim 6",
+          "type": "Folder",
+          "items": 8
+        },
+        {
+          "title": "prim 6 lesson 2",
+          "type": "Word Document"
+        },
+        {
+          "title": "Prim 6 lesson 1",
+          "type": "Word Document"
+        },
+        {
+          "title": "Binder prim 6",
+          "type": "Folder",
+          "items": 6
+        },
+        {
+          "title": "ICT primary 6 booklet 1st term 2025-2026 1",
+          "type": "Word Document"
+        },
+        {
+          "title": "H.W",
+          "type": "Folder",
+          "items": 5
+        },
+        {
+          "title": "Please answer the questions on page 6 and 9",
+          "type": "Note"
+        },
+        {
+          "title": "revision prim 6 october",
+          "type": "Word Document"
+        },
+        {
+          "title": "week1",
+          "type": "Word Document"
+        },
+        {
+          "title": "week2",
+          "type": "Word Document"
+        },
+        {
+          "title": "week3",
+          "type": "Word Document"
+        }
+      ]
+    }
+  ]
+}

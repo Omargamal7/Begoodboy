@@ -1,0 +1,6 @@
+child,subject,path,storage,status,expected_bytes
+murad,social-studies,sources/murad/social-studies/atlases/اطلس الخرائط االدرس الاول.pdf,repository_blob,pending_transfer,2799539
+murad,social-studies,sources/murad/social-studies/atlases/اطلس الخرائط الدرس الثاني.pdf,repository_blob,pending_transfer,2199996
+murad,social-studies,sources/murad/social-studies/weekly/week-02/الدرس الأول - وطننا العربي - الموقع و الاهمية.pdf,repository_blob,pending_transfer,14938817
+murad,social-studies,sources/murad/social-studies/درس_التحديات_البيئية.pdf,repository_parts,pending_parts,17838946
+murad,social-studies,sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf,repository_parts,pending_parts,13968037

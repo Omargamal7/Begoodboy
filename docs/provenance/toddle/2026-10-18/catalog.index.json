@@ -1,0 +1,58 @@
+{
+  "source": "sync/catalog.json",
+  "snapshot": "2026-10-18",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "courses": {
+      "records": 25,
+      "placed": {
+        "gamal/arabic/sync/2026-10-18/catalog.json": 1,
+        "gamal/computer/sync/2026-10-18/catalog.json": 1,
+        "gamal/english/sync/2026-10-18/catalog.json": 2,
+        "gamal/general/sync/2026-10-18/catalog.json": 4,
+        "gamal/german/sync/2026-10-18/catalog.json": 1,
+        "gamal/mathematics/sync/2026-10-18/catalog.json": 1,
+        "gamal/religion/sync/2026-10-18/catalog.json": 1,
+        "gamal/science/sync/2026-10-18/catalog.json": 1,
+        "gamal/social-studies/sync/2026-10-18/catalog.json": 1,
+        "murad/arabic/sync/2026-10-18/catalog.json": 1,
+        "murad/computer/sync/2026-10-18/catalog.json": 1,
+        "murad/english/sync/2026-10-18/catalog.json": 2,
+        "murad/general/sync/2026-10-18/catalog.json": 4,
+        "murad/mathematics/sync/2026-10-18/catalog.json": 1,
+        "murad/religion/sync/2026-10-18/catalog.json": 1,
+        "murad/science/sync/2026-10-18/catalog.json": 1,
+        "murad/social-studies/sync/2026-10-18/catalog.json": 1
+      }
+    },
+    "files": {
+      "records": 145,
+      "placed": {
+        "docs/provenance/toddle/2026-10-18/catalog.unassigned.json": 6,
+        "gamal/arabic/sync/2026-10-18/catalog.json": 7,
+        "gamal/computer/sync/2026-10-18/catalog.json": 5,
+        "gamal/english/sync/2026-10-18/catalog.json": 28,
+        "gamal/general/sync/2026-10-18/catalog.json": 1,
+        "gamal/religion/sync/2026-10-18/catalog.json": 1,
+        "gamal/schedules/sync/2026-10-18/catalog.json": 2,
+        "gamal/science/sync/2026-10-18/catalog.json": 5,
+        "gamal/social-studies/sync/2026-10-18/catalog.json": 5,
+        "murad/arabic/sync/2026-10-18/catalog.json": 3,
+        "murad/computer/sync/2026-10-18/catalog.json": 7,
+        "murad/english/sync/2026-10-18/catalog.json": 32,
+        "murad/general/sync/2026-10-18/catalog.json": 5,
+        "murad/mathematics/sync/2026-10-18/catalog.json": 16,
+        "murad/religion/sync/2026-10-18/catalog.json": 2,
+        "murad/schedules/sync/2026-10-18/catalog.json": 2,
+        "murad/science/sync/2026-10-18/catalog.json": 12,
+        "murad/social-studies/sync/2026-10-18/catalog.json": 6
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "observed_date": "2026-10-18",
+    "timezone": "Africa/Cairo",
+    "complete_toddle_sync": false
+  }
+}

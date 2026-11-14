@@ -11,7 +11,7 @@ Status: **INCOMPLETE — not a verified two-book source map or completed HTML re
 - **PDF page indices** have not been independently reconciled for the Ministry book. Never substitute printed page numbers with PDF indices.
 
 ## Ministry assessment and school materials — source presence, NOT verified question mapping
-The [25 October course-plan inventory](../../../sync/2026-10-25/course-plans.md) lists:
+The [25 October course-plan inventory](../../toddle/2026-10-25/course-plans.md) lists:
 - `performance task and Assessments science g6 1st term 2027` (PDF), under Science > First term booklet.
 - Model answers: Monthly Exam 1; weekly assessments 2nd, 3rd, 4th; assessment-book homework pages 4–5, 9, 14–15, 19; chapter 1/2/3 homework.
 These entries establish that resources are *listed in Toddle*, not that their complete PDF bytes are archived in Git, that their content has been inspected, or that the printed pagination and 2026–27 edition have been checked. **Do not label any Ministry question as verified or fabricate its text/answer.**

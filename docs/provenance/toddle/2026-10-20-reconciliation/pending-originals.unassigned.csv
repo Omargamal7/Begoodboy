@@ -1,0 +1,4 @@
+child,subject,path,storage,status,expected_bytes
+shared,school,sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf,repository_parts,pending_parts,13153407
+shared,school,sources/shared/school/announcements/جواب_القسم_المصري_2026-2027.pdf,repository_blob,pending_transfer,3504388
+shared,school,sources/shared/school/announcements/نشرة_القسم_المصري_2026-2027.pdf,repository_blob,pending_transfer,3483350

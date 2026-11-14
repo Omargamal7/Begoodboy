@@ -1,0 +1,163 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "murad/mathematics",
+  "courses": [
+    {
+      "child": "Murad",
+      "grade": 6,
+      "subject": "Mathematics",
+      "course_id": "425277957011971390",
+      "status": "resources_observed",
+      "resource_count": 16
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/murad/mathematics/activities/Integers - Activity Sheet.pdf",
+      "bytes": 284108,
+      "git_blob_sha": "eca9ec5622158e2913a4647836ee74fed82ecd30",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "bytes": 5730304,
+      "git_blob_sha": "20acc598d823019fb231d4561100bd41e71a8ba5",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/model-answers/Model Answer - Unit (1) - Lessons (1-3).pdf",
+      "bytes": 2646924,
+      "git_blob_sha": "19fd7c079707ba0b95769e88f949f663c5b37e20",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf",
+      "bytes": 3027257,
+      "git_blob_sha": "f2db6df986691c0aa8e14c3e49664adefcf0960a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/revision/2026-10/October Revision Sheet.pdf",
+      "bytes": 233032,
+      "git_blob_sha": "fd40c87ecd671d107dcebd150c9a1f12dcd93711",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-01/1st Day at School (Mona Gehad).pptx",
+      "bytes": 5177600,
+      "git_blob_sha": "6d9804991f731b4f40236316c4496b26d922534e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-01/Crosswords - General Revision - Week (1).pdf",
+      "bytes": 149398,
+      "git_blob_sha": "e5bee22c387f394fb2d322afc91f46ce3820e26d",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-01/School is Cool Crosswords - Week (1).jpeg",
+      "bytes": 73069,
+      "git_blob_sha": "54ae99dca02c1d1c648e0aba38f5a6f9e2b573ee",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 1
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility Extra Sheet in Math Classwork Copybook - Monday (21-9-2026) - Week (2).pdf",
+      "bytes": 400437,
+      "git_blob_sha": "d9d833172d5fd6b7c8a993cfb9d007a23dc98126",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility PPT Presentation - Monday (21-9-2026) - Week (2).pptx",
+      "bytes": 237412,
+      "git_blob_sha": "2d71d1a448c22d35f7eeea72f35ab2fa6e17213e",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22-9-2026) - Week (2).pdf",
+      "bytes": 330923,
+      "git_blob_sha": "c9fa73fa05a46ca432f8ba591cba062e2ee8fbec",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/weekly/week-02/Divisibility Rules in Math Classwork Copybook - Monday (21-9-2026) - Week (2).docx",
+      "bytes": 436049,
+      "git_blob_sha": "211fe8821050695a4aa08a32d28f3ac49439b50a",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": 2
+    },
+    {
+      "path": "sources/murad/mathematics/worksheets/Revision Sheet (1) - Week (1).pdf",
+      "bytes": 205143,
+      "git_blob_sha": "1edd3a55b59356b6ca1e7d2fc2d98caad639d133",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/worksheets/Revision Sheet (2) - Week (1).pdf",
+      "bytes": 420758,
+      "git_blob_sha": "53fb2da628fddd8c8186547e01274644ec008019",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/worksheets/Worksheet (1) - Week (2).pdf",
+      "bytes": 167592,
+      "git_blob_sha": "d60172c319de54486f25677a2e79db551045a3e5",
+      "storage": "repository_blob",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/murad/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "bytes": 2330624,
+      "sha256": "05064ff60d672f4e0255ccc0310386dfa93db546e5eae5a56bb2a3dbd1f720a6",
+      "git_blob_sha": "55e4e570d11c5f3910a5fa7131daf8b49b994f5d",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "murad/courses/Mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf",
+      "child": "murad",
+      "subject": "mathematics",
+      "week_in_archive_path": null
+    }
+  ]
+}

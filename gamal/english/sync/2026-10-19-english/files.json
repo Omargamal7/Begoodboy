@@ -1,0 +1,36 @@
+{
+  "source": "sync/2026-10-19-english/files.json",
+  "scope": "gamal/english",
+  "files": [
+    {
+      "path": "app/activities/gamal/english-revision/data.json",
+      "bytes": 250773,
+      "sha256": "02870300ea554296d7a805979940149c711818607fb4a30e4ca1fffe0d6132fb",
+      "git_blob": "9c35493bcde7cbc4caf441fa0a18a638d0f1e3ae"
+    },
+    {
+      "path": "app/assets/gamal/english/assessment-pages.json",
+      "bytes": 3667767,
+      "sha256": "6d0bdd651328d0109fb706c9ed1e9654fa16dd5a0d8dc34ebe529522bcd99bdd",
+      "git_blob": "48b419faa574a4e3da2517a4a169deddba9c6f4c"
+    },
+    {
+      "path": "docs/provenance/gamal/english/october-coverage.md",
+      "bytes": 7304,
+      "sha256": "64fcd22a1037c34b64e03870c8a12f19a217f33be46da2fe49f98cddca775516",
+      "git_blob": "48ca61d6b12ae89a186ffc8079d4afe5c9644f48"
+    },
+    {
+      "path": "packs/gamal/english/october-revision.html",
+      "bytes": 3894209,
+      "sha256": "c1b998937e7b3d2593760c9d0981c39677be98383059e7e211a6116d0cddfeb6",
+      "git_blob": "3c83e61be7d5ebfe8a7e45a6309f2bf73f44f92d"
+    },
+    {
+      "path": "sources/gamal/english/booklets/Gr5_Assessment_Book_Term1.pdf",
+      "bytes": 1966329,
+      "sha256": "72745f3add1102805f457b07fd0e6e8874c3efb729906a111c08c351bb7bdc0d",
+      "git_blob": "44e4c63822b0ff61b220b99562d7d5d84e64a425"
+    }
+  ]
+}

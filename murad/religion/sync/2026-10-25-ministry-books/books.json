@@ -1,0 +1,13 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "murad/religion",
+  "reused_books": [
+    {
+      "path": "sources/murad/religion/Islamic_Education_Primary6_T1.pdf",
+      "sha256": "093d44068a9c1a5a1d283ec9b80cc7357bf69ec2648dd89330b6bbe5b881d2f9",
+      "pdf_pages": 98,
+      "official_source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Islamic_Education_Primary6_T1.pdf",
+      "verification": "Exact hash match with current official Ministry original; edition 2026-2027 verified in imprint"
+    }
+  ]
+}

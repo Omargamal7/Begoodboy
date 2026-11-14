@@ -1,0 +1,16 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "scope": "gamal/science",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Science",
+      "course_id": "425277747372268706",
+      "course_plan_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277747372268706/course-plan/flow",
+      "status": "blank_or_preparing",
+      "resource_count": 0,
+      "note": "Blank at 2026-10-18; not re-opened on 2026-10-25."
+    }
+  ]
+}

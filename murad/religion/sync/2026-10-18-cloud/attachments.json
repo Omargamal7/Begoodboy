@@ -1,0 +1,14 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "murad/religion",
+  "files": [
+    {
+      "archive_path": "murad/courses/Arabic/وحدة_اولى_مراجعة_دين_الصف_السادس.pdf",
+      "bytes": 1515823,
+      "sha256": "e64627070ea07c6d4fc1f5ba175aac4b671feb4ed3c0c1d6fc5dc230f43a6c6c",
+      "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
+      "repository_path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
+      "status": "verified_existing_repository_blob"
+    }
+  ]
+}

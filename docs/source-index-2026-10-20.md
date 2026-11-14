@@ -4,7 +4,7 @@ Inventory checked against `65096635174c656a41aa8a9990c6d0735a603625`. This is a 
 
 ## Latest verification
 
-All 20 priority originals are now recovered and verified; Project original uploads remain unverified. The [live receipt](../sync/2026-10-20-live/README.md) records current announcement and attachment coverage. The catalogue below retains its historical date.
+All 20 priority originals are now recovered and verified; Project original uploads remain unverified. The [live receipt](provenance/toddle/2026-10-20-live/README.md) records current announcement and attachment coverage. The catalogue below retains its historical date.
 
 ## Coverage
 
@@ -197,4 +197,4 @@ The 19 October German record supersedes the older claim that Jimmy had no usable
 - `sources/gamal/german/revision/2026-10/october-model-answers.pdf` — verified body in current package.
 - `sources/gamal/german/revision/2026-10/october-worksheet.pdf` — verified body in current package.
 
-See [German evidence](../sync/2026-10-19-german/README.md), [fresh reconciliation](../sync/2026-10-20-downloads/README.md), and the individual [Jimmy](students/gamal/handoff-2026-10-20.md) / [Murad](students/murad/handoff-2026-10-20.md) handoffs.
+See [German evidence](../gamal/german/sync/2026-10-19-german/README.md), [fresh reconciliation](provenance/toddle/2026-10-20-downloads/README.md), and the individual [Jimmy](students/gamal/handoff-2026-10-20.md) / [Murad](students/murad/handoff-2026-10-20.md) handoffs.

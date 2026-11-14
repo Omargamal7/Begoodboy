@@ -1,0 +1,16 @@
+{
+  "source": "sync/2026-10-18/attachments.json",
+  "scope": "murad/science",
+  "reconciled_existing_files": [
+    {
+      "child": "Murad",
+      "subject": "Science",
+      "toddle_title": "primary 6 first term binder",
+      "release_asset": "murad-science-primary-6-first-term-binder.pdf",
+      "release_tag": "school-term1-2026",
+      "bytes": 35412343,
+      "sha256": "25336920caa1d2c7e9fd2c65265dd2fd54f789909d39593bd550b5d878f4f999",
+      "receipt": "verified_phone_bytes_match_release_asset"
+    }
+  ]
+}

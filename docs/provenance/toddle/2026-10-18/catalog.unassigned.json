@@ -1,0 +1,88 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "unassigned",
+  "files": [
+    {
+      "path": "sources/shared/school/announcements/2026-10-07-general-assembly.jpeg",
+      "bytes": 135102,
+      "git_blob_sha": "d55b7371ed158154d6910f56fc455c89e01b4cef",
+      "storage": "repository_blob",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf",
+      "bytes": 13153407,
+      "sha256": "97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df",
+      "git_blob_sha": "037676487157c566efa2456a3bf7a03d0d0c2d90",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0001.bin",
+          "bytes": 8388608,
+          "sha256": "41156a8b040df29002dbf5e65520c167506967ce6dfe12d621e8b0fb3335a2cb",
+          "git_blob_sha": "efd9f5237ac8c1f4bef2b4c8c0f76a7b40f3d522"
+        },
+        {
+          "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0002.bin",
+          "bytes": 4764799,
+          "sha256": "c6a4e44b250877748e4de9070eae0257e6b9e4a78b147773a3c891ec133b2e77",
+          "git_blob_sha": "322a45f307424156f7124ea1f449882b85332e65"
+        }
+      ],
+      "archive_path": "shared_announcements/Back_to_School_Guide_2026-27.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/Entry_Schedule_2026-09-10.jpg",
+      "bytes": 221954,
+      "sha256": "8a4ded72f5d2a34be98fa995952b11f1478258b947ae938b80a169ceac1722b3",
+      "git_blob_sha": "5772104d538206c1ff27089bf4c4250c7afd86e7",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/Entry_Schedule_2026-09-10.jpg",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/Letter_Bus_National_2026-27.pdf",
+      "bytes": 187533,
+      "sha256": "5bfae9c1fabf47352739060a57b61104cbe58891dfc0c322eb280630d8df6bfb",
+      "git_blob_sha": "47383da5ded5a049d1162d59937d54da7125cea5",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/Letter_Bus_National_2026-27.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/جواب_القسم_المصري_2026-2027.pdf",
+      "bytes": 3504388,
+      "sha256": "e0c5abf572046793ea23ee87d5f78349cb4fee6f7a6e2a7f374d483e6dadde98",
+      "git_blob_sha": "369e652e8d5e9bcbef4986679a98571fd318c953",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/جواب_القسم_المصري_2026-2027.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/shared/school/announcements/نشرة_القسم_المصري_2026-2027.pdf",
+      "bytes": 3483350,
+      "sha256": "08669b726352edc93636b6a92febf70b18dae965c1a8c68633b3d61026929417",
+      "git_blob_sha": "34a8a16c740c29c39396bf1a41c8018b6663296e",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "shared_announcements/نشرة_القسم_المصري_2026-2027.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "source": "sync/2026-10-25-ministry-books/books.json",
+  "scope": "gamal/social-studies",
+  "new_books": [
+    {
+      "path": "sources/shared/social-studies/grade5/ministry-2026-2027-term1/Social_studies_prim5_t1_Assmt.pdf",
+      "grade": 5,
+      "subject": "social-studies",
+      "language": "Arabic",
+      "kind": "assessment",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/Book_of_Performance_and_Evaluations/Social_studies_prim5_t1_Assmt.pdf",
+      "bytes": 11291552,
+      "sha256": "0e5433427bf7aea8434c4d7bdf88f4eecd56c9c18e0b286206b5a0f316a1ed0c",
+      "pdf_pages": 66,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 66,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    },
+    {
+      "path": "sources/shared/social-studies/grade5/ministry-2026-2027-term1/Social_studies_prim5_t1.pdf",
+      "grade": 5,
+      "subject": "social-studies",
+      "language": "Arabic",
+      "kind": "textbook",
+      "academic_year": "2026-2027",
+      "term": 1,
+      "source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Social_studies_prim5_t1.pdf",
+      "bytes": 23753863,
+      "sha256": "6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4",
+      "pdf_pages": 98,
+      "retrieved_date": "2026-10-25",
+      "verification": {
+        "pdf_all_pages_rendered": 98,
+        "visual_samples": "cover, opening/content pages, middle, final content and imprint",
+        "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
+        "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
+      },
+      "storage": "verified_binary_parts"
+    }
+  ]
+}

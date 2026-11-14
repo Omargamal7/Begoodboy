@@ -1,0 +1,95 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "gamal/arabic",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Arabic",
+      "course_id": "425277732675427479",
+      "status": "resources_observed",
+      "resource_count": 8
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Answers.pdf",
+      "bytes": 138689,
+      "git_blob_sha": "4052ea1a6ae08031399c976e732e60a9138f5e37",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Dual_Subject_Object_Worksheet.pdf",
+      "bytes": 137426,
+      "git_blob_sha": "5437406745a1193dcb35a65447f2340297277c16",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Answers.pdf",
+      "bytes": 140670,
+      "git_blob_sha": "4950411eb7942d32151fd7cb910ef19a8ba752f0",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf",
+      "bytes": 135137,
+      "git_blob_sha": "5be3eca8c2173a44761fd1f00755d09fefe62960",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf",
+      "bytes": 1128145,
+      "git_blob_sha": "1a8182c4403c7c1010354d590650b22567627a51",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf",
+      "bytes": 7113244,
+      "git_blob_sha": "80d468cef32f12394efff159d7183602bd408140",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858",
+      "git_blob_sha": "054c38b97d556da74dadcd1641e6c9c5998a018c",
+      "storage": "repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0001.bin",
+          "bytes": 8388608,
+          "sha256": "0ba3c325c9f4b59b77d8eafe2d2c5ead2e1c199d646095e0987d22528820e370",
+          "git_blob_sha": "8ef4109cab6d7b6fdf219466db11fdd0136e7d65"
+        },
+        {
+          "path": "sources/.parts/d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858/0002.bin",
+          "bytes": 3358756,
+          "sha256": "6480bc130b1a2447997e5d20bebfce10ec22582a41bb3c85e48baa8d074e18f4",
+          "git_blob_sha": "05088a2297cb1a9ad02a20908a6a4a93df9d4c49"
+        }
+      ],
+      "archive_path": "jimmy_gamal/courses/Arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "child": "gamal",
+      "subject": "arabic",
+      "week_in_archive_path": null
+    }
+  ]
+}

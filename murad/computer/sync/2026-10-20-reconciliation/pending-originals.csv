@@ -1,0 +1,3 @@
+child,subject,path,storage,status,expected_bytes
+murad,ict,sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx,repository_blob,pending_transfer,13764281
+murad,ict,sources/murad/ict/handouts/prim 6 lesson 2.docx,repository_blob,pending_transfer,1198217

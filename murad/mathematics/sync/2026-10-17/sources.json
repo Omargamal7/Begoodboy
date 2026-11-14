@@ -1,0 +1,48 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "murad/mathematics",
+  "files": [
+    {
+      "child": "murad",
+      "subject": "mathematics",
+      "bytes": 5730304,
+      "sha256": "bef3396789ab2c7dd05aadbf50453814ae7aa9b6059177c89bd6e705a602c227",
+      "git_blob_sha": "20acc598d823019fb231d4561100bd41e71a8ba5",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/mathematics/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "Prim 6 Classwork Binder 1st term 2026-2027.pdf"
+      ]
+    },
+    {
+      "child": "murad",
+      "subject": "mathematics",
+      "bytes": 3027257,
+      "sha256": "2ff0ea87000a6397bbd1e5c551e9fc100623b8dc26a81e781e71cbf2aea9490f",
+      "git_blob_sha": "f2db6df986691c0aa8e14c3e49664adefcf0960a",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "Model Answer - October Revision Sheet.pdf"
+      ]
+    },
+    {
+      "child": "murad",
+      "subject": "mathematics",
+      "bytes": 233032,
+      "sha256": "406012065c5009f266bab84bf5487dbf591ac76f51ea9a72b8353826a087f144",
+      "git_blob_sha": "fd40c87ecd671d107dcebd150c9a1f12dcd93711",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/murad/mathematics/revision/2026-10/October Revision Sheet.pdf",
+      "archive_status": "new_original",
+      "download_names": [
+        "October Revision Sheet.pdf"
+      ]
+    }
+  ]
+}

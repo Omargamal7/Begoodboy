@@ -1,0 +1,24 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "gamal/schedules",
+  "files": [
+    {
+      "path": "sources/gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
+      "bytes": 138505,
+      "git_blob_sha": "bb055cabe5555ce293513410072b0554ddce107a",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    },
+    {
+      "path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "bytes": 158217,
+      "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
+      "storage": "repository_blob",
+      "child": "gamal",
+      "subject": "schedules",
+      "week_in_archive_path": null
+    }
+  ]
+}

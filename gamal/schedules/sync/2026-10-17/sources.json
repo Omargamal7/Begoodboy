@@ -1,0 +1,67 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "gamal/schedules",
+  "files": [
+    {
+      "child": "gamal",
+      "subject": "schedules",
+      "bytes": 138505,
+      "sha256": "93f758670b38f868198581915f6be660d90ae46481948dbf7c5f899a4862d343",
+      "git_blob_sha": "bb055cabe5555ce293513410072b0554ddce107a",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/schedules/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277747372268706/circulars/436379155479705564",
+      "pdf_pages": 1,
+      "original_filename": "Assessment Exam Schedule 1st term 2026-2027 Pr 5.pdf",
+      "download_names": [
+        "Assessment Exam Schedule 1st term 2026-2027 Pr 5 (1).pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Assessment_Exam_Schedule_Term1_2026-2027_Pr5.pdf",
+        "original_filename": "Assessment Exam Schedule 1st term 2026-2027 Pr 5.pdf",
+        "title": "Class 5A regular assessment timetable",
+        "tag": "Schedule",
+        "description": "1 page",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277747372268706/circulars/436379155479705564",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    },
+    {
+      "child": "gamal",
+      "subject": "schedules",
+      "bytes": 158217,
+      "sha256": "ae345b92a7580a4e4d25274d9f972b126d3c709e6de47ee04a0586b805ff0444",
+      "git_blob_sha": "781226b4d6455c5403a865723b65b246d224893f",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/schedules/Primary5_Monthly_Tests_October_2026.pdf",
+      "archive_status": "already_present_or_duplicate",
+      "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870955319039708",
+      "pdf_pages": 1,
+      "original_filename": "Primary 5 Monthly Tests October 2026.pdf",
+      "download_names": [
+        "Primary 5 Monthly Tests October 2026 (1).pdf",
+        "Primary 5 Monthly Tests October 2026.pdf"
+      ],
+      "checkpoint_metadata": {
+        "child": "Gamal",
+        "grade": 5,
+        "archive_path": "Gamal/Primary5_Monthly_Tests_October_2026.pdf",
+        "original_filename": "Primary 5 Monthly Tests October 2026.pdf",
+        "title": "October monthly test dates",
+        "tag": "Schedule",
+        "description": "1 page",
+        "pdf_pages": 1,
+        "source_url": "https://web.toddleapp.com/platform/289164276797572330/circulars/437870955319039708",
+        "integrity_verified": true,
+        "source_original_unchanged": true
+      }
+    }
+  ]
+}

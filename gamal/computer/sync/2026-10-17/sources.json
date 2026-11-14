@@ -1,0 +1,62 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "gamal/computer",
+  "files": [
+    {
+      "child": "gamal",
+      "subject": "ict",
+      "bytes": 59896,
+      "sha256": "8179bfbb1e06951b73aaed19ab81bc23364139c9006c59393c3bd7c23baab332",
+      "git_blob_sha": "b9a5c36bc097eb763ef6dab4a033ed2c56570ba6",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/ict/evaluations/week-03.docx",
+      "archive_status": "new_original",
+      "download_names": [
+        "week3 (1).docx"
+      ]
+    },
+    {
+      "child": "gamal",
+      "subject": "ict",
+      "bytes": 58363,
+      "sha256": "ff3c07e633fbd6cdc5df61a9c7f3980f969379d23c5a5a3d770e07b2583b3306",
+      "git_blob_sha": "edd2e6473a7dc2e1cce4aae41473594b5ed6efb2",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/ict/evaluations/week-02.docx",
+      "archive_status": "new_original",
+      "download_names": [
+        "week2 (1).docx"
+      ]
+    },
+    {
+      "child": "gamal",
+      "subject": "ict",
+      "bytes": 57888,
+      "sha256": "e1ce9317f1045f103993323caff8e0fadca481989f7e2bd017060054f3b2c962",
+      "git_blob_sha": "c9f2808fee207551c1474e5b5d8a8da7839b9982",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/ict/evaluations/week-01.docx",
+      "archive_status": "new_original",
+      "download_names": [
+        "week 1.docx"
+      ]
+    },
+    {
+      "child": "gamal",
+      "subject": "ict",
+      "bytes": 52736,
+      "sha256": "4028031a618e0a1d0f1d8f1ba07995e2ba3f665b659e96838d6e900a2cab3908",
+      "git_blob_sha": "dd75a75a9f224926a5db04fbfbf0ea7a00db8909",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/gamal/ict/revision/2026-10/revsion prim5 october.doc",
+      "archive_status": "new_original",
+      "download_names": [
+        "revsion prim5 october.doc"
+      ]
+    }
+  ]
+}

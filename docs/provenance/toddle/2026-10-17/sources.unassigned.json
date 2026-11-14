@@ -1,0 +1,20 @@
+{
+  "source": "sync/2026-10-17/sources.json",
+  "scope": "unassigned",
+  "files": [
+    {
+      "child": "shared",
+      "subject": "school-notices",
+      "bytes": 135102,
+      "sha256": "5b80ea7cccd0a734d8cb25b0889da35b86f045162fca8fb3f07a992ca6d950f0",
+      "git_blob_sha": "d55b7371ed158154d6910f56fc455c89e01b4cef",
+      "receipt": "verified",
+      "analysis_status": "pending_or_prior_report",
+      "repository_path": "sources/shared/school/announcements/2026-10-07-general-assembly.jpeg",
+      "archive_status": "new_original",
+      "download_names": [
+        "WhatsApp Image 2026-10-07 at 10.54.39.jpeg"
+      ]
+    }
+  ]
+}

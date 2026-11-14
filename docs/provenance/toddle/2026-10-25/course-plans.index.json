@@ -1,0 +1,41 @@
+{
+  "source": "sync/2026-10-25/course-plans.json",
+  "snapshot": "2026-10-25",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "courses": {
+      "records": 25,
+      "placed": {
+        "gamal/arabic/sync/2026-10-25/course-plans.json": 1,
+        "gamal/computer/sync/2026-10-25/course-plans.json": 1,
+        "gamal/english/sync/2026-10-25/course-plans.json": 2,
+        "gamal/general/sync/2026-10-25/course-plans.json": 4,
+        "gamal/german/sync/2026-10-25/course-plans.json": 1,
+        "gamal/mathematics/sync/2026-10-25/course-plans.json": 1,
+        "gamal/religion/sync/2026-10-25/course-plans.json": 1,
+        "gamal/science/sync/2026-10-25/course-plans.json": 1,
+        "gamal/social-studies/sync/2026-10-25/course-plans.json": 1,
+        "murad/arabic/sync/2026-10-25/course-plans.json": 1,
+        "murad/computer/sync/2026-10-25/course-plans.json": 1,
+        "murad/english/sync/2026-10-25/course-plans.json": 2,
+        "murad/general/sync/2026-10-25/course-plans.json": 4,
+        "murad/mathematics/sync/2026-10-25/course-plans.json": 1,
+        "murad/religion/sync/2026-10-25/course-plans.json": 1,
+        "murad/science/sync/2026-10-25/course-plans.json": 1,
+        "murad/social-studies/sync/2026-10-25/course-plans.json": 1
+      }
+    }
+  },
+  "metadata": {
+    "schema_version": 1,
+    "observed_at_utc": "2026-10-25T09:00:00Z",
+    "platform_id": "289164276797572330",
+    "method": "TinyFish Browser Context Profile (prof_3ee5e7df49e7425a) via connector; direct course-plan/flow URLs. Content courses extracted live 2026-10-25; blanks without a re-open carry 2026-10-18 status.",
+    "counts": {
+      "children": 2,
+      "courses": 25,
+      "resources_observed": 12,
+      "blank_or_preparing": 13
+    }
+  }
+}

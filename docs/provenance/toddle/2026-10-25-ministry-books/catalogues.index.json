@@ -1,0 +1,53 @@
+{
+  "source": "sync/2026-10-25-ministry-books/catalogues.json",
+  "snapshot": "2026-10-25-ministry-books",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lists": {
+    "grade5_and_grade6_textbooks": {
+      "records": 30,
+      "placed": {
+        "docs/provenance/toddle/2026-10-25-ministry-books/catalogues.unassigned.json": 6,
+        "gamal/arabic/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "gamal/computer/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "gamal/english/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "gamal/mathematics/sync/2026-10-25-ministry-books/catalogues.json": 3,
+        "gamal/religion/sync/2026-10-25-ministry-books/catalogues.json": 2,
+        "gamal/science/sync/2026-10-25-ministry-books/catalogues.json": 3,
+        "gamal/social-studies/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/arabic/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/computer/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/english/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/mathematics/sync/2026-10-25-ministry-books/catalogues.json": 3,
+        "murad/religion/sync/2026-10-25-ministry-books/catalogues.json": 2,
+        "murad/science/sync/2026-10-25-ministry-books/catalogues.json": 3,
+        "murad/social-studies/sync/2026-10-25-ministry-books/catalogues.json": 1
+      }
+    },
+    "grade5_and_grade6_assessments": {
+      "records": 156,
+      "placed": {
+        "docs/provenance/toddle/2026-10-25-ministry-books/catalogues.unassigned.json": 103,
+        "gamal/arabic/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "gamal/computer/sync/2026-10-25-ministry-books/catalogues.json": 10,
+        "gamal/english/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "gamal/german/sync/2026-10-25-ministry-books/catalogues.json": 5,
+        "gamal/mathematics/sync/2026-10-25-ministry-books/catalogues.json": 3,
+        "gamal/religion/sync/2026-10-25-ministry-books/catalogues.json": 7,
+        "gamal/science/sync/2026-10-25-ministry-books/catalogues.json": 2,
+        "gamal/social-studies/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/arabic/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/computer/sync/2026-10-25-ministry-books/catalogues.json": 8,
+        "murad/english/sync/2026-10-25-ministry-books/catalogues.json": 1,
+        "murad/mathematics/sync/2026-10-25-ministry-books/catalogues.json": 3,
+        "murad/religion/sync/2026-10-25-ministry-books/catalogues.json": 7,
+        "murad/science/sync/2026-10-25-ministry-books/catalogues.json": 2,
+        "murad/social-studies/sync/2026-10-25-ministry-books/catalogues.json": 1
+      }
+    }
+  },
+  "metadata": {
+    "retrieved_date": "2026-10-25",
+    "textbook_catalogue_url": "https://ellibrary.moe.gov.eg/Books/Books-Primary/books.json",
+    "assessment_catalogue_url": "https://studentbooks.moe.gov.eg/Performance_Assessments/books.json"
+  }
+}

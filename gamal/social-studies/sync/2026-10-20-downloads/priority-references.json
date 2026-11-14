@@ -1,0 +1,18 @@
+{
+  "source": "sync/2026-10-20-downloads/priority-references.json",
+  "scope": "gamal/social-studies",
+  "files": [
+    {
+      "repository_path": "sources/gamal/social-studies/اجابة التقيمات.pdf",
+      "bytes": 1897049,
+      "git_blob_sha": "459a60b4d880f800356be0ff668cdb4a91bb12a8",
+      "sha256": "dee33b5dc5ff094b39aebb364503277ed978afab971ef5f35fc54aaeb3ab95e0",
+      "bytes_recovered_in_workspace": true,
+      "download_filenames_matched": [
+        "اجابة التقيمات.pdf"
+      ],
+      "project_upload_verified": false,
+      "desktop_original_verified": true
+    }
+  ]
+}

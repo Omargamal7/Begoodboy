@@ -1,0 +1,52 @@
+{
+  "source": "sync/catalog.json",
+  "scope": "gamal/general",
+  "courses": [
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Art",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Music",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "P.E.",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    },
+    {
+      "child": "Gamal",
+      "grade": 5,
+      "subject": "Professional Skills",
+      "course_id": null,
+      "status": "blank_or_preparing",
+      "resource_count": 0
+    }
+  ],
+  "files": [
+    {
+      "path": "sources/gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "bytes": 158710,
+      "sha256": "faf1d4b7fc5d141f06e8bd6a16f6e3ad21595fd734bb0da7b5587b948169b871",
+      "git_blob_sha": "f1dca98e2ef4ddea748cb67663e145bdf8a09cde",
+      "storage": "repository_blob",
+      "parts": [],
+      "archive_path": "jimmy_gamal/announcements/Weekly_Assessment_Schedule_Primary5.pdf",
+      "child": "gamal",
+      "subject": "announcements",
+      "week_in_archive_path": null
+    }
+  ]
+}

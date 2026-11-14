@@ -1,0 +1,56 @@
+{
+  "source": "sync/2026-10-18-cloud/attachments.json",
+  "scope": "murad/social-studies",
+  "files": [
+    {
+      "archive_path": "murad/courses/Social_Studies/درس_التحديات_البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
+      "git_blob_sha": "8e45e1970a2212498296329d65c38f0e6e680ece",
+      "repository_path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0001.bin",
+          "bytes": 8388608,
+          "sha256": "44ae8c190d7cca0e93ebaa75b2a14130314700f42fbf01d4f131101cde41112e",
+          "git_blob_sha": "4a1cbbd87cd330a94a2c014374486a72c74425e5"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0002.bin",
+          "bytes": 8388608,
+          "sha256": "5a27a64575e16d37dfbf4c09770fa0541a8b616a943192c8d6fe2e7edd2896d2",
+          "git_blob_sha": "f4fee493d6fff43e6c1631eb822957eef1ca6da1"
+        },
+        {
+          "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0003.bin",
+          "bytes": 1061730,
+          "sha256": "1c31cc4a27116ded905c98d85df8e2b5866c73d213eeccaa9b0d4dffbe53005e",
+          "git_blob_sha": "af057a7d68037092f2ebc579fde745fee05fc511"
+        }
+      ]
+    },
+    {
+      "archive_path": "murad/courses/Social_Studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
+      "git_blob_sha": "6065d1abb51496cfb02490e106a37bc92a58d3ed",
+      "repository_path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "status": "archived_verified_repository_parts",
+      "parts": [
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0001.bin",
+          "bytes": 8388608,
+          "sha256": "91c646bd7334f7ab6a031c1884a5a82ac94d7b82359c4c26499c7121402d4178",
+          "git_blob_sha": "b55a6ee9e89bca7efb07e06eca940ac5e8b59663"
+        },
+        {
+          "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0002.bin",
+          "bytes": 5579429,
+          "sha256": "c9c1f0639093cd53ba09320f47b7f5890349630fe7b2b59284205c518d10dfa6",
+          "git_blob_sha": "51e0afddc15806e77a25a33b198ae706aeb5195a"
+        }
+      ]
+    }
+  ]
+}
