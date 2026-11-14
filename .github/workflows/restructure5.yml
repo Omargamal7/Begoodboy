@@ -1,0 +1,23 @@
+name: restructure5
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/restructure5.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          chmod +x .github/scripts/restructure5.sh
+          bash .github/scripts/restructure5.sh
+          if [ -f RESTRUCTURE-REPORT-5.md ]; then cat RESTRUCTURE-REPORT-5.md >> "$GITHUB_STEP_SUMMARY"; fi
+          git add -A
+          if git diff --cached --quiet; then echo "No changes to commit"; exit 0; fi
+          git commit -m "Pass 5: sort sync/ into child and subject folders"
+          git push origin HEAD:main
