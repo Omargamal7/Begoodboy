@@ -1,0 +1,1178 @@
+<meta charset="utf-8">
+<title>Murad's Algebra Quest</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: one long workbook page. Sticky station bar on top; each station = short explanation cards, one hands-on lab, then practice.
+   Identity: the four rungs of the order-of-operations ladder (brackets / exponents / × ÷ / + −) each own a colour, used everywhere a step is shown. */
+:root{
+  --bg:#F2F4F8; --card:#FFFFFF; --ink:#172033; --muted:#566079; --line:#D8DDE8; --soft:#E8ECF4;
+  --accent:#2F4FC9; --accent-ink:#FFFFFF;
+  --br:#C2410C; --ex:#8E2DB0; --md:#1862B8; --as:#23843A;
+  --good:#23843A; --good-bg:#E3F4E6; --bad:#B42323; --bad-bg:#FBE7E7; --hl:#FFE36E; --hl-ink:#172033;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F131B; --card:#171D29; --ink:#E6EAF2; --muted:#9BA5BA; --line:#2A3244; --soft:#1F2636;
+  --accent:#7C95FF; --accent-ink:#0F131B;
+  --br:#FF8A4C; --ex:#D98BF2; --md:#5AB0FF; --as:#6BD884;
+  --good:#6BD884; --good-bg:#16301E; --bad:#FF8C8C; --bad-bg:#3A1A1D; --hl:#6A5600; --hl-ink:#FFF4C2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F131B; --card:#171D29; --ink:#E6EAF2; --muted:#9BA5BA; --line:#2A3244; --soft:#1F2636;
+  --accent:#7C95FF; --accent-ink:#0F131B;
+  --br:#FF8A4C; --ex:#D98BF2; --md:#5AB0FF; --as:#6BD884;
+  --good:#6BD884; --good-bg:#16301E; --bad:#FF8C8C; --bad-bg:#3A1A1D; --hl:#6A5600; --hl-ink:#FFF4C2; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:600}
+p{margin:0}
+.muted{color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header + nav */
+header.top{padding-block:28px 18px}
+.kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:end;margin-top:8px}
+.hero-grid>*{min-width:0}
+.quizcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:6px}
+.quizcard b{font-family:var(--f-display);font-size:1.25rem}
+.quizcard ul{margin:0;padding-left:1.1em}
+nav.stations{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+nav.stations .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:8px;scrollbar-width:thin}
+nav.stations a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;padding:7px 12px;border-radius:999px;border:1px solid var(--line);display:flex;gap:8px;align-items:center;white-space:nowrap}
+nav.stations a:hover{border-color:var(--accent)}
+nav.stations a .cnt{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+nav.stations a.full .cnt{color:var(--good)}
+
+section.station{padding-block:44px 8px;scroll-margin-top:64px}
+.station-head{display:grid;gap:6px;margin-bottom:18px}
+.station-head .tag{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--accent)}
+.stack{display:grid;gap:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.cards>*{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:8px;align-content:start}
+.card h3{font-size:1.08rem}
+.ex{font-size:1.15rem;font-weight:700}
+.ar{font-family:"Noto Naskh Arabic","Amiri",serif;direction:rtl;unicode-bidi:isolate;color:var(--muted);font-weight:400}
+.gloss{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.gloss span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 11px;font-size:.88rem}
+
+/* ladder */
+.ladder{display:grid;gap:6px}
+.rung{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:center;padding:8px 10px;border-radius:10px;background:var(--soft)}
+.rung i{font-style:normal;font-family:var(--f-display);font-weight:800;font-size:1.1rem;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:var(--card)}
+.rung.br i{background:var(--br)} .rung.ex i{background:var(--ex)} .rung.md i{background:var(--md)} .rung.as i{background:var(--as)}
+.chip{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:6px;border:1.5px solid currentColor;white-space:nowrap}
+.c-br{color:var(--br)} .c-ex{color:var(--ex)} .c-md{color:var(--md)} .c-as{color:var(--as)} .c-sub{color:var(--accent)}
+
+/* math */
+.m{font-variant-numeric:tabular-nums;white-space:normal}
+.m i{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.06em}
+.m sup{font-size:.68em;line-height:0}
+.m .bk{color:var(--muted);font-weight:700}
+.m .hit{background:var(--hl);color:var(--hl-ink);border-radius:5px;padding:0 4px}
+.m .subv{color:var(--accent);font-weight:700}
+
+/* labs */
+.lab{background:var(--card);border:2px solid var(--ink);border-radius:var(--r);padding:18px;display:grid;gap:14px}
+.lab-title{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.lab-title .kicker{color:var(--accent)}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls label{font-weight:700;font-size:.92rem}
+select,input[type=text],input.ans{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;min-width:0}
+input[type=range]{accent-color:var(--accent);width:160px;max-width:100%}
+.btn{border:0;border-radius:10px;padding:9px 15px;font-weight:700;background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
+.bigmath{font-size:clamp(1.4rem,4.5vw,2rem);font-weight:700;overflow-x:auto}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:baseline;padding:8px 10px;border-radius:10px;background:var(--soft)}
+.steps li .why{grid-column:2;font-size:.9rem;color:var(--muted)}
+.steps li .m{font-size:1.12rem;font-weight:700;min-width:0;overflow-x:auto}
+.steps li.final{background:var(--good-bg)}
+.steps li.final .m{color:var(--good)}
+
+.power-out{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.power-out>div{background:var(--soft);border-radius:10px;padding:10px 12px;min-width:0}
+.power-out small{display:block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.power-out .v{font-size:1.25rem;font-weight:700;overflow-wrap:anywhere}
+.dots{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.dots .sq{display:grid;gap:3px}
+.dots .sq b{width:12px;height:12px;border-radius:3px;background:var(--ex);display:block}
+
+/* practice */
+.practice{display:grid;gap:10px}
+.practice-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+.q.done{border-color:var(--good);box-shadow:inset 4px 0 0 var(--good)}
+.q .qt{display:flex;gap:10px;align-items:baseline}
+.q .qn{font-family:var(--f-display);font-weight:800;color:var(--muted);min-width:1.8em}
+.q .qbody{min-width:0;display:grid;gap:4px}
+.q .src{font-size:.78rem;color:var(--muted)}
+.q .m{font-size:1.12rem;font-weight:700}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input.ans{width:9em}
+.fb{font-weight:700;border-radius:10px;padding:8px 12px}
+.fb:empty{display:none}
+.fb.ok{background:var(--good-bg);color:var(--good)}
+.fb.no{background:var(--bad-bg);color:var(--bad)}
+.fb.info{background:var(--soft);color:var(--ink);font-weight:400}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.opt{background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;text-align:left;color:var(--ink);font-weight:700}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.sel{border-color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.opt.right{border-color:var(--good);background:var(--good-bg);color:var(--good)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
+.opt:disabled{cursor:default}
+table.vals{border-collapse:collapse;font-variant-numeric:tabular-nums;width:100%}
+table.vals th,table.vals td{border:1px solid var(--line);padding:6px 10px;text-align:center}
+table.vals th{background:var(--soft);font-size:.9rem}
+.same{color:var(--good);font-weight:700}.diff{color:var(--bad);font-weight:700}
+.tablebox{overflow-x:auto}
+
+/* mistakes */
+.students{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.student{background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;text-align:left;color:var(--ink);display:grid;gap:4px}
+.student .m{font-size:1rem;font-weight:400}
+.student b{font-family:var(--f-display)}
+
+/* match game */
+.match{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.mcard{background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:14px 6px;font-weight:700;font-size:1.05rem;color:var(--ink);text-align:center}
+.mcard.sel{border-color:var(--accent);box-shadow:inset 0 0 0 2px var(--accent)}
+.mcard.gone{border-color:var(--good);background:var(--good-bg);color:var(--good);cursor:default}
+.mcard.shake{animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+
+/* balance */
+.scale{position:relative;height:230px;max-width:560px;width:100%;margin:0 auto}
+.scale .post{position:absolute;left:50%;bottom:0;width:14px;height:150px;margin-left:-7px;background:var(--muted);border-radius:6px 6px 0 0}
+.scale .base{position:absolute;left:50%;bottom:0;width:160px;height:14px;margin-left:-80px;background:var(--muted);border-radius:8px}
+.scale .beam{position:absolute;left:4%;right:4%;top:66px;height:10px;background:var(--ink);border-radius:6px;transition:transform .5s cubic-bezier(.3,1.4,.5,1);transform-origin:50% 50%}
+.scale .pivot{position:absolute;left:50%;top:60px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--accent)}
+.pan{position:absolute;top:10px;width:40%;min-height:56px;display:flex;flex-wrap:wrap-reverse;gap:4px;align-content:flex-start;justify-content:center;padding:4px;transform:translateY(-100%)}
+.pan.l{left:0}.pan.r{right:0}
+.pan::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:6px;background:var(--muted);border-radius:0 0 8px 8px}
+.cube{width:22px;height:22px;border-radius:4px;background:var(--md);color:#fff;font-size:.7rem;display:grid;place-items:center;font-weight:700;transition:opacity .35s,transform .35s}
+.cube.leaving{opacity:0;transform:translateY(-16px)}
+.bag{min-width:40px;height:40px;padding:0 6px;border-radius:10px 10px 14px 14px;background:var(--br);color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:1.1rem}
+.bal-msg{text-align:center;font-weight:700;min-height:1.6em}
+
+/* test */
+.testbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.score{font-family:var(--f-display);font-size:2rem;font-weight:800}
+
+footer{padding-block:40px 90px;color:var(--muted);font-size:.9rem}
+
+@media (max-width:720px){
+  .hero-grid{grid-template-columns:1fr}
+  .match{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<main>
+<header class="top"><div class="wrap">
+  <p class="kicker">Grade 6 · Maths · Unit 3 Concept 2 + Unit 4 Lesson 1</p>
+  <div class="hero-grid">
+    <div class="stack" style="gap:10px">
+      <h1>Murad's Algebra Quest</h1>
+      <p class="muted" style="max-width:60ch">Five lessons, one page. Each station explains the idea, gives you something to play with, then lets you practise with questions taken from your classwork, workbook and ministry book. Every answer can show its full working, step by step.</p>
+    </div>
+    <div class="quizcard">
+      <span class="kicker">Quiz: Monday 16 November</span>
+      <b>What's in it</b>
+      <ul>
+        <li>Lesson 4 · Exponents and order of operations</li>
+        <li>Lesson 5 · Evaluating algebraic expressions</li>
+        <li>Lesson 6 · Applications (word problems)</li>
+        <li>Lesson 7 · Equivalent expressions</li>
+        <li>Unit 4 Lesson 1 · Solving equations</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gloss" aria-label="Key words in English and Arabic">
+    <span>exponent · <span class="ar">الأُس</span></span>
+    <span>base · <span class="ar">الأساس</span></span>
+    <span>squared · <span class="ar">تربيع</span></span>
+    <span>cubed · <span class="ar">تكعيب</span></span>
+    <span>order of operations · <span class="ar">ترتيب العمليات</span></span>
+    <span>variable · <span class="ar">متغير</span></span>
+    <span>algebraic expression · <span class="ar">مقدار جبري</span></span>
+    <span>equivalent · <span class="ar">متكافئ</span></span>
+    <span>equation · <span class="ar">معادلة</span></span>
+    <span>inverse operation · <span class="ar">العملية العكسية</span></span>
+  </div>
+</div></header>
+
+<nav class="stations" aria-label="Stations"><div class="wrap" id="navlinks"></div></nav>
+
+<!-- ============ STATION 1 ============ -->
+<section class="station" id="powers"><div class="wrap stack">
+  <div class="station-head">
+    <span class="tag">Station 1 · Lesson 4</span>
+    <h2>Exponents and the order of operations</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>What an exponent means</h3>
+      <p>An exponent is a short way to write <b>repeated multiplication</b>. The <b>base</b> is the number being multiplied. The <b>exponent</b> (also called the power or index) says how many times the base is used.</p>
+      <p class="ex m">2 × 2 × 2 × 2 × 2 = 2<sup><span class="sr"> to the power of </span>5</sup> = 32</p>
+      <p class="muted">Expanded form → exponential form → simplest form (standard form).</p>
+    </div>
+    <div class="card">
+      <h3>Rules to remember</h3>
+      <p>Any number to the power 1 is itself: <span class="m">7<sup><span class="sr"> to the power of </span>1</sup> = 7</span></p>
+      <p>1 to any power is 1: <span class="m">1<sup><span class="sr"> to the power of </span>5</sup> = 1 × 1 × 1 × 1 × 1 = 1</span></p>
+      <p>Power 2 is called <b>squared</b>: <span class="m">7<sup><span class="sr"> to the power of </span>2</sup></span> is "the square of 7".</p>
+      <p>Power 3 is called <b>cubed</b>: <span class="m">7<sup><span class="sr"> to the power of </span>3</sup></span> is "the cube of 7".</p>
+    </div>
+    <div class="card">
+      <h3>Trap: 3² is not 3 × 2</h3>
+      <p><span class="m">3<sup><span class="sr"> to the power of </span>2</sup> = 3 × 3 = 9</span>, but 3 × 2 = 6.</p>
+      <p><span class="m">2<sup><span class="sr"> to the power of </span>3</sup> = 2 × 2 × 2 = 8</span>, but 2 × 3 = 6.</p>
+      <p class="muted">The exponent counts the copies of the base. It is never a number you multiply by.</p>
+    </div>
+  </div>
+
+  <div class="lab" id="powerlab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Power builder</h3></div>
+    <div class="controls">
+      <label for="pb-base">Base <b id="pb-bv" class="num">3</b></label><input type="range" id="pb-base" min="1" max="10" value="3">
+      <label for="pb-exp">Exponent <b id="pb-ev" class="num">2</b></label><input type="range" id="pb-exp" min="1" max="6" value="2">
+    </div>
+    <div class="power-out">
+      <div><small>Exponential form</small><span class="v m" id="pb-exf"></span></div>
+      <div><small>Expanded form</small><span class="v m" id="pb-xp"></span></div>
+      <div><small>Simplest form</small><span class="v m num" id="pb-val"></span></div>
+      <div><small>Say it</small><span class="v" id="pb-say" style="font-size:1rem"></span></div>
+    </div>
+    <div class="dots" id="pb-dots" aria-hidden="true"></div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>The order of operations ladder</h3>
+      <p>Always climb down the ladder. Never skip a rung.</p>
+      <div class="ladder">
+        <div class="rung br"><i>1</i><span><b>Brackets</b>: ( ) first, then [ ]. Work from the innermost brackets out.</span></div>
+        <div class="rung ex"><i>2</i><span><b>Exponents</b>: work out every power.</span></div>
+        <div class="rung md"><i>3</i><span><b>Multiply and divide</b>, from left to right.</span></div>
+        <div class="rung as"><i>4</i><span><b>Add and subtract</b>, from left to right.</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Two things students forget</h3>
+      <p><b>× and ÷ are on the same rung.</b> Do whichever comes first from the left. In <span class="m">24 ÷ 6 × 2</span>, divide first: 4 × 2 = 8.</p>
+      <p><b>+ and − are on the same rung</b> too. In <span class="m">13 − 7 + 8</span>, subtract first: 6 + 8 = 14.</p>
+      <p><b>A number touching a bracket means multiply</b>: <span class="m">6(3)</span> means 6 × 3.</p>
+    </div>
+  </div>
+
+  <div class="lab" id="oolab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Step-by-step machine</h3></div>
+    <p class="muted">Pick an expression from your books, or type your own. Use * or × for multiply, / or ÷ for divide, ^ for powers (4^2 means 4²).</p>
+    <div class="controls">
+      <select id="oo-pick" aria-label="Choose an expression"></select>
+      <input type="text" id="oo-own" placeholder="or type e.g. 3+4^2*2" aria-label="Type your own expression" style="flex:1 1 200px">
+    </div>
+    <div class="bigmath m" id="oo-show"></div>
+    <div class="controls">
+      <button class="btn" id="oo-next">Next step</button>
+      <button class="btn ghost" id="oo-all">Show all steps</button>
+      <button class="btn ghost" id="oo-reset">Start again</button>
+    </div>
+    <ol class="steps" id="oo-steps"></ol>
+  </div>
+
+  <div class="lab">
+    <div class="lab-title"><span class="kicker">Ministry book</span><h3>Where's the mistake?</h3></div>
+    <p>Three students simplified <span class="m" id="mk-expr"></span>. Who is right? Tap their work.</p>
+    <div class="students" id="mk-students"></div>
+    <div class="fb" id="mk-fb"></div>
+  </div>
+
+  <div class="practice" id="p-powers"></div>
+  <div class="practice" id="p-order"></div>
+</div></section>
+
+<!-- ============ STATION 2 ============ -->
+<section class="station" id="evaluate"><div class="wrap stack">
+  <div class="station-head">
+    <span class="tag">Station 2 · Lesson 5</span>
+    <h2>Evaluating algebraic expressions</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Variables are boxes for numbers</h3>
+      <p>A <b>variable</b> is a letter that stands for a number, such as <i>k</i>, <i>x</i> or <i>h</i>. An <b>algebraic expression</b> mixes numbers, variables and operations, such as <span class="m">7<i>k</i> − 15</span>.</p>
+      <p><span class="m">7<i>k</i></span> means 7 × <i>k</i>. The multiplication sign is hidden.</p>
+    </div>
+    <div class="card">
+      <h3>Two moves to evaluate</h3>
+      <p><b>1. Substitute.</b> Replace the letter with its number. Write the × back in.</p>
+      <p><b>2. Simplify</b> with the order of operations ladder.</p>
+      <p class="ex m">7<i>k</i> − 15 at <i>k</i> = 6 → 7 × 6 − 15 = 42 − 15 = 27</p>
+    </div>
+    <div class="card">
+      <h3>Careful with the letter next to a number</h3>
+      <p>If <i>k</i> = 6, then <span class="m">7<i>k</i></span> is <b>7 × 6 = 42</b>, never 76.</p>
+      <p>If <i>h</i> = 3, then <span class="m">5<i>h</i><sup><span class="sr"> to the power of </span>2</sup></span> is 5 × 3², so square first: 5 × 9 = 45.</p>
+      <p>Decimals work the same way: <span class="m">8<i>x</i></span> at <i>x</i> = 0.5 is 8 × 0.5 = 4.</p>
+    </div>
+  </div>
+
+  <div class="lab" id="sublab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Substitution machine</h3></div>
+    <div class="controls">
+      <select id="sb-pick" aria-label="Choose an expression"></select>
+      <label for="sb-val">Value: <b id="sb-vv" class="num"></b></label>
+      <input type="range" id="sb-val" min="1" max="20" step="1">
+    </div>
+    <div class="bigmath m" id="sb-show"></div>
+    <ol class="steps" id="sb-steps"></ol>
+  </div>
+
+  <div class="practice" id="p-eval"></div>
+</div></section>
+
+<!-- ============ STATION 3 ============ -->
+<section class="station" id="stories"><div class="wrap stack">
+  <div class="station-head">
+    <span class="tag">Station 3 · Lesson 6</span>
+    <h2>Word problems: from a story to an expression</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Find the thing that changes</h3>
+      <p>The amount that can change (how many T-shirts, how many km, how many days) becomes the <b>variable</b>.</p>
+      <p>The amount that is the same every time is a <b>number</b>.</p>
+    </div>
+    <div class="card">
+      <h3>"Each" or "per" means multiply</h3>
+      <p>100 L.E. <b>each</b> for <i>x</i> T-shirts → <span class="m">100<i>x</i></span></p>
+      <p>A <b>coupon off the whole bill</b> is taken away once: <span class="m">100<i>x</i> − 40</span></p>
+      <p>A <b>starting amount</b> or base fare is added once: <span class="m">15 + 8<i>k</i></span></p>
+    </div>
+    <div class="card">
+      <h3>Then evaluate</h3>
+      <p>Cost of 4 T-shirts: put <i>x</i> = 4.</p>
+      <p class="ex m">100 × 4 − 40 = 400 − 40 = 360 L.E.</p>
+      <p class="muted">Explain what each symbol means: <i>x</i> = number of T-shirts, 100 = price of one, 40 = coupon.</p>
+    </div>
+  </div>
+  <div class="practice" id="p-stories"></div>
+</div></section>
+
+<!-- ============ STATION 4 ============ -->
+<section class="station" id="equivalent"><div class="wrap stack">
+  <div class="station-head">
+    <span class="tag">Station 4 · Lesson 7</span>
+    <h2>Equivalent algebraic expressions</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>What "equivalent" means</h3>
+      <p>Two expressions are <b>equivalent</b> if they give the <b>same value for every value</b> of the variable.</p>
+      <p><span class="m">2<i>x</i> + 10</span> and <span class="m">2(<i>x</i> + 1) + 8</span>: at <i>x</i> = 3 both give 16, at <i>x</i> = 5 both give 20. Equivalent.</p>
+    </div>
+    <div class="card">
+      <h3>One difference is enough</h3>
+      <p>If you try a value and the answers are <b>different</b>, stop. They are <b>not equivalent</b>. No need to try another value.</p>
+      <p>Watch out: <span class="m">3<i>x</i> + 1</span> and <span class="m">2<i>x</i> + 5</span> are equal at <i>x</i> = 4 (both 13), but different at <i>x</i> = 3. One equal answer does not prove anything.</p>
+    </div>
+    <div class="card">
+      <h3>The bracket shortcut</h3>
+      <p>A number outside a bracket multiplies <b>everything</b> inside:</p>
+      <p class="ex m">3(<i>x</i> + 2) = 3<i>x</i> + 6</p>
+      <p>A common mistake is <span class="m">2(<i>x</i> + 3) = 2<i>x</i> + 3</span>. The 3 must be doubled too: 2<i>x</i> + 6.</p>
+    </div>
+  </div>
+
+  <div class="lab" id="eqlab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Equivalence tester</h3></div>
+    <p class="muted">Type two expressions in <i>x</i>, or pick a pair from your books. The table tries five values.</p>
+    <div class="controls">
+      <select id="et-pick" aria-label="Choose a pair"></select>
+    </div>
+    <div class="controls">
+      <input type="text" id="et-a" aria-label="First expression" style="flex:1 1 160px">
+      <span class="muted">and</span>
+      <input type="text" id="et-b" aria-label="Second expression" style="flex:1 1 160px">
+    </div>
+    <div class="tablebox"><table class="vals" id="et-table"></table></div>
+    <div class="fb" id="et-verdict"></div>
+  </div>
+
+  <div class="lab">
+    <div class="lab-title"><span class="kicker">Ministry book</span><h3>Match the equivalent expressions</h3></div>
+    <p class="muted">Tap two cards that are equivalent.</p>
+    <div class="match" id="mg"></div>
+    <div class="fb" id="mg-fb"></div>
+  </div>
+
+  <div class="practice" id="p-equiv"></div>
+</div></section>
+
+<!-- ============ STATION 5 ============ -->
+<section class="station" id="equations"><div class="wrap stack">
+  <div class="station-head">
+    <span class="tag">Station 5 · Unit 4 Lesson 1</span>
+    <h2>Solving algebraic equations</h2>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>Expression or equation?</h3>
+      <p>An <b>expression</b> has no equals sign: <span class="m"><i>x</i> + 5</span>.</p>
+      <p>An <b>equation</b> says two sides are equal: <span class="m"><i>x</i> + 5 = 9</span>.</p>
+      <p><b>Solving</b> means finding the value of the unknown that makes it true. Here <i>x</i> = 4.</p>
+    </div>
+    <div class="card">
+      <h3>Way 1: mental math</h3>
+      <p><span class="m">16 + <i>x</i> = 20</span></p>
+      <p>Ask: "What number plus 16 equals 20?" The answer is 4, so <i>x</i> = 4.</p>
+    </div>
+    <div class="card">
+      <h3>Way 2: inverse operations</h3>
+      <p>Undo what is being done to the letter:</p>
+      <p>+ is undone by −, − by +, × by ÷, ÷ by ×.</p>
+      <p class="ex m"><i>y</i> − 3 = 8 → <i>y</i> = 8 + 3 = 11</p>
+      <p class="ex m">4<i>n</i> = 28 → <i>n</i> = 28 ÷ 4 = 7</p>
+    </div>
+    <div class="card">
+      <h3>Always check</h3>
+      <p>Put your answer back in. If <i>y</i> = 11: 11 − 3 = 8 ✓.</p>
+      <p>If both sides are equal, your answer is right.</p>
+    </div>
+  </div>
+
+  <div class="lab" id="ballab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>The balance</h3></div>
+    <p class="muted">An equation is a balance. Whatever you do to one side, do to the other side and it stays level. The orange bag is the unknown.</p>
+    <div class="controls">
+      <select id="bl-pick" aria-label="Choose an equation"></select>
+    </div>
+    <div class="bigmath m" id="bl-eq" style="text-align:center"></div>
+    <div class="scale" aria-hidden="true">
+      <div class="base"></div><div class="post"></div>
+      <div class="beam" id="bl-beam">
+        <div class="pan l" id="bl-left"></div>
+        <div class="pan r" id="bl-right"></div>
+      </div>
+      <div class="pivot"></div>
+    </div>
+    <div class="bal-msg" id="bl-msg"></div>
+    <div class="controls" style="justify-content:center">
+      <label for="bl-guess">Guess what is in the bag: <b id="bl-gv" class="num">1</b></label>
+      <input type="range" id="bl-guess" min="0" max="15" value="1">
+    </div>
+    <div class="controls" style="justify-content:center">
+      <button class="btn" id="bl-act"></button>
+      <button class="btn ghost" id="bl-reset">Start again</button>
+    </div>
+  </div>
+
+  <div class="practice" id="p-solve"></div>
+  <div class="practice" id="p-words"></div>
+</div></section>
+
+<!-- ============ STATION 6 ============ -->
+<section class="station" id="test"><div class="wrap stack">
+  <div class="station-head">
+    <span class="tag">Final station</span>
+    <h2>Monday mock quiz</h2>
+    <p class="muted" style="max-width:62ch">20 mixed questions from all five lessons. No hints while you work. Press <b>Mark my quiz</b> at the end to see your score, the right answers and the full working. Press <b>New quiz</b> for a different set.</p>
+  </div>
+  <div class="testbar">
+    <button class="btn" id="t-new">New quiz</button>
+    <span class="muted" id="t-best"></span>
+  </div>
+  <div class="practice" id="t-list"></div>
+  <div class="testbar">
+    <button class="btn" id="t-mark">Mark my quiz</button>
+    <span class="score" id="t-score"></span>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Sources: Prim 6 Classwork Binder pp. 126–161, Homework Binder pp. 25–29, Ministry Performance and Assessment book pp. 26–32 (first term 2026/2027). Your progress is saved on this device only.
+</div></footer>
+</main>
+
+<script id="core">
+/* ---------- tiny expression engine: tokenise, substitute, simplify one step at a time ---------- */
+const E=(()=>{
+  function tok(src){
+    const s=String(src).replace(/×/g,'*').replace(/÷/g,'/').replace(/[−–]/g,'-').replace(/²/g,'^2').replace(/³/g,'^3').replace(/\s+/g,'');
+    const out=[];let i=0;
+    while(i<s.length){const c=s[i];
+      if(/[0-9.]/.test(c)){let j=i;while(j<s.length&&/[0-9.]/.test(s[j]))j++;const v=parseFloat(s.slice(i,j));if(isNaN(v))throw Error('bad number');out.push({t:'n',v});i=j;continue}
+      if(/[a-zA-Z]/.test(c)){out.push({t:'v',v:c});i++;continue}
+      if('+-*/^'.includes(c)){out.push({t:'o',v:c});i++;continue}
+      if('(['.includes(c)){out.push({t:'(',v:c});i++;continue}
+      if(')]'.includes(c)){out.push({t:')',v:c});i++;continue}
+      throw Error('I do not understand "'+c+'"');}
+    const r=[];
+    for(const k of out){const p=r[r.length-1];
+      if(p&&(p.t==='n'||p.t==='v'||p.t===')')&&(k.t==='v'||k.t==='('||(k.t==='n'&&p.t!=='n')))r.push({t:'o',v:'*',imp:1});
+      r.push(k)}
+    // validate shape
+    let depth=0,prev=null;
+    for(const k of r){
+      if(k.t==='(')depth++;else if(k.t===')'){depth--;if(depth<0)throw Error('a closing bracket has no opening bracket')}
+      if(k.t==='o'&&(!prev||prev.t==='o'||prev.t==='('))throw Error('two signs in a row, or a sign at the start');
+      prev=k}
+    if(depth!==0)throw Error('a bracket is not closed');
+    if(prev&&(prev.t==='o'))throw Error('the expression ends with a sign');
+    return r}
+  const vars=ts=>[...new Set(ts.filter(k=>k.t==='v').map(k=>k.v))];
+  function subst(ts,vals){return ts.map(k=>k.t==='v'&&k.v in vals?{t:'n',v:vals[k.v],subv:1}:k)}
+  const round=v=>Math.round(v*1e9)/1e9;
+  const sym={'*':'×','/':'÷','+':'+','-':'−'};
+  function fmt(v){return v<0?'−'+String(-v):String(v)}
+  function step(ts0){
+    const ts=ts0.map(k=>({...k,hit:0,subv:k.subv}));
+    let o=-1,c=ts.length;
+    for(let i=0;i<ts.length;i++){if(ts[i].t==='(')o=i;else if(ts[i].t===')'){c=i;break}}
+    const a=o+1,b=c;
+    if(o>=0&&b-a===1){const n=ts[a];return{ts:[...ts.slice(0,o),{...n,hit:1},...ts.slice(c+1)],lvl:'br',rule:'Brackets',why:'Only one number is left inside the brackets, so the brackets can go.'}}
+    let k=-1,lvl,rule;
+    for(let i=a;i<b;i++)if(ts[i].t==='o'&&ts[i].v==='^'){k=i;lvl='ex';rule='Exponent';break}
+    if(k<0)for(let i=a;i<b;i++)if(ts[i].t==='o'&&(ts[i].v==='*'||ts[i].v==='/')){k=i;lvl='md';rule=ts[i].v==='*'?'Multiply':'Divide';break}
+    if(k<0)for(let i=a;i<b;i++)if(ts[i].t==='o'&&(ts[i].v==='+'||ts[i].v==='-')){k=i;lvl='as';rule=ts[i].v==='+'?'Add':'Subtract';break}
+    if(k<0)return null;
+    const x=ts[k-1].v,y=ts[k+1].v,op=ts[k].v;
+    if(op==='/'&&y===0)throw Error('you cannot divide by zero');
+    let v=op==='^'?Math.pow(x,y):op==='*'?x*y:op==='/'?x/y:op==='+'?x+y:x-y;v=round(v);
+    let calc;
+    if(op==='^'){const n=Math.round(y);calc=(n>=2&&n<=6&&n===y)?`${fmt(x)}${sup(y)} = ${Array(n).fill(fmt(x)).join(' × ')} = ${fmt(v)}`:`${fmt(x)}${sup(y)} = ${fmt(v)}`}
+    else calc=`${fmt(x)} ${sym[op]} ${fmt(y)} = ${fmt(v)}`;
+    let why=o>=0?'Brackets first. Inside them: ':'';
+    if(lvl==='ex')why+='exponents come before × ÷ + −. ';
+    if(lvl==='md'){const more=ts.slice(k+1,b).some(t=>t.t==='o'&&(t.v==='*'||t.v==='/'));why+=more?'× and ÷ go from left to right, so this one is first. ':'× and ÷ come before + and −. '}
+    if(lvl==='as'){const more=ts.slice(k+1,b).some(t=>t.t==='o'&&(t.v==='+'||t.v==='-'));why+=more?'+ and − go from left to right, so this one is first. ':'Only + or − is left. '}
+    let r=[...ts.slice(0,k-1),{t:'n',v,hit:1},...ts.slice(k+2)];
+    if(o>=0&&(c-2)-(o+1)===1)r=[...r.slice(0,o),r[o+1],...r.slice(c-1)];
+    return{ts:r,lvl:o>=0?'br':lvl,rule:o>=0?'Brackets · '+rule:rule,why,calc};
+  }
+  function sup(v){return `<sup><span class="sr"> to the power of </span>${fmt(v)}</sup>`}
+  function html(ts){
+    let s='';
+    for(let i=0;i<ts.length;i++){const k=ts[i],nx=ts[i+1],pv=ts[i-1];
+      if(k.t==='o'&&k.v==='^'){i++;s+=`<sup><span class="sr"> to the power of </span>${cell(nx,ts[i-1])}</sup>`;continue}
+      if(k.t==='o'){if(k.imp&&nx&&(nx.t==='('||nx.t==='v'))continue;s+=' '+sym[k.v]+' ';continue}
+      s+=cell(k,pv)}
+    return `<span class="m">${s}</span>`}
+  function cell(k,pv){
+    if(!k)return'';
+    if(k.t==='v')return `<i>${k.v}</i>`;
+    if(k.t==='(')return `<span class="bk">${k.v}</span>`;
+    if(k.t===')')return `<span class="bk">${k.v}</span>`;
+    let t=fmt(k.v);if(k.v<0&&pv&&pv.t==='o')t='('+t+')';
+    if(k.hit)return `<span class="hit">${t}</span>`;
+    if(k.subv)return `<span class="subv">${t}</span>`;
+    return t}
+  function solve(expr,vals){
+    let ts=typeof expr==='string'?tok(expr):expr;
+    const out=[];
+    if(vals&&Object.keys(vals).length&&vars(ts).length){ts=subst(ts,vals);out.push({ts,lvl:'sub',rule:'Substitute',why:'Replace '+Object.entries(vals).map(([k,v])=>`<i>${k}</i> with ${fmt(v)}`).join(', ')+'. A number next to a letter means multiply.'})}
+    if(vars(ts).length)throw Error('give a value for '+vars(ts).join(', '));
+    let guard=0;
+    while(guard++<80){const s=step(ts);if(!s)break;out.push(s);ts=s.ts}
+    if(ts.length!==1||ts[0].t!=='n')throw Error('could not finish');
+    return{steps:out,value:ts[0].v}}
+  const val=(e,vals)=>solve(e,vals||{}).value;
+  const show=(e)=>html(tok(e));
+  return{tok,subst,step,html,solve,val,show,vars,fmt,sup}
+})();
+
+/* ---------- question banks (all from Murad's three books) ---------- */
+const CW='Classwork',WB='Workbook',MIN='Ministry book';
+const BANK={
+ powers:[
+  {k:'calc',e:'2^3',a:8,src:CW+' p.130'},
+  {k:'mcq',q:'Three cubed =',o:['27','9','6','33'],c:0,why:'Cubed means power 3: 3 × 3 × 3 = 27.',src:CW+' p.131'},
+  {k:'calc',e:'5^2',a:25,q:'Five squared =',src:WB+' p.25'},
+  {k:'mcq',q:`<i>K</i> × <i>K</i> × <i>K</i> × <i>K</i> × <i>K</i> =`,o:['<i>K</i><sup><span class="sr"> to the power of </span>5</sup>','5<i>K</i>','<i>K</i> + 5','5<sup><span class="sr"> to the power of </span><i>K</i></sup>'],c:0,why:'The base <i>K</i> is used as a factor 5 times, so the exponent is 5.',src:CW+' p.131'},
+  {k:'mcq',q:`<i>p</i> × <i>p</i> × <i>p</i> =`,o:['3<i>p</i>','<i>p</i><sup><span class="sr"> to the power of </span>3</sup>','<i>p</i> + 3','<i>p</i><sup><span class="sr"> to the power of </span>2</sup>'],c:1,why:'Three copies of <i>p</i> multiplied: <i>p</i>³.',src:WB+' p.25'},
+  {k:'calc',e:'6*6*6*6',a:1296,q:'6 × 6 × 6 × 6 = 6⁴ =',src:CW+' p.132'},
+  {k:'calc',e:'7*7*7',a:343,q:'7 × 7 × 7 = 7³ =',src:CW+' p.132'},
+  {k:'calc',e:'4*4*4',a:64,q:'4 × 4 × 4 = 4³ =',src:WB+' p.25'},
+  {k:'mcq',q:'The exponential form of a number with base 2 and exponent 3 is',o:['2<sup><span class="sr"> to the power of </span>3</sup>','3<sup><span class="sr"> to the power of </span>2</sup>','1<sup><span class="sr"> to the power of </span>3</sup>','6<sup><span class="sr"> to the power of </span>3</sup>'],c:0,why:'Write the base big and the exponent small at the top right: 2³.',src:MIN+' p.28'},
+  {k:'mcq',q:'5<sup><span class="sr"> to the power of </span>3</sup> is equivalent to',o:['5 + 3','5 × 3','5 + 5 + 5','5 × 5 × 5'],c:3,why:'5³ means 5 used as a factor 3 times: 5 × 5 × 5.',src:MIN+' p.28'},
+  {k:'mcq',q:'In 4<sup><span class="sr"> to the power of </span>3</sup>, the base is',o:['4','3','12','64'],c:0,why:'The base is the big number being multiplied: 4.',src:MIN+' p.26'},
+  {k:'calc',e:'3*3*3*3',a:81,q:'3 × 3 × 3 × 3 in exponential form is 3⁴. Its simplest form is',src:CW+' p.130'},
+  {k:'calc',e:'1^6',a:1,q:'Base 1 and exponent 6: what is its value?',src:MIN+' p.28'},
+  {k:'calc',e:'9^1',a:9,src:CW+' p.127'},
+  {k:'mcq',q:'The additive inverse of 5<sup><span class="sr"> to the power of </span>2</sup> is',o:['−25','25','−10','1/25'],c:0,why:'5² = 25. The additive inverse is the number you add to get 0, so it is −25.',src:MIN+' p.28'},
+  {k:'calc',e:'2^4',a:16,q:'Base 2 and exponent 4: what is its value?',src:MIN+' p.28'},
+ ],
+ order:[
+  {k:'calc',e:'8*[24/(4+2)-1]+5',a:29,src:CW+' p.129 example'},
+  {k:'calc',e:'(15-9)+3*4^2/2',a:30,src:CW+' p.130 example'},
+  {k:'calc',e:'6^2/(17-8)*(3+4)',a:28,src:CW+' p.130 example'},
+  {k:'calc',e:'8+4^2-5+6(60/20)^2',a:73,src:CW+' p.132'},
+  {k:'calc',e:'(8-6/2)^2+3*4',a:37,src:CW+' p.132'},
+  {k:'calc',e:'(13-5)*3+7+16-8',a:39,src:CW+' p.133'},
+  {k:'calc',e:'12-8/4+[(6+1)-2]^2*3',a:85,src:CW+' p.133'},
+  {k:'calc',e:'7^2-3(15-10)/3',a:44,src:CW+' p.137'},
+  {k:'calc',e:'(17-11)+3*4^2+8',a:62,src:CW+' p.138'},
+  {k:'calc',e:'13-7+8*9+63/7',a:87,src:CW+' p.138'},
+  {k:'calc',e:'4(3+2*3)-5^2',a:11,src:CW+' p.139'},
+  {k:'calc',e:'((9-4)^2+4)+13+5^2',a:67,src:WB+' p.25'},
+  {k:'calc',e:'10+[10+(10-5)^2]+6',a:51,src:WB+' p.25'},
+  {k:'calc',e:'7+[5+(9-6)^2]-9',a:12,src:WB+' p.25'},
+  {k:'calc',e:'(20/4)^2+[(16-3)*5^2]',a:350,src:WB+' p.26'},
+  {k:'calc',e:'2^5/2-6*2',a:4,src:MIN+' p.26'},
+  {k:'calc',e:'(15-9)+3*2^5',a:102,src:MIN+' p.26'},
+  {k:'calc',e:'3*10^2-(6+4)',a:290,src:MIN+' p.27'},
+  {k:'calc',e:'5+3*3^2-5',a:27,src:MIN+' p.28'},
+  {k:'calc',e:'15/3-2(4^2-15)',a:3,src:MIN+' p.28'},
+  {k:'calc',e:'5*2^2-[8-(5+3)]',a:20,src:MIN+' p.28'},
+  {k:'mcq',q:'Mona and Hadeel simplified 6 + 3(8 − 5) ÷ 3<sup><span class="sr"> to the power of </span>2</sup>. Mona got 25 and Hadeel got 7. Who is right?',o:['Hadeel (7)','Mona (25)','Both','Neither'],c:0,why:'Brackets: 8 − 5 = 3. Exponent: 3² = 9. Then × and ÷ from left to right: 3 × 3 = 9, 9 ÷ 9 = 1. Last, 6 + 1 = 7. Mona added 6 + 3 first, which breaks the ladder.',src:MIN+' p.26'},
+ ],
+ assess:[
+  {k:'calc',e:'6*6+4',a:40,src:CW+' p.149'},
+  {k:'calc',e:'5*2+3*4',a:22,src:CW+' p.149'},
+  {k:'calc',e:'7*7-24',a:25,src:CW+' p.149'},
+  {k:'calc',e:'[3*(9-4)]-10',a:5,src:CW+' p.150'},
+  {k:'calc',e:'5*[12/(4+2)]',a:10,src:CW+' p.150'},
+  {k:'calc',e:'(3+6)*2',a:18,src:CW+' p.150'},
+  {k:'calc',e:'6^2/9+5',a:9,src:CW+' p.150'},
+  {k:'calc',e:'4^3+2*5',a:74,src:CW+' p.151'},
+  {k:'calc',e:'(2^5+3)/(2^3-1)',a:5,src:CW+' p.151'},
+  {k:'calc',e:'[5^2*(6^2/9)]-24',a:76,src:CW+' p.151'},
+  {k:'calc',e:'4^2+(15-7)*2',a:32,src:CW+' p.151'},
+ ],
+ eval:[
+  {k:'calc',e:'7k-15',v:{k:6},a:27,src:CW+' p.134'},
+  {k:'calc',e:'6/(8x-3)',v:{x:0.5},a:6,src:CW+' p.134'},
+  {k:'calc',e:'5h^2(6-4)',v:{h:3},a:90,src:CW+' p.135'},
+  {k:'calc',e:'9+(p^2-3)/2',v:{p:5},a:20,src:CW+' p.135'},
+  {k:'calc',e:'4(h+8)',v:{h:1},a:36,src:CW+' p.139'},
+  {k:'calc',e:'34+b(4^2/2)',v:{b:6},a:82,src:CW+' p.140'},
+  {k:'calc',e:'9+3(m^2+2)',v:{m:5},a:90,src:CW+' p.140'},
+  {k:'calc',e:'n^2/2+5',v:{n:4},a:13,src:CW+' p.140'},
+  {k:'calc',e:'6x+15',v:{x:3},a:33,src:CW+' p.152'},
+  {k:'calc',e:'9z-15',v:{z:2.1},a:3.9,src:CW+' p.152'},
+  {k:'calc',e:'18/(9-2c)',v:{c:1.5},a:3,src:CW+' p.152'},
+  {k:'calc',e:'g^2-32/8',v:{g:5},a:21,src:CW+' p.153'},
+  {k:'calc',e:'8s-5',v:{s:4},a:27,src:WB+' p.26'},
+  {k:'calc',e:'2b+4',v:{b:4},a:12,src:WB+' p.26'},
+  {k:'calc',e:'c/4-3',v:{c:16},a:1,src:WB+' p.26'},
+  {k:'calc',e:'16/(10x-3)',v:{x:0.5},a:8,src:MIN+' p.28'},
+  {k:'calc',e:'8-5(m^3-7)',v:{m:2},a:3,src:MIN+' p.28'},
+  {k:'calc',e:'(z^2-4)/7',v:{z:5},a:3,src:MIN+' p.28'},
+  {k:'calc',e:'5x-3x+1',v:{x:2},a:5,src:MIN+' p.27'},
+  {k:'calc',e:'8z+3z+9',v:{z:1},a:20,src:MIN+' p.27'},
+  {k:'calc',e:'10y-2*2',v:{y:0.5},a:1,src:MIN+' p.27'},
+  {k:'calc',e:'5d-2d+3',v:{d:3},a:12,src:MIN+' p.27'},
+  {k:'calc',e:'(t^2-4)/6',v:{t:4},a:2,src:MIN+' p.29'},
+  {k:'calc',e:'(a^3-7)/5',v:{a:3},a:4,src:MIN+' p.29'},
+  {k:'calc',e:'(13-y^2)+5',v:{y:2},a:14,src:MIN+' p.29'},
+  {k:'calc',e:'3+(x^2+3)/2',v:{x:3},a:9,src:MIN+' p.29'},
+  {k:'calc',e:'(t^2+5)/7',v:{t:4},a:3,src:MIN+' p.29'},
+  {k:'calc',e:'10m+2^2+4',v:{m:5},a:58,src:MIN+' p.29'},
+  {k:'calc',e:'20/(x^2-15)',v:{x:5},a:2,src:MIN+' p.29'},
+  {k:'calc',e:'20/(6x-1)',v:{x:0.5},a:10,src:MIN+' p.31'},
+  {k:'calc',e:'18-(4k+2)',v:{k:3},a:4,src:MIN+' p.31'},
+  {k:'calc',e:'(12+3x)/5',v:{x:1},a:3,src:MIN+' p.31'},
+  {k:'mcq',q:`To find the value of 2(<i>x</i> + 2), which operation do you do first?`,o:['Add inside the bracket','Multiply 2 by x','Multiply 2 by 2','Subtract'],c:0,why:'Brackets first: work out <i>x</i> + 2, then multiply by 2. When <i>x</i> = 2: 2(2 + 2) = 2 × 4 = 8.',src:MIN+' p.29'},
+ ],
+ stories:[
+  {k:'story',s:'You want to buy some T-shirts. Each T-shirt is 100 L.E. and you have a coupon for 40 L.E. off your entire purchase. Let <i>x</i> be the number of T-shirts.',o:['100x-40','40x-100','100+40x','100(x-40)'],ask:'What is the cost of 4 T-shirts?',v:{x:4},a:360,unit:'L.E.',src:CW+' p.136'},
+  {k:'story',s:'A taxi charges 15 L.E. as a base fare and 8 L.E. for each km. Let <i>k</i> be the number of km.',o:['15+8k','8+15k','15k+8k','(15+8)k'],ask:'What is the fare for 7 km?',v:{k:7},a:71,unit:'L.E.',src:CW+' p.136'},
+  {k:'story',s:'Nada has 25 L.E. in her money box. She saves 20 L.E. every day. Let <i>d</i> be the number of days.',o:['25+20d','20+25d','45d','25d-20'],ask:'How much money is in the box after 6 days?',v:{d:6},a:145,unit:'L.E.',src:CW+' p.141'},
+  {k:'story',s:'Shereen studies <i>k</i> hours a day for 5 days, then 6 hours on the sixth day.',o:['5k+6','6k+5','5+6k','11k'],ask:'If she studies 4 hours on each of the five days, how many hours in the 6 days?',v:{k:4},a:26,unit:'hours',src:CW+' p.153'},
+  {k:'story',s:'A factory worker gets 100 pounds a day, plus 30 pounds for every extra (overtime) hour. Let <i>y</i> be the overtime hours.',o:['100+30y','30+100y','130y','100y+30y'],ask:'How much does he get on a day with 3 overtime hours?',v:{y:3},a:190,unit:'pounds',src:CW+' p.154'},
+  {k:'story',s:'A taxi charges 25 L.E. as a base fare and 12 L.E. for each km. Let <i>k</i> be the number of km.',o:['25+12k','12+25k','37k','25k+12'],ask:'What is the fare for 5 km?',v:{k:5},a:85,unit:'L.E.',src:WB+' p.26'},
+  {k:'story',s:'Nahid buys <i>n</i> books. Each book costs 70 pounds and she has a coupon for 20 pounds off the whole purchase.',o:['70n-20','20n-70','70-20n','70n+20'],ask:'How much does she pay for 4 books?',v:{n:4},a:260,unit:'pounds',src:MIN+' p.27'},
+  {k:'story',s:'Fatma buys <i>n</i> notebooks at 15 pounds each, with a coupon for 10 pounds off the whole purchase.',o:['15n-10','10n-15','15n+10','25n'],ask:'How much does she pay for 5 notebooks?',v:{n:5},a:65,unit:'pounds',src:MIN+' p.27'},
+  {k:'story',s:'Hosam buys <i>n</i> pairs of shoes at 150 pounds each, with a coupon for 50 pounds off the whole purchase.',o:['150n-50','50n-150','150-50n','100n'],ask:'How much does he pay for 3 pairs?',v:{n:3},a:400,unit:'pounds',src:MIN+' p.29'},
+  {k:'story',s:'Rana buys <i>n</i> toys at 80 pounds each. The store takes 30 pounds off the total bill, however many toys she buys.',o:['80n-30','30n-80','80n+30','50n'],ask:'How much does she pay for 5 toys?',v:{n:5},a:370,unit:'pounds',src:MIN+' p.31'},
+  {k:'story',s:'Ali buys <i>n</i> books at 25 pounds each. The fair takes 15 pounds off the total.',o:['25n-15','15n-25','25n+15','10n'],ask:'How much does he pay for 7 books?',v:{n:7},a:160,unit:'pounds',src:MIN+' p.31'},
+  {k:'story',s:'Omar already has 20 stamps and buys 5 new stamps every week. Let <i>w</i> be the number of weeks.',o:['20+5w','5+20w','25w','20w-5'],ask:'How many stamps after 6 weeks?',v:{w:6},a:50,unit:'stamps',src:MIN+' p.31'},
+  {k:'mcq',q:'A shirt costs <i>p</i> pounds and trousers cost <i>q</i> pounds. Ahmed buys 3 shirts and 2 trousers. The total cost is',o:['3p + 2q','5pq','3q + 2p','(3 + 2)(p + q)'],c:0,why:'3 shirts cost 3 × <i>p</i> = 3<i>p</i>. 2 trousers cost 2<i>q</i>. Add them: 3<i>p</i> + 2<i>q</i>.',src:MIN+' p.31'},
+  {k:'mcq',q:'A bike costs <i>R</i> pounds per hour and a helmet costs <i>H</i> pounds. Sara rents a bike for 4 hours and a helmet. The cost is',o:['4R + H','4(R + H)','4H + R','R + H + 4'],c:0,why:'The bike is paid every hour (4<i>R</i>), the helmet only once (<i>H</i>).',src:MIN+' p.31'},
+  {k:'mcq',q:'Laila buys <i>C</i> sweets at 3 pounds each and <i>M</i> biscuits at 3 pounds each. The cost is',o:['3C + 3M','3 + C + M','6CM','C + 3M'],c:0,why:'Each sweet costs 3, so <i>C</i> sweets cost 3<i>C</i>. The biscuits cost 3<i>M</i>. Total 3<i>C</i> + 3<i>M</i>, which is also 3(<i>C</i> + <i>M</i>).',src:MIN+' p.31'},
+ ],
+ equiv:[
+  {k:'equiv',a:'3+3x',b:'3(x+1)',src:CW+' p.145'},
+  {k:'equiv',a:'5x+5',b:'5(x+1)',src:CW+' p.145'},
+  {k:'equiv',a:'2x+3x+10',b:'5(x+2)',src:CW+' p.146'},
+  {k:'equiv',a:'8x-4',b:'4x+3+4x+1',src:CW+' p.146'},
+  {k:'equiv',a:'9(x+6)',b:'9x+6',src:CW+' p.146'},
+  {k:'equiv',a:'3(2x+1)',b:'6x+3',src:CW+' p.147'},
+  {k:'equiv',a:'4x+6',b:'3(x+2)',src:CW+' p.147'},
+  {k:'equiv',a:'2(x+1)',b:'2x+x',src:CW+' p.147'},
+  {k:'equiv',a:'5x+3',b:'3x+5',lab:'Five times x added to 3, and 3 times x increased by 5',src:CW+' p.148'},
+  {k:'equiv',a:'3(x+1)',b:'2x+x+3',src:CW+' p.144'},
+  {k:'equiv',a:'3(x+2)',b:'3x+6',src:WB+' p.27'},
+  {k:'equiv',a:'2(x+3)',b:'2x+3',src:WB+' p.27'},
+  {k:'equiv',a:'3x+3',b:'3(3x+1)',src:MIN+' p.30'},
+  {k:'equiv',a:'2(x+3)',b:'2x+6',src:MIN+' p.30'},
+  {k:'equiv',a:'6x+2',b:'2(3x+1)',src:MIN+' p.30'},
+  {k:'equiv',a:'5x+2',b:'2+5x',src:MIN+' p.30'},
+  {k:'equiv',a:'3r+3',b:'3(r+1)',src:MIN+' p.30'},
+  {k:'equiv',a:'2(x-3)+4x',b:'6x-6',src:MIN+' p.31'},
+  {k:'equiv',a:'3(a+2)',b:'2a+6',src:MIN+' p.31'},
+  {k:'equiv',a:'7(b+1)',b:'4b+7',src:MIN+' p.31'},
+  {k:'equiv',a:'3x+1',b:'2x+5',src:CW+' p.143'},
+  {k:'mcq',q:'Which expression is equivalent to 3(<i>x</i> + 5)?',o:['2x + 5','3x + 15','2x + 15','3x + 5'],c:1,why:'The 3 multiplies both parts: 3 × <i>x</i> + 3 × 5 = 3<i>x</i> + 15.',src:MIN+' p.31',math:1},
+  {k:'mcq',q:'Which expression is equivalent to 2(<i>y</i> + 4)?',o:['2y + 4','y + 8','2y + 8','y + 4 + 2'],c:2,why:'2 × <i>y</i> + 2 × 4 = 2<i>y</i> + 8.',src:MIN+' p.31',math:1},
+  {k:'mcq',q:'Which expression is equivalent to 5(<i>z</i> − 2)?',o:['5z - 2','z - 10','5z - 10','5z + 10'],c:2,why:'5 × <i>z</i> − 5 × 2 = 5<i>z</i> − 10.',src:MIN+' p.31',math:1},
+  {k:'calc',e:'x+5+3(2x+1)-5x-7',v:{x:10},a:21,q:'(2<i>x</i> + 1) and [<i>x</i> + 5 + 3(2<i>x</i> + 1) − 5<i>x</i> − 7] are equivalent. Find the value of the second one at <i>x</i> = 10 in the fewest steps.',tip:'Shortcut: they are equivalent, so just work out the short one: 2 × 10 + 1 = 21.',src:CW+' p.144'},
+  {k:'calc',e:'n(n+1+n+1)',v:{n:1},a:4,q:'4<i>n</i> + 2<i>n</i>(<i>n</i> − 1) and <i>n</i>(<i>n</i> + 1 + <i>n</i> + 1) are equivalent. Find the value of the second one at <i>n</i> = 1 in the fewest steps.',tip:'Shortcut: work out the first one instead: 4 × 1 + 2 × 1 × 0 = 4.',src:WB+' p.27'},
+ ],
+ solve:[
+  {k:'eqn',e:'3+k=13',v:'k',a:10,how:'What number added to 3 gives 13? Inverse: <i>k</i> = 13 − 3 = 10.',src:CW+' p.157'},
+  {k:'eqn',e:'4n=28',v:'n',a:7,how:'4 times what is 28? Inverse of × is ÷: <i>n</i> = 28 ÷ 4 = 7.',src:CW+' p.158'},
+  {k:'eqn',e:'z-6=6',v:'z',a:12,how:'Inverse of − is +: <i>z</i> = 6 + 6 = 12.',src:CW+' p.158'},
+  {k:'eqn',e:'v/5=7',v:'v',a:35,how:'Inverse of ÷ is ×: <i>v</i> = 7 × 5 = 35.',src:CW+' p.158'},
+  {k:'eqn',e:'a/8=3',v:'a',a:24,show:'<i>a</i> ⁄ 8 = 3',how:'<i>a</i> over 8 means <i>a</i> ÷ 8. Inverse: <i>a</i> = 3 × 8 = 24.',src:CW+' p.158'},
+  {k:'eqn',e:'3+9=5+h',v:'h',a:7,how:'First tidy the left side: 3 + 9 = 12. So 12 = 5 + <i>h</i>, and <i>h</i> = 12 − 5 = 7.',src:CW+' p.159'},
+  {k:'eqn',e:'36c=36',v:'c',a:1,how:'36 times what is 36? <i>c</i> = 36 ÷ 36 = 1.',src:CW+' p.159'},
+  {k:'eqn',e:'3p-5=7',v:'p',a:4,how:'Two steps. Undo the − 5 first: 3<i>p</i> = 7 + 5 = 12. Then undo the × 3: <i>p</i> = 12 ÷ 3 = 4.',src:CW+' p.159 (challenge)'},
+  {k:'eqn',e:'x+4=9',v:'x',a:5,how:'<i>x</i> = 9 − 4 = 5.',src:CW+' p.160'},
+  {k:'eqn',e:'3z=9',v:'z',a:3,how:'<i>z</i> = 9 ÷ 3 = 3.',src:CW+' p.160'},
+  {k:'eqn',e:'13-b=4',v:'b',a:9,how:'13 take away what leaves 4? <i>b</i> = 13 − 4 = 9. (Careful: here you subtract, you do not add.)',src:CW+' p.160'},
+  {k:'eqn',e:'2+8=5+y',v:'y',a:5,how:'2 + 8 = 10, so 10 = 5 + <i>y</i>, and <i>y</i> = 10 − 5 = 5.',src:CW+' p.160'},
+  {k:'eqn',e:'x/7=6',v:'x',a:42,show:'<i>x</i> ⁄ 7 = 6',how:'<i>x</i> = 6 × 7 = 42.',src:CW+' p.161'},
+  {k:'eqn',e:'m+5=12',v:'m',a:7,how:'<i>m</i> = 12 − 5 = 7.',src:MIN+' p.32'},
+  {k:'eqn',e:'A+6=10',v:'A',a:4,how:'<i>A</i> = 10 − 6 = 4.',src:MIN+' p.32'},
+  {k:'eqn',e:'N-7=5',v:'N',a:12,how:'<i>N</i> = 5 + 7 = 12.',src:MIN+' p.32'},
+  {k:'eqn',e:'x+85=120',v:'x',a:35,how:'<i>x</i> = 120 − 85 = 35.',src:MIN+' p.32'},
+  {k:'eqn',e:'5a=15',v:'a',a:3,how:'<i>a</i> = 15 ÷ 5 = 3.',src:MIN+' p.32'},
+  {k:'eqn',e:'x+1=8',v:'x',a:7,how:'<i>x</i> = 8 − 1 = 7.',src:MIN+' p.32'},
+ ],
+ words:[
+  {e:'x+3=9'},{e:'x+7=20'},{e:'x-5=1'},{e:'x-15=0'},{e:'x-50=40'},{e:'x+9=9'},
+  {e:'x-22=28'},{e:'5+x=8'},{e:'7-x=0'},{e:'10-x=3'},{e:'x+11=17'},{e:'1+x=1'}
+ ],
+};
+/* turn x+3=9 style equations into sentences, with three wrong sentences */
+function sentence(e){
+  let m;
+  if(m=e.match(/^x\+(\d+)=(\d+)$/))return{ok:`A number increased by ${m[1]} equals ${m[2]}.`,bad:[`A number decreased by ${m[1]} equals ${m[2]}.`,`${m[1]} times a number equals ${m[2]}.`,`A number divided by ${m[1]} equals ${m[2]}.`],sol:+m[2]-m[1],how:`${m[2]} − ${m[1]} = ${m[2]-m[1]}`};
+  if(m=e.match(/^x-(\d+)=(\d+)$/))return{ok:`A number decreased by ${m[1]} equals ${m[2]}.`,bad:[`A number increased by ${m[1]} equals ${m[2]}.`,`${m[1]} minus a number equals ${m[2]}.`,`${m[1]} times a number equals ${m[2]}.`],sol:+m[2]+(+m[1]),how:`${m[2]} + ${m[1]} = ${+m[2]+(+m[1])}`};
+  if(m=e.match(/^(\d+)\+x=(\d+)$/))return{ok:`${m[1]} added to a number equals ${m[2]}.`,bad:[`${m[1]} minus a number equals ${m[2]}.`,`${m[1]} times a number equals ${m[2]}.`,`A number decreased by ${m[1]} equals ${m[2]}.`],sol:m[2]-m[1],how:`${m[2]} − ${m[1]} = ${m[2]-m[1]}`};
+  if(m=e.match(/^(\d+)-x=(\d+)$/))return{ok:`A number subtracted from ${m[1]} equals ${m[2]}.`,bad:[`${m[1]} subtracted from a number equals ${m[2]}.`,`A number added to ${m[1]} equals ${m[2]}.`,`${m[1]} times a number equals ${m[2]}.`],sol:m[1]-m[2],how:`${m[1]} − ${m[2]} = ${m[1]-m[2]}`};
+  throw Error('no sentence for '+e)}
+
+/* self-check every stored answer against the engine */
+function selfCheck(){
+  const bad=[];
+  const all=[...BANK.powers,...BANK.order,...BANK.assess,...BANK.eval,...BANK.equiv];
+  for(const q of all)if(q.k==='calc'){const v=E.val(q.e,q.v);if(Math.abs(v-q.a)>1e-9)bad.push(q.e+' got '+v+' want '+q.a)}
+  for(const q of BANK.stories)if(q.k==='story'){const v=E.val(q.o[0],q.v);if(Math.abs(v-q.a)>1e-9)bad.push(q.o[0]+' got '+v)}
+  for(const q of BANK.solve){const [l,r]=q.e.split('=');const vv={[q.v]:q.a};if(Math.abs(E.val(l,vv)-E.val(r,vv))>1e-9)bad.push('eqn '+q.e)}
+  for(const q of BANK.words){const s=sentence(q.e);const [l,r]=q.e.split('=');if(E.val(l,{x:s.sol})!==E.val(r,{x:s.sol}))bad.push('words '+q.e)}
+  return bad}
+</script>
+
+<script>
+document.documentElement.lang='en';
+/* ---------- progress (device only) ---------- */
+const KEY='murad-algebra-quest-v1';
+let PROG={done:{},best:null};
+try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s&&s.done)PROG=s}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(PROG))}catch(e){}};
+const $=s=>document.querySelector(s);
+const el=(tag,cls,html)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(html!=null)n.innerHTML=html;return n};
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const parseAns=s=>{s=String(s).trim().replace(/[−–]/g,'-').replace(/,/g,'.').replace(/\s+/g,'');if(!/^-?(\d+\.?\d*|\.\d+)$/.test(s))return NaN;return parseFloat(s)};
+const vtext=v=>Object.entries(v).map(([k,x])=>`<i>${k}</i> = ${E.fmt(x)}`).join(', ');
+
+function stepsHTML(res){
+  const lv={sub:'c-sub',br:'c-br',ex:'c-ex',md:'c-md',as:'c-as'};
+  let h=res.steps.map(s=>`<li><span class="chip ${lv[s.lvl]}">${s.rule}</span>${E.html(s.ts)}<span class="why">${s.why||''}${s.calc?' <b>'+s.calc+'</b>':''}</span></li>`).join('');
+  h+=`<li class="final"><span class="chip c-as">Answer</span><span class="m">${E.fmt(res.value)}</span></li>`;
+  return h}
+
+/* ---------- item renderers: each returns {node, grade(), reveal()} ---------- */
+function renderItem(q,n,mode){
+  const test=mode==='test';
+  const box=el('div','q');if(q.id&&PROG.done[q.id]&&!test)box.classList.add('done');
+  const head=el('div','qt');head.appendChild(el('span','qn',n+'.'));const body=el('div','qbody');head.appendChild(body);box.appendChild(head);
+  const fb=el('div','fb');
+  const mark=()=>{if(!test&&q.id){PROG.done[q.id]=1;save();box.classList.add('done');updateNav()}};
+  let api={node:box,grade:()=>false,reveal:()=>{}};
+
+  if(q.k==='calc'){
+    let prompt;
+    if(q.q)prompt=`<div>${q.q}</div>`+(q.q.includes('<i>')||/[⁄=]$/.test(q.q)?'':'');
+    else if(q.v)prompt=`<div>Find the value of ${E.show(q.e)} when ${vtext(q.v)}</div>`;
+    else prompt=`<div>Simplify ${E.show(q.e)}</div>`;
+    body.innerHTML=prompt+(q.src?`<span class="src">${q.src}</span>`:'');
+    const row=el('div','row');const inp=el('input','ans');inp.id='in-'+(mode||'p')+'-'+(q.id||Math.random().toString(36).slice(2));inp.inputMode='decimal';inp.autocomplete='off';inp.setAttribute('aria-label','Your answer');
+    row.appendChild(inp);
+    const st=el('ol','steps');st.hidden=true;
+    const showSteps=()=>{st.innerHTML=(q.tip?`<li><span class="chip c-sub">Shortcut</span><span>${q.tip}</span></li>`:'')+stepsHTML(E.solve(q.e,q.v));st.hidden=false};
+    const ok=()=>Math.abs(parseAns(inp.value)-q.a)<1e-6;
+    if(!test){
+      const cb=el('button','btn','Check');const sb=el('button','btn ghost','Show working');let tries=0;
+      const go=()=>{if(inp.value.trim()===''){fb.className='fb info';fb.textContent='Type your answer first.';return}
+        if(isNaN(parseAns(inp.value))){fb.className='fb info';fb.textContent='Type just a number, like 27 or 3.9.';return}
+        if(ok()){fb.className='fb ok';fb.innerHTML='Correct! '+E.fmt(q.a);mark()}
+        else{tries++;const first=E.solve(q.e,q.v).steps[0];fb.className='fb no';
+          fb.innerHTML=tries===1?`Not yet. Hint: start with <b>${first.rule.toLowerCase()}</b>.${q.tip?' '+q.tip:''}`:'Still not right. Press <b>Show working</b> to see every step.'}};
+      cb.onclick=go;inp.onkeydown=e=>{if(e.key==='Enter')go()};sb.onclick=()=>{st.hidden?showSteps():st.hidden=true};
+      row.append(cb,sb)}
+    box.append(row,fb,st);
+    api.grade=ok;api.reveal=()=>{const r=ok();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`Your answer: ${inp.value||'blank'}. Right answer: <b>${E.fmt(q.a)}</b>`;showSteps();inp.disabled=true};
+  }
+
+  else if(q.k==='mcq'){
+    body.innerHTML=`<div>${q.q}</div>`+(q.src?`<span class="src">${q.src}</span>`:'');
+    const opts=el('div','opts');let picked=-1;
+    const order=shuffle(q.o.map((t,i)=>i));
+    const btns=order.map(i=>{const b=el('button','opt',q.math?E.show(q.o[i]):q.o[i]);b.dataset.i=i;opts.appendChild(b);return b});
+    const lock=()=>btns.forEach(b=>{b.disabled=true;const i=+b.dataset.i;if(i===q.c)b.classList.add('right');else if(i===picked)b.classList.add('wrong')});
+    btns.forEach(b=>b.onclick=()=>{picked=+b.dataset.i;
+      if(test){btns.forEach(x=>x.classList.toggle('sel',x===b));return}
+      lock();const r=picked===q.c;fb.className='fb '+(r?'ok':'no');fb.innerHTML=(r?'Correct! ':'Not this one. ')+q.why;if(r)mark()});
+    box.append(opts,fb);
+    api.grade=()=>picked===q.c;api.reveal=()=>{lock();const r=picked===q.c;fb.className='fb '+(r?'ok':'no');fb.innerHTML=(r?'Correct! ':(picked<0?'No answer chosen. ':'Wrong. '))+q.why};
+  }
+
+  else if(q.k==='story'){
+    const vn=Object.keys(q.v)[0];
+    body.innerHTML=`<div>${q.s}</div>`+(q.src?`<span class="src">${q.src}</span>`:'');
+    box.appendChild(el('div','',`<b>a)</b> Which expression shows the total?`));
+    const opts=el('div','opts');let picked=-1;
+    const order=shuffle(q.o.map((t,i)=>i));
+    const btns=order.map(i=>{const b=el('button','opt',E.show(q.o[i]));b.dataset.i=i;opts.appendChild(b);return b});
+    const fa=el('div','fb');
+    const partB=el('div','row');partB.innerHTML=`<span><b>b)</b> ${q.ask}</span>`;
+    const inp=el('input','ans');inp.id='in-'+(mode||'p')+'-'+(q.id||Math.random().toString(36).slice(2));inp.inputMode='decimal';inp.autocomplete='off';inp.setAttribute('aria-label','Your answer');
+    partB.appendChild(inp);partB.appendChild(el('span','muted',q.unit));
+    const st=el('ol','steps');st.hidden=true;
+    const lock=()=>btns.forEach(b=>{b.disabled=true;const i=+b.dataset.i;if(i===0)b.classList.add('right');else if(i===picked)b.classList.add('wrong')});
+    const okB=()=>Math.abs(parseAns(inp.value)-q.a)<1e-6;
+    const showSteps=()=>{st.innerHTML=stepsHTML(E.solve(q.o[0],q.v));st.hidden=false};
+    btns.forEach(b=>b.onclick=()=>{picked=+b.dataset.i;
+      if(test){btns.forEach(x=>x.classList.toggle('sel',x===b));return}
+      lock();if(picked===0&&okB())mark();fa.className='fb '+(picked===0?'ok':'no');fa.innerHTML=(picked===0?'Correct! ':'Not quite. The right one is ')+E.show(q.o[0])+(picked===0?'':'.')});
+    box.append(opts,fa,partB);
+    if(!test){const cb=el('button','btn','Check');const sb=el('button','btn ghost','Show working');partB.append(cb,sb);
+      const go=()=>{if(isNaN(parseAns(inp.value))){fb.className='fb info';fb.textContent='Type just a number.';return}
+        if(okB()){fb.className='fb ok';fb.innerHTML=`Correct! ${E.fmt(q.a)} ${q.unit}`;if(picked===0)mark();else if(picked<0){fb.innerHTML+=' Now choose the expression in part a too.'}}
+        else{fb.className='fb no';fb.innerHTML=`Not yet. Put <i>${vn}</i> = ${E.fmt(q.v[vn])} into ${E.show(q.o[0])}.`}};
+      cb.onclick=go;inp.onkeydown=e=>{if(e.key==='Enter')go()};sb.onclick=()=>{st.hidden?showSteps():st.hidden=true}}
+    box.append(fb,st);
+    api.grade=()=>picked===0&&okB();api.reveal=()=>{lock();const r=picked===0&&okB();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`Expression: ${E.show(q.o[0])}. Answer: <b>${E.fmt(q.a)} ${q.unit}</b>`;showSteps();inp.disabled=true};
+  }
+
+  else if(q.k==='equiv'){
+    const isEq=[1,2,3,4,5,7].every(x=>Math.abs(E.val(q.a,{[E.vars(E.tok(q.a))[0]]:x})-E.val(q.b,{[E.vars(E.tok(q.b))[0]]:x}))<1e-9);
+    const vn=E.vars(E.tok(q.a))[0];
+    body.innerHTML=(q.lab?`<div>${q.lab}:</div>`:'')+`<div>Are ${E.show(q.a)} and ${E.show(q.b)} equivalent?</div>`+(q.src?`<span class="src">${q.src}</span>`:'');
+    const opts=el('div','opts');const yes=el('button','opt','Yes, equivalent');const no=el('button','opt','No, not equivalent');opts.append(yes,no);
+    let picked=null;
+    const table=()=>{const xs=[1,2,3];let rows=xs.map(x=>{const A=E.val(q.a,{[vn]:x}),B=E.val(q.b,{[vn]:x});return`<tr><td><i>${vn}</i> = ${x}</td><td>${E.fmt(A)}</td><td>${E.fmt(B)}</td><td class="${A===B?'same':'diff'}">${A===B?'same':'different'}</td></tr>`}).join('');
+      return `<div class="tablebox"><table class="vals"><tr><th></th><th>${E.show(q.a)}</th><th>${E.show(q.b)}</th><th>Result</th></tr>${rows}</table></div>`};
+    const explain=()=>isEq?'They give the same value every time, so they are <b>equivalent</b>.':'At least one value gives different answers, so they are <b>not equivalent</b>.'+(q.a==='3x+1'?' Notice they are equal at <i>x</i> = 4, which is the trap.':'');
+    const lock=()=>{[yes,no].forEach(b=>b.disabled=true);(isEq?yes:no).classList.add('right');if(picked!==null&&picked!==isEq)(picked?yes:no).classList.add('wrong')};
+    const pick=v=>{picked=v;if(test){yes.classList.toggle('sel',v);no.classList.toggle('sel',!v);return}
+      lock();const r=v===isEq;fb.className='fb '+(r?'ok':'no');fb.innerHTML=(r?'Correct! ':'Not quite. ')+explain()+table();if(r)mark()};
+    yes.onclick=()=>pick(true);no.onclick=()=>pick(false);
+    box.append(opts,fb);
+    api.grade=()=>picked===isEq;api.reveal=()=>{lock();const r=picked===isEq;fb.className='fb '+(r?'ok':'no');fb.innerHTML=(r?'Correct! ':'Wrong. ')+explain()+table()};
+  }
+
+  else if(q.k==='eqn'){
+    const [l,r]=q.e.split('=');
+    const shown=q.show||(E.show(l)+' = '+E.show(r));
+    body.innerHTML=`<div>Solve <span class="m">${shown}</span></div>`+(q.src?`<span class="src">${q.src}</span>`:'');
+    const row=el('div','row');row.innerHTML=`<span class="m"><i>${q.v}</i> =</span>`;
+    const inp=el('input','ans');inp.id='in-'+(mode||'p')+'-'+(q.id||Math.random().toString(36).slice(2));inp.inputMode='decimal';inp.autocomplete='off';inp.setAttribute('aria-label','Value of '+q.v);row.appendChild(inp);
+    const how=el('div','fb info');how.hidden=true;
+    const check=x=>{const vv={[q.v]:x};const L=E.val(l,vv),R=E.val(r,vv);return `Check: ${E.html(E.subst(E.tok(l),vv))} = ${E.fmt(L)} and the other side is ${E.fmt(R)} ${L===R?'✓':'✗'}`};
+    const showHow=()=>{how.innerHTML=q.how+'<br>'+check(q.a);how.hidden=false};
+    const ok=()=>Math.abs(parseAns(inp.value)-q.a)<1e-6;
+    if(!test){const cb=el('button','btn','Check');const sb=el('button','btn ghost','Show how');row.append(cb,sb);
+      const go=()=>{const x=parseAns(inp.value);if(isNaN(x)){fb.className='fb info';fb.textContent='Type just a number.';return}
+        if(ok()){fb.className='fb ok';fb.innerHTML='Correct! '+check(x);mark()}
+        else{fb.className='fb no';fb.innerHTML='Not yet. '+check(x)+' The two sides must be equal.'}};
+      cb.onclick=go;inp.onkeydown=e=>{if(e.key==='Enter')go()};sb.onclick=()=>{how.hidden?showHow():how.hidden=true}}
+    box.append(row,fb,how);
+    api.grade=ok;api.reveal=()=>{const r=ok();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`Your answer: ${inp.value||'blank'}. Right answer: <i>${q.v}</i> = <b>${q.a}</b>`;showHow();inp.disabled=true};
+  }
+
+  else if(q.k==='words'){
+    const s=sentence(q.e);const [l,r]=q.e.split('=');
+    body.innerHTML=`<div>Which sentence matches <span class="m">${E.show(l)} = ${E.show(r)}</span>?</div><span class="src">${WB} pp.28–29</span>`;
+    const all=[s.ok,...s.bad];const opts=el('div','opts');let picked=-1;
+    const btns=shuffle(all.map((t,i)=>i)).map(i=>{const b=el('button','opt',all[i]);b.dataset.i=i;b.style.fontWeight='400';opts.appendChild(b);return b});
+    const lock=()=>btns.forEach(b=>{b.disabled=true;const i=+b.dataset.i;if(i===0)b.classList.add('right');else if(i===picked)b.classList.add('wrong')});
+    const extra=`Solving it: <i>x</i> = ${s.how}.`;
+    btns.forEach(b=>b.onclick=()=>{picked=+b.dataset.i;if(test){btns.forEach(x=>x.classList.toggle('sel',x===b));return}
+      lock();fb.className='fb '+(picked===0?'ok':'no');fb.innerHTML=(picked===0?'Correct! ':'Not this one. ')+extra;if(picked===0)mark()});
+    box.append(opts,fb);
+    api.grade=()=>picked===0;api.reveal=()=>{lock();fb.className='fb '+(picked===0?'ok':'no');fb.innerHTML=(picked===0?'Correct! ':'Right sentence: '+s.ok+' ')+extra};
+  }
+  return api;
+}
+
+/* give stable ids + build practice lists */
+for(const [k,list] of Object.entries(BANK))list.forEach((q,i)=>{q.id=k+'-'+i;if(k==='words')q.k='words'});
+const SECTIONS=[
+  {id:'powers',label:'Exponents',lists:[['p-powers','Practice: exponents',BANK.powers],['p-order','Practice: order of operations',[...BANK.order,...BANK.assess]]]},
+  {id:'evaluate',label:'Evaluating',lists:[['p-eval','Practice: evaluate the expression',BANK.eval]]},
+  {id:'stories',label:'Word problems',lists:[['p-stories','Practice: word problems',BANK.stories]]},
+  {id:'equivalent',label:'Equivalent',lists:[['p-equiv','Practice: equivalent or not?',BANK.equiv]]},
+  {id:'equations',label:'Equations',lists:[['p-solve','Practice: solve the equation',BANK.solve],['p-words','Practice: equations in words',BANK.words]]},
+];
+const PAGE=8;
+function buildPractice(hostId,title,items){
+  const host=document.getElementById(hostId);host.innerHTML='';
+  const head=el('div','practice-head');head.innerHTML=`<h3>${title}</h3><span class="muted num" data-count></span>`;host.appendChild(head);
+  const list=el('div','practice');host.appendChild(list);
+  let shown=0;
+  const more=el('button','btn ghost');
+  const add=()=>{items.slice(shown,shown+PAGE).forEach((q,i)=>list.appendChild(renderItem(q,shown+i+1,'p').node));shown=Math.min(items.length,shown+PAGE);
+    more.hidden=shown>=items.length;more.textContent=`Show ${Math.min(PAGE,items.length-shown)} more (${items.length-shown} left)`};
+  more.onclick=add;host.appendChild(more);add();
+  const upd=()=>{head.querySelector('[data-count]').textContent=`${items.filter(q=>PROG.done[q.id]).length} of ${items.length} done`};
+  upd();host._upd=upd;
+}
+function updateNav(){
+  const nav=$('#navlinks');nav.innerHTML='';
+  for(const s of SECTIONS){const items=s.lists.flatMap(l=>l[2]);const d=items.filter(q=>PROG.done[q.id]).length;
+    const a=el('a',d===items.length?'full':'',`${s.label} <span class="cnt">${d}/${items.length}</span>`);a.href='#'+s.id;nav.appendChild(a);
+    s.lists.forEach(l=>{const h=document.getElementById(l[0]);h&&h._upd&&h._upd()})}
+  const t=el('a','',`Mock quiz <span class="cnt">${PROG.best!=null?'best '+PROG.best+'/20':''}</span>`);t.href='#test';nav.appendChild(t);
+}
+
+/* ---------- Lab: power builder ---------- */
+(function(){
+  const b=$('#pb-base'),x=$('#pb-exp');
+  const words=(B,N)=>N===1?`${B} to the power of 1, which is just ${B}`:N===2?`${B} squared, or the square of ${B}`:N===3?`${B} cubed, or the cube of ${B}`:`${B} to the power of ${N}`;
+  function draw(){const B=+b.value,N=+x.value;$('#pb-bv').textContent=B;$('#pb-ev').textContent=N;
+    $('#pb-exf').innerHTML=`${B}${E.sup(N)}`;$('#pb-xp').textContent=Array(N).fill(B).join(' × ');
+    $('#pb-val').textContent=Math.pow(B,N).toLocaleString('en');$('#pb-say').textContent=words(B,N);
+    const d=$('#pb-dots');d.innerHTML='';
+    if(N<=3&&Math.pow(B,N)<=300){
+      const layers=N===3?B:1,rows=N>=2?B:1,cols=B;
+      for(let l=0;l<layers;l++){const sq=el('div','sq');sq.style.gridTemplateColumns=`repeat(${cols},12px)`;for(let i=0;i<rows*cols;i++)sq.appendChild(el('b'));d.appendChild(sq)}
+      d.appendChild(el('span','muted',N===1?`${B} dots in a row`:N===2?`a ${B} by ${B} square: ${B*B} dots`:`${B} squares of ${B} × ${B}: ${B*B*B} dots`));
+    }else d.appendChild(el('span','muted',`${Math.pow(B,N).toLocaleString('en')} dots is too many to draw. Powers grow fast!`));}
+  b.oninput=x.oninput=draw;draw();
+})();
+
+/* ---------- Lab: step-by-step machine ---------- */
+(function(){
+  const pick=$('#oo-pick'),own=$('#oo-own'),show=$('#oo-show'),list=$('#oo-steps');
+  const presets=[...BANK.order,...BANK.assess].filter(q=>q.k==='calc');
+  presets.forEach((q,i)=>{const o=el('option');o.value=i;o.textContent=q.e.replace(/\*/g,' × ').replace(/\//g,' ÷ ').replace(/-/g,' − ').replace(/\+/g,' + ').replace(/\^2/g,'²').replace(/\^3/g,'³').replace(/\^5/g,'⁵')+'   ('+q.src+')';pick.appendChild(o)});
+  let res=null,at=0;
+  function load(src){list.innerHTML='';at=0;
+    try{res=E.solve(src);show.innerHTML=E.show(src);$('#oo-next').disabled=false;$('#oo-all').disabled=false}
+    catch(e){res=null;show.innerHTML=`<span class="muted" style="font-size:1rem">Check your expression: ${e.message}.</span>`;$('#oo-next').disabled=true;$('#oo-all').disabled=true}}
+  function next(){if(!res)return;if(at<res.steps.length){const s=res.steps[at++];const lv={br:'c-br',ex:'c-ex',md:'c-md',as:'c-as'}[s.lvl];
+      const li=el('li','',`<span class="chip ${lv}">${s.rule}</span>${E.html(s.ts)}<span class="why">${s.why}${s.calc?' <b>'+s.calc+'</b>':''}</span>`);list.appendChild(li);
+      if(at===res.steps.length){list.appendChild(el('li','final',`<span class="chip c-as">Answer</span><span class="m">${E.fmt(res.value)}</span>`));$('#oo-next').disabled=true}}}
+  pick.onchange=()=>{own.value='';load(presets[pick.value].e)};
+  own.oninput=()=>{if(own.value.trim())load(own.value);else load(presets[pick.value].e)};
+  $('#oo-next').onclick=next;$('#oo-all').onclick=()=>{while(res&&at<res.steps.length)next()};
+  $('#oo-reset').onclick=()=>load(own.value.trim()||presets[pick.value].e);
+  pick.value=3;load(presets[3].e);next();
+})();
+
+/* ---------- Where's the mistake (ministry p.26) ---------- */
+(function(){
+  $('#mk-expr').outerHTML=E.show('18/(6-3)^2+4*2');
+  const S=[
+    {n:'1st student',lines:['18 ÷ (6 − 3)² + 4 × 2','18 ÷ 3² + 4 × 2','18 ÷ 6 + 4 × 2','18 ÷ 6 + 8','3 + 8','= 11'],ok:false,why:'Wrong. They wrote 3² = 6, but 3² = 3 × 3 = 9. The exponent is not a multiplier.'},
+    {n:'2nd student',lines:['18 ÷ (6 − 3)² + 4 × 2','18 ÷ (3)² + 4 × 2','18 ÷ 9 + 4 × 2','2 + 8','10'],ok:true,why:'Correct! Brackets (6 − 3 = 3), then the exponent (3² = 9), then ÷ and × (18 ÷ 9 = 2, 4 × 2 = 8), then add: 10.'},
+    {n:'3rd student',lines:['18 ÷ (6 − 3)² + 4 × 2','18 ÷ 3² + 4 × 2','18 ÷ 9 + 4 × 2','2 + 4 × 2','6 × 2','= 12'],ok:false,why:'Wrong. They added 2 + 4 before multiplying. × comes before +, so 4 × 2 = 8 first, then 2 + 8 = 10.'},
+  ];
+  const host=$('#mk-students'),fb=$('#mk-fb');
+  S.forEach(s=>{const b=el('button','student',`<b>${s.n}</b>`+s.lines.map(l=>`<span class="m">${l.replace(/²/g,'<sup><span class="sr"> to the power of </span>2</sup>')}</span>`).join(''));
+    b.onclick=()=>{host.querySelectorAll('.student').forEach(x=>x.style.borderColor='');b.style.borderColor=s.ok?'var(--good)':'var(--bad)';fb.className='fb '+(s.ok?'ok':'no');fb.textContent=s.why};host.appendChild(b)});
+})();
+
+/* ---------- Lab: substitution machine ---------- */
+(function(){
+  const pick=$('#sb-pick'),rng=$('#sb-val');
+  const list=BANK.eval.filter(q=>q.k==='calc'&&Number.isInteger(Object.values(q.v)[0]));
+  list.forEach((q,i)=>{const o=el('option');o.value=i;o.textContent=q.e.replace(/\*/g,' × ').replace(/\//g,' ÷ ').replace(/-/g,' − ').replace(/\+/g,' + ').replace(/\^2/g,'²').replace(/\^3/g,'³');pick.appendChild(o)});
+  function draw(){const q=list[pick.value];const vn=Object.keys(q.v)[0];const x=+rng.value;$('#sb-vv').innerHTML=`<i>${vn}</i> = ${x}`;
+    $('#sb-show').innerHTML=`${E.show(q.e)} <span class="muted" style="font-size:.6em">when <i>${vn}</i> = ${x}</span>`;
+    try{const r=E.solve(q.e,{[vn]:x});$('#sb-steps').innerHTML=stepsHTML(r)}catch(e){$('#sb-steps').innerHTML=`<li><span class="chip c-br">Stop</span><span>${e.message}. Try another value.</span></li>`}}
+  pick.onchange=()=>{const q=list[pick.value];rng.value=Object.values(q.v)[0];draw()};rng.oninput=draw;
+  pick.value=0;rng.value=Object.values(list[0].v)[0];draw();
+})();
+
+/* ---------- Lab: equivalence tester ---------- */
+(function(){
+  const pick=$('#et-pick'),A=$('#et-a'),B=$('#et-b'),T=$('#et-table'),V=$('#et-verdict');
+  const pairs=BANK.equiv.filter(q=>q.k==='equiv');
+  pairs.forEach((q,i)=>{const o=el('option');o.value=i;o.textContent=(q.a+'   and   '+q.b).replace(/-/g,'−');pick.appendChild(o)});
+  function draw(){
+    let ta,tb;try{ta=E.tok(A.value);tb=E.tok(B.value)}catch(e){T.innerHTML='';V.className='fb info';V.textContent='Check your expressions: '+e.message+'.';return}
+    const vs=[...new Set([...E.vars(ta),...E.vars(tb)])];if(vs.length>1){T.innerHTML='';V.className='fb info';V.textContent='Use just one letter in both expressions.';return}
+    const vn=vs[0]||'x';const xs=[1,2,3,4,5];let diff=0,rows='';
+    for(const x of xs){let a,b;try{a=E.val(ta,{[vn]:x});b=E.val(tb,{[vn]:x})}catch(e){a=b=NaN}
+      const s=a===b;if(!s)diff++;rows+=`<tr><td><i>${vn}</i> = ${x}</td><td>${E.fmt(a)}</td><td>${E.fmt(b)}</td><td class="${s?'same':'diff'}">${s?'same':'different'}</td></tr>`}
+    T.innerHTML=`<tr><th>Try</th><th>${E.html(ta)}</th><th>${E.html(tb)}</th><th>Result</th></tr>`+rows;
+    V.className='fb '+(diff?'no':'ok');
+    V.innerHTML=diff?`Not equivalent: ${diff} of 5 values give different answers. One difference is already enough.`:'Same value every time. These look equivalent.'+(E.html(ta)!==E.html(tb)?' You can also see it by opening the brackets.':'')}
+  pick.onchange=()=>{const q=pairs[pick.value];A.value=q.a;B.value=q.b;draw()};A.oninput=B.oninput=draw;
+  pick.value=pairs.length-1;pick.onchange();
+})();
+
+/* ---------- Match game (ministry p.30) ---------- */
+(function(){
+  const pairs=[['4y+3','2(2y)+3'],['6(2y+3)','12y+18'],['5y-10','5(y-2)'],['4y-8','2(2y-4)']];
+  const host=$('#mg'),fb=$('#mg-fb');let sel=null,left=4;
+  function deal(){host.innerHTML='';sel=null;left=4;fb.className='fb';fb.textContent='';
+    shuffle(pairs.flatMap((p,i)=>p.map(e=>({e,i})))).forEach(c=>{const b=el('button','mcard',E.show(c.e));b.onclick=()=>{
+      if(b.classList.contains('gone'))return;
+      if(!sel){sel=b;b.classList.add('sel');b._c=c;return}
+      if(sel===b){b.classList.remove('sel');sel=null;return}
+      const a=sel._c;sel.classList.remove('sel');
+      if(a.i===c.i){sel.classList.add('gone');b.classList.add('gone');left--;
+        const vals=[1,2].map(x=>E.val(c.e,{y:x}));
+        fb.className='fb ok';fb.innerHTML=`Match! ${E.show(a.e)} and ${E.show(c.e)} both give ${vals[0]} at <i>y</i> = 1 and ${vals[1]} at <i>y</i> = 2.`+(left?'':' All four pairs found!')}
+      else{const x=1,va=E.val(a.e,{y:x}),vc=E.val(c.e,{y:x});fb.className='fb no';fb.innerHTML=`Not a pair. At <i>y</i> = 1: ${E.show(a.e)} = ${va} but ${E.show(c.e)} = ${vc}.`;[sel,b].forEach(z=>{z.classList.remove('shake');void z.offsetWidth;z.classList.add('shake')})}
+      sel=null};b._c=c;host.appendChild(b)})}
+  deal();
+})();
+
+/* ---------- Lab: balance ---------- */
+(function(){
+  const EQS=[{t:'add',a:1,b:8,label:'x + 1 = 8'},{t:'add',a:5,b:12,v:'m',label:'m + 5 = 12'},{t:'add',a:3,b:9,label:'x + 3 = 9'},{t:'add',a:6,b:10,v:'A',label:'A + 6 = 10'},{t:'mul',a:3,b:12,label:'3x = 12'},{t:'mul',a:5,b:15,v:'a',label:'5a = 15'},{t:'mul',a:2,b:10,label:'2x = 10'}];
+  const pick=$('#bl-pick'),L=$('#bl-left'),R=$('#bl-right'),beam=$('#bl-beam'),msg=$('#bl-msg'),g=$('#bl-guess'),act=$('#bl-act');
+  EQS.forEach((q,i)=>{const o=el('option');o.value=i;o.textContent=q.label;pick.appendChild(o)});
+  let q,cubesL,cubesR,bags,solved;
+  const v=()=>q.v||'x';
+  function reset(){q=EQS[pick.value];solved=false;cubesL=q.t==='add'?q.a:0;cubesR=q.b;bags=q.t==='mul'?q.a:1;g.value=1;render()}
+  function render(){
+    $('#bl-eq').innerHTML=solved?`<span class="m"><i>${v()}</i> = ${q.t==='add'?q.b-q.a:q.b/q.a}</span>`:
+      (q.t==='add'?(cubesL?`<span class="m"><i>${v()}</i> + ${cubesL} = ${cubesR}</span>`:`<span class="m"><i>${v()}</i> = ${cubesR}</span>`):`<span class="m">${bags}<i>${v()}</i> = ${cubesR}</span>`);
+    L.innerHTML='';R.innerHTML='';
+    const guess=+g.value;$('#bl-gv').textContent=guess;
+    for(let i=0;i<bags;i++)L.appendChild(el('div','bag',`<span>${v()}</span>`));
+    for(let i=0;i<cubesL;i++)L.appendChild(el('div','cube','1'));
+    for(let i=0;i<cubesR;i++)R.appendChild(el('div','cube','1'));
+    const left=bags*guess+cubesL,right=cubesR;const tilt=Math.max(-12,Math.min(12,(left-right)*1.5));
+    beam.style.transform=`rotate(${-tilt}deg)`;
+    const ans=q.t==='add'?q.b-q.a:q.b/q.a;
+    if(left===right)msg.innerHTML=`<span style="color:var(--good)">Balanced! With ${guess} in each bag both sides weigh ${right}. So <i>${v()}</i> = ${guess}.</span>`;
+    else msg.innerHTML=`If <i>${v()}</i> = ${guess}: left side ${left}, right side ${right}. ${left>right?'Left is heavier: try a smaller number.':'Right is heavier: try a bigger number.'}`;
+    if(q.t==='add'){act.textContent=cubesL?'Take 1 cube off both sides':'Done: the bag is alone';act.disabled=!cubesL}
+    else{act.textContent=solved?'Done: one bag left':`Share both sides into ${q.a} equal groups`;act.disabled=solved}
+    if(!solved&&q.t==='add'&&!cubesL){solved=true;render();msg.innerHTML+=`<br>The bag is alone on the left, so <i>${v()}</i> = ${cubesR}. That is the inverse operation: ${q.b} − ${q.a} = ${ans}.`}
+  }
+  act.onclick=()=>{
+    if(q.t==='add'&&cubesL){const lc=L.querySelectorAll('.cube'),rc=R.querySelectorAll('.cube');lc[lc.length-1].classList.add('leaving');rc[rc.length-1].classList.add('leaving');
+      setTimeout(()=>{cubesL--;cubesR--;render()},matchMedia('(prefers-reduced-motion:reduce)').matches?0:350)}
+    else if(q.t==='mul'&&!solved){bags=1;cubesR=q.b/q.a;solved=true;render();msg.innerHTML+=`<br>${q.b} cubes shared between ${q.a} bags is ${q.b/q.a} each. That is the inverse operation: ${q.b} ÷ ${q.a} = ${q.b/q.a}.`}};
+  g.oninput=render;pick.onchange=reset;$('#bl-reset').onclick=reset;
+  pick.value=0;reset();
+})();
+
+/* ---------- Mock quiz ---------- */
+(function(){
+  let items=[];
+  function make(){
+    const take=(arr,n)=>shuffle(arr).slice(0,n);
+    const pool=[
+      ...take(BANK.powers,3),
+      ...take(BANK.order,3),...take(BANK.assess,2),
+      ...take(BANK.eval.filter(q=>q.k==='calc'),4),
+      ...take(BANK.stories.filter(q=>q.k==='story'),2),...take(BANK.stories.filter(q=>q.k==='mcq'),1),
+      ...take(BANK.equiv.filter(q=>q.k==='equiv'),2),...take(BANK.equiv.filter(q=>q.k==='mcq'),1),
+      ...take(BANK.solve,1),...take(BANK.words,1)];
+    // 20 total: top up with equations
+    const extra=take(BANK.solve.filter(q=>!pool.includes(q)),20-pool.length);
+    const list=[...pool,...extra];
+    const host=$('#t-list');host.innerHTML='';$('#t-score').textContent='';$('#t-mark').disabled=false;
+    items=list.map((q,i)=>{const r=renderItem(q,i+1,'test');host.appendChild(r.node);return r});
+  }
+  $('#t-new').onclick=()=>{make();document.getElementById('test').scrollIntoView({behavior:'smooth'})};
+  $('#t-mark').onclick=()=>{let s=0;items.forEach(it=>{if(it.grade())s++;it.reveal()});
+    $('#t-score').textContent=`${s} / ${items.length}`+(s>=18?' · Excellent!':s>=14?' · Good, check the red ones':' · Revisit the stations for the red ones');
+    $('#t-mark').disabled=true;if(PROG.best==null||s>PROG.best){PROG.best=s;save()}updateBest();updateNav()};
+  function updateBest(){$('#t-best').textContent=PROG.best!=null?`Your best so far: ${PROG.best}/20`:''}
+  make();updateBest();
+})();
+
+SECTIONS.forEach(s=>s.lists.forEach(l=>buildPractice(...l)));
+updateNav();
+const bad=selfCheck();if(bad.length)console.error('Answer check failed:',bad);
+</script>
+<!-- READ-ALOUD v3: tap-to-read for every page (Arabic + English auto-detected) -->
+<style id="ra-css">
+#ra-bar{position:fixed;bottom:14px;inset-inline-end:14px;z-index:9999;display:flex;gap:6px;align-items:center;font-family:Nunito,Cairo,system-ui,sans-serif}
+#ra-bar button{border:0;border-radius:999px;padding:10px 14px;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 4px 14px #0003;background:#2563eb;color:#fff;font-size:15px}
+#ra-bar #ra-stop{background:#dc2626;display:none}
+#ra-bar #ra-speed{background:#fff;color:#1e3a8a;padding:10px 12px}
+body.ra-on #ra-toggle{background:#16a34a;animation:ra-pulse 1.6s infinite}
+body.ra-on main *:hover,body.ra-on .ra-zone *:hover{outline:2px dashed #16a34a;outline-offset:2px;cursor:help}
+.ra-reading{background:#fef08a!important;outline:3px solid #eab308!important;border-radius:6px}
+@keyframes ra-pulse{50%{box-shadow:0 0 0 8px #16a34a33}}
+@media print{#ra-bar{display:none}}
+</style>
+<div id="ra-bar" dir="ltr">
+ <button id="ra-stop" title="Stop">⏹</button>
+ <button id="ra-speed" title="Speed">1×</button>
+ <button id="ra-toggle" title="Tap any text to hear it">🔊 Tap to read · اضغط لتسمع</button>
+</div>
+<script>
+(function(){
+ if(!("speechSynthesis" in window))return;
+ // Google speech refuses requests that carry a page referrer
+ if(!document.querySelector('meta[name=referrer]')){const m=document.createElement("meta");m.name="referrer";m.content="no-referrer";document.head.appendChild(m)}
+ const AR=/[؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿]/;
+ let rate=0.9,on=false,cur=null;
+ const speeds=[0.75,0.9,1.1];
+ const voices=()=>speechSynthesis.getVoices();
+ const pick=l=>{const v=voices();return l==="ar"?(v.find(x=>/^ar[-_]EG/i.test(x.lang))||v.find(x=>/^ar/i.test(x.lang))):(v.find(x=>/^en[-_]GB/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang)))};
+ // split mixed text into Arabic / non-Arabic runs so each is read by the right voice
+ function runs(text){const out=[];let buf="",lang=null;
+  for(const w of text.replace(/\s+/g," ").trim().split(/(\s+)/)){const l=AR.test(w)?"ar":(/[A-Za-z]/.test(w)?"en":null);
+   if(l&&lang&&l!==lang){out.push([lang,buf]);buf="";}if(l)lang=l;buf+=w}
+  if(buf.trim())out.push([lang||(AR.test(buf)?"ar":"en"),buf]);return out}
+ let queue=[],audio=null,gen=0;
+ function chunks(t,n){const out=[];let c="";for(const w of t.split(" ")){if((c+" "+w).length>n&&c){out.push(c);c=w}else c=c?c+" "+w:w}if(c)out.push(c);return out}
+ function done(){if(cur)cur.classList.remove("ra-reading");document.getElementById("ra-stop").style.display="none"}
+ function next(g){if(g!==gen)return;const it=queue.shift();if(!it)return done();
+  const v=pick(it.l);
+  if(it.l==="ar"&&!v){ // no Arabic voice on this device (e.g. Chrome on Linux): use Google Translate speech
+   audio=new Audio("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&ttsspeed="+(rate<0.8?0.5:1)+"&q="+encodeURIComponent(it.t));
+   audio.playbackRate=rate>1?1.1:1;audio.onended=audio.onerror=()=>next(g);audio.play().catch(()=>next(g));return}
+  const u=new SpeechSynthesisUtterance(it.t);u.lang=it.l==="ar"?"ar-EG":"en-GB";if(v)u.voice=v;u.rate=rate;u.onend=u.onerror=()=>next(g);speechSynthesis.speak(u)}
+ function stop(){gen++;queue=[];speechSynthesis.cancel();if(audio){audio.pause();audio=null}done()}
+ function speak(text,el){stop();cur=el||null;if(cur)cur.classList.add("ra-reading");
+  const parts=runs(String(text).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}️‍]/gu,""));if(!parts.length)return;
+  document.getElementById("ra-stop").style.display="inline-block";
+  parts.forEach(([l,t])=>chunks(t.trim(),l==="ar"&&!pick("ar")?180:600).forEach(c=>queue.push({l,t:c})));next(gen)}
+ window.RA={speak};
+ const SEL="h1,h2,h3,h4,p,li,td,th,summary,label,.q,.opt,.tile,.info,.ans,.exam,.en,.fact>div,.note,.fa,.fb,.result,.say-text,button,div";
+ document.addEventListener("click",e=>{if(!on)return;const bar=e.target.closest("#ra-bar");if(bar)return;
+  let el=e.target.closest(SEL);while(el&&el.tagName==="DIV"&&el.children.length>6)el=null;
+  if(!el)el=e.target;const txt=(el.innerText||el.textContent||"").trim();if(!txt)return;
+  e.preventDefault();e.stopPropagation();speak(txt.slice(0,1200),el)},true);
+ document.getElementById("ra-toggle").onclick=()=>{on=!on;document.body.classList.toggle("ra-on",on);if(!on){stop()}else speak(document.documentElement.lang==="en"?"Tap any words to hear them. Tap the green button again to stop.":"اضغط على أي كلام لتسمعه")};
+ document.getElementById("ra-stop").onclick=stop;
+ document.getElementById("ra-speed").onclick=e=>{rate=speeds[(speeds.indexOf(rate)+1)%speeds.length];e.target.textContent=(rate===0.75?"🐢 ":rate===1.1?"🐇 ":"")+rate+"×"};
+ speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{};
+})();
+</script>
+<!-- /READ-ALOUD -->
