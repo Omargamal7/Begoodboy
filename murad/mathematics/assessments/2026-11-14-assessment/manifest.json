@@ -1,0 +1,69 @@
+{
+  "subject": "Murad Grade 6G mathematics",
+  "quiz_date": "2026-11-16",
+  "combined_pdf": "00_Murad_Maths_14_Nov_Assessment_ALL_THREE_SOURCES.pdf",
+  "combined_pages": 48,
+  "files": [
+    {
+      "file": "01_Classwork_Unit3_Concept2_L4-L7.pdf",
+      "source": "Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "source_pdf_pages": "65-93",
+      "printed_pages": "Classwork printed pp. 126-154",
+      "scope": "Unit 3 Concept 2 L4-L7 and assessment",
+      "pages": 29,
+      "bytes": 298863,
+      "sha256": "14e72bc31f098fbb5bcca53a802696ee064c8ee4355c306ceb9b60364dc5fc58"
+    },
+    {
+      "file": "02_Workbook_Unit3_Concept2_L4-L7.pdf",
+      "source": "Toddle-d275909f-c492-4b5f-8aec-3781b01055ca-Prim 6 homework Binder 1st term 2026-2027.pdf",
+      "source_pdf_pages": "25-27",
+      "printed_pages": "Workbook printed pp. 25-27",
+      "scope": "Unit 3 Concept 2 L4-L7",
+      "pages": 3,
+      "bytes": 116616,
+      "sha256": "aebe79da8d856c4deff74217b24e7b9b4b818a10e8862e6d52029dc4cdfa35e2"
+    },
+    {
+      "file": "03_Ministry_Unit3_Concept2.pdf",
+      "source": "math6_ministry_assmt_2026.pdf",
+      "source_pdf_pages": "27-32",
+      "printed_pages": "Ministry printed pp. 26-31",
+      "scope": "Unit 3 L4-L7 and weekly assessment",
+      "pages": 6,
+      "bytes": 914099,
+      "sha256": "060e95c5d2e6795989c16d98f682061d241a507f2ff3e02be285dfebc53eee68"
+    },
+    {
+      "file": "04_Classwork_Unit4_L1_Equations.pdf",
+      "source": "Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "source_pdf_pages": "94-100",
+      "printed_pages": "Classwork printed pp. 155-161",
+      "scope": "Unit 4 Concept 1 L1",
+      "pages": 7,
+      "bytes": 140095,
+      "sha256": "adec079a045282e0c6151631cb23e79fe1f6616cc35d2e7da1634788490a92a2"
+    },
+    {
+      "file": "05_Workbook_Unit4_L1_Equations.pdf",
+      "source": "Toddle-d275909f-c492-4b5f-8aec-3781b01055ca-Prim 6 homework Binder 1st term 2026-2027.pdf",
+      "source_pdf_pages": "28-29",
+      "printed_pages": "Workbook printed pp. 28-29",
+      "scope": "Unit 4 L1",
+      "pages": 2,
+      "bytes": 103413,
+      "sha256": "0e13f0377cda73beec1d43884fea79906e6812bb093d1bf354803094f3c5b141"
+    },
+    {
+      "file": "06_Ministry_Unit4_L1_Equations.pdf",
+      "source": "math6_ministry_assmt_2026.pdf",
+      "source_pdf_pages": "33",
+      "printed_pages": "Ministry printed p. 32",
+      "scope": "Unit 4 L1",
+      "pages": 1,
+      "bytes": 428163,
+      "sha256": "4ea22521b57743e5316b41f46d2f28301c4dcedca73d8d377adc6a163d4dd503"
+    }
+  ],
+  "assessment_label_date": "2026-11-14"
+}
