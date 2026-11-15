@@ -1,0 +1,1104 @@
+<meta charset="utf-8">
+<title>Jimmy's Number Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Lexend:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: long revision page in stations. Visual language borrowed from the book's own factor trees:
+   prime numbers sit in circles, composite numbers sit in squares. Red Sea teal is the main colour, coral marks the second number in every pair. */
+:root{
+  --bg:#F3F7F7; --card:#FFFFFF; --ink:#13283A; --muted:#55687A; --line:#D3DFE2; --soft:#E6EEF0;
+  --sea:#0B7A75; --sea-ink:#FFFFFF; --coral:#D2492A; --both:#7B4BB7;
+  --good:#1F8A3E; --good-bg:#E2F3E6; --bad:#B42626; --bad-bg:#FBE6E6; --hl:#FFE36E; --hl-ink:#13283A;
+  --f-display:"Fredoka","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Lexend",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:16px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D171E; --card:#15222B; --ink:#E4EEF2; --muted:#9AB0BC; --line:#284050; --soft:#1C2E39;
+  --sea:#3FC7BE; --sea-ink:#0D171E; --coral:#FF8A6B; --both:#C29BF2;
+  --good:#6BD884; --good-bg:#15301E; --bad:#FF8C8C; --bad-bg:#3A1A1D; --hl:#6A5600; --hl-ink:#FFF4C2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D171E; --card:#15222B; --ink:#E4EEF2; --muted:#9AB0BC; --line:#284050; --soft:#1C2E39;
+  --sea:#3FC7BE; --sea-ink:#0D171E; --coral:#FF8A6B; --both:#C29BF2;
+  --good:#6BD884; --good-bg:#15301E; --bad:#FF8C8C; --bad-bg:#3A1A1D; --hl:#6A5600; --hl-ink:#FFF4C2; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.wrap{max-width:1000px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);line-height:1.12;text-wrap:balance;margin:0;font-weight:700}
+h1{font-size:clamp(2.1rem,6.5vw,3.4rem)}
+h2{font-size:clamp(1.6rem,4.6vw,2.25rem)}
+h3{font-size:1.2rem;font-weight:600}
+p{margin:0}
+.muted{color:var(--muted)}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--sea);outline-offset:2px}
+.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-weight:700}
+.ar{font-family:"Noto Naskh Arabic","Amiri",serif;direction:rtl;unicode-bidi:isolate;color:var(--muted)}
+
+header.top{padding-block:30px 20px}
+.kicker{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;align-items:end;margin-top:8px}
+.hero>*{min-width:0}
+.hero-art{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.quizcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:6px}
+.quizcard b{font-family:var(--f-display);font-size:1.25rem}
+.quizcard ul{margin:0;padding-left:1.1em}
+.gloss{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.gloss span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px 11px;font-size:.86rem}
+
+/* prime circle / composite square: the page's signature */
+.pc{display:inline-grid;place-items:center;min-width:2.2em;height:2.2em;padding:0 .35em;font-family:var(--f-mono);font-weight:700;font-variant-numeric:tabular-nums;border:2.5px solid var(--sea);color:var(--sea);background:var(--card)}
+.pc.p{border-radius:999px}
+.pc.c{border-radius:6px;border-color:var(--coral);color:var(--coral)}
+.pc.one{border-style:dashed;border-color:var(--muted);color:var(--muted);border-radius:6px}
+
+nav.stations{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+nav.stations .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:8px;scrollbar-width:thin}
+nav.stations a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-weight:600;font-size:.9rem;padding:6px 12px;border-radius:999px;border:1px solid var(--line);display:flex;gap:8px;align-items:center;white-space:nowrap}
+nav.stations a:hover{border-color:var(--sea)}
+nav.stations a .cnt{font-size:.76rem;color:var(--muted);font-family:var(--f-mono)}
+nav.stations a.full .cnt{color:var(--good)}
+
+section.station{padding-block:46px 8px;scroll-margin-top:64px}
+.station-head{display:grid;gap:6px;margin-bottom:18px}
+.station-head .tag{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--sea)}
+.stack{display:grid;gap:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.cards>*{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:8px;align-content:start}
+.card h3{font-size:1.1rem}
+.ex{font-family:var(--f-mono);font-weight:700}
+.tellbox{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tellbox>div{border-radius:12px;padding:10px 12px;background:var(--soft)}
+.tellbox b{font-family:var(--f-display);font-size:1.1rem}
+
+/* labs */
+.lab{background:var(--card);border:2px solid var(--sea);border-radius:var(--r);padding:18px;display:grid;gap:14px;min-width:0}
+.lab-title{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.lab-title .kicker{color:var(--sea)}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls label{font-weight:600;font-size:.92rem}
+select,input.t,input.ans,input.cell{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:7px 10px;min-width:0}
+input.t{width:6em;font-family:var(--f-mono)}
+input[type=range]{accent-color:var(--sea);width:170px;max-width:100%}
+.btn{border:0;border-radius:10px;padding:9px 15px;font-weight:600;background:var(--sea);color:var(--sea-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.small{padding:5px 10px;font-size:.88rem}
+.btn:disabled{opacity:.45;cursor:default}
+.scroll{overflow-x:auto;min-width:0}
+
+.arrays{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
+.arr{display:grid;gap:4px;justify-items:center}
+.arr .grid{display:grid;gap:3px}
+.arr .grid i{width:10px;height:10px;border-radius:50%;background:var(--sea);display:block}
+.arr span{font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
+.verdict{font-family:var(--f-display);font-size:1.25rem}
+
+/* factor tree */
+.tree{display:flex;justify-content:center;padding:6px 0;min-width:max-content}
+.tn{display:grid;justify-items:center;flex:1 1 0;min-width:56px}
+.tn>.pc{font-size:1.05rem}
+.tn>button.pc{cursor:pointer;box-shadow:0 0 0 4px transparent;transition:box-shadow .2s}
+.tn>button.pc:hover{box-shadow:0 0 0 4px var(--soft)}
+.tn svg{display:block;width:100%;height:22px;overflow:visible}
+.tn svg line{stroke:var(--muted);stroke-width:2}
+.kids{display:flex;width:100%}
+.splits{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--f-mono);font-weight:700;padding:3px 9px;border-radius:8px;background:var(--soft);font-variant-numeric:tabular-nums}
+.chip.a{background:transparent;border:2px solid var(--sea);color:var(--sea)}
+.chip.b{background:transparent;border:2px solid var(--coral);color:var(--coral)}
+.chip.both{background:var(--both);color:var(--card)}
+.chip.big{outline:3px solid var(--hl);outline-offset:1px}
+
+/* hundred chart */
+.hundred{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:3px;max-width:520px}
+.hundred div{aspect-ratio:1;display:grid;place-items:center;border-radius:6px;background:var(--soft);font-family:var(--f-mono);font-size:clamp(.62rem,2.4vw,.85rem);font-weight:700;color:var(--muted);max-width:100%}
+.hundred div.a{border:2.5px solid var(--sea);color:var(--sea);background:var(--card)}
+.hundred div.b{background:var(--coral);color:var(--card)}
+.hundred div.a.b{background:var(--both);border-color:var(--both);color:var(--card)}
+.hundred div.l{outline:3px solid var(--hl);outline-offset:1px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.9rem}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:4px}
+
+/* area model */
+table.area{border-collapse:collapse;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+table.area th{padding:4px 10px;color:var(--sea);font-weight:700;text-align:center}
+table.area th.r{color:var(--coral);text-align:right}
+table.area td{border:2px solid var(--ink);padding:10px 12px;text-align:center;font-weight:700;min-width:70px;background:var(--card)}
+table.area td input.cell{width:6.2em;text-align:center;font-family:var(--f-mono);padding:5px}
+table.area td.ok input{border-color:var(--good);background:var(--good-bg)}
+table.area td.no input{border-color:var(--bad);background:var(--bad-bg)}
+.algo{font-family:var(--f-mono);font-variant-numeric:tabular-nums;display:inline-grid;grid-template-columns:auto auto;gap:2px 14px;align-items:baseline}
+.algo .v{text-align:right;font-weight:700;font-size:1.1rem;white-space:pre}
+.algo .note{font-family:var(--f-body);font-size:.85rem;color:var(--muted)}
+.algo .rule{border-top:2px solid var(--ink);grid-column:1}
+.algo .total{color:var(--good)}
+.workgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.workgrid>div{min-width:0;background:var(--soft);border-radius:12px;padding:12px}
+.workgrid h4{margin:0 0 8px;font-family:var(--f-display);font-size:1rem}
+
+/* practice */
+.practice{display:grid;gap:10px}
+.practice-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:10px;min-width:0}
+.q.done{border-color:var(--good);box-shadow:inset 4px 0 0 var(--good)}
+.q .qt{display:flex;gap:10px;align-items:baseline}
+.q .qn{font-family:var(--f-display);font-weight:700;color:var(--muted);min-width:1.8em}
+.q .qbody{min-width:0;display:grid;gap:4px}
+.q .src{font-size:.76rem;color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input.ans{width:10em;font-family:var(--f-mono)}
+input.ans.wide{width:16em;max-width:100%}
+.fb{font-weight:600;border-radius:10px;padding:8px 12px}
+.fb:empty{display:none}
+.fb.ok{background:var(--good-bg);color:var(--good)}
+.fb.no{background:var(--bad-bg);color:var(--bad)}
+.fb.info{background:var(--soft);color:var(--ink);font-weight:400}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.opt{background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;text-align:left;color:var(--ink);font-weight:600}
+.opt:hover:not(:disabled){border-color:var(--sea)}
+.opt.sel{border-color:var(--sea);box-shadow:inset 0 0 0 1.5px var(--sea)}
+.opt.right{border-color:var(--good);background:var(--good-bg);color:var(--good)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
+.opt:disabled{cursor:default}
+.work{background:var(--soft);border-radius:12px;padding:12px;display:grid;gap:10px;min-width:0}
+
+.testbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.score{font-family:var(--f-display);font-size:2rem;font-weight:700}
+footer{padding-block:40px 90px;color:var(--muted);font-size:.9rem}
+@media (max-width:720px){.hero{grid-template-columns:1fr}body{font-size:16px}.tellbox{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<main>
+<header class="top"><div class="wrap">
+  <p class="kicker">Primary 5 · Maths · Unit 2 Concept 2 + Unit 3</p>
+  <div class="hero">
+    <div class="stack" style="gap:10px">
+      <h1>Jimmy's Number Lab</h1>
+      <p class="muted" style="max-width:60ch">Factors, multiples and big multiplication, all in one place. Every station explains the idea, gives you a tool to play with, then lets you practise with questions from your Student Book and the ministry Performance book. Stuck? Press <b>Show how</b> on any question.</p>
+      <div class="hero-art" aria-label="Prime numbers are circled, composite numbers are boxed">
+        <span class="pc p">2</span><span class="pc p">3</span><span class="pc c">4</span><span class="pc p">5</span><span class="pc c">6</span><span class="pc p">7</span><span class="pc c">8</span><span class="muted" style="font-size:.9rem">Circle = prime. Square = composite.</span>
+      </div>
+    </div>
+    <div class="quizcard">
+      <span class="kicker">Quiz: Monday 16 November</span>
+      <b>What's in it</b>
+      <ul>
+        <li>Unit 2 · Lessons 4–8: prime factors, GCF, multiples, LCM</li>
+        <li>Unit 3 · Lessons 1–2: area model and distributive property</li>
+        <li>Unit 3 · Lessons 3–4: the standard algorithm, big numbers</li>
+        <li>Unit 3 · Lesson 5: real-world multiplication problems</li>
+      </ul>
+    </div>
+  </div>
+  <div class="gloss" aria-label="Key words in English and Arabic">
+    <span>factor · <span class="ar">عامل</span></span>
+    <span>multiple · <span class="ar">مضاعف</span></span>
+    <span>prime number · <span class="ar">عدد أولي</span></span>
+    <span>composite number · <span class="ar">عدد غير أولي</span></span>
+    <span>factor tree · <span class="ar">شجرة العوامل</span></span>
+    <span>GCF · <span class="ar">العامل المشترك الأكبر</span></span>
+    <span>LCM · <span class="ar">المضاعف المشترك الأصغر</span></span>
+    <span>product · <span class="ar">حاصل الضرب</span></span>
+    <span>area model · <span class="ar">نموذج المساحة</span></span>
+    <span>distributive property · <span class="ar">خاصية التوزيع</span></span>
+  </div>
+</div></header>
+
+<nav class="stations" aria-label="Stations"><div class="wrap" id="navlinks"></div></nav>
+
+<!-- 0 FIX-IT -->
+<section class="station" id="fixit"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Start here · from Jimmy's classwork binder</span><h2>Fix-it: three things to get right</h2>
+    <p class="muted" style="max-width:62ch">These come from the pages in your binder. Practise them first.</p></div>
+  <div class="cards">
+    <div class="card">
+      <h3>1. "All factors" means all of them</h3>
+      <p>2 × 3 × 3 = 18. Its factors are <b>1, 2, 3, 6, 9, 18</b>.</p>
+      <p>Do not forget the small ones: the primes 2 and 3 are factors too. Use a T-chart: 1 × 18, 2 × 9, 3 × 6.</p>
+    </div>
+    <div class="card">
+      <h3>2. GCF and LCM from prime factors</h3>
+      <p class="ex">8 = 2 × 2 × 2<br>10 = 2 × 5</p>
+      <p><b>GCF</b>: only the shared primes → 2.</p>
+      <p><b>LCM</b>: shared primes once + all the leftovers → 2 × 2 × 2 × 5 = 40.</p>
+    </div>
+    <div class="card">
+      <h3>3. Check the size of your answer</h3>
+      <p>GCF can't be bigger than the <b>smaller</b> number. For 15 cm and 25 cm strips, 25 is too big: the answer is 5 cm.</p>
+      <p>LCM can't be smaller than the <b>bigger</b> number.</p>
+    </div>
+  </div>
+  <div id="p-fix"></div>
+</div></section>
+
+<!-- 1 PRIMES -->
+<section class="station" id="primes"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 1 · Unit 2 Lesson 4</span><h2>Prime numbers and factor trees</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Factors</h3>
+      <p>A <b>factor</b> divides a number exactly, with nothing left over. Factors come in <b>pairs</b> that multiply to the number.</p>
+      <p class="ex">12 = 1 × 12 = 2 × 6 = 3 × 4</p>
+      <p>Factors of 12: 1, 2, 3, 4, 6, 12</p>
+    </div>
+    <div class="card">
+      <h3>Prime or composite?</h3>
+      <p><span class="pc p">7</span> A <b>prime</b> number has exactly 2 factors: 1 and itself.</p>
+      <p><span class="pc c">12</span> A <b>composite</b> number has more than 2 factors.</p>
+      <p><span class="pc one">1</span> The number 1 is <b>neither</b>. It has only one factor.</p>
+      <p class="muted">2 is the only even prime. The smallest odd prime is 3.</p>
+    </div>
+    <div class="card">
+      <h3>Three ways to find all the factors</h3>
+      <p><b>T-chart:</b> write pairs down the chart. 18: 1 | 18, 2 | 9, 3 | 6. Stop when the pairs meet.</p>
+      <p><b>Factor rainbow:</b> write 1 2 3 6 9 18 in a line and join each pair with an arc: 1–18, 2–9, 3–6.</p>
+      <p><b>Factor tree:</b> best for <i>prime</i> factors (see below).</p>
+    </div>
+    <div class="card">
+      <h3>Quick divisibility tricks</h3>
+      <p><b>2</b> is a factor of every even number (ones digit 0, 2, 4, 6, 8).</p>
+      <p><b>3</b> is a factor when the digits add up to a multiple of 3: 27 → 2 + 7 = 9 ✓.</p>
+      <p><b>5</b> is a factor when the ones digit is 0 or 5.</p>
+    </div>
+    <div class="card">
+      <h3>Factor trees</h3>
+      <p>Split a composite number into any factor pair. Keep splitting the composite branches until every branch ends in a prime. Circle the primes.</p>
+      <p>Multiply the circled primes back together: this is the <b>prime factorization</b>.</p>
+      <p class="ex">24 = 2 × 2 × 2 × 3</p>
+      <p class="muted">Any tree you draw for 24 ends with the same primes.</p>
+    </div>
+  </div>
+
+  <div class="lab" id="arrlab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Factor rectangles</h3></div>
+    <p class="muted">Arrange the dots into equal rows (the book's "Game Maker" with 12 glass balls). Each rectangle is a factor pair. A prime number can only make one long line.</p>
+    <div class="controls"><label for="ar-n">Number <b class="n" id="ar-v">12</b></label><input type="range" id="ar-n" min="1" max="48" value="12"></div>
+    <div class="verdict" id="ar-verdict"></div>
+    <div class="arrays" id="ar-out"></div>
+  </div>
+
+  <div class="lab" id="treelab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Factor tree builder</h3></div>
+    <p class="muted">Tap a square (composite) number and choose how to split it. Primes turn into circles. Finish when only circles are left.</p>
+    <div class="controls">
+      <select id="tr-pick" aria-label="Choose a number"></select>
+      <label for="tr-own">or your own</label><input class="t" id="tr-own" inputmode="numeric" placeholder="e.g. 90">
+      <button class="btn ghost small" id="tr-auto">Finish it for me</button>
+      <button class="btn ghost small" id="tr-reset">Start again</button>
+    </div>
+    <div class="scroll"><div class="tree" id="tr-out"></div></div>
+    <div class="fb info" id="tr-msg"></div>
+  </div>
+
+  <div id="p-primes"></div>
+  <div id="p-pf"></div>
+</div></section>
+
+<!-- 2 GCF -->
+<section class="station" id="gcf"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 2 · Unit 2 Lesson 5</span><h2>Greatest common factor (GCF)</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Method 1: list the factors</h3>
+      <p>List the factors of both numbers. Circle the ones they share: these are the <b>common factors</b>. The biggest one is the <b>GCF</b>.</p>
+      <p class="ex">20: 1, 2, 4, 5, 10, 20<br>28: 1, 2, 4, 7, 14, 28</p>
+      <p>Common: 1, 2, 4. GCF = <b>4</b></p>
+    </div>
+    <div class="card">
+      <h3>Method 2: prime factors</h3>
+      <p>Write both prime factorizations. Multiply the primes they <b>share</b>.</p>
+      <p class="ex">12 = 2 × 2 × 3<br>18 = 2 × 3 × 3</p>
+      <p>Both have one 2 and one 3, so GCF = 2 × 3 = <b>6</b></p>
+    </div>
+    <div class="card">
+      <h3>When do we need the GCF?</h3>
+      <p>When we <b>split things into equal groups</b> and want the groups as big as possible, or as many identical boxes as possible, with <b>nothing left over</b>.</p>
+      <p>30 pens and 45 notebooks: GCF = 15, so 15 identical gift boxes, each with 2 pens and 3 notebooks.</p>
+    </div>
+  </div>
+  <div class="lab" id="gcflab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Common factor finder</h3></div>
+    <div class="controls">
+      <label for="g-a">First</label><input class="t" id="g-a" inputmode="numeric" value="24">
+      <label for="g-b">Second</label><input class="t" id="g-b" inputmode="numeric" value="36">
+    </div>
+    <div class="workgrid" id="g-out"></div>
+  </div>
+  <div id="p-gcf"></div>
+</div></section>
+
+<!-- 3 MULTIPLES / LCM -->
+<section class="station" id="lcm"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 3 · Unit 2 Lessons 6–7</span><h2>Multiples and least common multiple (LCM)</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Multiples</h3>
+      <p>The <b>multiples</b> of a number are what you get when you skip count by it: multiply it by 1, 2, 3, 4…</p>
+      <p class="ex">Multiples of 6: 6, 12, 18, 24, 30…</p>
+      <p>A number has a <b>limited</b> number of factors but <b>unlimited</b> multiples.</p>
+    </div>
+    <div class="card">
+      <h3>Common multiples and LCM</h3>
+      <p>Multiples that both numbers share are <b>common multiples</b>. The smallest one (not 0) is the <b>LCM</b>.</p>
+      <p class="ex">4: 4, 8, 12, 16, 20, 24<br>6: 6, 12, 18, 24</p>
+      <p>Common: 12, 24… LCM = <b>12</b></p>
+    </div>
+    <div class="card">
+      <h3>When do we need the LCM?</h3>
+      <p>When things <b>repeat</b> and we want to know when they happen <b>together again</b>, or the <b>smallest amount</b> to buy so two pack sizes match.</p>
+      <p>Hend laps every 6 minutes, Jana every 8. They meet at the start after LCM(6, 8) = <b>24 minutes</b>.</p>
+    </div>
+    <div class="card">
+      <h3>Your classwork's method: stack the primes</h3>
+      <p class="ex">8&nbsp; = 2 × 2 × 2<br>12 = 2 × 2 &nbsp;&nbsp;&nbsp;× 3</p>
+      <p>Write the prime factors so matching primes sit on top of each other.</p>
+      <p><b>GCF</b> = the matching pairs only: 2 × 2 = <b>4</b>.</p>
+      <p><b>LCM</b> = each matching pair once, plus every prime with no partner: 2 × 2 × 2 × 3 = <b>24</b>.</p>
+    </div>
+    <div class="card">
+      <h3>Facts from your binder</h3>
+      <p>0 is a common multiple of all numbers (we start counting from the first one after 0).</p>
+      <p>Every number is a multiple of 1 and of itself.</p>
+      <p>The product of two numbers is always a common multiple: 35 = 5 × 7, so 35 is a common multiple of 5 and 7.</p>
+    </div>
+  </div>
+  <div class="lab" id="hlab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Hundred chart</h3></div>
+    <div class="controls">
+      <label for="h-a">Multiples of <b class="n" id="h-av"></b></label><input type="range" id="h-a" min="2" max="12" value="4">
+      <label for="h-b">and <b class="n" id="h-bv"></b></label><input type="range" id="h-b" min="2" max="12" value="6">
+    </div>
+    <div class="legend" id="h-leg"></div>
+    <div class="hundred" id="h-grid" aria-hidden="true"></div>
+    <div class="fb ok" id="h-msg"></div>
+  </div>
+  <div id="p-mult"></div>
+  <div id="p-lcm"></div>
+</div></section>
+
+<!-- 4 GCF OR LCM -->
+<section class="station" id="which"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 4 · Unit 2 Lesson 8</span><h2>Factors or multiples? GCF or LCM?</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Read for the clue words</h3>
+      <div class="tellbox">
+        <div><b>GCF</b><br>split, share, divide into equal groups, as wide/large as possible, greatest number of identical bags, nothing left over</div>
+        <div><b>LCM</b><br>again, together, at the same time, every … days, smallest number to buy, same number of each</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>A quick check</h3>
+      <p>The <b>GCF</b> is never bigger than the smaller number.</p>
+      <p>The <b>LCM</b> is never smaller than the bigger number.</p>
+      <p>If your answer breaks this rule, you used the wrong one.</p>
+    </div>
+    <div class="card">
+      <h3>Factors or multiples?</h3>
+      <p>Arranging 12 balls or 48 seats in equal rows → <b>factors</b> (you are splitting).</p>
+      <p>Joining 8 m ribbons: 8, 16, 24, 32… → <b>multiples</b> (you are repeating).</p>
+    </div>
+  </div>
+  <div id="p-which"></div>
+  <div id="p-both"></div>
+</div></section>
+
+<!-- 5 AREA MODEL -->
+<section class="station" id="area"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 5 · Unit 3 Lessons 1–2</span><h2>The area model and the distributive property</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Powers of ten first</h3>
+      <p>Multiplying by 10, 100 or 1,000 adds 1, 2 or 3 zeros.</p>
+      <p class="ex">5 × 1,000 = 5,000<br>40 × 200 = 8,000</p>
+      <p class="muted">For 40 × 200: do 4 × 2 = 8, then add the 3 zeros.</p>
+    </div>
+    <div class="card">
+      <h3>The area model</h3>
+      <p>Break each number into place value parts (expanded form). Draw a rectangle with one row or column per part. Multiply each little box, then add all the boxes.</p>
+      <p class="ex">234 × 27 → 200 + 30 + 4 by 20 + 7</p>
+      <p>4,000 + 600 + 80 + 1,400 + 210 + 28 = <b>6,318</b></p>
+    </div>
+    <div class="card">
+      <h3>The distributive property</h3>
+      <p>8 × 9 is the same as 8 × (5 + 4) = 8 × 5 + 8 × 4 = 40 + 32 = 72.</p>
+      <p>The number outside the brackets multiplies <b>every</b> number inside. The area model is a picture of this.</p>
+      <p class="muted">Watch out for zeros: 206 is 200 + 6. There are no tens, so do not invent a 60.</p>
+    </div>
+  </div>
+  <div class="lab" id="amlab">
+    <div class="lab-title"><span class="kicker">Lab</span><h3>Area model maker</h3></div>
+    <p class="muted">Type any two numbers. Choose <b>Fill it in myself</b> to practise, or <b>Show me</b> to see every box worked out.</p>
+    <div class="controls">
+      <input class="t" id="am-a" inputmode="numeric" value="234" aria-label="First number"><span class="n">×</span><input class="t" id="am-b" inputmode="numeric" value="27" aria-label="Second number">
+      <button class="btn" id="am-try">Fill it in myself</button>
+      <button class="btn ghost" id="am-show">Show me</button>
+    </div>
+    <div class="workgrid" id="am-out"></div>
+    <div class="fb" id="am-fb"></div>
+  </div>
+  <div id="p-tens"></div>
+  <div id="p-area"></div>
+</div></section>
+
+<!-- 6 ALGORITHM -->
+<section class="station" id="algo"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 6 · Unit 3 Lessons 3–4</span><h2>The standard algorithm and big numbers</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>How the algorithm works</h3>
+      <p>1. Multiply the top number by the <b>ones</b> digit. Write that row.</p>
+      <p>2. Write a <b>0</b> in the ones place. Multiply by the <b>tens</b> digit. Write that row.</p>
+      <p>3. Add the two rows.</p>
+    </div>
+    <div class="card">
+      <h3>Example: 45 × 37</h3>
+      <div class="algo" id="ex-algo"></div>
+      <p class="muted">The two rows are the same as the area model's rows: 45 × 7 and 45 × 30.</p>
+    </div>
+    <div class="card">
+      <h3>Estimate to check</h3>
+      <p>Round each number to its biggest place first: 3,567 × 24 ≈ 4,000 × 20 = 80,000.</p>
+      <p>The exact answer is 85,608, which is close. If your answer were 8,560 or 856,080, you would know something went wrong.</p>
+    </div>
+  </div>
+  <div id="p-algo"></div>
+  <div id="p-errors"></div>
+</div></section>
+
+<!-- 7 REAL WORLD -->
+<section class="station" id="world"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Station 7 · Unit 3 Lesson 5</span><h2>Multiplication problems in the real world</h2></div>
+  <div class="cards">
+    <div class="card">
+      <h3>Plan before you multiply</h3>
+      <p>1. What is the question asking for?</p>
+      <p>2. Which numbers do I need? Some stories have extra numbers.</p>
+      <p>3. How many steps? Sometimes you add first, then multiply.</p>
+    </div>
+    <div class="card">
+      <h3>Two ways can both be right</h3>
+      <p>Mona sold 402 kebabs, then 753 kebabs, at 83 g of meat each.</p>
+      <p>Amal: 402 × 83 + 753 × 83 = 95,865 g.</p>
+      <p>Sarah: (402 + 753) × 83 = 1,155 × 83 = 95,865 g.</p>
+      <p>Both are correct. This is the distributive property again.</p>
+    </div>
+    <div class="card">
+      <h3>Units matter</h3>
+      <p>1 hour = 60 minutes · 1 week = 7 days · 1 m = 100 cm · 1 L = 1,000 mL</p>
+      <p>Write the unit with your answer.</p>
+    </div>
+  </div>
+  <div id="p-world"></div>
+</div></section>
+
+<!-- 8 MOCK -->
+<section class="station" id="test"><div class="wrap stack">
+  <div class="station-head"><span class="tag">Final station</span><h2>Monday mock quiz</h2>
+    <p class="muted" style="max-width:62ch">20 questions mixed from every lesson, with no hints. Press <b>Mark my quiz</b> at the end to see your score and the working for every question. <b>New quiz</b> gives a different set.</p></div>
+  <div class="testbar"><button class="btn" id="t-new">New quiz</button><span class="muted" id="t-best"></span></div>
+  <div class="practice" id="t-list"></div>
+  <div class="testbar"><button class="btn" id="t-mark">Mark my quiz</button><span class="score" id="t-score"></span></div>
+</div></section>
+
+<footer><div class="wrap">Sources: Primary 5 classwork binder pp. 52–66 (photos of Jimmy's book), the ministry Grade 5 Mathematics Student Book, first term 2026/2027, pp. 51–79, and the Performance and Assessment book pp. 24–34. Your progress is saved on this device only.</div></footer>
+</main>
+
+<script id="core">
+/* ---------- number tools ---------- */
+const N={
+  factors(n){const f=[];for(let i=1;i<=n;i++)if(n%i===0)f.push(i);return f},
+  isPrime(n){if(n<2)return false;for(let i=2;i*i<=n;i++)if(n%i===0)return false;return true},
+  pf(n){const r=[];let d=2;while(n>1){while(n%d===0){r.push(d);n/=d}d++}return r},
+  gcf(a,b){while(b){[a,b]=[b,a%b]}return a},
+  lcm(a,b){return a/N.gcf(a,b)*b},
+  mult(n,k){return Array.from({length:k},(_,i)=>n*(i+1))},
+  fmt(n){return Number(n).toLocaleString('en-US')},
+  parts(n){const s=String(n);const out=[];for(let i=0;i<s.length;i++){const d=+s[i];if(d)out.push(d*Math.pow(10,s.length-1-i))}return out},
+};
+const fx=N.fmt;
+const SB='Student Book',PA='Performance book';
+/* ---------- question banks ---------- */
+const BANK={
+ primes:[
+  {k:'mcq',q:'What is the best explanation of the difference between prime and composite numbers?',o:['A prime number has only 2 factors: 1 and itself. A composite number has more than two factors.','A prime number has only 1 as a factor and a composite number has two factors.','A prime number has only 2 factors. A composite number has 4 or more factors.','A prime number can be factored in more than one way. A composite number only one way.'],c:0,why:'Prime: exactly two factors (1 and itself). Composite: more than two. 9 has 3 factors (1, 3, 9) and is composite, so "4 or more" is wrong.',src:SB+' p.51',long:1},
+  {k:'pc',n:3,src:PA+' p.24'},{k:'pc',n:4,src:PA+' p.24'},{k:'pc',n:7,src:PA+' p.24'},{k:'pc',n:12,src:PA+' p.24'},{k:'pc',n:1,src:SB+' p.53'},{k:'pc',n:193,src:SB+' p.53'},{k:'pc',n:51},{k:'pc',n:29},
+  {k:'mcq',q:'Is 12 a factor of 193?',o:['No','Yes'],c:0,why:'193 is prime, so its only factors are 1 and 193. 12 × 16 = 192, which leaves 1 over.',src:SB+' p.53'},
+  {k:'num',q:'Find the smallest odd prime number.',a:3,how:'1 is not prime. 2 is prime but even. The next number, 3, is prime and odd.',src:PA+' p.28'},
+  {k:'num',q:'2 × 2 × 5 = ?',a:20,how:'2 × 2 = 4, then 4 × 5 = 20. Its other factors are 1, 2, 4, 5, 10.',src:SB+' p.52'},
+  {k:'num',q:'2 × 3 × 7 = ?',a:42,how:'2 × 3 = 6, then 6 × 7 = 42.',src:SB+' p.52'},
+  {k:'num',q:'2 × 2 × 2 × 7 = ?',a:56,how:'2 × 2 × 2 = 8, then 8 × 7 = 56.',src:SB+' p.52'},
+  {k:'num',q:'Find the number whose prime factors are 3, 3 and 5.',a:45,how:'3 × 3 × 5 = 9 × 5 = 45.',src:PA+' p.24'},
+  {k:'num',q:'What is the number whose prime factors are 2, 3 and 3?',a:18,how:'2 × 3 × 3 = 6 × 3 = 18.',src:PA+' p.28'},
+  {k:'mcq',q:'Treasure box code: which number has prime factors that add up to 7?',o:['10','9','15','14'],c:0,why:'10 = 2 × 5 and 2 + 5 = 7. (9 = 3 × 3 gives 6, 15 = 3 × 5 gives 8, 14 = 2 × 7 gives 9.)',src:PA+' p.24'},
+  {k:'mcq',q:'Treasure box code: which number has prime factors that add up to 10?',o:['21','20','12','16'],c:0,why:'21 = 3 × 7 and 3 + 7 = 10. (20 = 2 × 2 × 5 gives 9, 12 = 2 × 2 × 3 gives 7, 16 = 2 × 2 × 2 × 2 gives 8.)',src:PA+' p.24'},
+  {k:'num',q:'Find the prime number whose factors add up to 12.',a:11,how:'A prime number has only two factors: 1 and itself. 1 + 11 = 12, so the number is 11.',src:PA+' p.30'},
+ ],
+ pf:[{k:'pf',n:8,src:PA+' p.24'},{k:'pf',n:18,src:SB+' p.52'},{k:'pf',n:20,src:SB+' p.52'},{k:'pf',n:75,src:SB+' p.52'},{k:'pf',n:24,src:SB+' p.52'},{k:'pf',n:28,src:PA+' p.24'},{k:'pf',n:40,src:PA+' p.24'},{k:'pf',n:54,src:PA+' p.24'},{k:'pf',n:72,src:PA+' p.24'},{k:'pf',n:42,src:SB+' p.55'}],
+ gcf:[
+  {k:'list',q:'List all the factors of 20.',a:N.factors(20),src:SB+' p.55'},
+  {k:'list',q:'List all the factors of 28.',a:N.factors(28),src:SB+' p.55'},
+  {k:'list',q:'List all the factors of 42.',a:N.factors(42),src:SB+' p.55'},
+  {k:'list',q:'Find the common factors of 25 and 20.',a:[1,5],src:PA+' p.24'},
+  {k:'num',q:'Find the GCF of 9 and 12.',a:3,w:{t:'gcf',a:9,b:12},src:PA+' p.24'},
+  {k:'num',q:'Find the GCF of 48 and 36.',a:12,w:{t:'gcf',a:48,b:36},src:PA+' p.24'},
+  {k:'num',q:'Find the GCF of 15 and 35.',a:5,w:{t:'gcf',a:15,b:35},src:PA+' p.24'},
+  {k:'num',q:'Find the GCF of 25 and 20.',a:5,w:{t:'gcf',a:25,b:20},src:PA+' p.24'},
+  {k:'num',q:'<i>n</i> = 2 × 2 × 7 = 28. What is the greatest common factor of 42 and <i>n</i>?',a:14,w:{t:'gcf',a:42,b:28},src:SB+' p.55'},
+  {k:'num',q:'One group spends 16 LE on tickets and another spends 12 LE. Each ticket costs the same. At most, how much does each ticket cost?',a:4,unit:'LE',w:{t:'gcf',a:16,b:12},src:SB+' p.55'},
+  {k:'num',q:'You have 30 pens and 45 notebooks. What is the largest number of identical gift boxes you can make, with nothing left over?',a:15,unit:'boxes',w:{t:'gcf',a:30,b:45},src:PA+' p.25'},
+  {k:'num',q:'You have 24 chocolates and 36 biscuits. What is the greatest number of friends who can each get the same number of chocolates and the same number of biscuits?',a:12,unit:'friends',w:{t:'gcf',a:24,b:36},src:PA+' p.25'},
+  {k:'num',q:'A garden is 18 m by 12 m. You want to cut it into equal squares, as large as possible. How long is each side of a square?',a:6,unit:'m',w:{t:'gcf',a:18,b:12},src:PA+' p.25'},
+  {k:'mcq',q:'Shadi dives 30 m and Taha dives 15 m. Both stop at the same equal intervals (not every 1 m, and not the whole distance at once). What is the greatest interval they can both use?',o:['2 m','3 m','5 m','10 m'],c:2,why:'Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30. Factors of 15: 1, 3, 5, 15. Shared, without 1 and 15 (the whole dive for Taha): 3 and 5. The greatest is 5 m.',src:SB+' p.54'},
+  {k:'num',q:'Two numbers: the prime factors of the first are 2, 2, 3 and of the second are 2, 3, 3. Find their GCF.',a:6,how:'Shared primes: one 2 and one 3. GCF = 2 × 3 = 6. (The numbers are 12 and 18.)',src:PA+' p.28'},
+ ],
+ mult:[
+  {k:'list',q:'List the first five multiples of 6.',a:N.mult(6,5),ordered:1,src:SB+' p.57'},
+  {k:'list',q:'List the first six multiples of 7.',a:N.mult(7,6),ordered:1,src:SB+' p.57'},
+  {k:'list',q:'List eight multiples of 10 (start from 10).',a:N.mult(10,8),ordered:1,src:SB+' p.57'},
+  {k:'list',q:'Find three multiples of 5 (start from 5).',a:N.mult(5,3),ordered:1,src:PA+' p.26'},
+  {k:'list',q:'Find four multiples of 6 (start from 6).',a:N.mult(6,4),ordered:1,src:PA+' p.26'},
+  {k:'list',q:'Find the first five common multiples of 2 and 3.',a:[6,12,18,24,30],ordered:1,src:PA+' p.26'},
+  {k:'list',q:'Which common multiples of 2 and 5 are in the first ten multiples of 2?',a:[10,20],src:SB+' p.57'},
+  {k:'list',q:'Which common multiples of 3 and 4 are in the first twelve multiples of each?',a:[12,24,36],src:SB+' p.57'},
+  {k:'multi',q:'Select the three numbers that are NOT common multiples of 5 and 7.',o:['14','21','35','55','70','105'],c:[0,1,3],why:'Common multiples of 5 and 7 are multiples of 35: 35, 70, 105. So 14, 21 and 55 are not.',src:SB+' p.58'},
+  {k:'multi',q:'24 and 32 are both common multiples of which three numbers?',o:['2','3','4','6','7','8'],c:[0,2,5],why:'2, 4 and 8 divide both 24 and 32. 3 and 6 divide 24 but not 32. 7 divides neither.',src:SB+' p.58'},
+  {k:'mcq',q:'The number 40 is a common multiple of the two numbers…',o:['4 and 7','6 and 5','8 and 4','4 and 6'],c:2,why:'40 ÷ 8 = 5 and 40 ÷ 4 = 10, both exact. 40 is not a multiple of 7 or 6.',src:PA+' p.27'},
+  {k:'num',q:'Each train track is 12 cm long. How long are 5 pieces laid end to end?',a:60,unit:'cm',how:'Multiples of 12: 12, 24, 36, 48, 60. 5 × 12 = 60 cm.',src:SB+' p.58'},
+  {k:'num',q:'How many 4 cm track pieces make the same 60 cm?',a:15,unit:'pieces',how:'60 ÷ 4 = 15, because 15 × 4 = 60.',src:SB+' p.58'},
+  {k:'num',q:'Adel needs 36 eggs. Eggs come 12 to a carton. How many cartons?',a:3,unit:'cartons',how:'Multiples of 12: 12, 24, 36. That is 3 cartons.',src:SB+' p.57'},
+  {k:'num',q:'Adel needs 36 juices. Juice comes 9 to a pack. How many packs?',a:4,unit:'packs',how:'Multiples of 9: 9, 18, 27, 36. That is 4 packs.',src:SB+' p.57'},
+  {k:'mcq',q:'A train passes every 10 minutes. The first is at 7:00 AM. When is the fifth train?',o:['7:40 AM','7:50 AM','7:05 AM','8:00 AM'],c:0,why:'7:00, 7:10, 7:20, 7:30, 7:40. The fifth train is 4 gaps of 10 minutes after the first.',src:PA+' p.26'},
+  {k:'mcq',q:'Buses leave at 3, 6, 9 and 12 on weekdays, and at 6, 8, 10 and 12 at weekends. When can Omar always catch a bus?',o:['6:00 a.m. and 12:00 p.m.','Only 12:00 p.m.','3:00 and 6:00 a.m.','Every hour'],c:0,why:'The times in both lists are 6:00 and 12:00. They are common multiples.',src:SB+' p.56'},
+ ],
+ lcm:[
+  {k:'num',q:'Find the LCM of 6 and 9.',a:18,w:{t:'lcm',a:6,b:9},src:SB+' p.60'},
+  {k:'num',q:'Find the LCM of 2 and 3.',a:6,w:{t:'lcm',a:2,b:3},src:SB+' p.60'},
+  {k:'num',q:'Find the LCM of 10 and 5.',a:10,w:{t:'lcm',a:10,b:5},src:SB+' p.60'},
+  {k:'num',q:'Find the LCM of 3 and 8.',a:24,w:{t:'lcm',a:3,b:8},src:SB+' p.60'},
+  {k:'num',q:'Find the LCM of 5 and 11.',a:55,w:{t:'lcm',a:5,b:11},src:SB+' p.60'},
+  {k:'num',q:'Find the LCM of 5 and 6.',a:30,w:{t:'lcm',a:5,b:6},src:SB+' p.60'},
+  {k:'num',q:'Challenge: find the LCM of 7, 6 and 12.',a:84,how:'LCM of 6 and 12 is 12. Multiples of 12: 12, 24, 36, 48, 60, 72, 84. The first one that 7 divides is 84.',src:SB+' p.60'},
+  {k:'num',q:'Kofta comes in packs of 3 and aish baladi in packs of 12. What is the smallest number of each Badr can buy to have the same amount?',a:12,w:{t:'lcm',a:3,b:12},src:SB+' p.60'},
+  {k:'num',q:'Hend does a lap in 6 minutes and Jana in 8 minutes. After how many minutes are they together at the start again?',a:24,unit:'minutes',w:{t:'lcm',a:6,b:8},src:SB+' p.60'},
+  {k:'num',q:'Nada plants a mangrove seedling every 4 days in one garden and every 6 days in another. Both today. In how many days will she plant in both on the same day?',a:12,unit:'days',w:{t:'lcm',a:4,b:6},src:SB+' p.61'},
+  {k:'mcq',q:'The least common multiple of 3 and 5 is…',o:['10','15','20','25'],c:1,why:'Multiples of 5: 5, 10, 15. 15 is the first that 3 also divides.',src:PA+' p.33'},
+  {k:'mcq',q:'The least common multiple of 5 and 6 is…',o:['35','30','25','20'],c:1,why:'Multiples of 6: 6, 12, 18, 24, 30. 30 is the first that 5 also divides.',src:PA+' p.33'},
+  {k:'mcq',q:'The least common multiple of 4 and 6 is…',o:['8','12','24','10'],c:1,why:'Multiples of 6: 6, 12. 4 divides 12. (24 is a common multiple, but not the least. The ministry book printed this question without 12 in the choices.)',src:PA+' p.33'},
+  {k:'num',q:'Find the LCM of 5 and 10.',a:10,w:{t:'lcm',a:5,b:10},src:PA+' p.26'},
+  {k:'num',q:'Find the LCM of 14 and 21.',a:42,w:{t:'lcm',a:14,b:21},src:PA+' p.29'},
+  {k:'num',q:'Find the LCM of 5 and 11.',a:55,w:{t:'lcm',a:5,b:11},src:PA+' p.29'},
+ ],
+ which:[
+  {k:'gl',s:'Omnia has two strips of cloth, 35 cm and 75 cm wide. She cuts both into strips of equal width, as wide as possible. How wide is each strip?',kind:'GCF',x:35,y:75,a:5,unit:'cm',src:SB+' p.63'},
+  {k:'gl',s:'Omar exercises every 12 days and Rana every 8 days. Both exercised today. In how many days will they exercise together again?',kind:'LCM',x:12,y:8,a:24,unit:'days',src:SB+' p.63'},
+  {k:'gl',s:'Pencils come in boxes of 8 and erasers in boxes of 10. Menna wants the same number of each. What is the smallest number of pencils she must buy?',kind:'LCM',x:8,y:10,a:40,unit:'pencils',src:SB+' p.63'},
+  {k:'gl',s:'Nour has 6 oranges and 12 pieces of dried fruit. He makes identical snack bags with nothing left over. What is the greatest number of bags?',kind:'GCF',x:6,y:12,a:6,unit:'bags',src:SB+' p.63'},
+  {k:'gl',s:'Malak has 30 servings of cake and 48 servings of baklava. She divides them into identical containers with nothing left. What is the greatest number of containers?',kind:'GCF',x:30,y:48,a:6,unit:'containers',src:SB+' p.63'},
+  {k:'gl',s:'Ola sells figs in baskets of 9 and pomegranates in bags of 7. She sells the same number of each fruit. What is the smallest number of each she sold?',kind:'LCM',x:9,y:7,a:63,unit:'of each',src:SB+' p.63'},
+  {k:'gl',s:'Mohamed hikes every 7 days and lifts weights every 4 days. He did both today. In how many days will he do both again?',kind:'LCM',x:7,y:4,a:28,unit:'days',src:SB+' p.62'},
+  {k:'gl',s:'Ahmad trains every 3 days and Osama every 4 days. They trained together today. How many days until they train together again?',kind:'LCM',x:3,y:4,a:12,unit:'days',src:PA+' p.33'},
+  {k:'gl',s:'Ahmad trains every 3 days and Osama every 2 days. They trained together today. How many days until they train together again?',kind:'LCM',x:3,y:2,a:6,unit:'days',src:PA+' p.33'},
+  {k:'gl',s:'Ahmad trains every 5 days and Osama every 3 days. They trained together today. How many days until they train together again?',kind:'LCM',x:5,y:3,a:15,unit:'days',src:PA+' p.33'},
+  {k:'mcq',q:'Running is every 2 hours, swimming every 3 hours and cycling every 4 hours. All start at 01:00. When do they next happen at the same time?',o:['13:00','07:00','10:00','25:00'],c:0,why:'LCM of 2, 3 and 4 is 12 hours. 01:00 + 12 hours = 13:00.',src:PA+' p.26'},
+  {k:'mcq',q:'Arranging 12 glass balls into boxes equally, with nothing left over. Did you use factors or multiples?',o:['Factors','Multiples'],c:0,why:'You are splitting 12 into equal groups: 1×12, 2×6, 3×4. Those are factor pairs.',src:PA+' p.30'},
+  {k:'mcq',q:'Joining ribbons that are each 8 m long: 8, 16, 24… Did you use factors or multiples?',o:['Factors','Multiples'],c:1,why:'You are skip counting by 8, so these are multiples of 8. Six ribbons make 48 m.',src:PA+' p.30'},
+  {k:'mcq',q:'Arranging 48 seats in equal rows. Did you use factors or multiples?',o:['Factors','Multiples'],c:0,why:'Rows × seats per row = 48, so you need factor pairs of 48: 1×48, 2×24, 3×16, 4×12, 6×8.',src:PA+' p.30'},
+  {k:'mcq',q:'Aya says a number can have unlimited multiples but a limited number of factors. Is she right?',o:['Yes','No'],c:0,why:'Factors can never be bigger than the number, so there are only a few. Multiples keep going forever: 5, 10, 15, 20…',src:SB+' p.58'},
+ ],
+ both:[
+  {k:'gcflcm',a:12,b:10,src:SB+' p.62'},{k:'gcflcm',a:9,b:5,src:SB+' p.62'},{k:'gcflcm',a:11,b:2,src:SB+' p.62'},{k:'gcflcm',a:8,b:4,src:SB+' p.62'},{k:'gcflcm',a:9,b:12,src:SB+' p.62'},{k:'gcflcm',a:12,b:8,src:SB+' p.62'},{k:'gcflcm',a:10,b:15,src:PA+' p.30'},{k:'gcflcm',a:8,b:12,src:PA+' p.30'},{k:'gcflcm',a:10,b:12,src:PA+' p.30'},
+ ],
+ tens:[
+  {k:'num',q:'5 × 1,000 =',a:5000,how:'5 with three zeros: 5,000.',src:SB+' p.65'},
+  {k:'num',q:'4 × 10 =',a:40,how:'4 with one zero: 40.',src:SB+' p.65'},
+  {k:'num',q:'1,000 × 7 =',a:7000,how:'7 with three zeros: 7,000.',src:SB+' p.65'},
+  {k:'num',q:'10,000 × ___ = 80,000',a:8,how:'80,000 is 8 with four zeros, so the missing number is 8.',src:SB+' p.65'},
+  {k:'num',q:'2 × ___ = 2,000',a:1000,how:'2,000 is 2 × 1,000.',src:SB+' p.65'},
+  {k:'num',q:'35 × 10 =',a:350,how:'Add one zero: 350.',src:SB+' p.72'},
+  {k:'num',q:'25 × 100 =',a:2500,how:'Add two zeros: 2,500.',src:SB+' p.72'},
+  {k:'num',q:'75 × 1,000 =',a:75000,how:'Add three zeros: 75,000.',src:SB+' p.72'},
+  {k:'num',q:'Use 35 × 10 = 350 to find 35 × 9.',a:315,how:'35 × 9 is one 35 less than 35 × 10: 350 − 35 = 315.',src:SB+' p.72'},
+  {k:'num',q:'Use 25 × 100 = 2,500 to find 25 × 99.',a:2475,how:'25 × 99 is one 25 less than 25 × 100: 2,500 − 25 = 2,475.',src:SB+' p.72'},
+  {k:'num',q:'Find the missing number: 23 × 125 = 23 × (___ + 20 + 5)',a:100,how:'125 in expanded form is 100 + 20 + 5.',src:PA+' p.31'},
+ ],
+ area:[
+  {k:'num',m:[234,27],src:SB+' p.66'},{k:'num',m:[374,62],src:SB+' p.66'},{k:'num',m:[506,42],src:SB+' p.66'},{k:'num',m:[732,16],src:SB+' p.66'},
+  {k:'num',m:[572,98],src:SB+' p.66'},{k:'num',m:[201,32],src:SB+' p.66'},{k:'num',m:[659,42],src:SB+' p.66'},{k:'num',m:[3352,17],src:SB+' p.66'},
+  {k:'num',m:[46,24],q:'Eman\'s garden is 46 m long and 24 m wide. What is its area?',unit:'m²',src:SB+' p.67'},
+  {k:'num',m:[58,42],src:SB+' p.69'},{k:'num',m:[37,24],q:'Use the area model 30 + 7 by 20 + 4.',src:SB+' p.69'},{k:'num',m:[63,29],q:'Use the area model 60 + 3 by 20 + 9.',src:SB+' p.70'},{k:'num',m:[47,39],q:'Use the area model 40 + 7 by 30 + 9.',src:SB+' p.70'},
+  {k:'num',m:[48,49],q:'Evaluate (40 × 40) + (40 × 8) + (9 × 40) + (9 × 8).',src:SB+' p.70'},
+  {k:'num',m:[83,14],src:SB+' p.70'},{k:'num',m:[33,26],src:SB+' p.71'},{k:'num',m:[42,34],src:SB+' p.71'},
+  {k:'num',m:[11,12],src:PA+' p.31'},{k:'num',m:[23,25],src:PA+' p.31'},{k:'num',m:[89,75],src:PA+' p.31'},{k:'num',m:[42,43],src:PA+' p.31'},
+  {k:'num',m:[375,85],q:'An advertisement board is 85 cm by 375 cm. Find its area.',unit:'cm²',src:PA+' p.31'},
+  {k:'num',m:[326,42],src:PA+' p.33'},{k:'num',m:[92,83],src:PA+' p.33'},{k:'num',m:[432,62],src:PA+' p.33'},{k:'num',m:[29,38],src:PA+' p.33'},{k:'num',m:[234,26],src:PA+' p.33'},{k:'num',m:[28,39],src:PA+' p.33'},
+  {k:'num',m:[12,25],q:'Omar has 12 buses. Each holds 25 passengers. How many passengers when every bus is full?',unit:'passengers',src:SB+' p.67'},
+  {k:'num',m:[15,32],q:'A fennec fox den can have up to 15 entrances. How many entrances could 32 dens have?',unit:'entrances',src:SB+' p.71'},
+ ],
+ algo:[
+  {k:'num',m:[45,37],src:SB+' p.72'},{k:'num',m:[26,33],src:SB+' p.73'},{k:'num',m:[76,24],src:SB+' p.74'},{k:'num',m:[67,76],src:SB+' p.74'},
+  {k:'num',m:[76,82],src:SB+' p.74'},{k:'num',m:[234,53],src:SB+' p.74'},
+  {k:'num',m:[32,54],src:PA+' p.33'},{k:'num',m:[34,52],src:PA+' p.33'},{k:'num',m:[32,45],src:PA+' p.33'},
+  {k:'num',m:[32,58],src:PA+' p.32'},{k:'num',m:[219,41],src:PA+' p.32'},{k:'num',m:[237,24],src:PA+' p.32'},{k:'num',m:[306,19],src:PA+' p.32'},
+  {k:'num',m:[3567,24],src:SB+' p.76'},{k:'num',m:[2521,74],src:SB+' p.76'},{k:'num',m:[8222,53],src:SB+' p.76'},{k:'num',m:[6209,33],src:SB+' p.76'},
+  {k:'num',m:[8222,54],src:PA+' p.34'},{k:'num',m:[7630,42],src:PA+' p.34'},
+  {k:'mcq',q:'Which is the best estimate for 3,567 × 24?',o:['80,000','8,000','800,000','60,000'],c:0,why:'Round 3,567 to 4,000 and 24 to 20. 4,000 × 20 = 80,000. (Exact: 85,608.)',src:SB+' p.76'},
+  {k:'mcq',q:'Which is the best estimate for 6,209 × 33?',o:['180,000','18,000','1,800,000','240,000'],c:0,why:'6,000 × 30 = 180,000. (Exact: 204,897.)',src:SB+' p.76'},
+  {k:'mcq',q:'Which area model matches 2,521 × 74?',o:['2,000 + 500 + 20 + 1 by 70 + 4','2,000 + 500 + 20 + 1 by 7 + 4','2,521 by 70 + 4 + 0','2,000 + 521 by 74'],c:0,why:'Break both numbers by place value: 2,521 = 2,000 + 500 + 20 + 1 and 74 = 70 + 4. That is model F in the book.',src:SB+' p.77'},
+ ],
+ errors:[
+  {k:'mcq',q:'Badir worked out 206 × 45 using the boxes 200, 60, 0 by 40, 5 and got 11,700. What did he do wrong?',o:['He split 206 into 200 + 60 + 0. It should be 200 + 6.','He split 45 into 40 + 5. It should be 4 + 5.','He added the boxes wrongly.','Nothing, 11,700 is right.'],c:0,why:'206 has 0 tens and 6 ones. With 200 + 6: 8,000 + 240 + 1,000 + 30 = 9,270.',src:SB+' p.68'},
+  {k:'mcq',q:'Ashraf did 357 × 36 and got 12,663. His second row was 10,521. What went wrong?',o:['The second row should be 357 × 30 = 10,710.','The first row should be 357 × 3.','He forgot to add.','Nothing, it is right.'],c:0,why:'Row 1: 357 × 6 = 2,142 ✓. Row 2: 357 × 30 = 10,710 (he multiplied wrongly). 2,142 + 10,710 = 12,852.',src:SB+' p.75'},
+  {k:'mcq',q:'In this area model for 320 × 56, one box is wrong: 300 × 50 = 1,000; 20 × 50 = 1,000; 300 × 6 = 1,800; 20 × 6 = 120. Which?',o:['300 × 50 should be 15,000','20 × 50 should be 100','300 × 6 should be 180','20 × 6 should be 12'],c:0,why:'3 × 5 = 15, then add the three zeros: 15,000. Corrected total: 15,000 + 1,000 + 1,800 + 120 = 17,920.',src:PA+' p.31'},
+  {k:'mcq',q:'Akram says 34 × 69 gives the same answer as (34 × 70) − 34. Do you agree?',o:['Agree','Disagree'],c:0,why:'69 is one less than 70, so 34 × 69 is one 34 less than 34 × 70: 2,380 − 34 = 2,346.',src:SB+' p.74'},
+  {k:'mcq',q:'Salem says 4,120 × 74 > 6,820 × 45. Is he right?',o:['No','Yes'],c:0,why:'4,120 × 74 = 304,880 and 6,820 × 45 = 306,900. The second one is bigger, so Salem is wrong.',src:PA+' p.34'},
+  {k:'mcq',q:'Mona sold 402 kebabs, then 753, with 83 g of meat each. Amal did 402 × 83 + 753 × 83. Sarah did (402 + 753) × 83. Who is right?',o:['Both','Only Amal','Only Sarah','Neither'],c:0,why:'Both get 95,865 g. Sarah used the distributive property backwards, which saves one multiplication.',src:PA+' p.34'},
+  {k:'num',q:'Find the missing digits: 67 × 76. Row 1 is 402. Row 2 is ?',a:4690,how:'Row 2 is 67 × 70 = 4,690. The total is 402 + 4,690 = 5,092.',src:SB+' p.74'},
+ ],
+ world:[
+  {k:'num',q:'A sandstorm lasts 120 minutes a day for 33 days. How many minutes altogether?',a:3960,unit:'minutes',m:[120,33],src:SB+' p.78'},
+  {k:'num',q:'Challenge: how many hours is that?',a:66,unit:'hours',how:'3,960 ÷ 60 = 66 hours. (Or: 2 hours a day × 33 days = 66 hours.)',src:SB+' p.78'},
+  {k:'num',q:'Mona sold 402 kebabs in February and 753 in March, with 83 g of meat each. How many grams of meat?',a:95865,unit:'g',how:'402 + 753 = 1,155 kebabs. 1,155 × 83 = 95,865 g.',src:SB+' p.78'},
+  {k:'num',q:'Wael\'s recipe needs 170 g each of pistachios, walnuts and hazelnuts. He makes it 18 times. How many grams of nuts?',a:9180,unit:'g',how:'One recipe: 170 × 3 = 510 g. Then 510 × 18 = 9,180 g.',src:SB+' p.78'},
+  {k:'num',q:'Syrup: 250 mL honey, 15 mL orange extract and 30 mL lemon juice per batch. How many mL for 18 batches?',a:5310,unit:'mL',how:'One batch: 250 + 15 + 30 = 295 mL. Then 295 × 18 = 5,310 mL.',src:SB+' p.79'},
+  {k:'num',q:'Mona uses 140 g of sesame per recipe and makes it 20 times a week. How many grams a week?',a:2800,unit:'g',how:'140 × 20 = 2,800 g.',src:SB+' p.79'},
+  {k:'num',q:'Each recipe makes 120 mL of tahini, 20 times a week. How many mL in 36 weeks?',a:86400,unit:'mL',how:'120 × 20 = 2,400 mL a week. 2,400 × 36 = 86,400 mL, which is 86 L and 400 mL.',src:SB+' p.79'},
+  {k:'num',q:'Mona uses 6 lemons per litre of lemonade and makes 8 litres a day. How many lemons in 365 days?',a:17520,unit:'lemons',how:'6 × 8 = 48 lemons a day. 48 × 365 = 17,520.',src:SB+' p.79'},
+  {k:'num',q:'How many litres of lemonade does she make in 365 days, at 8 litres a day?',a:2920,unit:'L',m:[365,8],src:SB+' p.79'},
+  {k:'num',q:'Mona uses 1,133 g of sugar every day. How many grams in 30 weeks?',a:237930,unit:'g',how:'30 weeks = 30 × 7 = 210 days. 1,133 × 210 = 237,930 g.',src:SB+' p.79'},
+  {k:'num',q:'Omran buys 18 T-shirts at 265 pounds and 13 trousers at 370 pounds. What is the total cost?',a:9580,unit:'pounds',how:'18 × 265 = 4,770. 13 × 370 = 4,810. 4,770 + 4,810 = 9,580 pounds.',src:PA+' p.34'},
+  {k:'num',q:'Hossam drives 60 km every day. How far in 187 days?',a:11220,unit:'km',m:[187,60],src:PA+' p.32'},
+  {k:'num',q:'Ali walks 6 km a day. How far in 187 days?',a:1122,unit:'km',m:[187,6],src:SB+' p.67'},
+  {k:'num',q:'The Eastern Desert gets less than 25 mm of rain a year. What is the most it could get in 25 years?',a:625,unit:'mm',m:[25,25],src:SB+' p.74'},
+  {k:'num',q:'A teddy bear costs 328 LE. What do 6 cost?',a:1968,unit:'LE',m:[328,6],src:PA+' p.32'},
+  {k:'num',q:'A doll costs 245 LE. What do 8 cost?',a:1960,unit:'LE',m:[245,8],src:PA+' p.32'},
+  {k:'num',q:'A glass table top is 75 cm by 130 cm. What area of glass is needed?',a:9750,unit:'cm²',m:[130,75],src:PA+' p.32'},
+  {k:'num',q:'A frame is 87 cm by 113 cm. Wood costs 35 pounds per metre. How much does the wood for the frame cost?',a:140,unit:'pounds',how:'Perimeter = 87 + 113 + 87 + 113 = 400 cm = 4 m. 4 × 35 = 140 pounds.',src:PA+' p.32'},
+ ],
+};
+/* ---------- Jimmy's classwork binder (photos 15 Nov), pages 52-66 ---------- */
+const CW='Classwork binder';
+const fl=(p,q)=>({k:'list',q:`${q} = ${p.reduce((s,x)=>s*x,1)}. List <b>all</b> its factors.`,a:N.factors(p.reduce((s,x)=>s*x,1)),src:CW+' p.56',tip:1});
+BANK.fix=[
+  fl([2,3,3],'2 × 3 × 3'),fl([2,2,7],'2 × 2 × 7'),fl([3,3,5],'3 × 3 × 5'),fl([2,2,3],'2 × 2 × 3'),fl([2,3,5],'2 × 3 × 5'),fl([2,5,5],'2 × 5 × 5'),
+  {k:'gcflcm',a:10,b:8,src:CW+' p.61'},{k:'gcflcm',a:6,b:8,src:CW+' p.62'},{k:'gcflcm',a:3,b:12,src:CW+' p.61'},{k:'gcflcm',a:12,b:9,src:CW+' p.61'},
+  {k:'gl',s:'Sally has two strips of cloth, 15 cm and 25 cm wide. She cuts both into strips of equal width, as wide as possible. How wide should she cut them?',kind:'GCF',x:15,y:25,a:5,unit:'cm',src:CW+' p.64'},
+  {k:'num',q:'Farida has 14 roses and 21 daisies. She makes identical arrangements with no flowers left over. What is the greatest number of arrangements?',a:7,unit:'arrangements',w:{t:'gcf',a:14,b:21},src:CW+' p.58'},
+  {k:'pf',n:50,src:CW+' p.55'},{k:'pf',n:35,src:CW+' p.55'},
+];
+BANK.primes.push(
+  {k:'pc',n:11,src:CW+' p.53'},{k:'pc',n:26,src:CW+' p.53'},{k:'pc',n:37,src:CW+' p.53'},{k:'pc',n:82,src:CW+' p.53'},{k:'pc',n:23,src:CW+' p.54'},{k:'pc',n:13,src:CW+' p.54'},
+  {k:'multi',q:'Which of these numbers have <b>4</b> as a factor?',o:['12','20','27','25','16'],c:[0,1,4],why:'12 = 4 × 3, 20 = 4 × 5, 16 = 4 × 4. 27 and 25 leave a remainder when divided by 4.',src:CW+' p.53'},
+  {k:'multi',q:'Which of these numbers have <b>5</b> as a factor?',o:['12','20','27','25','16'],c:[1,3],why:'A number has 5 as a factor when its ones digit is 0 or 5: 20 and 25.',src:CW+' p.53'},
+  {k:'multi',q:'Which of these numbers have <b>3</b> as a factor?',o:['21','26','27','35','30'],c:[0,2,4],why:'Add the digits. 2+1 = 3, 2+7 = 9 and 3+0 = 3 can all be divided by 3. 2+6 = 8 and 3+5 = 8 cannot.',src:CW+' p.52'},
+  {k:'num',q:'4 × <i>m</i> = 28. Find <i>m</i>.',a:7,how:'4 times what is 28? 28 ÷ 4 = 7.',src:CW+' p.53'},
+  {k:'num',q:'<i>v</i> × 15 = 30. Find <i>v</i>.',a:2,how:'30 ÷ 15 = 2.',src:CW+' p.53'},
+  {k:'num',q:'6 × <i>t</i> = 48. Find <i>t</i>.',a:8,how:'48 ÷ 6 = 8.',src:CW+' p.53'},
+  {k:'num',q:'<i>p</i> × 8 = 72. Find <i>p</i>.',a:9,how:'72 ÷ 8 = 9.',src:CW+' p.53'},
+  {k:'mcq',q:'Rana has 16 cookies to put into bags with none left over. Which set lists ways she could do it?',o:['2, 4 and 8 bags','2, 5 and 8 bags','5, 7 and 12 bags','4, 6, 10 and 12 bags'],c:0,why:'The number of bags must be a factor of 16: 1, 2, 4, 8, 16. Only 2, 4 and 8 all work.',src:CW+' p.54'},
+  {k:'mcq',q:'True or false: the number 19 has three factors.',o:['False','True'],c:0,why:'19 is prime, so it has only two factors: 1 and 19.',src:CW+' p.65'},
+  {k:'mcq',q:'True or false: 15 is a composite number.',o:['True','False'],c:0,why:'15 has the factors 1, 3, 5, 15. That is more than two, so it is composite.',src:CW+' p.65'},
+  {k:'mcq',q:'True or false: 2 is a multiple of any even number.',o:['False','True'],c:0,why:'It is the other way round: 2 is a <b>factor</b> of every even number, and every even number is a multiple of 2.',src:CW+' p.65'},
+  {k:'mcq',q:'Fill in: "A ______ is a number with more than one set of factor pairs."',o:['composite number','prime number','product','multiple'],c:0,why:'12 has 1 × 12, 2 × 6 and 3 × 4, so it is composite. A prime has only one pair: 1 × itself.',src:CW+' p.62'},
+  {k:'mcq',q:'Fill in: "______ is a factor of all numbers."',o:['The number one','Two','Zero','Ten'],c:0,why:'Every number can be divided by 1: n = 1 × n.',src:CW+' p.62'},
+  {k:'mcq',q:'Fill in: "A ______ is the answer to a multiplication problem."',o:['product','factor','multiple','prime'],c:0,why:'In 4 × 5 = 20, 4 and 5 are factors and 20 is the product.',src:CW+' p.62'},
+);
+BANK.pf.push({k:'pf',n:16,src:CW+' p.56'},{k:'pf',n:36,src:CW+' p.56'},{k:'pf',n:60,src:CW+' p.56'});
+BANK.gcf.push(
+  {k:'list',q:'List all the factors of 21.',a:N.factors(21),src:CW+' p.54'},{k:'list',q:'List all the factors of 18.',a:N.factors(18),src:CW+' p.54'},
+  {k:'list',q:'List all the factors of 16.',a:N.factors(16),src:CW+' p.54'},{k:'list',q:'List all the factors of 35.',a:N.factors(35),src:CW+' p.54'},
+  {k:'num',q:'Find the GCF of 6 and 10.',a:2,w:{t:'gcf',a:6,b:10},src:CW+' p.57'},{k:'num',q:'Find the GCF of 21 and 35.',a:7,w:{t:'gcf',a:21,b:35},src:CW+' p.57'},
+  {k:'num',q:'Find the GCF of 18 and 24.',a:6,w:{t:'gcf',a:18,b:24},src:CW+' p.58'},{k:'num',q:'Find the GCF of 10 and 30.',a:10,w:{t:'gcf',a:10,b:30},src:CW+' p.58'},
+  {k:'num',q:'Find the GCF of 24 and 36.',a:12,w:{t:'gcf',a:24,b:36},src:CW+' p.57 example'},
+  {k:'num',q:'Osama has 36 oranges and 42 pears. He puts all the fruit into baskets, each with the same number of oranges and of pears. What is the greatest number of baskets?',a:6,unit:'baskets',w:{t:'gcf',a:36,b:42},src:CW+' p.58'},
+  {k:'gl',s:'Dalia has two strips of cloth, 20 cm and 30 cm wide. She cuts both into strips of equal width, as wide as possible. How wide?',kind:'GCF',x:20,y:30,a:10,unit:'cm',src:CW+' p.66'},
+);
+BANK.lcm.push(
+  {k:'num',q:'Find the LCM of 3 and 9.',a:9,w:{t:'lcm',a:3,b:9},src:CW+' p.60'},{k:'num',q:'Find the LCM of 2 and 8.',a:8,w:{t:'lcm',a:2,b:8},src:CW+' p.60'},
+  {k:'num',q:'Find the LCM of 4 and 5.',a:20,w:{t:'lcm',a:4,b:5},src:CW+' p.60'},{k:'num',q:'Find the LCM of 8 and 12.',a:24,w:{t:'lcm',a:8,b:12},src:CW+' p.60 example'},
+  {k:'list',q:'Find the first two common multiples of 3 and 4 (not 0).',a:[12,24],ordered:1,src:CW+' p.59'},
+  {k:'list',q:'Find the first two common multiples of 4, 6 and 8 (not 0).',a:[24,48],ordered:1,src:CW+' p.59'},
+);
+BANK.which.push(
+  {k:'gl',s:'Selim exercises every 10 days and Darine every 14 days. Both exercised today. How many days until they exercise together again?',kind:'LCM',x:10,y:14,a:70,unit:'days',src:CW+' p.64'},
+  {k:'gl',s:'Dina sells peaches in baskets of 16 and bananas in bags of 18. She sells the same number of each. What is the smallest number of each she sold?',kind:'LCM',x:16,y:18,a:144,unit:'of each',src:CW+' p.64'},
+  {k:'gl',s:'Hany exercises every 8 days and Mona every 12 days. They exercised together today. In how many days will they exercise together again?',kind:'LCM',x:8,y:12,a:24,unit:'days',src:CW+' p.66'},
+  {k:'mcq',q:'True or false: the GCF of 4 and 8 is 2.',o:['False','True'],c:0,why:'2 is a common factor, but not the greatest. 4 divides both 4 and 8, so the GCF is 4.',src:CW+' p.65'},
+  {k:'mcq',q:'True or false: the LCM of 6 and 12 is 12.',o:['True','False'],c:0,why:'12 is a multiple of 6 (6 × 2) and of 12 (12 × 1), and nothing smaller works for 12.',src:CW+' p.65'},
+);
+BANK.both.push({k:'gcflcm',a:4,b:6,src:CW+' p.61'},{k:'gcflcm',a:24,b:12,src:CW+' p.65'},{k:'gcflcm',a:32,b:8,src:CW+' p.65'},{k:'gcflcm',a:18,b:12,src:CW+' p.66'});
+/* fill in answers for pure multiplication items */
+for(const list of Object.values(BANK))for(const q of list){if(q.m&&q.a==null)q.a=q.m[0]*q.m[1]}
+function selfCheck(){const bad=[];
+  for(const q of Object.values(BANK).flat()){
+    if(q.m&&q.a!==q.m[0]*q.m[1]&&!q.how)bad.push('m '+q.m);
+    if(q.w&&q.w.t==='gcf'&&N.gcf(q.w.a,q.w.b)!==q.a)bad.push('gcf '+q.q);
+    if(q.w&&q.w.t==='lcm'&&N.lcm(q.w.a,q.w.b)!==q.a)bad.push('lcm '+q.q);
+    if(q.k==='gl'&&(q.kind==='GCF'?N.gcf(q.x,q.y):N.lcm(q.x,q.y))!==q.a)bad.push('gl '+q.s);
+  }
+  const fixed={3960:[120,33],95865:[1155,83],9180:[510,18],5310:[295,18],2800:[140,20],86400:[2400,36],17520:[48,365],237930:[1133,210],9580:[4770+4810,1],4690:[67,70],66:[2,33],140:[4,35]};
+  for(const [a,[x,y]] of Object.entries(fixed))if(x*y!==+a)bad.push('fixed '+a);
+  if(N.lcm(N.lcm(7,6),12)!==84)bad.push('84');
+  return bad}
+</script>
+
+<script>
+document.documentElement.lang='en';
+const KEY='jimmy-number-lab-v1';
+let PROG={done:{},best:null};
+try{const s=JSON.parse(localStorage.getItem(KEY)||'null');if(s&&s.done)PROG=s}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(PROG))}catch(e){}};
+const $=s=>document.querySelector(s);
+const el=(t,c,h)=>{const n=document.createElement(t);if(c)n.className=c;if(h!=null)n.innerHTML=h;return n};
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const num=s=>{s=String(s).replace(/[,\s]/g,'');return /^\d+$/.test(s)?+s:NaN};
+const nums=s=>(String(s).match(/\d[\d,]*/g)||[]).map(x=>+x.replace(/,/g,''));
+const pcSpan=n=>`<span class="pc ${n===1?'one':N.isPrime(n)?'p':'c'}">${n}</span>`;
+const uid=()=>Math.random().toString(36).slice(2,9);
+
+/* ---------- working renderers ---------- */
+function mulWork(a,b){
+  const top=N.parts(a),side=N.parts(b);
+  let h='<table class="area"><tr><th></th>'+top.map(t=>`<th>${fx(t)}</th>`).join('')+'</tr>';
+  const cells=[];
+  for(const s of side){h+=`<tr><th class="r">${fx(s)}</th>`;for(const t of top){cells.push(s*t);h+=`<td>${fx(s*t)}</td>`}h+='</tr>'}
+  h+='</table>';
+  const algo=algoHTML(a,b);
+  return `<div class="workgrid"><div><h4>Area model</h4><div class="scroll">${h}</div><p style="margin-top:8px">${cells.map(fx).join(' + ')} = <b>${fx(a*b)}</b></p></div><div><h4>Standard algorithm</h4><div class="scroll">${algo}</div></div></div>`}
+function algoHTML(a,b){
+  const ds=String(b).split('').reverse().map(Number);
+  const rows=ds.map((d,i)=>({v:a*d*Math.pow(10,i),note:`${fx(a)} × ${fx(d*Math.pow(10,i))}`}));
+  const w=fx(a*b).length+2;
+  const pad=s=>String(s).padStart(w,' ');
+  let h=`<div class="algo"><span class="v">${pad(fx(a))}</span><span></span><span class="v">${pad('× '+fx(b))}</span><span></span><span class="rule"></span><span></span>`;
+  if(ds.length===1)return h+`<span class="v total">${pad(fx(a*b))}</span><span class="note">${fx(a)} × ${ds[0]}</span></div>`;
+  rows.forEach((r,i)=>{h+=`<span class="v">${pad((i===rows.length-1?'+ ':'')+fx(r.v))}</span><span class="note">${r.note}${i?' (the 0 holds the ones place)':''}</span>`});
+  h+=`<span class="rule"></span><span></span><span class="v total">${pad(fx(a*b))}</span><span class="note">add the rows</span></div>`;return h}
+function gcfWork(a,b){
+  const fa=N.factors(a),fb=N.factors(b),common=fa.filter(x=>fb.includes(x)),g=N.gcf(a,b);
+  const row=(n,f)=>`<p><b>${n}:</b></p><div class="chips">${f.map(x=>`<span class="chip ${common.includes(x)?'both':''} ${x===g?'big':''}">${x}</span>`).join('')}</div>`;
+  const pa=N.pf(a),pb=N.pf(b);const sh=[];const pb2=[...pb];for(const p of pa){const i=pb2.indexOf(p);if(i>=0){sh.push(p);pb2.splice(i,1)}}
+  return `<div class="workgrid"><div><h4>List the factors</h4>${row(a,fa)}${row(b,fb)}<p style="margin-top:6px">Common factors: ${common.join(', ')}. The greatest is <b>${g}</b>.</p></div><div><h4>Prime factors</h4><p class="ex">${a} = ${pa.join(' × ')||a}<br>${b} = ${pb.join(' × ')||b}</p><p>Shared: ${sh.length?sh.join(' × ')+' = <b>'+g+'</b>':'nothing, so GCF = <b>1</b>'}</p></div></div>`}
+function lcmWork(a,b){
+  const L=N.lcm(a,b);const ma=N.mult(a,L/a),mb=N.mult(b,L/b);
+  const row=(n,m,c)=>`<p><b>Multiples of ${n}:</b></p><div class="chips">${m.map(x=>`<span class="chip ${x===L?'both big':c}">${x}</span>`).join('')}</div>`;
+  const pa=N.pf(a),pb=N.pf(b),rest=[...pb],sh=[];for(const p of pa){const i=rest.indexOf(p);if(i>=0){sh.push(p);rest.splice(i,1)}}
+  const left=pa.filter((p,i)=>{const k=sh.indexOf(p);return true});
+  const extraA=[...pa];sh.forEach(p=>extraA.splice(extraA.indexOf(p),1));
+  const prime=(a>1&&b>1)?`<p><b>Prime factor way (your classwork):</b> ${a} = ${pa.join(' × ')||a}, ${b} = ${pb.join(' × ')||b}. Take the shared primes once (${sh.join(' × ')||'none'}), then add the ones left over (${[...extraA,...rest].join(' × ')||'none'}): LCM = ${[...sh,...extraA,...rest].join(' × ')} = <b>${L}</b>.</p>`:'';
+  return `<div class="work">${row(a,ma,'a')}${row(b,mb,'b')}<p>The first number in both lists is <b>${L}</b>, so LCM = ${L}.</p>${prime}</div>`}
+
+/* ---------- item renderer ---------- */
+function renderItem(q,n,mode){
+  const test=mode==='test';
+  const box=el('div','q');if(PROG.done[q.id]&&!test)box.classList.add('done');
+  const head=el('div','qt');head.appendChild(el('span','qn',n+'.'));const body=el('div','qbody');head.appendChild(body);box.appendChild(head);
+  const fb=el('div','fb');const work=el('div','');work.hidden=true;
+  const mark=()=>{if(!test){PROG.done[q.id]=1;save();box.classList.add('done');updateNav()}};
+  const src=q.src?`<span class="src">${q.src}</span>`:'';
+  const api={node:box,grade:()=>false,reveal:()=>{}};
+  const workHTML=()=>{
+    if(q.w&&q.w.t==='gcf')return gcfWork(q.w.a,q.w.b);
+    if(q.w&&q.w.t==='lcm')return lcmWork(q.w.a,q.w.b);
+    if(q.m&&!q.how)return mulWork(q.m[0],q.m[1]);
+    if(q.how)return `<div class="work"><p>${q.how}</p></div>`;
+    return ''};
+  const textInput=(cls,label)=>{const i=el('input','ans '+(cls||''));i.id='in-'+(mode||'p')+'-'+q.id+'-'+uid();i.autocomplete='off';i.setAttribute('aria-label',label||'Your answer');return i};
+  const addCheck=(row,go)=>{if(test)return;const cb=el('button','btn','Check');cb.onclick=go;row.appendChild(cb);
+    if(workHTML()){const sb=el('button','btn ghost','Show how');sb.onclick=()=>{if(work.hidden){work.innerHTML=workHTML();work.hidden=false}else work.hidden=true};row.appendChild(sb)}};
+
+  if(q.k==='num'){
+    const qt=q.q||`${fx(q.m[0])} × ${fx(q.m[1])} =`;
+    body.innerHTML=`<div>${qt}</div>`+src;
+    const row=el('div','row');const inp=textInput('', 'Your answer');inp.inputMode='numeric';row.appendChild(inp);if(q.unit)row.appendChild(el('span','muted',q.unit));
+    const ok=()=>num(inp.value)===q.a;
+    let tries=0;
+    const go=()=>{if(isNaN(num(inp.value))){fb.className='fb info';fb.textContent='Type a whole number. Commas are fine, like 12,852.';return}
+      if(ok()){fb.className='fb ok';fb.textContent='Correct! '+fx(q.a)+(q.unit?' '+q.unit:'');mark()}
+      else{tries++;fb.className='fb no';fb.innerHTML=tries===1?'Not yet. Check each step and try again.'+(q.m&&!q.how?` Estimate: about ${fx(est(q.m[0])*est(q.m[1]))}.`:''):'Still not right. Press <b>Show how</b>.'}};
+    inp.onkeydown=e=>{if(e.key==='Enter'&&!test)go()};addCheck(row,go);
+    box.append(row,fb,work);
+    api.grade=ok;api.reveal=()=>{const r=ok();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`Your answer: ${inp.value||'blank'}. Right answer: <b>${fx(q.a)}${q.unit?' '+q.unit:''}</b>`;work.innerHTML=workHTML();work.hidden=!work.innerHTML;inp.disabled=true};
+  }
+  else if(q.k==='pf'){
+    body.innerHTML=`<div>Write the prime factorization of <b class="n">${q.n}</b>. Type the primes with × or spaces, like 2 × 2 × 3.</div>`+src;
+    const row=el('div','row');const inp=textInput('wide','Prime factors');row.appendChild(inp);
+    const want=N.pf(q.n);
+    const ok=()=>{const g=nums(inp.value).sort((x,y)=>x-y);return g.length===want.length&&g.every((x,i)=>x===want[i])};
+    const go=()=>{const g=nums(inp.value);if(!g.length){fb.className='fb info';fb.textContent='Type the prime numbers, like 2 × 3 × 3.';return}
+      if(ok()){fb.className='fb ok';fb.textContent=`Correct! ${q.n} = ${want.join(' × ')}`;mark();return}
+      const notP=g.filter(x=>!N.isPrime(x));const prod=g.reduce((s,x)=>s*x,1);fb.className='fb no';
+      fb.innerHTML=notP.length?`${notP.join(', ')} ${notP.length>1?'are':'is'} not prime. ${notP.includes(1)?'1 is never a prime factor. ':''}Keep splitting until every number is prime.`:`Those primes multiply to ${prod}, not ${q.n}.`};
+    inp.onkeydown=e=>{if(e.key==='Enter'&&!test)go()};
+    if(!test){const cb=el('button','btn','Check');cb.onclick=go;const sb=el('button','btn ghost','Show the tree');sb.onclick=()=>{if(work.hidden){work.innerHTML='';work.appendChild(treeView(autoTree(q.n)));work.appendChild(el('p','',`${q.n} = ${want.join(' × ')}`));work.className='work scroll';work.hidden=false}else work.hidden=true};row.append(cb,sb)}
+    box.append(row,fb,work);
+    api.grade=ok;api.reveal=()=>{const r=ok();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`Right answer: <b>${q.n} = ${want.join(' × ')}</b>`;work.innerHTML='';work.appendChild(treeView(autoTree(q.n)));work.className='work scroll';work.hidden=false;inp.disabled=true};
+  }
+  else if(q.k==='list'){
+    body.innerHTML=`<div>${q.q}</div><span class="src">Type the numbers with commas or spaces.${q.src?' '+q.src:''}</span>`;
+    const row=el('div','row');const inp=textInput('wide','Your list');row.appendChild(inp);
+    const ok=()=>{const g=nums(inp.value);if(q.ordered)return g.length===q.a.length&&g.every((x,i)=>x===q.a[i]);const s=[...new Set(g)].sort((x,y)=>x-y);return s.length===q.a.length&&s.every((x,i)=>x===q.a[i])};
+    const go=()=>{const g=nums(inp.value);if(!g.length){fb.className='fb info';fb.textContent='Type some numbers first.';return}
+      if(ok()){fb.className='fb ok';fb.textContent='Correct! '+q.a.join(', ');mark();return}
+      const extra=g.filter(x=>!q.a.includes(x)),miss=q.a.filter(x=>!g.includes(x));fb.className='fb no';
+      fb.innerHTML=(extra.length?`${extra.join(', ')} should not be there. `:'')+(miss.length?`You are missing ${miss.length} number${miss.length>1?'s':''}.`:'')+(!extra.length&&!miss.length?'Put them in order, smallest first.':'')};
+    inp.onkeydown=e=>{if(e.key==='Enter'&&!test)go()};
+    if(!test){const cb=el('button','btn','Check');cb.onclick=go;row.appendChild(cb)}
+    box.append(row,fb);
+    api.grade=ok;api.reveal=()=>{const r=ok();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`Right answer: <b>${q.a.join(', ')}</b>`;inp.disabled=true};
+  }
+  else if(q.k==='pc'){
+    body.innerHTML=`<div>Is <b class="n">${q.n}</b> prime, composite or neither?</div>`+src;
+    const want=q.n===1?2:N.isPrime(q.n)?0:1;const labels=['Prime','Composite','Neither'];
+    const opts=el('div','opts');let picked=-1;const btns=labels.map((l,i)=>{const b=el('button','opt',l);opts.appendChild(b);b.onclick=()=>pick(i);return b});
+    const f=N.factors(q.n);
+    const why=()=>`Factors of ${q.n}: ${f.join(', ')}. ${q.n===1?'Only one factor, so 1 is neither prime nor composite.':f.length===2?'Exactly two factors, so it is prime.':`${f.length} factors, more than two, so it is composite.`}`;
+    const lock=()=>btns.forEach((b,i)=>{b.disabled=true;if(i===want)b.classList.add('right');else if(i===picked)b.classList.add('wrong')});
+    function pick(i){picked=i;if(test){btns.forEach((b,j)=>b.classList.toggle('sel',j===i));return}lock();fb.className='fb '+(i===want?'ok':'no');fb.innerHTML=(i===want?'Correct! ':'Not quite. ')+why();if(i===want)mark()}
+    box.append(opts,fb);
+    api.grade=()=>picked===want;api.reveal=()=>{lock();fb.className='fb '+(picked===want?'ok':'no');fb.innerHTML=(picked===want?'Correct! ':'')+why()};
+  }
+  else if(q.k==='mcq'||q.k==='multi'){
+    const multi=q.k==='multi';
+    body.innerHTML=`<div>${q.q}</div>`+(multi?'<span class="src">Choose all the right answers, then press Check.'+(q.src?' '+q.src:'')+'</span>':src);
+    const opts=el('div','opts');if(q.long)opts.style.gridTemplateColumns='1fr';
+    const sel=new Set();let picked=-1;
+    const order=shuffle(q.o.map((_,i)=>i));
+    const btns=order.map(i=>{const b=el('button','opt',q.o[i]);b.dataset.i=i;opts.appendChild(b);return b});
+    const right=i=>multi?q.c.includes(i):i===q.c;
+    const ok=()=>multi?(sel.size===q.c.length&&q.c.every(i=>sel.has(i))):picked===q.c;
+    const lock=()=>btns.forEach(b=>{b.disabled=true;const i=+b.dataset.i;b.classList.remove('sel');if(right(i))b.classList.add('right');else if(multi?sel.has(i):i===picked)b.classList.add('wrong')});
+    btns.forEach(b=>b.onclick=()=>{const i=+b.dataset.i;
+      if(multi){sel.has(i)?sel.delete(i):sel.add(i);b.classList.toggle('sel',sel.has(i));return}
+      picked=i;if(test){btns.forEach(x=>x.classList.toggle('sel',x===b));return}
+      lock();fb.className='fb '+(ok()?'ok':'no');fb.innerHTML=(ok()?'Correct! ':'Not this one. ')+q.why;if(ok())mark()});
+    box.appendChild(opts);
+    if(multi&&!test){const row=el('div','row');const cb=el('button','btn','Check');cb.onclick=()=>{if(!sel.size){fb.className='fb info';fb.textContent='Choose your answers first.';return}lock();fb.className='fb '+(ok()?'ok':'no');fb.innerHTML=(ok()?'Correct! ':'Not quite. ')+q.why;if(ok())mark()};row.appendChild(cb);box.appendChild(row)}
+    box.appendChild(fb);
+    api.grade=ok;api.reveal=()=>{lock();fb.className='fb '+(ok()?'ok':'no');fb.innerHTML=(ok()?'Correct! ':(multi?!sel.size:picked<0)?'No answer chosen. ':'Wrong. ')+q.why};
+  }
+  else if(q.k==='gl'){
+    body.innerHTML=`<div>${q.s}</div>`+src;
+    box.appendChild(el('div','','<b>a)</b> Do you need the GCF or the LCM?'));
+    const opts=el('div','opts');let picked=null;const bG=el('button','opt','GCF'),bL=el('button','opt','LCM');opts.append(bG,bL);
+    const fa=el('div','fb');
+    const lockA=()=>{[bG,bL].forEach(b=>{b.disabled=true;b.classList.remove('sel')});(q.kind==='GCF'?bG:bL).classList.add('right');if(picked&&picked!==q.kind)(picked==='GCF'?bG:bL).classList.add('wrong')};
+    const reason=q.kind==='GCF'?'We are splitting into equal groups as large (or as many) as possible, so it is the GCF.':'Things repeat and we want when they match up again (or the smallest amount), so it is the LCM.';
+    const pickA=k=>{picked=k;if(test){bG.classList.toggle('sel',k==='GCF');bL.classList.toggle('sel',k==='LCM');return}lockA();fa.className='fb '+(k===q.kind?'ok':'no');fa.textContent=(k===q.kind?'Right! ':'Not this time. ')+reason;if(k===q.kind&&okB())mark()};
+    bG.onclick=()=>pickA('GCF');bL.onclick=()=>pickA('LCM');
+    const row=el('div','row');row.innerHTML='<b>b)</b>&nbsp;Answer:';const inp=textInput('','Your answer');inp.inputMode='numeric';row.appendChild(inp);row.appendChild(el('span','muted',q.unit));
+    const okB=()=>num(inp.value)===q.a;
+    const wh=()=>q.kind==='GCF'?gcfWork(q.x,q.y):lcmWork(q.x,q.y);
+    const go=()=>{if(isNaN(num(inp.value))){fb.className='fb info';fb.textContent='Type a whole number.';return}
+      if(okB()){fb.className='fb ok';fb.textContent=`Correct! ${q.a} ${q.unit}`;if(picked===q.kind)mark();else if(!picked)fb.textContent+=' Now answer part a too.'}
+      else{fb.className='fb no';fb.innerHTML=`Not yet. Find the ${q.kind} of ${q.x} and ${q.y}.`}};
+    inp.onkeydown=e=>{if(e.key==='Enter'&&!test)go()};
+    if(!test){const cb=el('button','btn','Check');cb.onclick=go;const sb=el('button','btn ghost','Show how');sb.onclick=()=>{if(work.hidden){work.innerHTML=wh();work.hidden=false}else work.hidden=true};row.append(cb,sb)}
+    box.append(opts,fa,row,fb,work);
+    api.grade=()=>picked===q.kind&&okB();api.reveal=()=>{lockA();const r=picked===q.kind&&okB();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`It needs the <b>${q.kind}</b>. Answer: <b>${q.a} ${q.unit}</b>`;work.innerHTML=wh();work.hidden=false;inp.disabled=true};
+  }
+  else if(q.k==='gcflcm'){
+    const G=N.gcf(q.a,q.b),L=N.lcm(q.a,q.b);
+    body.innerHTML=`<div>Find the GCF and the LCM of <b class="n">${q.a}</b> and <b class="n">${q.b}</b>.</div>`+src;
+    const row=el('div','row');row.appendChild(el('span','','GCF'));const ig=textInput('','GCF');ig.inputMode='numeric';ig.style.width='6em';row.appendChild(ig);
+    row.appendChild(el('span','','LCM'));const il=textInput('','LCM');il.inputMode='numeric';il.style.width='6em';row.appendChild(il);
+    const ok=()=>num(ig.value)===G&&num(il.value)===L;
+    const wh=()=>gcfWork(q.a,q.b)+lcmWork(q.a,q.b);
+    const go=()=>{const g=num(ig.value),l=num(il.value);
+      if(ok()){fb.className='fb ok';fb.textContent=`Correct! GCF ${G}, LCM ${L}`;mark();return}
+      fb.className='fb no';fb.textContent=[g===G?'GCF is right.':'Check the GCF.',l===L?'LCM is right.':'Check the LCM.'].join(' ')+(g>Math.min(q.a,q.b)?' Hint: the GCF cannot be bigger than the smaller number.':'')};
+    [ig,il].forEach(i=>i.onkeydown=e=>{if(e.key==='Enter'&&!test)go()});
+    if(!test){const cb=el('button','btn','Check');cb.onclick=go;const sb=el('button','btn ghost','Show how');sb.onclick=()=>{if(work.hidden){work.innerHTML=wh();work.className='stack';work.hidden=false}else work.hidden=true};row.append(cb,sb)}
+    box.append(row,fb,work);
+    api.grade=ok;api.reveal=()=>{const r=ok();fb.className='fb '+(r?'ok':'no');fb.innerHTML=r?'Correct!':`GCF = <b>${G}</b>, LCM = <b>${L}</b>`;work.innerHTML=wh();work.className='stack';work.hidden=false;ig.disabled=il.disabled=true};
+  }
+  return api}
+const est=n=>{const s=String(n);const p=Math.pow(10,s.length-1);return Math.round(n/p)*p};
+
+/* ---------- factor trees ---------- */
+function autoTree(n){if(n<4||N.isPrime(n))return{n};let d=2;while(n%d)d++;return{n,kids:[autoTree(d),autoTree(n/d)]}}
+function treeView(t,onSplit){
+  const node=el('div','tn');
+  const cls=t.n===1?'one':N.isPrime(t.n)?'p':'c';
+  if(!t.kids&&cls==='c'&&onSplit){const b=el('button','pc c',t.n);b.setAttribute('aria-label','Split '+t.n);node.appendChild(b);
+    const sp=el('div','splits');sp.hidden=true;
+    for(let d=2;d*d<=t.n;d++)if(t.n%d===0){const o=el('button','btn ghost small',`${d} × ${t.n/d}`);o.onclick=()=>onSplit(t,d);sp.appendChild(o)}
+    b.onclick=()=>{sp.hidden=!sp.hidden};node.appendChild(sp)}
+  else node.appendChild(el('span','pc '+cls,t.n));
+  if(t.kids){node.insertAdjacentHTML('beforeend','<svg viewBox="0 0 100 22" preserveAspectRatio="none" aria-hidden="true"><line x1="50" y1="0" x2="25" y2="22" vector-effect="non-scaling-stroke"/><line x1="50" y1="0" x2="75" y2="22" vector-effect="non-scaling-stroke"/></svg>');
+    const k=el('div','kids');t.kids.forEach(c=>k.appendChild(treeView(c,onSplit)));node.appendChild(k)}
+  const wrap=el('div','tree');wrap.appendChild(node);return onSplit?node:wrap}
+function leaves(t){return t.kids?[...leaves(t.kids[0]),...leaves(t.kids[1])]:[t.n]}
+
+/* ---------- labs ---------- */
+(function(){ // factor rectangles
+  const r=$('#ar-n');
+  function draw(){const n=+r.value;$('#ar-v').textContent=n;const f=N.factors(n);const out=$('#ar-out');out.innerHTML='';
+    const pairs=f.filter(x=>x*x<=n).map(x=>[x,n/x]);
+    pairs.forEach(([a,b])=>{const d=el('div','arr');const g=el('div','grid');g.style.gridTemplateColumns=`repeat(${b},10px)`;for(let i=0;i<n;i++)g.appendChild(el('i'));d.appendChild(g);d.appendChild(el('span','',`${a} × ${b}`));out.appendChild(d)});
+    $('#ar-verdict').innerHTML=`${pcSpan(n)} &nbsp;Factors: ${f.join(', ')}. `+(n===1?'Neither prime nor composite.':N.isPrime(n)?'Only one rectangle, so it is <b>prime</b>.':`${pairs.length} rectangles, so it is <b>composite</b>.`)}
+  r.oninput=draw;draw();
+})();
+(function(){ // tree builder
+  const pick=$('#tr-pick'),own=$('#tr-own'),out=$('#tr-out'),msg=$('#tr-msg');
+  [24,18,20,28,40,42,54,72,75,8].forEach(n=>{const o=el('option');o.value=n;o.textContent=n;pick.appendChild(o)});
+  let root;
+  function start(n){root={n};render()}
+  function split(t,d){t.kids=[{n:d},{n:t.n/d}];render()}
+  function render(){out.innerHTML='';const v=treeView(root,split);const w=el('div','');w.style.minWidth='max-content';w.appendChild(v);out.appendChild(w);
+    const l=leaves(root);const done=l.every(x=>N.isPrime(x)||x===1);
+    msg.className='fb '+(done?'ok':'info');
+    msg.innerHTML=root.n<2?'Choose a number bigger than 1.':N.isPrime(root.n)&&!root.kids?`${root.n} is prime already. It cannot be split.`:done?`Done! ${root.n} = ${l.sort((a,b)=>a-b).join(' × ')}`:`Tap a square number to split it. So far: ${root.n} = ${l.join(' × ')}`}
+  pick.onchange=()=>{own.value='';start(+pick.value)};
+  own.oninput=()=>{const n=num(own.value);if(n>=2&&n<=10000)start(n)};
+  $('#tr-auto').onclick=()=>{const fill=t=>{if(t.kids)t.kids.forEach(fill);else if(!N.isPrime(t.n)&&t.n>1){const a=autoTree(t.n);t.kids=a.kids}};fill(root);render()};
+  $('#tr-reset').onclick=()=>start(root.n);
+  start(24);
+})();
+(function(){ // gcf lab
+  const A=$('#g-a'),B=$('#g-b');
+  function draw(){const a=num(A.value),b=num(B.value);const o=$('#g-out');
+    if(!(a>0&&b>0&&a<=500&&b<=500)){o.innerHTML='<p class="muted">Type two whole numbers from 1 to 500.</p>';return}
+    o.innerHTML=gcfWork(a,b)}
+  A.oninput=B.oninput=draw;draw();
+})();
+(function(){ // hundred chart
+  const A=$('#h-a'),B=$('#h-b'),g=$('#h-grid');
+  for(let i=1;i<=100;i++)g.appendChild(el('div','',i));
+  function draw(){const a=+A.value,b=+B.value;$('#h-av').textContent=a;$('#h-bv').textContent=b;const L=N.lcm(a,b);
+    [...g.children].forEach((c,i)=>{const n=i+1;c.className=(n%a===0?'a ':'')+(n%b===0?'b ':'')+(n===L?'l':'')});
+    $('#h-leg').innerHTML=`<span><i style="border:2.5px solid var(--sea)"></i>multiples of ${a}</span><span><i style="background:var(--coral)"></i>multiples of ${b}</span><span><i style="background:var(--both)"></i>common multiples</span>`;
+    const com=[];for(let n=1;n<=100;n++)if(n%a===0&&n%b===0)com.push(n);
+    $('#h-msg').innerHTML=`Common multiples up to 100: ${com.join(', ')||'none'}. The smallest is the LCM: <b>${L}</b>.${L>100?' (It is past 100.)':''}`}
+  A.oninput=B.oninput=draw;draw();
+})();
+(function(){ // area model lab
+  const A=$('#am-a'),B=$('#am-b'),out=$('#am-out'),fb=$('#am-fb');
+  const read=()=>{const a=num(A.value),b=num(B.value);if(!(a>0&&b>0&&a<100000&&b<1000)){out.innerHTML='<p class="muted">Use a number up to 5 digits times a number up to 3 digits.</p>';fb.textContent='';return null}return[a,b]};
+  function show(){const v=read();if(!v)return;fb.className='fb';fb.textContent='';out.innerHTML=mulWork(v[0],v[1]).replace(/^<div class="workgrid">|<\/div>$/g,'')}
+  function tryIt(){const v=read();if(!v)return;const[a,b]=v;const top=N.parts(a),side=N.parts(b);
+    let h='<div><h4>Fill in every box</h4><div class="scroll"><table class="area"><tr><th></th>'+top.map(t=>`<th>${fx(t)}</th>`).join('')+'</tr>';
+    side.forEach((s,i)=>{h+=`<tr><th class="r">${fx(s)}</th>`;top.forEach((t,j)=>{h+=`<td data-v="${s*t}"><input class="cell" id="am-c${i}-${j}" inputmode="numeric" aria-label="${fx(s)} times ${fx(t)}"></td>`});h+='</tr>'});
+    h+=`</table></div><div class="row" style="margin-top:10px"><label for="am-total">Total</label><input class="ans" id="am-total" inputmode="numeric"><button class="btn" id="am-check">Check</button></div></div>`;
+    out.innerHTML=h;fb.className='fb';fb.textContent='';
+    $('#am-check').onclick=()=>{let right=0,all=0;out.querySelectorAll('td[data-v]').forEach(td=>{all++;const ok=num(td.querySelector('input').value)===+td.dataset.v;td.className=ok?'ok':'no';if(ok)right++});
+      const tot=num($('#am-total').value)===a*b;
+      fb.className='fb '+(right===all&&tot?'ok':'no');
+      fb.innerHTML=right===all&&tot?`Perfect! ${fx(a)} × ${fx(b)} = ${fx(a*b)}`:`${right} of ${all} boxes right${tot?', total right':', total not right yet'}. Red boxes need another look. Multiply the digits, then add the zeros.`}}
+  $('#am-try').onclick=tryIt;$('#am-show').onclick=show;A.oninput=B.oninput=show;show();
+})();
+$('#ex-algo').outerHTML=algoHTML(45,37);
+
+/* ---------- practice lists ---------- */
+for(const [k,list] of Object.entries(BANK))list.forEach((q,i)=>q.id=k+'-'+i);
+const SECTIONS=[
+  {id:'fixit',label:'Fix-it',lists:[['p-fix','Practice: fix-it questions',BANK.fix]]},
+  {id:'primes',label:'Primes',lists:[['p-primes','Practice: prime or composite?',BANK.primes],['p-pf','Practice: prime factorization',BANK.pf]]},
+  {id:'gcf',label:'GCF',lists:[['p-gcf','Practice: GCF',BANK.gcf]]},
+  {id:'lcm',label:'Multiples & LCM',lists:[['p-mult','Practice: multiples',BANK.mult],['p-lcm','Practice: LCM',BANK.lcm]]},
+  {id:'which',label:'GCF or LCM?',lists:[['p-which','Practice: which one do I need?',BANK.which],['p-both','Practice: GCF and LCM together',BANK.both]]},
+  {id:'area',label:'Area model',lists:[['p-tens','Practice: powers of ten',BANK.tens],['p-area','Practice: area model and distributive property',BANK.area]]},
+  {id:'algo',label:'Algorithm',lists:[['p-algo','Practice: standard algorithm',BANK.algo],['p-errors','Practice: spot the mistake',BANK.errors]]},
+  {id:'world',label:'Real world',lists:[['p-world','Practice: story problems',BANK.world]]},
+];
+const PAGE=8;
+function buildPractice(hostId,title,items){
+  const host=document.getElementById(hostId);host.className='practice';host.innerHTML='';
+  const head=el('div','practice-head');head.innerHTML=`<h3>${title}</h3><span class="muted" data-count></span>`;host.appendChild(head);
+  const list=el('div','practice');host.appendChild(list);let shown=0;const more=el('button','btn ghost');
+  const add=()=>{items.slice(shown,shown+PAGE).forEach((q,i)=>list.appendChild(renderItem(q,shown+i+1,'p').node));shown=Math.min(items.length,shown+PAGE);more.hidden=shown>=items.length;more.textContent=`Show ${Math.min(PAGE,items.length-shown)} more (${items.length-shown} left)`};
+  more.onclick=add;host.appendChild(more);add();
+  host._upd=()=>{head.querySelector('[data-count]').textContent=`${items.filter(q=>PROG.done[q.id]).length} of ${items.length} done`};host._upd()}
+function updateNav(){const nav=$('#navlinks');nav.innerHTML='';
+  for(const s of SECTIONS){const items=s.lists.flatMap(l=>l[2]);const d=items.filter(q=>PROG.done[q.id]).length;
+    const a=el('a',d===items.length?'full':'',`${s.label} <span class="cnt">${d}/${items.length}</span>`);a.href='#'+s.id;nav.appendChild(a);
+    s.lists.forEach(l=>{const h=document.getElementById(l[0]);h&&h._upd&&h._upd()})}
+  const t=el('a','',`Mock quiz <span class="cnt">${PROG.best!=null?'best '+PROG.best+'/20':''}</span>`);t.href='#test';nav.appendChild(t)}
+
+/* ---------- mock quiz ---------- */
+(function(){let items=[];
+  const take=(arr,n)=>shuffle(arr).slice(0,n);
+  function make(){
+    const list=[...take(BANK.primes.filter(q=>q.k==='pc'),1),...take(BANK.primes.filter(q=>q.k!=='pc'),1),...take(BANK.pf,2),
+      ...take(BANK.gcf.filter(q=>q.w),2),...take(BANK.mult,1),...take(BANK.lcm,2),...take(BANK.which.filter(q=>q.k==='gl'),2),...take(BANK.both,1),
+      ...take(BANK.tens,1),...take(BANK.area,2),...take(BANK.algo.filter(q=>q.m),2),...take(BANK.errors,1),...take(BANK.world,2)];
+    const host=$('#t-list');host.innerHTML='';$('#t-score').textContent='';$('#t-mark').disabled=false;
+    items=list.map((q,i)=>{const r=renderItem(q,i+1,'test');host.appendChild(r.node);return r})}
+  $('#t-new').onclick=()=>{make();document.getElementById('test').scrollIntoView({behavior:'smooth'})};
+  $('#t-mark').onclick=()=>{let s=0;items.forEach(it=>{if(it.grade())s++;it.reveal()});
+    $('#t-score').textContent=`${s} / ${items.length}`+(s>=18?' · Excellent!':s>=14?' · Good, check the red ones':' · Go back to the stations for the red ones');
+    $('#t-mark').disabled=true;if(PROG.best==null||s>PROG.best){PROG.best=s;save()}upd();updateNav()};
+  function upd(){$('#t-best').textContent=PROG.best!=null?`Your best so far: ${PROG.best}/20`:''}
+  make();upd()})();
+
+SECTIONS.forEach(s=>s.lists.forEach(l=>buildPractice(...l)));
+updateNav();
+const bad=selfCheck();if(bad.length)console.error('Answer check failed:',bad);
+</script>
+<!-- READ-ALOUD v3: tap-to-read for every page (Arabic + English auto-detected) -->
+<style id="ra-css">
+#ra-bar{position:fixed;bottom:14px;inset-inline-end:14px;z-index:9999;display:flex;gap:6px;align-items:center;font-family:Nunito,Cairo,system-ui,sans-serif}
+#ra-bar button{border:0;border-radius:999px;padding:10px 14px;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 4px 14px #0003;background:#2563eb;color:#fff;font-size:15px}
+#ra-bar #ra-stop{background:#dc2626;display:none}
+#ra-bar #ra-speed{background:#fff;color:#1e3a8a;padding:10px 12px}
+body.ra-on #ra-toggle{background:#16a34a;animation:ra-pulse 1.6s infinite}
+body.ra-on main *:hover,body.ra-on .ra-zone *:hover{outline:2px dashed #16a34a;outline-offset:2px;cursor:help}
+.ra-reading{background:#fef08a!important;outline:3px solid #eab308!important;border-radius:6px}
+@keyframes ra-pulse{50%{box-shadow:0 0 0 8px #16a34a33}}
+@media print{#ra-bar{display:none}}
+</style>
+<div id="ra-bar" dir="ltr">
+ <button id="ra-stop" title="Stop">⏹</button>
+ <button id="ra-speed" title="Speed">1×</button>
+ <button id="ra-toggle" title="Tap any text to hear it">🔊 Tap to read · اضغط لتسمع</button>
+</div>
+<script>
+(function(){
+ if(!("speechSynthesis" in window))return;
+ // Google speech refuses requests that carry a page referrer
+ if(!document.querySelector('meta[name=referrer]')){const m=document.createElement("meta");m.name="referrer";m.content="no-referrer";document.head.appendChild(m)}
+ const AR=/[؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿]/;
+ let rate=0.9,on=false,cur=null;
+ const speeds=[0.75,0.9,1.1];
+ const voices=()=>speechSynthesis.getVoices();
+ const pick=l=>{const v=voices();return l==="ar"?(v.find(x=>/^ar[-_]EG/i.test(x.lang))||v.find(x=>/^ar/i.test(x.lang))):(v.find(x=>/^en[-_]GB/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang)))};
+ // split mixed text into Arabic / non-Arabic runs so each is read by the right voice
+ function runs(text){const out=[];let buf="",lang=null;
+  for(const w of text.replace(/\s+/g," ").trim().split(/(\s+)/)){const l=AR.test(w)?"ar":(/[A-Za-z]/.test(w)?"en":null);
+   if(l&&lang&&l!==lang){out.push([lang,buf]);buf="";}if(l)lang=l;buf+=w}
+  if(buf.trim())out.push([lang||(AR.test(buf)?"ar":"en"),buf]);return out}
+ let queue=[],audio=null,gen=0;
+ function chunks(t,n){const out=[];let c="";for(const w of t.split(" ")){if((c+" "+w).length>n&&c){out.push(c);c=w}else c=c?c+" "+w:w}if(c)out.push(c);return out}
+ function done(){if(cur)cur.classList.remove("ra-reading");document.getElementById("ra-stop").style.display="none"}
+ function next(g){if(g!==gen)return;const it=queue.shift();if(!it)return done();
+  const v=pick(it.l);
+  if(it.l==="ar"&&!v){ // no Arabic voice on this device (e.g. Chrome on Linux): use Google Translate speech
+   audio=new Audio("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&ttsspeed="+(rate<0.8?0.5:1)+"&q="+encodeURIComponent(it.t));
+   audio.playbackRate=rate>1?1.1:1;audio.onended=audio.onerror=()=>next(g);audio.play().catch(()=>next(g));return}
+  const u=new SpeechSynthesisUtterance(it.t);u.lang=it.l==="ar"?"ar-EG":"en-GB";if(v)u.voice=v;u.rate=rate;u.onend=u.onerror=()=>next(g);speechSynthesis.speak(u)}
+ function stop(){gen++;queue=[];speechSynthesis.cancel();if(audio){audio.pause();audio=null}done()}
+ function speak(text,el){stop();cur=el||null;if(cur)cur.classList.add("ra-reading");
+  const parts=runs(String(text).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}️‍]/gu,""));if(!parts.length)return;
+  document.getElementById("ra-stop").style.display="inline-block";
+  parts.forEach(([l,t])=>chunks(t.trim(),l==="ar"&&!pick("ar")?180:600).forEach(c=>queue.push({l,t:c})));next(gen)}
+ window.RA={speak};
+ const SEL="h1,h2,h3,h4,p,li,td,th,summary,label,.q,.opt,.tile,.info,.ans,.exam,.en,.fact>div,.note,.fa,.fb,.result,.say-text,button,div";
+ document.addEventListener("click",e=>{if(!on)return;const bar=e.target.closest("#ra-bar");if(bar)return;
+  let el=e.target.closest(SEL);while(el&&el.tagName==="DIV"&&el.children.length>6)el=null;
+  if(!el)el=e.target;const txt=(el.innerText||el.textContent||"").trim();if(!txt)return;
+  e.preventDefault();e.stopPropagation();speak(txt.slice(0,1200),el)},true);
+ document.getElementById("ra-toggle").onclick=()=>{on=!on;document.body.classList.toggle("ra-on",on);if(!on){stop()}else speak(document.documentElement.lang==="en"?"Tap any words to hear them. Tap the green button again to stop.":"اضغط على أي كلام لتسمعه")};
+ document.getElementById("ra-stop").onclick=stop;
+ document.getElementById("ra-speed").onclick=e=>{rate=speeds[(speeds.indexOf(rate)+1)%speeds.length];e.target.textContent=(rate===0.75?"🐢 ":rate===1.1?"🐇 ":"")+rate+"×"};
+ speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=()=>{};
+})();
+</script>
+<!-- /READ-ALOUD -->
