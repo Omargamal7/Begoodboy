@@ -1,17 +1,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rescue Fern</title>
+<title>Sapling Quest</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fredoka:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Silkscreen:wght@400;700&display=swap">
 <style>
-/* Layout: a greenhouse logbook. Home shows Fern the plant recovering as missions finish. Every mission has the same three steps (Learn, Lab, Check), shown one at a time. */
+/* Layout: a blocky quest world. Home shows a pixel sapling growing as quests finish, with an item hotbar. Every mission has the same three steps (Learn, Lab, Check), shown one at a time. */
 :root{
   --bg:#f1f5ef; --surface:#ffffff; --ink:#1b2e22; --muted:#56695c; --line:#d2ddd0;
   --leaf:#3b8b4a; --leaf-soft:#e2f0e0; --water:#2f74b5; --water-soft:#e1edf8;
   --soil:#8a6440; --dye:#b8434f; --dye-soft:#f8e3e5; --sun:#c9952a; --sun-soft:#f8efd9;
   --ok:#2c7a4e; --ok-soft:#e0f2e7; --hint:#8a6a1c; --hint-soft:#fbf2dc;
-  --display:"Fredoka","Trebuchet MS",system-ui,sans-serif;
+  --display:"Silkscreen","Courier New",monospace; --stone:#9a9e9b; --stone-d:#5f6461; --grass:#5f9e35; --dirt:#86582f;
   --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
@@ -147,12 +147,46 @@ th{background:var(--bg)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{border-radius:20px;padding:4px 12px;font-weight:700;font-size:14px;background:var(--sun-soft);color:var(--hint)}
 .chip.off{background:var(--bg);color:var(--muted)}
+
+/* ---- blocky theme ---- */
+h1,h2,h3{font-weight:700;letter-spacing:.02em}
+h1{font-size:clamp(28px,6.5vw,42px)} h2{font-size:24px} h3{font-size:18px}
+.top{border-bottom:0}
+.top::after{content:"";display:block;height:12px;background:linear-gradient(var(--grass) 0 5px,var(--dirt) 5px 100%);background-size:16px 12px}
+.home-btn{font-size:18px;color:var(--grass)}
+.card,.q,.mission,.stage,.out,.list li,details.pg,.ft>div,.opt,.btn,.stepper span,.chip,.meter .bar,.meter .bar i,.kind,.fb,.mission .num{border-radius:0!important}
+.card,.q{border:3px solid var(--line)}
+.btn{border:3px solid var(--stone-d);background:var(--surface);box-shadow:inset -3px -3px 0 rgba(0,0,0,.18),inset 3px 3px 0 rgba(255,255,255,.35)}
+.btn.go{background:var(--grass);border-color:var(--stone-d)}
+.btn.blue{background:var(--water);border-color:var(--stone-d)}
+.btn:active{box-shadow:inset 3px 3px 0 rgba(0,0,0,.2)}
+.opt{border:3px solid var(--line);box-shadow:inset -2px -2px 0 rgba(0,0,0,.06)}
+.opt .l{border-radius:0;font-family:var(--display)}
+.mission{border:3px solid var(--line)}
+.mission .num{font-size:20px;background:var(--grass);color:#fff;box-shadow:inset -4px -4px 0 rgba(0,0,0,.2),inset 4px 4px 0 rgba(255,255,255,.25)}
+.mission.done .num{background:var(--sun)}
+.meter{font-family:var(--display);font-size:13px}
+.meter .bar{height:14px;border:2px solid var(--stone-d);background:var(--surface);background-image:repeating-linear-gradient(90deg,transparent 0 10px,var(--line) 10px 12px)}
+.meter .bar i{background:var(--grass)}
+.stepper span{font-family:var(--display);font-size:13px}
+.stepper span.on{background:var(--grass)}
+.big{font-family:var(--display)}
+.qsec{font-family:var(--display);font-size:16px;color:var(--grass)}
+.eyebrow{letter-spacing:.06em}
+.hotbar{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;background:var(--stone-d);padding:4px;max-width:420px}
+.slot{aspect-ratio:1;max-width:100%;background:var(--stone);box-shadow:inset 3px 3px 0 rgba(0,0,0,.25),inset -3px -3px 0 rgba(255,255,255,.2);display:grid;place-items:center;position:relative}
+.slot svg{width:70%;height:70%;image-rendering:pixelated}
+.slot.empty svg{opacity:.18;filter:grayscale(1)}
+.slot b{position:absolute;right:3px;bottom:1px;font-family:var(--display);font-size:11px;color:#fff;text-shadow:1px 1px 0 #000}
+.sapling{width:100%;max-width:260px;justify-self:center;display:block;image-rendering:pixelated;shape-rendering:crispEdges}
+.toast{position:fixed;z-index:20;top:calc(env(safe-area-inset-top,0px) + 12px);right:max(12px,env(safe-area-inset-right,0px));background:#2b2b2b;color:#fff;border:3px solid #6b6b6b;padding:10px 14px;font-size:15px;max-width:min(320px,calc(100vw - 24px));box-shadow:4px 4px 0 rgba(0,0,0,.3)}
+.toast .tt{font-family:var(--display);color:#f2d14b;font-size:14px}
 </style>
 
 <header class="top"><div class="wrap">
   <div class="toprow">
-    <button class="home-btn" id="homeBtn" type="button">Rescue Fern</button>
-    <span class="meter"><span id="drops">0 drops</span><span class="bar" aria-hidden="true"><i id="dropBar" style="width:0%"></i></span></span>
+    <button class="home-btn" id="homeBtn" type="button">Sapling Quest</button>
+    <span class="meter"><span id="drops">0 XP</span><span class="bar" aria-hidden="true"><i id="dropBar" style="width:0%"></i></span></span>
   </div>
   <p class="nownext" id="nownext"></p>
 </div></header>
@@ -182,7 +216,7 @@ function speakBtn(t){if(!("speechSynthesis" in window))return null;return h("but
 var actx=null;
 function chime(){if(!S.sound)return;try{actx=actx||new (window.AudioContext||window.webkitAudioContext)();var t=actx.currentTime;[523,659].forEach(function(f,i){var o=actx.createOscillator(),g=actx.createGain();o.type="sine";o.frequency.value=f;g.gain.setValueAtTime(0,t+i*.12);g.gain.linearRampToValueAtTime(.08,t+i*.12+.02);g.gain.exponentialRampToValueAtTime(.001,t+i*.12+.35);o.connect(g);g.connect(actx.destination);o.start(t+i*.12);o.stop(t+i*.12+.4);});}catch(e){}}
 function addDrops(n){S.drops+=n;save();drawMeter();}
-function drawMeter(){document.getElementById("drops").textContent=S.drops+" drops";document.getElementById("dropBar").style.width=Math.min(100,S.drops/GOAL*100)+"%";}
+function drawMeter(){var lv=Math.floor(S.drops/100)+1;document.getElementById("drops").textContent="LV "+lv+" · "+S.drops+" XP";document.getElementById("dropBar").style.width=(S.drops%100)+"%";}
 function applyCalm(){document.documentElement.classList.toggle("calm",!!S.calm);}
 function page(k,label){var d=h("details",{class:"pg"},h("summary",{},label));d.addEventListener("toggle",function(){if(d.open&&!d.querySelector("img"))d.appendChild(h("img",{src:IMG[k],alt:label,loading:"lazy"}));});return d;}
 function facts(title,lines,src,cls){var c=h("section",{class:"card"},h("h3",{},title));var ul=h("ul",{class:"facts"+(cls?" "+cls:"")});lines.forEach(function(l){ul.appendChild(h("li",{html:"<span>"+md(l)+"</span>"}));});c.appendChild(ul);var b=speakBtn(title+". "+lines.join(" "));if(b)c.appendChild(b);c.appendChild(h("p",{class:"src"},"Book: "+src));return c;}
@@ -274,33 +308,34 @@ function qCard(q,num,opts){opts=opts||{};
     b.addEventListener("click",function(){if(box.dataset.done)return;tries++;
       if(c.ok){b.classList.add("yes","pop");box.dataset.done="1";box.classList.add("right");chime();
         var pts=tries===1?10:5;var first=!S.got[q.id];if(first&&!opts.test){S.got[q.id]=1;addDrops(pts);}
-        fb.className="fb";fb.innerHTML="<b>Correct!</b> "+md(q.why)+(first&&!opts.test?" <span class='xpfloat'>+"+pts+" drops</span>":"")+"<div class='src'>Book: "+md(q.src)+"</div>"+(q.note?"<div class='src'>"+md(q.note)+"</div>":"");
+        fb.className="fb";fb.innerHTML="<b>Correct!</b> "+md(q.why)+(first&&!opts.test?" <span class='xpfloat'>+"+pts+" XP</span>":"")+"<div class='src'>Book: "+md(q.src)+"</div>"+(q.note?"<div class='src'>"+md(q.note)+"</div>":"");
         if(opts.onDone)opts.onDone(tries===1);}
       else{b.classList.add("no");b.disabled=true;fb.className="fb hint";fb.innerHTML="<b>Not this one.</b> Look again: "+md(q.why.replace(/\*\*(.+?)\*\*/g,"____"))+" Try another answer.";}
     });grid.appendChild(b);});
   box.appendChild(grid);box.appendChild(fb);return box;}
 function qList(list){var w=h("div",{class:"qlist"});var n=0;list.forEach(function(q){if(q.sec)w.appendChild(h("p",{class:"qsec"},q.sec));else w.appendChild(qCard(q,++n));});return w;}
 
-/* ---------- Fern (home illustration, recovers with progress) ---------- */
-function fern(level){ /* level 0..1: 0 = wilted, 1 = healthy with a flower */
-  var s=sv("svg",{viewBox:"0 20 240 240",class:"fern",role:"img","aria-label":level>=1?"Fern is healthy and flowering":"Fern the plant, "+Math.round(level*100)+"% recovered"});
-  s.appendChild(sv("ellipse",{cx:120,cy:250,rx:80,ry:7,fill:"var(--line)"}));
-  var droop=1-level;
-  var x0=120,y0=170, tx=120+droop*62, ty=70+droop*70, cx=120-droop*6, cy=95;
-  function pt(u){var a=(1-u)*(1-u),b=2*(1-u)*u,c=u*u;return [a*x0+b*cx+c*tx,a*y0+b*cy+c*ty];}
-  s.appendChild(sv("path",{d:"M"+x0+" "+y0+" Q"+cx+" "+cy+" "+tx+" "+ty,stroke:"var(--leaf)","stroke-width":7,fill:"none","stroke-linecap":"round"}));
-  var col=level>=.5?"var(--leaf)":"var(--sun)";
-  [[.28,-1],[.44,1],[.6,-1],[.75,1],[.88,-1]].forEach(function(l){var p=pt(l[0]);
-    var ang=l[1]*(-35+droop*95);var g=sv("g",{transform:"translate("+p[0]+" "+p[1]+") rotate("+ang+")"});
-    g.appendChild(sv("ellipse",{cx:l[1]*24,cy:0,rx:24,ry:9,fill:col}));
-    g.appendChild(sv("line",{x1:0,y1:0,x2:l[1]*40,y2:0,stroke:"var(--surface)","stroke-width":1.5,opacity:.6}));s.appendChild(g);});
-  if(level>=1){var f=sv("g",{class:"pop"});[0,72,144,216,288].forEach(function(a){f.appendChild(sv("ellipse",{cx:tx,cy:ty-12,rx:6,ry:12,fill:"var(--dye)",transform:"rotate("+a+" "+tx+" "+ty+")"}));});
-    f.appendChild(sv("circle",{cx:tx,cy:ty,r:6,fill:"var(--sun)"}));s.appendChild(f);}
-  s.appendChild(sv("path",{d:"M70 176 L170 176 L158 246 L82 246 Z",fill:"var(--soil)"}));
-  s.appendChild(sv("rect",{x:64,y:166,width:112,height:16,rx:4,fill:"var(--soil)"}));
-  s.appendChild(sv("circle",{cx:106,cy:204,r:4.5,fill:"var(--ink)"}));s.appendChild(sv("circle",{cx:134,cy:204,r:4.5,fill:"var(--ink)"}));
-  s.appendChild(sv("path",{d:level>=.5?"M106 218 Q120 230 134 218":"M106 226 Q120 216 134 226",stroke:"var(--ink)","stroke-width":3.5,fill:"none","stroke-linecap":"round"}));
-  return s;}
+/* ---------- pixel art (original drawings) ---------- */
+var PAL={g:"var(--grass)",G:"#3d6e21",b:"#7a4f2a",y:"#c9a23a",r:"#d6455a",o:"#f2d14b",w:"var(--water)",c:"#cfe3f2",s:"#8d9290",p:"#efe6cf",k:"#4b4033",d:"var(--dirt)",D:"#6b4424",L:"#7fbf4f"};
+function pixel(rows,size){var w=rows[0].length,hh=rows.length;var s=sv("svg",{viewBox:"0 0 "+w+" "+hh,"shape-rendering":"crispEdges"});
+  rows.forEach(function(r,y){for(var x=0;x<r.length;x++){var ch=r[x];if(ch!=="."&&PAL[ch])s.appendChild(sv("rect",{x:x,y:y,width:1.02,height:1.02,fill:PAL[ch]}));}});return s;}
+var ITEMS={
+ bag:["..cccc..","...cc...","..cccc..",".c.w..c.",".c..w.c.",".cw...c.",".c..w.c.","..cccc.."],
+ bucket:["........",".ssssss.",".swwwws.",".swwwws.","..swws..","..ssss..","........","........"],
+ book:[".bbbbbb.",".bppppb.",".bpkkpb.",".bppppb.",".bpkkpb.",".bppppb.",".bbbbbb.","........"],
+ paper:["..pppp..",".pkkkkp.",".pppppp.",".pkkkpp.",".pppppp.",".pkkkkp.","..pppp..","........"],
+ sign:["bbbbbbbb","bppppppb","bpkpkppb","bppppppb","bbbbbbbb","...bb...","...bb...","...bb..."],
+ flower:["..r.r...",".rrorr..","..rrr...","...g....",".g.g.g..","..ggg...","...g....","...g...."]};
+var TREES=[
+ ["................","................","................","................","................","................","................","........yy......",".......y..y.....","......yb...y....","..yy..b.....y...",".y..y.b.........","y....yb.........",".....bb.........","......b.........","......b........."],
+ ["................","................","................",".......gg.......","......gGGg......",".....gGggGg.....","....gGg..gGg....",".....g.bb.g.....","..gg...bb...gg..",".gGGg..bb..gGGg.","..gGgg.bb.ggGg..","....gGgbbgGg....","......gbbg......",".......bb.......",".......bb.......",".......bb......."],
+ ["....GGGGGGGG....","..GGgggggggGGG..",".GgggGgggggGggG.",".GggggggGgggggG.","GgggGgggggggGggG","GggggggGgggggggG",".GgggggggggGggG.","..GGggggggggGG..","....GGGbbGGG....",".......bb.......",".......bb.......",".......bb.......",".......bb.......",".......bb.......","......bbbb......","......bbbb......"],
+ ["....GGGGGGGG....","..GGgggrgggGGG..",".GgggGgrogggGgG.",".GgrgggrggrgggG.","GgrorGgggggrogG.","GggrggggGggrggG.",".GgggggrggGggG..","..GGggrorgggGG..","....GGGbbGGG....",".......bb.......",".......bb.......",".......bb.......",".......bb.......",".......bb.......","......bbbb......","......bbbb......"]];
+function sapling(done){var stage=done>=6?3:done>=5?2:done>=2?1:0;
+  var rows=TREES[stage].concat(["gggggggggggggggg","LgLggLggggLggLgg","dddDddddDdddddDd","ddDdddddddddDddd","dddddDdddDdddddd"]);
+  var s=pixel(rows);s.setAttribute("class","sapling");s.setAttribute("role","img");s.setAttribute("aria-label",["A dry bush on a grass block","A small sapling","A young tree","A tree with flowers"][stage]);return s;}
+function hotbar(){var hb=h("div",{class:"hotbar","aria-label":"Items collected"});
+  M.forEach(function(m){var got=!!S.done[m.id];var sl=h("div",{class:"slot"+(got?"":" empty"),title:m.itemName+(got?"":" (not yet)")});sl.appendChild(pixel(ITEMS[m.item]));if(got)sl.appendChild(h("b",{},"1"));hb.appendChild(sl);});return hb;}
 /* ---------- labs ---------- */
 function stomataLab(){
   var day=true;var s=sv("svg",{viewBox:"0 0 300 200",class:"stage",role:"img","aria-label":"Leaf underside with stomata"});
@@ -364,7 +399,7 @@ function dripLab(){
   [[108,108,-25],[192,94,25],[112,148,-20],[188,138,22],[150,58,0]].forEach(function(l){s.appendChild(sv("ellipse",{cx:l[0],cy:l[1],rx:34,ry:13,fill:"var(--leaf)",transform:"rotate("+l[2]+" "+l[0]+" "+l[1]+")"}));});
   var lab=sv("text",{x:10,y:274,fill:"var(--sun-soft)","font-size":13,"font-family":"Atkinson Hyperlegible, sans-serif"});lab.textContent="soil";s.appendChild(lab);
   var drip=sv("g",{class:"anim",style:"transform:translate(40px,250px)"});
-  drip.appendChild(sv("path",{d:"M0 -15 C6 -5 11 2 11 7 A11 11 0 0 1 -11 7 C-11 2 -6 -5 0 -15 Z",fill:"var(--water)",stroke:"var(--ink)","stroke-width":2}));
+  drip.appendChild(sv("rect",{x:-12,y:-10,width:24,height:24,fill:"var(--water)",stroke:"var(--ink)","stroke-width":2}));drip.appendChild(sv("rect",{x:-9,y:-7,width:6,height:4,fill:"#cfe3f2"}));
   drip.appendChild(sv("circle",{cx:-4,cy:5,r:2,fill:"var(--ink)"}));drip.appendChild(sv("circle",{cx:4,cy:5,r:2,fill:"var(--ink)"}));
   s.appendChild(drip);
   var list=h("ol",{class:"list"});ST.forEach(function(x,k){list.appendChild(h("li",{},h("b",{class:"n"},String(k+1)),h("b",{},x.t),h("div",{class:"src"},x.d)));});
@@ -374,7 +409,7 @@ function dripLab(){
     nx.textContent=i<ST.length-1?"Move Drip to step "+(i+2):"Drip is in the air!";nx.disabled=i>=ST.length-1;
     if(i===ST.length-1&&!S.got.labD){S.got.labD=1;addDrops(10);}}
   nx.onclick=function(){if(i<ST.length-1){i++;show();}};rs.onclick=function(){i=-1;show();};show();
-  return h("section",{class:"card"},h("h3",{},"Lab 1 · Drip's journey"),h("p",{},"Drip is a drop of water. Move Drip one step at a time."),h("div",{class:"grid2"},s,h("div",{style:"display:flex;flex-direction:column;gap:10px"},h("div",{class:"row"},nx,rs),list)),h("p",{class:"src"},"Book: Binder p. 45, “The Path of Water in a Plant”"));}
+  return h("section",{class:"card"},h("h3",{},"Lab 1 · Drip's journey"),h("p",{},"Drip is a water block on a quest. Move Drip one step at a time."),h("div",{class:"grid2"},s,h("div",{style:"display:flex;flex-direction:column;gap:10px"},h("div",{class:"row"},nx,rs),list)),h("p",{class:"src"},"Book: Binder p. 45, “The Path of Water in a Plant”"));}
 
 function dyeLab(){
   var ST=[{s:"Dig up the plant with the soil, and wash the roots with water.",o:"The plant is clean and ready. The roots are white."},
@@ -419,7 +454,7 @@ function wiltLab(){
 
 /* ---------- missions ---------- */
 var M=[
- {id:"m1",n:1,t:"Transpiration",d:"Water leaves the plant as water vapor.",pages:"Binder pp. 43–44 · Ministry p. 34",
+ {id:"m1",n:1,item:"bag",itemName:"Plastic bag",t:"Transpiration",d:"Water leaves the plant as water vapor.",pages:"Binder pp. 43–44 · Ministry p. 34",
   learn:function(){return [
    facts("What is transpiration?",["**Transpiration** is the process by which water in plants changes into **water vapor** and is released into the air."],"Binder p. 43"),
    facts("What happens?",["Water is absorbed by the **roots** from the soil.","It moves up through the **stem** to the **leaves**.","It changes into **water vapor**.","It goes out into the air through tiny pores called **stomata**."],"Binder p. 43","water"),
@@ -427,73 +462,74 @@ var M=[
    facts("Why is transpiration important?",["It helps **cool** the plant.","It helps the **upward movement of water and minerals**.","It keeps the leaves **fresh and turgid**.","It helps the **distribution of water** in the plant."],"Binder p. 43")];},
   lab:function(){return [stomataLab(),bagLab(),facts("What the bag experiment shows",["Water comes out of the leaves as **water vapor**.","Plants **with leaves** (Plant A) release water vapor.","Plants **without leaves** (Plant B) do not."],"Binder p. 44 (Conclusion)","water")];},
   check:["b3","t1","b4","t2","b5","t3"],book:[["b43","Binder p. 43"],["b44","Binder p. 44"]]},
- {id:"m2",n:2,t:"Path of water",d:"Roots, xylem, stem, leaves, air.",pages:"Binder pp. 45–46 · Ministry p. 34",
+ {id:"m2",n:2,item:"bucket",itemName:"Water bucket",t:"Path of water",d:"Roots, xylem, stem, leaves, air.",pages:"Binder pp. 45–46 · Ministry p. 34",
   learn:function(){var c=facts("Xylem vessels",["Water from the roots passes through tiny tubes called **xylem vessels**.","They carry water **up through the stem** to the **leaves** and all parts.","They are like **tiny pipes**.","They carry **water and minerals** from the roots."],"Binder p. 45","water");
    var two=h("section",{class:"card"},h("h3",{},"Same thing, two names"),h("p",{html:"The binder says <b>xylem vessels</b>. The Ministry book says <b>wood vessels</b>. They mean the same thing."}),h("p",{class:"src",html:"Ministry p. 34 says “wood vessels”. <a href=\"https://www.collinsdictionary.com/dictionary/english/xylem\" target=\"_blank\" rel=\"noopener\">Collins Dictionary</a>: xylem is “the woody vascular tissue of a plant”, from Greek <i>xylon</i>, wood."}));
    return [c,two,facts("Wilted plants",["A plant **comes back to life** after watering.","Water **fills the cells** and makes them **firm again**.","The leaves stand up and stay green."],"Binder p. 45")];},
   lab:function(){return [dripLab(),dyeLab(),wiltLab()];},
   check:["m4","t5","b17","t6","b19","t8","b22"],book:[["b45","Binder p. 45"],["b46","Binder p. 46"]]},
- {id:"m3",n:3,t:"Binder test practice",d:"The binder's own questions, pp. 106–108.",pages:"Binder pp. 106–108",list:BINDER,book:[["b106","Binder p. 106"],["b107","Binder p. 107"],["b108","Binder p. 108"]]},
- {id:"m4",n:4,t:"Ministry test practice",d:"The Ministry book's Chapter 6, pp. 34–37.",pages:"Ministry pp. 34–37",list:MINISTRY,book:[["m34","Ministry p. 34"],["m35","Ministry p. 35"],["m36","Ministry p. 36"],["m37","Ministry p. 37"]]},
- {id:"m5",n:5,t:"True or false round",d:"14 quick true-or-false facts.",pages:"Binder pp. 43–46",list:TF,book:[]},
- {id:"boss",n:6,t:"Final test",d:"15 mixed questions. Get 12 right to make Fern flower.",pages:"All"}
+ {id:"m3",n:3,item:"book",itemName:"Binder book",t:"Binder test practice",d:"The binder's own questions, pp. 106–108.",pages:"Binder pp. 106–108",list:BINDER,book:[["b106","Binder p. 106"],["b107","Binder p. 107"],["b108","Binder p. 108"]]},
+ {id:"m4",n:4,item:"paper",itemName:"Ministry paper",t:"Ministry test practice",d:"The Ministry book's Chapter 6, pp. 34–37.",pages:"Ministry pp. 34–37",list:MINISTRY,book:[["m34","Ministry p. 34"],["m35","Ministry p. 35"],["m36","Ministry p. 36"],["m37","Ministry p. 37"]]},
+ {id:"m5",n:5,item:"sign",itemName:"True/false sign",t:"True or false round",d:"14 quick true-or-false facts.",pages:"Binder pp. 43–46",list:TF,book:[]},
+ {id:"boss",n:6,item:"flower",itemName:"Flower",t:"Final test",d:"15 mixed questions. Get 12 right to grow the flower.",pages:"All"}
 ];
 function mById(id){return M.filter(function(m){return m.id===id;})[0];}
 function doneCount(){return M.filter(function(m){return S.done[m.id];}).length;}
 function setNowNext(now,next){document.getElementById("nownext").innerHTML="<b>Now:</b> "+now+(next?" &nbsp;·&nbsp; <b>Next:</b> "+next:"");}
-function finish(id){if(!S.done[id]){S.done[id]=1;addDrops(20);save();}}
+function finish(id){if(!S.done[id]){S.done[id]=1;addDrops(20);save();var m=mById(id);toast("Quest complete!","+20 XP · New item: "+(m?m.itemName:""));}}
+function toast(title,msg){var old=document.querySelector(".toast");if(old)old.remove();var el=h("div",{class:"toast pop",role:"status"},h("div",{class:"tt"},title),h("div",{},msg));document.body.appendChild(el);setTimeout(function(){el.remove();},3500);}
 
 function viewHome(){
-  var v=h("div",{class:"view"});var lvl=doneCount()/M.length;
+  var v=h("div",{class:"view"});var dc=doneCount();
   v.appendChild(h("div",{class:"hero"},
-    h("div",{style:"display:flex;flex-direction:column;gap:12px"},h("span",{class:"eyebrow"},"Science · Chapter 6 · Transportation of water in plants"),h("h1",{},"Rescue Fern"),
-      h("p",{class:"lede"},"Fern is wilting. Each mission you finish brings water back to Fern. Finish all six and Fern flowers."),
-      h("p",{},h("b",{},doneCount()+" of "+M.length+" missions done"))),fern(lvl)));
+    h("div",{style:"display:flex;flex-direction:column;gap:12px"},h("span",{class:"eyebrow"},"Science · Chapter 6 · Transportation of water in plants"),h("h1",{},"Sapling Quest"),
+      h("p",{class:"lede"},"Your sapling has dried out. Learn how water travels through a plant to bring it back. Each quest gives you XP and an item, and your sapling grows."),
+      h("p",{},h("b",{},dc+" of "+M.length+" quests done")),hotbar()),sapling(dc)));
   var inp=h("input",{id:"reward",type:"text",placeholder:"Type the reward here",value:S.reward||"","aria-label":"Reward"});inp.addEventListener("input",function(){S.reward=inp.value;save();});
-  v.appendChild(h("section",{class:"card"},h("span",{class:"eyebrow"},"First, then"),h("div",{class:"ft"},h("div",{},h("b",{},"First"),h("p",{},"One mission")),h("div",{class:"ar","aria-hidden":"true"},"→"),h("div",{},h("b",{},"Then"),inp))));
+  v.appendChild(h("section",{class:"card"},h("span",{class:"eyebrow"},"First, then"),h("div",{class:"ft"},h("div",{},h("b",{},"First"),h("p",{},"One quest")),h("div",{class:"ar","aria-hidden":"true"},"→"),h("div",{},h("b",{},"Then"),inp))));
   var list=h("div",{class:"missions"});
-  M.forEach(function(m){var b=h("button",{class:"mission"+(S.done[m.id]?" done":""),type:"button"},h("span",{class:"num"},S.done[m.id]?"✓":String(m.n)),h("span",{},h("span",{class:"t"},m.t),h("br"),h("span",{class:"d"},m.d)),h("span",{class:"s"},S.done[m.id]?"Done":m.pages==="All"?"":"Start"));b.onclick=function(){go(m.id);};list.appendChild(b);});
-  v.appendChild(h("h2",{},"Missions"));v.appendChild(list);
+  M.forEach(function(m){var b=h("button",{class:"mission"+(S.done[m.id]?" done":""),type:"button"},h("span",{class:"num"},S.done[m.id]?"✓":String(m.n)),h("span",{},h("span",{class:"t"},m.t),h("br"),h("span",{class:"d"},m.d+" Item: "+m.itemName+".")),h("span",{class:"s"},S.done[m.id]?"Done":"Start"));b.onclick=function(){go(m.id);};list.appendChild(b);});
+  v.appendChild(h("h2",{},"Quests"));v.appendChild(list);
   var calm=h("button",{class:"btn sm",type:"button","aria-pressed":String(!!S.calm)},"Calm mode (no movement)");calm.onclick=function(){S.calm=!S.calm;save();applyCalm();calm.setAttribute("aria-pressed",String(S.calm));};
   var snd=h("button",{class:"btn sm",type:"button","aria-pressed":String(!!S.sound)},"Sound when correct");snd.onclick=function(){S.sound=!S.sound;save();snd.setAttribute("aria-pressed",String(S.sound));chime();};
   v.appendChild(h("section",{class:"card"},h("span",{class:"eyebrow"},"Settings"),h("div",{class:"toggles"},calm,snd,h("button",{class:"btn sm",type:"button",onclick:function(){go("parents");}},"For parents"))));
-  setNowNext("Choose a mission",null);return v;}
+  setNowNext("Choose a quest",null);return v;}
 
 function viewLesson(m){
   var step=0,v=h("div",{class:"view"});var names=["Learn","Lab","Check"];
-  var head=h("div",{},h("span",{class:"eyebrow"},"Mission "+m.n+" · "+m.pages),h("h2",{},m.t));
+  var head=h("div",{},h("span",{class:"eyebrow"},"Quest "+m.n+" · "+m.pages),h("h2",{},m.t));
   var stepper=h("div",{class:"stepper"});var body=h("div",{style:"display:flex;flex-direction:column;gap:16px"});var nav=h("div",{class:"navrow"});
   v.appendChild(head);v.appendChild(stepper);v.appendChild(body);v.appendChild(nav);
   function render(){clear(stepper);names.forEach(function(n,i){stepper.appendChild(h("span",{class:i===step?"on":(i<step?"past":"")},(i+1)+" · "+n));});
     clear(body);clear(nav);
     var parts= step===0?m.learn(): step===1?m.lab(): [qList(m.check.map(Q)),(function(){var pg=h("div",{class:"pages"});m.book.forEach(function(b){pg.appendChild(page(b[0],"See the book: "+b[1]));});return pg;})()];
     parts.forEach(function(p){if(p)body.appendChild(p);});
-    nav.appendChild(h("button",{class:"btn",type:"button",onclick:function(){if(step>0){step--;render();window.scrollTo(0,0);}else go("home");}},step>0?"Back":"Missions"));
-    nav.appendChild(h("button",{class:"btn go",type:"button",onclick:function(){if(step<2){step++;render();window.scrollTo(0,0);}else{finish(m.id);go("home");}}},step<2?"Next: "+names[step+1]:"Finish mission"));
-    setNowNext("Mission "+m.n+", step "+(step+1)+" of 3: "+names[step],step<2?names[step+1]:"Back to Fern");}
+    nav.appendChild(h("button",{class:"btn",type:"button",onclick:function(){if(step>0){step--;render();window.scrollTo(0,0);}else go("home");}},step>0?"Back":"All quests"));
+    nav.appendChild(h("button",{class:"btn go",type:"button",onclick:function(){if(step<2){step++;render();window.scrollTo(0,0);}else{finish(m.id);go("home");}}},step<2?"Next: "+names[step+1]:"Finish quest"));
+    setNowNext("Quest "+m.n+", step "+(step+1)+" of 3: "+names[step],step<2?names[step+1]:"Get your item");}
   render();return v;}
 
 function viewList(m){
   var v=h("div",{class:"view"});
-  v.appendChild(h("div",{},h("span",{class:"eyebrow"},"Mission "+m.n+" · "+m.pages),h("h2",{},m.t)));
+  v.appendChild(h("div",{},h("span",{class:"eyebrow"},"Quest "+m.n+" · "+m.pages),h("h2",{},m.t)));
   v.appendChild(h("p",{class:"lede"},m.id==="m5"?"Read each sentence. Is it true or false?":"These are the book's questions, made into choose-one questions. Say your answer, then tap."));
   v.appendChild(qList(m.list));
   if(m.book.length){var pg=h("div",{class:"pages"});m.book.forEach(function(b){pg.appendChild(page(b[0],"See the book: "+b[1]));});v.appendChild(pg);}
-  v.appendChild(h("div",{class:"navrow"},h("button",{class:"btn",type:"button",onclick:function(){go("home");}},"Missions"),h("button",{class:"btn go",type:"button",onclick:function(){finish(m.id);go("home");}},"Finish mission")));
-  var n=m.list.filter(function(q){return !q.sec;}).length;setNowNext("Mission "+m.n+": "+n+" questions","Back to Fern");return v;}
+  v.appendChild(h("div",{class:"navrow"},h("button",{class:"btn",type:"button",onclick:function(){go("home");}},"All quests"),h("button",{class:"btn go",type:"button",onclick:function(){finish(m.id);go("home");}},"Finish quest")));
+  var n=m.list.filter(function(q){return !q.sec;}).length;setNowNext("Quest "+m.n+": "+n+" questions","Get your item");return v;}
 
 function viewBoss(){
   var v=h("div",{class:"view"});var pool=shuffle(ALL.filter(function(q){return !q.sec;}));
   var seen={},qs=[];pool.forEach(function(q){var k=q.q.toLowerCase().slice(0,40);if(!seen[k]&&qs.length<15){seen[k]=1;qs.push(q);}});
   var i=0,score=0;var line=h("p",{style:"font-weight:700"}),holder=h("div",{});
-  v.appendChild(h("div",{},h("span",{class:"eyebrow"},"Mission 6 · Final test"),h("h2",{},"Final test")));
+  v.appendChild(h("div",{},h("span",{class:"eyebrow"},"Quest 6 · Final test"),h("h2",{},"Final test")));
   v.appendChild(h("p",{class:"lede"},"15 questions, one at a time. Only your first tap counts for the score. You can still find the right answer after."));
   v.appendChild(line);v.appendChild(holder);
   function upd(){line.textContent="Question "+Math.min(i+1,15)+" of 15 · Score "+score;setNowNext("Final test, question "+Math.min(i+1,15)+" of 15",i<14?"Question "+(i+2):"Your score");}
   function show(){clear(holder);upd();
     if(i>=qs.length){var win=score>=12;holder.appendChild(h("section",{class:"card"},h("span",{class:"eyebrow"},"Your score"),h("p",{class:"big"},score+" / 15"),
-        h("p",{},win?"You did it! Fern is flowering.":"Well done for finishing. Look at the missions for the ones you missed, then try again. You need 12."),
-        h("div",{class:"row"},h("button",{class:"btn go",type:"button",onclick:function(){go("boss");}},"New final test"),h("button",{class:"btn",type:"button",onclick:function(){go("home");}},"See Fern"))));
+        h("p",{},win?"Quest complete! Your tree grew a flower.":"Well done for finishing. Look at the missions for the ones you missed, then try again. You need 12."),
+        h("div",{class:"row"},h("button",{class:"btn go",type:"button",onclick:function(){go("boss");}},"New final test"),h("button",{class:"btn",type:"button",onclick:function(){go("home");}},"See my tree"))));
       if(win)finish("boss");setNowNext("Score: "+score+" of 15",null);return;}
     holder.appendChild(qCard(qs[i],i+1,{test:true,onDone:function(first){if(first)score++;upd();
       holder.appendChild(h("div",{class:"navrow",style:"margin-top:12px"},h("span",{}),h("button",{class:"btn go",type:"button",onclick:function(){i++;show();window.scrollTo(0,0);}},i<14?"Next question":"See my score")));}}));}
@@ -502,7 +538,7 @@ function viewBoss(){
 function viewParents(){
   var v=h("div",{class:"view"});
   v.appendChild(h("div",{},h("span",{class:"eyebrow"},"For parents"),h("h2",{},"Plan, sources and notes")));
-  v.appendChild(facts("Tonight",["Mission 1 and Mission 2 teach the lessons (about 10 minutes each).","Missions 3 and 4 are the book questions as choose-one questions. Mission 4 includes the Ministry weekly assessment.","Mission 5 is a true-or-false round. Mission 6 is a 15-question final test.","Ask him to **say** the answer before he taps. Wrong taps fade out and give a clue; he tries again."],"All questions are multiple choice or true/false, matching the inclusion version of the test."));
+  v.appendChild(facts("Tonight",["Quest 1 and Quest 2 teach the lessons (about 10 minutes each).","Quests 3 and 4 are the book questions as choose-one questions. Quest 4 includes the Ministry weekly assessment.","Quest 5 is a true-or-false round. Quest 6 is a 15-question final test.","Each finished quest adds an item to the hotbar and grows the sapling.","Ask him to **say** the answer before he taps. Wrong taps fade out and give a clue; he tries again."],"All questions are multiple choice or true/false, matching the inclusion version of the test."));
   var t=h("table",{});t.innerHTML="<thead><tr><th>Lesson</th><th>MLS Science binder (teacher's pages)</th><th>Binder questions</th><th>Ministry Performance Tasks and Assessments, Primary 6 Term 1</th></tr></thead><tbody><tr><td>6-1 Transpiration</td><td>pp. 43–44</td><td>p. 106</td><td>p. 34 Activity 1 · p. 35 Homework · pp. 36–37 Weekly Assessment</td></tr><tr><td>6-2 Path of Water</td><td>pp. 45–46</td><td>pp. 107–108</td><td>p. 34 Activity 2 · p. 35 Homework · pp. 36–37 Weekly Assessment</td></tr><tr><td>Not assigned</td><td>pp. 47–48 Chapter 6 Column</td><td>none</td><td>none</td></tr></tbody>";
   v.appendChild(h("section",{class:"card"},h("h3",{},"The same lessons in each book"),h("div",{class:"tw"},t),h("p",{class:"src"},"These were the only two Grade 6 science books found. No Ministry Grade 6 science textbook was available.")));
   v.appendChild(facts("Questions left out (no answer in either book)",["Binder p. 106: why two similar plants; why the bags are tied; how transpiration moves water up.","Binder p. 108: why the roots are washed.","Ministry p. 35: why stomata are on the lower surface; what if stomata are blocked.","Ministry p. 36: plant under a black bag; which statements relate to transpiration.","Ministry p. 37: photosynthesis vs respiration (a Chapter 5 topic).","Ask the teacher for these if they could appear."],"Rule used: zero guessing. Every scored answer is written in the binder page shown under it."));
@@ -514,7 +550,7 @@ function viewParents(){
     h("li",{html:"<span>Calm mode turns off all movement. Sound is off unless switched on.</span>"}))));
   var all=h("div",{class:"pages"});[["b43","Binder p. 43"],["b44","Binder p. 44"],["b45","Binder p. 45"],["b46","Binder p. 46"],["b106","Binder p. 106"],["b107","Binder p. 107"],["b108","Binder p. 108"],["m34","Ministry p. 34"],["m35","Ministry p. 35"],["m36","Ministry p. 36"],["m37","Ministry p. 37"]].forEach(function(p){all.appendChild(page(p[0],p[1]));});
   v.appendChild(h("h3",{},"All book pages"));v.appendChild(all);
-  var sure=h("div",{class:"row",hidden:""},h("span",{},"This clears drops and missions on this device."),h("button",{class:"btn sm go",type:"button",onclick:function(){S={drops:0,done:{},got:{},reward:S.reward,calm:S.calm,sound:S.sound};save();drawMeter();go("home");}},"Yes, reset"),h("button",{class:"btn sm",type:"button",onclick:function(){sure.hidden=true;}},"Keep it"));
+  var sure=h("div",{class:"row",hidden:""},h("span",{},"This clears XP, quests and items on this device."),h("button",{class:"btn sm go",type:"button",onclick:function(){S={drops:0,done:{},got:{},reward:S.reward,calm:S.calm,sound:S.sound};save();drawMeter();go("home");}},"Yes, reset"),h("button",{class:"btn sm",type:"button",onclick:function(){sure.hidden=true;}},"Keep it"));
   v.appendChild(h("section",{class:"card"},h("button",{class:"btn",type:"button",onclick:function(){sure.hidden=false;}},"Reset progress"),sure));
   setNowNext("Parent notes",null);return v;}
 
