@@ -1,25 +1,31 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Murad's Summit Words</title>
+<title>Murad's Block Words</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Pixelify+Sans:wght@500;700&display=swap">
 <style>
-/* Layout: one calm column, three fixed steps (Learn, Book page 15, Practice quiz), one question on screen at a time. */
+/* Layout: one calm column in a block world. Three fixed steps, one question on screen at a time. Each answer places one block on a staircase to the summit. */
 :root{
-  --bg:#eef2f4; --card:#ffffff; --ink:#22313a; --soft:#5a6b75; --line:#cfd9de;
-  --accent:#2f6f7e; --accent-soft:#dcebee; --star:#b9852b; --star-soft:#f5ead2;
-  --ok:#2e6b45; --ok-soft:#e1efe5; --no:#9a4a35; --no-soft:#f5e3dd;
+  --bg:#e7ece2; --card:#fbfaf4; --ink:#26302a; --soft:#56625a; --line:#b9c2b2;
+  --accent:#4f7a35; --accent-soft:#dfe9d3; --star:#2f8f8a; --star-soft:#d6ecea;
+  --ok:#3f6e2c; --ok-soft:#e1eed7; --no:#8f4b32; --no-soft:#f3e2d9;
+  --grass:#6f9a45; --grass-d:#557a33; --dirt:#8a6446; --dirt-d:#6f4f37; --stone:#8d918e; --stone-d:#6e726f;
+  --gold:#c8a13a; --gem:#3aa39c; --gem-l:#8fd6cf; --gem-d:#1f6d68; --wood:#9a7448; --sky:#cfe0e6;
   --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --f-head:"Lexend","Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-head:"Pixelify Sans","Atkinson Hyperlegible",system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#182127; --card:#212d34; --ink:#e3eaee; --soft:#a6b5bd; --line:#34444d;
-  --accent:#7fb7c4; --accent-soft:#25414a; --star:#ddb468; --star-soft:#3b3222;
-  --ok:#8cc7a0; --ok-soft:#1f3a2a; --no:#e0a08d; --no-soft:#432a23; color-scheme:dark}}
+  --bg:#171d19; --card:#222a24; --ink:#e4ebe2; --soft:#a9b6aa; --line:#3a463c;
+  --accent:#9cc77a; --accent-soft:#2c3a26; --star:#7fd0c9; --star-soft:#1f3836;
+  --ok:#9cc77a; --ok-soft:#24361d; --no:#e4a68c; --no-soft:#3f2a21;
+  --grass:#5d8439; --grass-d:#486a2b; --dirt:#77563c; --dirt-d:#5d432f; --stone:#73776f; --stone-d:#5b5f59;
+  --gold:#d2ad4a; --gem:#4fb8b0; --gem-l:#9fe0d9; --gem-d:#23736d; --wood:#8a6840; --sky:#24323a; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#182127; --card:#212d34; --ink:#e3eaee; --soft:#a6b5bd; --line:#34444d;
-  --accent:#7fb7c4; --accent-soft:#25414a; --star:#ddb468; --star-soft:#3b3222;
-  --ok:#8cc7a0; --ok-soft:#1f3a2a; --no:#e0a08d; --no-soft:#432a23; color-scheme:dark}
+  --bg:#171d19; --card:#222a24; --ink:#e4ebe2; --soft:#a9b6aa; --line:#3a463c;
+  --accent:#9cc77a; --accent-soft:#2c3a26; --star:#7fd0c9; --star-soft:#1f3836;
+  --ok:#9cc77a; --ok-soft:#24361d; --no:#e4a68c; --no-soft:#3f2a21;
+  --grass:#5d8439; --grass-d:#486a2b; --dirt:#77563c; --dirt-d:#5d432f; --stone:#73776f; --stone-d:#5b5f59;
+  --gold:#d2ad4a; --gem:#4fb8b0; --gem-l:#9fe0d9; --gem-d:#23736d; --wood:#8a6840; --sky:#24323a; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:18px;line-height:1.55;
@@ -30,7 +36,7 @@ h1{font-size:1.7rem} h2{font-size:1.3rem} h3{font-size:1.15rem}
 p{margin:0}
 .muted{color:var(--soft)}
 header{display:flex;gap:16px;align-items:center}
-header svg{flex:none;width:76px;height:60px;color:var(--accent)}
+#pick svg{flex:none;width:64px;height:64px;display:block}
 header .sub{color:var(--soft);font-size:1rem}
 /* step tabs */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -67,7 +73,7 @@ u{text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:
 .qtop{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .count{font-family:var(--f-head);font-weight:700}
 .stars{display:flex;gap:6px;align-items:center;color:var(--star);font-weight:700}
-.stars svg{width:22px;height:22px}
+.stars svg{width:24px;height:24px}
 .climb{width:100%;height:auto;max-width:100%;color:var(--soft)}
 .kind{font-size:.85rem;color:var(--soft)}
 .qtext{font-size:1.25rem;line-height:1.5}
@@ -103,20 +109,42 @@ details a{color:var(--accent)}
   .opts{grid-template-columns:1fr}
   h1{font-size:1.4rem}
 }
+/* block world */
+h1,h2,h3,.count,.btn,.word,summary,.step b,.opt.tf,.big{font-family:var(--f-head);letter-spacing:.01em}
+.intro,.wcard,.quiz,details,.step,.opt,.btn,.say,.pic,.fb,.simple{border-radius:3px}
+.intro,.wcard,.quiz,details{border:3px solid var(--line);box-shadow:inset 0 -4px 0 rgba(0,0,0,.07)}
+.step{border-width:3px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.08)}
+.step[aria-selected="true"]{background:var(--accent-soft);border-color:var(--grass-d)}
+.opt{border-width:3px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.07)}
+.opt .key{border-radius:2px}
+.btn{background:var(--grass);border-color:var(--grass-d);color:#fff;box-shadow:inset 0 -5px 0 var(--grass-d),inset 0 3px 0 rgba(255,255,255,.18);padding:12px 18px 14px}
+.btn.ghost{background:var(--card);color:var(--accent);box-shadow:inset 0 -4px 0 rgba(0,0,0,.08)}
+.ground{display:block;width:100%;height:28px}
+.ground svg{width:100%;height:100%;display:block}
+.cardtop{display:flex;align-items:center;gap:8px}
+.cardtop svg{width:28px;height:28px;flex:none}
+.hotbar{display:flex;gap:4px;flex-wrap:wrap}
+.slot{width:30px;height:30px;border:3px solid var(--stone-d);background:var(--stone);display:flex;align-items:center;justify-content:center;border-radius:2px}
+.slot svg{width:20px;height:20px}
+.slot.empty{background:var(--accent-soft);border-color:var(--line)}
+.inv{display:flex;flex-direction:column;gap:4px;align-items:flex-end}
+.inv small{color:var(--soft);font-size:.8rem}
+.pixel{image-rendering:pixelated;shape-rendering:crispEdges}
 @media (prefers-reduced-motion:no-preference){.opt,.step{transition:background-color .15s,border-color .15s}}
 </style>
 
 <div class="wrap">
 <header>
-  <svg viewBox="0 0 76 60" aria-hidden="true"><path d="M4 56 L30 14 L42 32 L50 22 L72 56 Z" fill="var(--accent-soft)" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M30 14 V3 L42 7 L30 10" fill="var(--star)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+  <span id="pick"></span>
   <div>
-    <h1>Summit Words</h1>
-    <p class="sub">8 vocabulary words · Wonders Unit 2 Week 4 · <i>She Had to Walk Before She Could Run</i> · Nonfiction booklet pages 13–15</p>
+    <h1>Block Words</h1>
+    <p class="sub">Mine 8 vocabulary words · Wonders Unit 2 Week 4 · <i>She Had to Walk Before She Could Run</i> · Nonfiction booklet pages 13–15</p>
   </div>
 </header>
+<div class="ground" id="ground" aria-hidden="true"></div>
 
 <div class="steps" role="tablist" aria-label="Steps">
-  <button class="step" role="tab" id="t-learn" aria-selected="true" data-p="learn"><b>Step 1</b>Learn<small>8 word cards</small></button>
+  <button class="step" role="tab" id="t-learn" aria-selected="true" data-p="learn"><b>Step 1</b>Learn<small>8 word blocks</small></button>
   <button class="step" role="tab" id="t-book" aria-selected="false" data-p="book"><b>Step 2</b>Page 15<small>16 book questions</small></button>
   <button class="step" role="tab" id="t-quiz" aria-selected="false" data-p="quiz"><b>Step 3</b>Practice quiz<small>18 questions</small></button>
 </div>
@@ -129,6 +157,7 @@ details a{color:var(--accent)}
       <li><b>In simple words</b> says the same meaning in shorter words.</li>
       <li>The black-and-white pictures and the sentences come from your booklet, page 14.</li>
       <li>Press <b>Read aloud</b> to hear the word and its meaning.</li>
+      <li>In Step 2 and Step 3, every correct answer on the first try puts one gem in your inventory.</li>
     </ul>
   </div>
   <div class="cards" id="cards"></div>
@@ -153,6 +182,7 @@ details a{color:var(--accent)}
     <ul>
       <li>18 questions: choose the answer, or choose True or False.</li>
       <li>One try for each question, like a real quiz. There is no timer.</li>
+      <li>Each answer places one block on the stairs. The last block is the summit.</li>
       <li>At the end you see your score and the words to read again.</li>
     </ul>
   </div>
@@ -164,6 +194,7 @@ details a{color:var(--accent)}
   <ul>
     <li><b>Words, book meanings, pictures and sentences:</b> <i>Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term</i>, pages 13, 14 and 15 (Unit 2 Week 4 on the weekly outline; the booklet contents page labels it "Unit 4 Week 2"). Weekly outline Term 1 Week 8 lists "Vocabulary page 15" and "Vocabulary quiz".</li>
     <li><b>Answer key:</b> the school model answers in the repository cover the Nonfiction booklet only up to page 8, so no school key exists here for page 15. The answers on this page were worked out from the page 13 meanings. Part C sentence 6 ("held a summit in the backyard") is marked False because neither book meaning fits (not the top of a mountain, and not a meeting of officials from countries); please check it with the teacher if unsure.</li>
+    <li><b>Theme:</b> a block-building look because Murad likes Minecraft. All pictures, blocks and icons were drawn for this page; nothing is copied from the game. Colours stay muted, and nothing moves or makes sounds.</li>
     <li><b>Not from the book:</b> the "In simple words" lines, the coloured line drawings, the example sentences for <i>assess</i> and <i>implement</i> (page 14 has no picture or sentence for those two), and all of Step 3. Step 3 is practice only, not the school quiz.</li>
     <li><b>Design choices and their sources:</b>
       <ul>
@@ -198,6 +229,18 @@ const ICON={
  speak:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/></svg>`
 };
 
+function px(rows,pal,label){ /* pixel art from text rows; '.' is empty */
+  const h=rows.length,w=rows[0].length;let r="";
+  rows.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!=="."&&pal[c])r+=`<rect x="${x}" y="${y}" width="1.02" height="1.02" fill="${pal[c]}"/>`}));
+  return `<svg class="pixel" viewBox="0 0 ${w} ${h}" ${label?`role="img" aria-label="${label}"`:'aria-hidden="true"'}>${r}</svg>`;
+}
+const GEM=px(["...XX...","..XLLX..",".XLLXXX.","XLLXXXXD","XLXXXXXD",".XXXXXD.","..XXXD..","...XD..."],{X:"var(--gem)",L:"var(--gem-l)",D:"var(--gem-d)"});
+const PICK=px(["....SSSS....","..SSLLLSS...",".SL.....SS..","S.......WS..",".......W..S.","......W...S.",".....W......","....W.......","...W........","..W.........",".W..........","W..........."],{S:"var(--stone-d)",L:"var(--stone)",W:"var(--wood)"},"Pickaxe");
+const GRASS=px(["GGGGGGGG","GgGGGgGG","DGDDGDDG","DDDdDDDD","DdDDDDdD","DDDDdDDD","DDdDDDDD","DDDDDDdD"],{G:"var(--grass)",g:"var(--grass-d)",D:"var(--dirt)",d:"var(--dirt-d)"});
+const STONE=px(["SSSSSSSS","SsSSSSsS","SSSSsSSS","SsSSSSSS","SSSsSSsS","SSSSSSSS","SsSSSsSS","SSSSSSSS"],{S:"var(--stone)",s:"var(--stone-d)"});
+document.getElementById("pick").innerHTML=PICK;
+(function(){let r="";for(let x=0;x<64;x++){const g=x%5===2?"var(--grass-d)":"var(--grass)";r+=`<rect x="${x}" y="0" width="1.02" height="2" fill="${g}"/><rect x="${x}" y="2" width="1.02" height="4" fill="${(x*7)%5===0?"var(--dirt-d)":"var(--dirt)"}"/>`}
+ document.getElementById("ground").innerHTML=`<svg class="pixel" viewBox="0 0 64 6" preserveAspectRatio="none">${r}</svg>`})();
 /* Book data: pos + meaning from booklet p.13; sentence from p.14 word chart */
 const W=[
  {w:"assess",pos:"verb",m:"to estimate the value or ability of something",s:"to check and decide how good something is, or how big a problem is",ex:"The doctor will assess how badly the knee is hurt.",exBook:false},
@@ -221,7 +264,7 @@ document.getElementById("cards").innerHTML=W.map(x=>{
   const book=BOOKIMG[x.w]?`<div class="pic"><img src="${BOOKIMG[x.w]}" alt="Booklet picture for ${x.w}"></div><div class="cap">Picture from your booklet, p. 14</div>`:"";
   const own=`<div class="pic svg">${I[x.w]}</div>${x.w==="summit"?`<div class="pic svg">${I.meeting}</div>`:""}<div class="cap">Drawing made for this page</div>`;
   return `<article class="wcard"><div class="pics">${book}${own}</div><div class="wtext">
-   <div class="whead"><span class="word">${x.w}</span><span class="pos">${x.pos} (${POSB[x.pos]})</span>
+   <div class="whead"><span class="cardtop">${GRASS}<span class="word">${x.w}</span></span><span class="pos">${x.pos} (${POSB[x.pos]})</span>
    <button class="say" data-say="${x.w}. ${esc(x.m)}">${ICON.speak}Read aloud</button></div>
    <div class="row"><span class="lab">Book meaning (p. 13)</span><p>${esc(x.m)}</p></div>
    <div class="row simple"><span class="lab">In simple words</span><p>${esc(x.s)}</p></div>
@@ -273,29 +316,33 @@ QUIZQ.forEach(q=>{if(!q.why){q.why=`${q.w[0].toUpperCase()+q.w.slice(1)} means: 
 
 function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
 
-function climbSVG(i,n){ /* path up a mountain, dot at current question */
-  const pts=[];for(let k=0;k<=n;k++){const t=k/n;pts.push([20+t*600, 110-t*90+(k%2?6:-6)*(k>0&&k<n?1:0)])}
-  const d=pts.map((p,k)=>(k?"L":"M")+p[0].toFixed(0)+" "+p[1].toFixed(0)).join(" ");
-  const c=pts[i];
-  return `<svg class="climb" viewBox="0 0 640 124" role="img" aria-label="Question ${i+1} of ${n}. The flag at the top is the summit.">
-   <path d="M0 122 L600 14 L640 50 L640 122 Z" fill="var(--accent-soft)"/>
-   <path d="${d}" fill="none" stroke="var(--line)" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
-   <path d="${pts.slice(0,i+1).map((p,k)=>(k?"L":"M")+p[0].toFixed(0)+" "+p[1].toFixed(0)).join(" ")}" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
-   <path d="M620 20 V2 L634 7 L620 12" fill="var(--star)" stroke="var(--ink)" stroke-width="2"/>
-   <circle cx="${c[0]}" cy="${c[1]}" r="9" fill="var(--accent)" stroke="var(--card)" stroke-width="3"/>
-   <text x="600" y="38" font-size="13" text-anchor="end" fill="var(--soft)" font-family="sans-serif">summit</text></svg>`;
+function climbSVG(i,n,res){ /* block staircase: one column per question; gold top = correct first try, stone top = missed */
+  res=res||[];const cw=20,W=cw*n,H=9,bh=20,top=26;
+  let r=`<rect x="0" y="0" width="${W}" height="${top+H*bh}" fill="var(--sky)"/>`;
+  for(let k=0;k<n;k++){
+    const h=1+Math.round(k*(H-1)/(n-1)),x=k*cw;
+    for(let j=0;j<h;j++){const y=top+(H-1-j)*bh;
+      const isTop=j===h-1;let f;
+      if(k<res.length){f=isTop?(res[k]?"var(--gold)":"var(--stone)"):(j===h-2?"var(--grass)":"var(--dirt)")}
+      if(k<res.length)r+=`<rect x="${x+1}" y="${y+1}" width="${cw-2}" height="${bh-2}" fill="${f}"/>`;else if(isTop)r+=`<rect x="${x+2}" y="${y+2}" width="${cw-4}" height="${bh-4}" fill="none" stroke="var(--line)" stroke-width="2"/>`;
+    }
+    if(k===i&&i<n){const y=top+(H-h)*bh;r+=`<rect x="${x+1}" y="${y+1}" width="${cw-2}" height="${(h)*bh-2}" fill="none" stroke="var(--ink)" stroke-width="3"/>`}
+  }
+  const fx=(n-1)*cw+cw/2;r+=`<rect x="${fx-1}" y="2" width="3" height="${top-2}" fill="var(--wood)"/><rect x="${fx+2}" y="3" width="14" height="9" fill="var(--gold)"/>`;
+  r+=`<text x="${fx-8}" y="14" font-size="12" text-anchor="end" fill="var(--soft)" font-family="sans-serif">summit</text>`;
+  return `<svg class="climb pixel" viewBox="0 0 ${W} ${top+H*bh}" role="img" aria-label="${i<n?`Question ${i+1} of ${n}.`:"Finished."} One block per question. The flag is the summit.">${r}</svg>`;
 }
-
+function hotbar(score,n){let h="";for(let k=0;k<n;k++)h+=`<span class="slot ${k<score?"":"empty"}">${k<score?GEM:""}</span>`;return h}
 function makeQuiz(el,qs,opts){
-  let i=0,score=0,tries=0,answered=false,wrong=[];
+  let i=0,score=0,tries=0,answered=false,wrong=[],res=[];
   function render(){
     if(i>=qs.length)return finish();
     const q=qs[i];answered=false;tries=0;
     const qtext=q.q.includes("___")?q.q.split("___").map(esc).join('<span class="blank" aria-label="blank"></span>'):q.q;
     const img=q.img?`<div class="pic qpic"><img src="${BOOKIMG[q.img]}" alt="Booklet picture"></div>`:"";
     const options=q.t==="tf"?[["True",true],["False",false]]:q.o.map((o,k)=>[o,k]);
-    el.innerHTML=`<div class="qtop"><span class="count">Question ${i+1} of ${qs.length}</span><span class="stars" aria-label="${score} stars">${ICON.star}<span>${score}</span></span></div>
-     ${climbSVG(i,qs.length)}
+    el.innerHTML=`<div class="qtop"><span class="count">Question ${i+1} of ${qs.length}</span><span class="inv"><span class="stars" aria-label="${score} gems">${GEM}<span>${score}</span></span><small>gems</small></span></div>
+     ${climbSVG(i,qs.length,res)}
      <div class="kind">${q.part} · ${q.t==="tf"?"True or False":"Choose one answer"}</div>
      <p class="qtext">${qtext}</p>${img}
      <div class="opts">${options.map(([lab,val],k)=>`<button class="opt ${q.t==="tf"?"tf":""}" data-v="${val}">${q.t==="tf"?"":`<span class="key">${"ABCD"[k]}</span>`}<span>${esc(lab)}</span></button>`).join("")}</div>
@@ -308,14 +355,14 @@ function makeQuiz(el,qs,opts){
     const v=q.t==="tf"?b.dataset.v==="true":+b.dataset.v;
     const right=v===q.a;const fb=el.querySelector("#fb");
     if(right){
-      b.classList.add("ok");answered=true;if(tries===0)score++;
-      fb.innerHTML=`<div class="fb ok">${ICON.ok}<div><b>Correct.</b> ${tries===0?"You earned a star. ":""}${esc(q.why)}</div></div>`;
+      b.classList.add("ok");answered=true;if(tries===0)score++;res.push(tries===0);
+      fb.innerHTML=`<div class="fb ok">${ICON.ok}<div><b>Correct.</b> ${tries===0?"You mined a gem. ":""}${esc(q.why)}</div></div>`;
       done();
     }else if(opts.retry&&tries===0){
       tries=1;b.classList.add("no");b.disabled=true;wrong.push(q);
       fb.innerHTML=`<div class="fb hint">${ICON.hint}<div><b>Not this one. Try one more time.</b> Hint: ${esc(q.hint||"Read the book meaning again.")}</div></div>`;
     }else{
-      answered=true;b.classList.add("no");wrong.push(q);
+      answered=true;b.classList.add("no");wrong.push(q);res.push(false);
       el.querySelectorAll(".opt").forEach(o=>{const ov=q.t==="tf"?o.dataset.v==="true":+o.dataset.v;if(ov===q.a)o.classList.add("ok")});
       const ans=q.t==="tf"?(q.a?"True":"False"):q.o[q.a];
       fb.innerHTML=`<div class="fb no">${ICON.no}<div><b>The answer is: ${esc(ans)}.</b> ${esc(q.why)}</div></div>`;
@@ -332,13 +379,13 @@ function makeQuiz(el,qs,opts){
   function finish(){
     const best=Math.max(score,store(opts.key)||0);store(opts.key,best);
     const words=[...new Set(wrong.map(q=>q.w))];
-    el.innerHTML=`${climbSVG(qs.length,qs.length)}<div class="done"><h3>You reached the summit.</h3>
+    el.innerHTML=`${climbSVG(qs.length,qs.length,res)}<div class="done"><h3>You built the stairs to the summit.</h3>
      <p class="big">${score} of ${qs.length} correct</p>
-     <p class="stars">${ICON.star}<span>${score} stars</span></p>
+     <p class="stars">${GEM}<span>${score} gems mined</span></p><div class="hotbar" aria-hidden="true">${hotbar(score,qs.length)}</div><p class="muted">Gold block = correct on the first try. Stone block = missed on the first try.</p>
      <p class="muted">Your best score on this device: ${best} of ${qs.length}.</p>
      ${words.length?`<p><b>Words you missed on the first try. Read them again in Step 1:</b></p><div class="review">${words.map(w=>`<div><b>${w}</b>: ${esc(byW[w].m)}</div>`).join("")}</div>`:`<p>All answers were correct on the first try.</p>`}
      <div class="actions" style="width:100%"><button class="btn ghost" id="again">Start again from question 1</button>${opts.next?`<button class="btn" data-go="${opts.next}">Go to ${opts.nextLabel}</button>`:""}</div></div>`;
-    el.querySelector("#again").onclick=()=>{i=0;score=0;wrong=[];render()};
+    el.querySelector("#again").onclick=()=>{i=0;score=0;wrong=[];res=[];render()};
   }
   render();
 }
