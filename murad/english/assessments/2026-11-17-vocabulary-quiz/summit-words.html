@@ -21,6 +21,7 @@
   --accent:#7fb7c4; --accent-soft:#25414a; --star:#ddb468; --star-soft:#3b3222;
   --ok:#8cc7a0; --ok-soft:#1f3a2a; --no:#e0a08d; --no-soft:#432a23; color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:18px;line-height:1.55;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
 .wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
@@ -311,7 +312,7 @@ function makeQuiz(el,qs,opts){
       fb.innerHTML=`<div class="fb ok">${ICON.ok}<div><b>Correct.</b> ${tries===0?"You earned a star. ":""}${esc(q.why)}</div></div>`;
       done();
     }else if(opts.retry&&tries===0){
-      tries=1;b.classList.add("no");b.disabled=true;
+      tries=1;b.classList.add("no");b.disabled=true;wrong.push(q);
       fb.innerHTML=`<div class="fb hint">${ICON.hint}<div><b>Not this one. Try one more time.</b> Hint: ${esc(q.hint||"Read the book meaning again.")}</div></div>`;
     }else{
       answered=true;b.classList.add("no");wrong.push(q);
@@ -335,7 +336,7 @@ function makeQuiz(el,qs,opts){
      <p class="big">${score} of ${qs.length} correct</p>
      <p class="stars">${ICON.star}<span>${score} stars</span></p>
      <p class="muted">Your best score on this device: ${best} of ${qs.length}.</p>
-     ${words.length?`<p><b>Words to read again in Step 1:</b></p><div class="review">${words.map(w=>`<div><b>${w}</b>: ${esc(byW[w].m)}</div>`).join("")}</div>`:`<p>All answers were correct.</p>`}
+     ${words.length?`<p><b>Words you missed on the first try. Read them again in Step 1:</b></p><div class="review">${words.map(w=>`<div><b>${w}</b>: ${esc(byW[w].m)}</div>`).join("")}</div>`:`<p>All answers were correct on the first try.</p>`}
      <div class="actions" style="width:100%"><button class="btn ghost" id="again">Start again from question 1</button>${opts.next?`<button class="btn" data-go="${opts.next}">Go to ${opts.nextLabel}</button>`:""}</div></div>`;
     el.querySelector("#again").onclick=()=>{i=0;score=0;wrong=[];render()};
   }
