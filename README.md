@@ -28,10 +28,6 @@ The [18 October Toddle sweep](docs/provenance/toddle/2026-10-18/README.md) check
 School originals are preserved unchanged. Source maps record unsupported or disputed answers; those questions must remain unscored or parent-checked. See the dated revision reports for answer-key caveats.
 
 
-## Science Chapter 6 · weekly assessment (16 November 2026)
-
-- **Murad · Grade 6G:** [Water Quest — Transpiration and the Path of Water](murad/science/packs/chapter-6-water-quest.html). Binder pp. 43–46 plus every Chapter 6 question from binder pp. 106–108 and the Ministry assessment book pp. 34–37, with labs, XP and a boss test. [Sources and limits](docs/provenance/murad/science/chapter-06-water-quest-2026-11-16.md).
-
 ## Mathematics interactive revision · 19 October 2026
 
 - **Jimmy · Grade 5A:** [Decimal Lab — eight lessons and two assessments](packs/gamal/mathematics/decimal-lab-october-2026.html). Based on the supplied lesson video: 24 lesson checks and 15 mixed-assessment checks.
