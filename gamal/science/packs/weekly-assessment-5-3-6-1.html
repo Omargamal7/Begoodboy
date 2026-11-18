@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b2f38">
-<title>Science Showdown · Weekly Assessment 5-3 and 6-1</title>
+<title>Science Showdown</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <style>
 /* Theme: an original animal-arena game look (chunky buttons, loot crate, stars, coins). No outside art or fonts.
    Layout: compact top bar with the player card, six bottom tabs (Home, Learn, MCQ, T/F, Write, Mock), Parent view for answers and sources. */
@@ -22,7 +23,7 @@ body{min-height:100vh;min-height:100dvh;font-family:var(--font);font-size:18px;l
   background-color:#0f5c52;
   background-image:radial-gradient(circle at 15% 12%,rgba(255,255,255,.07) 0 34px,transparent 35px),radial-gradient(circle at 82% 28%,rgba(255,255,255,.06) 0 46px,transparent 47px),radial-gradient(circle at 40% 70%,rgba(0,0,0,.08) 0 52px,transparent 53px),linear-gradient(180deg,#15796a 0%,#0d4a55 100%);
   background-size:220px 220px,300px 300px,260px 260px,100% 100%;}
-.wrap{max-width:780px;margin:0 auto;padding-left:max(14px,env(safe-area-inset-left,0px));padding-right:max(14px,env(safe-area-inset-right,0px))}
+.wrap{max-width:780px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 h1,h2,h3{margin:0;line-height:1.15;text-wrap:balance;font-weight:800}
 h1{font-size:clamp(30px,8vw,44px);color:#fff;text-shadow:0 3px 0 #082a31,0 0 12px rgba(0,0,0,.35)}
 h2{font-size:24px} h3{font-size:19px}
@@ -37,7 +38,8 @@ a{color:var(--blue-d);overflow-wrap:anywhere}
 .small{font-size:15px;color:var(--ink2)}
 
 /* top bar (player card) */
-.top{position:sticky;top:0;z-index:6;background:var(--sky);border-bottom:4px solid #061d23;padding-top:env(safe-area-inset-top,0px)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--sky);border-bottom:4px solid #061d23}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sky)}
 .hud{display:flex;align-items:center;gap:10px;padding-block:8px}
 .avbtn{flex:0 0 auto;width:46px;height:46px;border-radius:50%;border:3px solid #fff;background:#1d6b78;padding:0;display:grid;place-items:center;overflow:hidden}
 .pl{flex:1 1 auto;min-width:0;color:#fff}
@@ -186,6 +188,19 @@ summary{cursor:pointer;padding:12px 14px;font-weight:800;min-height:46px}
 details>div{padding:0 14px 14px}
 details img{display:block;width:100%;height:auto;border-radius:8px;border:2px solid var(--line)}
 h2.sec{color:#fff;text-shadow:0 2px 0 #082a31;margin-top:6px}
+
+/* guess check + arena banner */
+.verdict{border:3px solid var(--line);border-radius:16px;padding:12px 14px;box-shadow:0 5px 0 rgba(0,0,0,.35)}
+.verdict .big{font-size:22px;font-weight:800;margin-bottom:4px}
+.verdict ul{display:flex;flex-direction:column;gap:6px}
+.v-clear{background:#d3f5dc;border-color:var(--green)}
+.v-some{background:#fff0c2;border-color:var(--yellow-d)}
+.v-strong{background:#ffe3df;border-color:var(--red)}
+.v-none{background:var(--panel2)}
+.arenaBanner{border:3px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 0 rgba(0,0,0,.35)}
+.arenaBanner svg{display:block;width:100%;height:auto}
+code{font-size:15px;overflow-wrap:anywhere;background:#fff;border:2px solid #cfdde0;border-radius:6px;padding:1px 5px}
+#rep{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;min-height:150px}
 
 @media (max-width:420px){
   body{font-size:17px}
@@ -418,10 +433,10 @@ var LEARN = [
 
 /* ---------- State ---------- */
 var KEY = "gamal-science-weekly-5-3-6-1-v1";
-var store = {got:{}, typed:{}, mcq:{}, tf:{}, stars:{}, paid:{}, coins:0, cards:[], mock:{}, avatar:"bear", calm:false};
+var store = {got:{}, typed:{}, mcq:{}, tf:{}, stars:{}, paid:{}, coins:0, cards:[], mock:{}, avatar:"bear", calm:false, log:[]};
 try{ var raw = window.localStorage.getItem(KEY); if(raw){ var o = JSON.parse(raw); if(o && typeof o==="object"){ for(var k in o){ store[k]=o[k]; } } } }catch(e){}
 function save(){ try{ window.localStorage.setItem(KEY, JSON.stringify(store)); }catch(e){} }
-var ui = {view:"lobby", lesson:"all", group:"t1", idx:0, queue:null, shown:{}, hint:{}, round:null, picker:{mcq:"5-3", tf:"5-3"}, paper:"A", parentTab:"answers", mockRun:null};
+var ui = {view:"lobby", lesson:"all", group:"t1", idx:0, queue:null, shown:{}, hint:{}, round:null, picker:{mcq:"5-3", tf:"5-3"}, paper:"A", parentTab:"guess", mockRun:null, wtId:null, wtAt:0, rv:{}, confirmClear:false, copied:""};
 
 /* ---------- Helpers ---------- */
 function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
@@ -448,13 +463,16 @@ function chips(it){
 
 /* ---------- Art: avatars, stars, crate (all drawn here) ---------- */
 var OL = "stroke='#14303a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'";
-function avatar(kind, size){
+function avatarBody(kind){
   var b;
   if(kind==="fox") b = "<path d='M9 6 L24 21 L40 21 L55 6 L57 36 C57 50 45 58 32 58 C19 58 7 50 7 36 Z' fill='#ff8a1f' "+OL+"/><path d='M17 40 C22 55 42 55 47 40 C41 45 23 45 17 40Z' fill='#fff3cf' "+OL+"/><circle cx='23' cy='33' r='3.4' fill='#14303a'/><circle cx='41' cy='33' r='3.4' fill='#14303a'/><ellipse cx='32' cy='46' rx='4.5' ry='3.2' fill='#14303a'/>";
   else if(kind==="frog") b = "<circle cx='19' cy='17' r='10' fill='#4cc35a' "+OL+"/><circle cx='45' cy='17' r='10' fill='#4cc35a' "+OL+"/><ellipse cx='32' cy='38' rx='25' ry='20' fill='#4cc35a' "+OL+"/><circle cx='19' cy='17' r='4.2' fill='#fff'/><circle cx='45' cy='17' r='4.2' fill='#fff'/><circle cx='19' cy='17' r='2' fill='#14303a'/><circle cx='45' cy='17' r='2' fill='#14303a'/><path d='M18 42 Q32 54 46 42' fill='none' "+OL+"/>";
   else b = "<circle cx='13' cy='15' r='9' fill='#a8683a' "+OL+"/><circle cx='51' cy='15' r='9' fill='#a8683a' "+OL+"/><circle cx='32' cy='35' r='24' fill='#a8683a' "+OL+"/><ellipse cx='32' cy='44' rx='11' ry='8.5' fill='#f3d3a5' "+OL+"/><circle cx='23' cy='31' r='3.4' fill='#14303a'/><circle cx='41' cy='31' r='3.4' fill='#14303a'/><ellipse cx='32' cy='41' rx='4.5' ry='3.2' fill='#14303a'/>";
+  return b;
+}
+function avatar(kind, size){
   var s = size||44;
-  return "<svg width='"+s+"' height='"+s+"' viewBox='0 0 64 64' role='img' aria-label='"+kind+" fighter'>"+b+"</svg>";
+  return "<svg width='"+s+"' height='"+s+"' viewBox='0 0 64 64' role='img' aria-label='"+kind+" fighter'>"+avatarBody(kind)+"</svg>";
 }
 function starSvg(on){ return "<svg viewBox='0 0 24 24' aria-hidden='true'><path d='M12 2l3 7 7.5.6-5.7 4.9 1.8 7.3L12 17.8l-6.6 4 1.8-7.3L1.5 9.6 9 9z' fill='"+(on?"#ffc42e":"#0b2f38")+"' stroke='"+(on?"#7a4b00":"#7fb6bf")+"' stroke-width='1.6' stroke-linejoin='round'/></svg>"; }
 function stars(n, big){ return "<span class='stars"+(big?" big":"")+"' role='img' aria-label='"+n+" of 3 stars'>"+[1,2,3].map(function(i){ return starSvg(i<=n); }).join("")+"</span>"; }
@@ -515,7 +533,7 @@ function mockScore(id){ var m=store.mock[id]; if(!m||!m.marks) return null; var 
 function vLobby(){
   var avs=["bear","fox","frog"].map(function(a){ return "<button class='av' type='button' data-act='avatar' data-v='"+a+"' aria-pressed='"+(store.avatar===a)+"' aria-label='Choose the "+a+"'>"+avatar(a,52)+"</button>"; }).join("");
   var mockBest = MOCKS.map(function(p){ var s=mockScore(p.id); return s&&s.done?s.n+"/"+s.t:null; }).filter(Boolean);
-  return "<section aria-labelledby='h'><div><h1 id='h' tabindex='-1'>Science Showdown</h1><p class='lede'>Weekly Assessment prep for Jimmy · Grade 5A · English Science, Term 1</p></div>"+
+  return "<section aria-labelledby='h'><div><h1 id='h' tabindex='-1'>Science Showdown</h1><p class='lede'>Weekly Assessment prep for Jimmy · Grade 5A · English Science, Term 1</p></div>"+arenaBanner()+
    "<div class='card'><div class='kicker'>This week covers</div><ul class='scope'>"+
    "<li><span class='n'>Ch 5 · L3</span><span><b>Pollination and How Fruits Grow</b><br><span class='small'>Textbook pp. 60–63</span></span></li>"+
    "<li><span class='n'>Ch 6 · L1</span><span><b>Stages of Human Growth</b><br><span class='small'>Textbook pp. 64–65</span></span></li>"+
@@ -556,7 +574,7 @@ function poolList(mode,key){
 function missedCount(mode){ return bank(mode).filter(function(x){ return store[mode][x.id]==="miss"; }).length; }
 function startRound(mode,key){
   var list=poolList(mode,key); if(!list.length) return;
-  var r={mode:mode,key:key,ids:list.map(function(x){return x.id;}),idx:0,res:{},wrong:{},opts:{},answered:false,earned:0,crate:null};
+  var r={mode:mode,key:key,ids:list.map(function(x){return x.id;}),idx:0,res:{},wrong:{},opts:{},answered:false,earned:0,crate:null,rid:Date.now(),t0:Date.now(),picks:[]};
   if(mode==="mcq") list.forEach(function(it){ var a=it.a||0, o=it.opts.map(function(t,i){ return {t:t,ok:i===a}; }); r.opts[it.id]= it.fixed?o:shuffle(o); });
   ui.round=r; render(true);
 }
@@ -628,6 +646,7 @@ function vWrite(){
    "<p class='lede'><b>"+g.title+"</b> · Assessment Book p. "+g.page+(ui.queue?" · only the ones you have not marked “I knew it”":"")+"</p>";
   if(ui.idx>=list.length) return h+vWriteSummary(g)+"</section>";
   var it=list[ui.idx], st=store.got[it.id], shown=!!ui.shown[it.id];
+  if(ui.wtId!==it.id){ ui.wtId=it.id; ui.wtAt=Date.now(); }
   h+="<div class='dots' role='group' aria-label='Questions'>"+list.map(function(x,i){ var s=store.got[x.id]; return "<button type='button' class='dot "+(s||"")+"' data-act='goto' data-v='"+i+"' "+(i===ui.idx?"aria-current='step' ":"")+"aria-label='Question "+x.n+(s==="got"?", I knew it":s==="again"?", not yet":"")+"'>"+x.n+"</button>"; }).join("")+"</div>";
   h+="<article class='card stack' aria-labelledby='qt'><div class='kicker'>"+(g.id==="hw"?"Homework Performance":"Question "+it.n)+" · "+esc(it.kind)+"</div><p class='qtext' id='qt'>"+gaps(it.q)+"</p>"+
    "<div><label class='fl' for='typed'>Say your answer out loud, or write it here (optional)</label><textarea id='typed' data-id='"+it.id+"' rows='3' autocomplete='off' spellcheck='false'>"+esc(store.typed[it.id]||"")+"</textarea></div>";
@@ -690,12 +709,8 @@ function vMock(){
 function answerRow(label, it, extra){
   return "<div class='arow'><div class='q'>"+label+(it.kind==="Mention"?"":esc(it.kind)+": ")+gaps(it.q||it.s||"")+"</div><div><b>Answer:</b> "+(it.ans||"")+"</div><div>"+chips(it)+"</div>"+(it.note?"<div class='note'>"+esc(it.note)+"</div>":"")+"</div>";
 }
-function vParent(){
-  var h="<section aria-labelledby='h'><h1 id='h' tabindex='-1'>For parents</h1><div class='seg' role='group' aria-label='Parent area'><button type='button' data-act='ptab' data-v='answers' aria-pressed='"+(ui.parentTab==="answers")+"'>Answers</button><button type='button' data-act='ptab' data-v='sources' aria-pressed='"+(ui.parentTab==="sources")+"'>Sources</button></div>";
-  return h+(ui.parentTab==="answers"?pAnswers():pSources())+"</section>";
-}
 function pAnswers(){
-  var h="<p class='lede'>Every line shows its textbook page. Amber means the wording needs a teacher check.</p><div class='row noprint'><button class='btn ghost' data-act='print' type='button'>Print this page</button></div>";
+  var h="<p class='lede'>Every line shows its textbook page. Amber means the wording needs a teacher check.</p>";
   GROUPS.forEach(function(g){
     h+="<h2 class='sec'>"+g.title+" <span class='chip pg'>Book p. "+g.page+"</span></h2>";
     g.items.forEach(function(it){ h+=answerRow(g.id==="hw"?"b. ":it.n+". ", it); });
@@ -719,14 +734,149 @@ function pSources(){
    "<li><b>Counts.</b> "+WRITTEN.length+" written questions from the book, 10 new mock questions, "+MCQ.length+" multiple-choice questions and "+TF.length+" true-or-false statements ("+total+" in all).</li>"+
    "<li><b>Wrong options.</b> The wrong choices in the multiple-choice questions were written for practice. The two exercises on textbook page 62 use the book’s own choices.</li>"+
    "<li><b>Flagged ("+flagged.length+").</b> "+flagged.map(esc).join("; ")+". In these the book does not write out the answer itself, so the answer is joined from textbook sentences or chosen by elimination. They are marked in amber.</li>"+
+   "<li><b>Answer log.</b> The Guess check tab in the Parent area counts every wrong pick for each question, and how fast the first pick came. It stays in this browser on this device.</li>"+
    "<li><b>No school answer key.</b> The repository has no school-issued answers for these pages. The model answers are authored from the textbook.</li></ul></div>"+
    "<div class='card stack'><h3>The two sources</h3><ul class='stack'>"+
-   "<li><b>Assessment Book</b> (English Science, Term 1, 2026–2027, 62-page scan), printed pp. 38–39. <a href='../sources/ministry/Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf'>gamal/science/sources/ministry/Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf</a>. In this scan, printed page 38 is PDF page 37.</li>"+
-   "<li><b>Textbook</b> (English Science, Grade 5, Term 1, 2026–2027), pp. 60–65. <a href='../sources/ministry/Science_Grade5_Term1_2026-2027_English_Textbook.pdf'>gamal/science/sources/ministry/Science_Grade5_Term1_2026-2027_English_Textbook.pdf</a>. Printed page numbers equal PDF page numbers.</li></ul></div>"+
+   "<li><b>Assessment Book</b> (English Science, Term 1, 2026–2027, 62-page scan), printed pp. 38–39. "+fileRef("Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf")+". In this scan, printed page 38 is PDF page 37.</li>"+
+   "<li><b>Textbook</b> (English Science, Grade 5, Term 1, 2026–2027), pp. 60–65. "+fileRef("Science_Grade5_Term1_2026-2027_English_Textbook.pdf")+". Printed page numbers equal PDF page numbers.</li></ul></div>"+
    "<div class='card stack'><h3>Not included</h3><p>The lower half of page 39 is Lesson 6-2, “Similarities between Parents and Children”. It is not in this week’s lessons. Homework a of Lesson 6-1 is on page 37, which is not one of the announced pages. Textbook page 63’s review questions on flower parts and the microscope belong to Lessons 5-1 and 5-2.</p></div>"+
    "<details><summary>Original page 38 (Homework b, Tests 1 and 2)</summary><div><img src='"+PAGE_IMG[38]+"' alt='Scan of Assessment Book page 38'></div></details>"+
    "<details><summary>Original page 39 (Test 3, then Lesson 6-2)</summary><div><img src='"+PAGE_IMG[39]+"' alt='Scan of Assessment Book page 39'></div></details>"+
    "<p class='lede'>The animal fighters, coins, stars and crate were drawn for this page. The pictures on the Learn tab were drawn from the textbook’s sentences. Progress is saved only in this browser.</p>";
+}
+
+/* ---------- Answer log and guess check (for the parent) ---------- */
+function logPush(rec){ store.log.push(rec); if(store.log.length>600) store.log.splice(0, store.log.length-600); save(); }
+function secs(n){ return n==null?"–":(n/1000).toFixed(1)+" s"; }
+function pct(a,b){ return b?Math.round(100*a/b):0; }
+function shortText(it, mode){ var t = mode==="tf" ? "“"+it.s+"”" : it.q; return t.length>110 ? t.slice(0,107)+"…" : t; }
+function analyze(){
+  var recs = store.log.filter(function(r){ return r.m==="mcq" || r.m==="tf"; });
+  var per = {}, rounds = {}, order = [];
+  var A = {n:0, fast:0, tapped:0, first:0, exp:0, mcqN:0, mcqFirst:0, tfN:0, tfFirst:0, wrong:0, t0:null, t1:null};
+  recs.forEach(function(r){
+    var it = itemById(r.m, r.q); if(!it) return;
+    var nopt = r.m==="mcq" ? it.opts.length : 2, picks = r.p || [];
+    var wrongPicks = picks.filter(function(x){ return !x[1]; }).length, quick = 0;
+    for(var i=1;i<picks.length;i++){ if(picks[i][2]-picks[i-1][2] < 1500) quick++; }
+    var fast = r.f!=null && r.f < 2000;
+    var rapid = r.m==="mcq" && wrongPicks>=2 && quick>=2;
+    var all = r.m==="mcq" && wrongPicks>=nopt-1;
+    var key = r.m+":"+r.q, p = per[key];
+    if(!p) p = per[key] = {m:r.m, q:r.q, it:it, shown:0, wrong:0, first:0, fastest:null, fast:0, rapid:0, all:0, last:null};
+    p.shown++; p.wrong += r.w; if(r.first) p.first++;
+    if(r.f!=null && (p.fastest===null || r.f<p.fastest)) p.fastest = r.f;
+    if(fast) p.fast++; if(rapid) p.rapid++; if(all) p.all++; p.last = r.first ? "right" : "missed";
+    A.n++; A.wrong += r.w; if(r.first) A.first++; if(fast) A.fast++; if(rapid||all) A.tapped++; A.exp += 1/nopt;
+    if(r.m==="mcq"){ A.mcqN++; if(r.first) A.mcqFirst++; } else { A.tfN++; if(r.first) A.tfFirst++; }
+    if(A.t0===null || r.t<A.t0) A.t0 = r.t; if(A.t1===null || r.t>A.t1) A.t1 = r.t;
+    var g = rounds[r.rid];
+    if(!g){ g = rounds[r.rid] = {rid:r.rid, t:r.t, m:r.m, k:r.k, n:0, first:0, fsum:0, flags:0}; order.push(r.rid); }
+    g.n++; if(r.first) g.first++; g.fsum += (r.f||0); if(fast||rapid||all) g.flags++;
+  });
+  var v = {level:"none", title:"Not enough answers yet", reasons:[]};
+  if(A.n >= 10){
+    var fs = A.fast/A.n, acc = A.first/A.n;
+    var coin = A.tfN>=10 && A.tfFirst/A.tfN <= 0.6;
+    var strong = A.tapped>=3 || (fs>=0.4 && acc<=0.6);
+    var some = A.tapped>=1 || fs>=0.25 || coin;
+    v.level = strong ? "strong" : some ? "some" : "clear";
+    v.title = strong ? "Strong signs of guessing" : some ? "Some signs of guessing" : "No clear signs of guessing";
+    v.reasons.push(A.fast+" of "+A.n+" answers were picked in under 2 seconds ("+pct(A.fast,A.n)+"%).");
+    v.reasons.push(A.tapped+" multiple-choice answers came after tapping through the options quickly, or after trying every wrong option.");
+    if(A.mcqN) v.reasons.push("Multiple choice: "+A.mcqFirst+" of "+A.mcqN+" right on the first pick ("+pct(A.mcqFirst,A.mcqN)+"%). Picking at random would be right about "+Math.round(100*(A.exp - A.tfN*0.5)/Math.max(1,A.mcqN))+"% of the time.");
+    if(A.tfN) v.reasons.push("True or False: "+A.tfFirst+" of "+A.tfN+" right ("+pct(A.tfFirst,A.tfN)+"%). Flipping a coin is right about 50% of the time.");
+  }
+  var list = Object.keys(per).map(function(k){ return per[k]; }).sort(function(a,b){ return b.wrong-a.wrong || b.shown-a.shown; });
+  var tried = list.length, total = MCQ.length + TF.length;
+  var rl = order.slice(-8).reverse().map(function(id){ return rounds[id]; });
+  return {A:A, v:v, list:list, rounds:rl, tried:tried, total:total};
+}
+function writtenStats(){
+  var s = {}; store.log.forEach(function(r){ if(r.m!=="wr") return; var o = s[r.q] || (s[r.q] = {got:0, again:0, peek:0}); if(r.mark==="got") o.got++; else o.again++; if(r.rv!=null && r.rv<3000) o.peek++; });
+  return s;
+}
+function mockLines(){
+  var out = [];
+  MOCKS.forEach(function(p){
+    var m = store.mock[p.id]; if(!m || !m.done) return;
+    var items = paperItems(p), sc = mockScore(p.id), blanks = items.filter(function(it){ var t=(m.typed||{})[it.n]; return !(t && t.trim()); }).length;
+    out.push({id:p.id, title:p.title, n:items.length, right:sc?sc.n:0, marked:sc?sc.t:0, blanks:blanks, secs:m.secs||0});
+  });
+  return out;
+}
+function reportText(){
+  var a = analyze(), L = [], d = function(t){ return new Date(t).toLocaleString(); };
+  L.push("Science Showdown: guess check");
+  if(a.A.n) L.push("Answers logged: "+a.A.n+" (from "+d(a.A.t0)+" to "+d(a.A.t1)+")");
+  L.push("Result: "+a.v.title);
+  a.v.reasons.forEach(function(r){ L.push("- "+r); });
+  var worst = a.list.filter(function(p){ return p.wrong>0; }).slice(0,8);
+  if(worst.length){ L.push("Questions with the most wrong picks:"); worst.forEach(function(p){ L.push("- ["+(p.m==="mcq"?"MCQ":"T/F")+"] "+shortText(p.it,p.m)+": "+p.wrong+" wrong in "+p.shown+" showing"+(p.shown>1?"s":"")); }); }
+  var ml = mockLines(); if(ml.length){ L.push("Mock papers:"); ml.forEach(function(x){ L.push("- "+x.title+": "+x.right+"/"+x.n+" right (self-marked), "+x.blanks+" left blank, "+fmt(x.secs)); }); }
+  L.push("These are rules of thumb, not proof. A fast answer can also be a known answer.");
+  return L.join("\n");
+}
+function pGuess(){
+  var a = analyze(), v = a.v, ws = writtenStats(), ml = mockLines();
+  var cls = {clear:"v-clear", some:"v-some", strong:"v-strong", none:"v-none"}[v.level], mk = {clear:"✓", some:"!", strong:"!!", none:"…"}[v.level];
+  var h = "<div class='verdict "+cls+"' role='status'><div class='big'>"+mk+" "+esc(v.title)+"</div>"+
+    (v.reasons.length ? "<ul>"+v.reasons.map(function(r){ return "<li>"+esc(r)+"</li>"; }).join("")+"</ul>" : "<p>Play the MCQ and True or False rounds. The check needs at least 10 logged answers.</p>")+
+    "<p class='small'>Logged: "+a.A.n+" answers · "+a.tried+" of "+a.total+" questions tried"+(a.A.n?" · from "+esc(new Date(a.A.t0).toLocaleDateString())+" to "+esc(new Date(a.A.t1).toLocaleDateString()):"")+"</p></div>";
+  h += "<div class='row'><button class='btn blue' type='button' data-act='copyrep'>Copy report</button></div>";
+  if(ui.copied==="ok") h += "<p class='lede' role='status'>Report copied. Paste it into a message.</p>";
+  h += "<details"+(ui.copied==="fail"?" open":"")+"><summary>Report text"+(ui.copied==="fail"?" (copy was blocked: it is selected, copy it by hand)":"")+"</summary><div><textarea id='rep' readonly rows='9'>"+esc(reportText())+"</textarea></div></details>";
+  h += "<details><summary>How this is judged</summary><div class='stack'>"+
+    "<p>These are rules of thumb chosen for this page. They are not from the school or from research, and they show signs, not proof. A quick answer can also be a known answer.</p>"+
+    "<ul class='stack'><li><b>Fast:</b> the first pick came less than 2 seconds after the question appeared.</li>"+
+    "<li><b>Tapped through:</b> on a multiple-choice question, two or more wrong picks with the taps less than 1.5 seconds apart, or every wrong option tried.</li>"+
+    "<li><b>Strong signs:</b> 3 or more tapped-through answers, or 40% or more fast answers together with 60% or less right on the first pick.</li>"+
+    "<li><b>Some signs:</b> any tapped-through answer, 25% or more fast answers, or True or False at 60% or less over 10 or more answers.</li>"+
+    "<li><b>Needs data:</b> at least 10 logged answers. Only the last 600 answers are kept, on this device.</li></ul></div></details>";
+  h += "<h2 class='sec'>Wrong picks for each question</h2>";
+  var rows = a.list;
+  if(!rows.length) h += "<p class='lede'>No answers logged yet.</p>";
+  rows.forEach(function(p){
+    var flags = "";
+    if(p.fast) flags += " <span class='chip chk'>Under 2 s: "+p.fast+"×</span>";
+    if(p.rapid) flags += " <span class='chip chk'>Tapped through: "+p.rapid+"×</span>";
+    if(p.all) flags += " <span class='chip chk'>Tried every wrong option: "+p.all+"×</span>";
+    h += "<div class='arow'><div class='q'><span class='chip pg'>"+(p.m==="mcq"?"MCQ":"T/F")+"</span> "+esc(shortText(p.it,p.m))+"</div>"+
+      "<div><b>Wrong picks: "+p.wrong+"</b> · shown "+p.shown+"× · right on the first pick "+p.first+"× · fastest first pick "+secs(p.fastest)+"</div>"+
+      (flags?"<div>"+flags+"</div>":"")+"</div>";
+  });
+  if(a.rounds.length){
+    h += "<h2 class='sec'>Recent rounds</h2>";
+    a.rounds.forEach(function(g){
+      h += "<div class='arow'><div class='q'>"+esc(new Date(g.t).toLocaleString())+" · "+(g.m==="mcq"?"MCQ":"True or False")+" · "+esc(g.k==="mix"?"Mixed":g.k==="missed"?"Missed ones":g.k)+"</div><div>"+g.first+" of "+g.n+" right on the first pick · average first pick "+secs(g.fsum/g.n)+(g.flags?" · "+g.flags+" flagged":"")+"</div></div>";
+    });
+  }
+  h += "<h2 class='sec'>Written drill (self-marked)</h2>";
+  var wrows = WRITTEN.filter(function(it){ return ws[it.id] && ws[it.id].again; });
+  if(!wrows.length) h += "<p class='lede'>No “Not yet” marks logged.</p>";
+  wrows.forEach(function(it){ var o = ws[it.id]; h += "<div class='arow'><div class='q'>"+(it.id==="hw-b"?"Homework b":"Test "+it.id.charAt(1)+" question "+it.n)+": "+esc(shortText({q:it.q},"mcq"))+"</div><div><b>“Not yet” marks: "+o.again+"</b> · “I knew it” marks: "+o.got+(o.peek?" · answer shown within 3 s: "+o.peek+"×":"")+"</div></div>"; });
+  h += "<h2 class='sec'>Mock papers (self-marked)</h2>";
+  if(!ml.length) h += "<p class='lede'>No finished paper yet.</p>";
+  ml.forEach(function(x){ h += "<div class='arow'><div class='q'>"+esc(x.title)+"</div><div><b>"+x.right+" of "+x.n+" right</b> ("+x.marked+" marked) · "+x.blanks+" left blank · time "+fmt(x.secs)+"</div></div>"; });
+  h += "<div class='card stack'><h3>Clear the log</h3>"+(ui.confirmClear?"<p>This removes every logged answer on this device. Coins, stars and progress stay.</p><div class='row'><button class='btn red' type='button' data-act='clearyes'>Yes, clear the log</button><button class='btn ghost' type='button' data-act='clearno'>Keep it</button></div>":"<div class='row'><button class='btn ghost' type='button' data-act='clearlog'>Clear the log</button></div>")+"</div>";
+  return h;
+}
+var LOCAL = location.protocol==="file:";
+function fileRef(name){ var rel="../sources/ministry/"+name, lab="gamal/science/sources/ministry/"+name; return LOCAL ? "<a href='"+rel+"'>"+esc(lab)+"</a>" : "<code>"+esc(lab)+"</code>"; }
+function vParent(){
+  var T = [["guess","Guess check"],["answers","Answers"],["sources","Sources"]];
+  var h = "<section aria-labelledby='h'><h1 id='h' tabindex='-1'>For parents</h1><div class='seg' role='group' aria-label='Parent area'>"+T.map(function(t){ return "<button type='button' data-act='ptab' data-v='"+t[0]+"' aria-pressed='"+(ui.parentTab===t[0])+"'>"+t[1]+"</button>"; }).join("")+"</div>";
+  return h+(ui.parentTab==="guess"?pGuess():ui.parentTab==="answers"?pAnswers():pSources())+"</section>";
+}
+function arenaBanner(){
+  var bush = function(x,y){ return "<g transform='translate("+x+" "+y+")'><circle cx='0' cy='0' r='13' fill='#2c7a3b' "+OL+"/><circle cx='15' cy='5' r='11' fill='#359447' "+OL+"/><circle cx='-14' cy='6' r='10' fill='#359447' "+OL+"/></g>"; };
+  var crate = function(x,y){ return "<g transform='translate("+x+" "+y+")'><rect x='-11' y='-11' width='22' height='22' rx='3' fill='#c98a3a' "+OL+"/><path d='M-11 0H11M0 -11V11' stroke='#ffc42e' stroke-width='4'/></g>"; };
+  return "<div class='arenaBanner'><svg viewBox='0 0 360 150' role='img' aria-label='A top-down animal arena with bushes, a pond, crates and a dashed safe zone around your fighter'>"+
+    "<rect width='360' height='150' fill='#4caa57'/><circle cx='60' cy='30' r='40' fill='#57b862'/><circle cx='300' cy='120' r='46' fill='#57b862'/><circle cx='230' cy='20' r='26' fill='#44a050'/>"+
+    "<ellipse cx='58' cy='112' rx='40' ry='22' fill='#4aa3d8' "+OL+"/><ellipse cx='50' cy='108' rx='16' ry='6' fill='#8fd0f2'/>"+
+    bush(300,38)+bush(36,40)+bush(318,100)+bush(120,128)+crate(250,112)+crate(96,30)+crate(330,66)+
+    "<circle cx='180' cy='75' r='62' fill='none' stroke='#fff' stroke-width='4' stroke-dasharray='10 8'/>"+
+    "<g transform='translate(146 41) scale(1.06)'>"+avatarBody(store.avatar)+"</g></svg></div>";
 }
 
 /* ---------- Render + events ---------- */
@@ -766,12 +916,14 @@ document.addEventListener("input", function(e){
 });
 
 function finishItem(r, it, mode, ok){
+  var now=Date.now();
   r.answered=true;
-  var first = ok && !(r.wrong[it.id] && r.wrong[it.id].length);
+  var wrongN=(r.wrong[it.id]||[]).length + (mode==="tf" && !ok ? 1 : 0);
+  var first = ok && wrongN===0;
   r.res[it.id]= first?"first":"miss";
   store[mode][it.id]= first?"first":"miss";
   if(first) r.earned+=award(mode+":"+it.id,10);
-  save();
+  logPush({t:now, rid:r.rid, m:mode, q:it.id, k:r.key, w:wrongN, first:first, f:(r.picks.length?r.picks[0][2]:now-r.t0), d:now-r.t0, p:r.picks});
   say(first?"Correct":"Not quite. The answer is shown.");
 }
 
@@ -782,7 +934,7 @@ document.addEventListener("click", function(e){
   if(el.disabled) return;
   if(a==="view"){ setView(v); }
   else if(a==="parent"){ ui.parentTab=v; ui.view="parent"; render(true); }
-  else if(a==="ptab"){ ui.parentTab=v; render(false); }
+  else if(a==="ptab"){ ui.parentTab=v; ui.copied=""; ui.confirmClear=false; render(false); }
   else if(a==="avatar"){ store.avatar=v; save(); render(false); }
   else if(a==="calm"){ store.calm=!store.calm; save(); render(false); }
   else if(a==="lesson"){ ui.lesson=v; render(false); }
@@ -794,14 +946,15 @@ document.addEventListener("click", function(e){
   else if(a==="pick"){
     var r=ui.round; if(!r||r.answered) return;
     var it=itemById("mcq",r.ids[r.idx]), i=parseInt(el.getAttribute("data-i"),10), o=r.opts[it.id][i];
+    r.picks.push([i, o.ok?1:0, Date.now()-r.t0]);
     if(o.ok){ finishItem(r,it,"mcq",true); render(false); var f=document.getElementById("fb"); if(f){ f.focus({preventScroll:true}); f.scrollIntoView({block:"nearest"}); } }
     else { (r.wrong[it.id]=r.wrong[it.id]||[]).push(i); say("Not this one. Try another answer."); render(false); var w=main.querySelector(".opt.wrong"); if(w && !store.calm) w.classList.add("shake"); }
   }
   else if(a==="tf"){
     var r2=ui.round; if(!r2||r2.answered) return;
-    var it2=itemById("tf",r2.ids[r2.idx]); finishItem(r2,it2,"tf",(v==="true")===it2.a); render(false); var f2=document.getElementById("fb"); if(f2){ f2.focus({preventScroll:true}); f2.scrollIntoView({block:"nearest"}); }
+    var it2=itemById("tf",r2.ids[r2.idx]), ok2=(v==="true")===it2.a; r2.picks.push([v==="true"?1:0, ok2?1:0, Date.now()-r2.t0]); finishItem(r2,it2,"tf",ok2); render(false); var f2=document.getElementById("fb"); if(f2){ f2.focus({preventScroll:true}); f2.scrollIntoView({block:"nearest"}); }
   }
-  else if(a==="rnext"){ var r3=ui.round; r3.idx++; r3.answered=false; render(true); }
+  else if(a==="rnext"){ var r3=ui.round; r3.idx++; r3.answered=false; r3.picks=[]; r3.t0=Date.now(); render(true); }
   else if(a==="crate"){
     var r4=ui.round, left=LEARN.filter(function(c){ return store.cards.indexOf(c.id)<0; }), pickFrom=left.length?left:LEARN;
     var same=pickFrom.filter(function(c){ return r4.key==="5-3"||r4.key==="6-1" ? c.lesson===r4.key : true; }); if(same.length) pickFrom=same;
@@ -812,8 +965,8 @@ document.addEventListener("click", function(e){
   else if(a==="group"){ ui.group=v; ui.idx=0; ui.queue=null; ui.view="write"; render(true); }
   else if(a==="goto"){ ui.idx=parseInt(v,10); render(false); window.scrollTo(0,0); }
   else if(a==="hint"){ ui.hint[id]=!ui.hint[id]; render(false); }
-  else if(a==="reveal"){ ui.shown[id]=true; render(false); var an=document.getElementById("ans"); if(an){ an.focus({preventScroll:true}); an.scrollIntoView({block:"nearest"}); } }
-  else if(a==="mark"){ store.got[id]=v; ui.shown[id]=true; if(v==="got") award("wr:"+id,10); save(); render(false); }
+  else if(a==="reveal"){ ui.shown[id]=true; if(ui.wtId===id) ui.rv[id]=Date.now()-ui.wtAt; render(false); var an=document.getElementById("ans"); if(an){ an.focus({preventScroll:true}); an.scrollIntoView({block:"nearest"}); } }
+  else if(a==="mark"){ store.got[id]=v; ui.shown[id]=true; if(v==="got") award("wr:"+id,10); logPush({t:Date.now(), m:"wr", q:id, mark:v, rv:(ui.rv[id]!=null?ui.rv[id]:null)}); render(false); }
   else if(a==="next"){ ui.idx++; render(false); window.scrollTo(0,0); }
   else if(a==="prev"){ if(ui.idx>0) ui.idx--; render(false); window.scrollTo(0,0); }
   else if(a==="retry"){ var g=groupById(ui.group); ui.queue=g.items.filter(function(it){ return store.got[it.id]!=="got"; }).map(function(it){ return it.id; }); ui.idx=0; ui.shown={}; render(true); }
@@ -828,7 +981,14 @@ document.addEventListener("click", function(e){
   else if(a==="finish"){ var m1=mstate(ui.paper); m1.secs=elapsed(ui.paper); if(ui.mockRun && ui.mockRun.id===ui.paper) ui.mockRun=null; m1.done=true; save(); render(true); }
   else if(a==="mmark"){ var m2=mstate(ui.paper), n=el.getAttribute("data-n"); m2.marks[n]=v; if(v==="ok") award("mock:"+ui.paper+":"+n,10); save(); render(false); }
   else if(a==="retake"){ var m3=mstate(ui.paper); m3.typed={}; m3.marks={}; m3.done=false; m3.secs=0; if(ui.mockRun && ui.mockRun.id===ui.paper) ui.mockRun=null; save(); render(true); }
-  else if(a==="print"){ window.print(); }
+  else if(a==="copyrep"){
+    var txt=reportText();
+    var fin=function(ok){ ui.copied=ok?"ok":"fail"; render(false); if(!ok){ var ta=document.getElementById("rep"); if(ta){ ta.focus(); ta.select(); } } };
+    try{ navigator.clipboard.writeText(txt).then(function(){ fin(true); }, function(){ fin(false); }); }catch(err){ fin(false); }
+  }
+  else if(a==="clearlog"){ ui.confirmClear=true; render(false); }
+  else if(a==="clearno"){ ui.confirmClear=false; render(false); }
+  else if(a==="clearyes"){ store.log=[]; ui.confirmClear=false; ui.copied=""; save(); render(false); }
 });
 
 render(false);
