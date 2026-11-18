@@ -891,7 +891,9 @@ function hud(){
   document.getElementById("avBtn").innerHTML=avatar(store.avatar,40);
   document.body.classList.toggle("calm",!!store.calm);
 }
+function pauseClock(){ if(!ui.mockRun) return; var pm=mstate(ui.mockRun.id); pm.secs=elapsed(ui.mockRun.id); ui.mockRun=null; save(); }
 function render(focus){
+  if(ui.mockRun && (ui.view!=="mock" || ui.paper!==ui.mockRun.id)) pauseClock();
   var v=ui.view, html;
   if(v==="learn") html=vLearn();
   else if(v==="mcq"||v==="tf") html = ui.round && ui.round.mode===v ? vRound(v) : vPicker(v);
@@ -907,7 +909,7 @@ function render(focus){
 }
 function setView(v){ ui.view=v; render(true); }
 
-setInterval(function(){ var c=document.getElementById("clock"); if(c && ui.mockRun) c.textContent=fmt(elapsed(ui.mockRun.id)); },250);
+setInterval(function(){ var c=document.getElementById("clock"); if(c && ui.mockRun && ui.view==="mock" && ui.mockRun.id===ui.paper) c.textContent=fmt(elapsed(ui.mockRun.id)); },250);
 
 document.addEventListener("input", function(e){
   var t=e.target; if(!t) return;
