@@ -574,7 +574,7 @@ function poolList(mode,key){
 function missedCount(mode){ return bank(mode).filter(function(x){ return store[mode][x.id]==="miss"; }).length; }
 function startRound(mode,key){
   var list=poolList(mode,key); if(!list.length) return;
-  var r={mode:mode,key:key,ids:list.map(function(x){return x.id;}),idx:0,res:{},wrong:{},opts:{},answered:false,earned:0,crate:null,rid:Date.now(),t0:Date.now(),picks:[]};
+  var r={mode:mode,key:key,ids:list.map(function(x){return x.id;}),idx:0,res:{},wrong:{},opts:{},answered:false,earned:0,crate:null,rid:Date.now(),t0:Date.now(),picks:[],cur:null};
   if(mode==="mcq") list.forEach(function(it){ var a=it.a||0, o=it.opts.map(function(t,i){ return {t:t,ok:i===a}; }); r.opts[it.id]= it.fixed?o:shuffle(o); });
   ui.round=r; render(true);
 }
@@ -917,6 +917,17 @@ document.addEventListener("input", function(e){
   else if(t.getAttribute && t.getAttribute("data-mock")){ var m=mstate(t.getAttribute("data-mock")); m.typed[t.getAttribute("data-n")]=t.value; save(); }
 });
 
+function touchRec(r, it, mode){
+  var now=Date.now();
+  if(!r.cur){
+    r.cur={t:now, rid:r.rid, m:mode, q:it.id, k:r.key, w:0, first:false, f:null, d:null, p:r.picks, open:true};
+    store.log.push(r.cur);
+    if(store.log.length>600) store.log.splice(0, store.log.length-600);
+  }
+  var w=0; r.picks.forEach(function(x){ if(!x[1]) w++; });
+  r.cur.w=w; r.cur.f=r.picks.length?r.picks[0][2]:null; r.cur.d=now-r.t0;
+  save();
+}
 function finishItem(r, it, mode, ok){
   var now=Date.now();
   r.answered=true;
@@ -925,7 +936,8 @@ function finishItem(r, it, mode, ok){
   r.res[it.id]= first?"first":"miss";
   store[mode][it.id]= first?"first":"miss";
   if(first) r.earned+=award(mode+":"+it.id,10);
-  logPush({t:now, rid:r.rid, m:mode, q:it.id, k:r.key, w:wrongN, first:first, f:(r.picks.length?r.picks[0][2]:now-r.t0), d:now-r.t0, p:r.picks});
+  touchRec(r, it, mode);
+  r.cur.first=first; r.cur.open=false; r.cur.w=wrongN; save();
   say(first?"Correct":"Not quite. The answer is shown.");
 }
 
@@ -949,6 +961,8 @@ document.addEventListener("click", function(e){
     var r=ui.round; if(!r||r.answered) return;
     var it=itemById("mcq",r.ids[r.idx]), i=parseInt(el.getAttribute("data-i"),10), o=r.opts[it.id][i];
     r.picks.push([i, o.ok?1:0, Date.now()-r.t0]);
+    if(!o.ok) store.mcq[it.id]="miss";
+    touchRec(r, it, "mcq");
     if(o.ok){ finishItem(r,it,"mcq",true); render(false); var f=document.getElementById("fb"); if(f){ f.focus({preventScroll:true}); f.scrollIntoView({block:"nearest"}); } }
     else { (r.wrong[it.id]=r.wrong[it.id]||[]).push(i); say("Not this one. Try another answer."); render(false); var w=main.querySelector(".opt.wrong"); if(w && !store.calm) w.classList.add("shake"); }
   }
@@ -956,7 +970,7 @@ document.addEventListener("click", function(e){
     var r2=ui.round; if(!r2||r2.answered) return;
     var it2=itemById("tf",r2.ids[r2.idx]), ok2=(v==="true")===it2.a; r2.picks.push([v==="true"?1:0, ok2?1:0, Date.now()-r2.t0]); finishItem(r2,it2,"tf",ok2); render(false); var f2=document.getElementById("fb"); if(f2){ f2.focus({preventScroll:true}); f2.scrollIntoView({block:"nearest"}); }
   }
-  else if(a==="rnext"){ var r3=ui.round; r3.idx++; r3.answered=false; r3.picks=[]; r3.t0=Date.now(); render(true); }
+  else if(a==="rnext"){ var r3=ui.round; r3.idx++; r3.answered=false; r3.picks=[]; r3.cur=null; r3.t0=Date.now(); render(true); }
   else if(a==="crate"){
     var r4=ui.round, left=LEARN.filter(function(c){ return store.cards.indexOf(c.id)<0; }), pickFrom=left.length?left:LEARN;
     var same=pickFrom.filter(function(c){ return r4.key==="5-3"||r4.key==="6-1" ? c.lesson===r4.key : true; }); if(same.length) pickFrom=same;
