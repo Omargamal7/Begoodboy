@@ -76,5 +76,5 @@
 
 ## Shared
 
-- [WhatsApp Image 2026-10-07 at 10.54.39.jpeg](../../../../sources/shared/school/announcements/2026-10-07-general-assembly.jpeg)
+- [WhatsApp Image 2026-10-07 at 10.54.39.jpeg](https://github.com/Omargamal7/Begoodboy/blob/743ef1ec8f57b96c9bbbba0862f8330e9e01c6d4/sources/shared/school/announcements/2026-10-07-general-assembly.jpeg)
 

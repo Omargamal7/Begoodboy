@@ -11,7 +11,7 @@ fs.mkdirSync(out, { recursive: true });
   page.on("pageerror", e => errors.push(e.message));
   page.on("request", r => { if (/^https?:/.test(r.url())) remoteRequests.push(r.url()); });
   await page.route(/^https?:/, r => r.abort());
-  const file = "file://" + path.join(root, "packs/murad/science/digestion.html");
+  const file = "file://" + path.join(root, "murad/science/packs/digestion.html");
   function assert(condition, message) { if (!condition) throw new Error(message); }
   async function fits(label) {
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "Horizontal overflow: " + label);

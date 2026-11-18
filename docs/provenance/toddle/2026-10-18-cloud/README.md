@@ -16,16 +16,16 @@ Originals are unchanged. A newer Primary 5 weekly assessment PDF differs from th
 
 - [Combined source catalogue](../2026-10-18/catalog.index.json): existing source files, release assets, and recovered originals.
 - [Verified file manifest](attachments.index.json): byte counts, hashes, paths, and storage receipts.
-- [Large-original manifest](../../../../sources/large-originals.json): each original's ordered parts and checksums.
+- [Large-original manifest](../../large-originals.json): current locations and checksums.
 - [Previous sweep](../2026-10-18/README.md) and [17 October snapshot](../2026-10-17/README.md): historical provenance.
 
-After downloading the repository, restore the seven larger source files with:
+The larger originals now open directly. To verify their checksums from the repository root, run:
 
 ```sh
 python3 tools/source/restore-originals.py
 ```
 
-The command validates every part and the completed original, and refuses to replace a different existing file.
+The command verifies the full files against the inventory.
 
 ## Remaining full-sync work
 

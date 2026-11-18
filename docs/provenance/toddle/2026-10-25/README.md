@@ -14,6 +14,6 @@ Every subject's **Course plan** tab was swept for both linked children, capturin
 - [Machine-readable course-plan coverage with per-subject books & sources](course-plans.index.json)
 - [Human-readable books & sources by subject](course-plans.md)
 
-**Method note:** this sweep records each resource's **title + type** (PDF, Word, Video, Image, Presentation, Audio, Note) and folder structure. Original file bytes are not duplicated here — per repo convention they belong under `sources/<child>/<subject>/`. A follow-up archival pass can download the actual files.
+**Method note:** this sweep records each resource's **title + type** (PDF, Word, Video, Image, Presentation, Audio, Note) and folder structure. Original file bytes are not duplicated here — per repo convention they belong under `<child>/<subject>/sources/`. A follow-up archival pass can download the actual files.
 
 **Changes since [18 October](../2026-10-18/README.md):** Gamal Social Studies grew from 1 to 4 posted answer PDFs; content counts otherwise consistent. Blank courses not re-opened this run are labelled as carried-forward in `course-plans.json`.

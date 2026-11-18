@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Restore original school files stored as verified binary parts."""
+"""Verify original school files or restore parts from a legacy checkout."""
 from pathlib import Path
 import argparse, hashlib, json, os, tempfile
 
@@ -11,7 +11,10 @@ def digest(path):
 
 def restore(root):
     root=root.resolve()
-    manifest=json.loads((root/'sources/large-originals.json').read_text())
+    index = root/'docs/provenance/large-originals.json'
+    if not index.is_file():
+        index = root/'sources/large-originals.json'
+    manifest=json.loads(index.read_text())
     for item in manifest['files']:
         target=(root/item['path']).resolve()
         if not target.is_relative_to(root):raise ValueError('Invalid destination')
@@ -19,6 +22,8 @@ def restore(root):
             if target.stat().st_size==item['bytes'] and digest(target)==item['sha256']:
                 print('Verified existing:',item['path']);continue
             raise ValueError('Refusing to replace a different file: '+item['path'])
+        if not item.get("parts"):
+            raise FileNotFoundError("Missing original: " + item["path"])
         target.parent.mkdir(parents=True,exist_ok=True)
         temp=None
         try:

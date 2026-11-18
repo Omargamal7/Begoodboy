@@ -10,7 +10,7 @@
       "git_blob_sha": "991b701ef44f48121d8331ae7146fab93e5af9f7",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx",
+      "repository_path": "murad/computer/sources/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx",
       "archive_status": "already_present_or_duplicate",
       "download_names": [
         "ICT primary 6 booklet 1st term 2025-2026 1 (1).docx"
@@ -24,7 +24,7 @@
       "git_blob_sha": "71908e6a7121814113846dcfe372cab6eac27c5f",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/handouts/Prim 6 lesson 1.docx",
+      "repository_path": "murad/computer/sources/handouts/Prim 6 lesson 1.docx",
       "archive_status": "already_present_or_duplicate",
       "download_names": [
         "Prim 6 lesson 1 (2).docx"
@@ -38,7 +38,7 @@
       "git_blob_sha": "56e9ae3d6edd72ff82b31dd683d40aa64deb3c1e",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/handouts/prim 6 lesson 2.docx",
+      "repository_path": "murad/computer/sources/handouts/prim 6 lesson 2.docx",
       "archive_status": "already_present_or_duplicate",
       "download_names": [
         "prim 6 lesson 2.docx"
@@ -52,7 +52,7 @@
       "git_blob_sha": "746f99e138b8405570b724b079aee034d6fa15a1",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/evaluations/week-03.docx",
+      "repository_path": "murad/computer/sources/evaluations/week-03.docx",
       "archive_status": "new_original",
       "download_names": [
         "week3.docx"
@@ -66,7 +66,7 @@
       "git_blob_sha": "5c85e702a83239e52f1a53585568d51b71b2afaf",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/evaluations/week-02.docx",
+      "repository_path": "murad/computer/sources/evaluations/week-02.docx",
       "archive_status": "new_original",
       "download_names": [
         "week2.docx"
@@ -80,7 +80,7 @@
       "git_blob_sha": "1427e6e6ec35fb9137066a7ade415cd54ba53d34",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/evaluations/week-01.docx",
+      "repository_path": "murad/computer/sources/evaluations/week-01.docx",
       "archive_status": "new_original",
       "download_names": [
         "week1.docx"
@@ -94,7 +94,7 @@
       "git_blob_sha": "b730ce3c04e5ffb08386a2171eab7e8f84680373",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/ict/revision/2026-10/revision prim 6 october.docx",
+      "repository_path": "murad/computer/sources/revision/2026-10/revision prim 6 october.docx",
       "archive_status": "new_original",
       "download_names": [
         "revision prim 6 october.docx"

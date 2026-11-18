@@ -105,13 +105,13 @@
       "git_blob": "4c743136ee7d289ef45fe95163d52e46d4f6c6f1"
     },
     {
-      "path": "packs/class/grade5/english/october-arabic-help.html",
+      "path": "gamal/english/packs/class/october-arabic-help.html",
       "bytes": 3924568,
       "sha256": "548f42db54ff61a91397a410e9c2eb7259e8e1eb5c75f763572596bea2c437f8",
       "git_blob": "282508ba79ec16df16ce6ad5aeb3b5db54b78480"
     },
     {
-      "path": "packs/class/grade6/english/october-arabic-help.html",
+      "path": "murad/english/packs/class/october-arabic-help.html",
       "bytes": 3598300,
       "sha256": "a95609c6b9c12e84cf3656d8ed468325267e8cdfb4278d7ff86443c05370101a",
       "git_blob": "8e2540c4a11e917efe28a33a11c90a8426889acb"

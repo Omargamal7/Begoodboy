@@ -7,9 +7,9 @@
       "bytes": 17838946,
       "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235",
       "git_blob_sha": "8e45e1970a2212498296329d65c38f0e6e680ece",
-      "repository_path": "sources/murad/social-studies/درس_التحديات_البيئية.pdf",
+      "repository_path": "murad/social-studies/sources/weekly/week-05/درس التحديات البيئية.pdf",
       "status": "archived_verified_repository_parts",
-      "parts": [
+      "parts_at_snapshot": [
         {
           "path": "sources/.parts/b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235/0001.bin",
           "bytes": 8388608,
@@ -35,9 +35,9 @@
       "bytes": 13968037,
       "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c",
       "git_blob_sha": "6065d1abb51496cfb02490e106a37bc92a58d3ed",
-      "repository_path": "sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf",
+      "repository_path": "murad/social-studies/sources/weekly/week-04/وطننا العربي المناخ و النبات الطبيعي.pdf",
       "status": "archived_verified_repository_parts",
-      "parts": [
+      "parts_at_snapshot": [
         {
           "path": "sources/.parts/0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c/0001.bin",
           "bytes": 8388608,

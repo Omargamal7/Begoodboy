@@ -2,15 +2,15 @@
 
 ## Finished editions
 
-- [Jimmy · Primary 5A](../../../../packs/gamal/german/october-revision.html)
-- [Anonymous class edition with optional Arabic help](../../../../packs/class/grade5/german/october-arabic-help.html)
+- [Jimmy · Primary 5A](../../packs/october-revision.html)
+- [Anonymous class edition with optional Arabic help](../../packs/class/october-arabic-help.html)
 - [Private cloud revision](https://german-field-club-october.vividghost16.chatgpt.site)
 
 Both standalone HTMLs contain 212 question parts in 28 sections, six source-grounded lesson reminders and 33 original-page derivatives. The October worksheet includes 56 answer parts; the booklet includes 156 parts across all 22 numbered Übungen. Eight personal/disputed items remain parent checked and automatically unscored.
 
 ## Source preservation and caveats
 
-Three exact Toddle PDF originals are in `sources/gamal/german/revision/2026-10/`; [byte hashes and page counts](source-files.json) preserve their identity. Editable content is in `app/activities/gamal/german-revision/`; shared app source is in `app/activities/shared/german-revision/`; source-page derivatives are in `app/assets/gamal/german/`.
+Three exact Toddle PDF originals are in `gamal/german/sources/revision/2026-10`; [byte hashes and page counts](source-files.json) preserve their identity. Editable content is in `app/activities/gamal/german-revision`; shared app source is in `app/activities/shared/german-revision`; source-page derivatives are in `app/assets/gamal/german`.
 
 The files were posted on 19 October in **prim5 A German**. The worksheet's **6.KLASSE** header conflicts with that course attribution and is flagged throughout. An exact monthly exam cutoff was not verified. Murad's live current-term course list has no German course; no material or pack was guessed for him. See [source observations](../../../../docs/provenance/german-2026-10-19.md) and [independent visual review](../../../../docs/provenance/german-2026-10-19-review.md).
 

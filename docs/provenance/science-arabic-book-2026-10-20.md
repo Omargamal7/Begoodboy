@@ -2,10 +2,10 @@
 
 ## Deliverables
 
-- `packs/gamal/science/arabic-book-term1/chapter-1-bones-and-muscles.html` — lessons 1-1 to 1-4 + camel enrichment corner (book pp. 6–19), 17 checks.
-- `packs/gamal/science/arabic-book-term1/chapter-2-changes-in-seasons.html` — lessons 2-1, 2-2 + fennec fox / galabeya enrichment corner (pp. 20–27), 10 checks.
-- `packs/gamal/science/arabic-book-term1/chapter-3-germination.html` — lessons 3-1 to 3-5 (pp. 28–43), 24 checks including the p. 41 results table.
-- `packs/gamal/science/arabic-book-term1/revision-chapters-1-3.html` — summary, key-word flip cards, 21-question mixed practice exam.
+- `gamal/science/packs/arabic-book-term1/chapter-1-bones-and-muscles.html` — lessons 1-1 to 1-4 + camel enrichment corner (book pp. 6–19), 17 checks.
+- `gamal/science/packs/arabic-book-term1/chapter-2-changes-in-seasons.html` — lessons 2-1, 2-2 + fennec fox / galabeya enrichment corner (pp. 20–27), 10 checks.
+- `gamal/science/packs/arabic-book-term1/chapter-3-germination.html` — lessons 3-1 to 3-5 (pp. 28–43), 24 checks including the p. 41 results table.
+- `gamal/science/packs/arabic-book-term1/revision-chapters-1-3.html` — summary, key-word flip cards, 21-question mixed practice exam.
 
 ## Provenance
 

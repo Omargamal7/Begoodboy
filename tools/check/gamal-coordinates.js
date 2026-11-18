@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('fs'),path=require('path'),{chromium}=require('playwright');
-const root=path.resolve(__dirname,'../..'),file='file://'+path.join(root,'packs/gamal/social-studies/egypt-coordinates.html'),id='jimmy-social-studies-t1-l1';
+const root=path.resolve(__dirname,'../..'),file='file://'+path.join(root,'gamal/social-studies/packs/egypt-coordinates.html'),id='jimmy-social-studies-t1-l1';
 (async()=>{
  const browser=await chromium.launch(process.env.CHROMIUM?{executablePath:process.env.CHROMIUM}:{}),p=await browser.newPage();
  const errors=[],requests=[];p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(/^https?:/.test(r.url()))requests.push(r.url());});await p.route(/^https?:/,r=>r.abort());

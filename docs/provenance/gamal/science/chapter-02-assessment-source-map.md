@@ -42,7 +42,7 @@ The cycle activity begins with warm-season growth, then cold-season withering/dr
 
 Each original test is a separate sitting. Jimmy speaks before a parent reveals and compares the model answer. Parent-confirmed scores are not automatic speech or handwriting assessment. Incorrect or incomplete recall returns to the relevant explanation card. A parent can then help Jimmy practise any writing required by school.
 
-`packs/gamal/science/chapter-02-assessment.html` embeds the engine, styles, lesson data, six SVG diagrams and all five original screenshots. It needs no internet or installation. Rebuild with `node tools/build/gamal-science-ch2.js`.
+`gamal/science/packs/chapter-02-assessment.html` embeds the engine, styles, lesson data, six SVG diagrams and all five original screenshots. It needs no internet or installation. Rebuild with `node tools/build/gamal-science-ch2.js`.
 
 The shared engine has two copy-only corrections: the source-page label now says “school pages” and the recall prompt says “spoken answer” instead of hard-coding Murad's name. The full lesson regression check is required for that shared change. Work is committed directly to main as the parent requested; no new branch or PR is used.
 

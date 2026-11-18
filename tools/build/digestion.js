@@ -15,6 +15,6 @@ const html = '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\
   '<div id="app" lang="en"><p>Loading Murad\'s digestion lessons…</p></div>\n' +
   script(read("app/engine/sheet.js")) + '\n' + script(read("app/engine/common.js")) + '\n' + script(lessons) + '\n' +
   '<script>SheetEngine.boot(document.getElementById("app"));</script>\n</body>\n</html>\n';
-const output = path.join(root, "packs/murad/science/digestion.html");
+const output = path.join(root, "murad/science/packs/digestion.html");
 fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output, html);
 console.log("Built", path.basename(output), "(" + Buffer.byteLength(html) + " bytes)");

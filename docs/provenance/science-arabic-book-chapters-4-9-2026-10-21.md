@@ -2,7 +2,7 @@
 
 Continues [Chapters 1–3](science-arabic-book-2026-10-20.md); together they cover the whole Term 1 book.
 
-## Deliverables (`packs/gamal/science/arabic-book-term1/`)
+## Deliverables (`gamal/science/packs/arabic-book-term1`)
 
 | File | Content | Book pages | Checks |
 |---|---|---|---|

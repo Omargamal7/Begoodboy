@@ -13,7 +13,7 @@
   ],
   "files": [
     {
-      "path": "sources/murad/religion/Islamic_Education_Primary6_T1.pdf",
+      "path": "murad/religion/sources/Islamic_Education_Primary6_T1.pdf",
       "bytes": 14124807,
       "git_blob_sha": "56fb0231d228e6eab31b099a67e5ce3724287dcf",
       "storage": "repository_blob",
@@ -22,7 +22,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
+      "path": "murad/religion/sources/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
       "bytes": 1515823,
       "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
       "storage": "repository_blob",

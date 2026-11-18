@@ -3,7 +3,7 @@
   "scope": "murad/mathematics",
   "new_books": [
     {
-      "path": "sources/shared/mathematics/grade6/ministry-2026-2027-term1/Math_en_prim6_t1_Assmt.pdf",
+      "path": "murad/mathematics/sources/ministry/Math_en_prim6_t1_Assmt.pdf",
       "grade": 6,
       "subject": "mathematics",
       "language": "English",
@@ -21,7 +21,7 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     }
   ]
 }

@@ -7,7 +7,7 @@
       "bytes": 134020,
       "sha256": "8e1627535e01eb6e38bdd6664c4c8fc6cd7fb30e604d40a19c7ff239fcea20bd",
       "git_blob_sha": "00e0c4d5d9cecca1ab1defe1795f84c8a27f708a",
-      "repository_path": "sources/murad/english/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf",
+      "repository_path": "murad/english/sources/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf",
       "status": "verified_existing_repository_blob"
     },
     {
@@ -15,7 +15,7 @@
       "bytes": 70242,
       "sha256": "d6ae580d9ff90d44e1036073f2403a35f6c17cd93c5605718c5821790bdb6916",
       "git_blob_sha": "9250f3fe11cceb7f73d41c830db99cb752cf2f06",
-      "repository_path": "sources/murad/english/lesson-distribution/Lesson Distribution - - 6G.pdf",
+      "repository_path": "murad/english/sources/lesson-distribution/Lesson Distribution - - 6G.pdf",
       "status": "verified_existing_repository_blob"
     },
     {
@@ -31,9 +31,9 @@
       "bytes": 12304024,
       "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57",
       "git_blob_sha": "390166054b9f18f267a109125e8e2ad668537b63",
-      "repository_path": "sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "repository_path": "murad/english/sources/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
       "status": "archived_verified_repository_parts",
-      "parts": [
+      "parts_at_snapshot": [
         {
           "path": "sources/.parts/b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57/0001.bin",
           "bytes": 8388608,
@@ -53,9 +53,9 @@
       "bytes": 15956703,
       "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6",
       "git_blob_sha": "b69a2574145b6fcf2856fe1ed8d035296910a1b8",
-      "repository_path": "sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "repository_path": "murad/english/sources/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
       "status": "archived_verified_repository_parts",
-      "parts": [
+      "parts_at_snapshot": [
         {
           "path": "sources/.parts/dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6/0001.bin",
           "bytes": 8388608,

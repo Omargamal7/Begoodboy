@@ -9,15 +9,20 @@
       "storage": "repository_blob",
       "child": "shared",
       "subject": "school",
-      "week_in_archive_path": null
+      "week_in_archive_path": null,
+      "snapshot_url": "https://github.com/Omargamal7/Begoodboy/blob/743ef1ec8f57b96c9bbbba0862f8330e9e01c6d4/sources/shared/school/announcements/2026-10-07-general-assembly.jpeg"
     },
     {
-      "path": "sources/shared/school/announcements/Back_to_School_Guide_2026-27.pdf",
+      "path": "shared/school/sources/Back_to_School_Guide_2026-27.pdf",
       "bytes": 13153407,
       "sha256": "97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df",
       "git_blob_sha": "037676487157c566efa2456a3bf7a03d0d0c2d90",
-      "storage": "repository_parts",
-      "parts": [
+      "storage": "repository_blob",
+      "archive_path": "shared_announcements/Back_to_School_Guide_2026-27.pdf",
+      "child": "shared",
+      "subject": "school",
+      "week_in_archive_path": null,
+      "parts_at_snapshot": [
         {
           "path": "sources/.parts/97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df/0001.bin",
           "bytes": 8388608,
@@ -30,11 +35,7 @@
           "sha256": "c6a4e44b250877748e4de9070eae0257e6b9e4a78b147773a3c891ec133b2e77",
           "git_blob_sha": "322a45f307424156f7124ea1f449882b85332e65"
         }
-      ],
-      "archive_path": "shared_announcements/Back_to_School_Guide_2026-27.pdf",
-      "child": "shared",
-      "subject": "school",
-      "week_in_archive_path": null
+      ]
     },
     {
       "path": "sources/shared/school/announcements/Entry_Schedule_2026-09-10.jpg",
@@ -46,7 +47,8 @@
       "archive_path": "shared_announcements/Entry_Schedule_2026-09-10.jpg",
       "child": "shared",
       "subject": "school",
-      "week_in_archive_path": null
+      "week_in_archive_path": null,
+      "snapshot_url": "https://github.com/Omargamal7/Begoodboy/blob/743ef1ec8f57b96c9bbbba0862f8330e9e01c6d4/sources/shared/school/announcements/Entry_Schedule_2026-09-10.jpg"
     },
     {
       "path": "sources/shared/school/announcements/Letter_Bus_National_2026-27.pdf",
@@ -58,7 +60,8 @@
       "archive_path": "shared_announcements/Letter_Bus_National_2026-27.pdf",
       "child": "shared",
       "subject": "school",
-      "week_in_archive_path": null
+      "week_in_archive_path": null,
+      "snapshot_url": "https://github.com/Omargamal7/Begoodboy/blob/743ef1ec8f57b96c9bbbba0862f8330e9e01c6d4/sources/shared/school/announcements/Letter_Bus_National_2026-27.pdf"
     },
     {
       "path": "sources/shared/school/announcements/جواب_القسم_المصري_2026-2027.pdf",
@@ -70,7 +73,8 @@
       "archive_path": "shared_announcements/جواب_القسم_المصري_2026-2027.pdf",
       "child": "shared",
       "subject": "school",
-      "week_in_archive_path": null
+      "week_in_archive_path": null,
+      "snapshot_url": "https://github.com/Omargamal7/Begoodboy/blob/743ef1ec8f57b96c9bbbba0862f8330e9e01c6d4/sources/shared/school/announcements/%D8%AC%D9%88%D8%A7%D8%A8_%D8%A7%D9%84%D9%82%D8%B3%D9%85_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A_2026-2027.pdf"
     },
     {
       "path": "sources/shared/school/announcements/نشرة_القسم_المصري_2026-2027.pdf",
@@ -82,7 +86,8 @@
       "archive_path": "shared_announcements/نشرة_القسم_المصري_2026-2027.pdf",
       "child": "shared",
       "subject": "school",
-      "week_in_archive_path": null
+      "week_in_archive_path": null,
+      "snapshot_url": "https://github.com/Omargamal7/Begoodboy/blob/743ef1ec8f57b96c9bbbba0862f8330e9e01c6d4/sources/shared/school/announcements/%D9%86%D8%B4%D8%B1%D8%A9_%D8%A7%D9%84%D9%82%D8%B3%D9%85_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A_2026-2027.pdf"
     }
   ]
 }

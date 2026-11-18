@@ -7,7 +7,7 @@
       "bytes": 46419486,
       "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
       "git_blob_sha": "6136da630548372e51cd6f7560bc0baaabb10b01",
-      "repository_path": "sources/murad/arabic/Arabic_Primary6_T1.pdf",
+      "repository_path": "murad/arabic/sources/Arabic_Primary6_T1_Ministry_Textbook.pdf",
       "status": "verified_existing_release_asset",
       "release_asset": "murad-arabic-Arabic_Primary6_T1.pdf",
       "release_url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf"
@@ -17,9 +17,9 @@
       "bytes": 21810058,
       "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312",
       "git_blob_sha": "91da766dccb998ed4466cb49dc1cfae4d91f50bf",
-      "repository_path": "sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx",
+      "repository_path": "murad/arabic/sources/revision/2026-10/الاسم النكرة والاسم المعرفة 6 ب.pptx",
       "status": "archived_verified_repository_parts",
-      "parts": [
+      "parts_at_snapshot": [
         {
           "path": "sources/.parts/46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312/0001.bin",
           "bytes": 8388608,
@@ -45,7 +45,7 @@
       "bytes": 12463048,
       "sha256": "f5be76dd415f691b223062c4d5452b0f949ee75c451180cd734210b2e542cdcb",
       "git_blob_sha": "7bcb0d9f21f6fd00b06847db02a231a9841cc9a8",
-      "repository_path": "sources/murad/arabic/تقييمات_الوزارة_لغة_عربية_ترم_1_2027.pdf",
+      "repository_path": "murad/arabic/sources/Arabic_Primary6_T1_Ministry_Assessments.pdf",
       "status": "verified_existing_release_asset",
       "release_asset": "murad-arabic-ministry-assessments-term1-2027.pdf",
       "release_url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-ministry-assessments-term1-2027.pdf"
@@ -55,7 +55,7 @@
       "bytes": 766203,
       "sha256": "821a98e24215d78f3f6d8d15f5a2514e3542b467cf9e006672dbd6a165161bd9",
       "git_blob_sha": "64c53e7854b07755ba51ff2710bf77abf7d5f725",
-      "repository_path": "sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
+      "repository_path": "murad/arabic/sources/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
       "status": "verified_existing_repository_blob"
     },
     {
@@ -63,7 +63,7 @@
       "bytes": 6713431,
       "sha256": "d667ff4f8da26252abcc8d79634cd1e3ed2a654e716e0415622aaf43c3e73140",
       "git_blob_sha": "8086fe9d0b6a5e10346f017ecd0454556f264868",
-      "repository_path": "sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf",
+      "repository_path": "murad/arabic/sources/معدلة ملزمة الصف السادس ترم اول.pdf",
       "status": "verified_existing_repository_blob"
     }
   ]

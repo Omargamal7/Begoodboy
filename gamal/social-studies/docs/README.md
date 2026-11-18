@@ -2,7 +2,7 @@
 
 ## Current school assessment · 14 October 2026
 
-**Egypt's climate / مناخ مصر** is ready in `packs/gamal/social-studies/climate-quest.html`.
+**Egypt's climate / مناخ مصر** is ready in `gamal/social-studies/packs/climate-quest.html`.
 
 The four school pages supplied on 13 October set this assessment's scope. This separate pack uses picture scenes, the original worksheet pictures, approximate English pronunciation aids, phrase building, and parent-checked spoken recall. It includes all 15 question parts in models A, B and C. Two missing answers have labelled Ministry support; one hypothetical is unscored. Both conflicting answers to the flat-land question are retained in the parent's guide.
 
@@ -17,7 +17,7 @@ Unit 1, Lesson 1: **Egypt’s coordinates / موقع مصر الفلكي**.
 - English explanations with the key Arabic terms.
 - Six fact cards, three tap activities and 15 original practice questions.
 - Uses Jimmy’s existing two sittings, reward and retry behaviour.
-- Standalone offline file: `packs/gamal/social-studies/egypt-coordinates.html`.
+- Standalone offline file: `gamal/social-studies/packs/egypt-coordinates.html`.
 - Rebuild: `node tools/build/gamal-coordinates.js`.
 
 ## Source and limits

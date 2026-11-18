@@ -65,9 +65,9 @@ for(const [level,folder] of [[5,'gamal'],[6,'murad']]){
  }
  const text=JSON.stringify(d);if(/\b(Jimmy|Murad|Gamal|Toddle|5A|6G)\b/i.test(text))throw Error('Personal label remains in grade '+level);
  write(path.join(root,'app/activities/class','grade'+level,'data.json'),JSON.stringify(d,null,2)+'\n');
- const pages=JSON.parse(fs.readFileSync(path.join(root,'app/assets',folder,'english/assessment-pages.json'),'utf8'));
+ const pages=JSON.parse(fs.readFileSync(path.join(root,folder,'english/sources/assessment-pages.json'),'utf8'));
  const json=x=>JSON.stringify(x).replace(/</g,'\\u003c');
  const html=template.replaceAll('__CHILD__',d.child).replaceAll('__GRADE__',d.grade).replace('/*__STYLE__*/',css).replace('/*__DATA__*/',json(d)).replace('/*__ASSETS__*/',json(pages)).replace('/*__APP__*/',js);
- write(path.join(root,'packs/class','grade'+level,'english/october-arabic-help.html'),html);
+ write(path.join(root,folder,'english/packs/class/october-arabic-help.html'),html);
  console.log(JSON.stringify({grade:level,items:d.sections.reduce((n,s)=>n+s.items.length,0),models:d.sections.filter(s=>s.kind==='model').length,arabicTips:support.units.reduce((n,u)=>n+u.tips.length,0),vocabulary:support.units.reduce((n,u)=>n+u.glossary.length,0),bytes:Buffer.byteLength(html)}));
 }

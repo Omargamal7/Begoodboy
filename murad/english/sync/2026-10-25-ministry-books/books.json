@@ -3,7 +3,7 @@
   "scope": "murad/english",
   "new_books": [
     {
-      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_prim6_t1_Assmt.pdf",
+      "path": "murad/english/sources/ordinary-level/ministry/English_prim6_t1_Assmt.pdf",
       "grade": 6,
       "subject": "english-ordinary-level",
       "language": "English",
@@ -21,10 +21,10 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     },
     {
-      "path": "sources/shared/english-ordinary-level/grade6/ministry-2026-2027-term1/English_Primary6_T1.pdf",
+      "path": "murad/english/sources/ordinary-level/ministry/English_Primary6_T1.pdf",
       "grade": 6,
       "subject": "english-ordinary-level",
       "language": "English",
@@ -42,7 +42,7 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "scope": "gamal/religion",
   "new_books": [
     {
-      "path": "sources/shared/religion/grade5/ministry-2026-2027-term1/Islamic_prim5_tr1.pdf",
+      "path": "gamal/religion/sources/ministry/Islamic_prim5_tr1.pdf",
       "grade": 5,
       "subject": "religion",
       "language": "Arabic",
@@ -21,7 +21,7 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     }
   ]
 }

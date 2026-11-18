@@ -4,7 +4,7 @@ Test: Thursday 22/10/2026, 2nd lesson. School scope (Primary 5 October list): «
 
 ## Sources
 
-- `sources/gamal/social-studies/اجابة التقيمات.pdf`: the teacher's answered «الأداءات والتقييمات» booklet pages 4–14 (Toddle). Classwork, homework and weekly tests A/B/C for Lessons 1–3. The same file was re-downloaded from Toddle on 21 Oct, byte-identical.
+- `gamal/social-studies/sources/اجابة التقيمات.pdf`: the teacher's answered «الأداءات والتقييمات» booklet pages 4–14 (Toddle). Classwork, homework and weekly tests A/B/C for Lessons 1–3. The same file was re-downloaded from Toddle on 21 Oct, byte-identical.
 - Ministry student book `Social_prim5_T1.pdf`, printed 2025–26 (SHA-256 `d2712bc7…b580`), pp. 8–29: https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026/Primary/Primary5/Term1/StudentBook/Social_prim5_T1.pdf. It is not committed (15 MB); the local copy is in `~/Downloads/School/sources/gamal/social-studies/`.
 - No school *explanation* booklet for Grade 5 Social Studies was available; explanations follow the Ministry book.
 
@@ -12,7 +12,7 @@ Test: Thursday 22/10/2026, 2nd lesson. School scope (Primary 5 October list): «
 
 The sheet covers all three lessons. Added from the book because the sheet never asks them: the time difference (4 min per longitude line, 15° = 1 h, the Cairo 30°E problem on p. 12), Egypt's coordinates 22°–31°36′N / 25°–37°E, the list of inhabited oases, the White/Black Desert, the solar calendar and 3 farming seasons, and the dry climate preserving monuments. Lesson 4 (plants and animals) is out of scope.
 
-## Deliverables (`packs/gamal/social-studies/`)
+## Deliverables (`gamal/social-studies/packs`)
 
 - `unit1-lesson1-astronomical-location-hybrid.html`: Lesson 1: Egypt's astronomical location (Arabic + English)
 - `unit1-lesson2-landforms-hybrid.html`: Lesson 2: Egypt's landforms (Arabic + English)

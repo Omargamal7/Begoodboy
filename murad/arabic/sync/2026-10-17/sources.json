@@ -10,7 +10,7 @@
       "git_blob_sha": "8086fe9d0b6a5e10346f017ecd0454556f264868",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/arabic/معدلة ملزمة الصف السادس ترم اول.pdf",
+      "repository_path": "murad/arabic/sources/معدلة ملزمة الصف السادس ترم اول.pdf",
       "archive_status": "already_present_or_duplicate",
       "download_names": [
         "معدلة ملزمة الصف السادس ترم اول.pdf"
@@ -24,7 +24,7 @@
       "git_blob_sha": "64c53e7854b07755ba51ff2710bf77abf7d5f725",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/arabic/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
+      "repository_path": "murad/arabic/sources/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf",
       "archive_status": "already_present_or_duplicate",
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
       "pdf_pages": 14,
@@ -54,7 +54,7 @@
       "git_blob_sha": "8cd88884bec2e4202a3ad74fd5557626c781d6d2",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/religion/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
+      "repository_path": "murad/religion/sources/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf",
       "archive_status": "already_present_or_duplicate",
       "source_url": "https://web.toddleapp.com/platform/289164276797572330/courses/425277950422719800/course-plan/flow",
       "pdf_pages": 6,

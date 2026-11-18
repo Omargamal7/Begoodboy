@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,'../..');
 let total=0;
 for(const [slug,folder,models,first,last] of [['jimmy','gamal',18,4,35],['murad','murad',9,5,31]]){
  const d=JSON.parse(fs.readFileSync(path.join(root,'app/activities',folder,'english-revision/data.json'),'utf8'));
- const pages=JSON.parse(fs.readFileSync(path.join(root,'app/assets',folder,'english/assessment-pages.json'),'utf8'));
+ const pages=JSON.parse(fs.readFileSync(path.join(root,folder,'english/sources/assessment-pages.json'),'utf8'));
  const ids=new Set(),sections=new Set(),usedPages=new Set();let items=0;
  assert.equal(d.units.length,3);assert.equal(d.sections.filter(s=>s.kind==='model').length,models);
  for(const s of d.sections){assert(!sections.has(s.id),'duplicate section '+s.id);sections.add(s.id);assert(s.items.length,'empty section '+s.id);assert(d.units.some(u=>u.id===s.unit),'unknown unit '+s.id);
@@ -19,7 +19,7 @@ for(const [slug,folder,models,first,last] of [['jimmy','gamal',18,4,35],['murad'
  for(let n=first;n<=last;n++)assert(pages[n],'page image absent '+n);
  const trios=new Map();for(const s of d.sections.filter(s=>s.kind==='model')){if(!trios.has(s.series))trios.set(s.series,[]);trios.get(s.series).push(s.model);}
  for(const [series,abc] of trios)assert.deepEqual(abc.sort(),['A','B','C'],'incomplete model trio '+series);
- const html=fs.readFileSync(path.join(root,'packs',folder,'english/october-revision.html'),'utf8');
+ const html=fs.readFileSync(path.join(root,folder,'english/packs/october-revision.html'),'utf8');
  assert(!html.includes('/*__'),'unfilled template');assert(!/\b(?:src|href)="https?:/.test(html),'external runtime dependency');
  const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(x=>x[1]);assert.equal(scripts.length,3);JSON.parse(scripts[0]);JSON.parse(scripts[1]);new vm.Script(scripts[2]);
  assert(!/\b(?:fetch|XMLHttpRequest|WebSocket|Audio)\s*\(/.test(scripts[2]),'runtime network/sound dependency');

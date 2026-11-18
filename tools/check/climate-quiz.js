@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('fs'),path=require('path'),{chromium}=require('playwright');
-const root=path.resolve(__dirname,'../..'),url='file://'+path.join(root,'packs/gamal/social-studies/climate-quest.html');
+const root=path.resolve(__dirname,'../..'),url='file://'+path.join(root,'gamal/social-studies/packs/climate-quest.html');
 const qa=path.join(root,'build/qa/climate');fs.mkdirSync(qa,{recursive:true});
 const assert=(ok,msg)=>{if(!ok)throw Error(msg);};
 (async()=>{

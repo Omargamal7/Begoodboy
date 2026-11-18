@@ -10,7 +10,7 @@
       "git_blob_sha": "20acc598d823019fb231d4561100bd41e71a8ba5",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/mathematics/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
+      "repository_path": "murad/mathematics/sources/booklets/Prim 6 Classwork Binder 1st term 2026-2027.pdf",
       "archive_status": "new_original",
       "download_names": [
         "Prim 6 Classwork Binder 1st term 2026-2027.pdf"
@@ -24,7 +24,7 @@
       "git_blob_sha": "f2db6df986691c0aa8e14c3e49664adefcf0960a",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/mathematics/revision/2026-10/Model Answer - October Revision Sheet.pdf",
+      "repository_path": "murad/mathematics/sources/revision/2026-10/Model Answer - October Revision Sheet.pdf",
       "archive_status": "new_original",
       "download_names": [
         "Model Answer - October Revision Sheet.pdf"
@@ -38,7 +38,7 @@
       "git_blob_sha": "fd40c87ecd671d107dcebd150c9a1f12dcd93711",
       "receipt": "verified",
       "analysis_status": "pending_or_prior_report",
-      "repository_path": "sources/murad/mathematics/revision/2026-10/October Revision Sheet.pdf",
+      "repository_path": "murad/mathematics/sources/revision/2026-10/October Revision Sheet.pdf",
       "archive_status": "new_original",
       "download_names": [
         "October Revision Sheet.pdf"

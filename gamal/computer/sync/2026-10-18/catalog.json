@@ -13,7 +13,7 @@
   ],
   "files": [
     {
-      "path": "sources/gamal/ict/booklets/1st term binder grade 5new 2025-2026 - for merge.docx",
+      "path": "gamal/computer/sources/booklets/1st term binder grade 5new 2025-2026 - for merge.docx",
       "bytes": 8018399,
       "git_blob_sha": "b89a0685f09da48b52ed7b39f02f508caaff5d30",
       "storage": "repository_blob",
@@ -22,7 +22,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/ict/evaluations/week-01.docx",
+      "path": "gamal/computer/sources/evaluations/week-01.docx",
       "bytes": 57888,
       "git_blob_sha": "c9f2808fee207551c1474e5b5d8a8da7839b9982",
       "storage": "repository_blob",
@@ -31,7 +31,7 @@
       "week_in_archive_path": 1
     },
     {
-      "path": "sources/gamal/ict/evaluations/week-02.docx",
+      "path": "gamal/computer/sources/evaluations/week-02.docx",
       "bytes": 58363,
       "git_blob_sha": "edd2e6473a7dc2e1cce4aae41473594b5ed6efb2",
       "storage": "repository_blob",
@@ -40,7 +40,7 @@
       "week_in_archive_path": 2
     },
     {
-      "path": "sources/gamal/ict/evaluations/week-03.docx",
+      "path": "gamal/computer/sources/evaluations/week-03.docx",
       "bytes": 59896,
       "git_blob_sha": "b9a5c36bc097eb763ef6dab4a033ed2c56570ba6",
       "storage": "repository_blob",
@@ -49,7 +49,7 @@
       "week_in_archive_path": 3
     },
     {
-      "path": "sources/gamal/ict/revision/2026-10/revsion prim5 october.doc",
+      "path": "gamal/computer/sources/revision/2026-10/revsion prim5 october.doc",
       "bytes": 52736,
       "git_blob_sha": "dd75a75a9f224926a5db04fbfbf0ea7a00db8909",
       "storage": "repository_blob",

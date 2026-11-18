@@ -3,7 +3,7 @@
   "scope": "murad/arabic",
   "new_books": [
     {
-      "path": "sources/shared/arabic/grade6/ministry-2026-2027-term1/Arabic_prim6_t1_Assmt.pdf",
+      "path": "murad/arabic/sources/ministry/Arabic_prim6_t1_Assmt.pdf",
       "grade": 6,
       "subject": "arabic",
       "language": "Arabic",
@@ -21,16 +21,18 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     }
   ],
   "reused_books": [
     {
-      "url": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf",
+      "url": "https://github.com/Omargamal7/Begoodboy/blob/main/murad/arabic/sources/Arabic_Primary6_T1_Ministry_Textbook.pdf",
       "sha256": "01b48ef92011b9b3819a2a50b4497707bfbaeecba4e29c915c48d747aa45d85e",
       "pdf_pages": 154,
       "official_source_url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary6/Term1/StudentBook/Arabic_Primary6_T1.pdf",
-      "verification": "Exact hash match with current official Ministry original; no duplicate archived"
+      "verification": "Exact hash match with current official Ministry original; no duplicate archived",
+      "repository_path": "murad/arabic/sources/Arabic_Primary6_T1_Ministry_Textbook.pdf",
+      "release_url_at_snapshot": "https://github.com/Omargamal7/Begoodboy/releases/download/school-term1-2026/murad-arabic-Arabic_Primary6_T1.pdf"
     }
   ]
 }

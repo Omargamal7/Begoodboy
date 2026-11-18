@@ -4,7 +4,7 @@ Read headless with the `agent-browser` CLI from a saved Toddle session, one subj
 
 **Update, same day:** the 18 files that were missing were then downloaded from Toddle and committed (see [downloads.md](downloads.md)), and all Arabic and Mathematics notes were saved as text. The statuses below reflect that. The 13 "match uncertain" items were **not** content-compared.
 
-**Matching method and limits:** the matches below are by **file name against the repo tree at `c2e3c87`**, not by content. "renamed … uncertain" marks a repo file with a different name that appears to be the same resource. Large files are checked as split parts listed in `sources/large-originals.json`. Notes are teacher text, not files; they are listed and marked by whether `murad/<subject>/docs/teacher-notes.md` already holds them. "LE" rows are assessment entries with no attachment shown in the flow.
+**Matching method and limits:** the matches below are by **file name against the repo tree at `c2e3c87`**, not by content. "renamed … uncertain" marks a repo file with a different name that appears to be the same resource. Large files are checked as split parts listed in `docs/provenance/large-originals.json`. Notes are teacher text, not files; they are listed and marked by whether `murad/<subject>/docs/teacher-notes.md` already holds them. "LE" rows are assessment entries with no attachment shown in the flow.
 ## Summary
 
 | Subject | In repo | In repo, match uncertain | MISSING files | Notes not in repo |
@@ -40,7 +40,7 @@ Course `425277950422719800` · 21 rows · index gaps: none
 | (top level) | **مراجعات شهر أكتوبر لغة عربية ودين** | Folder (3 items) | — |
 | مراجعات شهر أكتوبر لغة عربية ودين | وحدة اولى مراجعة دين الصف السادس (2) | PDF | in repo at `murad/religion/sources/revision/2026-10/Religion_Unit1_Revision_Grade6.pdf` — renamed; matched by name only, uncertain |
 | مراجعات شهر أكتوبر لغة عربية ودين | مراجعة الوحدة الأولى الصف السادس تيرم أول | PDF | in repo at `murad/arabic/sources/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf` — renamed; matched by name only, uncertain |
-| مراجعات شهر أكتوبر لغة عربية ودين | الاسم النكرة والاسم المعرفة 6 ب | Presentation | in repo as split parts: `sources/murad/arabic/الاسم_النكرة_والاسم_المعرفة_6_ب.pptx` (via `sources/large-originals.json`) |
+| مراجعات شهر أكتوبر لغة عربية ودين | الاسم النكرة والاسم المعرفة 6 ب | Presentation | in repo as split parts: `murad/arabic/sources/revision/2026-10/الاسم النكرة والاسم المعرفة 6 ب.pptx` (via `docs/provenance/large-originals.json`) |
 | (top level) | ماتم تدريسه من 11أكتوبر إلي 15 أكتوبر نص الاستماع الوحدة الثانية من هم الناجحون؟ | Note | note text saved in `murad/arabic/docs/toddle-notes-2026-11-14.md` |
 | (top level) | ما تم تدريسه من 18/10 إلي 22/10 العربي قوة الكلمات الأسماء الخمسة | Note | note text saved in `murad/arabic/docs/toddle-notes-2026-11-14.md` |
 | (top level) | الأسماء 1 | Word Document | in repo at `murad/arabic/sources/weekly/week-of-2026-10-18/الأسماء 1.docx` — downloaded 2026-11-14 |
@@ -139,8 +139,8 @@ Course `425277954369559868` · 3 rows · index gaps: none
 | Folder | Item | Type | Status |
 |---|---|---|---|
 | (top level) | Gr. 6 Assessment Book Term 1 | PDF | in repo at `murad/english/sources/booklets/Gr. 6 Assessment Book Term 1.pdf` |
-| (top level) | Gr. 6 O Level Book Term 1 | PDF | in repo as split parts: `sources/murad/english/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf` (via `sources/large-originals.json`) |
-| (top level) | Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3 | PDF | in repo as split parts: `sources/murad/english/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf` (via `sources/large-originals.json`) — renamed; matched by name only, uncertain |
+| (top level) | Gr. 6 O Level Book Term 1 | PDF | in repo as split parts: `murad/english/sources/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf` (via `docs/provenance/large-originals.json`) |
+| (top level) | Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3 | PDF | in repo as split parts: `murad/english/sources/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf` (via `docs/provenance/large-originals.json`) — renamed; matched by name only, uncertain |
 
 ## Mathematics
 
@@ -213,7 +213,7 @@ Course `425277964196814147` · 18 rows · index gaps: none
 |---|---|---|---|
 | (top level) | **First term** | Folder (15 items) | — |
 | First term | **First term booklet** | Folder (15 items) | — |
-| First term / First term booklet | performance task and Assessments science g6 1st term 2027 | PDF | UNCERTAIN — repo has the Ministry download `sources/shared/science/grade6/ministry-2026-2027-term1/Science_en_prim6_t1_Assmt.pdf` (split parts); not verified to be the same file as the school upload |
+| First term / First term booklet | performance task and Assessments science g6 1st term 2027 | PDF | UNCERTAIN — repo has the Ministry download `murad/science/sources/ministry/Science_en_prim6_t1_Assmt.pdf` (split parts); not verified to be the same file as the school upload |
 | First term / First term booklet | **Model answers** | Folder (12 items) | — |
 | First term / First term booklet / Model answers | chapter 4 model answers | PDF | in repo at `murad/science/sources/model-answers/chapter 4 model answers.pdf` — downloaded 2026-11-14 |
 | First term / First term booklet / Model answers | Monthly_Exam_1_Model_Answers_ | PDF | in repo at `murad/science/sources/model-answers/Monthly_Exam_1_Model_Answers.pdf` |
@@ -245,9 +245,9 @@ Course `425277965639654724` · 21 rows · index gaps: none
 | الاسبوع الثالث / من 27 سبتمبر الي 1 اكتوبر 2026 | الدرس الثاني / تضاريس وطننا العربي | PDF | in repo at `murad/social-studies/sources/weekly/Week3_Lesson2_Arab_World_Terrain.pdf` — renamed; matched by name only, uncertain |
 | الاسبوع الثالث / من 27 سبتمبر الي 1 اكتوبر 2026 | اطلس الخرائط الدرس الثاني | PDF | in repo at `murad/social-studies/sources/atlases/اطلس الخرائط الدرس الثاني.pdf` |
 | (top level) | **الاسبوع الرابع / من 4 اكتوبر الي 7 اكتوبر 2026** | Folder (1 item) | — |
-| الاسبوع الرابع / من 4 اكتوبر الي 7 اكتوبر 2026 | وطننا العربي المناخ و النبات الطبيعي | PDF | in repo as split parts: `sources/murad/social-studies/وطننا_العربي_المناخ_والنبات_الطبيعي.pdf` (via `sources/large-originals.json`) |
+| الاسبوع الرابع / من 4 اكتوبر الي 7 اكتوبر 2026 | وطننا العربي المناخ و النبات الطبيعي | PDF | in repo as split parts: `murad/social-studies/sources/weekly/week-04/وطننا العربي المناخ و النبات الطبيعي.pdf` (via `docs/provenance/large-originals.json`) |
 | (top level) | **الاسبوع الخامس من 11 اكتوبر الي 15 اكتوبر 2026** | Folder (1 item) | — |
-| الاسبوع الخامس من 11 اكتوبر الي 15 اكتوبر 2026 | درس التحديات البيئية | PDF | in repo as split parts: `sources/murad/social-studies/درس_التحديات_البيئية.pdf` (via `sources/large-originals.json`) |
+| الاسبوع الخامس من 11 اكتوبر الي 15 اكتوبر 2026 | درس التحديات البيئية | PDF | in repo as split parts: `murad/social-studies/sources/weekly/week-05/درس التحديات البيئية.pdf` (via `docs/provenance/large-originals.json`) |
 | (top level) | **اجابات اسئلة كتاب الوزارة اول 3 دروس من الوحدة الاولي** | Folder (2 items) | — |
 | اجابات اسئلة كتاب الوزارة اول 3 دروس من الوحدة الاولي | اجابة درس تضاريس الوطن العربي و درس المناخ و النبات | PDF | in repo at `murad/social-studies/sources/model-answers/اجابة درس تضاريس الوطن العربي و درس المناخ و النبات.pdf` |
 | اجابات اسئلة كتاب الوزارة اول 3 دروس من الوحدة الاولي | حل اسئلة الدرس الاول الموقع و الأهمية ( الوطن العربي) | PDF | in repo at `murad/social-studies/sources/model-answers/حل اسئلة الدرس الاول الموقع و الأهمية ( الوطن العربي).pdf` |

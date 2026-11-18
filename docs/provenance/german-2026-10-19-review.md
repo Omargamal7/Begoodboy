@@ -2,7 +2,7 @@
 
 ## Scope and pupil/course attribution
 
-Reviewed the three school PDFs and their extracted text under `sources/gamal/`:
+Reviewed the three school PDFs and their extracted text under `gamal`:
 
 - `october-worksheet.pdf`: 3 PDF pages; October revision worksheet.
 - `october-model-answers.pdf`: 3 PDF pages; highlighted answers to that worksheet.

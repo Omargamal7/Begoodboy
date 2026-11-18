@@ -4,10 +4,10 @@ Scope comes from the four school photographs supplied on 13 October 2026, not fr
 
 ## Supplied source pages
 
-- `sources/gamal/social-studies/assessments/climate/school-page-1.jpg`: answer sheet, models A and B, printed page 14.
-- `sources/gamal/social-studies/assessments/climate/school-page-2.jpg`: another answer sheet, models A and B and the beginning of C, printed page 13. Includes an answer that differs from the first sheet for B4.
-- `sources/gamal/social-studies/assessments/climate/school-page-3.jpg`: question page, model C.
-- `sources/gamal/social-studies/assessments/climate/school-page-4.jpg`: question page, models A and B.
+- `gamal/social-studies/sources/assessments/climate/school-page-1.jpg`: answer sheet, models A and B, printed page 14.
+- `gamal/social-studies/sources/assessments/climate/school-page-2.jpg`: another answer sheet, models A and B and the beginning of C, printed page 13. Includes an answer that differs from the first sheet for B4.
+- `gamal/social-studies/sources/assessments/climate/school-page-3.jpg`: question page, model C.
+- `gamal/social-studies/sources/assessments/climate/school-page-4.jpg`: question page, models A and B.
 
 Original photographs are embedded in the standalone file. The season pictures shown in the school-question round are viewport crops of the supplied question photographs, without altering their pixels.
 
@@ -54,7 +54,7 @@ Practice moves from picture recognition with English/approximate pronunciation c
 
 ## Build and verification
 
-`node tools/build/climate-quiz.js` produces `packs/gamal/social-studies/climate-quest.html` with the data, CSS, JavaScript, artwork and all four original school pages embedded. The app sources live under `assets/jimmy-climate/`, the content under `app/activities/gamal/climate-quest/data.js`, and the browser check in `tools/check/climate-quiz.js`.
+`node tools/build/climate-quiz.js` produces `gamal/social-studies/packs/climate-quest.html` with the data, CSS, JavaScript, artwork and all four original school pages embedded. The app sources live under `assets/jimmy-climate/`, the content under `app/activities/gamal/climate-quest/data.js`, and the browser check in `tools/check/climate-quiz.js`.
 
 The shared sheet engine and previously delivered science and coordinates lessons are not changed. Work is committed directly to main as requested by the parent.
 

@@ -3,7 +3,7 @@
   "scope": "murad/science",
   "new_books": [
     {
-      "path": "sources/shared/science/grade6/ministry-2026-2027-term1/Science_en_prim6_t1_Assmt.pdf",
+      "path": "murad/science/sources/ministry/Science_en_prim6_t1_Assmt.pdf",
       "grade": 6,
       "subject": "science",
       "language": "English",
@@ -21,7 +21,7 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     }
   ]
 }

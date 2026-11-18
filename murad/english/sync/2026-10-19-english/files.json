@@ -9,7 +9,7 @@
       "git_blob": "7d7dbebe3ff7fe7cb98b27a30cd21256686b2c90"
     },
     {
-      "path": "app/assets/murad/english/assessment-pages.json",
+      "path": "murad/english/sources/assessment-pages.json",
       "bytes": 3387301,
       "sha256": "1f4e0ae1543e83623805c30b865d60ed9b0410ae615bd4e082204db3306359ef",
       "git_blob": "157731d787f37f9450467f58f1370b81a0a5ef04"
@@ -21,7 +21,7 @@
       "git_blob": "d4cc501b83a56414d0d3cffa02a2275ac74dae08"
     },
     {
-      "path": "packs/murad/english/october-revision.html",
+      "path": "murad/english/packs/october-revision.html",
       "bytes": 3565630,
       "sha256": "d64ad2d4094ccba580e7e7e45a55066db3bf1eb6f2b2a6f3b7444b453751a579",
       "git_blob": "cca4d6c6be3d9e60364e1fba62f0c2f4cf8e1bfa"

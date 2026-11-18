@@ -76,7 +76,7 @@ Diagrams are crops from the source pages, with text alternatives. The shared
 engine adds optional diagram display and highlights the active blank in the
 four-blank sentence; other lessons keep their usual flow.
 
-`packs/murad/science/digestion.html` contains all code, styles and diagram images in
+`murad/science/packs/digestion.html` contains all code, styles and diagram images in
 one offline file. Rebuild with `node tools/build/digestion.js`.
 The usual repository menu also loads `app/lessons/murad/science/chapter-03.js`.
 

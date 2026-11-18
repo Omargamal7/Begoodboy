@@ -9,7 +9,7 @@
 
 ## Book PDF
 
-The complete English assessment book contains 62 PDF pages. Its unchanged original bytes are archived in `book-parts/`, indexed with individual and full-file SHA-256 checksums in `sources/large-originals.json`. From the repository root, run `python3 tools/source/restore-originals.py` to reconstruct `Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf` here. The Google Drive preview below opens the PDF directly.
+The complete English assessment book contains 62 PDF pages. [Open the archived PDF](Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf).
 
 - [Public source listing](https://eg.afedne.com/ShoU4Pa7OuI0), which attributes the book to the Egyptian Ministry of Education and labels it 2026–2027.
 - [Google Drive preview](https://drive.google.com/file/d/1OjoipmjinEWTSUsR5TX6L2kpurfH0j95/view).

@@ -1,6 +1,6 @@
 # Final editorial pass
 
-The final JSON under `app/activities/` is authoritative. The two source audits are retained alongside this file as question ledgers.
+The final JSON under `app/activities` is authoritative. The two source audits are retained alongside this file as question ledgers.
 
 - Jimmy: 302 items, 18 weekly models, 32 original page images, 52 source/ambiguity notes left unscored.
 - Murad: 211 items, 9 weekly models, 27 original page images, 9 source/ambiguity notes left unscored; 21 items are extra practice beyond the last observed Unit 3 Lesson 3 answer-key label.

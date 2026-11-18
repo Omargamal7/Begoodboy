@@ -3,7 +3,7 @@
   "scope": "gamal/science",
   "new_books": [
     {
-      "path": "sources/shared/science/grade5/ministry-2026-2027-term1/Science_en_prim5_t1_Assmt.pdf",
+      "path": "gamal/science/sources/ministry/Science_en_prim5_t1_Assmt.pdf",
       "grade": 5,
       "subject": "science",
       "language": "English",
@@ -21,13 +21,13 @@
         "edition_evidence": "Official 2026_2027 catalogue and printed edition/imprint reviewed",
         "syllabus_status": "Matches available school topic evidence; not a new live Toddle syllabus check"
       },
-      "storage": "verified_binary_parts"
+      "storage": "tracked_file"
     }
   ],
   "reused_books": [
     {
-      "path": "sources/shared/science/grade5/Science_Textbook_Grade5_Term1_2026-2027_English.pdf",
-      "storage": "existing binary parts",
+      "path": "gamal/science/sources/ministry/Science_Grade5_Term1_2026-2027_English_Textbook.pdf",
+      "storage": "tracked_file",
       "note": "110 pages, complete 2026-2027 English first-term text; no duplicate official scan added"
     }
   ]

@@ -4,20 +4,20 @@ Complete personal and class editions cover assessment-book Units 1–3. The exac
 
 | Edition | Models | Items | Ready-to-open file |
 |---|---:|---:|---|
-| Jimmy / Primary 5A | 18 | 302 | [Personal revision](../../../../packs/gamal/english/october-revision.html) |
-| Murad / Primary 6G | 9 | 211 | [Personal revision](../../../../packs/murad/english/october-revision.html) |
-| Grade 5 class | 18 | 302 | [Optional Arabic help](../../../../packs/class/grade5/english/october-arabic-help.html) |
-| Grade 6 class | 9 | 211 | [Optional Arabic help](../../../../packs/class/grade6/english/october-arabic-help.html) |
+| Jimmy / Primary 5A | 18 | 302 | [Personal revision](../../../../gamal/english/packs/october-revision.html) |
+| Murad / Primary 6G | 9 | 211 | [Personal revision](../../../../murad/english/packs/october-revision.html) |
+| Grade 5 class | 18 | 302 | [Optional Arabic help](../../../../gamal/english/packs/class/october-arabic-help.html) |
+| Grade 6 class | 9 | 211 | [Optional Arabic help](../../../../murad/english/packs/class/october-arabic-help.html) |
 
 The class versions remove pupil names, class-section labels and personal account references. Arabic support covers instructions, grammar reminders, vocabulary and writing points. English assessment prompts and marking alternatives are preserved.
 
 ## Sources and provenance
 
-- Primary 5 assessment original: `sources/gamal/english/booklets/Gr5_Assessment_Book_Term1.pdf`; 72 pages, 1,966,329 bytes; SHA-256 `72745f3add1102805f457b07fd0e6e8874c3efb729906a111c08c351bb7bdc0d`.
-- Primary 6 assessment original already present unchanged: `sources/murad/english/booklets/Gr. 6 Assessment Book Term 1.pdf`; 65 pages, 7,171,950 bytes; SHA-256 `b74878221f3e4b30c38f63d1cd9dc1585c632bbd41030db6489b4e7426286ed1`; Git blob `7d2094fcf1c6afdb42c8445cc33309acdfcb1a47` matches the uploaded source.
+- Primary 5 assessment original: `gamal/english/sources/booklets/Gr5_Assessment_Book_Term1.pdf`; 72 pages, 1,966,329 bytes; SHA-256 `72745f3add1102805f457b07fd0e6e8874c3efb729906a111c08c351bb7bdc0d`.
+- Primary 6 assessment original already present unchanged: `murad/english/sources/booklets/Gr. 6 Assessment Book Term 1.pdf`; 65 pages, 7,171,950 bytes; SHA-256 `b74878221f3e4b30c38f63d1cd9dc1585c632bbd41030db6489b4e7426286ed1`; Git blob `7d2094fcf1c6afdb42c8445cc33309acdfcb1a47` matches the uploaded source.
 - Personal editable data: `app/activities/gamal/english-revision/data.json` and the corresponding Murad file.
-- Class data and Arabic content: `app/activities/class/grade5/` and `grade6/`.
-- Shared interface source: `app/activities/shared/english-revision/` and `english-class/`.
+- Class data and Arabic content: `app/activities/class/grade5` and `grade6/`.
+- Shared interface source: `app/activities/shared/english-revision` and `english-class/`.
 - Page-image assets are derived from the supplied originals; the original PDFs remain unchanged.
 - Coverage ledgers and source limitations: `docs/provenance/gamal/english/october-coverage.md`, the corresponding Murad ledger, and `docs/provenance/english-editorial-notes.md`.
 

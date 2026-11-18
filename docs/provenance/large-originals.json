@@ -1,0 +1,130 @@
+{
+  "schema_version": 2,
+  "files": [
+    {
+      "path": "gamal/arabic/sources/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "bytes": 11747364,
+      "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858"
+    },
+    {
+      "path": "murad/arabic/sources/revision/2026-10/الاسم النكرة والاسم المعرفة 6 ب.pptx",
+      "bytes": 21810058,
+      "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312"
+    },
+    {
+      "path": "murad/english/sources/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf",
+      "bytes": 12304024,
+      "sha256": "b69a5b232377e74da70e07cced8847c85bca38a5876f8face98803b68ec0ea57"
+    },
+    {
+      "path": "murad/english/sources/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf",
+      "bytes": 15956703,
+      "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6"
+    },
+    {
+      "path": "murad/social-studies/sources/weekly/week-05/درس التحديات البيئية.pdf",
+      "bytes": 17838946,
+      "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235"
+    },
+    {
+      "path": "murad/social-studies/sources/weekly/week-04/وطننا العربي المناخ و النبات الطبيعي.pdf",
+      "bytes": 13968037,
+      "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c"
+    },
+    {
+      "path": "shared/school/sources/Back_to_School_Guide_2026-27.pdf",
+      "bytes": 13153407,
+      "sha256": "97007a24d5cf7752aebad5af1f54a26591d179fb4e00cf48effa8cfa003c54df"
+    },
+    {
+      "path": "gamal/science/sources/ministry/Performance_and_Assessments_Grade5_Term1_2026-2027_English.pdf",
+      "bytes": 37315047,
+      "sha256": "5b126d64622abd1feec6e9bfd8e09c90ae9ae303d4c43f85e39dc337decc6d72"
+    },
+    {
+      "path": "gamal/science/sources/ministry/Science_Grade5_Term1_2026-2027_English_Textbook.pdf",
+      "bytes": 37801584,
+      "sha256": "7d648f8343f7006a75fcae19169ecae4459cb86de834cb5a5a86c3b6222b674b"
+    },
+    {
+      "path": "gamal/arabic/sources/ministry/Arabic_prim5_t1_Assmt.pdf",
+      "bytes": 11935218,
+      "sha256": "d10c9788fcd75140368487a655939d2fb2a8cc868a197808edd88dd4301c2380"
+    },
+    {
+      "path": "gamal/english/sources/ordinary-level/ministry/English_prim5_t1_Assmt.pdf",
+      "bytes": 11788956,
+      "sha256": "41b01ce8e0530ba2400696a4fad31a063f775980bf2995e9e2687fa23e2d1472"
+    },
+    {
+      "path": "gamal/mathematics/sources/ministry/Math_en_prim5_t1_Assmt.pdf",
+      "bytes": 15121824,
+      "sha256": "921396d58d2bffa7f6b1c1e52566d2894faf4bfd8e70c3e7738a90ffb9c78008"
+    },
+    {
+      "path": "gamal/science/sources/ministry/Science_en_prim5_t1_Assmt.pdf",
+      "bytes": 15303481,
+      "sha256": "c49c98bbbaa07a6080b8c663fd99751929f895cc665f623888d2ad36cffc400f"
+    },
+    {
+      "path": "gamal/social-studies/sources/ministry/Social_studies_prim5_t1_Assmt.pdf",
+      "bytes": 11291552,
+      "sha256": "0e5433427bf7aea8434c4d7bdf88f4eecd56c9c18e0b286206b5a0f316a1ed0c"
+    },
+    {
+      "path": "murad/arabic/sources/ministry/Arabic_prim6_t1_Assmt.pdf",
+      "bytes": 14491062,
+      "sha256": "166baa74a79cf2a7d5bdc4571515bc3d40e33b566836e2f992da3a632ed9ff58"
+    },
+    {
+      "path": "murad/english/sources/ordinary-level/ministry/English_prim6_t1_Assmt.pdf",
+      "bytes": 33776143,
+      "sha256": "d3ba0e6aac126c46432481ca8726f0d2ac82bf1768cb4e337342cd38d81787ed"
+    },
+    {
+      "path": "murad/mathematics/sources/ministry/Math_en_prim6_t1_Assmt.pdf",
+      "bytes": 8888316,
+      "sha256": "12ec5627a20b226ba07ccf35b95f7dd02bd8997ea828ea0cd157cf0612b4f658"
+    },
+    {
+      "path": "murad/science/sources/ministry/Science_en_prim6_t1_Assmt.pdf",
+      "bytes": 15021176,
+      "sha256": "c27bf89796efcb56f9fdd951fd720c82316132706d1c757ebf4af856cbcc5ffd"
+    },
+    {
+      "path": "gamal/arabic/sources/ministry/Arabic_langugae_prim5_t1.pdf",
+      "bytes": 37348660,
+      "sha256": "9d09641b074b40d93ba2d8f9560bc5d91cfe717d80f90fc15d05b8539c5065d8"
+    },
+    {
+      "path": "gamal/english/sources/ordinary-level/ministry/English_language_prim5_t1.pdf",
+      "bytes": 18757051,
+      "sha256": "da7e3dd769bbdfc3506a6d4fea96ed6e62ee3a49d95ad15968e4c2bbcf7513f4"
+    },
+    {
+      "path": "gamal/mathematics/sources/ministry/Math_EN_prim5_t1.pdf",
+      "bytes": 37186734,
+      "sha256": "35c0be21c6fd337b4fba2282754d587d11a8c9f9caf5e10614cd9979cb65b2fa"
+    },
+    {
+      "path": "gamal/religion/sources/ministry/Islamic_prim5_tr1.pdf",
+      "bytes": 26572786,
+      "sha256": "ea001e782cec36bf6559b75fb1495c2bd5310507bb3a4a197a20f25496ef5f45"
+    },
+    {
+      "path": "gamal/social-studies/sources/ministry/Social_studies_prim5_t1.pdf",
+      "bytes": 23753863,
+      "sha256": "6fc1db7102ae5dde9f17aa63590752063ff4d70c28f78ec9159d602cb625f8a4"
+    },
+    {
+      "path": "murad/english/sources/ordinary-level/ministry/English_Primary6_T1.pdf",
+      "bytes": 41312275,
+      "sha256": "79bb0ec2798718cc52138181cf697fa49bc5d8880146834f25a7fe47febac819"
+    },
+    {
+      "path": "murad/social-studies/sources/ministry/Social_Studies_Primary6_T1.pdf",
+      "bytes": 94365877,
+      "sha256": "de9dab19e19cec9ffe23fa6a3718f70a62765f624f460e40b5e6da888ca2a296"
+    }
+  ]
+}

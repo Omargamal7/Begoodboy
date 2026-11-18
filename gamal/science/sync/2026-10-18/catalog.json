@@ -13,7 +13,7 @@
   ],
   "files": [
     {
-      "path": "sources/gamal/science/assessments/chapter-02/source-1.jpg",
+      "path": "gamal/science/sources/assessments/chapter-02/source-1.jpg",
       "bytes": 114611,
       "git_blob_sha": "1d4560daa620fe8e385ae80e7b910ebcdcd65eba",
       "storage": "repository_blob",
@@ -22,7 +22,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/science/assessments/chapter-02/source-2.jpg",
+      "path": "gamal/science/sources/assessments/chapter-02/source-2.jpg",
       "bytes": 84582,
       "git_blob_sha": "c9ce6e831d7ad63ba3384a3277e7009bce85e139",
       "storage": "repository_blob",
@@ -31,7 +31,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/science/assessments/chapter-02/source-3.jpg",
+      "path": "gamal/science/sources/assessments/chapter-02/source-3.jpg",
       "bytes": 106735,
       "git_blob_sha": "3cbd62a0633f239290b39f0f7a3e2b3b56b8020c",
       "storage": "repository_blob",
@@ -40,7 +40,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/science/assessments/chapter-02/source-4.jpg",
+      "path": "gamal/science/sources/assessments/chapter-02/source-4.jpg",
       "bytes": 75155,
       "git_blob_sha": "3b81fef1a6da1413262e0ca8ad151ae707f82150",
       "storage": "repository_blob",
@@ -49,7 +49,7 @@
       "week_in_archive_path": null
     },
     {
-      "path": "sources/gamal/science/assessments/chapter-02/source-5.jpg",
+      "path": "gamal/science/sources/assessments/chapter-02/source-5.jpg",
       "bytes": 78057,
       "git_blob_sha": "7a48a7ecdd6cacb99765a62870014c2fe72d44cd",
       "storage": "repository_blob",

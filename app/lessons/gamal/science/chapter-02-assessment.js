@@ -86,5 +86,5 @@
  L.sittingMinutes=15;
  L.sittings=[L.sittings[0]].concat(tests.map(function(t,i){return {label:'School Test '+(i+1)+' · five questions',icon:'checkbox',parts:[1,2,5,6],screens:t};}));
  L.source={type:'School answer screenshots',received:'2026-10-14',fullChapterAvailable:false,questionCount:15};
- L.references=[1,2,3,4,5].map(function(n){return {src:'sources/gamal/science/assessments/chapter-02/source-'+n+'.jpg',alt:'Original supplied school answer screenshot '+n,caption:['Test 1: questions 4–5; Test 2 begins','Test 1: questions 1–3 · printed page 14','Test 2: all five questions','Test 3: questions 4–5','Test 3: questions 1–3 · printed page 15'][n-1]};});
+ L.references=[1,2,3,4,5].map(function(n){return {src:'gamal/science/sources/assessments/chapter-02/source-'+n+'.jpg',alt:'Original supplied school answer screenshot '+n,caption:['Test 1: questions 4–5; Test 2 begins','Test 1: questions 1–3 · printed page 14','Test 2: all five questions','Test 3: questions 4–5','Test 3: questions 1–3 · printed page 15'][n-1]};});
 })();

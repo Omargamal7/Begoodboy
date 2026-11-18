@@ -2,7 +2,7 @@
 
 Read headless with the `agent-browser` CLI from a saved Toddle session, using each course plan's **Flow** view (rows collected by index while scrolling; every course returned no index gaps). The child was switched to Gamal and the class list confirmed as `prim5 A …` (Grade 5) before reading. Murad is in [course-plans.md](course-plans.md).
 
-**Matching method and limits:** nothing was downloaded; matches are by **file name against the repo at the time of writing**, not by content. "renamed … uncertain" marks a repo file with a different name that appears to be the same resource. Large files are checked as split parts in `sources/large-originals.json`. Notes are teacher text, not files. "LE" rows are assessment entries with no attachment shown in the flow.
+**Matching method and limits:** nothing was downloaded; matches are by **file name against the repo at the time of writing**, not by content. "renamed … uncertain" marks a repo file with a different name that appears to be the same resource. Large files are checked as split parts in `docs/provenance/large-originals.json`. Notes are teacher text, not files. "LE" rows are assessment entries with no attachment shown in the flow.
 
 **Empty courses (confirmed on the page: "Your teacher is preparing the course"):** Art, Mathematics, Music, P.E., المجال الزراعى. **Changed since the 25 October sweep:** German, English OL, Religion and Science now have entries (they were blank then).
 ## Summary
@@ -60,7 +60,7 @@ Course `425277732675427479` · 18 rows · index gaps: none
 |---|---|---|---|
 | (top level) | **مصادر اللغة العربية** | Folder (2 items) | — |
 | مصادر اللغة العربية | ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514 | PDF | in repo at `gamal/arabic/sources/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf` |
-| مصادر اللغة العربية | حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027 | PDF | in repo as split parts: `sources/gamal/arabic/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf` (via `sources/large-originals.json`) |
+| مصادر اللغة العربية | حل الكتاب المدرسي لغة عربية 5 ابتدائي ترم أول 2027 | PDF | in repo as split parts: `gamal/arabic/sources/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf` (via `docs/provenance/large-originals.json`) |
 | (top level) | ماتم تدريسه من 27سبتمبر إلي 1أكتوبر المفعول به الرسالة الرسمية | Note | note text in `gamal/arabic/docs/teacher-notes.md` (keyword check) |
 | (top level) | ما تم تدريسه من6من أكتوبر إلي 9 أكتوبر حكاية عطاء بطل حل المشكلات | Note | note text in `gamal/arabic/docs/teacher-notes.md` (keyword check) |
 | (top level) | **مراجعات العربي والدين لشهر أكتوبر** | Folder (6 items) | — |
@@ -135,15 +135,15 @@ Course `425277736345443482` · 56 rows · index gaps: none
 | Weekly Material Covered | **Week 5** | Folder (1 item) | — |
 | Weekly Material Covered / Week 5 | Gr. 5 Weekly Outline Term 1 Week 5 | PDF | MISSING |
 | Weekly Material Covered | **Week 4** | Folder (1 item) | — |
-| Weekly Material Covered / Week 4 | Gr. 5 Weekly Outline Term 1 Week 4 | PDF | in repo at `gamal/english/sources/Weekly/Week4/Weekly_Outline_Grade5_Term1_Week4.pdf` — renamed; matched by name only, uncertain |
+| Weekly Material Covered / Week 4 | Gr. 5 Weekly Outline Term 1 Week 4 | PDF | in repo at `gamal/english/sources/weekly/week-4/Weekly_Outline_Grade5_Term1_Week4.pdf` — renamed; matched by name only, uncertain |
 | Weekly Material Covered | **Week 3** | Folder (1 item) | — |
-| Weekly Material Covered / Week 3 | Gr. 5 Weekly Outline Term 1 Week 3 | PDF | in repo at `gamal/english/sources/Weekly/Week3/Weekly_Outline_Grade5_Term1_Week3.pdf` — renamed; matched by name only, uncertain |
+| Weekly Material Covered / Week 3 | Gr. 5 Weekly Outline Term 1 Week 3 | PDF | in repo at `gamal/english/sources/weekly/week-3/Weekly_Outline_Grade5_Term1_Week3.pdf` — renamed; matched by name only, uncertain |
 | Weekly Material Covered | **Week 2** | Folder (1 item) | — |
 | Weekly Material Covered / Week 2 | Gr. 5 Weekly Outline Term 1 Week 2 | PDF | in repo at `gamal/english/sources/weekly/week-2/Gr. 5 Weekly Outline Term 1 Week 2.pdf` |
 | Weekly Material Covered | **Week 1** | Folder (1 item) | — |
 | Weekly Material Covered / Week 1 | Gr. 5 Weekly Outline Term 1 Week 1 | PDF | in repo at `gamal/english/sources/weekly/week-1/Gr. 5 Weekly Outline Term 1 Week 1.pdf` |
 | Weekly Material Covered | **Week 0** | Folder (2 items) | — |
-| Weekly Material Covered / Week 0 | Living Better Thanks to Inventions | PDF | in repo at `gamal/english/sources/Weekly/Week0/Living_Better_Thanks_to_Inventions.pdf` — renamed; matched by name only, uncertain |
+| Weekly Material Covered / Week 0 | Living Better Thanks to Inventions | PDF | in repo at `gamal/english/sources/weekly/week-0/Living_Better_Thanks_to_Inventions.pdf` — renamed; matched by name only, uncertain |
 | Weekly Material Covered / Week 0 | Gr. 5 Weekly Outline Term 1 Week 0 | PDF | in repo at `gamal/english/sources/weekly/week-0/Gr. 5 Weekly Outline Term 1 Week 0.pdf` |
 | (top level) | **Home Dictations** | Folder (10 items) | — |
 | Home Dictations | **Home Dictation #3** | Folder (3 items) | — |

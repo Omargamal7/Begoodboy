@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('fs'),path=require('path'),{chromium}=require('playwright');
-const root=path.resolve(__dirname,'../..'),file='file://'+path.join(root,'packs/gamal/science/chapter-02-assessment.html'),id='jimmy-science-t2-l1';
+const root=path.resolve(__dirname,'../..'),file='file://'+path.join(root,'gamal/science/packs/chapter-02-assessment.html'),id='jimmy-science-t2-l1';
 const assert=(ok,msg)=>{if(!ok)throw Error(msg);};
 (async()=>{
  const browser=await chromium.launch(process.env.CHROMIUM?{executablePath:process.env.CHROMIUM}:{}),qa=path.join(root,'build/qa/gamal-science');fs.mkdirSync(qa,{recursive:true});
