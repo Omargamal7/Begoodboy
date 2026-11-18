@@ -3,7 +3,7 @@
 
 | Subject | Materials |
 |---|---|
-| Arabic | [Originals](arabic/sources/) · [Toddle records](arabic/sync/) · [Notes](arabic/docs/) |
+| Arabic | [Arabic Language Day presentation](arabic/packs/class/Murad-6G-The-Fox-and-the-Rooster.pptx) · [Originals](arabic/sources/) · [Toddle records](arabic/sync/) · [Notes](arabic/docs/) |
 | Computer | [Originals](computer/sources/) · [Toddle records](computer/sync/) · [Notes](computer/docs/) |
 | English | [Study packs](english/packs/) · [Originals](english/sources/) · [Toddle records](english/sync/) |
 | General | [Toddle records](general/sync/) · [Notes](general/docs/) |
