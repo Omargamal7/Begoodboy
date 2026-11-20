@@ -1,0 +1,113 @@
+name: Verify Skills
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.claude/skills/**'
+      - 'tools/setup-skills.sh'
+      - '.github/workflows/verify-skills.yml'
+
+jobs:
+  verify-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository (sparse, skip large PDFs)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .claude
+            tools
+          sparse-checkout-cone-mode: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run skill session bootstrap
+        run: |
+          source tools/setup-skills.sh
+          echo "CHROMIUM=$CHROMIUM" >> "$GITHUB_ENV"
+          echo "PW_EXECUTABLE_PATH=$PW_EXECUTABLE_PATH" >> "$GITHUB_ENV"
+          echo "PW_HEADLESS=$PW_HEADLESS" >> "$GITHUB_ENV"
+
+      - name: Verify skill manifests and licenses
+        run: |
+          python3 - <<'PY'
+          import pathlib, sys
+          skills_dir = pathlib.Path('.claude/skills')
+          expected = [
+              'a11y-core',
+              'cognitive-accessibility',
+              'dual-coding-designer',
+              'explicit-instruction-sequence-builder',
+              'kb-cognitive-accessibility',
+              'playwright-skill',
+              'study-page-pipeline',
+              'universal-exam-cram-coach',
+          ]
+          missing = []
+          for name in expected:
+              sd = skills_dir / name
+              if not (sd / 'SKILL.md').is_file():
+                  missing.append(f'{name}/SKILL.md')
+              if name != 'study-page-pipeline' and not (sd / 'LICENSE').is_file():
+                  missing.append(f'{name}/LICENSE')
+          if missing:
+              print('Missing files:', missing, file=sys.stderr)
+              sys.exit(1)
+          print(f'Verified all {len(expected)} skills and 7 third-party licenses.')
+          PY
+
+      - name: Verify a11y-core findings contract
+        run: node .claude/skills/a11y-core/scripts/test-findings-contract.mjs
+
+      - name: Verify universal-exam-cram-coach CLI & pypdfium2
+        run: |
+          python3 -c "import pypdfium2; print('pypdfium2 ok')"
+          python3 .claude/skills/universal-exam-cram-coach/coach.py --help > /dev/null
+          echo "coach.py CLI ok"
+
+      - name: Verify playwright-skill headless Chromium launch
+        run: |
+          node -e "
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({
+              executablePath: process.env.PW_EXECUTABLE_PATH || undefined,
+              headless: true,
+            });
+            const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+            await page.setContent('<h1>Skill check ok</h1>');
+            const text = await page.textContent('h1');
+            await browser.close();
+            if (text !== 'Skill check ok') process.exit(1);
+            console.log('Playwright headless Chromium ok (390x844)');
+          })();
+          "
+
+      - name: Write verification receipt
+        run: |
+          cat <<RECEIPT > skill-verification-receipt.md
+          # Skill Verification Receipt
+          - Date (UTC): $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          - Commit: ${{ github.sha }}
+          - Bootstrap: \`tools/setup-skills.sh\` passed
+          - Manifests & Licenses: 8/8 SKILL.md, 7/7 LICENSE verified
+          - \`a11y-core\`: \`test-findings-contract.mjs\` passed
+          - \`universal-exam-cram-coach\`: \`pypdfium2\` + \`coach.py --help\` passed
+          - \`playwright-skill\`: headless Chromium 390x844 launch passed
+          RECEIPT
+          cat skill-verification-receipt.md
+
+      - name: Upload verification receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-verification-receipt
+          path: skill-verification-receipt.md
