@@ -18,24 +18,24 @@ Read these first: `docs/structure.md` (where files go), `docs/authoring.md` (eng
 - Keep surnames, the school's name and the class off published pages.
 - Commit and push straight to `main`, with no branch or pull request (`docs/authoring.md`, step 8).
 
-## Stages and pinned skills
+## Stages and pinned skills (self-contained)
 
-| # | Stage | Pinned skill |
+Every stage below uses either a **repo-vendored skill** (in `.claude/skills/`) or a **fixed in-repo guide/checklist**, so the pipeline runs identically across Claude, Codex, Antigravity, and AionUI with zero account-only dependencies.
+
+| # | Stage | Pinned skill or fixed guide |
 |---|---|---|
-| 1 | Find the lesson; extract its text and pictures | `pdf` + `universal-exam-cram-coach` |
-| 2 | Design guidance | No skill: read `docs/design/murad-design-guide.md` |
+| 1 | Find the lesson; extract its text and pictures | `universal-exam-cram-coach` (`coach.py` + `pypdfium2`) |
+| 2 | Design guidance | Fixed guide: `docs/design/murad-design-guide.md` |
 | 3 | Answer key | `universal-exam-cram-coach` |
-| 4 | Define the page and what counts as done | `explicit-instruction-sequence-builder` + `agent-protocols:spec-driven-development` |
-| 5 | Break the build into parts that can each be checked | `agent-protocols:planning-and-task-breakdown` |
-| 6 | Build the HTML | `agent-protocols:frontend-ui-engineering` + `dual-coding-designer` |
-| 7 | Verify every question | A check script written with `agent-protocols:test-driven-development` |
-| 8 | Click-test at phone and tablet sizes | `playwright-skill` |
-| 9 | Review the code and accessibility | `agent-protocols:code-review-and-quality` + `agentic-council:a11y-audit` + `cognitive-accessibility` |
-| 10 | Provenance note | No skill |
-| 11 | Commit | `agent-protocols:git-workflow-and-versioning` |
-| 12 | Publish the page as a link | Built-in Artifact publishing, not a skill |
-
-`pdf`, `deep-research` and the `agent-protocols` and `agentic-council` skills come from Omar's claude.ai account. If one of them is missing in a session, carry out that stage's steps below without it.
+| 4 | Define the page and what counts as done | `explicit-instruction-sequence-builder` (I Do / We Do / You Do) |
+| 5 | Break the build into parts that can each be checked | Fixed 8-part checklist: content, teaching, exercises, scoring, visuals, read-aloud, saving, parent notes |
+| 6 | Build the HTML | `dual-coding-designer` + `docs/authoring.md` |
+| 7 | Verify every question | Fixed check-script rule: run `tools/check/` and verify every item cites a source page + valid answer key |
+| 8 | Click-test at phone and tablet sizes | `playwright-skill` (headless `390×844` and `820×1180`) |
+| 9 | Review the code and accessibility | `cognitive-accessibility` (uses `kb-cognitive-accessibility` + `a11y-core`) + Stage 9 checklist |
+| 10 | Provenance note | Fixed guide: cite every source file, page, and any MC/TF adaptations |
+| 11 | Commit | Fixed git rule: commit and push straight to `main` (no branch or PR) |
+| 12 | Publish the page as a link | Built-in Artifact / GitHub Pages publishing |
 
 Note on accessibility skills: `cognitive-accessibility`, `kb-cognitive-accessibility`, and `a11y-core` set `disable-model-invocation: true`, so models will not auto-trigger them — invoke `cognitive-accessibility` explicitly at Stage 9.
 
