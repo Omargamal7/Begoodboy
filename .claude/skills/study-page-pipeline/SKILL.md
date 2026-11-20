@@ -37,15 +37,14 @@ Read these first: `docs/structure.md` (where files go), `docs/authoring.md` (eng
 
 `pdf`, `deep-research` and the `agent-protocols` and `agentic-council` skills come from Omar's claude.ai account. If one of them is missing in a session, carry out that stage's steps below without it.
 
+Note on accessibility skills: `cognitive-accessibility`, `kb-cognitive-accessibility`, and `a11y-core` set `disable-model-invocation: true`, so models will not auto-trigger them — invoke `cognitive-accessibility` explicitly at Stage 9.
+
 ## Setup, once per cloud session
 
-Run from the repository root:
+Run from the repository root (sets `CHROMIUM`, `PW_EXECUTABLE_PATH`, `PW_HEADLESS=true`, and installs `pypdfium2` + `playwright`):
 
 ```bash
-export CHROMIUM=/usr/bin/google-chrome PW_EXECUTABLE_PATH=/usr/bin/google-chrome PW_HEADLESS=true
-pip install --break-system-packages -q pypdfium2
-npm install --no-save --no-audit --no-fund playwright
-(cd .claude/skills/playwright-skill && PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm ci --no-audit --no-fund)
+source tools/setup-skills.sh
 ```
 
 If `/usr/bin/google-chrome` does not exist, set both `CHROMIUM` and `PW_EXECUTABLE_PATH` to the output of `ls -d /opt/pw-browsers/chromium-*/chrome-linux*/chrome | head -1`. `node_modules/` and `__pycache__/` are already git-ignored. `CHROMIUM` is what the repository's own checkers in `tools/check/` read; `PW_EXECUTABLE_PATH` and `PW_HEADLESS` are what `playwright-skill` reads (it opens a visible window unless `PW_HEADLESS=true`).
