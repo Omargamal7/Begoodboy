@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 3-3 Absorption and Liver</title>
+<style>
+:root{
+  --bg:#f4f6fb; --card:#ffffff; --ink:#1b2333; --muted:#5a6478; --line:#e1e6ef;
+  --brand:#2c6be0; --brand-ink:#ffffff; --brand-soft:#e8f0ff;
+  --ok:#17894a; --ok-bg:#e6f6ec; --bad:#c93b3b; --bad-bg:#fdecec;
+  --warn:#9a6411; --warn-bg:#fff4df; --chip:#eef2fa; --fig:#ffffff;
+  --shadow:0 1px 2px rgba(16,24,40,.06),0 2px 8px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1320; --card:#161d2b; --ink:#e7ebf3; --muted:#9ca7bd; --line:#2a3447;
+    --brand:#6ea2ff; --brand-ink:#0b1220; --brand-soft:#1b2a45;
+    --ok:#52d08d; --ok-bg:#11301f; --bad:#ff8080; --bad-bg:#3a1818;
+    --warn:#f1c470; --warn-bg:#3a2c12; --chip:#1f2a3d; --fig:#f7f9fc;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1320; --card:#161d2b; --ink:#e7ebf3; --muted:#9ca7bd; --line:#2a3447;
+  --brand:#6ea2ff; --brand-ink:#0b1220; --brand-soft:#1b2a45;
+  --ok:#52d08d; --ok-bg:#11301f; --bad:#ff8080; --bad-bg:#3a1818;
+  --warn:#f1c470; --warn-bg:#3a2c12; --chip:#1f2a3d; --fig:#f7f9fc;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:16px 16px 48px}
+header.top{padding:8px 0 4px}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--brand)}
+h1{font-size:26px;line-height:1.2;margin:4px 0 6px}
+.meta{color:var(--muted);font-size:14px}
+.banner{margin:12px 0 0;padding:10px 12px;border-radius:10px;background:var(--warn-bg);color:var(--warn);font-size:14px;font-weight:600}
+.tabs{position:sticky;top:0;z-index:5;display:flex;gap:8px;padding:10px 0;background:var(--bg)}
+.tab{flex:1;appearance:none;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:12px 10px;font-family:inherit;font-weight:600;font-size:16px;line-height:1.2;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.tab small{display:block;font-weight:500;font-size:12px;opacity:.85;margin-top:2px}
+.panel[hidden]{display:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;box-shadow:var(--shadow)}
+.card h2{font-size:20px;margin:0 0 4px;line-height:1.3}
+.card h3{font-size:16px;margin:14px 0 6px}
+.pg{display:inline-block;font-size:12px;font-weight:600;color:var(--muted);background:var(--chip);border-radius:999px;padding:2px 9px;margin-bottom:8px}
+.card p{margin:8px 0}
+.card ul,.card ol{margin:6px 0 6px 0;padding-left:22px}
+.card li{margin:4px 0}
+b,strong{font-weight:700}
+.hl{background:linear-gradient(transparent 55%,rgba(255,200,60,.45) 0);padding:0 2px;border-radius:2px}
+.remember{margin:12px 0 4px;padding:10px 12px;border-left:4px solid var(--brand);background:var(--brand-soft);border-radius:8px}
+.remember b:first-child{color:var(--brand)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.box{border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.box h4{margin:0 0 4px;font-size:15px}
+.obs{background:var(--ok-bg)}
+.con{background:var(--brand-soft)}
+@media (max-width:600px){.grid2{grid-template-columns:1fr}h1{font-size:22px}}
+figure{margin:12px 0;background:var(--fig);border-radius:12px;padding:8px;border:1px solid var(--line)}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font-size:13px;color:#4a5468;text-align:center;padding:4px 6px 2px}
+table.kw{width:100%;border-collapse:collapse;font-size:15px}
+table.kw td{border-top:1px solid var(--line);padding:8px 6px;vertical-align:top}
+table.kw td:first-child{font-weight:700;white-space:nowrap;padding-right:12px}
+@media (max-width:520px){table.kw td:first-child{white-space:normal}}
+.steps{counter-reset:s;list-style:none;padding-left:0!important}
+.steps li{counter-increment:s;position:relative;padding-left:34px;min-height:26px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--brand);color:var(--brand-ink);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.btn{appearance:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:9px 14px;font-family:inherit;font-weight:600;font-size:15px;line-height:1.2;cursor:pointer}
+.btn:hover{border-color:var(--brand)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.btn.small{padding:6px 10px;font-size:13px}
+.btn:disabled{opacity:.55;cursor:default}
+.next{display:flex;justify-content:center;margin:18px 0 6px}
+/* assessment */
+.scorebar{position:sticky;top:var(--tabs-h,72px);z-index:4;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:6px 0 10px;box-shadow:var(--shadow)}
+.scoreline{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.score{font-weight:700;font-size:16px}
+.progress{height:8px;border-radius:99px;background:var(--chip);overflow:hidden;margin-top:8px}
+.progress i{display:block;height:100%;width:0;background:var(--ok);transition:width .25s}
+.tools{display:flex;flex-wrap:wrap;gap:6px}
+.sec h2{margin-bottom:2px}
+.sec .how{color:var(--muted);font-size:14px;margin:0 0 6px}
+.q{border-top:1px solid var(--line);padding:14px 0 12px}
+.q:first-of-type{border-top:0}
+.qh{display:flex;gap:10px;align-items:flex-start}
+.qn{flex:none;min-width:28px;height:28px;border-radius:8px;background:var(--chip);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;padding:0 6px}
+.q.ok .qn{background:var(--ok);color:#fff}
+.q.bad .qn{background:var(--bad);color:#fff}
+.qt{flex:1}
+.qt .src{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.opts{display:grid;gap:8px;margin:10px 0 0 38px}
+.opt{appearance:none;text-align:left;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:10px 12px;font-family:inherit;font-weight:500;font-size:15px;line-height:1.35;cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--brand)}
+.opt .l{flex:none;font-weight:700;color:var(--muted);min-width:18px}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt:disabled{cursor:default}
+.tfrow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0 38px}
+.tfrow .opt{flex:1;min-width:120px;justify-content:center;font-weight:700}
+.fill{margin:10px 0 0 38px;display:grid;gap:8px}
+.fill label{display:flex;gap:8px;align-items:center}
+.fill label span{flex:none;font-weight:700;color:var(--muted);min-width:20px}
+.fill input,.fill textarea{flex:1;width:100%;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;font-family:inherit;font-size:16px;line-height:1.4;background:var(--card);color:var(--ink)}
+.fill input:focus,.fill textarea:focus{outline:none;border-color:var(--brand)}
+.fill input.right{border-color:var(--ok);background:var(--ok-bg)}
+.fill input.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.fill textarea{min-height:64px;resize:vertical}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0 38px}
+.fb{margin:10px 0 0 38px;padding:10px 12px;border-radius:10px;font-size:15px}
+.fb.ok{background:var(--ok-bg);color:var(--ok)}
+.fb.bad{background:var(--bad-bg);color:var(--bad)}
+.fb.info{background:var(--brand-soft);color:var(--ink)}
+.fb .ans{color:var(--ink);font-weight:600}
+.key{display:none;margin:8px 0 0 38px;font-size:14px;color:var(--warn);background:var(--warn-bg);padding:6px 10px;border-radius:8px}
+.reveal .key{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0 38px}
+.chip{appearance:none;border:1.5px dashed var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:8px 12px;font-family:inherit;font-weight:600;font-size:14px;line-height:1.2;cursor:pointer}
+.chip:disabled{opacity:.35;cursor:default}
+.seq{min-height:46px;border:1.5px solid var(--line);border-radius:10px;padding:6px;margin:8px 0 0 38px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.seq .placed{background:var(--brand-soft);border:1.5px solid var(--brand);border-radius:999px;padding:6px 10px;font-weight:600;font-size:14px}
+.seq .ph{color:var(--muted);font-size:14px;padding:4px}
+.seq.right{border-color:var(--ok);background:var(--ok-bg)}
+.seq.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.match{margin:10px 0 0 38px;display:grid;gap:8px}
+.match .mr{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center}
+.match select{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:9px 10px;font-family:inherit;font-size:15px;background:var(--card);color:var(--ink)}
+.match select.right{border-color:var(--ok);background:var(--ok-bg)}
+.match select.wrong{border-color:var(--bad);background:var(--bad-bg)}
+@media (max-width:520px){.opts,.tfrow,.fill,.row,.fb,.key,.chips,.seq,.match{margin-left:0}.match .mr{grid-template-columns:1fr}}
+.note{font-size:14px;color:var(--muted)}
+.notebox{margin:10px 0;padding:10px 12px;border-radius:10px;background:var(--warn-bg);color:var(--ink);font-size:14px}
+.summary{text-align:center}
+.summary .big{font-size:34px;font-weight:800}
+footer{margin-top:24px;color:var(--muted);font-size:13px}
+footer ul{padding-left:18px}
+.linkbtn{appearance:none;border:0;background:none;color:var(--brand);font-family:inherit;font-weight:600;font-size:14px;cursor:pointer;padding:4px 0;text-decoration:underline}
+.hidden-q{display:none}
+@media print{.tabs,.scorebar,.tools,.next{display:none}.panel[hidden]{display:block}.card{break-inside:avoid}}
+
+figure .sv{overflow-x:auto;-webkit-overflow-scrolling:touch}
+figure .swipe{display:none;font-size:12px;color:#4a5468;text-align:right;padding:2px 6px 0}
+@media (max-width:640px){figure .sv svg{min-width:600px}figure .swipe{display:block}}
+.flow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;padding:6px}
+.flow .fs{flex:1 1 104px;max-width:190px;background:var(--fill);border:2px solid var(--stroke);border-radius:10px;padding:8px 10px;font-weight:700;font-size:14px;line-height:1.3;color:#1b2333;text-align:center}
+.flow .fa{flex:none;color:#5a6478;font-weight:800;font-size:18px}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top" id="top"></header>
+<nav class="tabs" role="tablist">
+<button class="tab" role="tab" data-tab="explain" aria-selected="true">Explanation</button>
+<button class="tab" role="tab" data-tab="assess" aria-selected="false">Assessment</button>
+</nav>
+<main>
+<section class="panel" id="panel-explain"></section>
+<section class="panel" id="panel-assess" hidden></section>
+</main>
+<footer id="foot"></footer>
+</div>
+<script type="application/json" id="lesson-data">{"slug":"lesson-3-3-absorption-and-the-liver","docTitle":"Lesson 3-3 Absorption and Liver","kicker":"Science · Primary 6 · Chapter 3: Digestion","title":"Lesson 3-3: How Absorption Works and the Importance of the Liver","meta":"Explanation: school binder pp. 24–25 · Assessment: the school’s 3-3 worksheet (binder pp. 90–92) with its model answers (30 questions)","explain":[{"title":"What is meant by absorption?","pg":"Binder p. 24","html":"<p>After food is digested into small, simple nutrients, the body absorbs these nutrients and uses them for <b>energy, growth and repair<\/b>.<\/p><p><b>Absorption<\/b> is the process where <b>digested nutrients and water pass from the intestine into the blood<\/b>.<\/p><figure><div class=\"sv\"><svg viewBox=\"0 0 620 226\" role=\"img\" aria-label=\"Digested nutrients and water pass from the intestine into the blood.\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,Segoe UI,Roboto,Arial,sans-serif\"><rect x=\"30\" y=\"30\" width=\"250\" height=\"150\" rx=\"40\" fill=\"#f9d3cd\" stroke=\"#d98c84\" stroke-width=\"3\"/><text x=\"155\" y=\"22\" font-size=\"13\" font-weight=\"700\" fill=\"#1b2333\" text-anchor=\"middle\">Small intestine<\/text><circle cx=\"80\" cy=\"70\" r=\"9\" fill=\"#3aa65a\"/><circle cx=\"120\" cy=\"100\" r=\"9\" fill=\"#2c6be0\"/><circle cx=\"95\" cy=\"135\" r=\"9\" fill=\"#3aa65a\"/><circle cx=\"160\" cy=\"65\" r=\"9\" fill=\"#2c6be0\"/><circle cx=\"180\" cy=\"120\" r=\"9\" fill=\"#3aa65a\"/><circle cx=\"215\" cy=\"90\" r=\"9\" fill=\"#2c6be0\"/><circle cx=\"230\" cy=\"145\" r=\"9\" fill=\"#3aa65a\"/><circle cx=\"140\" cy=\"150\" r=\"9\" fill=\"#2c6be0\"/><line x1=\"290.0\" y1=\"70.0\" x2=\"360.0\" y2=\"70.0\" stroke=\"#d24b3e\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M360.0,70.0 L351.0,74.3 L351.0,65.7 Z\" fill=\"#d24b3e\"/><line x1=\"290.0\" y1=\"105.0\" x2=\"360.0\" y2=\"105.0\" stroke=\"#d24b3e\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M360.0,105.0 L351.0,109.3 L351.0,100.7 Z\" fill=\"#d24b3e\"/><line x1=\"290.0\" y1=\"140.0\" x2=\"360.0\" y2=\"140.0\" stroke=\"#d24b3e\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M360.0,140.0 L351.0,144.3 L351.0,135.7 Z\" fill=\"#d24b3e\"/><rect x=\"372\" y=\"20\" width=\"44\" height=\"172\" rx=\"22\" fill=\"#d94b4b\"/><text x=\"394\" y=\"214\" font-size=\"13\" font-weight=\"700\" fill=\"#1b2333\" text-anchor=\"middle\">Blood vessel<\/text><circle cx=\"470\" cy=\"70\" r=\"9\" fill=\"#3aa65a\"/><text x=\"488\" y=\"75\" font-size=\"13\" font-weight=\"600\" fill=\"#1b2333\" text-anchor=\"start\">Nutrient<\/text><circle cx=\"470\" cy=\"104\" r=\"9\" fill=\"#2c6be0\"/><text x=\"488\" y=\"109\" font-size=\"13\" font-weight=\"600\" fill=\"#1b2333\" text-anchor=\"start\">Water<\/text><circle cx=\"470\" cy=\"138\" r=\"9\" fill=\"#d94b4b\"/><text x=\"488\" y=\"143\" font-size=\"13\" font-weight=\"600\" fill=\"#1b2333\" text-anchor=\"start\">Blood vessel<\/text><\/svg><\/div><div class=\"swipe\">swipe to see the whole picture →<\/div><figcaption>Binder p. 24: absorption is the process where digested nutrients and water pass from the intestine into the blood.<\/figcaption><\/figure>"},{"title":"Where does absorption occur?","pg":"Binder p. 24","html":"<p>The nutrients from the digested food are mainly absorbed in the <b>small intestine<\/b>, along with water.<\/p>"},{"title":"What is the structure of the small intestine?","pg":"Binder p. 24","html":"<p>Inside the small intestine there are tiny structures called <b>villi<\/b>.<\/p><ul><li>Villi are <b>small bumps<\/b> on the inside of the small intestine, lined up closely.<\/li><li>These bumps <b>increase the inner surface area<\/b> of the small intestine, so it can absorb nutrients and water efficiently.<\/li><li>Villi are <b>rich in blood vessels<\/b>, which allow nutrients and water to be absorbed and carried by the blood.<\/li><li>These nutrients pass through the <b>liver<\/b>, which stores some of them and sends them out to the whole body when they are needed.<\/li><\/ul><figure><div class=\"sv\"><svg viewBox=\"0 0 560 222\" role=\"img\" aria-label=\"A smooth inner wall has a smaller surface area; a wall lined with villi has a larger surface area.\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,Segoe UI,Roboto,Arial,sans-serif\"><circle cx=\"140\" cy=\"95\" r=\"70\" fill=\"#f6b9b0\" stroke=\"#d98c84\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"95\" r=\"46\" fill=\"#ffffff\" stroke=\"#d98c84\" stroke-width=\"2\"/><text x=\"140\" y=\"192\" font-size=\"14\" font-weight=\"700\" fill=\"#1b2333\" text-anchor=\"middle\">Without villi<\/text><text x=\"140\" y=\"210\" font-size=\"12.5\" font-weight=\"500\" fill=\"#4a5468\" text-anchor=\"middle\">(smaller surface area)<\/text><line x1=\"240.0\" y1=\"95.0\" x2=\"320.0\" y2=\"95.0\" stroke=\"#5a6478\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M320.0,95.0 L311.0,99.3 L311.0,90.7 Z\" fill=\"#5a6478\"/><circle cx=\"420\" cy=\"95\" r=\"70\" fill=\"#f6b9b0\" stroke=\"#d98c84\" stroke-width=\"3\"/><circle cx=\"420\" cy=\"95\" r=\"46\" fill=\"#ffffff\" stroke=\"#d98c84\" stroke-width=\"2\"/><line x1=\"466.0\" y1=\"95.0\" x2=\"450.0\" y2=\"95.0\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"466.0\" y1=\"95.0\" x2=\"450.0\" y2=\"95.0\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"464.1\" y1=\"108.0\" x2=\"448.8\" y2=\"103.5\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"464.1\" y1=\"108.0\" x2=\"448.8\" y2=\"103.5\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"458.7\" y1=\"119.9\" x2=\"445.2\" y2=\"111.2\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"458.7\" y1=\"119.9\" x2=\"445.2\" y2=\"111.2\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"450.1\" y1=\"129.8\" x2=\"439.6\" y2=\"117.7\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"450.1\" y1=\"129.8\" x2=\"439.6\" y2=\"117.7\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"439.1\" y1=\"136.8\" x2=\"432.5\" y2=\"122.3\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"439.1\" y1=\"136.8\" x2=\"432.5\" y2=\"122.3\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"426.5\" y1=\"140.5\" x2=\"424.3\" y2=\"124.7\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"426.5\" y1=\"140.5\" x2=\"424.3\" y2=\"124.7\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"413.5\" y1=\"140.5\" x2=\"415.7\" y2=\"124.7\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"413.5\" y1=\"140.5\" x2=\"415.7\" y2=\"124.7\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"400.9\" y1=\"136.8\" x2=\"407.5\" y2=\"122.3\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"400.9\" y1=\"136.8\" x2=\"407.5\" y2=\"122.3\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"389.9\" y1=\"129.8\" x2=\"400.4\" y2=\"117.7\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"389.9\" y1=\"129.8\" x2=\"400.4\" y2=\"117.7\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"381.3\" y1=\"119.9\" x2=\"394.8\" y2=\"111.2\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"381.3\" y1=\"119.9\" x2=\"394.8\" y2=\"111.2\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"375.9\" y1=\"108.0\" x2=\"391.2\" y2=\"103.5\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"375.9\" y1=\"108.0\" x2=\"391.2\" y2=\"103.5\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"374.0\" y1=\"95.0\" x2=\"390.0\" y2=\"95.0\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"374.0\" y1=\"95.0\" x2=\"390.0\" y2=\"95.0\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"375.9\" y1=\"82.0\" x2=\"391.2\" y2=\"86.5\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"375.9\" y1=\"82.0\" x2=\"391.2\" y2=\"86.5\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"381.3\" y1=\"70.1\" x2=\"394.8\" y2=\"78.8\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"381.3\" y1=\"70.1\" x2=\"394.8\" y2=\"78.8\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"389.9\" y1=\"60.2\" x2=\"400.4\" y2=\"72.3\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"389.9\" y1=\"60.2\" x2=\"400.4\" y2=\"72.3\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"400.9\" y1=\"53.2\" x2=\"407.5\" y2=\"67.7\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"400.9\" y1=\"53.2\" x2=\"407.5\" y2=\"67.7\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"413.5\" y1=\"49.5\" x2=\"415.7\" y2=\"65.3\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"413.5\" y1=\"49.5\" x2=\"415.7\" y2=\"65.3\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"426.5\" y1=\"49.5\" x2=\"424.3\" y2=\"65.3\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"426.5\" y1=\"49.5\" x2=\"424.3\" y2=\"65.3\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"439.1\" y1=\"53.2\" x2=\"432.5\" y2=\"67.7\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"439.1\" y1=\"53.2\" x2=\"432.5\" y2=\"67.7\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"450.1\" y1=\"60.2\" x2=\"439.6\" y2=\"72.3\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"450.1\" y1=\"60.2\" x2=\"439.6\" y2=\"72.3\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"458.7\" y1=\"70.1\" x2=\"445.2\" y2=\"78.8\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"458.7\" y1=\"70.1\" x2=\"445.2\" y2=\"78.8\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><line x1=\"464.1\" y1=\"82.0\" x2=\"448.8\" y2=\"86.5\" stroke=\"#f6b9b0\" stroke-width=\"7\" stroke-linecap=\"round\"/><line x1=\"464.1\" y1=\"82.0\" x2=\"448.8\" y2=\"86.5\" stroke=\"#d98c84\" stroke-width=\"1\" opacity=\".6\"/><text x=\"420\" y=\"192\" font-size=\"14\" font-weight=\"700\" fill=\"#1b2333\" text-anchor=\"middle\">With villi<\/text><text x=\"420\" y=\"210\" font-size=\"12.5\" font-weight=\"500\" fill=\"#4a5468\" text-anchor=\"middle\">(larger surface area)<\/text><\/svg><\/div><div class=\"swipe\">swipe to see the whole picture →<\/div><figcaption>Binder p. 24: villi are small bumps on the inside of the small intestine.<\/figcaption><\/figure>"},{"title":"Why are villi important?","pg":"Binder p. 24","html":"<p>If you look at the surface of a towel, it has many loop-like threads, so it absorbs water better than a flat cloth. In the same way, <b>villi increase the surface area<\/b> inside the small intestine, so it can <b>absorb more nutrients and water<\/b>.<\/p><figure><div class=\"sv\"><svg viewBox=\"0 0 600 180\" role=\"img\" aria-label=\"A towel with loops absorbs water better than a flat cloth.\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"system-ui,Segoe UI,Roboto,Arial,sans-serif\"><rect x=\"40\" y=\"30\" width=\"220\" height=\"110\" rx=\"12\" fill=\"#7fa7e8\"/><path d=\"M54,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M75,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M96,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M117,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M138,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M159,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M180,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M201,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M222,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M243,54 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M54,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M75,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M96,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M117,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M138,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M159,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M180,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M201,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M222,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M243,74 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M54,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M75,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M96,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M117,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M138,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M159,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M180,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M201,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M222,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M243,94 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M54,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M75,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M96,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M117,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M138,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M159,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M180,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M201,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M222,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M243,114 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M54,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M75,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M96,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M117,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M138,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M159,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M180,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M201,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M222,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><path d=\"M243,134 a7,7 0 1 1 14,0\" fill=\"none\" stroke=\"#e8f0ff\" stroke-width=\"3\"/><text x=\"150\" y=\"164\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1b2333\" text-anchor=\"middle\">Towel (large surface area)<\/text><rect x=\"330\" y=\"50\" width=\"220\" height=\"70\" rx=\"6\" fill=\"#cfe0fb\" stroke=\"#7fa7e8\" stroke-width=\"2\"/><line x1=\"350\" y1=\"50\" x2=\"350\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"370\" y1=\"50\" x2=\"370\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"390\" y1=\"50\" x2=\"390\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"410\" y1=\"50\" x2=\"410\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"430\" y1=\"50\" x2=\"430\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"450\" y1=\"50\" x2=\"450\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"470\" y1=\"50\" x2=\"470\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"490\" y1=\"50\" x2=\"490\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"510\" y1=\"50\" x2=\"510\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><line x1=\"530\" y1=\"50\" x2=\"530\" y2=\"120\" stroke=\"#a9c3ee\" stroke-width=\"1\"/><text x=\"440\" y=\"164\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1b2333\" text-anchor=\"middle\">Flat cloth (small surface area)<\/text><\/svg><\/div><div class=\"swipe\">swipe to see the whole picture →<\/div><figcaption>Binder p. 24: like a towel’s loops, villi increase the surface area so more is absorbed.<\/figcaption><\/figure><p><b>This helps:<\/b> provide energy for the body · support growth and repair · keep the body healthy.<\/p>"},{"title":"In summary — the absorption process","pg":"Binder p. 24","html":"<figure><div class=\"flow\" style=\"--fill:#e8f0ff;--stroke:#2c6be0\"><span class=\"fs\">Food is digested<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">Nutrients become small and simple<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">Absorbed in the small intestine (by villi)<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">Carried by blood<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">To the liver, then to all parts of the body when needed<\/span><\/div><figcaption>That is how absorption works (binder p. 24).<\/figcaption><\/figure>"},{"title":"What is the importance of the liver?","pg":"Binder p. 25","html":"<p>The liver is a hardworking organ that keeps our body healthy every day. It has many important jobs that help our body work in the best way.<\/p><h3>1. It stores energy for the body<\/h3><p>The liver converts some nutrients from the food into a <b>simple form<\/b> that the body can use easily. Then it <b>stores them as energy<\/b> and <b>releases<\/b> them when the body needs them.<\/p><figure><div class=\"flow\" style=\"--fill:#e6f6ec;--stroke:#17894a\"><span class=\"fs\">We eat food<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">The liver changes nutrients into a simple form<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">It stores them as energy<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">It releases the energy when the body needs it<\/span><\/div><\/figure><h3>2. It cleans the body<\/h3><p>The liver <b>breaks down harmful substances<\/b> in the body (making them less harmful) and gets rid of them through <b>urine<\/b>, keeping the body safe and healthy.<\/p><p class=\"note\">Examples of harmful substances broken down by the liver (binder): medicine and drug leftovers, alcohol, nicotine (from cigarettes), toxins from pollution, certain poisons, chemicals from household products.<\/p><figure><div class=\"flow\" style=\"--fill:#fff4df;--stroke:#b7791f\"><span class=\"fs\">Harmful substances enter the body<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">The liver breaks them down (less harmful)<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">They are removed from the body through urine<\/span><\/div><\/figure><h3>3. It produces bile (digestive juice)<\/h3><p>The liver produces a digestive juice called <b>bile<\/b>. Bile helps break down <b>fats into tiny drops<\/b> so they can be digested and absorbed by the body.<\/p><figure><div class=\"flow\" style=\"--fill:#efe5fb;--stroke:#8a5cc7\"><span class=\"fs\">Fats from food<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">The liver produces bile (digestive juice)<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">Bile breaks fats into tiny drops<\/span><span class=\"fa\" aria-hidden=\"true\">→<\/span><span class=\"fs\">They are then digested easily<\/span><\/div><\/figure><div class=\"remember\">Thanks to the liver, our body can get energy, stay clean, and digest food properly!<\/div>"}],"keywords":[["Absorption","Digested nutrients and water pass from the intestine into the blood."],["Small intestine","Where most nutrients (and water) from digested food are absorbed."],["Villi","Small bumps on the inner wall of the small intestine; they increase the surface area and are rich in blood vessels."],["Liver","Stores energy, cleans the body (harmful substances leave through urine) and produces bile."],["Bile","A digestive juice made by the liver that breaks fats into tiny drops."]],"assess":[{"title":"Try","src":"Binder p. 90","how":"Answer each part.","items":[{"t":"blank","q":"What do we call the small bumps on the inner wall of the small intestine that absorb nutrients?","src":"Binder p. 90","n":"1","b":[{"acc":["villi"]}],"model":"villi"},{"t":"mcq","q":"What carries the absorbed nutrients to the body? Choose the correct answer from below.","src":"Binder p. 90","n":"2","o":["Blood vessels","Nerves","Muscles"],"letters":["A","B","C"],"a":0},{"t":"mcq","q":"Where do the nutrients absorbed in the small intestine pass through first to be carried to the whole body? Choose the correct answer from below.","src":"Binder p. 90","n":"3","o":["Stomach","Large intestine","Liver"],"letters":["A","B","C"],"a":2}]},{"title":"Exercise","src":"Binder p. 90","how":"Answer each part.","items":[{"t":"mcq","q":"What is the advantage of having villi on the wall of the small intestine? Choose the correct answer from below.","src":"Binder p. 90","n":"1","o":["It makes it easier to swallow food.","The surface area of the wall of the small intestine becomes larger, and nutrients can be absorbed efficiently.","It makes it easier for nutrients to pass through."],"letters":["A","B","C"],"a":1},{"t":"blank","q":"Fill in the blanks with the correct words. The nutrients of digested food, along with water, are mainly absorbed in the ( ① ____ ). The nutrients absorbed in the small intestine are carried by the ( ② ____ ) through the ( ③ ____ ) to the whole body.","src":"Binder p. 90","n":"2","b":[{"acc":["small intestine"]},{"acc":["blood vessels"]},{"acc":["liver"]}],"model":"① small intestine   ② blood vessels   ③ liver"}]},{"title":"A. Choose the correct answer","src":"Binder p. 91","how":"Tap the correct answer.","items":[{"t":"mcq","q":"Which structure increases the surface area of the small intestine for absorption?","src":"Binder p. 91","o":["Stomach","Villi","Liver","Esophagus"],"letters":["a","b","c","d"],"a":1},{"t":"mcq","q":"After nutrients are absorbed through the wall of the small intestine, they enter the:","src":"Binder p. 91","o":["blood vessels","stomach","large intestine","mouth"],"letters":["a","b","c","d"],"a":0},{"t":"mcq","q":"Where do absorbed nutrients pass through before being carried to the rest of the body?","src":"Binder p. 91","o":["Lungs","Liver","Stomach","Esophagus"],"letters":["a","b","c","d"],"a":1},{"t":"mcq","q":"Which substance produced by the liver helps break fats into tiny droplets?","src":"Binder p. 91","o":["Saliva","Water","Bile","Blood"],"letters":["a","b","c","d"],"a":2},{"t":"mcq","q":"Which statement best describes one way the liver helps clean the body?","src":"Binder p. 91","o":["It absorbs oxygen from the air.","It breaks down harmful substances.","It stores solid waste.","It pumps blood around the body."],"letters":["a","b","c","d"],"a":1}]},{"title":"B. Write True or False","src":"Binder p. 91","how":"Tap True or False.","items":[{"t":"tf","q":"Absorption is the movement of digested nutrients and water from the intestine into the blood.","src":"Binder p. 91","a":true},{"t":"tf","q":"Villi make the inner surface area of the small intestine smaller.","src":"Binder p. 91","a":false},{"t":"tf","q":"The nutrients in food must become small and simple before they can be absorbed efficiently.","src":"Binder p. 91","a":true},{"t":"tf","q":"The liver can store energy and release it when the body needs it.","src":"Binder p. 91","a":true},{"t":"tf","q":"Blood vessels inside the villi carry absorbed nutrients away from the small intestine.","src":"Binder p. 91","a":true}]},{"title":"C. Complete the following","src":"Binder p. 91","how":"Type the missing word(s), then press **Check** (or Enter).","items":[{"t":"blank","q":"Most nutrients from digested food are absorbed in the ____ intestine.","src":"Binder p. 91","b":[{"acc":["small"]}],"model":"small"},{"t":"blank","q":"The tiny bumps lining the inner wall of the small intestine are called ____.","src":"Binder p. 91","b":[{"acc":["villi"]}],"model":"villi"},{"t":"blank","q":"Villi contain many ____ vessels that carry absorbed nutrients.","src":"Binder p. 91","b":[{"acc":["blood"]}],"model":"blood"},{"t":"blank","q":"The liver changes some nutrients from food into a simple form and stores them as ____.","src":"Binder p. 91","b":[{"acc":["energy"]}],"model":"energy"},{"t":"blank","q":"Harmful substances broken down by the liver can be removed from the body through ____.","src":"Binder p. 91","b":[{"acc":["urine"]}],"model":"urine"}]},{"title":"D. What happens when…?","src":"School model-answer sheet (binder p. 92)","how":"Say or write your answer first, then press **Show school answer** and mark yourself honestly.","items":[{"t":"write","q":"Digested nutrients reach the villi of the small intestine?","src":"Binder p. 92","model":"They are absorbed through the villi into the blood vessels."},{"t":"write","q":"The inner wall of the small intestine has many villi instead of being smooth?","src":"Binder p. 92","model":"The surface area becomes larger so more nutrients can be absorbed."},{"t":"write","q":"Absorbed nutrients enter the blood vessels inside the villi?","src":"Binder p. 92","model":"They are carried in the blood to the whole body."},{"t":"write","q":"The body needs some of the energy that has been stored by the liver?","src":"Binder p. 92","model":"The liver breaks down stored food (glycogen) and releases energy."},{"t":"write","q":"The villi in the small intestine are damaged or reduced in number?","src":"Binder p. 92","model":"Less nutrients are absorbed, which can lead to poor growth and less energy."}]},{"title":"E. Give reasons for the following","src":"School model-answer sheet (binder p. 92)","how":"Say or write your answer first, then press **Show school answer** and mark yourself honestly.","items":[{"t":"write","q":"The small intestine is an important organ for absorption.","src":"Binder p. 92","model":"Because it has many villi which increase the surface area for absorbing nutrients."},{"t":"write","q":"Villi are useful for absorbing nutrients efficiently.","src":"Binder p. 92","model":"Because they provide a large surface area for absorption."},{"t":"write","q":"The liver is important after nutrients have been absorbed into the blood.","src":"Binder p. 92","model":"Because it stores energy and changes some nutrients into simpler forms."},{"t":"write","q":"The liver helps keep the body safe and healthy.","src":"Binder p. 92","model":"Because it removes harmful substances from the body."},{"t":"write","q":"Breaking fats into tiny droplets helps the process of digestion.","src":"Binder p. 92","model":"So digestive juices can easily break them and so they will be easily absorbed."}]}],"assessNote":"Sections D and E follow the school’s model-answer sheet, which has 5 questions in each.","sources":["School Science binder, Primary 6 first term — Toddle › Prim6 G Science › Course plan › “primary 6 first term binder”, pages 24–25 (lesson) and 90–92 (questions).","Answers: the school’s “chapter 3 homework model answers” (3-3 How Absorption Works pages), Toddle › Prim6 G Science › Course plan › Model answers.","Teacher’s note (Noha Helal, 15 Oct 2026, Science class announcements): “How does absorption happen? The function of liver”."]}</script>
+<script>
+(function () {
+  'use strict';
+  var D = JSON.parse(document.getElementById('lesson-data').textContent);
+  var CIRC = ['①', '②', '③', '④', '⑤', '⑥', '⑦', '⑧'];
+
+  function el(tag, cls, html) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (html != null) e.innerHTML = html;
+    return e;
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+  function fmt(s) {
+    return esc(s)
+      .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+      .replace(/_{3,}/g, '<span class="hl">&nbsp;______&nbsp;</span>');
+  }
+  function norm(s) {
+    return String(s || '')
+      .toLowerCase()
+      .replace(/[’‘']/g, '')
+      .replace(/[‐-―\-_/]/g, ' ')
+      .replace(/[^a-z0-9% ]+/g, ' ')
+      .replace(/\b(the|a|an)\b/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+  function stem(s) {
+    return norm(s).split(' ').map(function (w) {
+      return w.length > 3 ? w.replace(/(es|s)$/, '') : w;
+    }).join(' ');
+  }
+  function accepts(value, list) {
+    var n = norm(value);
+    if (!n) return false;
+    var sn = stem(value);
+    return list.some(function (a) { return norm(a) === n || stem(a) === sn; });
+  }
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  function btn(cls, label, fn) {
+    var b = el('button', cls, label);
+    b.type = 'button';
+    if (fn) b.addEventListener('click', fn);
+    return b;
+  }
+
+  /* ---------- header + tabs ---------- */
+  document.title = D.docTitle;
+  var top = document.getElementById('top');
+  top.innerHTML = '<div class="kicker">' + esc(D.kicker) + '</div><h1>' + esc(D.title) + '</h1>' +
+    '<div class="meta">' + esc(D.meta) + '</div>' +
+    (D.banner ? '<div class="banner">' + esc(D.banner) + '</div>' : '');
+
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  function showTab(name) {
+    tabs.forEach(function (t) { t.setAttribute('aria-selected', t.getAttribute('data-tab') === name ? 'true' : 'false'); });
+    Array.prototype.forEach.call(document.querySelectorAll('.panel'), function (p) { p.hidden = p.id !== 'panel-' + name; });
+    window.scrollTo(0, 0);
+  }
+  tabs.forEach(function (t) { t.addEventListener('click', function () { showTab(t.getAttribute('data-tab')); }); });
+  tabs[0].innerHTML = 'Explanation<small>' + esc(D.explainHint || 'Learn the lesson') + '</small>';
+  tabs[1].innerHTML = 'Assessment<small>' + esc(D.assessHint || 'Answer the questions') + '</small>';
+
+  /* ---------- explanation ---------- */
+  var ex = document.getElementById('panel-explain');
+  D.explain.forEach(function (s) {
+    var c = el('section', 'card');
+    c.innerHTML = '<h2>' + esc(s.title) + '</h2>' + (s.pg ? '<span class="pg">' + esc(s.pg) + '</span>' : '') + s.html;
+    ex.appendChild(c);
+  });
+  if (D.keywords && D.keywords.length) {
+    var kw = el('section', 'card');
+    kw.innerHTML = '<h2>Key words</h2><table class="kw">' + D.keywords.map(function (k) {
+      return '<tr><td>' + esc(k[0]) + '</td><td>' + fmt(k[1]) + '</td></tr>';
+    }).join('') + '</table>';
+    ex.appendChild(kw);
+  }
+  var nx = el('div', 'next');
+  nx.appendChild(btn('btn primary', 'Start the assessment →', function () { showTab('assess'); }));
+  ex.appendChild(nx);
+
+  /* ---------- assessment ---------- */
+  var as = document.getElementById('panel-assess');
+  var all = [];
+  var bar = el('div', 'scorebar');
+  bar.innerHTML = '<div class="scoreline"><div class="score" id="score"></div></div><div class="progress"><i id="prog"></i></div>';
+  as.appendChild(bar);
+  var toolRow = el('div', 'tools');
+  toolRow.id = 'tools';
+  toolRow.style.margin = '0 0 4px';
+  as.appendChild(toolRow);
+  if (D.assessNote) as.appendChild(el('div', 'notebox', D.assessNote));
+  var holder = el('div');
+  as.appendChild(holder);
+  var summary = el('section', 'card summary');
+  summary.hidden = true;
+  as.appendChild(summary);
+
+  var tools = toolRow;
+  tools.appendChild(btn('btn small', 'Redo mistakes', function () {
+    var first = null;
+    all.forEach(function (q) { if (q.status === 'bad') { q.reset(); if (!first) first = q.node; } });
+    if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }));
+  var keyBtn = btn('btn small', 'Show answer key', function () {
+    var on = holder.classList.toggle('reveal');
+    keyBtn.textContent = on ? 'Hide answer key' : 'Show answer key';
+  });
+  tools.appendChild(keyBtn);
+  var resetConfirm = false, resetTimer = null;
+  var resetBtn = btn('btn small', 'Reset all', function () {
+    if (!resetConfirm) {
+      resetConfirm = true;
+      resetBtn.textContent = 'Confirm reset?';
+      resetTimer = setTimeout(function () {
+        resetConfirm = false;
+        resetBtn.textContent = 'Reset all';
+      }, 3000);
+      return;
+    }
+    clearTimeout(resetTimer);
+    resetConfirm = false;
+    resetBtn.textContent = 'Reset all';
+    all.forEach(function (q) { q.reset(); });
+    window.scrollTo(0, 0);
+  });
+  tools.appendChild(resetBtn);
+
+  function update() {
+    var n = all.length, done = 0, ok = 0;
+    all.forEach(function (q) { if (q.status) done++; if (q.status === 'ok') ok++; });
+    document.getElementById('score').textContent = 'Score ' + ok + ' / ' + n + '  ·  answered ' + done + ' / ' + n;
+    document.getElementById('prog').style.width = (n ? (done / n) * 100 : 0) + '%';
+    if (done === n && n) {
+      var pct = Math.round((ok / n) * 100);
+      summary.hidden = false;
+      summary.innerHTML = '<div class="big">' + ok + ' / ' + n + '</div><p>' + pct + '% correct.</p>' +
+        (ok < n ? '<p class="note">Press <b>Redo mistakes</b> to try the ' + (n - ok) + ' missed question' + (n - ok === 1 ? '' : 's') + ' again.</p>' : '<p>Every answer matches the school’s model answers. Well done!</p>');
+    } else {
+      summary.hidden = true;
+    }
+  }
+
+  function makeQ(it, label) {
+    var node = el('div', 'q');
+    var qh = el('div', 'qh');
+    qh.appendChild(el('div', 'qn', esc(label)));
+    qh.appendChild(el('div', 'qt', fmt(it.q) + (it.src ? '<span class="src">' + esc(it.src) + '</span>' : '')));
+    node.appendChild(qh);
+    if (it.fig) node.appendChild(el('figure', null, it.fig));
+    var body = el('div');
+    node.appendChild(body);
+    var fbBox = el('div');
+    node.appendChild(fbBox);
+    var keyEl = el('div', 'key');
+    node.appendChild(keyEl);
+    var q = { it: it, node: node, body: body, status: null, resetFns: [], keyEl: keyEl };
+    q.feedback = function (kind, html) {
+      fbBox.innerHTML = '';
+      var f = el('div', 'fb ' + kind, html);
+      fbBox.appendChild(f);
+      return f;
+    };
+    q.done = function (ok, html, allowOverride) {
+      q.status = ok ? 'ok' : 'bad';
+      node.classList.remove('ok', 'bad');
+      node.classList.add(q.status);
+      var f = q.feedback(ok ? 'ok' : 'bad', html);
+      var r = el('div', 'row');
+      r.style.margin = '8px 0 0';
+      if (!ok && allowOverride) {
+        r.appendChild(btn('btn small', 'Same meaning — count it ✓', function () {
+          q.done(true, 'Counted as correct (checked by a parent). School answer: <span class="ans">' + fmt(q.key) + '</span>');
+        }));
+      }
+      r.appendChild(btn('btn small', 'Try again', function () { q.reset(); }));
+      f.appendChild(r);
+      update();
+    };
+    q.reset = function () {
+      q.status = null;
+      node.classList.remove('ok', 'bad');
+      fbBox.innerHTML = '';
+      q.resetFns.forEach(function (fn) { fn(); });
+      update();
+    };
+    q.setKey = function (k) {
+      q.key = k;
+      keyEl.innerHTML = 'School answer: ' + fmt(k);
+    };
+    return q;
+  }
+
+  /* --- item types --- */
+  var R = {};
+  R.mcq = function (it, q) {
+    var letters = it.letters || ['a', 'b', 'c', 'd', 'e', 'f'];
+    var box = el('div', 'opts');
+    var btns = it.o.map(function (text, i) {
+      var b = btn('opt', '<span class="l">' + esc(letters[i]) + ')</span><span>' + fmt(text) + '</span>', function () { choose(i); });
+      box.appendChild(b);
+      return b;
+    });
+    q.body.appendChild(box);
+    var ans = letters[it.a] + ') ' + it.o[it.a];
+    function choose(i) {
+      btns.forEach(function (b) { b.disabled = true; });
+      btns[it.a].classList.add('right');
+      var ok = i === it.a;
+      if (!ok) btns[i].classList.add('wrong');
+      q.done(ok, ok ? 'Correct!' + (it.why ? ' ' + fmt(it.why) : '') : 'Not quite. The answer is <span class="ans">' + fmt(ans) + '</span>' + (it.why ? '<br>' + fmt(it.why) : ''));
+    }
+    q.setKey(ans);
+    q.resetFns.push(function () { btns.forEach(function (b) { b.disabled = false; b.classList.remove('right', 'wrong'); }); });
+  };
+  R.tf = function (it, q) {
+    var isCx = it.t === 'cx';
+    var labels = isCx ? ['✓  Correct statement', '✗  Incorrect statement'] : ['True', 'False'];
+    var row = el('div', 'tfrow');
+    var bT = btn('opt', labels[0], function () { choose(true); });
+    var bF = btn('opt', labels[1], function () { choose(false); });
+    row.appendChild(bT); row.appendChild(bF);
+    q.body.appendChild(row);
+    var correctText = isCx ? (it.a ? '✓ (correct statement)' : '✗ (incorrect). Correction: ' + it.fix) : (it.a ? 'True' : 'False');
+    function choose(v) {
+      bT.disabled = bF.disabled = true;
+      (it.a ? bT : bF).classList.add('right');
+      var ok = v === it.a;
+      if (!ok) (v ? bT : bF).classList.add('wrong');
+      var extra = isCx && !it.a ? '<br>Correction: <span class="ans">' + fmt(it.fix) + '</span>' : '';
+      q.done(ok, (ok ? 'Correct!' : 'Not quite. The answer is <span class="ans">' + (isCx ? (it.a ? '✓' : '✗') : (it.a ? 'True' : 'False')) + '</span>') + extra);
+    }
+    q.setKey(correctText);
+    q.resetFns.push(function () { [bT, bF].forEach(function (b) { b.disabled = false; b.classList.remove('right', 'wrong'); }); });
+  };
+  R.cx = R.tf;
+  R.blank = function (it, q) {
+    var wrap = el('div', 'fill');
+    var many = it.b.length > 1;
+    var inputs = it.b.map(function (bl, i) {
+      var lab = el('label');
+      if (many) lab.appendChild(el('span', null, CIRC[i]));
+      var inp = el('input');
+      inp.type = 'text';
+      inp.setAttribute('autocomplete', 'off');
+      inp.setAttribute('autocapitalize', 'off');
+      inp.setAttribute('spellcheck', 'false');
+      inp.placeholder = many ? 'Blank ' + (i + 1) : 'Type your answer';
+      inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') check(); });
+      lab.appendChild(inp);
+      wrap.appendChild(lab);
+      return inp;
+    });
+    q.body.appendChild(wrap);
+    var row = el('div', 'row');
+    var cb = btn('btn primary small', 'Check', check);
+    var sb = btn('btn small', 'Show answer', function () {
+      inputs.forEach(function (i) { i.disabled = true; });
+      cb.disabled = sb.disabled = true;
+      q.done(false, 'School answer: <span class="ans">' + fmt(model) + '</span>');
+    });
+    row.appendChild(cb); row.appendChild(sb);
+    q.body.appendChild(row);
+    var model = it.model || it.b.map(function (b, i) { return (many ? CIRC[i] + ' ' : '') + b.acc[0]; }).join('   ');
+    function grade(vals) {
+      if (it.anyOrder) {
+        var used = [];
+        return vals.map(function (v) {
+          for (var j = 0; j < it.b.length; j++) {
+            if (used.indexOf(j) < 0 && accepts(v, it.b[j].acc)) { used.push(j); return true; }
+          }
+          return false;
+        });
+      }
+      return vals.map(function (v, i) { return accepts(v, it.b[i].acc); });
+    }
+    function check() {
+      if (cb.disabled) return;
+      var vals = inputs.map(function (i) { return i.value; });
+      var empty = inputs.filter(function (i) { return !i.value.trim(); });
+      if (empty.length) { empty[0].focus(); return; }
+      var res = grade(vals);
+      inputs.forEach(function (inp, i) {
+        inp.classList.add(res[i] ? 'right' : 'wrong');
+        inp.disabled = true;
+      });
+      cb.disabled = sb.disabled = true;
+      var ok = res.every(Boolean);
+      q.done(ok, ok ? 'Correct!' : 'School answer: <span class="ans">' + fmt(model) + '</span>', true);
+    }
+    q.setKey(model);
+    q.resetFns.push(function () {
+      inputs.forEach(function (i) { i.value = ''; i.disabled = false; i.classList.remove('right', 'wrong'); });
+      cb.disabled = sb.disabled = false;
+    });
+  };
+  R.write = function (it, q) {
+    var wrap = el('div', 'fill');
+    var ta = el('textarea');
+    ta.placeholder = 'Say or write your answer first…';
+    wrap.appendChild(ta);
+    q.body.appendChild(wrap);
+    var row = el('div', 'row');
+    var sb = btn('btn primary small', 'Show school answer', function () {
+      sb.disabled = true;
+      ta.disabled = true;
+      var f = q.feedback('info', 'School answer: <span class="ans">' + fmt(it.model) + '</span><div class="row" style="margin:8px 0 0"></div>');
+      var r = f.querySelector('.row');
+      r.appendChild(btn('btn small', 'I got it ✓', function () { q.done(true, 'Marked correct. School answer: <span class="ans">' + fmt(it.model) + '</span>'); }));
+      r.appendChild(btn('btn small', 'Not yet ✗', function () { q.done(false, 'Practise this one again. School answer: <span class="ans">' + fmt(it.model) + '</span>'); }));
+    });
+    row.appendChild(sb);
+    q.body.appendChild(row);
+    q.setKey(it.model);
+    q.resetFns.push(function () { ta.value = ''; ta.disabled = false; sb.disabled = false; });
+  };
+  R.order = function (it, q) {
+    var idx = it.seq.map(function (s, i) { return i; });
+    var mixed = shuffle(idx);
+    var guard = 0;
+    while (mixed.every(function (v, k) { return v === k; }) && guard++ < 10) mixed = shuffle(idx);
+    var seqBox = el('div', 'seq');
+    var chips = el('div', 'chips');
+    var placed = [];
+    var list = mixed.map(function (i) {
+      var c = btn('chip', fmt(it.seq[i]), function () {
+        c.disabled = true;
+        placed.push(i);
+        draw();
+        if (placed.length === it.seq.length) check();
+      });
+      chips.appendChild(c);
+      return { i: i, c: c };
+    });
+    q.body.appendChild(seqBox);
+    q.body.appendChild(chips);
+    var row = el('div', 'row');
+    var undo = btn('btn small', 'Undo', function () {
+      if (!placed.length || q.status) return;
+      var last = placed.pop();
+      list.forEach(function (x) { if (x.i === last) x.c.disabled = false; });
+      draw();
+    });
+    row.appendChild(undo);
+    q.body.appendChild(row);
+    function draw() {
+      seqBox.innerHTML = '';
+      if (!placed.length) seqBox.appendChild(el('span', 'ph', 'Tap the cards below in the correct order'));
+      placed.forEach(function (i, k) { seqBox.appendChild(el('span', 'placed', (k + 1) + '. ' + fmt(it.seq[i]))); });
+    }
+    function check() {
+      var ok = placed.every(function (v, k) { return v === k; });
+      seqBox.classList.add(ok ? 'right' : 'wrong');
+      undo.disabled = true;
+      list.forEach(function (x) { x.c.disabled = true; });
+      q.done(ok, ok ? 'Correct order!' : 'Correct order: <span class="ans">' + it.seq.map(fmt).join(' → ') + '</span>');
+    }
+    draw();
+    q.setKey(it.seq.join(' → '));
+    q.resetFns.push(function () {
+      placed = [];
+      list.forEach(function (x) { x.c.disabled = false; });
+      seqBox.classList.remove('right', 'wrong');
+      undo.disabled = false;
+      draw();
+    });
+  };
+  R.match = function (it, q) {
+    var wrap = el('div', 'match');
+    var sels = it.rows.map(function (r) {
+      var mr = el('div', 'mr');
+      mr.appendChild(el('div', null, fmt(r.left)));
+      var s = el('select');
+      s.innerHTML = '<option value="">Choose…</option>' + it.opts.map(function (o) { return '<option value="' + esc(o) + '">' + esc(o) + '</option>'; }).join('');
+      mr.appendChild(s);
+      wrap.appendChild(mr);
+      return s;
+    });
+    q.body.appendChild(wrap);
+    var row = el('div', 'row');
+    var cb = btn('btn primary small', 'Check', function () {
+      var missing = sels.filter(function (s) { return !s.value; });
+      if (missing.length) { missing[0].focus(); return; }
+      var res = sels.map(function (s, i) { return s.value === it.rows[i].right; });
+      sels.forEach(function (s, i) { s.classList.add(res[i] ? 'right' : 'wrong'); s.disabled = true; });
+      cb.disabled = true;
+      var ok = res.every(Boolean);
+      q.done(ok, ok ? 'All correct!' : 'Answers: <span class="ans">' + it.rows.map(function (r) { return fmt(r.left) + ' → ' + fmt(r.right); }).join('; ') + '</span>');
+    });
+    row.appendChild(cb);
+    q.body.appendChild(row);
+    q.setKey(it.rows.map(function (r) { return r.left + ' → ' + r.right; }).join('; '));
+    q.resetFns.push(function () {
+      sels.forEach(function (s) { s.value = ''; s.disabled = false; s.classList.remove('right', 'wrong'); });
+      cb.disabled = false;
+    });
+  };
+
+  D.assess.forEach(function (sec) {
+    var c = el('section', 'card sec');
+    c.innerHTML = '<h2>' + esc(sec.title) + '</h2>' + (sec.src ? '<span class="pg">' + esc(sec.src) + '</span>' : '') + (sec.how ? '<p class="how">' + fmt(sec.how) + '</p>' : '');
+    sec.items.forEach(function (it, i) {
+      var q = makeQ(it, it.n || String(i + 1));
+      (R[it.t] || R.write)(it, q);
+      c.appendChild(q.node);
+      all.push(q);
+    });
+    holder.appendChild(c);
+  });
+
+  /* ---------- footer ---------- */
+  var ft = document.getElementById('foot');
+  ft.innerHTML = '<b>Sources</b><ul>' + D.sources.map(function (s) { return '<li>' + fmt(s) + '</li>'; }).join('') + '</ul>' +
+    (D.footNote ? '<p>' + fmt(D.footNote) + '</p>' : '') +
+    '<p>Progress is not saved: closing or reloading the page clears the answers.</p>';
+
+  function setTabsHeight() {
+    var nav = document.querySelector('.tabs');
+    if (nav) document.documentElement.style.setProperty('--tabs-h', nav.offsetHeight + 'px');
+  }
+  window.addEventListener('resize', setTabsHeight);
+  setTabsHeight();
+
+  update();
+  showTab('explain');
+})();
+
+</script>
+</body>
+</html>
