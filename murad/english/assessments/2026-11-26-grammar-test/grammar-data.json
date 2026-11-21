@@ -1,0 +1,1981 @@
+{
+ "meta": {
+  "book": "murad/english/sources/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf",
+  "key": "murad/english/sources/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33.pdf",
+  "pdfOffset": 4,
+  "scope": "School revision list for the A Level November test on 26/11/2026, Grammar: Present Simple p. 10-13, Present Continuous p. 14-16, If Conditional Type 0 p. 26, Type 1 p. 27, Stative Verbs p. 28, Will + Be Going to p. 31"
+ },
+ "reasons": {
+  "ps_s": "With a singular subject, add \"s\", \"es\" or \"ies\" to the verb. (Book p. 10)",
+  "ps_pl": "With a plural subject, \"I\" or \"you\", use the verb with no \"s\". (Book p. 10)",
+  "ps_be": "\"be\" in the present simple is am, is or are. (Book p. 10)",
+  "ps_have": "\"have\" in the present simple is have or has. (Book p. 10)",
+  "ps_time": "Time words like \"always\", \"usually\" and \"every\" go with the present simple. (Book p. 10)",
+  "neg_does": "With a singular subject, use does + not + verb, with no \"s\" on the verb. (Book p. 12)",
+  "neg_do": "With a plural subject, \"I\" or \"you\", use do + not + verb. (Book p. 12)",
+  "neg_be": "\"be\" does not need a helping verb: isn't, aren't, I'm not. (Book p. 12)",
+  "q_does": "With a singular subject, use does + subject + verb, with no \"s\" on the verb. (Book p. 13)",
+  "q_do": "With a plural subject, \"I\" or \"you\", use do + subject + verb. (Book p. 13)",
+  "q_be": "\"be\" does not need a helping verb: Am I? Is he? Are they? (Book p. 13)",
+  "pc": "The present continuous is am, is or are + verb + ing. (Book p. 14)",
+  "pc_time": "Time words like \"now\", \"at the moment\" and \"this week\" go with the present continuous. (Book p. 14)",
+  "c0": "Type 0 is If + present simple, present simple. (Book p. 26)",
+  "c1": "Type 1 is If + present simple, will + infinitive. (Book p. 27)",
+  "c1_comma": "When the sentence starts with the result clause, do not add a comma. (Book p. 27)",
+  "st": "Stative verbs such as think, love, have, be, believe, see, hear and smell are not used in the continuous form. (Book p. 28)",
+  "st_dyn": "Some stative verbs become dynamic verbs when the meaning changes, for example \"What are you thinking about?\" (Book p. 28)",
+  "will": "Use will for quick decisions, promises, offers and predictions. (Book p. 31)",
+  "gt": "Use be going to for planned actions and for predictions based on what you can see. (Book p. 31)"
+ },
+ "parts": [
+  {
+   "id": "p11",
+   "page": 11,
+   "title": "Present simple",
+   "dir": "Correct the verbs between brackets.",
+   "learn": {
+    "page": 10,
+    "head": "Present Simple Tense",
+    "lines": [
+     "Use: habits, routines, facts and timetables.",
+     "Add \"s\", \"es\" or \"ies\" to the verb with a singular subject. Ex.: He plays tennis every week.",
+     "Use the verb with no \"s\" with a plural subject, \"I\" and \"You\". Ex.: They work hard daily.",
+     "Irregular verbs: be is am, is or are. have is have or has.",
+     "Time expressions: always, usually, often, sometimes, rarely, never, daily, every day."
+    ],
+    "pic": "simple"
+   },
+   "items": [
+    {
+     "id": "p11-1",
+     "q": "My brother always ___ to school by bus.",
+     "v": "go",
+     "a": "goes",
+     "d": [
+      "go",
+      "going"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-2",
+     "q": "Sarah ___ currently a grade six student.",
+     "v": "be",
+     "a": "is",
+     "d": [
+      "are",
+      "be"
+     ],
+     "why": "ps_be"
+    },
+    {
+     "id": "p11-3",
+     "q": "The sun ___ in the east.",
+     "v": "rise",
+     "a": "rises",
+     "d": [
+      "rise",
+      "rising"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-4",
+     "q": "Scientists always ___ how volcanoes behave.",
+     "v": "study",
+     "a": "study",
+     "d": [
+      "studies",
+      "studying"
+     ],
+     "why": "ps_pl"
+    },
+    {
+     "id": "p11-5",
+     "q": "Lava ___ from the volcano during eruptions.",
+     "v": "flow",
+     "a": "flows",
+     "d": [
+      "flow",
+      "flowing"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-6",
+     "q": "He ___ a new TV set.",
+     "v": "have",
+     "a": "has",
+     "d": [
+      "have",
+      "having"
+     ],
+     "why": "ps_have"
+    },
+    {
+     "id": "p11-7",
+     "q": "She ___ the dishes early every morning.",
+     "v": "wash",
+     "a": "washes",
+     "d": [
+      "wash",
+      "washing"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-8",
+     "q": "They ___ data from the volcano every day.",
+     "v": "collect",
+     "a": "collect",
+     "d": [
+      "collects",
+      "collecting"
+     ],
+     "why": "ps_pl"
+    },
+    {
+     "id": "p11-9",
+     "q": "A volcano usually ___ when pressure builds up inside.",
+     "v": "erupt",
+     "a": "erupts",
+     "d": [
+      "erupt",
+      "erupting"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-10",
+     "q": "My teacher often ___ much work to do.",
+     "v": "have",
+     "a": "has",
+     "d": [
+      "have",
+      "having"
+     ],
+     "why": "ps_have"
+    },
+    {
+     "id": "p11-11",
+     "q": "Earth ___ around the sun.",
+     "v": "move",
+     "a": "moves",
+     "d": [
+      "move",
+      "moving"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-12",
+     "q": "He rarely ___ his car himself.",
+     "v": "fix",
+     "a": "fixes",
+     "d": [
+      "fix",
+      "fixing"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-13",
+     "q": "Water ___ at 100 degrees Celsius.",
+     "v": "boil",
+     "a": "boils",
+     "d": [
+      "boil",
+      "boiling"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p11-14",
+     "q": "My cousins occasionally ___ abroad.",
+     "v": "travel",
+     "a": "travel",
+     "d": [
+      "travels",
+      "travelling"
+     ],
+     "why": "ps_pl"
+    },
+    {
+     "id": "p11-15",
+     "q": "The students sometimes ___ reports about natural disasters.",
+     "v": "write",
+     "a": "write",
+     "d": [
+      "writes",
+      "writing"
+     ],
+     "why": "ps_pl"
+    }
+   ]
+  },
+  {
+   "id": "p12",
+   "page": 12,
+   "title": "Present simple: negative",
+   "dir": "Correct the verbs between brackets.",
+   "learn": {
+    "page": 12,
+    "head": "Negative Form",
+    "lines": [
+     "do + not + verb (inf.) with a plural subject, I and you. Ex.: I don't like chocolate.",
+     "does + not + verb (inf.) with a singular subject. Ex.: She doesn't work on Fridays.",
+     "be does not need a helping verb. Ex.: She isn't responsible for doing these tasks."
+    ],
+    "pic": "neg"
+   },
+   "items": [
+    {
+     "id": "p12-1",
+     "q": "My sister ___ to work by bus.",
+     "v": "usually/not/go",
+     "a": "doesn't usually go",
+     "d": [
+      "don't usually go",
+      "doesn't usually goes"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-2",
+     "q": "Sam ___ a grade six student this year.",
+     "v": "not/be",
+     "a": "isn't",
+     "d": [
+      "doesn't be",
+      "aren't"
+     ],
+     "why": "neg_be"
+    },
+    {
+     "id": "p12-3",
+     "q": "The sun ___ from the west.",
+     "v": "not/rise",
+     "a": "doesn't rise",
+     "d": [
+      "don't rise",
+      "doesn't rises"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-4",
+     "q": "Henry ___ a task to do today.",
+     "v": "not/have",
+     "a": "doesn't have",
+     "d": [
+      "don't have",
+      "doesn't has"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-5",
+     "q": "She ___ the dishes every day.",
+     "v": "not/wash",
+     "a": "doesn't wash",
+     "d": [
+      "don't wash",
+      "doesn't washes"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-6",
+     "q": "The shops ___ on Sundays.",
+     "v": "not/open",
+     "a": "don't open",
+     "d": [
+      "doesn't open",
+      "don't opens"
+     ],
+     "why": "neg_do"
+    },
+    {
+     "id": "p12-7",
+     "q": "My mother ___ much work to do.",
+     "v": "not/have",
+     "a": "doesn't have",
+     "d": [
+      "don't have",
+      "doesn't has"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-8",
+     "q": "The earth ___ around the moon.",
+     "v": "not/move",
+     "a": "doesn't move",
+     "d": [
+      "don't move",
+      "doesn't moves"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-9",
+     "q": "We ___ football on Mondays.",
+     "v": "not/play",
+     "a": "don't play",
+     "d": [
+      "doesn't play",
+      "don't plays"
+     ],
+     "why": "neg_do"
+    },
+    {
+     "id": "p12-10",
+     "q": "My father ___ TV in the morning.",
+     "v": "not/watch",
+     "a": "doesn't watch",
+     "d": [
+      "don't watch",
+      "doesn't watches"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-11",
+     "q": "Sarah ___ near the park.",
+     "v": "not/live",
+     "a": "doesn't live",
+     "d": [
+      "don't live",
+      "doesn't lives"
+     ],
+     "why": "neg_does"
+    },
+    {
+     "id": "p12-12",
+     "q": "The birds ___ at night.",
+     "v": "not/fly",
+     "a": "don't fly",
+     "d": [
+      "doesn't fly",
+      "don't flies"
+     ],
+     "why": "neg_do"
+    }
+   ]
+  },
+  {
+   "id": "p13",
+   "page": 13,
+   "title": "Present simple: questions",
+   "dir": "Correct the verbs between brackets.",
+   "learn": {
+    "page": 13,
+    "head": "Question Form",
+    "lines": [
+     "do + subject + verb (inf.) with a plural subject, I and you. Ex.: Do you like chocolate?",
+     "does + subject + verb (inf.) with a singular subject. Ex.: When does she work?",
+     "be does not need a helping verb. Ex.: Is he responsible for doing these tasks?"
+    ],
+    "pic": "question"
+   },
+   "items": [
+    {
+     "id": "p13-1",
+     "q": "When ___ to work?",
+     "v": "Tammy/ go",
+     "a": "does Tammy go",
+     "d": [
+      "do Tammy go",
+      "does Tammy goes"
+     ],
+     "why": "q_does"
+    },
+    {
+     "id": "p13-2",
+     "q": "___ Sam a grade six student this year?",
+     "v": "be",
+     "a": "Is",
+     "d": [
+      "Does",
+      "Are"
+     ],
+     "why": "q_be"
+    },
+    {
+     "id": "p13-3",
+     "q": "Where ___?",
+     "v": "Lina/ live",
+     "a": "does Lina live",
+     "d": [
+      "do Lina live",
+      "does Lina lives"
+     ],
+     "why": "q_does"
+    },
+    {
+     "id": "p13-4",
+     "q": "___ basketball after school?",
+     "v": "John/ play",
+     "a": "Does John play",
+     "d": [
+      "Do John play",
+      "Does John plays"
+     ],
+     "why": "q_does"
+    },
+    {
+     "id": "p13-5",
+     "q": "Why ___ your parents ___ early every morning?",
+     "v": "leave",
+     "a": "do … leave",
+     "d": [
+      "does … leave",
+      "do … leaves"
+     ],
+     "why": "q_do"
+    },
+    {
+     "id": "p13-6",
+     "q": "___ the students ___ English on Fridays?",
+     "v": "study",
+     "a": "Do … study",
+     "d": [
+      "Does … study",
+      "Do … studies"
+     ],
+     "why": "q_do"
+    },
+    {
+     "id": "p13-7",
+     "q": "What time ___ the train ___?",
+     "v": "arrive",
+     "a": "does … arrive",
+     "d": [
+      "do … arrive",
+      "does … arrives"
+     ],
+     "why": "q_does"
+    },
+    {
+     "id": "p13-8",
+     "q": "___ reading mystery books?",
+     "v": "your sister/ like",
+     "a": "Does your sister like",
+     "d": [
+      "Do your sister like",
+      "Does your sister likes"
+     ],
+     "why": "q_does"
+    },
+    {
+     "id": "p13-9",
+     "q": "How often ___ they ___ their grandparents?",
+     "v": "visit",
+     "a": "do … visit",
+     "d": [
+      "does … visit",
+      "do … visits"
+     ],
+     "why": "q_do"
+    },
+    {
+     "id": "p13-10",
+     "q": "___ Mr. Smith ___ science this year?",
+     "v": "teach",
+     "a": "Does … teach",
+     "d": [
+      "Do … teach",
+      "Does … teaches"
+     ],
+     "why": "q_does"
+    },
+    {
+     "id": "p13-11",
+     "q": "When ___?",
+     "v": "the shops/ open",
+     "a": "do the shops open",
+     "d": [
+      "does the shops open",
+      "do the shops opens"
+     ],
+     "why": "q_do"
+    },
+    {
+     "id": "p13-12",
+     "q": "___ the baby ___ well every night?",
+     "v": "sleep",
+     "a": "Does … sleep",
+     "d": [
+      "Do … sleep",
+      "Does … sleeps"
+     ],
+     "why": "q_does"
+    }
+   ]
+  },
+  {
+   "id": "p14",
+   "page": 14,
+   "title": "Present continuous",
+   "dir": "Correct the verbs between brackets.",
+   "learn": {
+    "page": 14,
+    "head": "Present Continuous Tense",
+    "lines": [
+     "Use: an action happening at the moment of speaking, the near future, or a changing action.",
+     "Form: am, is or are + verb + ing. Ex.: He's working at the moment.",
+     "If the verb ends with \"e\", cross it out. Ex.: She is smiling at us.",
+     "If the verb ends with CVC, double the last letter. Ex.: They're planning to travel to Cairo this week.",
+     "Time expressions: now, at the moment, at the present time, this week or month."
+    ],
+    "pic": "now"
+   },
+   "items": [
+    {
+     "id": "p14-1",
+     "q": "I ___ my homework right now.",
+     "v": "do",
+     "a": "am doing",
+     "d": [
+      "is doing",
+      "am do"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-2",
+     "q": "They ___ basketball at the park at the moment.",
+     "v": "play",
+     "a": "are playing",
+     "d": [
+      "is playing",
+      "are play"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-3",
+     "q": "She ___ for her math test this week.",
+     "v": "study",
+     "a": "is studying",
+     "d": [
+      "are studying",
+      "is study"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-4",
+     "q": "We ___ dinner in the kitchen at the present time.",
+     "v": "make",
+     "a": "are making",
+     "d": [
+      "is making",
+      "are make"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-5",
+     "q": "The baby ___ in her crib now.",
+     "v": "sleep",
+     "a": "is sleeping",
+     "d": [
+      "are sleeping",
+      "is sleep"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-6",
+     "q": "Look! He ___ to the teacher.",
+     "v": "not/pay attention",
+     "a": "isn't paying attention",
+     "d": [
+      "aren't paying attention",
+      "isn't pay attention"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-7",
+     "q": "Why ___ now?",
+     "v": "you/ cry",
+     "a": "are you crying",
+     "d": [
+      "is you crying",
+      "are you cry"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-8",
+     "q": "My friends ___ over later tonight.",
+     "v": "come",
+     "a": "are coming",
+     "d": [
+      "is coming",
+      "are come"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-9",
+     "q": "The students ___ in class at the moment.",
+     "v": "write",
+     "a": "are writing",
+     "d": [
+      "is writing",
+      "are write"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p14-10",
+     "q": "It ___ outside now, so bring an umbrella.",
+     "v": "rain",
+     "a": "is raining",
+     "d": [
+      "are raining",
+      "is rain"
+     ],
+     "why": "pc"
+    }
+   ]
+  },
+  {
+   "id": "p15",
+   "page": 15,
+   "title": "Present continuous: negative and questions",
+   "dir": "Correct the verbs between brackets.",
+   "learn": {
+    "page": 15,
+    "head": "Negative Form and Question Form",
+    "lines": [
+     "Negative: am, is or are + not + verb + ing. Ex.: They aren't eating chocolate now.",
+     "Question: am, is or are + subject + verb + ing. Ex.: What is he doing at the moment?"
+    ],
+    "pic": "now"
+   },
+   "items": [
+    {
+     "id": "p15-1",
+     "q": "___ you ___ the news right now?",
+     "v": "watch",
+     "a": "Are … watching",
+     "d": [
+      "Is … watching",
+      "Are … watch"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-2",
+     "q": "She ___ her homework at the moment.",
+     "v": "not/do",
+     "a": "isn't doing",
+     "d": [
+      "aren't doing",
+      "isn't do"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-3",
+     "q": "___ Adam ___ to Cairo next week?",
+     "v": "travel",
+     "a": "Is … travelling",
+     "d": [
+      "Are … travelling",
+      "Is … travel"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-4",
+     "q": "My pronunciation ___ worse these days.",
+     "v": "not/get",
+     "a": "isn't getting",
+     "d": [
+      "aren't getting",
+      "isn't get"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-5",
+     "q": "___ they ___ their cousins tomorrow evening?",
+     "v": "meet",
+     "a": "Are … meeting",
+     "d": [
+      "Is … meeting",
+      "Are … meet"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-6",
+     "q": "We ___ at home this weekend.",
+     "v": "not/stay",
+     "a": "aren't staying",
+     "d": [
+      "isn't staying",
+      "aren't stay"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-7",
+     "q": "___ the weather ___ warmer nowadays?",
+     "v": "become",
+     "a": "Is … becoming",
+     "d": [
+      "Are … becoming",
+      "Is … become"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-8",
+     "q": "I ___ my phone right now.",
+     "v": "not/use",
+     "a": "am not using",
+     "d": [
+      "isn't using",
+      "am not use"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-9",
+     "q": "___ she ___ the train to Alexandria tomorrow?",
+     "v": "take",
+     "a": "Is … taking",
+     "d": [
+      "Are … taking",
+      "Is … take"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p15-10",
+     "q": "His grades ___ this term.",
+     "v": "not/improve",
+     "a": "aren't improving",
+     "d": [
+      "isn't improving",
+      "aren't improve"
+     ],
+     "why": "pc"
+    }
+   ]
+  },
+  {
+   "id": "p16",
+   "page": 16,
+   "title": "At the Community Garden",
+   "dir": "Correct the verbs between brackets. (A text from the book: each question is one sentence of it.)",
+   "learn": {
+    "page": 10,
+    "head": "Present simple or present continuous?",
+    "lines": [
+     "Present simple: habits and routines. Time words: always, usually, every day. (Book p. 10)",
+     "Present continuous: an action happening now. Time words: now, at the moment. (Book p. 14)"
+    ],
+    "pic": "both"
+   },
+   "items": [
+    {
+     "id": "p16-1",
+     "q": "I usually ___ the community garden with my family on Saturdays.",
+     "v": "visit",
+     "a": "visit",
+     "d": [
+      "am visiting",
+      "visits"
+     ],
+     "why": "ps_time"
+    },
+    {
+     "id": "p16-2",
+     "q": "The gardener ___ flowers, waters the vegetables, and pulls out weeds.",
+     "v": "plant",
+     "a": "plants",
+     "d": [
+      "plant",
+      "planting"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p16-3",
+     "q": "The gardener plants flowers, ___ the vegetables, and pulls out weeds.",
+     "v": "water",
+     "a": "waters",
+     "d": [
+      "water",
+      "watering"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p16-4",
+     "q": "The gardener plants flowers, waters the vegetables, and ___ out weeds.",
+     "v": "pull",
+     "a": "pulls",
+     "d": [
+      "pull",
+      "pulling"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p16-5",
+     "q": "My brother ___ taking care of the tomato plants.",
+     "v": "enjoy",
+     "a": "enjoys",
+     "d": [
+      "enjoy",
+      "enjoying"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p16-6",
+     "q": "My parents ___ fresh herbs.",
+     "v": "grow",
+     "a": "grow",
+     "d": [
+      "grows",
+      "growing"
+     ],
+     "why": "ps_pl"
+    },
+    {
+     "id": "p16-7",
+     "q": "At the moment, we ___ new flowers near the entrance.",
+     "v": "plant",
+     "a": "are planting",
+     "d": [
+      "plant",
+      "is planting"
+     ],
+     "why": "pc_time"
+    },
+    {
+     "id": "p16-8",
+     "q": "At the moment, we are planting new flowers near the entrance. My brother ___ the vegetables.",
+     "v": "water",
+     "a": "is watering",
+     "d": [
+      "are watering",
+      "is water"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p16-9",
+     "q": "My brother is watering the vegetables, and my mother ___ fresh mint.",
+     "v": "pick",
+     "a": "is picking",
+     "d": [
+      "are picking",
+      "is pick"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p16-10",
+     "q": "My mother is picking fresh mint. The birds ___ in the trees.",
+     "v": "sing",
+     "a": "are singing",
+     "d": [
+      "is singing",
+      "are sing"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p16-11",
+     "q": "The birds are singing in the trees, and everyone ___ happily together.",
+     "v": "work",
+     "a": "is working",
+     "d": [
+      "are working",
+      "is work"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p16-12",
+     "q": "We always ___ our time at the garden.",
+     "v": "enjoy",
+     "a": "enjoy",
+     "d": [
+      "are enjoying",
+      "enjoys"
+     ],
+     "why": "ps_time"
+    },
+    {
+     "id": "p16-13",
+     "q": "We always enjoy our time at the garden because it ___ peaceful and beautiful.",
+     "v": "be",
+     "a": "is",
+     "d": [
+      "are",
+      "be"
+     ],
+     "why": "ps_be"
+    }
+   ]
+  },
+  {
+   "id": "p26",
+   "page": 26,
+   "title": "If conditional: Type 0",
+   "dir": "A. Correct the verbs between brackets. B. Answer the questions.",
+   "learn": {
+    "page": 26,
+    "head": "If Conditional: Type 0",
+    "lines": [
+     "Use: for general truths and scientific facts.",
+     "Form: If + present simple, present simple. Ex.: If you heat water, it boils.",
+     "If the sentence starts with the result clause, don't add a comma between the two clauses."
+    ],
+    "pic": "if0"
+   },
+   "items": [
+    {
+     "id": "p26-A1",
+     "q": "If you ___ fire, it ___ you.",
+     "v": "touch / burn",
+     "a": "touch … burns",
+     "d": [
+      "touches … burns",
+      "touch … burn"
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-A2",
+     "q": "If you ___ red and blue, you ___ purple.",
+     "v": "mix / get",
+     "a": "mix … get",
+     "d": [
+      "mixes … get",
+      "mix … gets"
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-A3",
+     "q": "If it ___, the grass ___ wet.",
+     "v": "rain / get",
+     "a": "rains … gets",
+     "d": [
+      "rain … gets",
+      "rains … get"
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-A4",
+     "q": "If the sun ___, it ___ dark.",
+     "v": "set / become",
+     "a": "sets … becomes",
+     "d": [
+      "set … becomes",
+      "sets … become"
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-B1",
+     "q": "What happens if you drink too much water?",
+     "v": "",
+     "a": "If you drink too much water, you feel sick.",
+     "d": [
+      "If you drink too much water, you feels sick.",
+      "If you drinks too much water, you feel sick."
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-B2",
+     "q": "What happens if you drop a glass vase?",
+     "v": "",
+     "a": "If you drop a glass vase, it breaks.",
+     "d": [
+      "If you drop a glass vase, it break.",
+      "If you drops a glass vase, it breaks."
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-B3",
+     "q": "What happens if you don't water plants?",
+     "v": "",
+     "a": "If you don't water plants, they die.",
+     "d": [
+      "If you don't water plants, they dies.",
+      "If you doesn't water plants, they die."
+     ],
+     "why": "c0"
+    },
+    {
+     "id": "p26-B4",
+     "q": "What happens if you heat ice?",
+     "v": "",
+     "a": "If you heat ice, it melts.",
+     "d": [
+      "If you heat ice, it melt.",
+      "If you heats ice, it melts."
+     ],
+     "why": "c0"
+    }
+   ]
+  },
+  {
+   "id": "p27",
+   "page": 27,
+   "title": "If conditional: Type 1",
+   "dir": "A. Correct the verbs between brackets. B. Join each pair of clauses to form a first conditional sentence.",
+   "learn": {
+    "page": 27,
+    "head": "If Conditional: Type 1",
+    "lines": [
+     "Use: something that can happen in the future if a certain condition is met.",
+     "Form: If + present simple, will + infinitive. Ex.: If you study hard, you will pass the exam.",
+     "If the sentence starts with the result clause, don't add a comma. Ex.: You will pass the exam if you study hard."
+    ],
+    "pic": "if1"
+   },
+   "items": [
+    {
+     "id": "p27-A1",
+     "q": "If I ___, I ___ the test.",
+     "v": "study / pass",
+     "a": "study … will pass",
+     "d": [
+      "will study … will pass",
+      "studies … will pass"
+     ],
+     "why": "c1"
+    },
+    {
+     "id": "p27-A2",
+     "q": "You ___ sick if you ___ too much.",
+     "v": "feel / eat",
+     "a": "will feel … eat",
+     "d": [
+      "will feel … will eat",
+      "will feel … eats"
+     ],
+     "why": "c1"
+    },
+    {
+     "id": "p27-A3",
+     "q": "If she ___ me, I ___.",
+     "v": "call / answer",
+     "a": "calls … will answer",
+     "d": [
+      "will call … will answer",
+      "call … will answer"
+     ],
+     "why": "c1"
+    },
+    {
+     "id": "p27-A4",
+     "q": "They ___ the lions if they ___ to the zoo.",
+     "v": "see / go",
+     "a": "will see … go",
+     "d": [
+      "will see … will go",
+      "will see … goes"
+     ],
+     "why": "c1"
+    },
+    {
+     "id": "p27-A5",
+     "q": "If you ___ the text, you ___.",
+     "v": "read / understand",
+     "a": "read … will understand",
+     "d": [
+      "will read … will understand",
+      "reads … will understand"
+     ],
+     "why": "c1"
+    },
+    {
+     "id": "p27-B1",
+     "q": "Join: You work nonstop. You eventually burn out. (if)",
+     "v": "",
+     "a": "If you work nonstop, you will eventually burn out.",
+     "d": [
+      "You will eventually burn out, if you work nonstop.",
+      "If you will work nonstop, you eventually burn out."
+     ],
+     "why": "c1_comma"
+    },
+    {
+     "id": "p27-B2",
+     "q": "Join: He hurries. He catches the train. (if)",
+     "v": "",
+     "a": "If he hurries, he will catch the train.",
+     "d": [
+      "He will catch the train, if he hurries.",
+      "If he will hurry, he catches the train."
+     ],
+     "why": "c1_comma"
+    },
+    {
+     "id": "p27-B3",
+     "q": "Join: They forget their lunch. They buy food at school. (if)",
+     "v": "",
+     "a": "If they forget their lunch, they will buy food at school.",
+     "d": [
+      "They will buy food at school, if they forget their lunch.",
+      "If they will forget their lunch, they buy food at school."
+     ],
+     "why": "c1_comma"
+    },
+    {
+     "id": "p27-B4",
+     "q": "Join: She goes to work late. She doesn't attend the meeting. (if)",
+     "v": "",
+     "a": "If she goes to work late, she won't attend the meeting.",
+     "d": [
+      "She won't attend the meeting, if she goes to work late.",
+      "If she will go to work late, she doesn't attend the meeting."
+     ],
+     "why": "c1_comma"
+    }
+   ]
+  },
+  {
+   "id": "p28",
+   "page": 28,
+   "title": "Stative verbs",
+   "dir": "A. Choose the correct sentence. B. Correct the mistakes.",
+   "learn": {
+    "page": 28,
+    "head": "Lesson 1: Stative Verbs",
+    "lines": [
+     "Dynamic verbs show activities. Ex.: drive, watch, listen.",
+     "Stative verbs express a state, not an action: thoughts, emotions, ownership, beliefs and senses. Ex.: think, love, dislike, have, own, be, believe, see, hear, smell.",
+     "These verbs are not used in the continuous form.",
+     "Some stative verbs become dynamic when the meaning changes. Ex.: I think it's a good idea. (opinion) What are you thinking about? (action)",
+     "Ex.: Sam is a very foolish person. (his character) Sam is being foolish. (how he is acting)"
+    ],
+    "pic": "stative"
+   },
+   "items": [
+    {
+     "id": "p28-A1",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "The flower smells nice.",
+     "d": [
+      "The flower is smelling nice."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "img"
+     ]
+    },
+    {
+     "id": "p28-A2",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "I am having pizza for dinner tonight.",
+     "d": [
+      "I have pizza for dinner tonight."
+     ],
+     "why": "st_dyn",
+     "keep": true,
+     "keyFrag": [
+      "img"
+     ]
+    },
+    {
+     "id": "p28-A3",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "I see a bird on the tree branch.",
+     "d": [
+      "I am seeing a bird on the tree branch."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "img"
+     ]
+    },
+    {
+     "id": "p28-A4",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "I believe that fresh juice is better than fizzy drinks.",
+     "d": [
+      "I am believing that fresh juice is better than fizzy drinks."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "img"
+     ]
+    },
+    {
+     "id": "p28-A5",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "They are seeing their best friends at the pizza shop after work.",
+     "d": [
+      "They see their best friends at the pizza shop after work."
+     ],
+     "why": "st_dyn",
+     "keep": true,
+     "keyFrag": [
+      "img"
+     ]
+    },
+    {
+     "id": "p28-B1",
+     "q": "Tammy often helps people. Choose the correct next sentence.",
+     "v": "",
+     "a": "I think she's a good person.",
+     "d": [
+      "I'm thinking she's a good person."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "I think"
+     ]
+    },
+    {
+     "id": "p28-B2",
+     "q": "Choose the correct sentences.",
+     "v": "",
+     "a": "Mum always makes excellent mushroom soup. It tastes amazing.",
+     "d": [
+      "Mum is always making excellent mushroom soup. It's tasting amazing."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "always makes",
+      "It tastes"
+     ]
+    },
+    {
+     "id": "p28-B3",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "I seriously doubt it.",
+     "d": [
+      "I was seriously doubting it."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "I seriously doubt it."
+     ]
+    },
+    {
+     "id": "p28-B4",
+     "tf": true,
+     "q": "This sentence is correct: \"I didn't mean to hurt you.\"",
+     "v": "",
+     "a": "True",
+     "d": [
+      "False"
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "No mistake"
+     ]
+    },
+    {
+     "id": "p28-B5",
+     "q": "Choose the correct sentence.",
+     "v": "",
+     "a": "I love this new book you gave me.",
+     "d": [
+      "I'm loving this new book you gave me."
+     ],
+     "why": "st",
+     "keep": true,
+     "keyFrag": [
+      "I love"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p29",
+   "page": 29,
+   "title": "Stative or dynamic?",
+   "dir": "C. Complete the gaps (see, think, be, appear, have). D. Correct the verbs between brackets.",
+   "learn": {
+    "page": 28,
+    "head": "Stative or dynamic?",
+    "lines": [
+     "Stative verbs are not used in the continuous form. Ex.: I think it's a good idea.",
+     "The same verb can be dynamic with a different meaning. Ex.: What are you thinking about?",
+     "Exercise C: each verb is used once as a stative verb and once as a dynamic verb. (Book p. 29)"
+    ],
+    "pic": "stative"
+   },
+   "items": [
+    {
+     "id": "p29-C1",
+     "q": "We ___ dinner at the moment, so I'll phone you back in half an hour if that's OK.",
+     "v": "have",
+     "a": "are having",
+     "d": [
+      "have",
+      "is having"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-C2",
+     "q": "I'm quite happy for your children to come to the party because I know they ___ very well-behaved.",
+     "v": "be",
+     "a": "are",
+     "d": [
+      "is",
+      "be"
+     ],
+     "why": "ps_be"
+    },
+    {
+     "id": "p29-C3",
+     "q": "Sally White ___ in a new production of Oliver in London's West End this weekend.",
+     "v": "appear",
+     "a": "is appearing",
+     "d": [
+      "are appearing",
+      "is appear"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-C4",
+     "q": "They don't really like living here. They ___ of moving.",
+     "v": "think",
+     "a": "are thinking",
+     "d": [
+      "is thinking",
+      "are think"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-C5",
+     "q": "___ you ___ that man over there with the grey suit on? He's my brother.",
+     "v": "see",
+     "a": "Do … see",
+     "d": [
+      "Are … seeing",
+      "Does … see"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-C6",
+     "q": "I can't go out tonight because I ___ my cousin.",
+     "v": "see",
+     "a": "am seeing",
+     "d": [
+      "see",
+      "is seeing"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-C7",
+     "q": "I'll do it if I can, but I ___ not ___ much time today.",
+     "v": "have",
+     "a": "do … have",
+     "d": [
+      "am … having",
+      "does … have"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-C8",
+     "q": "I ___ today's lesson is easy.",
+     "v": "think",
+     "a": "think",
+     "d": [
+      "am thinking",
+      "thinks"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-C9",
+     "q": "I haven't spoken to him much, but he ___ to be a very nice man.",
+     "v": "appear",
+     "a": "appears",
+     "d": [
+      "is appearing",
+      "appear"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-C10",
+     "q": "I don't know why he ___ silly today?!",
+     "v": "be",
+     "a": "is being",
+     "d": [
+      "are being",
+      "is be"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-D1",
+     "q": "Every afternoon, I ___ my friend Sam.",
+     "v": "visit",
+     "a": "visit",
+     "d": [
+      "am visiting",
+      "visits"
+     ],
+     "why": "ps_time"
+    },
+    {
+     "id": "p29-D2",
+     "q": "He ___ a film now.",
+     "v": "watch",
+     "a": "is watching",
+     "d": [
+      "watches",
+      "are watching"
+     ],
+     "why": "pc_time"
+    },
+    {
+     "id": "p29-D3",
+     "q": "He is watching a film now, but he ___ it very much.",
+     "v": "not like",
+     "a": "doesn't like",
+     "d": [
+      "isn't liking",
+      "don't like"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-D4",
+     "q": "At the moment, we ___.",
+     "v": "talk",
+     "a": "are talking",
+     "d": [
+      "talk",
+      "is talking"
+     ],
+     "why": "pc_time"
+    },
+    {
+     "id": "p29-D5",
+     "q": "At the moment, we are talking, and his sister ___ in the garden.",
+     "v": "play",
+     "a": "is playing",
+     "d": [
+      "are playing",
+      "is play"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p29-D6",
+     "q": "Sam ___ about changing the channel.",
+     "v": "think",
+     "a": "is thinking",
+     "d": [
+      "are thinking",
+      "is think"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-D7",
+     "q": "Sam is thinking about changing the channel because he ___ action films.",
+     "v": "prefer",
+     "a": "prefers",
+     "d": [
+      "is preferring",
+      "prefer"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-D8",
+     "q": "Meanwhile, his mother ___ the soup.",
+     "v": "taste",
+     "a": "is tasting",
+     "d": [
+      "are tasting",
+      "is taste"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p29-D9",
+     "q": "His mother is tasting the soup, to see if it ___ more salt.",
+     "v": "need",
+     "a": "needs",
+     "d": [
+      "is needing",
+      "need"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p29-D10",
+     "q": "We ___ for lunch.",
+     "v": "wait",
+     "a": "are waiting",
+     "d": [
+      "is waiting",
+      "are wait"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p29-D11",
+     "q": "We are waiting for lunch because we ___ hungry.",
+     "v": "feel",
+     "a": "feel",
+     "d": [
+      "feels",
+      "feeling"
+     ],
+     "why": "ps_pl"
+    },
+    {
+     "id": "p29-D12",
+     "q": "We always ___ good time together.",
+     "v": "have",
+     "a": "have",
+     "d": [
+      "are having",
+      "has"
+     ],
+     "why": "ps_time"
+    }
+   ]
+  },
+  {
+   "id": "p30",
+   "page": 30,
+   "title": "Stative verbs: homework page",
+   "dir": "A. Fill in the gaps using the verbs in the correct form. B. Correct the verbs between brackets.",
+   "learn": {
+    "page": 28,
+    "head": "Stative verbs (homework page)",
+    "lines": [
+     "Stative verbs are not used in the continuous form. Ex.: The flower smells nice.",
+     "Some stative verbs become dynamic when the meaning changes. Ex.: I am having pizza for dinner tonight.",
+     "Verbs on this page: have, think, taste, see, look, seem, feel, smell, be, consider. (Book p. 30)"
+    ],
+    "pic": "stative"
+   },
+   "items": [
+    {
+     "id": "p30-A1",
+     "q": "I ___ a shower right now, so I can't answer the phone.",
+     "v": "have",
+     "a": "am having",
+     "d": [
+      "have",
+      "is having"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p30-A2",
+     "q": "This cake ___ delicious! Did you bake it yourself?",
+     "v": "taste",
+     "a": "tastes",
+     "d": [
+      "is tasting",
+      "taste"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-A3",
+     "q": "I ___ we should leave now before the traffic gets worse.",
+     "v": "think",
+     "a": "think",
+     "d": [
+      "am thinking",
+      "thinks"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-A4",
+     "q": "She ___ like a professional ballerina in that dress.",
+     "v": "look",
+     "a": "looks",
+     "d": [
+      "look",
+      "looking"
+     ],
+     "why": "ps_s"
+    },
+    {
+     "id": "p30-A5",
+     "q": "The manager ___ a refund for that torn dress.",
+     "v": "consider",
+     "a": "is considering",
+     "d": [
+      "are considering",
+      "is consider"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p30-A6",
+     "q": "He ___ tired today, maybe he didn't sleep well.",
+     "v": "seem",
+     "a": "seems",
+     "d": [
+      "is seeming",
+      "seem"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-A7",
+     "q": "I ___ excited whenever I play my favourite song.",
+     "v": "feel",
+     "a": "feel",
+     "d": [
+      "am feeling",
+      "feels"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-A8",
+     "q": "He ___ very rude sometimes.",
+     "v": "be",
+     "a": "is",
+     "d": [
+      "are",
+      "be"
+     ],
+     "why": "ps_be"
+    },
+    {
+     "id": "p30-A9",
+     "q": "I ___ your point, but I still don't agree.",
+     "v": "see",
+     "a": "see",
+     "d": [
+      "am seeing",
+      "sees"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-A10",
+     "q": "Why ___ you ___ the soup? Is something wrong with it?",
+     "v": "smell",
+     "a": "are … smelling",
+     "d": [
+      "is … smelling",
+      "are … smell"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p30-B1",
+     "q": "Every Saturday morning, my cousin and I ___ to the park.",
+     "v": "go",
+     "a": "go",
+     "d": [
+      "are going",
+      "goes"
+     ],
+     "why": "ps_time"
+    },
+    {
+     "id": "p30-B2",
+     "q": "Right now, he ___ his bike.",
+     "v": "ride",
+     "a": "is riding",
+     "d": [
+      "rides",
+      "are riding"
+     ],
+     "why": "pc_time"
+    },
+    {
+     "id": "p30-B3",
+     "q": "Right now, he is riding his bike, but I ___ to join him because I am tired.",
+     "v": "not want",
+     "a": "don't want",
+     "d": [
+      "am not wanting",
+      "doesn't want"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-B4",
+     "q": "We ___ under a tree at the moment.",
+     "v": "sit",
+     "a": "are sitting",
+     "d": [
+      "sit",
+      "is sitting"
+     ],
+     "why": "pc_time"
+    },
+    {
+     "id": "p30-B5",
+     "q": "We are sitting under a tree at the moment, and our dog ___ around happily.",
+     "v": "run",
+     "a": "is running",
+     "d": [
+      "are running",
+      "is run"
+     ],
+     "why": "pc"
+    },
+    {
+     "id": "p30-B6",
+     "q": "My cousin ___ that exercise is important.",
+     "v": "believe",
+     "a": "believes",
+     "d": [
+      "is believing",
+      "believe"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-B7",
+     "q": "My cousin believes that exercise is important, and he ___ more practice for the race.",
+     "v": "need",
+     "a": "needs",
+     "d": [
+      "is needing",
+      "need"
+     ],
+     "why": "st"
+    },
+    {
+     "id": "p30-B8",
+     "q": "Meanwhile, I ___ the flowers.",
+     "v": "smell",
+     "a": "am smelling",
+     "d": [
+      "is smelling",
+      "am smell"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p30-B9",
+     "q": "Meanwhile, I am smelling the flowers and ___ about our next holiday.",
+     "v": "think",
+     "a": "thinking",
+     "d": [
+      "think",
+      "thinks"
+     ],
+     "why": "st_dyn"
+    },
+    {
+     "id": "p30-B10",
+     "q": "We always ___ our weekends together.",
+     "v": "enjoy",
+     "a": "enjoy",
+     "d": [
+      "are enjoying",
+      "enjoys"
+     ],
+     "why": "ps_time"
+    },
+    {
+     "id": "p30-B11",
+     "q": "We always enjoy our weekends together, and today we ___ a wonderful time.",
+     "v": "have",
+     "a": "are having",
+     "d": [
+      "have",
+      "has"
+     ],
+     "why": "st_dyn"
+    }
+   ]
+  },
+  {
+   "id": "p31",
+   "page": 31,
+   "title": "Will and be going to",
+   "dir": "A. Fill in the blanks using will or be going to.",
+   "learn": {
+    "page": 31,
+    "head": "Lesson 2: Will & Be Going To",
+    "lines": [
+     "Will + inf.: quick (spontaneous) decisions. Ex.: It's raining! I will get an umbrella.",
+     "Will + inf.: promises, offers or threats. Ex.: I will call you when I arrive.",
+     "Will + inf.: predictions and formal statements. Ex.: I'm sure you will love this movie.",
+     "Be going to + inf.: planned future actions. Ex.: I'm going to study medicine at university.",
+     "Be going to + inf.: predictions based on evidence. Ex.: Look at those clouds! It's going to rain."
+    ],
+    "pic": "future"
+   },
+   "items": [
+    {
+     "id": "p31-1",
+     "q": "I think it ___ rain tomorrow.",
+     "v": "",
+     "a": "will",
+     "d": [
+      "is going to",
+      "are going to"
+     ],
+     "why": "will"
+    },
+    {
+     "id": "p31-2",
+     "q": "Look at those clouds! It ___ rain soon.",
+     "v": "",
+     "a": "is going to",
+     "d": [
+      "will",
+      "are going to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-3",
+     "q": "She's tired. She ___ go to bed early tonight.",
+     "v": "",
+     "a": "is going to",
+     "d": [
+      "will",
+      "are going to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-4",
+     "q": "They ___ visit their cousins next weekend.",
+     "v": "",
+     "a": "are going to",
+     "d": [
+      "will",
+      "is going to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-5",
+     "q": "I promise I ___ call you later.",
+     "v": "",
+     "a": "will",
+     "d": [
+      "am going to",
+      "is going to"
+     ],
+     "why": "will"
+    },
+    {
+     "id": "p31-6",
+     "q": "We ___ buy a new car. We've already picked one.",
+     "v": "",
+     "a": "are going to",
+     "d": [
+      "will",
+      "is going to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-7",
+     "q": "Be careful! You ___ hurt yourself!",
+     "v": "",
+     "a": "are going to",
+     "d": [
+      "will",
+      "is going to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-8",
+     "q": "I ___ help you with that box.",
+     "v": "",
+     "a": "will",
+     "d": [
+      "am going to",
+      "is going to"
+     ],
+     "why": "will"
+    },
+    {
+     "id": "p31-9",
+     "q": "He ___ start his new job on Monday.",
+     "v": "",
+     "a": "is going to",
+     "d": [
+      "will",
+      "are going to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-10",
+     "q": "I'm sure they ___ love this movie.",
+     "v": "",
+     "a": "will",
+     "d": [
+      "are going to",
+      "is going to"
+     ],
+     "why": "will"
+    },
+    {
+     "id": "p31-11",
+     "q": "Are you ___ travel this summer?",
+     "v": "",
+     "a": "going to",
+     "d": [
+      "will",
+      "go to"
+     ],
+     "why": "gt"
+    },
+    {
+     "id": "p31-12",
+     "q": "It's very late. We ___ miss the bus!",
+     "v": "",
+     "a": "will",
+     "d": [
+      "are going to",
+      "is going to"
+     ],
+     "why": "will",
+     "parent": "The school's model answer says \"will\". The book's rule on p. 31 says a prediction based on evidence uses \"be going to\", and \"It's very late\" can be read as evidence. Ask the teacher which answer the test expects."
+    }
+   ]
+  }
+ ]
+}

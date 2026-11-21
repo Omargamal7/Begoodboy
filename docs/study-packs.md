@@ -6,6 +6,7 @@ Each HTML file contains its own code. The English fieldbooks and older assessmen
 
 - Jimmy · [Science Showdown](../gamal/science/packs/weekly-assessment-5-3-6-1.html) and [Number Lab](../gamal/mathematics/assessments/2026-11-14-assessment/jimmy-number-lab.html)
 - Murad · [Water Quest](../murad/science/packs/chapter-6-water-quest.html) and [Algebra Quest](../murad/mathematics/assessments/2026-11-14-assessment/murad-algebra-quest.html)
+- Murad · [Grammar Blocks — English A Level November test, grammar pages 10–31](../murad/english/assessments/2026-11-26-grammar-test/grammar-blocks.html) ([sources and answer key](provenance/murad/english/2026-11-21-grammar-blocks.md))
 
 ## Current complete English and German editions
 

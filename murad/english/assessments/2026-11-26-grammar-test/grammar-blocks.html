@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Murad's Grammar Blocks</title>
+<style>
+/* One calm column. Same header, same buttons, same feedback place on every screen. Blocks are the frame and the reward only. */
+:root{
+  --bg:#eef1ea; --card:#fbfbf7; --ink:#22302a; --soft:#4f5d55; --line:#b8c2b5;
+  --accent:#3f6b2b; --accent-ink:#ffffff; --accent-soft:#dde9d4;
+  --ok:#2f6420; --ok-soft:#e1efd8; --no:#8a3f22; --no-soft:#f5e3da;
+  --b1:#7a9a4e; --b2:#8b6a4a; --b3:#8c918c; --b4:#3f8f88; --empty:#dfe3db;
+  --focus:#1d4ed8;
+  --f:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#161c18; --card:#222a24; --ink:#e7ede5; --soft:#b1bdb2; --line:#425045;
+  --accent:#a3cf82; --accent-ink:#14200e; --accent-soft:#2d3b27;
+  --ok:#a3cf82; --ok-soft:#24361d; --no:#eeb092; --no-soft:#41291f;
+  --b1:#6d8c45; --b2:#7d5f42; --b3:#737872; --b4:#4aa59d; --empty:#2c352e;
+  --focus:#93b4ff; color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);font-size:19px;line-height:1.55;padding:16px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1,h2,h3{line-height:1.25;margin:0}
+h1{font-size:1.5rem} h2{font-size:1.25rem} h3{font-size:1.1rem}
+p{margin:0}
+.muted{color:var(--soft)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px}
+header.top{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.btn{min-height:48px;padding:10px 16px;border-radius:10px;border:2px solid var(--accent);background:var(--accent);color:var(--accent-ink);font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.small{min-height:44px;padding:8px 12px;font-size:.95rem}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.row.end{justify-content:flex-end}
+/* build strip: one block per finished part */
+.build{display:grid;grid-template-columns:repeat(12,1fr);gap:4px}
+.build span{height:22px;border-radius:3px;background:var(--empty);border:1px solid var(--line)}
+.build span.on{border-color:transparent}
+.build span.on:nth-child(4n+1){background:var(--b1)} .build span.on:nth-child(4n+2){background:var(--b2)}
+.build span.on:nth-child(4n+3){background:var(--b3)} .build span.on:nth-child(4n){background:var(--b4)}
+/* part list */
+.parts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.parts button{width:100%;text-align:left;min-height:56px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);cursor:pointer;display:flex;gap:12px;align-items:center}
+.parts .num{flex:none;width:40px;height:40px;border-radius:6px;display:grid;place-items:center;font-weight:800;background:var(--empty)}
+.parts .done .num{background:var(--accent);color:var(--accent-ink)}
+.parts .t{display:flex;flex-direction:column}
+.parts small{color:var(--soft);font-size:.9rem}
+/* progress */
+.prog{height:10px;border-radius:6px;background:var(--empty);overflow:hidden}
+.prog i{display:block;height:100%;background:var(--accent)}
+/* rule card */
+.rule ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.pic{display:flex;flex-wrap:wrap;gap:12px}
+.pic figure{margin:0;flex:1 1 220px;border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:8px}
+.pic figcaption{font-size:.95rem;color:var(--soft)}
+.blocks{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.blk{padding:6px 10px;border-radius:4px;font-weight:700;border:2px solid var(--line);background:var(--accent-soft)}
+.blk.v{background:var(--ok-soft)}
+.blk.plain{background:transparent;border-style:dashed}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center;font-size:.8rem}
+.days span{border:1px solid var(--line);border-radius:4px;padding:4px 0}
+.days span b{display:block;font-size:1rem}
+.line{position:relative;height:44px;border-bottom:3px solid var(--soft);margin:0 8px}
+.line .now{position:absolute;left:50%;bottom:-3px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;font-weight:800}
+.line .now i{display:block;width:4px;height:26px;background:var(--accent)}
+.line .l,.line .r{position:absolute;bottom:4px;font-size:.85rem;color:var(--soft)}
+.line .l{left:0}.line .r{right:0}
+/* question */
+.dir{font-size:.95rem;color:var(--soft)}
+.stem{font-size:1.2rem;font-weight:600}
+.blank{display:inline-block;min-width:3.5em;border-bottom:2px solid var(--ink);margin:0 2px}
+.hint{font-weight:700}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:10px;align-items:stretch}
+.opt .choice{flex:1;text-align:left;min-height:52px;padding:10px 14px;border-radius:10px;border:2px solid var(--line);background:var(--card);cursor:pointer;font-size:1.1rem}
+.opt .choice[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.opt .choice .mk{display:inline-block;width:1.6em;font-weight:800}
+.say{flex:none;min-width:48px;min-height:48px;border-radius:10px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:.85rem;padding:4px 8px}
+.say.reading,.reading{outline:3px solid var(--focus);outline-offset:2px}
+.fb{border-radius:10px;padding:12px 14px;border:2px solid var(--line);min-height:56px}
+.fb.ok{background:var(--ok-soft);border-color:var(--ok)}
+.fb.no{background:var(--no-soft);border-color:var(--no)}
+.fb .head{font-weight:800}
+.fb.ok .head{color:var(--ok)} .fb.no .head{color:var(--no)}
+.parent{border:2px dashed var(--line);border-radius:10px;padding:12px}
+/* review */
+.rev{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.rev li{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.95rem}
+.rev .r{font-weight:800}
+.big{font-size:1.3rem;font-weight:800}
+.bar{padding:10px 12px;gap:8px}
+.buildrow{display:flex;align-items:center;gap:10px}
+.buildrow h2{font-size:1rem;white-space:nowrap}
+.buildrow .build{flex:1}
+.readbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.95rem}
+.readbar .btn.small{min-height:44px;padding:6px 10px}
+footer{font-size:.85rem;color:var(--soft)}
+@media (max-width:480px){body{font-size:18px;padding:12px 12px 32px}.build{gap:3px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Murad's Grammar Blocks</h1>
+      <p class="muted">November test, 26 November · Grammar book pages 10 to 31</p>
+    </div>
+    <div class="tools">
+      <button class="btn ghost small" id="theme" type="button">Dark colours</button>
+    </div>
+  </header>
+
+  <div class="card bar">
+    <div class="buildrow"><h2 id="buildhead">Build: 0 of 12</h2><div class="build" id="build" aria-hidden="true"></div></div>
+    <div class="readbar" aria-label="Read aloud settings"><span>Read aloud:</span>
+      <button class="btn ghost small" id="rate" type="button">Speed: normal</button>
+      <button class="btn ghost small" id="stop" type="button">Stop reading</button></div>
+  </div>
+
+  <main id="main" class="card"></main>
+
+  <footer id="foot"></footer>
+</div>
+
+<script type="application/json" id="data">{"meta":{"book":"murad/english/sources/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf","key":"murad/english/sources/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33.pdf","pdfOffset":4,"scope":"School revision list for the A Level November test on 26/11/2026, Grammar: Present Simple p. 10-13, Present Continuous p. 14-16, If Conditional Type 0 p. 26, Type 1 p. 27, Stative Verbs p. 28, Will + Be Going to p. 31"},"reasons":{"ps_s":"With a singular subject, add \"s\", \"es\" or \"ies\" to the verb. (Book p. 10)","ps_pl":"With a plural subject, \"I\" or \"you\", use the verb with no \"s\". (Book p. 10)","ps_be":"\"be\" in the present simple is am, is or are. (Book p. 10)","ps_have":"\"have\" in the present simple is have or has. (Book p. 10)","ps_time":"Time words like \"always\", \"usually\" and \"every\" go with the present simple. (Book p. 10)","neg_does":"With a singular subject, use does + not + verb, with no \"s\" on the verb. (Book p. 12)","neg_do":"With a plural subject, \"I\" or \"you\", use do + not + verb. (Book p. 12)","neg_be":"\"be\" does not need a helping verb: isn't, aren't, I'm not. (Book p. 12)","q_does":"With a singular subject, use does + subject + verb, with no \"s\" on the verb. (Book p. 13)","q_do":"With a plural subject, \"I\" or \"you\", use do + subject + verb. (Book p. 13)","q_be":"\"be\" does not need a helping verb: Am I? Is he? Are they? (Book p. 13)","pc":"The present continuous is am, is or are + verb + ing. (Book p. 14)","pc_time":"Time words like \"now\", \"at the moment\" and \"this week\" go with the present continuous. (Book p. 14)","c0":"Type 0 is If + present simple, present simple. (Book p. 26)","c1":"Type 1 is If + present simple, will + infinitive. (Book p. 27)","c1_comma":"When the sentence starts with the result clause, do not add a comma. (Book p. 27)","st":"Stative verbs such as think, love, have, be, believe, see, hear and smell are not used in the continuous form. (Book p. 28)","st_dyn":"Some stative verbs become dynamic verbs when the meaning changes, for example \"What are you thinking about?\" (Book p. 28)","will":"Use will for quick decisions, promises, offers and predictions. (Book p. 31)","gt":"Use be going to for planned actions and for predictions based on what you can see. (Book p. 31)"},"parts":[{"id":"p11","page":11,"title":"Present simple","dir":"Correct the verbs between brackets.","learn":{"page":10,"head":"Present Simple Tense","lines":["Use: habits, routines, facts and timetables.","Add \"s\", \"es\" or \"ies\" to the verb with a singular subject. Ex.: He plays tennis every week.","Use the verb with no \"s\" with a plural subject, \"I\" and \"You\". Ex.: They work hard daily.","Irregular verbs: be is am, is or are. have is have or has.","Time expressions: always, usually, often, sometimes, rarely, never, daily, every day."],"pic":"simple"},"items":[{"id":"p11-1","q":"My brother always ___ to school by bus.","v":"go","a":"goes","d":["go","going"],"why":"ps_s"},{"id":"p11-2","q":"Sarah ___ currently a grade six student.","v":"be","a":"is","d":["are","be"],"why":"ps_be"},{"id":"p11-3","q":"The sun ___ in the east.","v":"rise","a":"rises","d":["rise","rising"],"why":"ps_s"},{"id":"p11-4","q":"Scientists always ___ how volcanoes behave.","v":"study","a":"study","d":["studies","studying"],"why":"ps_pl"},{"id":"p11-5","q":"Lava ___ from the volcano during eruptions.","v":"flow","a":"flows","d":["flow","flowing"],"why":"ps_s"},{"id":"p11-6","q":"He ___ a new TV set.","v":"have","a":"has","d":["have","having"],"why":"ps_have"},{"id":"p11-7","q":"She ___ the dishes early every morning.","v":"wash","a":"washes","d":["wash","washing"],"why":"ps_s"},{"id":"p11-8","q":"They ___ data from the volcano every day.","v":"collect","a":"collect","d":["collects","collecting"],"why":"ps_pl"},{"id":"p11-9","q":"A volcano usually ___ when pressure builds up inside.","v":"erupt","a":"erupts","d":["erupt","erupting"],"why":"ps_s"},{"id":"p11-10","q":"My teacher often ___ much work to do.","v":"have","a":"has","d":["have","having"],"why":"ps_have"},{"id":"p11-11","q":"Earth ___ around the sun.","v":"move","a":"moves","d":["move","moving"],"why":"ps_s"},{"id":"p11-12","q":"He rarely ___ his car himself.","v":"fix","a":"fixes","d":["fix","fixing"],"why":"ps_s"},{"id":"p11-13","q":"Water ___ at 100 degrees Celsius.","v":"boil","a":"boils","d":["boil","boiling"],"why":"ps_s"},{"id":"p11-14","q":"My cousins occasionally ___ abroad.","v":"travel","a":"travel","d":["travels","travelling"],"why":"ps_pl"},{"id":"p11-15","q":"The students sometimes ___ reports about natural disasters.","v":"write","a":"write","d":["writes","writing"],"why":"ps_pl"}]},{"id":"p12","page":12,"title":"Present simple: negative","dir":"Correct the verbs between brackets.","learn":{"page":12,"head":"Negative Form","lines":["do + not + verb (inf.) with a plural subject, I and you. Ex.: I don't like chocolate.","does + not + verb (inf.) with a singular subject. Ex.: She doesn't work on Fridays.","be does not need a helping verb. Ex.: She isn't responsible for doing these tasks."],"pic":"neg"},"items":[{"id":"p12-1","q":"My sister ___ to work by bus.","v":"usually/not/go","a":"doesn't usually go","d":["don't usually go","doesn't usually goes"],"why":"neg_does"},{"id":"p12-2","q":"Sam ___ a grade six student this year.","v":"not/be","a":"isn't","d":["doesn't be","aren't"],"why":"neg_be"},{"id":"p12-3","q":"The sun ___ from the west.","v":"not/rise","a":"doesn't rise","d":["don't rise","doesn't rises"],"why":"neg_does"},{"id":"p12-4","q":"Henry ___ a task to do today.","v":"not/have","a":"doesn't have","d":["don't have","doesn't has"],"why":"neg_does"},{"id":"p12-5","q":"She ___ the dishes every day.","v":"not/wash","a":"doesn't wash","d":["don't wash","doesn't washes"],"why":"neg_does"},{"id":"p12-6","q":"The shops ___ on Sundays.","v":"not/open","a":"don't open","d":["doesn't open","don't opens"],"why":"neg_do"},{"id":"p12-7","q":"My mother ___ much work to do.","v":"not/have","a":"doesn't have","d":["don't have","doesn't has"],"why":"neg_does"},{"id":"p12-8","q":"The earth ___ around the moon.","v":"not/move","a":"doesn't move","d":["don't move","doesn't moves"],"why":"neg_does"},{"id":"p12-9","q":"We ___ football on Mondays.","v":"not/play","a":"don't play","d":["doesn't play","don't plays"],"why":"neg_do"},{"id":"p12-10","q":"My father ___ TV in the morning.","v":"not/watch","a":"doesn't watch","d":["don't watch","doesn't watches"],"why":"neg_does"},{"id":"p12-11","q":"Sarah ___ near the park.","v":"not/live","a":"doesn't live","d":["don't live","doesn't lives"],"why":"neg_does"},{"id":"p12-12","q":"The birds ___ at night.","v":"not/fly","a":"don't fly","d":["doesn't fly","don't flies"],"why":"neg_do"}]},{"id":"p13","page":13,"title":"Present simple: questions","dir":"Correct the verbs between brackets.","learn":{"page":13,"head":"Question Form","lines":["do + subject + verb (inf.) with a plural subject, I and you. Ex.: Do you like chocolate?","does + subject + verb (inf.) with a singular subject. Ex.: When does she work?","be does not need a helping verb. Ex.: Is he responsible for doing these tasks?"],"pic":"question"},"items":[{"id":"p13-1","q":"When ___ to work?","v":"Tammy/ go","a":"does Tammy go","d":["do Tammy go","does Tammy goes"],"why":"q_does"},{"id":"p13-2","q":"___ Sam a grade six student this year?","v":"be","a":"Is","d":["Does","Are"],"why":"q_be"},{"id":"p13-3","q":"Where ___?","v":"Lina/ live","a":"does Lina live","d":["do Lina live","does Lina lives"],"why":"q_does"},{"id":"p13-4","q":"___ basketball after school?","v":"John/ play","a":"Does John play","d":["Do John play","Does John plays"],"why":"q_does"},{"id":"p13-5","q":"Why ___ your parents ___ early every morning?","v":"leave","a":"do … leave","d":["does … leave","do … leaves"],"why":"q_do"},{"id":"p13-6","q":"___ the students ___ English on Fridays?","v":"study","a":"Do … study","d":["Does … study","Do … studies"],"why":"q_do"},{"id":"p13-7","q":"What time ___ the train ___?","v":"arrive","a":"does … arrive","d":["do … arrive","does … arrives"],"why":"q_does"},{"id":"p13-8","q":"___ reading mystery books?","v":"your sister/ like","a":"Does your sister like","d":["Do your sister like","Does your sister likes"],"why":"q_does"},{"id":"p13-9","q":"How often ___ they ___ their grandparents?","v":"visit","a":"do … visit","d":["does … visit","do … visits"],"why":"q_do"},{"id":"p13-10","q":"___ Mr. Smith ___ science this year?","v":"teach","a":"Does … teach","d":["Do … teach","Does … teaches"],"why":"q_does"},{"id":"p13-11","q":"When ___?","v":"the shops/ open","a":"do the shops open","d":["does the shops open","do the shops opens"],"why":"q_do"},{"id":"p13-12","q":"___ the baby ___ well every night?","v":"sleep","a":"Does … sleep","d":["Do … sleep","Does … sleeps"],"why":"q_does"}]},{"id":"p14","page":14,"title":"Present continuous","dir":"Correct the verbs between brackets.","learn":{"page":14,"head":"Present Continuous Tense","lines":["Use: an action happening at the moment of speaking, the near future, or a changing action.","Form: am, is or are + verb + ing. Ex.: He's working at the moment.","If the verb ends with \"e\", cross it out. Ex.: She is smiling at us.","If the verb ends with CVC, double the last letter. Ex.: They're planning to travel to Cairo this week.","Time expressions: now, at the moment, at the present time, this week or month."],"pic":"now"},"items":[{"id":"p14-1","q":"I ___ my homework right now.","v":"do","a":"am doing","d":["is doing","am do"],"why":"pc"},{"id":"p14-2","q":"They ___ basketball at the park at the moment.","v":"play","a":"are playing","d":["is playing","are play"],"why":"pc"},{"id":"p14-3","q":"She ___ for her math test this week.","v":"study","a":"is studying","d":["are studying","is study"],"why":"pc"},{"id":"p14-4","q":"We ___ dinner in the kitchen at the present time.","v":"make","a":"are making","d":["is making","are make"],"why":"pc"},{"id":"p14-5","q":"The baby ___ in her crib now.","v":"sleep","a":"is sleeping","d":["are sleeping","is sleep"],"why":"pc"},{"id":"p14-6","q":"Look! He ___ to the teacher.","v":"not/pay attention","a":"isn't paying attention","d":["aren't paying attention","isn't pay attention"],"why":"pc"},{"id":"p14-7","q":"Why ___ now?","v":"you/ cry","a":"are you crying","d":["is you crying","are you cry"],"why":"pc"},{"id":"p14-8","q":"My friends ___ over later tonight.","v":"come","a":"are coming","d":["is coming","are come"],"why":"pc"},{"id":"p14-9","q":"The students ___ in class at the moment.","v":"write","a":"are writing","d":["is writing","are write"],"why":"pc"},{"id":"p14-10","q":"It ___ outside now, so bring an umbrella.","v":"rain","a":"is raining","d":["are raining","is rain"],"why":"pc"}]},{"id":"p15","page":15,"title":"Present continuous: negative and questions","dir":"Correct the verbs between brackets.","learn":{"page":15,"head":"Negative Form and Question Form","lines":["Negative: am, is or are + not + verb + ing. Ex.: They aren't eating chocolate now.","Question: am, is or are + subject + verb + ing. Ex.: What is he doing at the moment?"],"pic":"now"},"items":[{"id":"p15-1","q":"___ you ___ the news right now?","v":"watch","a":"Are … watching","d":["Is … watching","Are … watch"],"why":"pc"},{"id":"p15-2","q":"She ___ her homework at the moment.","v":"not/do","a":"isn't doing","d":["aren't doing","isn't do"],"why":"pc"},{"id":"p15-3","q":"___ Adam ___ to Cairo next week?","v":"travel","a":"Is … travelling","d":["Are … travelling","Is … travel"],"why":"pc"},{"id":"p15-4","q":"My pronunciation ___ worse these days.","v":"not/get","a":"isn't getting","d":["aren't getting","isn't get"],"why":"pc"},{"id":"p15-5","q":"___ they ___ their cousins tomorrow evening?","v":"meet","a":"Are … meeting","d":["Is … meeting","Are … meet"],"why":"pc"},{"id":"p15-6","q":"We ___ at home this weekend.","v":"not/stay","a":"aren't staying","d":["isn't staying","aren't stay"],"why":"pc"},{"id":"p15-7","q":"___ the weather ___ warmer nowadays?","v":"become","a":"Is … becoming","d":["Are … becoming","Is … become"],"why":"pc"},{"id":"p15-8","q":"I ___ my phone right now.","v":"not/use","a":"am not using","d":["isn't using","am not use"],"why":"pc"},{"id":"p15-9","q":"___ she ___ the train to Alexandria tomorrow?","v":"take","a":"Is … taking","d":["Are … taking","Is … take"],"why":"pc"},{"id":"p15-10","q":"His grades ___ this term.","v":"not/improve","a":"aren't improving","d":["isn't improving","aren't improve"],"why":"pc"}]},{"id":"p16","page":16,"title":"At the Community Garden","dir":"Correct the verbs between brackets. (A text from the book: each question is one sentence of it.)","learn":{"page":10,"head":"Present simple or present continuous?","lines":["Present simple: habits and routines. Time words: always, usually, every day. (Book p. 10)","Present continuous: an action happening now. Time words: now, at the moment. (Book p. 14)"],"pic":"both"},"items":[{"id":"p16-1","q":"I usually ___ the community garden with my family on Saturdays.","v":"visit","a":"visit","d":["am visiting","visits"],"why":"ps_time"},{"id":"p16-2","q":"The gardener ___ flowers, waters the vegetables, and pulls out weeds.","v":"plant","a":"plants","d":["plant","planting"],"why":"ps_s"},{"id":"p16-3","q":"The gardener plants flowers, ___ the vegetables, and pulls out weeds.","v":"water","a":"waters","d":["water","watering"],"why":"ps_s"},{"id":"p16-4","q":"The gardener plants flowers, waters the vegetables, and ___ out weeds.","v":"pull","a":"pulls","d":["pull","pulling"],"why":"ps_s"},{"id":"p16-5","q":"My brother ___ taking care of the tomato plants.","v":"enjoy","a":"enjoys","d":["enjoy","enjoying"],"why":"ps_s"},{"id":"p16-6","q":"My parents ___ fresh herbs.","v":"grow","a":"grow","d":["grows","growing"],"why":"ps_pl"},{"id":"p16-7","q":"At the moment, we ___ new flowers near the entrance.","v":"plant","a":"are planting","d":["plant","is planting"],"why":"pc_time"},{"id":"p16-8","q":"At the moment, we are planting new flowers near the entrance. My brother ___ the vegetables.","v":"water","a":"is watering","d":["are watering","is water"],"why":"pc"},{"id":"p16-9","q":"My brother is watering the vegetables, and my mother ___ fresh mint.","v":"pick","a":"is picking","d":["are picking","is pick"],"why":"pc"},{"id":"p16-10","q":"My mother is picking fresh mint. The birds ___ in the trees.","v":"sing","a":"are singing","d":["is singing","are sing"],"why":"pc"},{"id":"p16-11","q":"The birds are singing in the trees, and everyone ___ happily together.","v":"work","a":"is working","d":["are working","is work"],"why":"pc"},{"id":"p16-12","q":"We always ___ our time at the garden.","v":"enjoy","a":"enjoy","d":["are enjoying","enjoys"],"why":"ps_time"},{"id":"p16-13","q":"We always enjoy our time at the garden because it ___ peaceful and beautiful.","v":"be","a":"is","d":["are","be"],"why":"ps_be"}]},{"id":"p26","page":26,"title":"If conditional: Type 0","dir":"A. Correct the verbs between brackets. B. Answer the questions.","learn":{"page":26,"head":"If Conditional: Type 0","lines":["Use: for general truths and scientific facts.","Form: If + present simple, present simple. Ex.: If you heat water, it boils.","If the sentence starts with the result clause, don't add a comma between the two clauses."],"pic":"if0"},"items":[{"id":"p26-A1","q":"If you ___ fire, it ___ you.","v":"touch / burn","a":"touch … burns","d":["touches … burns","touch … burn"],"why":"c0"},{"id":"p26-A2","q":"If you ___ red and blue, you ___ purple.","v":"mix / get","a":"mix … get","d":["mixes … get","mix … gets"],"why":"c0"},{"id":"p26-A3","q":"If it ___, the grass ___ wet.","v":"rain / get","a":"rains … gets","d":["rain … gets","rains … get"],"why":"c0"},{"id":"p26-A4","q":"If the sun ___, it ___ dark.","v":"set / become","a":"sets … becomes","d":["set … becomes","sets … become"],"why":"c0"},{"id":"p26-B1","q":"What happens if you drink too much water?","v":"","a":"If you drink too much water, you feel sick.","d":["If you drink too much water, you feels sick.","If you drinks too much water, you feel sick."],"why":"c0"},{"id":"p26-B2","q":"What happens if you drop a glass vase?","v":"","a":"If you drop a glass vase, it breaks.","d":["If you drop a glass vase, it break.","If you drops a glass vase, it breaks."],"why":"c0"},{"id":"p26-B3","q":"What happens if you don't water plants?","v":"","a":"If you don't water plants, they die.","d":["If you don't water plants, they dies.","If you doesn't water plants, they die."],"why":"c0"},{"id":"p26-B4","q":"What happens if you heat ice?","v":"","a":"If you heat ice, it melts.","d":["If you heat ice, it melt.","If you heats ice, it melts."],"why":"c0"}]},{"id":"p27","page":27,"title":"If conditional: Type 1","dir":"A. Correct the verbs between brackets. B. Join each pair of clauses to form a first conditional sentence.","learn":{"page":27,"head":"If Conditional: Type 1","lines":["Use: something that can happen in the future if a certain condition is met.","Form: If + present simple, will + infinitive. Ex.: If you study hard, you will pass the exam.","If the sentence starts with the result clause, don't add a comma. Ex.: You will pass the exam if you study hard."],"pic":"if1"},"items":[{"id":"p27-A1","q":"If I ___, I ___ the test.","v":"study / pass","a":"study … will pass","d":["will study … will pass","studies … will pass"],"why":"c1"},{"id":"p27-A2","q":"You ___ sick if you ___ too much.","v":"feel / eat","a":"will feel … eat","d":["will feel … will eat","will feel … eats"],"why":"c1"},{"id":"p27-A3","q":"If she ___ me, I ___.","v":"call / answer","a":"calls … will answer","d":["will call … will answer","call … will answer"],"why":"c1"},{"id":"p27-A4","q":"They ___ the lions if they ___ to the zoo.","v":"see / go","a":"will see … go","d":["will see … will go","will see … goes"],"why":"c1"},{"id":"p27-A5","q":"If you ___ the text, you ___.","v":"read / understand","a":"read … will understand","d":["will read … will understand","reads … will understand"],"why":"c1"},{"id":"p27-B1","q":"Join: You work nonstop. You eventually burn out. (if)","v":"","a":"If you work nonstop, you will eventually burn out.","d":["You will eventually burn out, if you work nonstop.","If you will work nonstop, you eventually burn out."],"why":"c1_comma"},{"id":"p27-B2","q":"Join: He hurries. He catches the train. (if)","v":"","a":"If he hurries, he will catch the train.","d":["He will catch the train, if he hurries.","If he will hurry, he catches the train."],"why":"c1_comma"},{"id":"p27-B3","q":"Join: They forget their lunch. They buy food at school. (if)","v":"","a":"If they forget their lunch, they will buy food at school.","d":["They will buy food at school, if they forget their lunch.","If they will forget their lunch, they buy food at school."],"why":"c1_comma"},{"id":"p27-B4","q":"Join: She goes to work late. She doesn't attend the meeting. (if)","v":"","a":"If she goes to work late, she won't attend the meeting.","d":["She won't attend the meeting, if she goes to work late.","If she will go to work late, she doesn't attend the meeting."],"why":"c1_comma"}]},{"id":"p28","page":28,"title":"Stative verbs","dir":"A. Choose the correct sentence. B. Correct the mistakes.","learn":{"page":28,"head":"Lesson 1: Stative Verbs","lines":["Dynamic verbs show activities. Ex.: drive, watch, listen.","Stative verbs express a state, not an action: thoughts, emotions, ownership, beliefs and senses. Ex.: think, love, dislike, have, own, be, believe, see, hear, smell.","These verbs are not used in the continuous form.","Some stative verbs become dynamic when the meaning changes. Ex.: I think it's a good idea. (opinion) What are you thinking about? (action)","Ex.: Sam is a very foolish person. (his character) Sam is being foolish. (how he is acting)"],"pic":"stative"},"items":[{"id":"p28-A1","q":"Choose the correct sentence.","v":"","a":"The flower smells nice.","d":["The flower is smelling nice."],"why":"st","keep":true,"keyFrag":["img"]},{"id":"p28-A2","q":"Choose the correct sentence.","v":"","a":"I am having pizza for dinner tonight.","d":["I have pizza for dinner tonight."],"why":"st_dyn","keep":true,"keyFrag":["img"]},{"id":"p28-A3","q":"Choose the correct sentence.","v":"","a":"I see a bird on the tree branch.","d":["I am seeing a bird on the tree branch."],"why":"st","keep":true,"keyFrag":["img"]},{"id":"p28-A4","q":"Choose the correct sentence.","v":"","a":"I believe that fresh juice is better than fizzy drinks.","d":["I am believing that fresh juice is better than fizzy drinks."],"why":"st","keep":true,"keyFrag":["img"]},{"id":"p28-A5","q":"Choose the correct sentence.","v":"","a":"They are seeing their best friends at the pizza shop after work.","d":["They see their best friends at the pizza shop after work."],"why":"st_dyn","keep":true,"keyFrag":["img"]},{"id":"p28-B1","q":"Tammy often helps people. Choose the correct next sentence.","v":"","a":"I think she's a good person.","d":["I'm thinking she's a good person."],"why":"st","keep":true,"keyFrag":["I think"]},{"id":"p28-B2","q":"Choose the correct sentences.","v":"","a":"Mum always makes excellent mushroom soup. It tastes amazing.","d":["Mum is always making excellent mushroom soup. It's tasting amazing."],"why":"st","keep":true,"keyFrag":["always makes","It tastes"]},{"id":"p28-B3","q":"Choose the correct sentence.","v":"","a":"I seriously doubt it.","d":["I was seriously doubting it."],"why":"st","keep":true,"keyFrag":["I seriously doubt it."]},{"id":"p28-B4","tf":true,"q":"This sentence is correct: \"I didn't mean to hurt you.\"","v":"","a":"True","d":["False"],"why":"st","keep":true,"keyFrag":["No mistake"]},{"id":"p28-B5","q":"Choose the correct sentence.","v":"","a":"I love this new book you gave me.","d":["I'm loving this new book you gave me."],"why":"st","keep":true,"keyFrag":["I love"]}]},{"id":"p29","page":29,"title":"Stative or dynamic?","dir":"C. Complete the gaps (see, think, be, appear, have). D. Correct the verbs between brackets.","learn":{"page":28,"head":"Stative or dynamic?","lines":["Stative verbs are not used in the continuous form. Ex.: I think it's a good idea.","The same verb can be dynamic with a different meaning. Ex.: What are you thinking about?","Exercise C: each verb is used once as a stative verb and once as a dynamic verb. (Book p. 29)"],"pic":"stative"},"items":[{"id":"p29-C1","q":"We ___ dinner at the moment, so I'll phone you back in half an hour if that's OK.","v":"have","a":"are having","d":["have","is having"],"why":"st_dyn"},{"id":"p29-C2","q":"I'm quite happy for your children to come to the party because I know they ___ very well-behaved.","v":"be","a":"are","d":["is","be"],"why":"ps_be"},{"id":"p29-C3","q":"Sally White ___ in a new production of Oliver in London's West End this weekend.","v":"appear","a":"is appearing","d":["are appearing","is appear"],"why":"st_dyn"},{"id":"p29-C4","q":"They don't really like living here. They ___ of moving.","v":"think","a":"are thinking","d":["is thinking","are think"],"why":"st_dyn"},{"id":"p29-C5","q":"___ you ___ that man over there with the grey suit on? He's my brother.","v":"see","a":"Do … see","d":["Are … seeing","Does … see"],"why":"st"},{"id":"p29-C6","q":"I can't go out tonight because I ___ my cousin.","v":"see","a":"am seeing","d":["see","is seeing"],"why":"st_dyn"},{"id":"p29-C7","q":"I'll do it if I can, but I ___ not ___ much time today.","v":"have","a":"do … have","d":["am … having","does … have"],"why":"st"},{"id":"p29-C8","q":"I ___ today's lesson is easy.","v":"think","a":"think","d":["am thinking","thinks"],"why":"st"},{"id":"p29-C9","q":"I haven't spoken to him much, but he ___ to be a very nice man.","v":"appear","a":"appears","d":["is appearing","appear"],"why":"st"},{"id":"p29-C10","q":"I don't know why he ___ silly today?!","v":"be","a":"is being","d":["are being","is be"],"why":"st_dyn"},{"id":"p29-D1","q":"Every afternoon, I ___ my friend Sam.","v":"visit","a":"visit","d":["am visiting","visits"],"why":"ps_time"},{"id":"p29-D2","q":"He ___ a film now.","v":"watch","a":"is watching","d":["watches","are watching"],"why":"pc_time"},{"id":"p29-D3","q":"He is watching a film now, but he ___ it very much.","v":"not like","a":"doesn't like","d":["isn't liking","don't like"],"why":"st"},{"id":"p29-D4","q":"At the moment, we ___.","v":"talk","a":"are talking","d":["talk","is talking"],"why":"pc_time"},{"id":"p29-D5","q":"At the moment, we are talking, and his sister ___ in the garden.","v":"play","a":"is playing","d":["are playing","is play"],"why":"pc"},{"id":"p29-D6","q":"Sam ___ about changing the channel.","v":"think","a":"is thinking","d":["are thinking","is think"],"why":"st_dyn"},{"id":"p29-D7","q":"Sam is thinking about changing the channel because he ___ action films.","v":"prefer","a":"prefers","d":["is preferring","prefer"],"why":"st"},{"id":"p29-D8","q":"Meanwhile, his mother ___ the soup.","v":"taste","a":"is tasting","d":["are tasting","is taste"],"why":"st_dyn"},{"id":"p29-D9","q":"His mother is tasting the soup, to see if it ___ more salt.","v":"need","a":"needs","d":["is needing","need"],"why":"st"},{"id":"p29-D10","q":"We ___ for lunch.","v":"wait","a":"are waiting","d":["is waiting","are wait"],"why":"pc"},{"id":"p29-D11","q":"We are waiting for lunch because we ___ hungry.","v":"feel","a":"feel","d":["feels","feeling"],"why":"ps_pl"},{"id":"p29-D12","q":"We always ___ good time together.","v":"have","a":"have","d":["are having","has"],"why":"ps_time"}]},{"id":"p30","page":30,"title":"Stative verbs: homework page","dir":"A. Fill in the gaps using the verbs in the correct form. B. Correct the verbs between brackets.","learn":{"page":28,"head":"Stative verbs (homework page)","lines":["Stative verbs are not used in the continuous form. Ex.: The flower smells nice.","Some stative verbs become dynamic when the meaning changes. Ex.: I am having pizza for dinner tonight.","Verbs on this page: have, think, taste, see, look, seem, feel, smell, be, consider. (Book p. 30)"],"pic":"stative"},"items":[{"id":"p30-A1","q":"I ___ a shower right now, so I can't answer the phone.","v":"have","a":"am having","d":["have","is having"],"why":"st_dyn"},{"id":"p30-A2","q":"This cake ___ delicious! Did you bake it yourself?","v":"taste","a":"tastes","d":["is tasting","taste"],"why":"st"},{"id":"p30-A3","q":"I ___ we should leave now before the traffic gets worse.","v":"think","a":"think","d":["am thinking","thinks"],"why":"st"},{"id":"p30-A4","q":"She ___ like a professional ballerina in that dress.","v":"look","a":"looks","d":["look","looking"],"why":"ps_s"},{"id":"p30-A5","q":"The manager ___ a refund for that torn dress.","v":"consider","a":"is considering","d":["are considering","is consider"],"why":"pc"},{"id":"p30-A6","q":"He ___ tired today, maybe he didn't sleep well.","v":"seem","a":"seems","d":["is seeming","seem"],"why":"st"},{"id":"p30-A7","q":"I ___ excited whenever I play my favourite song.","v":"feel","a":"feel","d":["am feeling","feels"],"why":"st"},{"id":"p30-A8","q":"He ___ very rude sometimes.","v":"be","a":"is","d":["are","be"],"why":"ps_be"},{"id":"p30-A9","q":"I ___ your point, but I still don't agree.","v":"see","a":"see","d":["am seeing","sees"],"why":"st"},{"id":"p30-A10","q":"Why ___ you ___ the soup? Is something wrong with it?","v":"smell","a":"are … smelling","d":["is … smelling","are … smell"],"why":"st_dyn"},{"id":"p30-B1","q":"Every Saturday morning, my cousin and I ___ to the park.","v":"go","a":"go","d":["are going","goes"],"why":"ps_time"},{"id":"p30-B2","q":"Right now, he ___ his bike.","v":"ride","a":"is riding","d":["rides","are riding"],"why":"pc_time"},{"id":"p30-B3","q":"Right now, he is riding his bike, but I ___ to join him because I am tired.","v":"not want","a":"don't want","d":["am not wanting","doesn't want"],"why":"st"},{"id":"p30-B4","q":"We ___ under a tree at the moment.","v":"sit","a":"are sitting","d":["sit","is sitting"],"why":"pc_time"},{"id":"p30-B5","q":"We are sitting under a tree at the moment, and our dog ___ around happily.","v":"run","a":"is running","d":["are running","is run"],"why":"pc"},{"id":"p30-B6","q":"My cousin ___ that exercise is important.","v":"believe","a":"believes","d":["is believing","believe"],"why":"st"},{"id":"p30-B7","q":"My cousin believes that exercise is important, and he ___ more practice for the race.","v":"need","a":"needs","d":["is needing","need"],"why":"st"},{"id":"p30-B8","q":"Meanwhile, I ___ the flowers.","v":"smell","a":"am smelling","d":["is smelling","am smell"],"why":"st_dyn"},{"id":"p30-B9","q":"Meanwhile, I am smelling the flowers and ___ about our next holiday.","v":"think","a":"thinking","d":["think","thinks"],"why":"st_dyn"},{"id":"p30-B10","q":"We always ___ our weekends together.","v":"enjoy","a":"enjoy","d":["are enjoying","enjoys"],"why":"ps_time"},{"id":"p30-B11","q":"We always enjoy our weekends together, and today we ___ a wonderful time.","v":"have","a":"are having","d":["have","has"],"why":"st_dyn"}]},{"id":"p31","page":31,"title":"Will and be going to","dir":"A. Fill in the blanks using will or be going to.","learn":{"page":31,"head":"Lesson 2: Will & Be Going To","lines":["Will + inf.: quick (spontaneous) decisions. Ex.: It's raining! I will get an umbrella.","Will + inf.: promises, offers or threats. Ex.: I will call you when I arrive.","Will + inf.: predictions and formal statements. Ex.: I'm sure you will love this movie.","Be going to + inf.: planned future actions. Ex.: I'm going to study medicine at university.","Be going to + inf.: predictions based on evidence. Ex.: Look at those clouds! It's going to rain."],"pic":"future"},"items":[{"id":"p31-1","q":"I think it ___ rain tomorrow.","v":"","a":"will","d":["is going to","are going to"],"why":"will"},{"id":"p31-2","q":"Look at those clouds! It ___ rain soon.","v":"","a":"is going to","d":["will","are going to"],"why":"gt"},{"id":"p31-3","q":"She's tired. She ___ go to bed early tonight.","v":"","a":"is going to","d":["will","are going to"],"why":"gt"},{"id":"p31-4","q":"They ___ visit their cousins next weekend.","v":"","a":"are going to","d":["will","is going to"],"why":"gt"},{"id":"p31-5","q":"I promise I ___ call you later.","v":"","a":"will","d":["am going to","is going to"],"why":"will"},{"id":"p31-6","q":"We ___ buy a new car. We've already picked one.","v":"","a":"are going to","d":["will","is going to"],"why":"gt"},{"id":"p31-7","q":"Be careful! You ___ hurt yourself!","v":"","a":"are going to","d":["will","is going to"],"why":"gt"},{"id":"p31-8","q":"I ___ help you with that box.","v":"","a":"will","d":["am going to","is going to"],"why":"will"},{"id":"p31-9","q":"He ___ start his new job on Monday.","v":"","a":"is going to","d":["will","are going to"],"why":"gt"},{"id":"p31-10","q":"I'm sure they ___ love this movie.","v":"","a":"will","d":["are going to","is going to"],"why":"will"},{"id":"p31-11","q":"Are you ___ travel this summer?","v":"","a":"going to","d":["will","go to"],"why":"gt"},{"id":"p31-12","q":"It's very late. We ___ miss the bus!","v":"","a":"will","d":["are going to","is going to"],"why":"will","parent":"The school's model answer says \"will\". The book's rule on p. 31 says a prediction based on evidence uses \"be going to\", and \"It's very late\" can be read as evidence. Ask the teacher which answer the test expects."}]}]}</script>
+<script>
+(function(){
+"use strict";
+const D=JSON.parse(document.getElementById("data").textContent);
+const PARTS=D.parts, R=D.reasons, KEY="murad-grammar-2026-11-26-v1";
+const main=document.getElementById("main");
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---------- saved progress (browser storage may be unavailable) ---------- */
+function load(){try{const v=JSON.parse(localStorage.getItem(KEY)||"null");if(v&&v.first)return v}catch(e){}return{first:{},done:{},pos:null,theme:null}}
+let S=load();
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+
+/* ---------- theme ---------- */
+const themeBtn=document.getElementById("theme");
+function applyTheme(){const dark=S.theme==="dark";document.documentElement.dataset.theme=dark?"dark":"light";themeBtn.textContent=dark?"Light colours":"Dark colours"}
+themeBtn.onclick=()=>{S.theme=S.theme==="dark"?"light":"dark";save();applyTheme()};
+applyTheme();
+
+/* ---------- read aloud: only when a button is pressed ---------- */
+let rate=0.9, speaking=null;
+const rateBtn=document.getElementById("rate");
+rateBtn.onclick=()=>{rate=rate===0.9?0.7:0.9;rateBtn.textContent=rate===0.9?"Speed: normal":"Speed: slow"};
+function stopRead(){try{speechSynthesis.cancel()}catch(e){}if(speaking){speaking.classList.remove("reading");speaking=null}}
+document.getElementById("stop").onclick=stopRead;
+function speak(text,el){stopRead();if(!("speechSynthesis" in window))return;
+  try{const u=new SpeechSynthesisUtterance(text);u.lang="en-GB";u.rate=rate;
+    const v=speechSynthesis.getVoices().find(x=>/^en[-_]GB/i.test(x.lang))||speechSynthesis.getVoices().find(x=>/^en/i.test(x.lang));if(v)u.voice=v;
+    if(el){speaking=el;el.classList.add("reading")}
+    u.onend=u.onerror=()=>{if(el)el.classList.remove("reading");if(speaking===el)speaking=null};
+    speechSynthesis.speak(u)}catch(e){}}
+main.addEventListener("click",e=>{const b=e.target.closest(".say");if(!b)return;
+  const t=document.getElementById(b.dataset.for);speak(b.dataset.text||(t?t.innerText:""),t||b)});
+const sayBtn=(forId,label,text)=>`<button class="say" type="button" data-for="${forId}"${text?` data-text="${esc(text)}"`:""} aria-label="Read aloud: ${esc(label)}">🔊 Read</button>`;
+
+/* ---------- helpers ---------- */
+function seeded(id){let h=2166136261;for(const c of id){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return()=>{h^=h<<13;h^=h>>>17;h^=h<<5;return(h>>>0)/4294967296}}
+function options(it){ if(it.tf) return ["True","False"];
+  const o=[it.a,...it.d], r=seeded(it.id);
+  for(let i=o.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[o[i],o[j]]=[o[j],o[i]]}return o}
+const scored=p=>p.items.filter(i=>!i.parent);
+const firstRight=p=>scored(p).filter(i=>S.first[i.id]===i.a).length;
+const partDone=p=>!!S.done[p.id];
+function stemHTML(q){return esc(q).replace(/___/g,'<span class="blank" aria-label="blank">&nbsp;</span>')}
+function stemSpoken(q){return q.replace(/___/g," blank ")}
+
+function renderBuild(){
+  const n=PARTS.filter(partDone).length;
+  document.getElementById("build").innerHTML=PARTS.map(p=>`<span class="${partDone(p)?"on":""}"></span>`).join("");
+  document.getElementById("buildhead").textContent=`Build: ${n} of ${PARTS.length}`;
+}
+
+/* ---------- pictures (each shows the form or time the rule describes) ---------- */
+function pic(kind){
+  const B=(t,c)=>`<span class="blk${c?" "+c:""}">${esc(t)}</span>`;
+  const fig=(cap,body)=>`<figure>${body}<figcaption>${esc(cap)}</figcaption></figure>`;
+  const days=`<div class="days" aria-hidden="true">${["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d=>`<span>${d}<b>✓</b></span>`).join("")}</div>`;
+  const now=`<div class="line" aria-hidden="true"><span class="l">before</span><span class="now">now<i></i></span><span class="r">later</span></div>`;
+  switch(kind){
+    case "simple": return fig("Present simple: something that happens every day, like a habit.",days)+fig("Singular subject: verb + s.",`<div class="blocks">${B("He")}${B("plays","v")}${B("tennis","plain")}</div>`);
+    case "neg": return fig("Singular subject: does + not + verb.",`<div class="blocks">${B("She")}${B("does not")}${B("work","v")}</div>`)+fig("Plural subject, I, you: do + not + verb.",`<div class="blocks">${B("I")}${B("do not")}${B("like","v")}</div>`);
+    case "question": return fig("Singular subject: does + subject + verb.",`<div class="blocks">${B("When")}${B("does")}${B("she")}${B("work","v")}${B("?","plain")}</div>`)+fig("Plural subject, I, you: do + subject + verb.",`<div class="blocks">${B("Do")}${B("you")}${B("like","v")}${B("chocolate?","plain")}</div>`);
+    case "now": return fig("Present continuous: an action happening now.",now)+fig("am, is or are + verb + ing.",`<div class="blocks">${B("He")}${B("is")}${B("working","v")}</div>`);
+    case "both": return fig("Present simple: every day.",days)+fig("Present continuous: now.",now);
+    case "if0": return fig("Type 0: If + present simple, present simple.",`<div class="blocks">${B("If you heat water,")}${B("it boils.","v")}</div>`);
+    case "if1": return fig("Type 1: If + present simple, will + infinitive.",`<div class="blocks">${B("If you study hard,")}${B("you will pass the exam.","v")}</div>`)+fig("Result clause first: no comma.",`<div class="blocks">${B("You will pass the exam","v")}${B("if you study hard.")}</div>`);
+    case "stative": return fig("Stative verbs: a state. Not used in the continuous form.",`<div class="blocks">${["think","love","have","be","believe","see","hear","smell"].map(w=>B(w)).join("")}</div>`)+fig("Dynamic verbs: an activity.",`<div class="blocks">${["drive","watch","listen"].map(w=>B(w,"v")).join("")}</div>`);
+    case "future": return fig("will + verb: decisions, promises, offers, predictions.",`<div class="blocks">${B("I")}${B("will")}${B("call","v")}${B("you.","plain")}</div>`)+fig("be going to + verb: plans, and predictions from evidence.",`<div class="blocks">${B("It")}${B("is going to")}${B("rain.","v")}</div>`);
+  }
+  return "";
+}
+
+/* ---------- screens ---------- */
+function home(){
+  stopRead();S.pos=null;save();renderBuild();
+  const total=PARTS.reduce((n,p)=>n+p.items.length,0);
+  main.innerHTML=`
+    <h2 id="h">All parts</h2>
+    <p>There are ${PARTS.length} parts. Each part is one page of your grammar book. You read the rule, then you answer that page's questions one at a time.</p>
+    <p class="muted">${total} questions in all. Pick any part. You can stop after any question and come back later.</p>
+    <ul class="parts">${PARTS.map((p,k)=>`<li class="${partDone(p)?"done":""}"><button type="button" data-k="${k}">
+      <span class="num">${partDone(p)?"✓":k+1}</span>
+      <span class="t"><span>Part ${k+1} of ${PARTS.length}: ${esc(p.title)}</span>
+      <small>Book page ${p.page} · ${p.items.length} questions${partDone(p)?` · finished, first try ${firstRight(p)} of ${scored(p).length}`:started(p)?" · started":""}</small></span></button></li>`).join("")}</ul>`;
+  main.querySelectorAll(".parts button").forEach(b=>b.onclick=()=>learn(+b.dataset.k));
+  focusHead();
+}
+const started=p=>p.items.some(i=>i.id in S.first);
+function focusHead(){const h=document.getElementById("h");if(h){h.tabIndex=-1;h.focus({preventScroll:false})}}
+
+function learn(k){
+  stopRead();const p=PARTS[k],L=p.learn;S.pos={k,i:null};save();
+  main.innerHTML=`
+    <p class="muted">Part ${k+1} of ${PARTS.length} · Step 1 of 2: the rule</p>
+    <div class="row" style="justify-content:space-between;align-items:center">
+      <h2 id="h">${esc(L.head)}</h2>${sayBtn("rule","the rule")}
+    </div>
+    <div class="rule" id="rule"><p class="muted">From your grammar book, page ${L.page}.</p><ul>${L.lines.map(l=>`<li>${esc(l)}</li>`).join("")}</ul></div>
+    <div class="pic">${pic(L.pic)}</div>
+    <div class="row end">
+      <button class="btn ghost" type="button" id="back">Back to all parts</button>
+      <button class="btn" type="button" id="go">Start the questions (${p.items.length})</button>
+    </div>`;
+  document.getElementById("back").onclick=home;
+  document.getElementById("go").onclick=()=>{const i=p.items.findIndex(x=>!(x.id in S.first)&&!x.parent);ask(k,i<0?0:i)};
+  focusHead();
+}
+
+function ask(k,i){
+  stopRead();const p=PARTS[k],it=p.items[i],n=p.items.length;S.pos={k,i};save();
+  const head=`<p class="muted">Part ${k+1} of ${PARTS.length} · Step 2 of 2 · Question ${i+1} of ${n}</p>
+    <div class="prog" aria-hidden="true"><i style="width:${Math.round(100*i/n)}%"></i></div>
+    <p class="dir">Book page ${p.page}: ${esc(p.dir)}</p>`;
+  if(it.parent){
+    main.innerHTML=`${head}<h2 id="h">Parent check: this question is not scored</h2>
+      <div class="parent"><p class="stem" id="stem">${stemHTML(it.q)}</p>
+      <p>Choices: ${options(it).map(esc).join(" · ")}</p>
+      <p>School's model answer: <b>${esc(it.a)}</b></p><p>${esc(it.parent)}</p></div>
+      <div class="row end"><button class="btn ghost" type="button" id="back">Back to all parts</button>
+      <button class="btn" type="button" id="next">${i+1<n?"Next question":"See my answers"}</button></div>`;
+    document.getElementById("back").onclick=home;
+    document.getElementById("next").onclick=()=>i+1<n?ask(k,i+1):review(k);
+    focusHead();return;
+  }
+  const opts=options(it);let sel=null,solved=false;
+  main.innerHTML=`${head}
+    <div class="row" style="justify-content:space-between;align-items:flex-start;gap:8px">
+      <h2 id="h" class="stem"><span id="stem">${stemHTML(it.q)}</span>${it.v?` <span class="hint">(${esc(it.v)})</span>`:""}</h2>
+      ${sayBtn("stem","the question",stemSpoken(it.q)+(it.v?". The verb is: "+it.v.replace("/"," and "):""))}
+    </div>
+    <div class="opts" role="group" aria-labelledby="h">${opts.map((o,j)=>`<div class="opt">
+      <button class="choice" type="button" aria-pressed="false" data-j="${j}" id="o${j}"><span class="mk">${String.fromCharCode(65+j)}.</span>${esc(o)}</button>
+      ${sayBtn("o"+j,"choice "+String.fromCharCode(65+j),o.replace(/…/g,", then, "))}</div>`).join("")}</div>
+    <div class="fb" id="fb" role="status" aria-live="polite"><p class="muted">Choose an answer, then press "Check my answer".</p></div>
+    <div class="row end" id="acts">
+      <button class="btn ghost" type="button" id="back">Back to all parts</button>
+      <button class="btn" type="button" id="check" disabled>Check my answer</button>
+    </div>`;
+  const fb=document.getElementById("fb"),acts=document.getElementById("acts");
+  document.getElementById("back").onclick=home;
+  const choices=[...main.querySelectorAll(".choice")];
+  choices.forEach(b=>b.onclick=()=>{if(solved)return;sel=+b.dataset.j;choices.forEach(c=>c.setAttribute("aria-pressed",String(c===b)));document.getElementById("check").disabled=false});
+  document.getElementById("check").onclick=()=>{
+    if(sel===null)return;const pick=opts[sel];
+    if(!(it.id in S.first)){S.first[it.id]=pick;save()}
+    if(pick===it.a){
+      solved=true;choices.forEach(c=>c.disabled=true);
+      fb.className="fb ok";fb.innerHTML=`<div class="row" style="justify-content:space-between"><div id="fbt"><p class="head">✓ Correct.</p><p>${esc(it.a)}</p></div>${sayBtn("fbt","the feedback")}</div>`;
+      acts.innerHTML=`<button class="btn ghost" type="button" id="back">Back to all parts</button>
+        <button class="btn" type="button" id="next">${i+1<n?"Next question":"See my answers"}</button>`;
+      document.getElementById("back").onclick=home;
+      const nx=document.getElementById("next");nx.onclick=()=>i+1<n?ask(k,i+1):review(k);nx.focus();
+    }else{
+      fb.className="fb no";fb.innerHTML=`<div class="row" style="justify-content:space-between;flex-wrap:nowrap"><div id="fbt"><p class="head">✗ Not this one.</p><p>The book's answer is: <b>${esc(it.a)}</b></p><p>Why: ${esc(R[it.why])}</p></div>${sayBtn("fbt","the feedback")}</div>`;
+      acts.innerHTML=`<button class="btn ghost" type="button" id="rule">Read the rule again</button>
+        <button class="btn" type="button" id="again">Try again</button>`;
+      document.getElementById("rule").onclick=()=>learn(k);
+      const ag=document.getElementById("again");
+      ag.onclick=()=>ask(k,i);ag.focus();
+    }
+  };
+  focusHead();
+}
+
+function review(k){
+  stopRead();const p=PARTS[k];S.done[p.id]=true;S.pos=null;save();renderBuild();
+  const sc=scored(p),right=firstRight(p),blocks=PARTS.filter(partDone).length;
+  main.innerHTML=`<p class="muted">Part ${k+1} of ${PARTS.length} · Finished</p>
+    <h2 id="h">You placed a block. Your build has ${blocks} of ${PARTS.length} blocks.</h2>
+    <p class="big">First try: ${right} of ${sc.length} correct.</p>
+    <h3>Your first answers</h3>
+    <ul class="rev">${p.items.map((it,j)=>{
+      if(it.parent)return `<li>Question ${j+1}: parent check, not scored. School's answer: ${esc(it.a)}</li>`;
+      const f=S.first[it.id];const ok=f===it.a;
+      return `<li><span class="r">${ok?"✓ Correct":"✗ Not correct"}</span> · Question ${j+1}: ${esc(it.q)}<br>Your first answer: ${f?esc(f):"no answer"}${ok?"":` · Book's answer: <b>${esc(it.a)}</b>`}</li>`}).join("")}</ul>
+    <div class="row end">
+      <button class="btn ghost" type="button" id="redo">Start this part again</button>
+      <button class="btn ghost" type="button" id="back">Back to all parts</button>
+      ${k+1<PARTS.length?`<button class="btn" type="button" id="next">Next part</button>`:""}
+    </div>`;
+  document.getElementById("back").onclick=home;
+  document.getElementById("redo").onclick=()=>{p.items.forEach(it=>delete S.first[it.id]);delete S.done[p.id];save();renderBuild();learn(k)};
+  const nx=document.getElementById("next");if(nx)nx.onclick=()=>learn(k+1);
+  focusHead();
+}
+
+document.getElementById("foot").textContent="Every rule and question on this page comes from the Grade 6 Grammar and Sentence Structure book (pages 10 to 31). Answers come from the school's model answers. Your answers are saved on this device only.";
+renderBuild();
+if(S.pos&&PARTS[S.pos.k]){const{k,i}=S.pos;i===null?learn(k):ask(k,Math.min(i,PARTS[k].items.length-1))}else home();
+})();
+</script>
+</body>
+</html>

@@ -10,6 +10,7 @@ Run commands from the repository root. Node tools use the existing Playwright de
 | Climate Quest | `node tools/build/climate-quiz.js` | `node tools/check/climate-quiz.js` |
 | Jimmy Science assessment | `node tools/build/gamal-science-ch2.js` | `node tools/check/gamal-science-ch2.js` |
 | Coordinates reference | `node tools/build/gamal-coordinates.js` | `node tools/check/gamal-coordinates.js` |
+| Murad Grammar Blocks (Nov test) | `python3 -I tools/grammar-blocks/build.py` | `node tools/check/grammar-blocks.js` (needs `NODE_PATH=.claude/skills/playwright-skill/node_modules`) and `python3 -I tools/check/grammar-blocks-key.py` |
 
 `source/science/` contains the Science question inputs and page manifest. `source/science-author.js` supplies their authoring helpers. The Science build regenerates `app/lessons/murad/science`, its source map and the ignored full export under `build/packs/murad/science/`.
 
