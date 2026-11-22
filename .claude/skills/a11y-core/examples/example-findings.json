@@ -1,0 +1,25 @@
+{
+  "skill": "a11y-core",
+  "scope": [
+    "index.html"
+  ],
+  "findings": [
+    {
+      "rule": "SEM-001",
+      "wcag": "1.3.1 A",
+      "severity": "serious",
+      "confidence": "high",
+      "location": "index.html:91",
+      "summary": "The phone field has no associated label or accessible name.",
+      "fix": "Add a label element with a for attribute matching the input id.",
+      "evidence": "<input id=\"phone\" type=\"tel\" placeholder=\"Phone\">",
+      "component": "Phone field"
+    }
+  ],
+  "passed": [
+    "Page has a document title"
+  ],
+  "notes": [
+    "Check keyboard and screen-reader behavior after the fix"
+  ]
+}
