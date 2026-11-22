@@ -105,19 +105,19 @@
       "git_blob": "4c743136ee7d289ef45fe95163d52e46d4f6c6f1"
     },
     {
-      "path": "gamal/english/packs/class/october-arabic-help.html",
+      "path": "grade-5/english/packs/class/october-arabic-help.html",
       "bytes": 3924568,
       "sha256": "548f42db54ff61a91397a410e9c2eb7259e8e1eb5c75f763572596bea2c437f8",
       "git_blob": "282508ba79ec16df16ce6ad5aeb3b5db54b78480"
     },
     {
-      "path": "murad/english/packs/class/october-arabic-help.html",
+      "path": "grade-6/english/packs/class/october-arabic-help.html",
       "bytes": 3598300,
       "sha256": "a95609c6b9c12e84cf3656d8ed468325267e8cdfb4278d7ff86443c05370101a",
       "git_blob": "8e2540c4a11e917efe28a33a11c90a8426889acb"
     },
     {
-      "path": "docs/provenance/toddle/2026-10-19-english/README.md",
+      "path": "docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md",
       "bytes": 3729,
       "sha256": "e418b735eebcb7c9b041d2b65c58abfd0d27af7fce2448ffe428390efcc62314",
       "git_blob": "3f82e5aad18bed7e90bbcad7f2c9a025981b7ba6"

@@ -1,36 +1,36 @@
 # Restructure report
 
 ## Moved
-- `sources/murad/arabic/` -> `murad/arabic/sources/`
-- `sources/murad/english/` -> `murad/english/sources/`
-- `sources/murad/ict/` -> `murad/computer/sources/`
-- `sources/murad/mathematics/` -> `murad/mathematics/sources/`
-- `sources/murad/religion/` -> `murad/religion/sources/`
-- `sources/murad/schedules/` -> `murad/schedules/sources/`
-- `sources/murad/science/` -> `murad/science/sources/`
-- `sources/murad/social-studies/` -> `murad/social-studies/sources/`
-- `packs/murad/english/` -> `murad/english/packs/`
-- `packs/murad/mathematics/` -> `murad/mathematics/packs/`
-- `packs/murad/revision/` -> `murad/revision/packs/`
-- `packs/murad/science/` -> `murad/science/packs/`
-- `packs/murad/social-studies/` -> `murad/social-studies/packs/`
-- `docs/students/murad/` -> `murad/docs/`
-- `sources/gamal/announcements/` -> `gamal/announcements/sources/`
-- `sources/gamal/arabic/` -> `gamal/arabic/sources/`
-- `sources/gamal/english/` -> `gamal/english/sources/`
-- `sources/gamal/german/` -> `gamal/german/sources/`
-- `sources/gamal/ict/` -> `gamal/computer/sources/`
-- `sources/gamal/religion/` -> `gamal/religion/sources/`
-- `sources/gamal/schedules/` -> `gamal/schedules/sources/`
-- `sources/gamal/science/` -> `gamal/science/sources/`
-- `sources/gamal/social-studies/` -> `gamal/social-studies/sources/`
-- `packs/gamal/english/` -> `gamal/english/packs/`
-- `packs/gamal/german/` -> `gamal/german/packs/`
-- `packs/gamal/mathematics/` -> `gamal/mathematics/packs/`
-- `packs/gamal/revision/` -> `gamal/revision/packs/`
-- `packs/gamal/science/` -> `gamal/science/packs/`
-- `packs/gamal/social-studies/` -> `gamal/social-studies/packs/`
-- `docs/students/gamal/` -> `gamal/docs/`
+- `sources/grade-6/arabic/` -> `grade-6/arabic/sources/`
+- `sources/grade-6/english/` -> `grade-6/english/sources/`
+- `sources/grade-6/ict/` -> `grade-6/computer/sources/`
+- `sources/grade-6/mathematics/` -> `grade-6/mathematics/sources/`
+- `sources/grade-6/religion/` -> `grade-6/religion/sources/`
+- `sources/grade-6/schedules/` -> `grade-6/schedules/sources/`
+- `sources/grade-6/science/` -> `grade-6/science/sources/`
+- `sources/grade-6/social-studies/` -> `grade-6/social-studies/sources/`
+- `packs/grade-6/english/` -> `grade-6/english/packs/`
+- `packs/grade-6/mathematics/` -> `grade-6/mathematics/packs/`
+- `packs/grade-6/revision/` -> `grade-6/revision/packs/`
+- `packs/grade-6/science/` -> `grade-6/science/packs/`
+- `packs/grade-6/social-studies/` -> `grade-6/social-studies/packs/`
+- `docs/students/grade-6/` -> `grade-6/docs/`
+- `sources/grade-5/announcements/` -> `grade-5/announcements/sources/`
+- `sources/grade-5/arabic/` -> `grade-5/arabic/sources/`
+- `sources/grade-5/english/` -> `grade-5/english/sources/`
+- `sources/grade-5/german/` -> `grade-5/german/sources/`
+- `sources/grade-5/ict/` -> `grade-5/computer/sources/`
+- `sources/grade-5/religion/` -> `grade-5/religion/sources/`
+- `sources/grade-5/schedules/` -> `grade-5/schedules/sources/`
+- `sources/grade-5/science/` -> `grade-5/science/sources/`
+- `sources/grade-5/social-studies/` -> `grade-5/social-studies/sources/`
+- `packs/grade-5/english/` -> `grade-5/english/packs/`
+- `packs/grade-5/german/` -> `grade-5/german/packs/`
+- `packs/grade-5/mathematics/` -> `grade-5/mathematics/packs/`
+- `packs/grade-5/revision/` -> `grade-5/revision/packs/`
+- `packs/grade-5/science/` -> `grade-5/science/packs/`
+- `packs/grade-5/social-studies/` -> `grade-5/social-studies/packs/`
+- `docs/students/grade-5/` -> `grade-5/docs/`
 
 ## Not moved (needs a decision)
 - `sources/shared`
@@ -46,62 +46,62 @@
 
 ## New tree
 ```
-murad
-murad/arabic
-murad/arabic/sources
-murad/computer
-murad/computer/sources
-murad/docs
-murad/docs/arabic
-murad/docs/ict
-murad/docs/mathematics
-murad/english
-murad/english/packs
-murad/english/sources
-murad/mathematics
-murad/mathematics/packs
-murad/mathematics/sources
-murad/religion
-murad/religion/sources
-murad/revision
-murad/revision/packs
-murad/schedules
-murad/schedules/sources
-murad/science
-murad/science/packs
-murad/science/sources
-murad/social-studies
-murad/social-studies/packs
-murad/social-studies/sources
-gamal
-gamal/announcements
-gamal/announcements/sources
-gamal/arabic
-gamal/arabic/sources
-gamal/computer
-gamal/computer/sources
-gamal/docs
-gamal/docs/arabic
-gamal/docs/ict
-gamal/docs/social-studies
-gamal/english
-gamal/english/packs
-gamal/english/sources
-gamal/german
-gamal/german/packs
-gamal/german/sources
-gamal/mathematics
-gamal/mathematics/packs
-gamal/religion
-gamal/religion/sources
-gamal/revision
-gamal/revision/packs
-gamal/schedules
-gamal/schedules/sources
-gamal/science
-gamal/science/packs
-gamal/science/sources
-gamal/social-studies
-gamal/social-studies/packs
-gamal/social-studies/sources
+grade-6
+grade-6/arabic
+grade-6/arabic/sources
+grade-6/computer
+grade-6/computer/sources
+grade-6/docs
+grade-6/docs/arabic
+grade-6/docs/ict
+grade-6/docs/mathematics
+grade-6/english
+grade-6/english/packs
+grade-6/english/sources
+grade-6/mathematics
+grade-6/mathematics/packs
+grade-6/mathematics/sources
+grade-6/religion
+grade-6/religion/sources
+grade-6/revision
+grade-6/revision/packs
+grade-6/schedules
+grade-6/schedules/sources
+grade-6/science
+grade-6/science/packs
+grade-6/science/sources
+grade-6/social-studies
+grade-6/social-studies/packs
+grade-6/social-studies/sources
+grade-5
+grade-5/announcements
+grade-5/announcements/sources
+grade-5/arabic
+grade-5/arabic/sources
+grade-5/computer
+grade-5/computer/sources
+grade-5/docs
+grade-5/docs/arabic
+grade-5/docs/ict
+grade-5/docs/social-studies
+grade-5/english
+grade-5/english/packs
+grade-5/english/sources
+grade-5/german
+grade-5/german/packs
+grade-5/german/sources
+grade-5/mathematics
+grade-5/mathematics/packs
+grade-5/religion
+grade-5/religion/sources
+grade-5/revision
+grade-5/revision/packs
+grade-5/schedules
+grade-5/schedules/sources
+grade-5/science
+grade-5/science/packs
+grade-5/science/sources
+grade-5/social-studies
+grade-5/social-studies/packs
+grade-5/social-studies/sources
 ```

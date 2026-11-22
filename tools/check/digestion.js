@@ -11,7 +11,7 @@ fs.mkdirSync(out, { recursive: true });
   page.on("pageerror", e => errors.push(e.message));
   page.on("request", r => { if (/^https?:/.test(r.url())) remoteRequests.push(r.url()); });
   await page.route(/^https?:/, r => r.abort());
-  const file = "file://" + path.join(root, "murad/science/packs/digestion.html");
+  const file = "file://" + path.join(root, "grade-6/science/packs/digestion.html");
   function assert(condition, message) { if (!condition) throw new Error(message); }
   async function fits(label) {
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "Horizontal overflow: " + label);
@@ -43,9 +43,9 @@ fs.mkdirSync(out, { recursive: true });
     }
   }
   await page.setViewportSize({ width: 412, height: 900 });
-  await page.goto(file + "#murad-science-t3-l2");
+  await page.goto(file + "#grade6-science-t3-l2");
   await page.waitForSelector("#sit-3");
-  const questions = await page.evaluate(() => window.LESSONS["murad-science-t3-l2"].sittings[2].screens);
+  const questions = await page.evaluate(() => window.LESSONS["grade6-science-t3-l2"].sittings[2].screens);
   await page.click("#sit-3"); await page.click("#go");
   for (const q of questions) {
     if (q.blankIndex !== undefined) {

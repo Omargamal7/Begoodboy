@@ -1,7 +1,7 @@
-/* Murad · Primary 6 Science · Chapter 3 · lessons 3-1 and 3-2.
+/* Grade 6 · Primary 6 Science · Chapter 3 · lessons 3-1 and 3-2.
    Source: primary 6 first term binder.pdf, pp. 20-23 and 86-89.
    Check stems retain the binder's wording; free-response items get tap choices
-   after Murad says his answer. The source map records every adapted option set.
+   after Grade 6 says his answer. The source map records every adapted option set.
    Q.open preserves three questions whose answers are not explained in the binder. */
 (function () {
   "use strict";
@@ -62,25 +62,25 @@
     check("F. Give Reasons for the Following", 5, "A cat and a fish can digest food even though their digestive systems are not arranged in exactly the same way.", ["Both systems break down food, absorb nutrients and get rid of waste.", "Neither animal needs food.", "Both animals use lungs to digest food."], 0, "animals", "The organs are arranged differently, but **both systems do the same jobs**: digest food, absorb nutrients and remove waste.")
   ];
 
-  murad({
-    id: "murad-science-t3-l1", order: 31, subject: "Science",
+  grade-6({
+    id: "grade6-science-t3-l1", order: 31, subject: "Science",
     where: "Chapter 3 · Lesson 3-1 · Binder pp. 20-22 / exercises pp. 86-87",
     title: "Digestion and How Does It Work?", doLabel: "Follow and match",
     notes: [
       "Study source: **binder pages 20-22**. Every check is from **pages 86-87**, in binder order.",
-      "The written-answer questions use added tap choices. Murad **says his answer first**, then taps. The question wording is unchanged.",
+      "The written-answer questions use added tap choices. Grade 6 **says his answer first**, then taps. The question wording is unchanged.",
       "The final vocabulary card borrows **solar power** from page 12, **inhalation** from page 14, and **trachea, lungs and alveoli** from page 16. The odd-one-out questions use these words.",
       "The word **absorption** is defined on page 24. It is added to the intestine card because the odd-one-out questions use it.",
       "Page 87, F3 asks why the small intestine is long and coiled. Page 21 describes its shape, but does not explain that reason. This question is **shown without a score**; check it with the teacher.",
       "The checks are divided into **two short sittings**: A-C, then D-F. Give the usual reward after each sitting.",
-      "The separate digestion activity mentioned in the 12 October Toddle notice has not been supplied."
+      "The separate digestion activity mentioned in the 12 October School Portal (2026–2027) notice has not been supplied."
     ],
     facts: [
       { id: "digestion", term: "Digestion", icon: "snack",
         lines: ["**Digestion** breaks food into smaller, simple **nutrients**.", "The body absorbs the nutrients into the **blood**.", "The body uses them for **energy, growth and repair**."],
         pick: { prompt: "What does digestion do?", answer: 1, right: "**Digestion** breaks food into nutrients the body can absorb.", options: [{ label: "Stores all food as waste", icon: "folder" }, { label: "Breaks food into nutrients", icon: "snack" }] } },
       { id: "mouth-stomach", term: "Mouth, esophagus and stomach", icon: "body",
-        figure: { src: "app/assets/murad/science/food-path.jpg", alt: "Binder diagram showing the mouth, esophagus, stomach, small intestine, large intestine, rectum and anus.", caption: "Food path · binder page 20" },
+        figure: { src: "app/assets/grade-6/science/food-path.jpg", alt: "Binder diagram showing the mouth, esophagus, stomach, small intestine, large intestine, rectum and anus.", caption: "Food path · binder page 20" },
         lines: ["In the **mouth**, teeth chew food. **Saliva** starts breaking it down.", "The **esophagus** is a tube from the mouth to the stomach.", "The **stomach** stores food and mixes it with strong digestive juices."],
         pick: { prompt: "Which tube moves food from the mouth to the stomach?", answer: 0, right: "The **esophagus** carries food to the stomach.", options: [{ label: "Esophagus", icon: "body" }, { label: "Large intestine", icon: "body" }] } },
       { id: "intestines", term: "Small and large intestines", icon: "body",
@@ -90,13 +90,13 @@
         lines: ["The **rectum** stores waste.", "The **anus** is the opening where waste leaves the body.", "A **cat** also stores waste in the rectum before it leaves through the anus."],
         pick: { prompt: "Where is waste stored before it leaves?", answer: 0, right: "The **rectum** stores waste.", options: [{ label: "Rectum", icon: "body" }, { label: "Esophagus", icon: "body" }] } },
       { id: "location", term: "Where the organs are", icon: "body",
-        figure: { src: "app/assets/murad/science/organ-location.jpg", alt: "Front view of the binder's body diagram: stomach on the person's upper left, small intestine below, large intestine around it.", caption: "The person's left is on your right · binder page 21" },
+        figure: { src: "app/assets/grade-6/science/organ-location.jpg", alt: "Front view of the binder's body diagram: stomach on the person's upper left, small intestine below, large intestine around it.", caption: "The person's left is on your right · binder page 21" },
         lines: ["The **abdomen** is between the chest and the hips.", "The **stomach** is mainly in the **upper-left abdomen**, below the ribs.", "The **small intestine** is in the **middle and lower abdomen**.", "The **large intestine surrounds the small intestine**.", "The stomach and intestines work together to **digest food and absorb nutrients**."],
         pick: { prompt: "Where is the stomach mainly?", answer: 1, right: "The stomach is mainly in the **upper-left abdomen**.", options: [{ label: "Lower-right abdomen", icon: "body" }, { label: "Upper-left abdomen", icon: "body" }] } },
       { id: "animals", term: "A cat and a fish", icon: "body",
         figures: [
-          { src: "app/assets/murad/science/cat-digestion.jpg", alt: "Cat digestive system from the binder, with mouth, esophagus, stomach, small and large intestines, and rectum/anus.", caption: "Cat · binder page 22" },
-          { src: "app/assets/murad/science/fish-digestion.jpg", alt: "Fish digestive system from the binder, with mouth, esophagus, stomach, intestine and anus.", caption: "Fish · binder page 22" }
+          { src: "app/assets/grade-6/science/cat-digestion.jpg", alt: "Cat digestive system from the binder, with mouth, esophagus, stomach, small and large intestines, and rectum/anus.", caption: "Cat · binder page 22" },
+          { src: "app/assets/grade-6/science/fish-digestion.jpg", alt: "Fish digestive system from the binder, with mouth, esophagus, stomach, intestine and anus.", caption: "Fish · binder page 22" }
         ],
         lines: ["**All animals need food** to live and grow.", "Cats and fish both **break down food, absorb nutrients and remove waste**.", "Their organs are **arranged differently**.", "A **cat** has a long small intestine and a large intestine.", "A **fish** has a shorter intestine. Food goes mouth → esophagus → stomach → intestine → anus.", "A fish's **pyloric ceca** help digest food."],
         pick: { prompt: "What do cats and fish both do?", answer: 0, right: "Both **digest food and absorb nutrients**.", options: [{ label: "Digest food and absorb nutrients", icon: "snack" }, { label: "Use the same arrangement of organs", icon: "body" }] } },
@@ -123,7 +123,7 @@
 
   /* Thirty binder questions need two short check sittings. Keep the child's
      settings, reward, and usual teaching/retry behaviour; only split the queue. */
-  var lesson1 = window.LESSONS["murad-science-t3-l1"];
+  var lesson1 = window.LESSONS["grade6-science-t3-l1"];
   lesson1.sittings[2].label = "Booklet questions · A-C";
   lesson1.sittings[2].screens = digestionChecks.slice(0, 15);
   lesson1.sittings.push({ label: "Booklet questions · D-F", icon: "checkbox", parts: [1, 2, 5, 6], screens: digestionChecks.slice(15) });
@@ -157,15 +157,15 @@
   salivaChecks[3].blankIndex = 2;
   salivaChecks[4].blankIndex = 3;
 
-  murad({
-    id: "murad-science-t3-l2", order: 32, subject: "Science",
+  grade-6({
+    id: "grade6-science-t3-l2", order: 32, subject: "Science",
     where: "Chapter 3 · Lesson 3-2 · Binder p. 23 / exercises pp. 88-89",
     title: "The Function of the Saliva", doLabel: "Sort and follow",
     notes: [
       "Study source: **binder page 23**. Every check is from **pages 88-89**, in binder order.",
       "The four blanks in Try 1 (2) are checked one at a time with the binder's original word bank. Its full sentence is repeated, and the blank number is shown above it.",
       "Exercise 1 (2) says **part of food** in the binder. That wording is retained. The expected term is supported by the page 20 heading and its mouth-to-anus diagram.",
-      "Exercise 2 (1) and 2 (2) refer to a saliva/starch/iodine experiment. Its method and results are not explained in the binder. They are **shown without scores**; obtain the separate Toddle activity to check the answers.",
+      "Exercise 2 (1) and 2 (2) refer to a saliva/starch/iodine experiment. Its method and results are not explained in the binder. They are **shown without scores**; obtain the separate School Portal (2026–2027) activity to check the answers.",
       "The food-path card borrows the digestive-system diagram and organ order from **page 20**, as required by the page 88 questions.",
       "The checks are divided into **two short sittings**: Try/Exercise, then A/B. Give the usual reward after each sitting."
     ],
@@ -177,14 +177,14 @@
         lines: ["The **mouth** contains **saliva**.", "Saliva is a **watery secretion**.", "It helps break down **starch** in food."],
         pick: { prompt: "What is saliva?", answer: 1, right: "Saliva is a **watery secretion** in the mouth.", options: [{ label: "A solid organ", icon: "body" }, { label: "A watery secretion", icon: "snack" }] } },
       { id: "starch", term: "Starch becomes simple sugar", icon: "snack",
-        figure: { src: "app/assets/murad/science/saliva-starch.jpg", alt: "Binder picture showing complex starch in food, saliva, and simple sugar after saliva acts.", caption: "Starch → simple sugar · binder page 23" },
+        figure: { src: "app/assets/grade-6/science/saliva-starch.jpg", alt: "Binder picture showing complex starch in food, saliva, and simple sugar after saliva acts.", caption: "Starch → simple sugar · binder page 23" },
         lines: ["**Starch** is complex.", "**Saliva** helps break starch down into **simple sugar**.", "The body can easily **absorb** simple sugar."],
         pick: { prompt: "What does starch change into?", answer: 0, right: "Starch changes into **simple sugar**.", options: [{ label: "Simple sugar", icon: "snack" }, { label: "Waste in the rectum", icon: "folder" }] } },
       { id: "juices", term: "Digestive juices", icon: "snack",
         lines: ["A liquid that helps digest food is a **digestive juice**.", "**Saliva** is a digestive juice.", "The **mouth, stomach and intestines** produce digestive juices."],
         pick: { prompt: "Where are digestive juices produced?", answer: 1, right: "Digestive juices are produced in the **mouth, stomach and intestines**.", options: [{ label: "Only in the mouth", icon: "face" }, { label: "Mouth, stomach and intestines", icon: "body" }] } },
       { id: "path", term: "The digestive system and food path", icon: "body",
-        figure: { src: "app/assets/murad/science/food-path.jpg", alt: "The binder's digestive-system diagram, showing food's path from mouth through the organs to the anus.", caption: "Food pipe is the esophagus · binder pages 20 and 88" },
+        figure: { src: "app/assets/grade-6/science/food-path.jpg", alt: "The binder's digestive-system diagram, showing food's path from mouth through the organs to the anus.", caption: "Food pipe is the esophagus · binder pages 20 and 88" },
         lines: ["The **digestive system** includes the organs from the **mouth to the anus**.", "The **food pipe**, or **esophagus**, connects mouth to stomach.", "Food goes mouth → **food pipe** → **stomach** → **small intestine** → **large intestine**.", "Waste is stored in the **rectum**, then leaves through the **anus**."],
         pick: { prompt: "Which organ follows the food pipe?", answer: 1, right: "The **stomach** follows the food pipe.", options: [{ label: "Large intestine", icon: "body" }, { label: "Stomach", icon: "body" }] } }
     ],
@@ -202,7 +202,7 @@
     ],
     checks: salivaChecks
   });
-  var lesson2 = window.LESSONS["murad-science-t3-l2"];
+  var lesson2 = window.LESSONS["grade6-science-t3-l2"];
   lesson2.sittings[2].label = "Booklet questions · Try / Exercise";
   lesson2.sittings[2].screens = salivaChecks.slice(0, 9);
   lesson2.sittings.push({ label: "Booklet questions · A / B", icon: "checkbox", parts: [1, 2, 5, 6], screens: salivaChecks.slice(9) });

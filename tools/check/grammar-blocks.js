@@ -1,13 +1,13 @@
 'use strict';
-// Checks Murad's November grammar page (murad/english/assessments/2026-11-26-grammar-test/grammar-blocks.html).
+// Checks Grade 6’s November grammar page (grade-6/english/assessments/2026-11-26-grammar-test/grammar-blocks.html).
 // Run from the repository root after `source tools/setup-skills.sh`:
 //   NODE_PATH=.claude/skills/playwright-skill/node_modules node tools/check/grammar-blocks.js
-// Part 1 checks every item (study-page-pipeline stage 7 and section 10 of docs/design/murad-design-guide.md).
+// Part 1 checks every item (study-page-pipeline stage 7 and section 10 of docs/design/grade-6-design-guide.md).
 // Part 2 clicks through the page at 390x844 and 820x1180 (stage 8): parts 1 and 12 by default (about a minute);
 // FULL=1 walks all 12 parts (15-20 minutes). Screenshots go to build/qa/grammar-blocks/.
 const fs = require('fs'), path = require('path');
 const root = path.resolve(__dirname, '../..');
-const dir = path.join(root, 'murad/english/assessments/2026-11-26-grammar-test');
+const dir = path.join(root, 'grade-6/english/assessments/2026-11-26-grammar-test');
 const file = path.join(dir, 'grammar-blocks.html');
 const problems = [];
 const bad = (m) => problems.push(m);

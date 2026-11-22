@@ -6,7 +6,7 @@ Three reports were produced on 17 November 2026. Stage 6 of the active workflow 
 | --- | --- | --- |
 | [ChatGPT Deep Research](chatgpt-study-page-design.md) | Full report text, research and standards labels, and 42 yes/no checks. It treats visual supports, feedback, rewards, read-aloud and the school’s question formats separately. | Retrieved. A completed independent source audit or adoption decision for this copy was not located. |
 | [Gemini Deep Research](gemini-study-page-design.md) | Report text, 12 tables, 51 yes/no checks and 113 bibliography entries. The original [evidence figure](gemini-evidence-figure.png) is included. | Retrieved. The evidence ratings and numerical prescriptions are the report’s own. Comparison with the checked guide is open. |
-| [Claude Research, active repository guide](../murad-design-guide.md) | Thirteen design topics, including bilingual layout and keyboard access, plus 76 numbered page-review checks. | Source-checked on 19 November. Its opening note records corrections, named exceptions and two unavailable abstracts. That note predates collection of the other reports here. |
+| [Claude Research, active repository guide](../grade-6-design-guide.md) | Thirteen design topics, including bilingual layout and keyboard access, plus 76 numbered page-review checks. | Source-checked on 19 November. Its opening note records corrections, named exceptions and two unavailable abstracts. That note predates collection of the other reports here. |
 
 ## Decisions that can change the HTML
 

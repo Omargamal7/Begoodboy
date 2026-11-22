@@ -1,4 +1,4 @@
-# Reusable prompt: interactive lesson sheets for Murad and Jimmy
+# Reusable prompt: interactive lesson sheets for Grade 5 and Grade 6 (2026–2027)
 
 Use this to turn any school booklet (any subject) into interactive sheets, with any model, without re-planning.
 
@@ -19,7 +19,7 @@ You are building interactive lesson sheets from a school booklet, for one of two
 Everything you need is in this prompt and in the repository. Do not re-plan, do not redesign,
 do not ask about design. Follow the steps exactly.
 
-FILL IN: CHILD = Murad | Jimmy
+FILL IN: CHILD = Grade 6 | Grade 5
 FILL IN: SUBJECT = (for example: Science, Maths, English, Arabic)
 FILL IN: BOOKLET = (the attached file name)
 
@@ -41,12 +41,12 @@ example sentences are allowed only in practice activities, never as lesson facts
 ==================================================================
 2. THE TWO CHILDREN (from the parent's own answers; do not change)
 ==================================================================
-MURAD: Primary 6, age 11, autistic. Interests: Minecraft and Roblox. Answers best by speaking.
+GRADE-6: Primary 6, age 11, autistic. Interests: Minecraft and Roblox. Answers best by speaking.
 Reads English sentences alone; English is his mother tongue; no Arabic labels. No known sensory
 sensitivities. Reward: Minecraft or Roblox time, or a favourite snack or drink. One sitting is
 about 10 minutes. A parent sits with him. Homework and a test use the booklet questions.
 
-JIMMY: Primary 5, age 10, no diagnosis (the parent keeps the same supports as Murad anyway).
+GRADE-5: Primary 5, age 10, no diagnosis (the parent keeps the same supports as Grade 6 anyway).
 Interests: Minecraft, Roblox, football (Al Ahly and Real Madrid). Answers by speaking, writing or
 on screen. Reads very well; English is his mother tongue. Reward: game or screen time. One
 sitting is 15 to 20 minutes. A parent sits with him. Homework and a test use the booklet questions.
@@ -83,15 +83,15 @@ Write content that follows these rules:
 index.html            home page; lists every lesson; loads every lesson file with <script> tags
 app/engine/sheet.js       the engine (schedule strip, First-Then box, cards, activities, checks)
 app/engine/sheet.css      the look
-app/engine/common.js    each child's settings and the helpers murad({...}), jimmy({...}), Q.*
-app/lessons/murad/ict/theme-01.js   WORKED EXAMPLE: 6 finished ICT lessons for Murad. Copy its style.
-app/lessons/gamal/ict/theme-01.js   WORKED EXAMPLE: 6 finished ICT lessons for Jimmy. Copy its style.
+app/engine/common.js    each child's settings and the helpers grade-6({...}), grade-5({...}), Q.*
+app/lessons/grade-6/ict/theme-01.js   WORKED EXAMPLE: 6 finished ICT lessons for Grade 6. Copy its style.
+app/lessons/grade-5/ict/theme-01.js   WORKED EXAMPLE: 6 finished ICT lessons for Grade 5. Copy its style.
 tools/check/lessons.js        automatic test: clicks through every sitting and reports problems
 
 The helpers build the sittings for you:
-- murad({...}) makes 3 sittings: Learn the words (fact cards), Do the activities, Answer the
+- grade-6({...}) makes 3 sittings: Learn the words (fact cards), Do the activities, Answer the
   booklet questions. Each about 10 minutes.
-- jimmy({...}) makes 2 sittings: Learn and do (fact cards + activities), Answer the binder
+- grade-5({...}) makes 2 sittings: Learn and do (fact cards + activities), Answer the binder
   questions. They can run back to back.
 You only write content.
 
@@ -107,7 +107,7 @@ You only write content.
    (Put ✓ or ✗).
 3. Create ONE file per theme: app/lessons/<child>/<subject>/theme-<theme>.js
    (all lower case, no spaces; science chapters use chapter-01.js).
-   Lesson ids: <child>-<subject>-t<theme>-l<lesson>, for example "murad-science-t1-l3".
+   Lesson ids: <child>-<subject>-t<theme>-l<lesson>, for example "grade6-science-t1-l3".
    order: theme*10 + lesson (Theme 1 Lesson 3 = 13). Add subject: "<SUBJECT>" to every lesson.
    For a subject taught in Arabic, also add dir: "rtl" and write all text in Arabic.
 4. For every lesson write: 3 to 6 fact cards, 2 or 3 activities (at least one on-screen sort,
@@ -131,10 +131,10 @@ You only write content.
   "use strict";
   var tf = Q.tf, mcq = Q.mcq, match = Q.match, word = Q.word;
 
-  murad({                                   // or jimmy({ ... })
-    id: "murad-science-t1-l1", order: 11, subject: "Science",
+  grade-6({                                   // or grade-5({ ... })
+    id: "grade6-science-t1-l1", order: 11, subject: "Science",
     where: "Theme 1 · Lesson 1", title: "Living Things",   // booklet's lesson title
-    doLabel: "Sort and find",               // Murad only: name of sitting 2
+    doLabel: "Sort and find",               // Grade 6 only: name of sitting 2
     notes: ["Parent notes for this lesson, e.g. which questions are Q.open and why."],
     facts: [
       { id: "cells", term: "Cells", icon: "book",
@@ -161,9 +161,9 @@ Field rules:
 - Every fact needs a pick (a tap-the-picture check with 2 or 3 options).
 - rightText starts with the reason, uses ** for bold, and never says "Wrong".
 - For a booklet "Match" question with N items, write N match(...) questions that share one
-  options list (see murad-t1.js Lesson 3).
+  options list (see grade-6-t1.js Lesson 3).
 - For "Complete from the words between brackets", use word(...) with the bracket words as the
-  options, the same list for every sentence (see jimmy-t2.js Lesson 1).
+  options, the same list for every sentence (see grade-5-t2.js Lesson 1).
 - Never put a bold multiply sign (** * **) in text; write "the star sign ( * )".
 
 Icons available (anything else falls back to a file icon):
@@ -201,10 +201,10 @@ TEXTPRACTICE (copy and paste a sentence into a box):
   { type: "textpractice", title: "...", steps: [...], sentence: "...", parent: "...", done: "..." }
 
 BUILDER (put devices or things in a chain from top to bottom, then a row underneath):
-  see murad-t1.js Lesson 1 and jimmy-t1.js Lesson 2.
+  see grade-6-t1.js Lesson 1 and grade-5-t1.js Lesson 2.
 
 HTMLEDITOR, GRID (spreadsheet), TRADE (pretend buying and selling):
-  see murad-t1.js Lesson 6, jimmy-t1.js Lesson 6, murad-t2.js Lesson 4.
+  see grade-6-t1.js Lesson 6, grade-5-t1.js Lesson 6, grade-6-t2.js Lesson 4.
   HTMLEDITOR and GRID must include testInput, so tools/check/lessons.js can finish them:
   - htmleditor: testInput: "<the HTML a child would type that completes every task>"
   - grid: testInput: { cells: { A4: "3", A7: "=A4+A5" }, sort: true|false,

@@ -2,7 +2,7 @@
 
 Extracted via the TinyFish connector against the saved profile; direct course-plan URLs. Items are grouped as shown in each subject's Course plan "Flow" view.
 
-## Murad — Grade 6G
+## Grade 6 — Grade Grade-6
 
 ### Arabic
 - Folder **مصادر اللغة العربية** (1): Arabic_Primary6_T1 (PDF)
@@ -26,7 +26,7 @@ Extracted via the TinyFish connector against the saved profile; direct course-pl
 
 ### Mathematics
 - Folder **Extra Sheets** (5): Revision Sheet 1 & 2 (Wk1), Worksheet 1 (Wk2), October Revision Sheet, Modified Model Answer (PDF)
-- Folder **Classes 6C/6F/6G** (18) · **1st Day at School** (3) · **Week 2** (4, Divisibility) · **Week 4** (1, Integers)
+- Folder **Classes 6C/6F/Grade-6** (18) · **1st Day at School** (3) · **Week 2** (4, Divisibility) · **Week 4** (1, Integers)
 - Folder **Weekly Material Covered** (6): detailed Wk1–6 notes; uses *Mathematics Ministry Performance & Assessments* book
 - Folder **Weekly Assessments' Study Guide** (3) · **Hw** (2)
 - Topics: divisibility, prime factorization, GCF/LCM, rational numbers, integers, absolute value. Oct Monthly Exam 19/10.
@@ -46,7 +46,7 @@ Extracted via the TinyFish connector against the saved profile; direct course-pl
 
 ### Blank / preparing: Art (confirmed empty today), Music, P.E., Professional Skills
 
-## Gamal / Jimmy — Grade 5A
+## Grade 5 (2026–2027) — Grade Grade-5
 
 ### Arabic
 - Folder **مصادر اللغة العربية** (2): ملزمة الصف الخامس كاملة 2027 (PDF), حل الكتاب المدرسي لغة عربية 5 (PDF)

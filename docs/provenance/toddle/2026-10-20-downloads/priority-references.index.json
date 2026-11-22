@@ -6,17 +6,17 @@
     "files": {
       "records": 20,
       "placed": {
-        "gamal/arabic/sync/2026-10-20-downloads/priority-references.json": 5,
-        "gamal/computer/sync/2026-10-20-downloads/priority-references.json": 1,
-        "gamal/german/sync/2026-10-20-downloads/priority-references.json": 3,
-        "gamal/religion/sync/2026-10-20-downloads/priority-references.json": 1,
-        "gamal/schedules/sync/2026-10-20-downloads/priority-references.json": 2,
-        "gamal/social-studies/sync/2026-10-20-downloads/priority-references.json": 1,
-        "murad/arabic/sync/2026-10-20-downloads/priority-references.json": 1,
-        "murad/computer/sync/2026-10-20-downloads/priority-references.json": 1,
-        "murad/mathematics/sync/2026-10-20-downloads/priority-references.json": 2,
-        "murad/religion/sync/2026-10-20-downloads/priority-references.json": 1,
-        "murad/schedules/sync/2026-10-20-downloads/priority-references.json": 2
+        "grade-5/arabic/sync/2026-10-20-downloads/priority-references.json": 5,
+        "grade-5/computer/sync/2026-10-20-downloads/priority-references.json": 1,
+        "grade-5/german/sync/2026-10-20-downloads/priority-references.json": 3,
+        "grade-5/religion/sync/2026-10-20-downloads/priority-references.json": 1,
+        "grade-5/schedules/sync/2026-10-20-downloads/priority-references.json": 2,
+        "grade-5/social-studies/sync/2026-10-20-downloads/priority-references.json": 1,
+        "grade-6/arabic/sync/2026-10-20-downloads/priority-references.json": 1,
+        "grade-6/computer/sync/2026-10-20-downloads/priority-references.json": 1,
+        "grade-6/mathematics/sync/2026-10-20-downloads/priority-references.json": 2,
+        "grade-6/religion/sync/2026-10-20-downloads/priority-references.json": 1,
+        "grade-6/schedules/sync/2026-10-20-downloads/priority-references.json": 2
       }
     }
   },

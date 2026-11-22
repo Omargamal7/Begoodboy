@@ -1,7 +1,7 @@
 /* Verify every independent lesson offline at phone/tablet/laptop widths. */
 'use strict';
 const fs=require('fs'),path=require('path'),{chromium}=require('playwright');
-const root=path.resolve(__dirname,'../..'),pack=path.join(root,'build/packs/murad/science');
+const root=path.resolve(__dirname,'../..'),pack=path.join(root,'build/packs/grade-6/science');
 const links=JSON.parse(fs.readFileSync(path.join(pack,'lesson-list.json'),'utf8'));
 (async()=>{
  const browser=await chromium.launch(process.env.CHROMIUM?{executablePath:process.env.CHROMIUM}:{});

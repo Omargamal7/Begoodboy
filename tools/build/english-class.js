@@ -6,7 +6,7 @@ const write=(p,s)=>{fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileS
 const replace=(s,a,b)=>{if(!s.includes(a))throw Error('Missing class build anchor: '+a.slice(0,80));return s.replace(a,b);};
 const css=fs.readFileSync(path.join(base,'app.css'),'utf8')+'\n'+fs.readFileSync(path.join(shared,'english-class-arabic.css'),'utf8');
 const helpers=fs.readFileSync(path.join(shared,'english-class-arabic.js'),'utf8');
-let js=fs.readFileSync(path.join(base,'app.js'),'utf8').replaceAll("DATA.slug==='murad'","DATA.level===6").replaceAll('English O-Level','English revision');
+let js=fs.readFileSync(path.join(base,'app.js'),'utf8').replaceAll("DATA.slug==='grade-6'","DATA.level===6").replaceAll('English O-Level','English revision');
 js=replace(js,'  function scene(',helpers+'\n  function scene(');
 js=replace(js,'  function btn(label,attr=\'\',cls=\'\'){return','  function btn(label,attr=\'\',cls=\'\'){if(arOn()&&AR_LABELS[label])label=\'<span class="btn-en">\'+label+\'</span><small class="btn-ar" lang="ar" dir="rtl">\'+escape(AR_LABELS[label])+\'</small>\';return');
 js=replace(js,"Ready, '+escape(DATA.child)+'?",'Ready to practise?');
@@ -15,7 +15,7 @@ js=replace(js,"+unitTabs()+'<div class=\"tip-grid\">'","+unitTabs()+unitArabic(u
 js=replace(js,"+input+'<div class=\"work-actions\">'","+questionArabic(q)+input+'<div class=\"work-actions\">'");
 js=replace(js,'+feedbackHTML(q)+','+feedbackHTML(q)+arabicFeedback(q)+');
 js=js.replace(/  function openParent\(\)\{[\s\S]*?\n  function download/,'  function openParent(){classParent();}\n  function download');
-if(js.includes('Toddle'))throw Error('Private source-label prose remains in class JS');
+if(js.includes('School Portal (2026–2027)'))throw Error('Private source-label prose remains in class JS');
 js=replace(js,"Extra practice beyond the last uploaded answer-key boundary.",'Extra practice · confirm current exam coverage with your teacher.');
 js=replace(js,"view==='retry'?retryView():practice()","view==='retry'?retryView():view==='words'?words():practice()");
 js=replace(js,"function render(){root.innerHTML=","function render(){updateLanguageUI();root.innerHTML=");
@@ -36,7 +36,7 @@ const nav=[['home','⌂','Home','الرئيسية'],['learn','▦','Explore','ا
 template=template.replace(/<nav class="bottom-nav"[\s\S]*?<\/nav>/,'<nav class="bottom-nav" aria-label="Revision activities">'+nav.map(([v,icon,en,ar])=>'<button data-view="'+v+'"><span aria-hidden="true">'+icon+'</span><span class="nav-en">'+en+'</span><span class="ar-nav" lang="ar" dir="rtl">'+ar+'</span></button>').join('')+'</nav>');
 write(path.join(shared,'english-class/app.html'),template);
 
-for(const [level,folder] of [[5,'gamal'],[6,'murad']]){
+for(const [level,folder] of [[5,'grade-5'],[6,'grade-6']]){
  const d=JSON.parse(fs.readFileSync(path.join(root,'app/activities',folder,'english-revision/data.json'),'utf8'));
  const support=JSON.parse(fs.readFileSync(path.join(root,'app/activities/class','grade'+level,'arabic-support.json'),'utf8'));
  d.child='Grade '+level;d.grade=String(level);d.level=level;d.slug='grade'+level+'-class';d.classEdition=true;d.arabicSupport=support;
@@ -63,7 +63,7 @@ for(const [level,folder] of [[5,'gamal'],[6,'murad']]){
    if(/u3-l2-form/.test(q.id))q.arRule='ability';
   }
  }
- const text=JSON.stringify(d);if(/\b(Jimmy|Murad|Gamal|Toddle|5A|6G)\b/i.test(text))throw Error('Personal label remains in grade '+level);
+ const text=JSON.stringify(d);if(/\b(Grade 5|Grade 6|Grade 5|School Portal (2026–2027)|Grade-5|Grade-6)\b/i.test(text))throw Error('Personal label remains in grade '+level);
  write(path.join(root,'app/activities/class','grade'+level,'data.json'),JSON.stringify(d,null,2)+'\n');
  const pages=JSON.parse(fs.readFileSync(path.join(root,folder,'english/sources/assessment-pages.json'),'utf8'));
  const json=x=>JSON.stringify(x).replace(/</g,'\\u003c');

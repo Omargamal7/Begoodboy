@@ -17,7 +17,7 @@ function boot(data,storage=new Map(),blocked=false){
  return {click,type,state,element,storage,html:()=>element('main').innerHTML};
 }
 let total=0;
-for(const folder of ['gamal','murad']){
+for(const folder of ['grade-5','grade-6']){
  const d=JSON.parse(fs.readFileSync(path.join(root,'app/activities',folder,'english-revision/data.json'),'utf8'));
  const app=boot(d),all=d.sections.flatMap(s=>s.items),auto=all.filter(q=>!q.manual&&!['open','writing','task'].includes(q.type));
  for(const v of ['learn','models','writing','retry','home']){app.click({view:v});assert(app.html().length>100,'empty view '+v);}

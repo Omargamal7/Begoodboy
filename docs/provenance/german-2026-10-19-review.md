@@ -2,13 +2,13 @@
 
 ## Scope and pupil/course attribution
 
-Reviewed the three school PDFs and their extracted text under `gamal`:
+Reviewed the three school PDFs and their extracted text under `grade-5`:
 
 - `october-worksheet.pdf`: 3 PDF pages; October revision worksheet.
 - `october-model-answers.pdf`: 3 PDF pages; highlighted answers to that worksheet.
 - `booklet-answers-exercises-01-22.pdf`: 27 PDF pages; six introductory topics and exercises 1–22.
 
-The October worksheet and its key visibly say **6.Klasse** in the header. The live course attribution supplied for this task is **5A**. These facts conflict; a header alone does not establish that the material belongs to another pupil. Present this as the Grade 5A course's uploaded school German material, with a source-header discrepancy in the source notes. Do not relabel the course Grade 6 to make the header fit.
+The October worksheet and its key visibly say **6.Klasse** in the header. The live course attribution supplied for this task is **Grade-5**. These facts conflict; a header alone does not establish that the material belongs to another pupil. Present this as the Grade Grade-5 course's uploaded school German material, with a source-header discrepancy in the source notes. Do not relabel the course Grade 6 to make the header fit.
 
 The supplied live current-term subject list has no German course for the other child. No German pack was created for that child. This is a limitation of the verified current course list, not a claim about every subject the child has ever studied.
 

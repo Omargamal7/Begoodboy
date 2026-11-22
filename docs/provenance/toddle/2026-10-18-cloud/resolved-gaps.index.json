@@ -6,13 +6,13 @@
     "files": {
       "records": 23,
       "placed": {
-        "gamal/arabic/sync/2026-10-18-cloud/resolved-gaps.json": 1,
-        "gamal/english/sync/2026-10-18-cloud/resolved-gaps.json": 9,
-        "murad/arabic/sync/2026-10-18-cloud/resolved-gaps.json": 1,
-        "murad/english/sync/2026-10-18-cloud/resolved-gaps.json": 2,
-        "murad/mathematics/sync/2026-10-18-cloud/resolved-gaps.json": 1,
-        "murad/science/sync/2026-10-18-cloud/resolved-gaps.json": 7,
-        "murad/social-studies/sync/2026-10-18-cloud/resolved-gaps.json": 2
+        "grade-5/arabic/sync/2026-10-18-cloud/resolved-gaps.json": 1,
+        "grade-5/english/sync/2026-10-18-cloud/resolved-gaps.json": 9,
+        "grade-6/arabic/sync/2026-10-18-cloud/resolved-gaps.json": 1,
+        "grade-6/english/sync/2026-10-18-cloud/resolved-gaps.json": 2,
+        "grade-6/mathematics/sync/2026-10-18-cloud/resolved-gaps.json": 1,
+        "grade-6/science/sync/2026-10-18-cloud/resolved-gaps.json": 7,
+        "grade-6/social-studies/sync/2026-10-18-cloud/resolved-gaps.json": 2
       }
     }
   },

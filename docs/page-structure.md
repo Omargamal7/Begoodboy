@@ -1,6 +1,6 @@
 # Structure of a study page
 
-Begin with the actual booklet page, learning goal and answer key. The page teaches the lesson, lets the learner try the book’s exercises with support, then checks what the learner can do independently. The [authoring guide](authoring.md) gives the engine data format. [Summit Words](../murad/english/assessments/2026-11-17-vocabulary-quiz/summit-words.html) shows the standalone version with a vocabulary lesson, booklet page 15 and a practice quiz.
+Begin with the actual booklet page, learning goal and answer key. The page teaches the lesson, lets the learner try the book’s exercises with support, then checks what the learner can do independently. The [authoring guide](authoring.md) gives the engine data format. [Summit Words](../grade-6/english/assessments/2026-11-17-vocabulary-quiz/summit-words.html) shows the standalone version with a vocabulary lesson, booklet page 15 and a practice quiz.
 
 ## What the learner sees
 
@@ -17,12 +17,12 @@ Begin with the actual booklet page, learning goal and answer key. The page teach
 
 | Deliverable | Repository location and example |
 | --- | --- |
-| Shared-engine lesson | `app/lessons/<child>/<subject>/`. Register the lesson script in `index.html`. Use [Grade 6 ICT](../app/lessons/murad/ict/theme-01.js) or [Grade 5 ICT](../app/lessons/gamal/ict/theme-01.js) as a model. |
+| Shared-engine lesson | `app/lessons/<child>/<subject>/`. Register the lesson script in `index.html`. Use [Grade 6 ICT](../app/lessons/grade-6/ict/theme-01.js) or [Grade 5 ICT](../app/lessons/grade-5/ict/theme-01.js) as a model. |
 | Standalone offline practice | A self-contained HTML file under `<child>/<subject>/packs/`. A dated assessment goes in `<child>/<subject>/assessments/<YYYY-MM-DD>-<name>/`. [Standalone pack catalogue](study-packs.md) |
 | Source books and figures | Use the existing `<child>/<subject>/sources/` hierarchy or the appropriate shared source folder. [Repository structure](structure.md) |
-| Source map and review | `docs/provenance/<child>/<subject>/<YYYY-MM-DD>-<lesson>.md`. The [science assessment source map](provenance/gamal/science/chapter-02-assessment-source-map.md) illustrates how to tie an item back to the book. |
+| Source map and review | `docs/provenance/<child>/<subject>/<YYYY-MM-DD>-<lesson>.md`. The [science assessment source map](provenance/grade-5/science/chapter-02-assessment-source-map.md) illustrates how to tie an item back to the book. |
 
-The shared engine’s [learner helpers](../app/engine/common.js) define three sittings for `murad` and two for `gamal` through `jimmy({...})`. Keep each learner’s content and progress separate. For a subject taught in Arabic use `dir: "rtl"` and Arabic lesson text. Reuse the [engine renderer](../app/engine/sheet.js) and [styles](../app/engine/sheet.css) when the page fits an existing engine lesson.
+The shared engine’s [learner helpers](../app/engine/common.js) define three sittings for `grade-6` and two for `grade-5` through `grade-5({...})`. Keep each learner’s content and progress separate. For a subject taught in Arabic use `dir: "rtl"` and Arabic lesson text. Reuse the [engine renderer](../app/engine/sheet.js) and [styles](../app/engine/sheet.css) when the page fits an existing engine lesson.
 
 ## From source to score
 

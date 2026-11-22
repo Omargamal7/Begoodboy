@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check every scored answer in Murad's November grammar page against the school's model-answer PDF.
+"""Check every scored answer in Grade 6’s November grammar page against the school's model-answer PDF.
 
 Usage: python3 -I tools/check/grammar-blocks-key.py
 Needs pypdfium2 (installed by tools/setup-skills.sh). Run from the repository root.
@@ -12,7 +12,7 @@ Items whose key is only shown in red on the page image (keyFrag ["img"]) are lis
 import json, re, sys
 import pypdfium2 as pdfium
 
-DATA = "murad/english/assessments/2026-11-26-grammar-test/grammar-data.json"
+DATA = "grade-6/english/assessments/2026-11-26-grammar-test/grammar-data.json"
 d = json.load(open(DATA, encoding="utf-8"))
 doc = pdfium.PdfDocument(d["meta"]["key"])
 off = d["meta"]["pdfOffset"]

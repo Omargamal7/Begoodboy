@@ -1,6 +1,6 @@
 # Monthly dates, routine assessments and checkpoint limits
 
-This is a revision checkpoint from 17 October 2026, not the completed full Toddle sync. It contains 12 verified original PDFs: eight for Gamal / Jimmy and four for Murad. The source bytes were preserved, including any school answer-key issues.
+This is a revision checkpoint from 17 October 2026, not the completed full School Portal (2026–2027) sync. It contains 12 verified original PDFs: eight for Grade 5 (2026–2027) and four for Grade 6. The source bytes were preserved, including any school answer-key issues.
 
 ## Dated October monthly tests - both children
 
@@ -18,9 +18,9 @@ The Lesson column likely means the school period. It does not establish curricul
 
 ## Separate regular assessment timetables
 
-Gamal 5A: Sunday Arabic + Religion; Monday Math; Tuesday English + ICT; Wednesday Social Studies; Thursday Science.
+Grade 5 Grade-5: Sunday Arabic + Religion; Monday Math; Tuesday English + ICT; Wednesday Social Studies; Thursday Science.
 
-Murad 6G: Sunday Arabic; Monday Math + ICT; Tuesday English + Science; Wednesday Religion; Thursday Social Studies.
+Grade 6 Grade-6: Sunday Arabic; Monday Math + ICT; Tuesday English + Science; Wednesday Religion; Thursday Social Studies.
 
 These routine weekdays do not replace the specifically dated monthly examinations. The schedule PDFs do not establish an exact ICT monthly examination date or the subject syllabus. English O.L. is during the O.L. session; French/German quizzes are once monthly during the lesson.
 

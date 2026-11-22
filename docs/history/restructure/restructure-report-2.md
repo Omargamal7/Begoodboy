@@ -1,146 +1,146 @@
 # Restructure pass 2
 
-- moved `murad/docs/README.md` -> `murad/general/docs`
-- moved `murad/docs/arabic` -> `murad/arabic/docs`
-- moved `murad/docs/handoff-2026-10-20.md` -> `murad/general/docs`
-- moved `murad/docs/ict` -> `murad/computer/docs`
-- moved `murad/docs/mathematics` -> `murad/mathematics/docs`
-- moved `gamal/docs/README.md` -> `gamal/general/docs`
-- moved `gamal/docs/arabic` -> `gamal/arabic/docs`
-- moved `gamal/docs/handoff-2026-10-20.md` -> `gamal/general/docs`
-- moved `gamal/docs/ict` -> `gamal/computer/docs`
-- moved `gamal/docs/social-studies` -> `gamal/social-studies/docs`
-- moved `packs/class/grade6/english` -> `murad/english/packs/class`
-- moved `packs/class/grade5/english` -> `gamal/english/packs/class`
-- moved `packs/class/grade5/german` -> `gamal/german/packs/class`
-- copied `sources/shared/school` -> `murad/school/sources/shared`
-- copied `sources/shared/school` -> `gamal/school/sources/shared`
-- copied `sources/shared/science` -> `murad/science/sources/shared`
-- copied `sources/shared/science` -> `gamal/science/sources/shared`
-- copied `sources/shared/social-studies` -> `murad/social-studies/sources/shared`
-- copied `sources/shared/social-studies` -> `gamal/social-studies/sources/shared`
+- moved `grade-6/docs/README.md` -> `grade-6/general/docs`
+- moved `grade-6/docs/arabic` -> `grade-6/arabic/docs`
+- moved `grade-6/docs/handoff-2026-10-20.md` -> `grade-6/general/docs`
+- moved `grade-6/docs/ict` -> `grade-6/computer/docs`
+- moved `grade-6/docs/mathematics` -> `grade-6/mathematics/docs`
+- moved `grade-5/docs/README.md` -> `grade-5/general/docs`
+- moved `grade-5/docs/arabic` -> `grade-5/arabic/docs`
+- moved `grade-5/docs/handoff-2026-10-20.md` -> `grade-5/general/docs`
+- moved `grade-5/docs/ict` -> `grade-5/computer/docs`
+- moved `grade-5/docs/social-studies` -> `grade-5/social-studies/docs`
+- moved `packs/class/grade6/english` -> `grade-6/english/packs/class`
+- moved `packs/class/grade5/english` -> `grade-5/english/packs/class`
+- moved `packs/class/grade5/german` -> `grade-5/german/packs/class`
+- copied `sources/shared/school` -> `grade-6/school/sources/shared`
+- copied `sources/shared/school` -> `grade-5/school/sources/shared`
+- copied `sources/shared/science` -> `grade-6/science/sources/shared`
+- copied `sources/shared/science` -> `grade-5/science/sources/shared`
+- copied `sources/shared/social-studies` -> `grade-6/social-studies/sources/shared`
+- copied `sources/shared/social-studies` -> `grade-5/social-studies/sources/shared`
 
 ## Final tree
 ```
-murad
-murad/arabic
-murad/arabic/docs
-murad/arabic/sources
-murad/arabic/sources/revision
-murad/computer
-murad/computer/docs
-murad/computer/sources
-murad/computer/sources/booklets
-murad/computer/sources/evaluations
-murad/computer/sources/handouts
-murad/computer/sources/revision
-murad/docs
-murad/docs/arabic
-murad/docs/ict
-murad/docs/mathematics
-murad/english
-murad/english/packs
-murad/english/packs/class
-murad/english/sources
-murad/english/sources/booklets
-murad/english/sources/dictations
-murad/english/sources/grammar
-murad/english/sources/lesson-distribution
-murad/english/sources/model-answers
-murad/english/sources/weekly
-murad/english/sources/wonders
-murad/general
-murad/general/docs
-murad/mathematics
-murad/mathematics/docs
-murad/mathematics/packs
-murad/mathematics/sources
-murad/mathematics/sources/activities
-murad/mathematics/sources/booklets
-murad/mathematics/sources/model-answers
-murad/mathematics/sources/revision
-murad/mathematics/sources/weekly
-murad/mathematics/sources/worksheets
-murad/religion
-murad/religion/sources
-murad/religion/sources/revision
-murad/revision
-murad/revision/packs
-murad/schedules
-murad/schedules/sources
-murad/school
-murad/school/sources
-murad/school/sources/shared
-murad/science
-murad/science/packs
-murad/science/sources
-murad/science/sources/activities
-murad/science/sources/model-answers
-murad/science/sources/shared
-murad/social-studies
-murad/social-studies/packs
-murad/social-studies/sources
-murad/social-studies/sources/atlases
-murad/social-studies/sources/model-answers
-murad/social-studies/sources/shared
-murad/social-studies/sources/weekly
-gamal
-gamal/announcements
-gamal/announcements/sources
-gamal/arabic
-gamal/arabic/docs
-gamal/arabic/sources
-gamal/arabic/sources/revision
-gamal/computer
-gamal/computer/docs
-gamal/computer/sources
-gamal/computer/sources/booklets
-gamal/computer/sources/evaluations
-gamal/computer/sources/revision
-gamal/docs
-gamal/docs/arabic
-gamal/docs/ict
-gamal/docs/social-studies
-gamal/english
-gamal/english/packs
-gamal/english/packs/class
-gamal/english/sources
-gamal/english/sources/Weekly
-gamal/english/sources/booklets
-gamal/english/sources/dictations
-gamal/english/sources/model-answers
-gamal/english/sources/weekly
-gamal/english/sources/wonders
-gamal/general
-gamal/general/docs
-gamal/german
-gamal/german/packs
-gamal/german/packs/class
-gamal/german/sources
-gamal/german/sources/revision
-gamal/mathematics
-gamal/mathematics/packs
-gamal/religion
-gamal/religion/sources
-gamal/religion/sources/revision
-gamal/revision
-gamal/revision/packs
-gamal/schedules
-gamal/schedules/sources
-gamal/school
-gamal/school/sources
-gamal/school/sources/shared
-gamal/science
-gamal/science/packs
-gamal/science/packs/arabic-book-term1
-gamal/science/packs/english-term1
-gamal/science/sources
-gamal/science/sources/assessments
-gamal/science/sources/shared
-gamal/social-studies
-gamal/social-studies/docs
-gamal/social-studies/packs
-gamal/social-studies/sources
-gamal/social-studies/sources/assessments
-gamal/social-studies/sources/shared
+grade-6
+grade-6/arabic
+grade-6/arabic/docs
+grade-6/arabic/sources
+grade-6/arabic/sources/revision
+grade-6/computer
+grade-6/computer/docs
+grade-6/computer/sources
+grade-6/computer/sources/booklets
+grade-6/computer/sources/evaluations
+grade-6/computer/sources/handouts
+grade-6/computer/sources/revision
+grade-6/docs
+grade-6/docs/arabic
+grade-6/docs/ict
+grade-6/docs/mathematics
+grade-6/english
+grade-6/english/packs
+grade-6/english/packs/class
+grade-6/english/sources
+grade-6/english/sources/booklets
+grade-6/english/sources/dictations
+grade-6/english/sources/grammar
+grade-6/english/sources/lesson-distribution
+grade-6/english/sources/model-answers
+grade-6/english/sources/weekly
+grade-6/english/sources/wonders
+grade-6/general
+grade-6/general/docs
+grade-6/mathematics
+grade-6/mathematics/docs
+grade-6/mathematics/packs
+grade-6/mathematics/sources
+grade-6/mathematics/sources/activities
+grade-6/mathematics/sources/booklets
+grade-6/mathematics/sources/model-answers
+grade-6/mathematics/sources/revision
+grade-6/mathematics/sources/weekly
+grade-6/mathematics/sources/worksheets
+grade-6/religion
+grade-6/religion/sources
+grade-6/religion/sources/revision
+grade-6/revision
+grade-6/revision/packs
+grade-6/schedules
+grade-6/schedules/sources
+grade-6/school
+grade-6/school/sources
+grade-6/school/sources/shared
+grade-6/science
+grade-6/science/packs
+grade-6/science/sources
+grade-6/science/sources/activities
+grade-6/science/sources/model-answers
+grade-6/science/sources/shared
+grade-6/social-studies
+grade-6/social-studies/packs
+grade-6/social-studies/sources
+grade-6/social-studies/sources/atlases
+grade-6/social-studies/sources/model-answers
+grade-6/social-studies/sources/shared
+grade-6/social-studies/sources/weekly
+grade-5
+grade-5/announcements
+grade-5/announcements/sources
+grade-5/arabic
+grade-5/arabic/docs
+grade-5/arabic/sources
+grade-5/arabic/sources/revision
+grade-5/computer
+grade-5/computer/docs
+grade-5/computer/sources
+grade-5/computer/sources/booklets
+grade-5/computer/sources/evaluations
+grade-5/computer/sources/revision
+grade-5/docs
+grade-5/docs/arabic
+grade-5/docs/ict
+grade-5/docs/social-studies
+grade-5/english
+grade-5/english/packs
+grade-5/english/packs/class
+grade-5/english/sources
+grade-5/english/sources/Weekly
+grade-5/english/sources/booklets
+grade-5/english/sources/dictations
+grade-5/english/sources/model-answers
+grade-5/english/sources/weekly
+grade-5/english/sources/wonders
+grade-5/general
+grade-5/general/docs
+grade-5/german
+grade-5/german/packs
+grade-5/german/packs/class
+grade-5/german/sources
+grade-5/german/sources/revision
+grade-5/mathematics
+grade-5/mathematics/packs
+grade-5/religion
+grade-5/religion/sources
+grade-5/religion/sources/revision
+grade-5/revision
+grade-5/revision/packs
+grade-5/schedules
+grade-5/schedules/sources
+grade-5/school
+grade-5/school/sources
+grade-5/school/sources/shared
+grade-5/science
+grade-5/science/packs
+grade-5/science/packs/arabic-book-term1
+grade-5/science/packs/english-term1
+grade-5/science/sources
+grade-5/science/sources/assessments
+grade-5/science/sources/shared
+grade-5/social-studies
+grade-5/social-studies/docs
+grade-5/social-studies/packs
+grade-5/social-studies/sources
+grade-5/social-studies/sources/assessments
+grade-5/social-studies/sources/shared
 ```

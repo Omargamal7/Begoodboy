@@ -1,6 +1,6 @@
 # Archive reconciliation — 20 October 2026
 
-This record distinguishes existing GitHub preservation from what could be downloaded and independently reopened in the current recovery session. It is not a new live Toddle export.
+This record distinguishes existing GitHub preservation from what could be downloaded and independently reopened in the current recovery session. It is not a new live School Portal (2026–2027) export.
 
 ## Verified recovery
 
@@ -18,8 +18,8 @@ This record distinguishes existing GitHub preservation from what could be downlo
 
 The 58 unavailable repository file bodies and 53 pending catalogue records are **not assertions that GitHub has lost those files**. The current connection can list them but does not return their large binary bodies. Originals stored as parts and release assets need an authenticated binary-capable transfer. See [pending catalogue records](pending-originals.index.json).
 
-Full structured Toddle coverage still needs complete announcement text, assignment details, portfolio media, timetable/calendar records and remaining account surfaces. Live source refresh and current ChatGPT Project state require an authenticated session. No recurring checks, complete encrypted independent backup, Git history recovery or full Toddle sync are claimed.
+Full structured School Portal (2026–2027) coverage still needs complete announcement text, assignment details, portfolio media, timetable/calendar records and remaining account surfaces. Live source refresh and current ChatGPT Project state require an authenticated session. No recurring checks, complete encrypted independent backup, Git history recovery or full School Portal (2026–2027) sync are claimed.
 
 ## Navigation corrections
 
-Both student guides now reflect the current directly tracked source inventory; Jimmy's stale claim that German files were absent is removed. The packs guide links the current complete English/German personal and class editions. Existing source files, app code, lesson IDs and progress keys are unchanged.
+Both student guides now reflect the current directly tracked source inventory; Grade 5’s stale claim that German files were absent is removed. The packs guide links the current complete English/German personal and class editions. Existing source files, app code, lesson IDs and progress keys are unchanged.

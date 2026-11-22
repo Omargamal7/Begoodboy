@@ -6,19 +6,19 @@
     "files": {
       "records": 49,
       "placed": {
-        "docs/provenance/toddle/2026-10-18-cloud/attachments.unassigned.json": 6,
-        "gamal/arabic/sync/2026-10-18-cloud/attachments.json": 2,
-        "gamal/english/sync/2026-10-18-cloud/attachments.json": 9,
-        "gamal/general/sync/2026-10-18-cloud/attachments.json": 1,
-        "gamal/schedules/sync/2026-10-18-cloud/attachments.json": 1,
-        "murad/arabic/sync/2026-10-18-cloud/attachments.json": 5,
-        "murad/computer/sync/2026-10-18-cloud/attachments.json": 7,
-        "murad/english/sync/2026-10-18-cloud/attachments.json": 5,
-        "murad/mathematics/sync/2026-10-18-cloud/attachments.json": 1,
-        "murad/religion/sync/2026-10-18-cloud/attachments.json": 1,
-        "murad/schedules/sync/2026-10-18-cloud/attachments.json": 2,
-        "murad/science/sync/2026-10-18-cloud/attachments.json": 7,
-        "murad/social-studies/sync/2026-10-18-cloud/attachments.json": 2
+        "docs/provenance/school-portal-2026-2027/2026-10-18-cloud/attachments.unassigned.json": 6,
+        "grade-5/arabic/sync/2026-10-18-cloud/attachments.json": 2,
+        "grade-5/english/sync/2026-10-18-cloud/attachments.json": 9,
+        "grade-5/general/sync/2026-10-18-cloud/attachments.json": 1,
+        "grade-5/schedules/sync/2026-10-18-cloud/attachments.json": 1,
+        "grade-6/arabic/sync/2026-10-18-cloud/attachments.json": 5,
+        "grade-6/computer/sync/2026-10-18-cloud/attachments.json": 7,
+        "grade-6/english/sync/2026-10-18-cloud/attachments.json": 5,
+        "grade-6/mathematics/sync/2026-10-18-cloud/attachments.json": 1,
+        "grade-6/religion/sync/2026-10-18-cloud/attachments.json": 1,
+        "grade-6/schedules/sync/2026-10-18-cloud/attachments.json": 2,
+        "grade-6/science/sync/2026-10-18-cloud/attachments.json": 7,
+        "grade-6/social-studies/sync/2026-10-18-cloud/attachments.json": 2
       }
     }
   },

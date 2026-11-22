@@ -3,16 +3,16 @@
   "timezone": "Africa/Cairo",
   "complete_toddle_sync": false,
   "school_announcements_full_text": {
-    "jimmy": 44,
-    "murad": 43
+    "grade-5": 44,
+    "grade-6": 43
   },
   "current_class_feeds_checked": {
-    "jimmy": 13,
-    "murad": 12
+    "grade-5": 13,
+    "grade-6": 12
   },
   "class_announcements_full_text": {
-    "jimmy": 7,
-    "murad": 11
+    "grade-5": 7,
+    "grade-6": 11
   },
   "priority_originals_verified": 20,
   "priority_original_bytes": 14497319,
@@ -21,8 +21,8 @@
   "private_portfolio_originals_verified": 46,
   "project_dated_text_handoffs_verified": [
     "School HQ",
-    "Jimmy Learning Hub",
-    "Murad Learning Hub"
+    "Grade 5 Learning Hub",
+    "Grade 6 Learning Hub"
   ],
   "new_project_original_uploads_verified": 0,
   "historical_source_catalogue": {

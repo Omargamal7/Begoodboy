@@ -1,10 +1,10 @@
 # Current assignments
 
-Checked 18 October 2026. Toddle showed no upcoming or overdue work for either child.
+Checked 18 October 2026. School Portal (2026–2027) showed no upcoming or overdue work for either child.
 
-## Murad — Grade 6G
+## Grade 6 — Grade Grade-6
 
-Toddle lists 22 no-due-date records. The **Not submitted** view contains three current Mathematics assessments:
+School Portal (2026–2027) lists 22 no-due-date records. The **Not submitted** view contains three current Mathematics assessments:
 
 - Weekly Assessment (1)
 - Weekly Assessment (2)
@@ -12,8 +12,8 @@ Toddle lists 22 no-due-date records. The **Not submitted** view contains three c
 
 Other no-date records marked `Submission pending` are teacher-managed learning experiences or homework records: Arabic October homework, October test grade, written-work grades, evaluations 3 and 4, October behaviour; Mathematics Unit 1 and Unit 2 homework/activity records and behaviour; and Science Weekly Assessment 1. Religion evaluations 1 and 2 and Arabic evaluations 1 and 2 are already evaluated. English OL Week 3 attendance/behaviour requires no submission.
 
-## Gamal / Jimmy — Grade 5A
+## Grade 5 (2026–2027) — Grade Grade-5
 
-Toddle lists 11 no-due-date records and no upcoming or overdue work. Mathematics `Behavior & Attendance` is the only no-date record labelled `Submission pending`; the remaining records are completed, evaluated or explicitly require no submission.
+School Portal (2026–2027) lists 11 no-due-date records and no upcoming or overdue work. Mathematics `Behavior & Attendance` is the only no-date record labelled `Submission pending`; the remaining records are completed, evaluated or explicitly require no submission.
 
-This file reports Toddle states exactly. A `Submission pending` label without a due date does not by itself prove that a student upload is required.
+This file reports School Portal (2026–2027) states exactly. A `Submission pending` label without a due date does not by itself prove that a student upload is required.

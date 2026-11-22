@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),assert=require('assert'),vm=require('vm');
 const root=path.resolve(__dirname,'../..');
 let total=0;
-for(const [slug,folder,models,first,last] of [['jimmy','gamal',18,4,35],['murad','murad',9,5,31]]){
+for(const [slug,folder,models,first,last] of [['grade-5','grade-5',18,4,35],['grade-6','grade-6',9,5,31]]){
  const d=JSON.parse(fs.readFileSync(path.join(root,'app/activities',folder,'english-revision/data.json'),'utf8'));
  const pages=JSON.parse(fs.readFileSync(path.join(root,folder,'english/sources/assessment-pages.json'),'utf8'));
  const ids=new Set(),sections=new Set(),usedPages=new Set();let items=0;

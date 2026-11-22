@@ -1,7 +1,7 @@
 /* Clicks through every sitting of every lesson (or only lessons whose id contains the first argument)
    and reports script errors, unfinished activities, broken wrong-answer paths and sideways scrolling.
    Usage: node tools/check/lessons.js            (all lessons)
-          node tools/check/lessons.js murad-math (only lessons whose id contains "murad-math")
+          node tools/check/lessons.js grade6-math (only lessons whose id contains "grade6-math")
    Needs Playwright: npm i playwright. Set CHROMIUM=/path/to/chrome if Playwright has no browser. */
 const { chromium } = require('playwright');
 const path = require('path'), fs = require('fs'), os = require('os');

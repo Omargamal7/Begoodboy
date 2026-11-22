@@ -6,19 +6,19 @@
     "files": {
       "records": 67,
       "placed": {
-        "docs/provenance/toddle/2026-10-17/sources.unassigned.json": 1,
-        "gamal/arabic/sync/2026-10-17/sources.json": 7,
-        "gamal/computer/sync/2026-10-17/sources.json": 4,
-        "gamal/schedules/sync/2026-10-17/sources.json": 2,
-        "gamal/social-studies/sync/2026-10-17/sources.json": 1,
-        "murad/arabic/sync/2026-10-17/sources.json": 3,
-        "murad/computer/sync/2026-10-17/sources.json": 7,
-        "murad/english/sync/2026-10-17/sources.json": 29,
-        "murad/mathematics/sync/2026-10-17/sources.json": 3,
-        "murad/religion/sync/2026-10-17/sources.json": 1,
-        "murad/schedules/sync/2026-10-17/sources.json": 2,
-        "murad/science/sync/2026-10-17/sources.json": 4,
-        "murad/social-studies/sync/2026-10-17/sources.json": 3
+        "docs/provenance/school-portal-2026-2027/2026-10-17/sources.unassigned.json": 1,
+        "grade-5/arabic/sync/2026-10-17/sources.json": 7,
+        "grade-5/computer/sync/2026-10-17/sources.json": 4,
+        "grade-5/schedules/sync/2026-10-17/sources.json": 2,
+        "grade-5/social-studies/sync/2026-10-17/sources.json": 1,
+        "grade-6/arabic/sync/2026-10-17/sources.json": 3,
+        "grade-6/computer/sync/2026-10-17/sources.json": 7,
+        "grade-6/english/sync/2026-10-17/sources.json": 29,
+        "grade-6/mathematics/sync/2026-10-17/sources.json": 3,
+        "grade-6/religion/sync/2026-10-17/sources.json": 1,
+        "grade-6/schedules/sync/2026-10-17/sources.json": 2,
+        "grade-6/science/sync/2026-10-17/sources.json": 4,
+        "grade-6/social-studies/sync/2026-10-17/sources.json": 3
       }
     }
   },

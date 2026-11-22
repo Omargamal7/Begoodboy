@@ -50,7 +50,7 @@
         {
           "title": "Read what is actually there",
           "body": "Some passage topics do not match the lesson heading. Answer from the supplied passage.",
-          "example": "Wonderful Nile River has a passage about Omar visiting a museum."
+          "example": "Wonderful Nile River has a passage about Author visiting a museum."
         },
         {
           "title": "Nature words",
@@ -2394,7 +2394,7 @@
       "id": "u2-l3-reading",
       "unit": "u2",
       "lesson": "l3",
-      "title": "Wonderful Nile River · Omar at the museum",
+      "title": "Wonderful Nile River · Author at the museum",
       "kind": "lesson",
       "extra": false,
       "page": 16,
@@ -2407,7 +2407,7 @@
           "type": "choice",
           "prompt": "We visited a room with lots of ____.",
           "modelAnswer": "jewelry",
-          "explanation": "Omar says the room had lots of jewelry.",
+          "explanation": "Author says the room had lots of jewelry.",
           "hint": "Find the sentence about the room.",
           "manual": false,
           "source": {
@@ -2449,7 +2449,7 @@
         {
           "id": "u2-l3-reading-q3",
           "type": "open",
-          "prompt": "Where did Omar go last week?",
+          "prompt": "Where did Author go last week?",
           "modelAnswer": "He went to the museum with his family.",
           "explanation": "Compare the answer with the relevant detail in the passage.",
           "hint": "Look back at the relevant sentence in the passage.",
@@ -2477,7 +2477,7 @@
           "evidence": "passage p16"
         }
       ],
-      "passage": "I'm Omar. Last week, I went to the museum with my family. There were lots of things to see at it. We visited a room with lots of jewelry. There were bracelets, necklaces and rings from Ancient Egypt. After the jewelry, we saw tools and artifacts. The museum was amazing. I like history. We went back home at twelve o’clock."
+      "passage": "I'm Author. Last week, I went to the museum with my family. There were lots of things to see at it. We visited a room with lots of jewelry. There were bracelets, necklaces and rings from Ancient Egypt. After the jewelry, we saw tools and artifacts. The museum was amazing. I like history. We went back home at twelve o’clock."
     },
     {
       "id": "u2-l3-bank",

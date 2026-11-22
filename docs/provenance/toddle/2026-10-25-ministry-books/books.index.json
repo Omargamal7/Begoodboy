@@ -6,25 +6,25 @@
     "new_books": {
       "records": 17,
       "placed": {
-        "gamal/arabic/sync/2026-10-25-ministry-books/books.json": 2,
-        "gamal/english/sync/2026-10-25-ministry-books/books.json": 2,
-        "gamal/mathematics/sync/2026-10-25-ministry-books/books.json": 2,
-        "gamal/religion/sync/2026-10-25-ministry-books/books.json": 1,
-        "gamal/science/sync/2026-10-25-ministry-books/books.json": 1,
-        "gamal/social-studies/sync/2026-10-25-ministry-books/books.json": 2,
-        "murad/arabic/sync/2026-10-25-ministry-books/books.json": 1,
-        "murad/english/sync/2026-10-25-ministry-books/books.json": 2,
-        "murad/mathematics/sync/2026-10-25-ministry-books/books.json": 1,
-        "murad/science/sync/2026-10-25-ministry-books/books.json": 1,
-        "murad/social-studies/sync/2026-10-25-ministry-books/books.json": 2
+        "grade-5/arabic/sync/2026-10-25-ministry-books/books.json": 2,
+        "grade-5/english/sync/2026-10-25-ministry-books/books.json": 2,
+        "grade-5/mathematics/sync/2026-10-25-ministry-books/books.json": 2,
+        "grade-5/religion/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-5/science/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-5/social-studies/sync/2026-10-25-ministry-books/books.json": 2,
+        "grade-6/arabic/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-6/english/sync/2026-10-25-ministry-books/books.json": 2,
+        "grade-6/mathematics/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-6/science/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-6/social-studies/sync/2026-10-25-ministry-books/books.json": 2
       }
     },
     "reused_books": {
       "records": 3,
       "placed": {
-        "gamal/science/sync/2026-10-25-ministry-books/books.json": 1,
-        "murad/arabic/sync/2026-10-25-ministry-books/books.json": 1,
-        "murad/religion/sync/2026-10-25-ministry-books/books.json": 1
+        "grade-5/science/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-6/arabic/sync/2026-10-25-ministry-books/books.json": 1,
+        "grade-6/religion/sync/2026-10-25-ministry-books/books.json": 1
       }
     }
   },
@@ -46,7 +46,7 @@
     ],
     "limits": [
       "No lesson HTMLs changed.",
-      "School syllabus match uses existing originals, dated provenance and course catalogue, not a fresh Toddle collection.",
+      "School syllabus match uses existing originals, dated provenance and course catalogue, not a fresh School Portal (2026–2027) collection.",
       "Complete books absent from the official catalogue are not declared nonexistent.",
       "Current official assessment originals are distinct from old scans, model answers or previous-year books; old bytes remain unchanged."
     ]

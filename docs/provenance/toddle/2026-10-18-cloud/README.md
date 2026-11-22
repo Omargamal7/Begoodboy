@@ -1,4 +1,4 @@
-# Toddle archive recovery — 18 October 2026
+# School Portal (2026–2027) archive recovery — 18 October 2026
 
 This checkpoint adds verified original files recovered through the signed-in Cloud Browser. The 17 October archive and the earlier 18 October sweep remain intact.
 
@@ -29,6 +29,6 @@ The command verifies the full files against the inventory.
 
 ## Remaining full-sync work
 
-This is a verified attachment recovery checkpoint. It does not claim a complete structural Toddle export. The school announcement feeds were inspected through their oldest loaded notices (44 for Gamal and 43 for Murad, August–October 2026), and the parent inbox showed the same single Aisha Zaky conversation for either child, with no attachment visible. Full announcement text records, all assignment details, portfolio media, timetable/calendar records, and the remaining account surfaces still require a structured completeness check.
+This is a verified attachment recovery checkpoint. It does not claim a complete structural School Portal (2026–2027) export. The school announcement feeds were inspected through their oldest loaded notices (44 for Grade 5 and 43 for Grade 6, August–October 2026), and the parent inbox showed the same single Aisha Zaky conversation for either child, with no attachment visible. Full announcement text records, all assignment details, portfolio media, timetable/calendar records, and the remaining account surfaces still require a structured completeness check.
 
-No messages, submissions, grades, or settings were edited in Toddle. Opening a record may affect Toddle's automatic read indicators; no explicit read-state control was used.
+No messages, submissions, grades, or settings were edited in School Portal (2026–2027). Opening a record may affect School Portal (2026–2027)'s automatic read indicators; no explicit read-state control was used.

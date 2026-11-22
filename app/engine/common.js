@@ -23,22 +23,22 @@
     practice: function (stem, options, answer, right, hint) { return { type: "mcq", practice: true, kind: "Practice", stem: stem, options: options, answer: answer, right: right, hint: hint }; }
   };
 
-  /* Murad: Primary 6, autistic, about 10 minutes a sitting, speaks his answers.
+  /* Grade 6: Primary 6, autistic, about 10 minutes a sitting, speaks his answers.
      Three sittings per lesson: learn the cards, do the activities, answer the booklet questions. */
-  window.murad = function (d) {
+  window.grade6 = function (d) {
     window.LESSONS[d.id] = {
-      id: d.id, order: d.order, child: "Murad", grade: "Primary 6", subject: d.subject || "ICT", dir: d.dir || "ltr", where: d.where, title: d.title,
+      id: d.id, order: d.order, child: "Grade 6 (2026–2027)", grade: "Primary 6", subject: d.subject || "ICT", dir: d.dir || "ltr", where: d.where, title: d.title,
       sittingMinutes: 10,
       rewards: [
         { id: "game", label: "Minecraft or Roblox time", icon: "game" },
         { id: "snack", label: "Favourite snack or drink", icon: "snack" }
       ],
       answerHint: "Say your answer. Then tap it.",
-      homework: "Parent: now Murad writes the same answers in the Questions part of this lesson in his booklet. The school test uses the same questions.",
+      homework: "Parent: now Grade 6 writes the same answers in the Questions part of this lesson in his booklet. The school test uses the same questions.",
       parentNotes: [
         "One sitting is about **10 minutes**. Do one sitting, then give the reward.",
         "Read each card aloud. **Wait 10 seconds.** If you repeat, use **the same words**.",
-        "Murad **says** his answer first, then taps it.",
+        "The student **says** his answer first, then taps it.",
         "A wrong answer shows the card again, then the same question again. There is no red cross and no sound.",
         "Real-device steps are done with you beside him. Every real step also has an on-screen version, so a skipped step is still covered.",
         "The surprise card is for days when the plan changes."
@@ -52,15 +52,15 @@
     };
   };
 
-  /* Jimmy: Primary 5, reads very well, 15 to 20 minutes a sitting, answers on screen then in his binder.
+  /* Grade 5: Primary 5, reads very well, 15 to 20 minutes a sitting, answers on screen then in his binder.
      Two sittings per lesson. They can be done back to back in one go. */
-  window.jimmy = function (d) {
+  window.grade5 = function (d) {
     window.LESSONS[d.id] = {
-      id: d.id, order: d.order, child: "Jimmy", grade: "Primary 5", subject: d.subject || "ICT", dir: d.dir || "ltr", where: d.where, title: d.title,
+      id: d.id, order: d.order, child: "Grade 5 (2026–2027)", grade: "Primary 5", subject: d.subject || "ICT", dir: d.dir || "ltr", where: d.where, title: d.title,
       sittingMinutes: 20,
       rewards: [{ id: "game", label: "Game or screen time", icon: "game" }],
       answerHint: "Read the question. Tap your answer.",
-      homework: "Parent: now Jimmy writes the same answers in the Questions part of this lesson in his binder. The school test uses the same questions.",
+      homework: "Parent: now Grade 5 writes the same answers in the Questions part of this lesson in his binder. The school test uses the same questions.",
       parentNotes: [
         "One sitting is **15 to 20 minutes**. Both sittings can be done in one go: tap **Start sitting 2** at the end of sitting 1.",
         "Wait **10 seconds** after each question. If you repeat, use **the same words**.",

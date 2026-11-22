@@ -1,6 +1,6 @@
-# Toddle record — 17 October 2026
+# School Portal (2026–2027) record — 17 October 2026
 
-**Full sync is incomplete.** All 71 supplied download names are archived as 67 unique files; remaining Toddle sections and full content analysis are pending.
+**Full sync is incomplete.** All 71 supplied download names are archived as 67 unique files; remaining School Portal (2026–2027) sections and full content analysis are pending.
 
 - [Downloaded originals](downloads.md)
 - [Arabic and Religion revision guide](revision.html)

@@ -5,7 +5,7 @@ The repository already defines twelve stages. Use the table to find the current 
 | Stage | Work | Skill or reference | Result to carry forward |
 | ---: | --- | --- | --- |
 | 1 | Find the lesson and extract its text and pictures | `pdf` and `universal-exam-cram-coach` | Actual school or Ministry file, page numbers, text, questions and useful figures. Note different printed and PDF page numbers. |
-| 2 | Select design guidance | [Current design guide](design/murad-design-guide.md) | Applicable guidance for the learner. The Grade 6 workflow uses the guide for build and review. Its use is optional for Grade 5. Refresh it each term or when the inclusion team gives feedback. |
+| 2 | Select design guidance | [Current design guide](design/grade-6-design-guide.md) | Applicable guidance for the learner. The Grade 6 workflow uses the guide for build and review. Its use is optional for Grade 5. Refresh it each term or when the inclusion team gives feedback. |
 | 3 | Build the answer key | `universal-exam-cram-coach` | Per-item ID, answer, file/page and status: school key, worked out from the book, or parent check. Only the first two can be scored. |
 | 4 | Define the page and what counts as done | `explicit-instruction-sequence-builder` and `agent-protocols:spec-driven-development` | A learning goal, a worked example, guided booklet practice and an independent check. Define one correct answer per scored MCQ or True/False item and an offline phone/tablet target. |
 | 5 | Split the page into parts that can be checked | `agent-protocols:planning-and-task-breakdown` | Ordered work for content, teaching, exercises, scoring, visuals, read-aloud, saved progress and parent/source notes. |
@@ -22,8 +22,8 @@ The repository already defines twelve stages. Use the table to find the current 
 For an engine lesson, run `node --check` on its lesson file, then run the repository checker for that learner and subject. This existing Grade 6 ICT lesson shows the exact command shape.
 
 ```bash
-node --check app/lessons/murad/ict/theme-01.js
-node tools/check/lessons.js murad-ict
+node --check app/lessons/grade-6/ict/theme-01.js
+node tools/check/lessons.js grade-6-ict
 ```
 
 The authoring guide expects `problems: 0` without `note:` lines. For a standalone page, adapt the assertions in the [Climate Quest checker](../tools/check/climate-quiz.js) to that page’s data and controls. Where applicable, add user-started read-aloud with the [existing utility](../tools/readaloud/add-readaloud.py). Check visible tabs, retry history and reload behavior in the browser as well. [Repository tools](../tools/README.md)
