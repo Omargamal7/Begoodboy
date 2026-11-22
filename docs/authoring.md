@@ -32,9 +32,10 @@ own questions. Every lesson in the booklet gets a sheet. Nothing is printed: the
 pages that run in a browser on an Android tablet or a Linux laptop.
 
 THE ONE RULE ABOVE ALL: zero guessing. Every fact on a card and every answer in a check must be
-written in the booklet (text or pictures). If a booklet question's answer is not written in the
-booklet, you must not invent it: mark it with Q.open (it is shown, not scored, and the parent is
-told to check it with the teacher). Never add facts from your own knowledge. Plain everyday
+grounded in the school sources. Score a school key or a single answer that follows from the
+booklet’s text or pictures. Record the source page and reasoning for a worked-out answer.
+Use Q.open for unresolved items so the parent can check them with the teacher and they stay
+out of the score. Never add facts from your own knowledge. Plain everyday
 example sentences are allowed only in practice activities, never as lesson facts.
 
 ==================================================================
@@ -100,9 +101,10 @@ You only write content.
 1. Read the whole booklet, including text inside pictures and tables. Extract the pictures
    from the file if needed (a .docx is a zip: word/media/*). List every lesson with its title,
    its facts, and every question exactly as written.
-2. For every question, find its answer in the booklet. Write down where. If the answer is not
-   written anywhere in the booklet, it becomes Q.open. True/false symbols in these booklets are
-   a tick and a cross (Put ✓ or ✗).
+2. For every question, record the source page and key status: school key, worked out from
+   the book, or parent check. For a worked-out key, record why the book supports one answer.
+   Use Q.open for parent checks. True/false symbols in these booklets are a tick and a cross
+   (Put ✓ or ✗).
 3. Create ONE file per theme: app/lessons/<child>/<subject>/theme-<theme>.js
    (all lower case, no spaces; science chapters use chapter-01.js).
    Lesson ids: <child>-<subject>-t<theme>-l<lesson>, for example "murad-science-t1-l3".
@@ -221,7 +223,8 @@ Good activity choices by subject (use only facts from the booklet):
 8. DONE MEANS ALL OF THIS IS TRUE
 ==================================================================
 [ ] Every lesson in the booklet has a sheet. Every booklet question is in a check, exact wording.
-[ ] Every scored answer is written in the booklet; every other question is Q.open.
+[ ] Every scored answer has a school key or a documented deduction from the booklet.
+    Unresolved questions use Q.open.
 [ ] Every check question's factId points to a card that teaches it.
 [ ] Every real-device step also has an on-screen activity in the same lesson.
 [ ] node tools/check/lessons.js <child>-<subject> ends with "problems: 0".
