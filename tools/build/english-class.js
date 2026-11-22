@@ -63,7 +63,7 @@ for(const [level,folder] of [[5,'grade-5'],[6,'grade-6']]){
    if(/u3-l2-form/.test(q.id))q.arRule='ability';
   }
  }
- const text=JSON.stringify(d);if(/\b(Grade 5|Grade 6|Grade 5|School Portal (2026–2027)|Grade-5|Grade-6)\b/i.test(text))throw Error('Personal label remains in grade '+level);
+ const text=JSON.stringify(d);if(/\(2026–2027\)|School Portal/i.test(text))throw Error('Personal label remains in grade '+level);
  write(path.join(root,'app/activities/class','grade'+level,'data.json'),JSON.stringify(d,null,2)+'\n');
  const pages=JSON.parse(fs.readFileSync(path.join(root,folder,'english/sources/assessment-pages.json'),'utf8'));
  const json=x=>JSON.stringify(x).replace(/</g,'\\u003c');

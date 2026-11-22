@@ -7,27 +7,27 @@
 
 ## Narrative notes moved
 
-- `sync/README.md` → `docs/provenance/school-portal-2026-2027/README.md`
-- `sync/2026-10-17/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-17/README.md`
-- `sync/2026-10-17/downloads.md` → `docs/provenance/school-portal-2026-2027/2026-10-17/downloads.md`
-- `sync/2026-10-17/revision.html` → `docs/provenance/school-portal-2026-2027/2026-10-17/revision.html`
-- `sync/2026-10-17/reports/schedule.md` → `docs/provenance/school-portal-2026-2027/2026-10-17/schedule.md`
+- `sync/README.md` → `docs/provenance/portal/README.md`
+- `sync/2026-10-17/README.md` → `docs/provenance/portal/2026-10-17/README.md`
+- `sync/2026-10-17/downloads.md` → `docs/provenance/portal/2026-10-17/downloads.md`
+- `sync/2026-10-17/revision.html` → `docs/provenance/portal/2026-10-17/revision.html`
+- `sync/2026-10-17/reports/schedule.md` → `docs/provenance/portal/2026-10-17/schedule.md`
 - `sync/2026-10-17/reports/grade-6-arabic-religion.md` → `grade-6/general/sync/2026-10-17/grade-6-arabic-religion.md`
 - `sync/2026-10-17/reports/grade-5-arabic-religion.md` → `grade-5/general/sync/2026-10-17/grade-5-arabic-religion.md`
-- `sync/2026-10-18/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-18/README.md`
-- `sync/2026-10-18/assignments.md` → `docs/provenance/school-portal-2026-2027/2026-10-18/assignments.md`
-- `sync/2026-10-18-cloud/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-18-cloud/README.md`
-- `sync/2026-10-19-english/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md`
+- `sync/2026-10-18/README.md` → `docs/provenance/portal/2026-10-18/README.md`
+- `sync/2026-10-18/assignments.md` → `docs/provenance/portal/2026-10-18/assignments.md`
+- `sync/2026-10-18-cloud/README.md` → `docs/provenance/portal/2026-10-18-cloud/README.md`
+- `sync/2026-10-19-english/README.md` → `docs/provenance/portal/2026-10-19-english/README.md`
 - `sync/2026-10-19-german/README.md` → `grade-5/german/sync/2026-10-19-german/README.md`
 - `sync/2026-10-19-german/source-files.json` → `grade-5/german/sync/2026-10-19-german/source-files.json`
-- `sync/2026-10-20-downloads/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-20-downloads/README.md`
-- `sync/2026-10-20-live/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-20-live/README.md`
-- `sync/2026-10-20-live/coverage.json` → `docs/provenance/school-portal-2026-2027/2026-10-20-live/coverage.json`
-- `sync/2026-10-20-reconciliation/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-20-reconciliation/README.md`
-- `sync/2026-10-25/README.md` → `docs/provenance/school-portal-2026-2027/2026-10-25/README.md`
-- `sync/2026-10-25/course-plans.md` → `docs/provenance/school-portal-2026-2027/2026-10-25/course-plans.md`
-- `sync/2026-11-11/partial-routines.md` → `docs/provenance/school-portal-2026-2027/2026-11-11/partial-routines.md`
-- `sync/2026-11-11/partial-source-checkpoint.md` → `docs/provenance/school-portal-2026-2027/2026-11-11/partial-source-checkpoint.md`
+- `sync/2026-10-20-downloads/README.md` → `docs/provenance/portal/2026-10-20-downloads/README.md`
+- `sync/2026-10-20-live/README.md` → `docs/provenance/portal/2026-10-20-live/README.md`
+- `sync/2026-10-20-live/coverage.json` → `docs/provenance/portal/2026-10-20-live/coverage.json`
+- `sync/2026-10-20-reconciliation/README.md` → `docs/provenance/portal/2026-10-20-reconciliation/README.md`
+- `sync/2026-10-25/README.md` → `docs/provenance/portal/2026-10-25/README.md`
+- `sync/2026-10-25/course-plans.md` → `docs/provenance/portal/2026-10-25/course-plans.md`
+- `sync/2026-11-11/partial-routines.md` → `docs/provenance/portal/2026-11-11/partial-routines.md`
+- `sync/2026-11-11/partial-source-checkpoint.md` → `docs/provenance/portal/2026-11-11/partial-source-checkpoint.md`
 
 ## Split sources
 
@@ -48,7 +48,7 @@
 - `sync/2026-10-17/checksums.sha256`: 67 records → 14 destinations, 1 unassigned
 - `sync/2026-10-18/checksums.sha256`: 3 records → 3 destinations, 1 unassigned
 
-New files written by the splits: 195. Each source keeps an index file in `docs/provenance/school-portal-2026-2027/<snapshot>/` that lists where its records went.
+New files written by the splits: 195. Each source keeps an index file in `docs/provenance/portal/<snapshot>/` that lists where its records went.
 
 ## Link and path repairs
 
@@ -62,11 +62,11 @@ New files written by the splits: 195. Each source keeps an index file in `docs/p
 
 ## Links that could not be followed (still point at the same path as before)
 
-- `docs/provenance/school-portal-2026-2027/2026-10-17/downloads.md` → `../../sources/shared/school/announcements/2026-10-07-general-assembly.jpeg`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../packs/grade-5/english/october-revision.html`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../packs/grade-6/english/october-revision.html`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../packs/class/grade5/english/october-arabic-help.html`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../packs/class/grade6/english/october-arabic-help.html`
+- `docs/provenance/portal/2026-10-17/downloads.md` → `../../sources/shared/school/announcements/2026-10-07-general-assembly.jpeg`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../packs/grade-5/english/october-revision.html`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../packs/grade-6/english/october-revision.html`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../packs/class/grade5/english/october-arabic-help.html`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../packs/class/grade6/english/october-arabic-help.html`
 - `grade-5/german/sync/2026-10-19-german/README.md` → `../../packs/grade-5/german/october-revision.html`
 - `grade-5/german/sync/2026-10-19-german/README.md` → `../../packs/class/grade5/german/october-arabic-help.html`
 
@@ -121,11 +121,11 @@ New files written by the splits: 195. Each source keeps an index file in `docs/p
 - `docs/provenance/mathematics-2026-10-19.md` → `../../sources/grade-6/mathematics/revision/2026-10/Model%20Answer%20-%20October%20Revision%20Sheet.pdf`
 - `docs/provenance/mathematics-2026-10-19.md` → `../../sources/grade-6/mathematics/booklets/Prim%206%20Classwork%20Binder%201st%20term%202026-2027.pdf`
 - `docs/provenance/mathematics-2026-10-19.md` → `../../sources/grade-6/mathematics/Prim6_Homework_Binder_Term1_2026-2027.pdf`
-- `docs/provenance/school-portal-2026-2027/2026-10-17/downloads.md` → `../../../../sources/shared/school/announcements/2026-10-07-general-assembly.jpeg`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../../../packs/grade-5/english/october-revision.html`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../../../packs/grade-6/english/october-revision.html`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../../../packs/class/grade5/english/october-arabic-help.html`
-- `docs/provenance/school-portal-2026-2027/2026-10-19-english/README.md` → `../../../../packs/class/grade6/english/october-arabic-help.html`
+- `docs/provenance/portal/2026-10-17/downloads.md` → `../../../../sources/shared/school/announcements/2026-10-07-general-assembly.jpeg`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../../../packs/grade-5/english/october-revision.html`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../../../packs/grade-6/english/october-revision.html`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../../../packs/class/grade5/english/october-arabic-help.html`
+- `docs/provenance/portal/2026-10-19-english/README.md` → `../../../../packs/class/grade6/english/october-arabic-help.html`
 - `docs/source-index-2026-10-20.md` → `students/grade-5/handoff-2026-10-20.md`
 - `docs/source-index-2026-10-20.md` → `students/grade-6/handoff-2026-10-20.md`
 - `grade-5/general/docs/README.md` → `../../../sources/grade-5/announcements/`

@@ -17,7 +17,7 @@ Each HTML file contains its own code. The English fieldbooks and older assessmen
 - [Grade 5 — German October revision](../grade-5/german/packs/october-revision.html)
 - [Grade 5 class German — optional Arabic](../grade-5/german/packs/class/october-arabic-help.html)
 
-The older fieldbooks below remain available. Use the dated [English](provenance/school-portal-2026-2027/2026-10-19-english/README.md) and [German](../grade-5/german/sync/2026-10-19-german/README.md) records for coverage, disputed answers and verification limits. Archive reconciliation is tracked [separately](provenance/school-portal-2026-2027/2026-10-20-reconciliation/README.md).
+The older fieldbooks below remain available. Use the dated [English](provenance/portal/2026-10-19-english/README.md) and German records for coverage, disputed answers and verification limits. Archive reconciliation is tracked [separately](provenance/portal/2026-10-20-reconciliation/README.md).
 
 | Child | Pack |
 |---|---|
@@ -38,7 +38,7 @@ Coverage and answer limitations are recorded under [docs/provenance/](provenance
 ## Maths · October 2026
 
 - [Grade 5 — Decimal Lab, eight video lessons](../grade-5/mathematics/packs/decimal-lab-october-2026.html)
-- [Grade 6 — Grade 6 October maths revision](../grade-6/mathematics/packs/october-2026.html)
+- [Grade 6 October maths revision](../grade-6/mathematics/packs/october-2026.html)
 
 Both packs open independently offline and save individual progress in the current browser. Practice questions are new, not official school question transcriptions.
 
@@ -50,7 +50,7 @@ Both packs open independently offline and save individual progress in the curren
 - [Grade 5 — Chapter 3: Conditions for Germination](../grade-5/science/packs/arabic-book-term1/chapter-3-germination.html)
 - [Grade 5 — Revision, Chapters 1–3](../grade-5/science/packs/arabic-book-term1/revision-chapters-1-3.html)
 
-English translation of the Arabic Grade 5 Science book (Term 1), with Arabic key terms. Each chapter has an Explanation tab and an Assessment tab with every حاول/تدرَّب question; answers are authored. [Provenance](provenance/science-arabic-book-2026-10-20.md).
+English translation of the Arabic Grade 5 Science book (Term 1), with Arabic key terms. Each chapter has an Explanation tab and an Assessment tab with every حاول/تدرَّب question; answers are authored. Provenance.
 
 ## Science · Arabic ministry book, Chapters 4–9 · 21 October 2026
 
@@ -62,7 +62,7 @@ English translation of the Arabic Grade 5 Science book (Term 1), with Arabic key
 - [Grade 5 — Chapter 9: The Water Cycle](../grade-5/science/packs/arabic-book-term1/chapter-9-water-cycle.html)
 - [Grade 5 — Revision, Chapters 4–9](../grade-5/science/packs/arabic-book-term1/revision-chapters-4-9.html)
 
-Completes the Term 1 book (pages 44–107) in the same format as Chapters 1–3. [Provenance](provenance/science-arabic-book-chapters-4-9-2026-10-21.md).
+Completes the Term 1 book (pages 44–107) in the same format as Chapters 1–3. Provenance.
 
 ## Social Studies · Unit 1 October test · 21 October 2026
 

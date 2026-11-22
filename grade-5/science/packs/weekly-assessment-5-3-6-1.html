@@ -862,7 +862,7 @@ function pGuess(){
   return h;
 }
 var LOCAL = location.protocol==="file:";
-function fileRef(name){ var rel="../sources/ministry/"+name, lab="gamal/science/sources/ministry/"+name; return LOCAL ? "<a href='"+rel+"'>"+esc(lab)+"</a>" : "<code>"+esc(lab)+"</code>"; }
+function fileRef(name){ var rel="../sources/ministry/"+name, lab="grade-5/science/sources/ministry/"+name; return LOCAL ? "<a href='"+rel+"'>"+esc(lab)+"</a>" : "<code>"+esc(lab)+"</code>"; }
 function vParent(){
   var T = [["guess","Guess check"],["answers","Answers"],["sources","Sources"]];
   var h = "<section aria-labelledby='h'><h1 id='h' tabindex='-1'>For parents</h1><div class='seg' role='group' aria-label='Parent area'>"+T.map(function(t){ return "<button type='button' data-act='ptab' data-v='"+t[0]+"' aria-pressed='"+(ui.parentTab===t[0])+"'>"+t[1]+"</button>"; }).join("")+"</div>";

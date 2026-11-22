@@ -1,6 +1,6 @@
 # Repository structure
 
-Start with [Grade 5 (2026–2027), Grade Grade-5](../grade-5/) or [Grade 6, Grade Grade-6](../grade-6/). Each student guide links to every subject and the materials available for it.
+Start with [Grade 5 (2026–2027)](../grade-5/) or [Grade 6](../grade-6/). Each student guide links to every subject and the materials available for it.
 
 | Location | Contents |
 |---|---|
@@ -10,7 +10,7 @@ Start with [Grade 5 (2026–2027), Grade Grade-5](../grade-5/) or [Grade 6, Grad
 | `<child>/<subject>/docs/` and `sync/` | Teacher notes and dated School Portal (2026–2027) records. General handoffs live in `<child>/general/docs/`. |
 | `shared/school/sources/` | School-wide originals that apply to both children. |
 | [app/](../app/) | Shared lesson engine, lesson registrations, activity templates and derived assets. The homepage loads the engine directly. |
-| [docs/](./) | Study and source catalogues, authoring guidance and provenance. Cross-child School Portal (2026–2027) indexes live in [provenance/school-portal-2026-2027/](provenance/school-portal-2026-2027/). Previous restructuring reports live in [history/restructure/](history/restructure/). |
+| [docs/](./) | Study and source catalogues, authoring guidance and provenance. Cross-child School Portal (2026–2027) indexes live in [provenance/portal/](provenance/portal/). Previous restructuring reports live in [history/restructure/](history/restructure/). |
 | [docs/html-workflow.md](html-workflow.md) | Build, check and publish study HTML from school sources. |
 | [docs/page-structure.md](page-structure.md) | Learner flow, placement and scoring rules for study pages. |
 | [docs/design/](design/) | Current design guidance, research and design decisions. |

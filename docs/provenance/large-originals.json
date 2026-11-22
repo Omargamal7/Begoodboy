@@ -2,12 +2,12 @@
   "schema_version": 2,
   "files": [
     {
-      "path": "grade-5/arabic/sources/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf",
+      "path": "grade-5/arabic/sources/textbook-answers-term1.pdf",
       "bytes": 11747364,
       "sha256": "d6c528184f3bd1048afe1c342b132457daef47041ccf4a43d2ac23339f7f6858"
     },
     {
-      "path": "grade-6/arabic/sources/revision/2026-10/الاسم النكرة والاسم المعرفة 6 ب.pptx",
+      "path": "grade-6/arabic/sources/revision/2026-10/indefinite-and-definite-nouns.pptx",
       "bytes": 21810058,
       "sha256": "46664391b1dfcb67f87b580eb4a173849d29045aa9d27309d812899e6e0fd312"
     },
@@ -22,12 +22,12 @@
       "sha256": "dfd983affc19aeb337aa7b1a5dea4fb1edede5a688b3331d73427fe77d70d2b6"
     },
     {
-      "path": "grade-6/social-studies/sources/weekly/week-05/درس التحديات البيئية.pdf",
+      "path": "grade-6/social-studies/sources/weekly/week-05/environmental-challenges.pdf",
       "bytes": 17838946,
       "sha256": "b59d301023219e2a7ff927db6ebb163185f6ad4af52965b728efa66abb95d235"
     },
     {
-      "path": "grade-6/social-studies/sources/weekly/week-04/وطننا العربي المناخ و النبات الطبيعي.pdf",
+      "path": "grade-6/social-studies/sources/weekly/week-04/climate-and-vegetation.pdf",
       "bytes": 13968037,
       "sha256": "0a8f2b18f75873ef48d68ac849df0f2e1c680870c85f0adc942038c703a1c10c"
     },

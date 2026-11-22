@@ -2,7 +2,7 @@
 
 #### (A) Teaching Method & Content
 
-* **Existing Evidence from Begoodboy**: Provides subject-specific offline HTML revision packs for Grades Grade-5 & Grade-6 (e.g., Decimal Lab, October revision checks, Science Arabic-to-English translated modules with auto-checks, tap-to-read bilingual audio) 1-4. However, authored practice checks are newly written practice questions rather than school-issued or empirically validated assessments 5, 6\.  
+* **Existing Evidence from Begoodboy**: Provides subject-specific offline HTML revision packs for Grades Grade 5 & Grade 6 (e.g., Decimal Lab, October revision checks, Science Arabic-to-English translated modules with auto-checks, tap-to-read bilingual audio) 1-4. However, authored practice checks are newly written practice questions rather than school-issued or empirically validated assessments 5, 6\.  
 * **High-Confidence Additions from Research**: Incorporate scaffolded retrieval practice (fill-in-the-gap, stem completion) paired with immediate, high-information corrective feedback (\\\\(d \= 0.99\\\\)) 7-9, systematic Direct Instruction for new concepts (\\\\(d \= 0.56\\\\)) 10, 11, and interleaved math problem types (\\\\(g \= 0.34\\\\)) 12, 13\.  
 * **Unverified/Unsupported Assumptions**: Assuming authored quiz completion proves domain mastery or retention 14-16; assuming digital screen reading equals printed paper comprehension (screen reading penalty \\\\(g \= \-0.21\\\\)) 7, 10\.  
 * **Most Useful Small Pilot**: Test a 20-item math/science pack comparing immediate vs. 7-day delayed retrieval and feedback to measure retention 17-19.

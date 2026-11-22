@@ -1,0 +1,22 @@
+{
+  "source": "sync/2026-10-17/checksums.sha256",
+  "snapshot": "2026-10-17",
+  "note": "Pass 5 index. \"source\" is the path the file had before pass 5. Each record from the original file now sits in the folder named under \"placed\". Other values from the original file are kept under \"metadata\".",
+  "lines": 67,
+  "placed": {
+    "docs/provenance/portal/2026-10-17/checksums.unassigned.sha256": 1,
+    "grade-5/arabic/sync/2026-10-17/checksums.sha256": 6,
+    "grade-5/computer/sync/2026-10-17/checksums.sha256": 4,
+    "grade-5/religion/sync/2026-10-17/checksums.sha256": 1,
+    "grade-5/schedules/sync/2026-10-17/checksums.sha256": 2,
+    "grade-5/social-studies/sync/2026-10-17/checksums.sha256": 1,
+    "grade-6/arabic/sync/2026-10-17/checksums.sha256": 2,
+    "grade-6/computer/sync/2026-10-17/checksums.sha256": 7,
+    "grade-6/english/sync/2026-10-17/checksums.sha256": 29,
+    "grade-6/mathematics/sync/2026-10-17/checksums.sha256": 3,
+    "grade-6/religion/sync/2026-10-17/checksums.sha256": 2,
+    "grade-6/schedules/sync/2026-10-17/checksums.sha256": 2,
+    "grade-6/science/sync/2026-10-17/checksums.sha256": 4,
+    "grade-6/social-studies/sync/2026-10-17/checksums.sha256": 3
+  }
+}

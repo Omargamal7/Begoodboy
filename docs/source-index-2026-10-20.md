@@ -4,7 +4,7 @@ Inventory checked against `65096635174c656a41aa8a9990c6d0735a603625`. This is a 
 
 ## Latest verification
 
-All 20 priority originals are now recovered and verified; Project original uploads remain unverified. The [live receipt](provenance/school-portal-2026-2027/2026-10-20-live/README.md) records current announcement and attachment coverage. The catalogue below retains its historical date.
+All 20 priority originals are now recovered and verified; Project original uploads remain unverified. The [live receipt](provenance/portal/2026-10-20-live/README.md) records current announcement and attachment coverage. The catalogue below retains its historical date.
 
 ## Coverage
 
@@ -54,8 +54,8 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-5 | arabic | `grade-5/arabic/sources/revision/2026-10/Arabic_Object_Before_Subject_Answers.pdf` | repository_blob | not matched | verified original |
 | grade-5 | arabic | `grade-5/arabic/sources/revision/2026-10/Arabic_Object_Before_Subject_Worksheet.pdf` | repository_blob | not matched | verified original |
 | grade-5 | arabic | `grade-5/arabic/sources/revision/2026-10/Arabic_Unit1_Revision_Grade5.pdf` | repository_blob | exact | verified original |
-| grade-5 | arabic | `grade-5/arabic/sources/حل_الكتاب_المدرسي_لغة_عربية_5_ابتدائي_ترم_أول_2027.pdf` | repository_parts | not matched | not transferred here |
-| grade-5 | arabic | `grade-5/arabic/sources/ملزمة الصف الخامس الابتدائي ترم أول كاملة 2027_260627_190514.pdf` | repository_blob | exact | not transferred here |
+| grade-5 | arabic | `grade-5/arabic/sources/textbook-answers-term1.pdf` | repository_parts | not matched | not transferred here |
+| grade-5 | arabic | `grade-5/arabic/sources/booklet-term1-complete.pdf` | repository_blob | exact | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/dictation-2/Gr5_Home_Dictation2.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/dictation-2/Gr5_Home_Dictation2_Recording1.m4a` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/dictation-2/Gr5_Home_Dictation2_Recording2.m4a` | repository_blob | not matched | not transferred here |
@@ -101,10 +101,10 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-5 | social-studies | `grade-5/social-studies/sources/assessments/climate/school-page-2.jpg` | repository_blob | not matched | not transferred here |
 | grade-5 | social-studies | `grade-5/social-studies/sources/assessments/climate/school-page-3.jpg` | repository_blob | not matched | not transferred here |
 | grade-5 | social-studies | `grade-5/social-studies/sources/assessments/climate/school-page-4.jpg` | repository_blob | not matched | not transferred here |
-| grade-5 | social-studies | `grade-5/social-studies/sources/اجابة التقيمات.pdf` | repository_blob | exact | verified original |
+| grade-5 | social-studies | `grade-5/social-studies/sources/assessment-answers.pdf` | repository_blob | exact | verified original |
 | grade-6 | arabic | `grade-6/arabic/sources/revision/2026-10/Arabic_Unit1_Revision_Grade6.pdf` | repository_blob | exact | verified original |
-| grade-6 | arabic | `grade-6/arabic/sources/revision/2026-10/الاسم النكرة والاسم المعرفة 6 ب.pptx` | repository_parts | not matched | not transferred here |
-| grade-6 | arabic | `grade-6/arabic/sources/معدلة ملزمة الصف السادس ترم اول.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | arabic | `grade-6/arabic/sources/revision/2026-10/indefinite-and-definite-nouns.pptx` | repository_parts | not matched | not transferred here |
+| grade-6 | arabic | `grade-6/arabic/sources/booklet-term1-revised.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Assessment Book Term 1.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Wonders Fiction Booklet 2026-2027 First Term.pdf` | repository_blob | exact | not transferred here |
@@ -176,12 +176,12 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-6 | science | `grade-6/science/sources/model-answers/Monthly_Exam_1_Model_Answers.pdf` | repository_blob | not matched | not transferred here |
 | grade-6 | science | `grade-6/science/sources/model-answers/chapter 3 homework model answers.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | science | `grade-6/science/sources/model-answers/model answers of the 3rd weekly assessment.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | social-studies | `grade-6/social-studies/sources/atlases/اطلس الخرائط االدرس الاول.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | social-studies | `grade-6/social-studies/sources/atlases/اطلس الخرائط الدرس الثاني.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-02/التقييم الاول الوطن العربي الموقع و الاهمية.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-02/الدرس الأول - وطننا العربي - الموقع و الاهمية.pdf` | repository_blob | not matched | not transferred here |
-| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-05/درس التحديات البيئية.pdf` | repository_parts | not matched | not transferred here |
-| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-04/وطننا العربي المناخ و النبات الطبيعي.pdf` | repository_parts | not matched | not transferred here |
+| grade-6 | social-studies | `grade-6/social-studies/sources/atlases/atlas-lesson-1.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | social-studies | `grade-6/social-studies/sources/atlases/atlas-lesson-2.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-02/assessment-1-location.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-02/lesson-1-location.pdf` | repository_blob | not matched | not transferred here |
+| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-05/environmental-challenges.pdf` | repository_parts | not matched | not transferred here |
+| grade-6 | social-studies | `grade-6/social-studies/sources/weekly/week-04/climate-and-vegetation.pdf` | repository_parts | not matched | not transferred here |
 | shared | school | `sources/shared/school/announcements/2026-10-07-general-assembly.jpeg` | repository_blob | not matched | not transferred here |
 | shared | school | `shared/school/sources/Back_to_School_Guide_2026-27.pdf` | repository_parts | not matched | not transferred here |
 | shared | school | `sources/shared/school/announcements/Entry_Schedule_2026-09-10.jpg` | repository_blob | not matched | not transferred here |
@@ -191,10 +191,10 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 
 ## Later German supplement
 
-The 19 October German record supersedes the older claim that Grade 5 had no usable German originals. Three PDFs support the personal/class packs. The worksheet’s 6.KLASSE heading conflicts with its Grade Grade-5 course attribution; the precise exam cutoff remains unverified.
+The 19 October German record supersedes the older claim that Grade 5 had no usable German originals. Three PDFs support the personal/class packs. The worksheet’s 6.KLASSE heading conflicts with its Grade 5 course attribution; the precise exam cutoff remains unverified.
 
 - `grade-5/german/sources/revision/2026-10/booklet-answers-exercises-01-22.pdf` — verified original in the current reference package.
 - `grade-5/german/sources/revision/2026-10/october-model-answers.pdf` — verified body in current package.
 - `grade-5/german/sources/revision/2026-10/october-worksheet.pdf` — verified body in current package.
 
-See [German evidence](../grade-5/german/sync/2026-10-19-german/README.md), [fresh reconciliation](provenance/school-portal-2026-2027/2026-10-20-downloads/README.md), and the individual [Grade 5](../grade-5/general/docs/handoff-2026-10-20.md) / [Grade 6](../grade-6/general/docs/handoff-2026-10-20.md) handoffs.
+See German evidence, [fresh reconciliation](provenance/portal/2026-10-20-downloads/README.md), and the individual Grade 5 / Grade 6 handoffs.
