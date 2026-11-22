@@ -80,23 +80,23 @@ Course `425277953404869947` · 53 rows · index gaps: none
 |---|---|---|---|
 | (top level) | **Booklets** | Folder (5 items) | — |
 | Booklets | Gr. 6 Grammar and Sentence Structure 2026-2027 | PDF | in repo at `grade-6/english/sources/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf` |
-| Booklets | Gr. 6 Wonders Fiction Booklet 2026-2027 First Term | PDF | in repo at `grade-6/english/sources/booklets/Gr. 6 Wonders Fiction Booklet 2026-2027 First Term.pdf` |
+| Booklets | Gr. 6 Wonders Fiction Booklet 2026-2027 First Term | PDF | in repo at `grade-6/english/sources/booklets/fiction-booklet.pdf` |
 | Booklets | Gr. 6 Wonders Leveled Readers 2026-2027 | PDF | in repo at `grade-6/english/sources/booklets/Gr. 6 Wonders Leveled Readers 2026-2027.pdf` |
-| Booklets | Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term | PDF | in repo at `grade-6/english/sources/booklets/Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term.pdf` |
+| Booklets | Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term | PDF | in repo at `grade-6/english/sources/booklets/nonfiction-booklet.pdf` |
 | Booklets | Gr. 6 Writing Booklet First Term 2026-2027 | PDF | in repo at `grade-6/english/sources/booklets/Gr. 6 Writing Booklet First Term 2026-2027.pdf` |
 | (top level) | **Wonders** | Folder (2 items) | — |
 | Wonders | **Unit 1 Week 1** | Folder (2 items) | — |
 | Wonders / Unit 1 Week 1 | Crossing the Creek | Video | in repo at `grade-6/english/sources/wonders/unit-1-week-1/Crossing the Creek.mp4` |
-| Wonders / Unit 1 Week 1 | U1 W1 How do new experiences offer new perspectives | PDF | in repo at `grade-6/english/sources/wonders/unit-1-week-1/U1 W1 How do new experiences offer new perspectives.pdf` |
+| Wonders / Unit 1 Week 1 | U1 W1 How do new experiences offer new perspectives | PDF | in repo at `grade-6/english/sources/wonders/unit-1-week-1/essential-question.pdf` |
 | (top level) | **Grammar** | Folder (4 items) | — |
 | Grammar | Gr. 6 Grammar Revision- Compound Sentences-- | PDF | in repo at `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Compound Sentences.pdf` — name differs by trailing "--" |
-| Grammar | Gr. 6 Grammar Revision- Compound Sentences--Model Answers | PDF | in repo at `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Compound Sentences--Model Answers.pdf` |
-| Grammar | Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences | PDF | in repo at `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences.pdf` |
-| Grammar | Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers | PDF | in repo at `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf` |
+| Grammar | Gr. 6 Grammar Revision- Compound Sentences--Model Answers | PDF | in repo at `grade-6/english/sources/grammar/compound-sentences-answers.pdf` |
+| Grammar | Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences | PDF | in repo at `grade-6/english/sources/grammar/parts-of-speech-compound.pdf` |
+| Grammar | Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers | PDF | in repo at `grade-6/english/sources/grammar/parts-of-speech-compound-answers.pdf` |
 | (top level) | **Booklets Model Answers** | Folder (3 items) | — |
-| Booklets Model Answers | Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33 | PDF | in repo at `grade-6/english/sources/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33.pdf` — downloaded 2026-11-14; the repo also keeps the older version, repo only has the older "up to p. 6" version |
-| Booklets Model Answers | Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term up to p. 36 | PDF | in repo at `grade-6/english/sources/model-answers/Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term up to p. 36.pdf` — downloaded 2026-11-14; the repo also keeps the older version, repo only has the older "up to p. 12" version |
-| Booklets Model Answers | Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 8 | PDF | in repo at `grade-6/english/sources/model-answers/Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 8.pdf` |
+| Booklets Model Answers | Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33 | PDF | in repo at `grade-6/english/sources/model-answers/grammar-answers-to-p33.pdf` — downloaded 2026-11-14; the repo also keeps the older version, repo only has the older "up to p. 6" version |
+| Booklets Model Answers | Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term up to p. 36 | PDF | in repo at `grade-6/english/sources/model-answers/fiction-booklet-annotated-to-p36.pdf` — downloaded 2026-11-14; the repo also keeps the older version, repo only has the older "up to p. 12" version |
+| Booklets Model Answers | Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 8 | PDF | in repo at `grade-6/english/sources/model-answers/nonfiction-booklet-annotated-to-p8.pdf` |
 | (top level) | **Weeekly Covered Material** | Folder (10 items) | — |
 | Weeekly Covered Material | **Week 7** | Folder (1 item) | — |
 | Weeekly Covered Material / Week 7 | Gr. 6 Weekly Outline Term 1 Week 7 | PDF | in repo at `grade-6/english/sources/weekly/week-7/Gr. 6 Weekly Outline Term 1 Week 7.pdf` — downloaded 2026-11-14 |
@@ -166,10 +166,10 @@ Course `425277957011971390` · 47 rows · index gaps: none
 | Classes 6C, 6F and Grade 6 / 1st Day at School | School is Cool Crosswords - Week (1) | Image | in repo at `grade-6/mathematics/sources/weekly/week-01/School is Cool Crosswords - Week (1).jpeg` |
 | Classes 6C, 6F and Grade 6 / 1st Day at School | Crosswords - General Revision - Week (1) | PDF | in repo at `grade-6/mathematics/sources/weekly/week-01/Crosswords - General Revision - Week (1).pdf` |
 | Classes 6C, 6F and Grade 6 | **Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026)** | Folder (4 items) | — |
-| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility PPT Presentation - Monday (21/9/2026) - Week (2) | Presentation | in repo at `grade-6/mathematics/sources/weekly/week-02/Divisibility PPT Presentation - Monday (21-9-2026) - Week (2).pptx` |
-| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility Rules in Math Classwork Copybook - Monday (21/9/2026) - Week (2) | Word Document | in repo at `grade-6/mathematics/sources/weekly/week-02/Divisibility Rules in Math Classwork Copybook - Monday (21-9-2026) - Week (2).docx` |
-| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility Extra Sheet in Math Classwork Copybook - Monday (21/9/2026) - Week (2) | PDF | in repo at `grade-6/mathematics/sources/weekly/week-02/Divisibility Extra Sheet in Math Classwork Copybook - Monday (21-9-2026) - Week (2).pdf` |
-| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22/9/2026) - Week (2) | PDF | in repo at `grade-6/mathematics/sources/weekly/week-02/Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22-9-2026) - Week (2).pdf` |
+| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility PPT Presentation - Monday (21/9/2026) - Week (2) | Presentation | in repo at `grade-6/mathematics/sources/weekly/week-02/divisibility-slides.pptx` |
+| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility Rules in Math Classwork Copybook - Monday (21/9/2026) - Week (2) | Word Document | in repo at `grade-6/mathematics/sources/weekly/week-02/divisibility-rules.docx` |
+| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility Extra Sheet in Math Classwork Copybook - Monday (21/9/2026) - Week (2) | PDF | in repo at `grade-6/mathematics/sources/weekly/week-02/divisibility-extra-sheet.pdf` |
+| Classes 6C, 6F and Grade 6 / Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026) | Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22/9/2026) - Week (2) | PDF | in repo at `grade-6/mathematics/sources/weekly/week-02/divisibility-rules-activity-sheet.pdf` |
 | Classes 6C, 6F and Grade 6 | **Week (4) - From Sunday (4/10/2026) till Wednesday (7/10/2026)** | Folder (1 item) | — |
 | Classes 6C, 6F and Grade 6 / Week (4) - From Sunday (4/10/2026) till Wednesday (7/10/2026) | Integers - Activity Sheet - Wednesday (7/10/2026) | PDF | in repo at `grade-6/mathematics/sources/activities/Integers - Activity Sheet.pdf` — shortened name |
 | Classes 6C, 6F and Grade 6 | **Week (7) - From Sunday (25/10/2026) till Thursday (29/10/2026)** | Folder (2 items) | — |

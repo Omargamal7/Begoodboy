@@ -65,26 +65,26 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-5 | english | `grade-5/english/sources/weekly/week-0/Living_Better_Thanks_to_Inventions.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/weekly/week-3/Weekly_Outline_Grade5_Term1_Week3.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/weekly/week-4/Weekly_Outline_Grade5_Term1_Week4.pdf` | repository_blob | not matched | not transferred here |
-| grade-5 | english | `grade-5/english/sources/booklets/Gr. 5 Grammar and Sentence Structure Booklet 2026-2027.pdf` | repository_blob | exact | not transferred here |
-| grade-5 | english | `grade-5/english/sources/booklets/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term.pdf` | repository_blob | exact | not transferred here |
+| grade-5 | english | `grade-5/english/sources/booklets/grammar-booklet.pdf` | repository_blob | exact | not transferred here |
+| grade-5 | english | `grade-5/english/sources/booklets/fiction-booklet.pdf` | repository_blob | exact | not transferred here |
 | grade-5 | english | `grade-5/english/sources/booklets/Gr. 5 Wonders Leveled Readers 2026-2027.pdf` | repository_blob | not matched | not transferred here |
-| grade-5 | english | `grade-5/english/sources/booklets/Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term.pdf` | repository_blob | not matched | not transferred here |
+| grade-5 | english | `grade-5/english/sources/booklets/nonfiction-booklet.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/booklets/Gr. 5 Writing Booklet 2026-2027 First Term.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/Home Dictation Routine.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/dictation-1/Gr. 5 Home Dictation 1- Regular Speed.m4a` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/dictation-1/Gr. 5 Home Dictation 1- Slow Speed.m4a` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/dictations/dictation-1/Gr. 5 Home Dictation 1.pdf` | repository_blob | not matched | not transferred here |
-| grade-5 | english | `grade-5/english/sources/model-answers/Gr. 5 Wonders Fiction Booklet 2026-2027 First Term Model Answer- up to p. 6.pdf` | repository_blob | not matched | not transferred here |
-| grade-5 | english | `grade-5/english/sources/model-answers/Gr. 5 Wonders NonFiction Booklet 2026-2027 First Term Model Answer- up to p. 7.pdf` | repository_blob | not matched | not transferred here |
+| grade-5 | english | `grade-5/english/sources/model-answers/fiction-booklet-answers-to-p6.pdf` | repository_blob | not matched | not transferred here |
+| grade-5 | english | `grade-5/english/sources/model-answers/nonfiction-booklet-answers-to-p7.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/weekly/week-0/Gr. 5 Weekly Outline Term 1 Week 0.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/weekly/week-1/Gr. 5 Weekly Outline Term 1 Week 1.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/weekly/week-2/A Fresh Idea.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/weekly/week-2/Gr. 5 Weekly Outline Term 1 Week 2.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/wonders/graphic-organizers/Nonfiction Organizer.png` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/wonders/graphic-organizers/Story Elements Organizer.png` | repository_blob | not matched | not transferred here |
-| grade-5 | english | `grade-5/english/sources/wonders/unit-1-week-1/Unit 1 Week 1 Essential Question- How do we get the things we need.pdf` | repository_blob | not matched | not transferred here |
+| grade-5 | english | `grade-5/english/sources/wonders/unit-1-week-1/essential-question.pdf` | repository_blob | not matched | not transferred here |
 | grade-5 | english | `grade-5/english/sources/wonders/unit-1-week-1/Unit 1 Week 1 Finding a Way.mp3` | repository_blob | not matched | not transferred here |
-| grade-5 | ict | `grade-5/computer/sources/booklets/1st term binder grade 5new 2025-2026 - for merge.docx` | repository_blob | exact | not transferred here |
+| grade-5 | ict | `grade-5/computer/sources/booklets/term1-binder.docx` | repository_blob | exact | not transferred here |
 | grade-5 | ict | `grade-5/computer/sources/evaluations/week-01.docx` | repository_blob | not matched | not transferred here |
 | grade-5 | ict | `grade-5/computer/sources/evaluations/week-02.docx` | repository_blob | not matched | not transferred here |
 | grade-5 | ict | `grade-5/computer/sources/evaluations/week-03.docx` | repository_blob | not matched | not transferred here |
@@ -107,9 +107,9 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-6 | arabic | `grade-6/arabic/sources/booklet-term1-revised.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Assessment Book Term 1.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Wonders Fiction Booklet 2026-2027 First Term.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/booklets/fiction-booklet.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Wonders Leveled Readers 2026-2027.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/booklets/nonfiction-booklet.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/booklets/Gr. 6 Writing Booklet First Term 2026-2027.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/dictations/dictation-1/Gr. 6 Home Dictation 1- Regular Speed.m4a` | repository_blob | not matched | not transferred here |
 | grade-6 | english | `grade-6/english/sources/dictations/dictation-1/Gr. 6 Home Dictation 1- Slow Speed.m4a` | repository_blob | not matched | not transferred here |
@@ -117,14 +117,14 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-6 | english | `grade-6/english/sources/dictations/dictation-2/Gr. 6 Home Dictation 2- Normal Speed.m4a` | repository_blob | not matched | not transferred here |
 | grade-6 | english | `grade-6/english/sources/dictations/dictation-2/Gr. 6 Home Dictation 2- Slow Speed.m4a` | repository_blob | not matched | not transferred here |
 | grade-6 | english | `grade-6/english/sources/dictations/dictation-2/Gr. 6 Home Dictation 2.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Compound Sentences--Model Answers.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/grammar/compound-sentences-answers.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Compound Sentences.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/grammar/Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/grammar/parts-of-speech-compound-answers.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/grammar/parts-of-speech-compound.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/lesson-distribution/Lesson Distribution - - Grade6.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/model-answers/Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term- up to p. 12.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/model-answers/Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 8.pdf` | repository_blob | exact | not transferred here |
-| grade-6 | english | `grade-6/english/sources/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 6.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/model-answers/fiction-booklet-annotated-to-p12.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/model-answers/nonfiction-booklet-annotated-to-p8.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/model-answers/grammar-answers-to-p6.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/ordinary-level/.Assessment_Book_Model_Answers_Unit3_Lesson3.pdf.EPYJ5q` | repository_blob | not matched | not transferred here |
 | grade-6 | english | `grade-6/english/sources/ordinary-level/Assessment_Book_Model_Answers_Unit3_Lesson3.pdf` | repository_parts | not matched | not transferred here |
 | grade-6 | english | `grade-6/english/sources/ordinary-level/Gr_6_O_Level_Book_Term_1.pdf` | repository_parts | not matched | not transferred here |
@@ -136,7 +136,7 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-6 | english | `grade-6/english/sources/weekly/week-3/Gr. 6 Weekly Outline Term 1 Week 3.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/weekly/week-4/Gr. 6 Weekly Outline Term 1 Week 4.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | english | `grade-6/english/sources/wonders/unit-1-week-1/Crossing the Creek.mp4` | repository_blob | not matched | not transferred here |
-| grade-6 | english | `grade-6/english/sources/wonders/unit-1-week-1/U1 W1 How do new experiences offer new perspectives.pdf` | repository_blob | exact | not transferred here |
+| grade-6 | english | `grade-6/english/sources/wonders/unit-1-week-1/essential-question.pdf` | repository_blob | exact | not transferred here |
 | grade-6 | ict | `grade-6/computer/sources/booklets/ICT primary 6 booklet 1st term 2025-2026 1.docx` | repository_blob | exact | not transferred here |
 | grade-6 | ict | `grade-6/computer/sources/evaluations/week-01.docx` | repository_blob | not matched | not transferred here |
 | grade-6 | ict | `grade-6/computer/sources/evaluations/week-02.docx` | repository_blob | not matched | not transferred here |
@@ -153,10 +153,10 @@ The historical 18 October catalogue contains 145 source records and 25 observed 
 | grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-01/1st Day at School (Mona Gehad).pptx` | repository_blob | not matched | not transferred here |
 | grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-01/Crosswords - General Revision - Week (1).pdf` | repository_blob | not matched | not transferred here |
 | grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-01/School is Cool Crosswords - Week (1).jpeg` | repository_blob | not matched | not transferred here |
-| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/Divisibility Extra Sheet in Math Classwork Copybook - Monday (21-9-2026) - Week (2).pdf` | repository_blob | not matched | not transferred here |
-| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/Divisibility PPT Presentation - Monday (21-9-2026) - Week (2).pptx` | repository_blob | not matched | not transferred here |
-| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22-9-2026) - Week (2).pdf` | repository_blob | not matched | not transferred here |
-| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/Divisibility Rules in Math Classwork Copybook - Monday (21-9-2026) - Week (2).docx` | repository_blob | not matched | not transferred here |
+| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/divisibility-extra-sheet.pdf` | repository_blob | not matched | not transferred here |
+| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/divisibility-slides.pptx` | repository_blob | not matched | not transferred here |
+| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/divisibility-rules-activity-sheet.pdf` | repository_blob | not matched | not transferred here |
+| grade-6 | mathematics | `grade-6/mathematics/sources/weekly/week-02/divisibility-rules.docx` | repository_blob | not matched | not transferred here |
 | grade-6 | mathematics | `grade-6/mathematics/sources/worksheets/Revision Sheet (1) - Week (1).pdf` | repository_blob | not matched | not transferred here |
 | grade-6 | mathematics | `grade-6/mathematics/sources/worksheets/Revision Sheet (2) - Week (1).pdf` | repository_blob | not matched | not transferred here |
 | grade-6 | mathematics | `grade-6/mathematics/sources/worksheets/Worksheet (1) - Week (2).pdf` | repository_blob | not matched | not transferred here |

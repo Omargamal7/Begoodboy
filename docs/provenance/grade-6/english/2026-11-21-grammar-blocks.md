@@ -15,7 +15,7 @@ Pages 29 and 30 are included because the stative-verbs lesson that starts on p. 
 | Role | File | Pages |
 |---|---|---|
 | Book (rules and questions) | `grade-6/english/sources/booklets/Gr. 6 Grammar and Sentence Structure 2026-2027.pdf` | printed 10–16 and 26–31 (PDF page = printed page + 4) |
-| Answers | `grade-6/english/sources/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33.pdf` | same numbering; covers every page used |
+| Answers | `grade-6/english/sources/model-answers/grammar-answers-to-p33.pdf` | same numbering; covers every page used |
 
 Every rule card quotes or closely shortens the book's own rule box on the cited page. Example sentences are the book's.
 

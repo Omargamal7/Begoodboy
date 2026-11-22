@@ -10,8 +10,8 @@ Notes (text only): _(notes not kept in the repo)_ (8 notes) and _(notes not kept
 | arabic | `grade-6/arabic/sources/weekly/week-of-2026-10-25/verses-vs-beautiful-expressions.pdf` | 199388 | `27aa3f39070beff2a05f5cd5c2fa44e2b66465779013c006304558a81e79e028` |
 | arabic | `grade-6/arabic/sources/weekly/week-of-2026-11-01/predicate-types.docx` | 27726 | `d910c240525f674296ce7eb78dbb56146841fa5200a405f07624ca5b57ca0ded` |
 | arabic | `grade-6/arabic/sources/weekly/week-of-2026-11-08/builders-of-glory-exercises.docx` | 17172 | `0cca39a8c184eed55c998862a0e91c5d1da8f4db8f3017b738a920f621752248` |
-| english-al | `grade-6/english/sources/model-answers/Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers- up to p. 33.pdf` | 840792 | `9bb4859cbb4abb5537a2b7640333f30861890d90e49c59c84345fa0773fa7ab0` |
-| english-al | `grade-6/english/sources/model-answers/Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term up to p. 36.pdf` | 1201051 | `031547973440c031e25725e2e4f81a3c1a62133fd7947f79473cbbfbbb984734` |
+| english-al | `grade-6/english/sources/model-answers/grammar-answers-to-p33.pdf` | 840792 | `9bb4859cbb4abb5537a2b7640333f30861890d90e49c59c84345fa0773fa7ab0` |
+| english-al | `grade-6/english/sources/model-answers/fiction-booklet-annotated-to-p36.pdf` | 1201051 | `031547973440c031e25725e2e4f81a3c1a62133fd7947f79473cbbfbbb984734` |
 | english-al | `grade-6/english/sources/weekly/week-7/Gr. 6 Weekly Outline Term 1 Week 7.pdf` | 107744 | `9135d38c273e66e2d55c832444df4bf5e8cc5abea47c657888e02135e8e857ef` |
 | english-al | `grade-6/english/sources/weekly/week-6/Gr. 6 Weekly Outline Term 1 Week 6.pdf` | 118269 | `606643d13ec3cf9ab19309f343cb2b5b4b450c64b619f93b57955dc6b0e4df41` |
 | english-al | `grade-6/english/sources/weekly/week-5/Gr. 6 Weekly Outline Term 1 Week 5.pdf` | 99172 | `7f9f7889c1dd94e22df2d307e747874f12dd380d28e2b7c9c7a41e23f3c61a5f` |
