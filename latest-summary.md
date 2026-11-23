@@ -4,13 +4,13 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## GRADE-6
 ### Recent School Announcements
-- **2026-11-23** — Items to be revised for November 2026 Primary 6
+- **2026-11-23** — Items to be revised for November 2026 Primary 6 ([PDF](grade-6/docs/451610097433484554.md))
 - **2026-11-19** — اليوم العالمي للغة العربية
-- **2026-11-18** — Items to be revised Primary 6 AL November Test 2026-2027- English
+- **2026-11-18** — Items to be revised Primary 6 AL November Test 2026-2027- English ([PDF](grade-6/docs/449808003416236752.md))
 - **2026-11-18** — Important Announcement
 - **2026-11-12** — ICT
 - **2026-11-11** — Important Announcement
-- **2026-11-04** — Important Announcement
+- **2026-11-04** — Important Announcement ([PDF](grade-6/docs/444696194355082901.md))
 - **2026-11-01** — Important Announcement
 
 ### Course Plan Item Counts
@@ -29,9 +29,9 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## GRADE-5
 ### Recent School Announcements
-- **2026-11-23** — Items to be revised for November 2026 Primary 5
+- **2026-11-23** — Items to be revised for November 2026 Primary 5 ([PDF](grade-5/docs/451609875122789578.md))
 - **2026-11-19** — اليوم العالمي للغة العربية
-- **2026-11-18** — Items to be revised Primary 5 AL November Test 2026-2027- English
+- **2026-11-18** — Items to be revised Primary 5 AL November Test 2026-2027- English ([PDF](grade-5/docs/449807784490345089.md))
 - **2026-11-18** — Important Announcement
 - **2026-11-17** — Delf course for students Who are learning French
 - **2026-11-12** — ICT
