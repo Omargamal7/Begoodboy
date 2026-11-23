@@ -1,0 +1,1921 @@
+{
+  "grade": "grade-6",
+  "academicYear": "2026-2027",
+  "announcements": [
+    {
+      "id": "451609969884705549",
+      "title": "Items to be revised for November 2026 Primary 6",
+      "description": "Items to be revised for November 2026 Primary 6",
+      "publishedAt": "2026-11-23T12:06:54.792Z",
+      "updatedAt": "2026-11-23T12:06:54.792Z",
+      "isRead": true
+    },
+    {
+      "id": "449805270214806630",
+      "title": "اليوم العالمي للغة العربية",
+      "description": "بمناسبة الاحتفال باليوم العالمي للغة العربية، وحرصاً منا على غرس حب لغتنا العريقة في نفوس أبنائنا الطلاب، وتفعيل التعلم النشط والمشاريع التطبيقية وبعيداً عن التلقين التقليدي، مطلوب من كل فصل للصفوف الرابع والخامس والسادس (نشاط أونشاطين) يشترك فيه طلاب الفصل في عمل جماعي وآخر موعد لتسليم الأنشطة يوم6/12. موضوعات النشاط الرموز والشخصيات التاريخية: مثلا الشخصيات العربية التي خدمت لغتنا وعملت على حفظها وتطويرها (مثل علماء النحو، والشعراء، والأدباء الخالدين بالفصحى). القواعد النحويةوالإملائية: تحويل القواعد النحوية والإملائية إلى أعمال بصرية وتفاعلية.",
+      "publishedAt": "2026-11-19T11:23:42.235Z",
+      "updatedAt": "2026-11-19T11:23:42.235Z",
+      "isRead": true
+    },
+    {
+      "id": "449807889482157179",
+      "title": "Items to be revised Primary 6 AL November Test 2026-2027- English",
+      "description": "Items to be revised Primary 6 AL November Test 2026-2027- English",
+      "publishedAt": "2026-11-18T12:46:24.514Z",
+      "updatedAt": "2026-11-18T12:46:24.514Z",
+      "isRead": true
+    },
+    {
+      "id": "449735628238653561",
+      "title": "Important Announcement",
+      "description": "Dear parents, Kindly be informed that the outstanding students in sports will be honored on Wednesday 25-11-2026 Mls Primary Administration",
+      "publishedAt": "2026-11-18T08:12:18.274Z",
+      "updatedAt": "2026-11-18T08:12:18.274Z",
+      "isRead": true
+    },
+    {
+      "id": "447606137240459834",
+      "title": "ICT",
+      "description": "Please ensure the following homework tasks are completed: Theme 1, Lesson 6: Solve the assigned questions. Theme 2, Lesson 1: Solve the assigned questions. Please also remember to bring your copybook to class with the previous evaluation pasted inside.",
+      "publishedAt": "2026-11-12T11:01:39.481Z",
+      "updatedAt": "2026-11-12T11:01:39.481Z",
+      "isRead": true
+    },
+    {
+      "id": "447201788005748124",
+      "title": "Important Announcement",
+      "description": "Dear parents, Kindly note that the school is organizing an MLS winter drive. Kindly arrange to send clean blankets and winter clothes , as those the only items that would be accepted. Not later than 24th of November. Those donations will be organized and ready for distribution . Thank you",
+      "publishedAt": "2026-11-11T08:11:27.981Z",
+      "updatedAt": "2026-11-11T08:11:27.981Z",
+      "isRead": true
+    },
+    {
+      "id": "444695907569538597",
+      "title": "Important Announcement",
+      "description": "Dear Primary 6 parents, The following activity will start on Sunday 8th of November.",
+      "publishedAt": "2026-11-04T10:14:06.446Z",
+      "updatedAt": "2026-11-04T10:14:06.446Z",
+      "isRead": true
+    },
+    {
+      "id": "443629829158387236",
+      "title": "Important Announcement",
+      "description": "Dear Parents, Please be informed that our PE teachers will be collecting sports certificates from November 2nd to November 19th. Kindly ensure that the certificates are from the year 2026. There is no need to submit medals—only the champion certificates are required.Thank you for your cooperation.",
+      "publishedAt": "2026-11-01T11:38:44.250Z",
+      "updatedAt": "2026-11-01T11:38:44.250Z",
+      "isRead": true
+    },
+    {
+      "id": "443616041243819438",
+      "title": "نشرة المصروفات",
+      "description": "تحية طيبة وبعد، مرفق الخطاب الخاص بنشرة المصروفات الدراسية للعام الدراسى 2026 2027 وسداد القسط الثانى للعام الدراسي 206 2027 طبقا للنشرة الواردة من الادارة التعليمية",
+      "publishedAt": "2026-11-01T10:44:31.546Z",
+      "updatedAt": "2026-11-01T10:44:31.546Z",
+      "isRead": true
+    },
+    {
+      "id": "442519555936397723",
+      "title": "Important Announcement",
+      "description": "Important Announcement",
+      "publishedAt": "2026-10-29T10:06:53.280Z",
+      "updatedAt": "2026-10-29T10:06:53.280Z",
+      "isRead": true
+    },
+    {
+      "id": "437524745005601330",
+      "title": "Important Announcement",
+      "description": "Reminder Dear Parents, Kindly be informed that the outstanding students in sports in the Primary Stage will be honored on Thursday, 29 October 2026, the last Thursday of the month. Kindly ensure that the certificates of appreciation and medals are sent to school on that day. Thank you for your cooperation.",
+      "publishedAt": "2026-10-28T06:48:41.690Z",
+      "updatedAt": "2026-10-28T06:48:41.690Z",
+      "isRead": true
+    },
+    {
+      "id": "441061161631256012",
+      "title": "Important Announcement",
+      "description": "Dear parents, Kindly note that early dismissal is not allowed as of 25/10/2026. Students will complete all their classes till end of school day Thank you",
+      "publishedAt": "2026-10-25T09:31:03.441Z",
+      "updatedAt": "2026-10-25T09:31:03.441Z",
+      "isRead": true
+    },
+    {
+      "id": "439595003870753366",
+      "title": "Pink October",
+      "description": "Pink October",
+      "publishedAt": "2026-10-21T08:24:35.928Z",
+      "updatedAt": "2026-10-21T08:24:35.928Z",
+      "isRead": true
+    },
+    {
+      "id": "433787590072646270",
+      "title": "Important Announcement",
+      "description": "Dear parents, This is a kind reminder that gate 3 will close at 07h50, and gate 1 at 08h30. Students arriving after 08h00 will be considered as late arrivals. Thank you for your usual support and trust.",
+      "publishedAt": "2026-10-18T05:37:05.023Z",
+      "updatedAt": "2026-10-18T05:37:05.023Z",
+      "isRead": true
+    },
+    {
+      "id": "437870350743672537",
+      "title": "Primary 6 Monthly Tests October 2026",
+      "description": "Primary 6 Monthly Tests October 2026",
+      "publishedAt": "2026-10-16T14:12:12.233Z",
+      "updatedAt": "2026-10-16T14:12:14.157Z",
+      "isRead": true
+    },
+    {
+      "id": "437472156117405725",
+      "title": "ICT montly exam",
+      "description": "Please be informed that our ICT October monthly exam will take place during regular class sessions. To assist with preparation, the answer keys for the material binders covering the four lessons of Theme 1, as well as Evaluations 1, 2, and 3, have now been uploaded. 📚 Exam Details & Preparation: Coverage: Theme 1 (Lessons 1 to 4) and Evaluations 1, 2, and 3 Study resources: Theme 1 material binder answer keys and evaluation answers",
+      "publishedAt": "2026-10-15T11:53:14.972Z",
+      "updatedAt": "2026-10-15T11:53:14.972Z",
+      "isRead": true
+    },
+    {
+      "id": "436743287563386964",
+      "title": "مراجعات شهر أكتوبر لغة عربية ودين",
+      "description": "تم تحميل مراجعات شهر أكتوبر عربي ودين علي صفحة course plane نرجو لأبنائنا التوفيق",
+      "publishedAt": "2026-10-13T11:33:52.484Z",
+      "updatedAt": "2026-10-13T11:33:52.484Z",
+      "isRead": true
+    },
+    {
+      "id": "432553667749520243",
+      "title": "Weekly Assessment Exam Schedule 1st term 2026-2027 Prim6",
+      "description": "Weekly Assessment Exam Schedule 1st term 2026-2027 Prim6",
+      "publishedAt": "2026-10-13T11:00:54.780Z",
+      "updatedAt": "2026-10-13T11:00:54.780Z",
+      "isRead": true
+    },
+    {
+      "id": "435976276235300391",
+      "title": "Important Announcement",
+      "description": "Dear Parents, Kindly note that any homework uploaded to the \"Toddle\" platform after 5:00 PM will automatically have its deadline extended to the day after tomorrow. Thank you for your understanding and cooperation",
+      "publishedAt": "2026-10-11T08:45:06.168Z",
+      "updatedAt": "2026-10-11T08:45:06.168Z",
+      "isRead": true
+    },
+    {
+      "id": "434515149752142603",
+      "title": "اجتماع الجمعية العمومية 2026/2027",
+      "description": "اجتماع الجمعية العمومية 2026/2027",
+      "publishedAt": "2026-10-07T07:58:42.258Z",
+      "updatedAt": "2026-10-07T07:58:42.258Z",
+      "isRead": true
+    },
+    {
+      "id": "434163246061093684",
+      "title": "Important Announcement",
+      "description": "السادة اولياء الامور الافاضل على من يرغب فى عمل كارنية التأمين الصحى إرسال صورة ٤×٦ مكتوب على ظهرها اسم التلميذ بالكامل والفصل وكلمة التأمين الصحى (لمراحل من اولى حضانة حتى الصف الثالث الثانوى) فى موعد اقصاه ٢٠ اكتوبر ٢٠٢٦",
+      "publishedAt": "2026-10-06T08:41:16.603Z",
+      "updatedAt": "2026-10-06T08:41:16.603Z",
+      "isRead": true
+    },
+    {
+      "id": "434129446396527055",
+      "title": "Important Announcement",
+      "description": "Dear Parents, Please be informed that the British Section examination will be scheduled for students who wish to transfer to the British Section, Once the dates of the Ministry’s October monthly examinations will be confirmed. Therefore, we kindly ask students who wish to transfer to the British Section to start studying and preparing for the examination. The confirmed examination date will be communicated to you during October. Nb: Exams will be held in October. Thank you for your continued cooperation and support. Best regards, School Administration Thank you for your continued cooperation and support. Best regards, School Administration السادة أولياء الأمور، نود أن نحيطكم علمًا بأنه سيتم تحديد موعد امتحان التحويل للقسم البريطاني للطلاب الراغبين في التحويل إلى القسم البريطاني، وذلك بعد تحديد مواعيد الامتحانات اكتوبر الشهرية للوزارة. لذا، نرجو من الطلاب الراغبين في التحويل البدء في المذاكرة والاستعداد للامتحان، على أن يتم إبلاغكم بالموعد المحدد خلال شهر أكتوبر. علما ان الامتحانات سوف تكون في شهر اكتوبر. شاكرين لكم تعاونكم ودعمكم المستمر. مع خالص التحية، إدارة المدرسة",
+      "publishedAt": "2026-10-06T06:27:11.401Z",
+      "updatedAt": "2026-10-06T06:27:18.111Z",
+      "isRead": true
+    },
+    {
+      "id": "433829461314550882",
+      "title": "Important Announcement",
+      "description": "A kind reminder that the school will not give back any mobile phone unless one of parents picks it up from school premises. A box is provided in each class and students are aware that they are not allowed to keep their phones with them under any condition. Thank you",
+      "publishedAt": "2026-10-05T10:34:47.529Z",
+      "updatedAt": "2026-10-05T10:34:47.529Z",
+      "isRead": true
+    },
+    {
+      "id": "432497143236829973",
+      "title": "الاسبوع الثالث / دراسات اجتماعية / الصف السادس",
+      "description": "الاسبوع الثالث من ٢٧/ ٩ الي ١/ ١٠ / ٢٠٢٦ الانتهاء من شرح الدرس الثاني ( تضاريس وطننا العربي ) الواجب : حل ص ٢٢ (أ - ب ) ص ٢٣ كلها من كتاب الوزارة",
+      "publishedAt": "2026-10-01T18:20:39.412Z",
+      "updatedAt": "2026-10-01T18:20:39.412Z",
+      "isRead": true
+    },
+    {
+      "id": "432476829324976842",
+      "title": "Important Announcement",
+      "description": "Dear Parents, Please be informed that our PE teachers will be collecting sports certificates from October 4th to October 20th. Kindly ensure that the certificates are from the year 2026. There is no need to submit medals—only the champion certificates are required. Thank you for your cooperation.",
+      "publishedAt": "2026-10-01T16:59:10.056Z",
+      "updatedAt": "2026-10-01T16:59:13.705Z",
+      "isRead": true
+    }
+  ],
+  "courses": [
+    {
+      "id": "425277950422719800",
+      "title": "prim6 G Arabic",
+      "items": [
+        {
+          "id": "428369868199341664",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "مصادر اللغة العربية"
+        },
+        {
+          "id": "428370257355255403",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "428369868199341664",
+          "title": "Arabic_Primary6_T1",
+          "mimeType": "application/pdf",
+          "fileName": "Arabic_Primary6_T1"
+        },
+        {
+          "id": "428684104490321431",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "📝 6️⃣تقييمات الوزارة.. لغة عربية..ترم ١-٢٠٢٧..",
+          "mimeType": "application/pdf",
+          "fileName": "📝 6️⃣تقييمات الوزارة.. لغة عربية..ترم ١-٢٠٢٧.."
+        },
+        {
+          "id": "432392301306753334",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "Arabic_Primary6_T1",
+          "mimeType": "application/pdf",
+          "fileName": "Arabic_Primary6_T1"
+        },
+        {
+          "id": "432392295296315701",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "معدلة ملزمة الصف السادس ترم اول",
+          "mimeType": "application/pdf",
+          "fileName": "معدلة ملزمة الصف السادس ترم اول"
+        },
+        {
+          "id": "429789393276941290",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من 21/9 إلي25/9 ت ص الاستماع كنز لا يقدر المعرفة والنكرة",
+          "fileName": "ماتم تدريسه من 21/9 إلي25/9 ت ص الاستماع كنز لا يقدر المعرفة والنكرة"
+        },
+        {
+          "id": "432391786439160103",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من 27/9 إلي 1/10 النص المعلوماتي درس اتخاذ القرار",
+          "fileName": "ماتم تدريسه من 27/9 إلي 1/10 النص المعلوماتي درس اتخاذ القرار"
+        },
+        {
+          "id": "436742470059995779",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ما تم تدريسه من 6من أكتوبر إلي 9أكتوبر نص إلي الشباب انتهاء الوحدة الأولي",
+          "fileName": "ما تم تدريسه من 6من أكتوبر إلي 9أكتوبر نص إلي الشباب انتهاء الوحدة الأولي"
+        },
+        {
+          "id": "436742664528900745",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "مراجعات شهر أكتوبر لغة عربية ودين"
+        },
+        {
+          "id": "436743167832797852",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "436742664528900745",
+          "title": "وحدة اولى مراجعة دين الصف السادس (2)",
+          "mimeType": "application/pdf",
+          "fileName": "وحدة اولى مراجعة دين الصف السادس (2)"
+        },
+        {
+          "id": "436743167832797853",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "436742664528900745",
+          "title": "مراجعة الوحدة الأولى الصف السادس تيرم أول",
+          "mimeType": "application/pdf",
+          "fileName": "مراجعة الوحدة الأولى الصف السادس تيرم أول"
+        },
+        {
+          "id": "437108581184080633",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "436742664528900745",
+          "title": "الاسم النكرة والاسم المعرفة 6 ب",
+          "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "fileName": "الاسم النكرة والاسم المعرفة 6 ب"
+        },
+        {
+          "id": "437464086050019245",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من 11أكتوبر إلي 15 أكتوبر نص الاستماع الوحدة الثانية من هم الناجحون؟",
+          "fileName": "ماتم تدريسه من 11أكتوبر إلي 15 أكتوبر نص الاستماع الوحدة الثانية من هم الناجحون؟"
+        },
+        {
+          "id": "440003101844353727",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ما تم تدريسه من 18/10 إلي 22/10 العربي قوة الكلمات الأسماء الخمسة",
+          "fileName": "ما تم تدريسه من 18/10 إلي 22/10 العربي قوة الكلمات الأسماء الخمسة"
+        },
+        {
+          "id": "442520861979743050",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "الأسماء 1",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "الأسماء 1"
+        },
+        {
+          "id": "442521103135445844",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من25/10 إلي 29/10 الاسماء الخمسة التقرير",
+          "fileName": "ماتم تدريسه من25/10 إلي 29/10 الاسماء الخمسة التقرير"
+        },
+        {
+          "id": "442540652266296845",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "الفرق بين شرح الأبيات واالتعبيرات الجميلة",
+          "mimeType": "application/pdf",
+          "fileName": "الفرق بين شرح الأبيات واالتعبيرات الجميلة"
+        },
+        {
+          "id": "445073859100588028",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ما تم تدريسه من 1/11 إلي5/11 سر القوة والنجاح أنواع الخبر",
+          "fileName": "ما تم تدريسه من 1/11 إلي5/11 سر القوة والنجاح أنواع الخبر"
+        },
+        {
+          "id": "445074213288589358",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "انواع الخبر",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "انواع الخبر"
+        },
+        {
+          "id": "447606174993391919",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من8/11 إل12/11 نشيد بناة المجد اعراب أنواع الخبر",
+          "fileName": "ماتم تدريسه من8/11 إل12/11 نشيد بناة المجد اعراب أنواع الخبر"
+        },
+        {
+          "id": "447606353209368882",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "تدريبات علي نشيد بناة المجد",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "تدريبات علي نشيد بناة المجد"
+        },
+        {
+          "id": "450146840726247534",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من 15/11 إلي 19/11 كان وأخواتها أنواع خبر كان نص الاستماع",
+          "fileName": "ماتم تدريسه من 15/11 إلي 19/11 كان وأخواتها أنواع خبر كان نص الاستماع"
+        },
+        {
+          "id": "451558785299820178",
+          "type": "ASSESSMENT",
+          "depth": 1,
+          "parentId": null,
+          "title": "سلوك شهر ديسمبر"
+        },
+        {
+          "id": "451559975710404319",
+          "type": "ASSESSMENT",
+          "depth": 1,
+          "parentId": null,
+          "title": "واجبات شهر ديسمبر"
+        },
+        {
+          "id": "451595428060772292",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "مراجعات شهر نوفمبر لغة عربية ودين"
+        },
+        {
+          "id": "451595539025278917",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "451595428060772292",
+          "title": "اختبارات_شهر_نوفمبر_لغة_عربية_الصف_السادس_الابتدائي_كتاب_الامتحان",
+          "mimeType": "application/pdf",
+          "fileName": "اختبارات_شهر_نوفمبر_لغة_عربية_الصف_السادس_الابتدائي_كتاب_الامتحان"
+        },
+        {
+          "id": "451595539025278918",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "451595428060772292",
+          "title": "مراجعة الصف السادس شهر نوفمبر",
+          "mimeType": "application/pdf",
+          "fileName": "مراجعة الصف السادس شهر نوفمبر"
+        },
+        {
+          "id": "451595539025278919",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "451595428060772292",
+          "title": "التربية الدينية - الصف السادس",
+          "mimeType": "application/pdf",
+          "fileName": "التربية الدينية - الصف السادس"
+        }
+      ]
+    },
+    {
+      "id": "425277951467101497",
+      "title": "prim6 G Art",
+      "items": []
+    },
+    {
+      "id": "425277952440180026",
+      "title": "prim6 G Computer",
+      "items": [
+        {
+          "id": "429472518751951358",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "theme 1"
+        },
+        {
+          "id": "429472641175296514",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "429472518751951358",
+          "title": "prim 6"
+        },
+        {
+          "id": "429831771266268249",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429472641175296514",
+          "title": "prim 6 lesson 2",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "prim 6 lesson 2"
+        },
+        {
+          "id": "429928288182372424",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429472641175296514",
+          "title": "Prim 6 lesson 1",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "Prim 6 lesson 1"
+        },
+        {
+          "id": "432369614568073286",
+          "type": "FOLDER",
+          "depth": 3,
+          "parentId": "429472641175296514",
+          "title": "Binder prim 6"
+        },
+        {
+          "id": "432371917740091550",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "432369614568073286",
+          "title": "ICT primary 6 booklet 1st term 2025-2026 1",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "ICT primary 6 booklet 1st term 2025-2026 1"
+        },
+        {
+          "id": "432376282274113867",
+          "type": "FOLDER",
+          "depth": 4,
+          "parentId": "432369614568073286",
+          "title": "H.W"
+        },
+        {
+          "id": "432377135726897526",
+          "type": "FILE",
+          "depth": 5,
+          "parentId": "432376282274113867",
+          "title": "Please answer the questions on page 6 and 9",
+          "fileName": "Please answer the questions on page 6 and 9"
+        },
+        {
+          "id": "437468922673928245",
+          "type": "FILE",
+          "depth": 5,
+          "parentId": "432376282274113867",
+          "title": "revision prim 6 october",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "revision prim 6 october"
+        },
+        {
+          "id": "437468922678122550",
+          "type": "FILE",
+          "depth": 5,
+          "parentId": "432376282274113867",
+          "title": "week1",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "week1"
+        },
+        {
+          "id": "437468922678122551",
+          "type": "FILE",
+          "depth": 5,
+          "parentId": "432376282274113867",
+          "title": "week2",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "week2"
+        },
+        {
+          "id": "437468922682316856",
+          "type": "FILE",
+          "depth": 5,
+          "parentId": "432376282274113867",
+          "title": "week3",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "week3"
+        },
+        {
+          "id": "443564323864874198",
+          "type": "ASSESSMENT",
+          "depth": 1,
+          "parentId": null,
+          "title": "October monthly exam"
+        },
+        {
+          "id": "444280091837502663",
+          "type": "ASSESSMENT",
+          "depth": 1,
+          "parentId": null,
+          "title": "Weekly Assessment 1"
+        }
+      ]
+    },
+    {
+      "id": "425277953404869947",
+      "title": "Prim6 G English AL",
+      "items": [
+        {
+          "id": "427279692970630614",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Booklets"
+        },
+        {
+          "id": "429049565266617387",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427279692970630614",
+          "title": "Gr. 6 Grammar and Sentence Structure 2026-2027",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Grammar and Sentence Structure 2026-2027"
+        },
+        {
+          "id": "429049565266617388",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427279692970630614",
+          "title": "Gr. 6 Wonders Fiction Booklet 2026-2027 First Term",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Wonders Fiction Booklet 2026-2027 First Term"
+        },
+        {
+          "id": "429049565266617389",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427279692970630614",
+          "title": "Gr. 6 Wonders Leveled Readers 2026-2027",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Wonders Leveled Readers 2026-2027"
+        },
+        {
+          "id": "429049565266617390",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427279692970630614",
+          "title": "Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term"
+        },
+        {
+          "id": "429049565266617391",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427279692970630614",
+          "title": "Gr. 6 Writing Booklet First Term 2026-2027",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Writing Booklet First Term 2026-2027"
+        },
+        {
+          "id": "428819441661286736",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Wonders"
+        },
+        {
+          "id": "428819528122669395",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428819441661286736",
+          "title": "Unit 1 Week 1"
+        },
+        {
+          "id": "428819828791351640",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "428819528122669395",
+          "title": "Crossing the Creek",
+          "mimeType": "video/mp4",
+          "fileName": "Crossing the Creek"
+        },
+        {
+          "id": "428819828791351641",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "428819528122669395",
+          "title": "U1 W1 How do new experiences offer new perspectives",
+          "mimeType": "application/pdf",
+          "fileName": "U1 W1 How do new experiences offer new perspectives"
+        },
+        {
+          "id": "431309130813187624",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Grammar"
+        },
+        {
+          "id": "451620096230603870",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431309130813187624",
+          "title": "Gr. 6 November Test Grammar Revision- Model Answers",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 November Test Grammar Revision- Model Answers"
+        },
+        {
+          "id": "451618803139263542",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431309130813187624",
+          "title": "Gr. 6 November Test Grammar Revision",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 November Test Grammar Revision"
+        },
+        {
+          "id": "431309652337141298",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431309130813187624",
+          "title": "Gr. 6 Grammar Revision- Compound Sentences--",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Grammar Revision- Compound Sentences--"
+        },
+        {
+          "id": "431309652337141299",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431309130813187624",
+          "title": "Gr. 6 Grammar Revision- Compound Sentences--Model Answers",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Grammar Revision- Compound Sentences--Model Answers"
+        },
+        {
+          "id": "431309436359845423",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431309130813187624",
+          "title": "Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences"
+        },
+        {
+          "id": "431339950298933621",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431309130813187624",
+          "title": "Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Grammar Revision- Parts of Speech and Compound Sentences- Model Answers"
+        },
+        {
+          "id": "427284122247929528",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Booklets Model Answers"
+        },
+        {
+          "id": "450913768034056809",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427284122247929528",
+          "title": "Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 26",
+          "mimeType": "application/pdf",
+          "fileName": "Annotated Gr. 6 Wonders Nonfiction Booklet 2026-2027 First Term- up to p. 26"
+        },
+        {
+          "id": "450913768034056810",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427284122247929528",
+          "title": "Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers up to p. 33- includes if conditional answers",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Grammar and Sentence Structure 2026-2027-- Model Answers up to p. 33- includes if conditional answers"
+        },
+        {
+          "id": "445796349498137310",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427284122247929528",
+          "title": "Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term up to p. 36",
+          "mimeType": "application/pdf",
+          "fileName": "Annotated Gr. 6 Wonders Fiction Booklet 2026-2027 First Term up to p. 36"
+        },
+        {
+          "id": "427279847698505218",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Weeekly Covered Material"
+        },
+        {
+          "id": "450173337486793871",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 9"
+        },
+        {
+          "id": "450173533801192596",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "450173337486793871",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 9",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 9"
+        },
+        {
+          "id": "447636399332566580",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 8"
+        },
+        {
+          "id": "447636576252503607",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "447636399332566580",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 8",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 8"
+        },
+        {
+          "id": "445101066036493439",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 7"
+        },
+        {
+          "id": "445102929326685380",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "445101066036493439",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 7",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 7"
+        },
+        {
+          "id": "442542726827775770",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 6"
+        },
+        {
+          "id": "442542860034676512",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "442542726827775770",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 6",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 6"
+        },
+        {
+          "id": "432435273041753642",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "442542726827775770",
+          "title": "Cow Music",
+          "mimeType": "application/pdf",
+          "fileName": "Cow Music"
+        },
+        {
+          "id": "440000880759059062",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 5"
+        },
+        {
+          "id": "440001778054902422",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "440000880759059062",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 5",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 5"
+        },
+        {
+          "id": "437339738995721815",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 4"
+        },
+        {
+          "id": "437340016406988376",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "437339738995721815",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 4",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 4"
+        },
+        {
+          "id": "434574463745432375",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 3"
+        },
+        {
+          "id": "434574625536514880",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "434574463745432375",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 3",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 3"
+        },
+        {
+          "id": "432434689119139368",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 2"
+        },
+        {
+          "id": "432435942276511285",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "432434689119139368",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 2",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 2"
+        },
+        {
+          "id": "429865746797987055",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 1"
+        },
+        {
+          "id": "429866014746903799",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429865746797987055",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 1",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 1"
+        },
+        {
+          "id": "427280547933363736",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427279847698505218",
+          "title": "Week 0"
+        },
+        {
+          "id": "427282526105542257",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "427280547933363736",
+          "title": "Gr. 6 Weekly Outline Term 1 Week 0",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Weekly Outline Term 1 Week 0"
+        },
+        {
+          "id": "427283916169191088",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "427280547933363736",
+          "title": "Deserts and People",
+          "mimeType": "application/pdf",
+          "fileName": "Deserts and People"
+        },
+        {
+          "id": "429263086449376046",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Home Dictations"
+        },
+        {
+          "id": "442327405743342250",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "429263086449376046",
+          "title": "Home Dictation #3"
+        },
+        {
+          "id": "442327633103979179",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "442327405743342250",
+          "title": "Gr. 6 Home Dictation 3- Normal Speed",
+          "mimeType": "audio/x-m4a",
+          "fileName": "Gr. 6 Home Dictation 3- Normal Speed"
+        },
+        {
+          "id": "442327633103979180",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "442327405743342250",
+          "title": "Gr. 6 Home Dictation 3- Slow Speed",
+          "mimeType": "audio/x-m4a",
+          "fileName": "Gr. 6 Home Dictation 3- Slow Speed"
+        },
+        {
+          "id": "442327633103979181",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "442327405743342250",
+          "title": "Gr. 6 Home Dictation 3",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Home Dictation 3"
+        },
+        {
+          "id": "433125985089526143",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "429263086449376046",
+          "title": "Home Dictation #2"
+        },
+        {
+          "id": "433126150395435393",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433125985089526143",
+          "title": "Gr. 6 Home Dictation 2- Normal Speed",
+          "mimeType": "audio/x-m4a",
+          "fileName": "Gr. 6 Home Dictation 2- Normal Speed"
+        },
+        {
+          "id": "433126150395435394",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433125985089526143",
+          "title": "Gr. 6 Home Dictation 2- Slow Speed",
+          "mimeType": "audio/x-m4a",
+          "fileName": "Gr. 6 Home Dictation 2- Slow Speed"
+        },
+        {
+          "id": "433126150395435395",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433125985089526143",
+          "title": "Gr. 6 Home Dictation 2",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Home Dictation 2"
+        },
+        {
+          "id": "429263463613774640",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "429263086449376046",
+          "title": "Home Dictation #1"
+        },
+        {
+          "id": "429263851452676914",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429263463613774640",
+          "title": "Gr. 6 Home Dictation 1- Regular Speed",
+          "mimeType": "audio/x-m4a",
+          "fileName": "Gr. 6 Home Dictation 1- Regular Speed"
+        },
+        {
+          "id": "429263851456871219",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429263463613774640",
+          "title": "Gr. 6 Home Dictation 1- Slow Speed",
+          "mimeType": "audio/x-m4a",
+          "fileName": "Gr. 6 Home Dictation 1- Slow Speed"
+        },
+        {
+          "id": "429263851456871220",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429263463613774640",
+          "title": "Gr. 6 Home Dictation 1",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Home Dictation 1"
+        },
+        {
+          "id": "432436874083087932",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Weekly Lesson Distribution"
+        },
+        {
+          "id": "432437135384032838",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "432436874083087932",
+          "title": "Lesson Distribution - - 6G",
+          "mimeType": "application/pdf",
+          "fileName": "Lesson Distribution - - 6G"
+        }
+      ]
+    },
+    {
+      "id": "425277954369559868",
+      "title": "prim6 G English OL",
+      "items": [
+        {
+          "id": "437181163245700086",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "Gr. 6 Assessment Book Term 1",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Assessment Book Term 1"
+        },
+        {
+          "id": "437181163254088695",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "Gr. 6 O Level Book Term 1",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 O Level Book Term 1"
+        },
+        {
+          "id": "437181263896413176",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 6 Assessment Book 26 27- Model Answers up to Unit 3 Lesson 3"
+        }
+      ]
+    },
+    {
+      "id": "425277957011971390",
+      "title": "prim6 G Mathematics",
+      "items": [
+        {
+          "id": "427699503739472051",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Weekly Covered Material"
+        },
+        {
+          "id": "429839681207713211",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427699503739472051",
+          "title": "Week 2 6B and 6G This week, we covered lesson 1 Divisibility lesson 2 Factorizing a number to its prime factors using Venn diagram. Lesson 3 An introduction on Writing expressions using GCF. Classwork book pages from 1 to 9. page 11( first question, complete) Homework: Pages 1 to 4 in the workbook for Sunday 27/9/2026 Next Monday 28/9/2026 a quiz based on lessons 1 And 2. Thank you, and have a great weekend.",
+          "fileName": "Week 2 6B and 6G This week, we covered lesson 1 Divisibility lesson 2 Factorizing a number to its prime factors using Venn diagram. Lesson 3 An introduction on Writing expressions using GCF. Classwork book pages from 1 to 9. page 11( first question, complete) Homework: Pages 1 to 4 in the workbook for Sunday 27/9/2026 Next Monday 28/9/2026 a quiz based on lessons 1 And 2. Thank you, and have a great weekend."
+        },
+        {
+          "id": "427699714767489212",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427699503739472051",
+          "title": "Week 1 Kindly be informed that we did a revision this week. Thanks",
+          "fileName": "Week 1 Kindly be informed that we did a revision this week. Thanks"
+        },
+        {
+          "id": "429104457666571867",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427699503739472051",
+          "title": "Hw"
+        },
+        {
+          "id": "430958870869881379",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429104457666571867",
+          "title": "Homework 27/9/2026 Solve the uploaded sheet ‘grade 6 sheet 1’ for tomorrow. Thank you",
+          "fileName": "Homework 27/9/2026 Solve the uploaded sheet ‘grade 6 sheet 1’ for tomorrow. Thank you"
+        },
+        {
+          "id": "429840264606039498",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429104457666571867",
+          "title": "Homework for 6B and 6G Pages 1 to 4 in the workbook for Sunday 27/9/2026",
+          "fileName": "Homework for 6B and 6G Pages 1 to 4 in the workbook for Sunday 27/9/2026"
+        },
+        {
+          "id": "427700526449199299",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Extra Sheets"
+        },
+        {
+          "id": "427701091656829131",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427700526449199299",
+          "title": "Revision Sheet (2) - Week (1)",
+          "mimeType": "application/pdf",
+          "fileName": "Revision Sheet (2) - Week (1)"
+        },
+        {
+          "id": "427701091656829132",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427700526449199299",
+          "title": "Revision Sheet (1) - Week (1)",
+          "mimeType": "application/pdf",
+          "fileName": "Revision Sheet (1) - Week (1)"
+        },
+        {
+          "id": "430956983433081027",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427700526449199299",
+          "title": "Worksheet (1) - Week (2)",
+          "mimeType": "application/pdf",
+          "fileName": "Worksheet (1) - Week (2)"
+        },
+        {
+          "id": "437838979954419833",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427700526449199299",
+          "title": "October Revision Sheet",
+          "mimeType": "application/pdf",
+          "fileName": "October Revision Sheet"
+        },
+        {
+          "id": "438637342165603064",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "427700526449199299",
+          "title": "Modified Model Answer of October Revision Sheet",
+          "mimeType": "application/pdf",
+          "fileName": "Modified Model Answer of October Revision Sheet"
+        },
+        {
+          "id": "428719332508339290",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Classes 6C, 6F and 6G"
+        },
+        {
+          "id": "429861156757209955",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "1st Day at School"
+        },
+        {
+          "id": "428719487672421474",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429861156757209955",
+          "title": "1st Day at School (Mona Gehad)",
+          "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "fileName": "1st Day at School (Mona Gehad)"
+        },
+        {
+          "id": "428719633688726633",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429861156757209955",
+          "title": "School is Cool Crosswords - Week (1)",
+          "mimeType": "image/jpeg",
+          "fileName": "School is Cool Crosswords - Week (1)"
+        },
+        {
+          "id": "428719796612271216",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429861156757209955",
+          "title": "Crosswords - General Revision - Week (1)",
+          "mimeType": "application/pdf",
+          "fileName": "Crosswords - General Revision - Week (1)"
+        },
+        {
+          "id": "433402454340577098",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "Week (2) - From Sunday (20/9/2026) till Thursday (24/9/2026)"
+        },
+        {
+          "id": "428720116486671512",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402454340577098",
+          "title": "Divisibility PPT Presentation - Monday (21/9/2026) - Week (2)",
+          "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "fileName": "Divisibility PPT Presentation - Monday (21/9/2026) - Week (2)"
+        },
+        {
+          "id": "428720570436193445",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402454340577098",
+          "title": "Divisibility Rules in Math Classwork Copybook - Monday (21/9/2026) - Week (2)",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "fileName": "Divisibility Rules in Math Classwork Copybook - Monday (21/9/2026) - Week (2)"
+        },
+        {
+          "id": "428720822157348013",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402454340577098",
+          "title": "Divisibility Extra Sheet in Math Classwork Copybook - Monday (21/9/2026) - Week (2)",
+          "mimeType": "application/pdf",
+          "fileName": "Divisibility Extra Sheet in Math Classwork Copybook - Monday (21/9/2026) - Week (2)"
+        },
+        {
+          "id": "429138963593213055",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402454340577098",
+          "title": "Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22/9/2026) - Week (2)",
+          "mimeType": "application/pdf",
+          "fileName": "Divisibility Rules - Activity Sheet in Math Classwork Copybook - Tuesday (22/9/2026) - Week (2)"
+        },
+        {
+          "id": "434476148219478884",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "Week (4) - From Sunday (4/10/2026) till Wednesday (7/10/2026)"
+        },
+        {
+          "id": "434476231648379758",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "434476148219478884",
+          "title": "Integers - Activity Sheet - Wednesday (7/10/2026)",
+          "mimeType": "application/pdf",
+          "fileName": "Integers - Activity Sheet - Wednesday (7/10/2026)"
+        },
+        {
+          "id": "441452306446188587",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "Week (7) - From Sunday (25/10/2026) till Thursday (29/10/2026)"
+        },
+        {
+          "id": "441452447689375789",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "441452306446188587",
+          "title": "Activity (1) - Monday (26/10/2026)",
+          "mimeType": "application/pdf",
+          "fileName": "Activity (1) - Monday (26/10/2026)"
+        },
+        {
+          "id": "441452582141984817",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "441452306446188587",
+          "title": "Activity (2) - Monday (26/10/2026)",
+          "mimeType": "application/pdf",
+          "fileName": "Activity (2) - Monday (26/10/2026)"
+        },
+        {
+          "id": "429860967891895134",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "Weekly Material Covered"
+        },
+        {
+          "id": "429863107217622183",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Math Material Covered Week: Week (1) - General Revision on some topics from Primary (5) Dates: Sunday, September 13, 2026 – Thursday, September 17, 2026 Detailed Breakdown: Introduction & Real-Life Math Presented a PowerPoint presentation focusing on \"Math in Our Real Life\" Broke the ice with two interactive activities (materials uploaded on Toddle) Primary (5) Revision Topics (Extra Sheets uploaded on Toddle): Adding and subtracting fractions with like and different denominators Long division Finding missing numbers Working with the coordinate plane Prime factorization, calculating the Greatest Common Factor (GCF), and finding the Least Common Multiple (LCM)",
+          "fileName": "Weekly Math Material Covered Week: Week (1) - General Revision on some topics from Primary (5) Dates: Sunday, September 13, 2026 – Thursday, September 17, 2026 Detailed Breakdown: Introduction & Real-Life Math Presented a PowerPoint presentation focusing on \"Math in Our Real Life\" Broke the ice with two interactive activities (materials uploaded on Toddle) Primary (5) Revision Topics (Extra Sheets uploaded on Toddle): Adding and subtracting fractions with like and different denominators Long division Finding missing numbers Working with the coordinate plane Prime factorization, calculating the Greatest Common Factor (GCF), and finding the Least Common Multiple (LCM)"
+        },
+        {
+          "id": "429861968162095988",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Math Material Covered Week: Week (2) Dates: Sunday, September 29, 2026 – Thursday, September 24, 2026 Chapter & Lessons: Chapter (1) – Lessons (1) & (2) Classwork Binder Pages: Pages 1 to 6 Detailed Breakdown: Lesson (1): Fundamentals of Numbers Divisibility concepts and rules of divisibility Understanding multiples and factors Lesson (2): Common Factors & Multiples Prime factorization methods Finding the Greatest Common Factor (GCF) Finding the Least Common Multiple (LCM) Working with and completing Venn diagrams",
+          "fileName": "Weekly Math Material Covered Week: Week (2) Dates: Sunday, September 29, 2026 – Thursday, September 24, 2026 Chapter & Lessons: Chapter (1) – Lessons (1) & (2) Classwork Binder Pages: Pages 1 to 6 Detailed Breakdown: Lesson (1): Fundamentals of Numbers Divisibility concepts and rules of divisibility Understanding multiples and factors Lesson (2): Common Factors & Multiples Prime factorization methods Finding the Greatest Common Factor (GCF) Finding the Least Common Multiple (LCM) Working with and completing Venn diagrams"
+        },
+        {
+          "id": "432374618196584703",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Math Material Covered Week: Week (3) Dates: Sunday, September 27, 2026 – Thursday, October 1, 2026 Chapter / Unit: Unit (1) – Lesson (3) Classwork Binder Pages: Pages 10 to 15 Detailed Breakdown: Lesson (3): Applications of the GCF Writing mathematical expressions using the Greatest Common Factor (GCF) Solving multi-step story problems using the GCF Writing out full mathematical expressions and labeling every step clearly Classwork & Assessments: Corrected homework binder Page 5 Administered the Weekly Quiz on Monday, September 28, 2026 Homework Reminder: Homework is always uploaded on Toddle under the Assignments section.",
+          "fileName": "Weekly Math Material Covered Week: Week (3) Dates: Sunday, September 27, 2026 – Thursday, October 1, 2026 Chapter / Unit: Unit (1) – Lesson (3) Classwork Binder Pages: Pages 10 to 15 Detailed Breakdown: Lesson (3): Applications of the GCF Writing mathematical expressions using the Greatest Common Factor (GCF) Solving multi-step story problems using the GCF Writing out full mathematical expressions and labeling every step clearly Classwork & Assessments: Corrected homework binder Page 5 Administered the Weekly Quiz on Monday, September 28, 2026 Homework Reminder: Homework is always uploaded on Toddle under the Assignments section."
+        },
+        {
+          "id": "434645994068549299",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Math Material Covered Week: Week (4) Dates: Sunday, October 4, 2026 – Wednesday, October 7, 2026 Chapter / Unit: Unit (2) – Lessons (1) and (2) Classwork Binder Pages: Pages 16 to 30 Detailed Breakdown: Lesson (4): Analyzing Least Common Multiples (LCM) Using the Least Common Multiple (LCM) to find common/like denominators for adding and subtracting fractions Solving fraction story problems using LCM applications Unit (2): Rational Numbers - Lessons (1) and (2) Introduction to integers Comparing and arranging integers Understanding the additive inverse Differentiating between natural numbers and counting numbers Classwork & Assessments: Corrected homework binder pages 6, 11 and 12 Administered the Weekly Assessment on Monday, October 5, 2026 Homework Reminder: Homework is always uploaded on Toddle under the Assignments section.",
+          "fileName": "Weekly Math Material Covered Week: Week (4) Dates: Sunday, October 4, 2026 – Wednesday, October 7, 2026 Chapter / Unit: Unit (2) – Lessons (1) and (2) Classwork Binder Pages: Pages 16 to 30 Detailed Breakdown: Lesson (4): Analyzing Least Common Multiples (LCM) Using the Least Common Multiple (LCM) to find common/like denominators for adding and subtracting fractions Solving fraction story problems using LCM applications Unit (2): Rational Numbers - Lessons (1) and (2) Introduction to integers Comparing and arranging integers Understanding the additive inverse Differentiating between natural numbers and counting numbers Classwork & Assessments: Corrected homework binder pages 6, 11 and 12 Administered the Weekly Assessment on Monday, October 5, 2026 Homework Reminder: Homework is always uploaded on Toddle under the Assignments section."
+        },
+        {
+          "id": "437374219785898176",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Math Material Covered Week: Week (5) Dates: Sunday, October 11, 2026 – Thursday, October 15, 2026 Classwork Binder Pages: Pages 31 to 39 Homework Binder / Workbook Pages: Pages 13, 14, 15, 16, 17, 18 and 19 Detailed Breakdown: Unit 2: Rational Numbers – Lessons (3) through (6) Lesson (3): Analyzing rational numbers using models Lesson (4): Comparing and ordering rational numbers Lessons (5) & (6): Exploring and comparing absolute value Classwork, Assessments & Revision: Completed classwork binder exercises from pages 31 to 39 Administered the Weekly Assessment on Monday, October 12, 2026 Assigned general revision for the upcoming October exam , including Unit Assessment 2 in the Workbook (pages 18 and 19) Homework & Correction Routine: Homework is always uploaded on Toddle under the Assignments section. Homework is corrected together in class the following day on the board with the pupils before starting the new lesson.",
+          "fileName": "Weekly Math Material Covered Week: Week (5) Dates: Sunday, October 11, 2026 – Thursday, October 15, 2026 Classwork Binder Pages: Pages 31 to 39 Homework Binder / Workbook Pages: Pages 13, 14, 15, 16, 17, 18 and 19 Detailed Breakdown: Unit 2: Rational Numbers – Lessons (3) through (6) Lesson (3): Analyzing rational numbers using models Lesson (4): Comparing and ordering rational numbers Lessons (5) & (6): Exploring and comparing absolute value Classwork, Assessments & Revision: Completed classwork binder exercises from pages 31 to 39 Administered the Weekly Assessment on Monday, October 12, 2026 Assigned general revision for the upcoming October exam , including Unit Assessment 2 in the Workbook (pages 18 and 19) Homework & Correction Routine: Homework is always uploaded on Toddle under the Assignments section. Homework is corrected together in class the following day on the board with the pupils before starting the new lesson."
+        },
+        {
+          "id": "440011676905943942",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Math Material Covered Week: Week (6) Dates: Sunday, October 18, 2026 – Thursday, October 22, 2026 Detailed Breakdown: Sunday (Oct 18) – October Exam Revision: Revised Units 1 and 2 using the Mathematics Ministry Performance and Assessments book Solved unit assessments on pages 6, 9, and 12 Assigned pages 15 and 18 as homework for final exam revision Monday (Oct 19) – Assessment: Administered the October Monthly Exam Tuesday – Thursday (Oct 20–22) – Continued Unit Revision: Continued comprehensive revision of Units 1 and 2 using the Mathematics Ministry Performance and Assessments book Completed both classwork and homework sections on pages 5, 8, 11, 14, and 17 Homework & Correction Routine: Note: No regular new homework was assigned this week due to the October Exams. Routine homework is always uploaded on Toddle under the Assignments section and corrected together on the board before starting new lessons.",
+          "fileName": "Weekly Math Material Covered Week: Week (6) Dates: Sunday, October 18, 2026 – Thursday, October 22, 2026 Detailed Breakdown: Sunday (Oct 18) – October Exam Revision: Revised Units 1 and 2 using the Mathematics Ministry Performance and Assessments book Solved unit assessments on pages 6, 9, and 12 Assigned pages 15 and 18 as homework for final exam revision Monday (Oct 19) – Assessment: Administered the October Monthly Exam Tuesday – Thursday (Oct 20–22) – Continued Unit Revision: Continued comprehensive revision of Units 1 and 2 using the Mathematics Ministry Performance and Assessments book Completed both classwork and homework sections on pages 5, 8, 11, 14, and 17 Homework & Correction Routine: Note: No regular new homework was assigned this week due to the October Exams. Routine homework is always uploaded on Toddle under the Assignments section and corrected together on the board before starting new lessons."
+        },
+        {
+          "id": "442534854819616060",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Material Covered Week: Week (7) Dates: Sunday, October 25 – Thursday, October 29, 2026 Curriculum Focus: Unit 3, Concept 1 (Use and Analyze Expressions) – Algebraic Expressions Lessons Covered: Lesson 1: Creating Mathematical Expressions Lesson 2: Analyzing Mathematical Expressions Lesson 3: Writing Algebraic Expressions Classwork & Binder Coverage Classwork Binder: Completed exercises from page 105 to page 116. Classwork Copybook Activities: Checked and reviewed active exercises completed in the math classwork copybook corresponding to Lesson 3. Homework & Daily Routine Homework for Sunday: Homework Binder: Pages 20 and 21 Classwork Binder: Solve page 117 General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section. Homework is corrected together interactively on the board with pupils in class the following day prior to starting any new lessons.",
+          "fileName": "Weekly Material Covered Week: Week (7) Dates: Sunday, October 25 – Thursday, October 29, 2026 Curriculum Focus: Unit 3, Concept 1 (Use and Analyze Expressions) – Algebraic Expressions Lessons Covered: Lesson 1: Creating Mathematical Expressions Lesson 2: Analyzing Mathematical Expressions Lesson 3: Writing Algebraic Expressions Classwork & Binder Coverage Classwork Binder: Completed exercises from page 105 to page 116. Classwork Copybook Activities: Checked and reviewed active exercises completed in the math classwork copybook corresponding to Lesson 3. Homework & Daily Routine Homework for Sunday: Homework Binder: Pages 20 and 21 Classwork Binder: Solve page 117 General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section. Homework is corrected together interactively on the board with pupils in class the following day prior to starting any new lessons."
+        },
+        {
+          "id": "445492299380593075",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Material Covered Week: Week (8) Dates: Sunday, November 1 – Thursday, November 5, 2026 Curriculum Focus: Unit 3, Concept 1: Use and Analyze Expressions – Algebraic Expressions Unit 3, Concept 2: Evaluating Algebraic Expressions and Order of Operations Lessons Covered: Unit 3, Concept 1 – Lesson 3: Writing Algebraic Expressions Unit 3, Concept 2 – Lesson 4: Writing Equivalent Algebraic Expressions Unit 3, Concept 2 – Lesson 5: Identifying Equivalent Algebraic Expressions And Order of Operations Unit 3, Concept 2 – Lesson 6: Substituting to Determine Equivalent Expressions Classwork & Binder Coverage Classwork Binder: Completed exercises from page 117 to page 121 (Unit 3, Concept 1, Lesson 3) and page 126 to page 138 (Unit 3, Concept 2, Lessons 4–6). Assessments & Weekly Evaluation Weekly Assessment (4): Conducted in class on Monday, November 2, 2026. Homework Assignments: Unit Assessment (3) – Concept (1) from the Classwork Binder Classwork Binder: Solve page 139 General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section. Homework is corrected together interactively on the board with pupils in class the following day prior to starting any new lessons.",
+          "fileName": "Weekly Material Covered Week: Week (8) Dates: Sunday, November 1 – Thursday, November 5, 2026 Curriculum Focus: Unit 3, Concept 1: Use and Analyze Expressions – Algebraic Expressions Unit 3, Concept 2: Evaluating Algebraic Expressions and Order of Operations Lessons Covered: Unit 3, Concept 1 – Lesson 3: Writing Algebraic Expressions Unit 3, Concept 2 – Lesson 4: Writing Equivalent Algebraic Expressions Unit 3, Concept 2 – Lesson 5: Identifying Equivalent Algebraic Expressions And Order of Operations Unit 3, Concept 2 – Lesson 6: Substituting to Determine Equivalent Expressions Classwork & Binder Coverage Classwork Binder: Completed exercises from page 117 to page 121 (Unit 3, Concept 1, Lesson 3) and page 126 to page 138 (Unit 3, Concept 2, Lessons 4–6). Assessments & Weekly Evaluation Weekly Assessment (4): Conducted in class on Monday, November 2, 2026. Homework Assignments: Unit Assessment (3) – Concept (1) from the Classwork Binder Classwork Binder: Solve page 139 General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section. Homework is corrected together interactively on the board with pupils in class the following day prior to starting any new lessons."
+        },
+        {
+          "id": "447632930055955883",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Material Covered Week: Week (9) Dates: Sunday, November 8 – Thursday, November 12, 2026 Curriculum Focus: Unit 3, Concept 2: Evaluating Algebraic Expressions and Order of Operations Lessons Covered: Unit 3, Concept 2 – Lesson 7: Determining Equivalent Algebraic Expressions [ C.W. Binder from page 142 till page 148 ] Unit 4, Concept 1 – Lesson 1: Solving Algebraic Equations [ C.W. Binder from page 155 till page 158 ] Assessments & Weekly Evaluation Weekly Assessment (5): Conducted in class on Monday, November 9, 2026. Homework Assignments: Workbook: Solve pages 22, 23 and 25 General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section.",
+          "fileName": "Weekly Material Covered Week: Week (9) Dates: Sunday, November 8 – Thursday, November 12, 2026 Curriculum Focus: Unit 3, Concept 2: Evaluating Algebraic Expressions and Order of Operations Lessons Covered: Unit 3, Concept 2 – Lesson 7: Determining Equivalent Algebraic Expressions [ C.W. Binder from page 142 till page 148 ] Unit 4, Concept 1 – Lesson 1: Solving Algebraic Equations [ C.W. Binder from page 155 till page 158 ] Assessments & Weekly Evaluation Weekly Assessment (5): Conducted in class on Monday, November 9, 2026. Homework Assignments: Workbook: Solve pages 22, 23 and 25 General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section."
+        },
+        {
+          "id": "450114605671289377",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "429860967891895134",
+          "title": "Weekly Material Covered Week: Week (10) Dates: Sunday, November 15 – Thursday, November 19, 2026 Curriculum Focus: Unit 4, Concept 1 –Write and Solve Equations and Inequalities Lessons Covered: Complete Lesson 1: Solving Algebraic Equations Lesson 2: Exploring Inequalities Classwork & Binder Coverage Classwork Binder: Completed exercises from page 159 to page 164 Correct Homework in Workbook: Pages 22,23 and 25 Monday 16/11/2026: Weekly Assessment (6) Homework & Daily Routine Homework for Sunday: Homework Binder: Page 27 Classwork Binder: Solve page 170 (Graphing Inequalities) General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section. Homework is corrected together interactively on the board with pupils in class the following day prior to starting any new lessons.",
+          "fileName": "Weekly Material Covered Week: Week (10) Dates: Sunday, November 15 – Thursday, November 19, 2026 Curriculum Focus: Unit 4, Concept 1 –Write and Solve Equations and Inequalities Lessons Covered: Complete Lesson 1: Solving Algebraic Equations Lesson 2: Exploring Inequalities Classwork & Binder Coverage Classwork Binder: Completed exercises from page 159 to page 164 Correct Homework in Workbook: Pages 22,23 and 25 Monday 16/11/2026: Weekly Assessment (6) Homework & Daily Routine Homework for Sunday: Homework Binder: Page 27 Classwork Binder: Solve page 170 (Graphing Inequalities) General Routine Notes: Homework assignments are uploaded on Toddle under the Assignments section. Homework is corrected together interactively on the board with pupils in class the following day prior to starting any new lessons."
+        },
+        {
+          "id": "433402799951226709",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "Weekly Assessments' Study Guide"
+        },
+        {
+          "id": "430950618375434192",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402799951226709",
+          "title": "Study Guide: First Weekly Math Assessment Assessment Date: Monday, September 28, 2026 Topics Covered: Lesson 1: Divisibility Lesson 2: Factorizing a Number to its Prime Factors Study Sources: Math Copybook, Classwork Binder, and Homework Binder",
+          "fileName": "Study Guide: First Weekly Math Assessment Assessment Date: Monday, September 28, 2026 Topics Covered: Lesson 1: Divisibility Lesson 2: Factorizing a Number to its Prime Factors Study Sources: Math Copybook, Classwork Binder, and Homework Binder"
+        },
+        {
+          "id": "433401447212689187",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402799951226709",
+          "title": "Study Guide for Weekly Assessment Two Assessment Date: Monday, October 5, 2026 Topics Covered: - Lesson 1: Divisibility - Lesson 2: Factorizing a Number to its Prime Factors - Lesson 3: Writing Expressions Using the GCF 📚 Study Sources: To ensure thorough preparation, students should review the following resources: Math Classwork Copybook (class notes, solved examples, and guided practice) Classwork Binder (worksheets and in-class activities) Homework Binder (past assignments and practice problems) From page (1) till page (5)",
+          "fileName": "Study Guide for Weekly Assessment Two Assessment Date: Monday, October 5, 2026 Topics Covered: - Lesson 1: Divisibility - Lesson 2: Factorizing a Number to its Prime Factors - Lesson 3: Writing Expressions Using the GCF 📚 Study Sources: To ensure thorough preparation, students should review the following resources: Math Classwork Copybook (class notes, solved examples, and guided practice) Classwork Binder (worksheets and in-class activities) Homework Binder (past assignments and practice problems) From page (1) till page (5)"
+        },
+        {
+          "id": "434640505985343101",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402799951226709",
+          "title": "Study Guide for Weekly Assessment 3 Assessment Date: Monday, October 12, 2026 Topics Covered: Unit (1) ALL - Lesson 1: Divisibility - Lesson 2: Factorizing a Number to its Prime Factors - Lesson 3: Writing Expressions Using the GCF - Lesson 4: Analyzing Least Common Multiples 📚 Study Sources: To ensure thorough preparation, students should review the following resources: Math Classwork Copybook (class notes, solved examples, and guided practice) Classwork Binder (worksheets and in-class activities) Homework Binder (past assignments and practice problems) From page (1) till page (6) 📚 Homework: After studying, solve Math Homework Binder from page (7) till page (10) as general revision before Weekly Assessment (3).",
+          "fileName": "Study Guide for Weekly Assessment 3 Assessment Date: Monday, October 12, 2026 Topics Covered: Unit (1) ALL - Lesson 1: Divisibility - Lesson 2: Factorizing a Number to its Prime Factors - Lesson 3: Writing Expressions Using the GCF - Lesson 4: Analyzing Least Common Multiples 📚 Study Sources: To ensure thorough preparation, students should review the following resources: Math Classwork Copybook (class notes, solved examples, and guided practice) Classwork Binder (worksheets and in-class activities) Homework Binder (past assignments and practice problems) From page (1) till page (6) 📚 Homework: After studying, solve Math Homework Binder from page (7) till page (10) as general revision before Weekly Assessment (3)."
+        },
+        {
+          "id": "433402103923255098",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428719332508339290",
+          "title": "HW. Binder Model Answers"
+        },
+        {
+          "id": "432389940941205747",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "433402103923255098",
+          "title": "Model Answer - Unit (1) - Lessons (1-3)",
+          "mimeType": "application/pdf",
+          "fileName": "Model Answer - Unit (1) - Lessons (1-3)"
+        },
+        {
+          "id": "436745513430201043",
+          "type": "ASSESSMENT",
+          "depth": 1,
+          "parentId": null,
+          "title": "Weekly Assessment (3)"
+        },
+        {
+          "id": "437570106260757968",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Binders"
+        },
+        {
+          "id": "437570283155529170",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "437570106260757968",
+          "title": "Prim 6 Classwork Binder 1st term 2026-2027",
+          "mimeType": "application/pdf",
+          "fileName": "Prim 6 Classwork Binder 1st term 2026-2027"
+        },
+        {
+          "id": "437570283155529171",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "437570106260757968",
+          "title": "Prim 6 homework Binder 1st term 2026-2027",
+          "mimeType": "application/pdf",
+          "fileName": "Prim 6 homework Binder 1st term 2026-2027"
+        },
+        {
+          "id": "449892674032411543",
+          "type": "ASSESSMENT",
+          "depth": 1,
+          "parentId": null,
+          "title": "Weekly Assessment 5"
+        }
+      ]
+    },
+    {
+      "id": "425277958421257535",
+      "title": "prim6 G Music",
+      "items": []
+    },
+    {
+      "id": "425277959901846848",
+      "title": "prim6 G P.E.",
+      "items": []
+    },
+    {
+      "id": "425277962779139394",
+      "title": "prim6 G Religion",
+      "items": [
+        {
+          "id": "428373531508649699",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "مصادر التربية الدينية الإسلامية"
+        },
+        {
+          "id": "428373663851523814",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "428373531508649699",
+          "title": "Islamic_Education_Primary6_T1",
+          "mimeType": "application/pdf",
+          "fileName": "Islamic_Education_Primary6_T1"
+        }
+      ]
+    },
+    {
+      "id": "425277964196814147",
+      "title": "Prim6 G Science",
+      "items": [
+        {
+          "id": "428767470334023199",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "First term"
+        },
+        {
+          "id": "428767701276595750",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "428767470334023199",
+          "title": "First term booklet"
+        },
+        {
+          "id": "439332746070900279",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "428767701276595750",
+          "title": "performance task and Assessments science g6 1st term 2027",
+          "mimeType": "application/pdf",
+          "fileName": "performance task and Assessments science g6 1st term 2027"
+        },
+        {
+          "id": "433839870171977075",
+          "type": "FOLDER",
+          "depth": 3,
+          "parentId": "428767701276595750",
+          "title": "Model answers"
+        },
+        {
+          "id": "451331535145049977",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 7 model answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 7 model answers"
+        },
+        {
+          "id": "451321067210841783",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 6 model answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 6 model answers"
+        },
+        {
+          "id": "451320915439951538",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 5 model answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 5 model answers"
+        },
+        {
+          "id": "444359942539880029",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 4 model answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 4 model answers"
+        },
+        {
+          "id": "438321497971408306",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "Monthly_Exam_1_Model_Answers_",
+          "mimeType": "application/pdf",
+          "fileName": "Monthly_Exam_1_Model_Answers_"
+        },
+        {
+          "id": "438305958683262105",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "4th week assessment model answers",
+          "mimeType": "application/pdf",
+          "fileName": "4th week assessment model answers"
+        },
+        {
+          "id": "438301304998116486",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "Assessment book homework p. 19 model answers",
+          "mimeType": "application/pdf",
+          "fileName": "Assessment book homework p. 19 model answers"
+        },
+        {
+          "id": "438194557411177823",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "Assessment book homework page 14 & 15",
+          "mimeType": "application/pdf",
+          "fileName": "Assessment book homework page 14 & 15"
+        },
+        {
+          "id": "438192184831817012",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "model answers of the 3rd weekly assessment",
+          "mimeType": "application/pdf",
+          "fileName": "model answers of the 3rd weekly assessment"
+        },
+        {
+          "id": "438186783398737144",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "Assessment book homework page 9 model answers",
+          "mimeType": "application/pdf",
+          "fileName": "Assessment book homework page 9 model answers"
+        },
+        {
+          "id": "438183595509593281",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "2nd week assessment model answers",
+          "mimeType": "application/pdf",
+          "fileName": "2nd week assessment model answers"
+        },
+        {
+          "id": "438177243819193416",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 3 homework model answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 3 homework model answers"
+        },
+        {
+          "id": "436749587487700085",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 2 Homework Model Answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 2 Homework Model Answers"
+        },
+        {
+          "id": "436742759173370510",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "chapter 1 Homework Model Answers",
+          "mimeType": "application/pdf",
+          "fileName": "chapter 1 Homework Model Answers"
+        },
+        {
+          "id": "433840037419849080",
+          "type": "FILE",
+          "depth": 4,
+          "parentId": "433839870171977075",
+          "title": "Assessment book model answers P. 4&5",
+          "mimeType": "application/pdf",
+          "fileName": "Assessment book model answers P. 4&5"
+        },
+        {
+          "id": "428767984002045490",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "428767701276595750",
+          "title": "primary 6 first term binder",
+          "mimeType": "application/pdf",
+          "fileName": "primary 6 first term binder"
+        },
+        {
+          "id": "436298985183936822",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "428767701276595750",
+          "title": "investigating the effect of saliva on starch",
+          "mimeType": "application/pdf",
+          "fileName": "investigating the effect of saliva on starch"
+        }
+      ]
+    },
+    {
+      "id": "425277965639654724",
+      "title": "Prim6 G Social Studies",
+      "items": [
+        {
+          "id": "428396810218812364",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع الثاني 20 سبتمبر - 24 سبتمر 2026"
+        },
+        {
+          "id": "428457333094398804",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "428396810218812364",
+          "title": "الدرس الأول : وطننا العربي - الموقع و الاهمية",
+          "mimeType": "application/pdf",
+          "fileName": "الدرس الأول : وطننا العربي - الموقع و الاهمية"
+        },
+        {
+          "id": "428461925479791517",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "428396810218812364",
+          "title": "التقييم الاول الوطن العربي الموقع و الاهمية",
+          "mimeType": "application/pdf",
+          "fileName": "التقييم الاول الوطن العربي الموقع و الاهمية"
+        },
+        {
+          "id": "431397369939003874",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "اطلس خرائط الوطن العربي"
+        },
+        {
+          "id": "431397445054794215",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "431397369939003874",
+          "title": "اطلس الخرائط االدرس الاول",
+          "mimeType": "application/pdf",
+          "fileName": "اطلس الخرائط االدرس الاول"
+        },
+        {
+          "id": "433609863268958663",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع الثالث / من 27 سبتمبر الي 1 اكتوبر 2026"
+        },
+        {
+          "id": "433610096770056649",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "433609863268958663",
+          "title": "الدرس الثاني / تضاريس وطننا العربي",
+          "mimeType": "application/pdf",
+          "fileName": "الدرس الثاني / تضاريس وطننا العربي"
+        },
+        {
+          "id": "433611062567272914",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "433609863268958663",
+          "title": "اطلس الخرائط الدرس الثاني",
+          "mimeType": "application/pdf",
+          "fileName": "اطلس الخرائط الدرس الثاني"
+        },
+        {
+          "id": "433611955022889431",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع الرابع / من 4 اكتوبر الي 7 اكتوبر 2026"
+        },
+        {
+          "id": "437203710968366205",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "433611955022889431",
+          "title": "وطننا العربي المناخ و النبات الطبيعي",
+          "mimeType": "application/pdf",
+          "fileName": "وطننا العربي المناخ و النبات الطبيعي"
+        },
+        {
+          "id": "437204085226112138",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع الخامس من 11 اكتوبر الي 15 اكتوبر 2026"
+        },
+        {
+          "id": "437204243636585613",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "437204085226112138",
+          "title": "درس التحديات البيئية",
+          "mimeType": "application/pdf",
+          "fileName": "درس التحديات البيئية"
+        },
+        {
+          "id": "439199716828293306",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "اجابات اسئلة كتاب الوزارة اول 3 دروس من الوحدة الاولي"
+        },
+        {
+          "id": "439199934521059521",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "439199716828293306",
+          "title": "اجابة درس تضاريس الوطن العربي و درس المناخ و النبات",
+          "mimeType": "application/pdf",
+          "fileName": "اجابة درس تضاريس الوطن العربي و درس المناخ و النبات"
+        },
+        {
+          "id": "439199822407313600",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "439199716828293306",
+          "title": "حل اسئلة الدرس الاول الموقع و الأهمية ( الوطن العربي)",
+          "mimeType": "application/pdf",
+          "fileName": "حل اسئلة الدرس الاول الموقع و الأهمية ( الوطن العربي)"
+        },
+        {
+          "id": "446219104576112514",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع السادس : من 18 اكتوبر الي 22 اكتوبر 2026"
+        },
+        {
+          "id": "446219285069596550",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "446219104576112514",
+          "title": "الاول بالوحدة الثانية شبه الجزيرة العربية قبل و بعد ظهور الاسلام",
+          "mimeType": "application/pdf",
+          "fileName": "الاول بالوحدة الثانية شبه الجزيرة العربية قبل و بعد ظهور الاسلام"
+        },
+        {
+          "id": "446219458223048586",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع السابع : من 25 اكتوبر الي 29 من اكتوبر 2026"
+        },
+        {
+          "id": "446219580692531095",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "446219458223048586",
+          "title": "الهجرة و عالمية الدعوة",
+          "mimeType": "application/pdf",
+          "fileName": "الهجرة و عالمية الدعوة"
+        },
+        {
+          "id": "446219723609245592",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "الاسبوع الثامن : من 1 نوفمبر الي 5 نوفمبر 2026"
+        },
+        {
+          "id": "446219872020498331",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "446219723609245592",
+          "title": "انجازات الخلفاء الراشدين",
+          "mimeType": "application/pdf",
+          "fileName": "انجازات الخلفاء الراشدين"
+        }
+      ]
+    },
+    {
+      "id": "425277961332104513",
+      "title": "prim6 G المجال الزراعى",
+      "items": [
+        {
+          "id": "451178425202280336",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "ملزمة المجال الزراعي الصف السادس الابتدائي"
+        },
+        {
+          "id": "451178508887033749",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "451178425202280336",
+          "title": "كتاب مهارات الزراعة للصف السادس الابتدائي الفصل الدراسي الأول",
+          "mimeType": "application/pdf",
+          "fileName": "كتاب مهارات الزراعة للصف السادس الابتدائي الفصل الدراسي الأول"
+        }
+      ]
+    }
+  ]
+}
