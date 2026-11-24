@@ -22,7 +22,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **prim6 G Religion**: 4 items
 - **Prim6 G Science**: 21 items
 - **Prim6 G Social Studies**: 21 items
-- **prim6 G المجال الزراعى**: 2 items
 
 ## GRADE-5
 ### Recent School Announcements
@@ -45,7 +44,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **prim5 A Religion**: 0 items
 - **Prim5 A Science**: 6 items
 - **Prim5 A Social Studies**: 6 items
-- **prim5 A المجال الزراعى**: 2 items
 
 ## Notification Center (Latest 10)
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 6
