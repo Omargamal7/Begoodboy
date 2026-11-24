@@ -46,11 +46,11 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **Prim5 A Social Studies**: 6 items
 
 ## Notification Center (Latest 10)
+- `ANNOUNCEMENTS` (2026-11-24 18:27): Joumana Hamade — Updated Grammar Revision Sheet Answers
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 6
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 5
 - `ANNOUNCEMENTS` (2026-11-23 11:12): Abeer Elsayed — مراجعات شهر نوفمبر لغة عربية ودين
 - `ANNOUNCEMENTS` (2026-11-23 11:07): Abeer Elsayed — مراجعات شهر نوفمبر عربي ودين
-- `ANNOUNCEMENTS` (2026-11-22 11:14): Assem Abd EL Raouf — Weekly Assessment
 - `CLASS_STREAM` (2026-11-24 09:16): 'واجبات نوفمبر'
 - `CLASS_STREAM` (2026-11-24 09:16): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-24 09:16): 'واجبات شهر ديسمبر'
