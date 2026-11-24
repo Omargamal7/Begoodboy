@@ -22,7 +22,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **prim6 G Mathematics**: 49 items
 - **prim6 G Music**: 0 items
 - **prim6 G P.E.**: 0 items
-- **prim6 G Religion**: 2 items
+- **prim6 G Religion**: 4 items
 - **Prim6 G Science**: 21 items
 - **Prim6 G Social Studies**: 21 items
 - **prim6 G المجال الزراعى**: 2 items
