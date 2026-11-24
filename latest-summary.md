@@ -20,7 +20,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **prim6 G English OL**: 3 items
 - **prim6 G Mathematics**: 49 items
 - **prim6 G Religion**: 4 items
-- **Prim6 G Science**: 21 items
+- **Prim6 G Science**: 22 items
 - **Prim6 G Social Studies**: 21 items
 
 ## GRADE-5
@@ -51,8 +51,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-23 11:12): Abeer Elsayed — مراجعات شهر نوفمبر لغة عربية ودين
 - `ANNOUNCEMENTS` (2026-11-23 11:07): Abeer Elsayed — مراجعات شهر نوفمبر عربي ودين
 - `ANNOUNCEMENTS` (2026-11-22 11:14): Assem Abd EL Raouf — Weekly Assessment
+- `CLASS_STREAM` (2026-11-24 09:16): 'واجبات نوفمبر'
+- `CLASS_STREAM` (2026-11-24 09:16): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-24 09:16): 'واجبات شهر ديسمبر'
 - `CLASS_STREAM` (2026-11-24 09:15): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-24 09:04): 'تقييم 22/11'
-- `CLASS_STREAM` (2026-11-24 09:04): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-23 08:49): 'سلوك أكتوبر'
-- `CLASS_STREAM` (2026-11-23 08:48): notif_lock_student_assignment
