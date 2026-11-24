@@ -15,13 +15,10 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ### Course Plan Item Counts
 - **prim6 G Arabic**: 28 items
-- **prim6 G Art**: 0 items
 - **prim6 G Computer**: 14 items
 - **Prim6 G English AL**: 59 items
 - **prim6 G English OL**: 3 items
 - **prim6 G Mathematics**: 49 items
-- **prim6 G Music**: 0 items
-- **prim6 G P.E.**: 0 items
 - **prim6 G Religion**: 4 items
 - **Prim6 G Science**: 21 items
 - **Prim6 G Social Studies**: 21 items
@@ -40,27 +37,24 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ### Course Plan Item Counts
 - **prim5 A Arabic**: 24 items
-- **prim5 A Art**: 0 items
 - **prim5 A Computer**: 15 items
 - **Prim5 A English AL**: 58 items
 - **prim5 A English OL**: 4 items
 - **prim5 A German**: 9 items
 - **prim5 A Mathematics**: 0 items
-- **prim5 A Music**: 0 items
-- **prim5 A P.E.**: 0 items
 - **prim5 A Religion**: 0 items
 - **Prim5 A Science**: 6 items
 - **Prim5 A Social Studies**: 6 items
 - **prim5 A المجال الزراعى**: 2 items
 
 ## Notification Center (Latest 10)
-- `ANNOUNCEMENTS` (2026-11-23 12:06): {"localeKey": "notif_circular_title", "tokens": [{"key": "name", "value": "Amr ElSayed", "isPlainText": true}, {"key": "title", "value": "It
-- `ANNOUNCEMENTS` (2026-11-23 12:06): {"localeKey": "notif_circular_title", "tokens": [{"key": "name", "value": "Amr ElSayed", "isPlainText": true}, {"key": "title", "value": "It
-- `ANNOUNCEMENTS` (2026-11-23 11:12): {"localeKey": "notif_circular_title", "tokens": [{"key": "name", "value": "Abeer Elsayed", "isPlainText": true}, {"key": "title", "value": "
-- `ANNOUNCEMENTS` (2026-11-23 11:07): {"localeKey": "notif_circular_title", "tokens": [{"key": "name", "value": "Abeer Elsayed", "isPlainText": true}, {"key": "title", "value": "
-- `ANNOUNCEMENTS` (2026-11-22 11:14): {"localeKey": "notif_circular_title", "tokens": [{"key": "name", "value": "Assem Abd EL Raouf", "isPlainText": true}, {"key": "title", "valu
-- `CLASS_STREAM` (2026-11-23 08:49): {"localeKey": "notif_assignment_evaluated_parent_v2", "tokens": [{"key": "title", "value": "'سلوك أكتوبر'", "isPlainText": true}, {"key": "s
-- `CLASS_STREAM` (2026-11-23 08:48): {"localeKey": "notif_lock_student_assignment", "tokens": [{"key": "assignmentName", "value": "'سلوك أكتوبر'", "isPlainText": true}, {"key": 
-- `CLASS_STREAM` (2026-11-23 08:38): {"localeKey": "notif_assignment_evaluated_parent_v2", "tokens": [{"key": "title", "value": "'درجات السلوك نوفمبر'", "isPlainText": true}, {"
-- `CLASS_STREAM` (2026-11-23 08:38): {"localeKey": "notif_lock_student_assignment", "tokens": [{"key": "assignmentName", "value": "'درجات السلوك نوفمبر'", "isPlainText": true}, 
-- `CLASS_STREAM` (2026-11-19 08:51): {"localeKey": "notif_assignment_evaluated_parent_v2", "tokens": [{"key": "title", "value": "'Weekly Assessment (6)'", "isPlainText": true}, 
+- `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 6
+- `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 5
+- `ANNOUNCEMENTS` (2026-11-23 11:12): Abeer Elsayed — مراجعات شهر نوفمبر لغة عربية ودين
+- `ANNOUNCEMENTS` (2026-11-23 11:07): Abeer Elsayed — مراجعات شهر نوفمبر عربي ودين
+- `ANNOUNCEMENTS` (2026-11-22 11:14): Assem Abd EL Raouf — Weekly Assessment
+- `CLASS_STREAM` (2026-11-23 08:49): 'سلوك أكتوبر'
+- `CLASS_STREAM` (2026-11-23 08:48): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-23 08:38): 'درجات السلوك نوفمبر'
+- `CLASS_STREAM` (2026-11-23 08:38): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-19 08:51): 'Weekly Assessment (6)'
