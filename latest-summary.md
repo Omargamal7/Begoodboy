@@ -20,7 +20,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **prim6 G English OL**: 3 items
 - **prim6 G Mathematics**: 49 items
 - **prim6 G Religion**: 4 items
-- **Prim6 G Science**: 22 items
+- **Prim6 G Science**: 23 items
 - **Prim6 G Social Studies**: 21 items
 
 ## GRADE-5
