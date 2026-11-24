@@ -51,8 +51,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-23 11:12): Abeer Elsayed — مراجعات شهر نوفمبر لغة عربية ودين
 - `ANNOUNCEMENTS` (2026-11-23 11:07): Abeer Elsayed — مراجعات شهر نوفمبر عربي ودين
 - `ANNOUNCEMENTS` (2026-11-22 11:14): Assem Abd EL Raouf — Weekly Assessment
+- `CLASS_STREAM` (2026-11-24 09:04): 'تقييم 22/11'
+- `CLASS_STREAM` (2026-11-24 09:04): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-23 08:49): 'سلوك أكتوبر'
 - `CLASS_STREAM` (2026-11-23 08:48): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-23 08:38): 'درجات السلوك نوفمبر'
-- `CLASS_STREAM` (2026-11-23 08:38): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-19 08:51): 'Weekly Assessment (6)'
