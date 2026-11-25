@@ -59,8 +59,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-25 11:35): Amr ElSayed — Primary 5 Monthly Tests November 2026
 - `ANNOUNCEMENTS` (2026-11-25 09:07): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-25 08:17): Nesma Emad — ICT November exam
+- `CLASS_STREAM` (2026-11-25 17:11): 'Behavior & Attendance'
+- `CLASS_STREAM` (2026-11-25 17:11): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-25 17:06): 'Quiz (5) '
+- `CLASS_STREAM` (2026-11-25 17:06): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-25 12:41): 'Week 4 Quiz (Week of Oct...'
-- `CLASS_STREAM` (2026-11-25 12:41): 'Week 5 Quiz (Week of Oct...'
-- `CLASS_STREAM` (2026-11-25 12:40): 'Week 9 Quiz (Week of Nov...'
-- `CLASS_STREAM` (2026-11-25 12:40): 'Week 8 Quiz (Week of Nov...'
-- `CLASS_STREAM` (2026-11-25 12:40): 'Week 7 Quiz (Week of Oct...'
