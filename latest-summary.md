@@ -51,8 +51,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-24 18:27): Joumana Hamade — Updated Grammar Revision Sheet Answers
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 6
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 5
+- `CLASS_STREAM` (2026-11-25 10:35): 'Quiz 3'
+- `CLASS_STREAM` (2026-11-25 10:32): 'Week 4 CW'
+- `CLASS_STREAM` (2026-11-25 10:13): 'weekly Assessment 1'
 - `CLASS_STREAM` (2026-11-24 09:16): 'واجبات نوفمبر'
 - `CLASS_STREAM` (2026-11-24 09:16): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-24 09:16): 'واجبات شهر ديسمبر'
-- `CLASS_STREAM` (2026-11-24 09:15): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-24 09:04): 'تقييم 22/11'
