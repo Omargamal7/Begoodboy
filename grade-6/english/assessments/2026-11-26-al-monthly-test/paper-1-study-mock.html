@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grade 6 · English A-Level (Paper I) Study &amp; Mock Exam</title>
+<style>
+  :root{
+    --bg:#f4f7f4;
+    --surface:#ffffff;
+    --surface-soft:#eaf2ec;
+    --ink:#1d2b24;
+    --muted:#4c6156;
+    --accent:#2e6f56;
+    --accent-soft:#dff0e8;
+    --border:#c9dbd1;
+    --ok-bg:#e3f3ea;
+    --ok-border:#2e6f56;
+    --info-bg:#eef3f8;
+    --info-border:#466987;
+    --block-a:#5b8c5a;
+    --block-b:#7c6348;
+    --block-c:#6b8fa3;
+    --focus:#c47a00;
+  }
+  [data-theme="cream"]{
+    --bg:#faf6ee;
+    --surface:#fffdf8;
+    --surface-soft:#f2eadb;
+    --ink:#262118;
+    --muted:#5c5344;
+    --accent:#3b6955;
+    --accent-soft:#e6efe9;
+    --border:#ddd1bc;
+  }
+  [data-theme="contrast"]{
+    --bg:#121815;
+    --surface:#1c2520;
+    --surface-soft:#25322b;
+    --ink:#f2f7f4;
+    --muted:#c3d4ca;
+    --accent:#7fd1ad;
+    --accent-soft:#243d32;
+    --border:#445c50;
+    --ok-bg:#1e3a2d;
+    --ok-border:#7fd1ad;
+    --info-bg:#1e2e3d;
+    --info-border:#8ab8df;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  button{
+    font:inherit;
+    cursor:pointer;
+    border-radius:10px;
+    border:2px solid var(--border);
+    background:var(--surface);
+    color:var(--ink);
+    padding:10px 16px;
+    min-height:44px;
+  }
+  button:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .btn-primary{
+    background:var(--accent);
+    color:#ffffff;
+    border-color:var(--accent);
+    font-weight:700;
+  }
+  [data-theme="contrast"] .btn-primary{color:#102018}
+  .btn-soft{background:var(--accent-soft);border-color:var(--accent);color:var(--ink);font-weight:600}
+  .topbar{
+    background:var(--surface);
+    border-bottom:3px solid var(--border);
+    padding:14px 16px;
+  }
+  .topbar-inner{
+    max-width:860px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .block-icon{
+    width:38px;height:38px;border-radius:6px;flex:0 0 38px;
+    background:linear-gradient(to bottom,var(--block-a) 0 38%,var(--block-b) 38% 100%);
+    border:2px solid var(--ink);
+  }
+  .brand h1{margin:0;font-size:20px;line-height:1.2}
+  .brand p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+  .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .controls button{padding:7px 12px;font-size:14px;min-height:38px}
+  .controls button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+  [data-theme="contrast"] .controls button[aria-pressed="true"]{color:#102018}
+
+  .wrap{max-width:860px;margin:20px auto 48px;padding:0 16px}
+  .nav-tabs{
+    display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;
+  }
+  .nav-tabs button{flex:1 1 170px;font-weight:700;text-align:center}
+  .nav-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+  [data-theme="contrast"] .nav-tabs button.active{color:#102018}
+
+  .status-bar{
+    background:var(--surface);
+    border:2px solid var(--border);
+    border-radius:12px;
+    padding:12px 16px;
+    margin-bottom:16px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+  }
+  .blocks-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .block-pip{
+    width:18px;height:18px;border-radius:4px;
+    border:2px solid var(--border);
+    background:var(--surface-soft);
+    display:inline-block;
+  }
+  .block-pip.earned{
+    background:linear-gradient(to bottom,var(--block-a) 0 42%,var(--block-b) 42% 100%);
+    border-color:var(--ink);
+  }
+
+  .card{
+    background:var(--surface);
+    border:2px solid var(--border);
+    border-radius:14px;
+    padding:22px;
+    margin-bottom:16px;
+  }
+  .eyebrow{
+    font-size:13px;font-weight:800;text-transform:uppercase;
+    letter-spacing:.05em;color:var(--accent);margin:0 0 6px;
+  }
+  h2{margin:0 0 12px;font-size:24px;line-height:1.25}
+  h3{margin:16px 0 8px;font-size:18px}
+  p{margin:0 0 12px}
+  ul{margin:0 0 14px;padding-left:22px}
+  li{margin-bottom:6px}
+  .box{
+    background:var(--surface-soft);
+    border-left:5px solid var(--accent);
+    border-radius:8px;
+    padding:14px 16px;
+    margin:12px 0;
+  }
+  .gloss{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:10px;
+    margin:12px 0;
+  }
+  .gloss-item{
+    background:var(--surface-soft);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:12px;
+  }
+  .gloss-item strong{display:block;margin-bottom:4px;color:var(--accent)}
+  .passage{
+    background:var(--surface-soft);
+    border:2px solid var(--border);
+    border-radius:12px;
+    padding:16px 18px;
+    margin:12px 0 16px;
+  }
+  .option-list{display:flex;flex-direction:column;gap:10px;margin:14px 0}
+  .opt-btn{
+    text-align:left;
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    padding:12px 14px;
+    background:var(--surface);
+  }
+  .opt-btn.selected{
+    background:var(--accent-soft);
+    border-color:var(--accent);
+    font-weight:700;
+  }
+  .opt-letter{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:6px;flex:0 0 26px;
+    background:var(--surface-soft);border:1px solid var(--border);
+    font-weight:800;font-size:14px;
+  }
+  .opt-btn.selected .opt-letter{background:var(--accent);color:#fff;border-color:var(--accent)}
+  [data-theme="contrast"] .opt-btn.selected .opt-letter{color:#102018}
+
+  .feedback{
+    border-radius:12px;
+    padding:14px 16px;
+    margin-top:14px;
+    border:2px solid var(--info-border);
+    background:var(--info-bg);
+  }
+  .feedback.correct{
+    border-color:var(--ok-border);
+    background:var(--ok-bg);
+  }
+  .actions{
+    display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center;
+  }
+  .pill{
+    display:inline-block;padding:4px 10px;border-radius:999px;
+    font-size:13px;font-weight:700;background:var(--accent-soft);color:var(--ink);
+  }
+  .review-row{
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;
+    gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;margin-bottom:8px;
+  }
+  .hidden{display:none}
+  .model-table{width:100%;border-collapse:collapse;margin:12px 0}
+  .model-table th,.model-table td{border:1px solid var(--border);padding:10px;text-align:left;vertical-align:top}
+  .model-table th{background:var(--surface-soft)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="block-icon" aria-hidden="true"></div>
+      <div>
+        <h1>Grade 6 · English A-Level (Paper I)</h1>
+        <p>November Monthly Test · Calm Step-by-Step Study &amp; Objective Mock Exam</p>
+      </div>
+    </div>
+    <div class="controls" role="group" aria-label="Display and reading controls">
+      <button type="button" id="themeLight" aria-pressed="true">Calm Green</button>
+      <button type="button" id="themeCream" aria-pressed="false">Soft Cream</button>
+      <button type="button" id="themeContrast" aria-pressed="false">High Contrast</button>
+      <button type="button" id="readAloudBtn">Read screen aloud</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="nav-tabs" aria-label="Study sections">
+    <button type="button" id="tabStart" class="active">1. Plan &amp; Overview</button>
+    <button type="button" id="tabLearn">2. Lesson Cards (6 Parts)</button>
+    <button type="button" id="tabExam">3. Mock Exam (18 Questions)</button>
+  </nav>
+
+  <section class="status-bar" aria-label="Progress and reward blocks">
+    <div><strong id="whereLabel">Step 1 of 3 · Plan &amp; Overview</strong></div>
+    <div class="blocks-row" id="blockBar" aria-label="Blocks earned"></div>
+  </section>
+
+  <!-- VIEW 1: START / PLAN -->
+  <section id="viewStart" class="card">
+    <p class="eyebrow">What will happen in this study session</p>
+    <h2>November Test Guide — Paper I</h2>
+    <p>This study page has two clear steps. You can work at your own pace. There is no timer, no sound, and nothing moves until you press a button.</p>
+    <div class="box">
+      <strong>Step 1 — 6 Short Lesson Cards (about 5–8 minutes)</strong>
+      <ul>
+        <li>Part 1: Nonfiction Genres (Expository Text &amp; Biography) + Context Clues</li>
+        <li>Part 2: Figurative Language (Simile, Metaphor, Personification, Idioms)</li>
+        <li>Part 3: Present Simple vs. Present Continuous</li>
+        <li>Part 4: Stative Verbs (verbs that do not use -ing)</li>
+        <li>Part 5: If Conditionals (Type 0 &amp; Type 1) + Will vs. Be Going To</li>
+        <li>Part 6: Argumentative Writing (4-Paragraph Structure + Worked Model)</li>
+      </ul>
+      <strong>Step 2 — 18 Objective Mock Exam Questions (about 10 minutes)</strong>
+      <ul>
+        <li>Multiple choice and single-idea True/False questions only.</li>
+        <li>After you press <strong>Check my answer</strong>, you see calm feedback and why.</li>
+        <li>You earn 1 reward block for each completed section or correct group.</li>
+      </ul>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn-primary" id="startLearnBtn">Start Lesson Cards (Part 1 of 6)</button>
+      <button type="button" class="btn-soft" id="startExamBtn">Go Straight to Mock Exam</button>
+    </div>
+  </section>
+
+  <!-- VIEW 2: LESSON CARDS -->
+  <section id="viewLearn" class="hidden">
+    <div class="card" id="lessonCard"></div>
+    <div class="actions">
+      <button type="button" id="prevLessonBtn">Previous part</button>
+      <button type="button" class="btn-primary" id="nextLessonBtn">Next part</button>
+      <button type="button" class="btn-soft" id="jumpExamFromLearn">Go to Mock Exam</button>
+    </div>
+  </section>
+
+  <!-- VIEW 3: MOCK EXAM -->
+  <section id="viewExam" class="hidden">
+    <div class="card">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;">
+        <div>
+          <span class="pill" id="examPartBadge">Section A · Nonfiction Reading</span>
+          <span class="pill" id="examScoreBadge">Answered: 0 / 18</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" id="modeOneBtn" aria-pressed="true">One question at a time</button>
+          <button type="button" id="modeAllBtn" aria-pressed="false">Show all 18 questions</button>
+        </div>
+      </div>
+      <div id="examContainer"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  const LESSONS = [
+    {
+      id: "l1",
+      part: "Part 1 of 6 · Wonders Nonfiction (p. 5–9, 16–28)",
+      title: "Nonfiction Genres & Context Clues",
+      html: `
+        <p>Nonfiction texts give real facts about real people, places, or events. For this test, know two nonfiction genres and two clue types.</p>
+        <div class="gloss">
+          <div class="gloss-item"><strong>Expository Text</strong>Gives facts and explains a real topic. It uses headings, charts, diagrams, or captions.</div>
+          <div class="gloss-item"><strong>Biography</strong>Tells the true life story of a real person. It is written by another person using "he" or "she".</div>
+          <div class="gloss-item"><strong>Context Clues</strong>Words in the same sentence that explain an unfamiliar word.</div>
+          <div class="gloss-item"><strong>Paragraph Clues</strong>Sentences before or after a word in the same paragraph that show its meaning.</div>
+        </div>
+        <div class="box">
+          <strong>Worked example (Context Clue):</strong><br>
+          "The desert was <em>arid</em>, receiving less than two inches of rain each year."<br>
+          Clue: "less than two inches of rain" → <strong>arid</strong> means <strong>very dry</strong>.
+        </div>
+      `
+    },
+    {
+      id: "l2",
+      part: "Part 2 of 6 · Wonders Nonfiction",
+      title: "Figurative Language (Exact Definitions)",
+      html: `
+        <p>Authors sometimes compare things or use special expressions. Use these four clear rules to tell them apart.</p>
+        <div class="gloss">
+          <div class="gloss-item"><strong>Simile</strong>Compares two different things using the word <strong>like</strong> or <strong>as</strong>.<br><em>Example:</em> The wind sounded <strong>like</strong> a train.</div>
+          <div class="gloss-item"><strong>Metaphor</strong>Compares two different things <strong>without</strong> using like or as. It says one thing <strong>is</strong> another.<br><em>Example:</em> The library <strong>is</strong> a treasure chest.</div>
+          <div class="gloss-item"><strong>Personification</strong>Gives a human action or feeling to a non-human thing.<br><em>Example:</em> The cold wind <strong>whispered</strong> through the trees.</div>
+          <div class="gloss-item"><strong>Idiom</strong>A fixed group of words whose real meaning is different from the literal words.<br><em>Example:</em> "A piece of cake" means <strong>very easy</strong>.</div>
+        </div>
+      `
+    },
+    {
+      id: "l3",
+      part: "Part 3 of 6 · Grammar (p. 10–16)",
+      title: "Present Simple vs. Present Continuous",
+      html: `
+        <p>Choose the tense by checking <strong>when</strong> the action happens.</p>
+        <table class="model-table">
+          <thead><tr><th>Tense</th><th>When to use it</th><th>Form &amp; Signal Words</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Present Simple</strong></td>
+              <td>Habits, daily routines, and facts that are always true.</td>
+              <td>Base verb (add <strong>-s/-es</strong> for he/she/it).<br>Words: <em>every day, always, usually, often, never</em>.<br><em>Example:</em> Water <strong>boils</strong> at 100°C.</td>
+            </tr>
+            <tr>
+              <td><strong>Present Continuous</strong></td>
+              <td>Actions happening <strong>right now</strong> or temporary actions around today.</td>
+              <td><strong>am / is / are + verb-ing</strong>.<br>Words: <em>now, right now, at the moment, Look!, Listen!</em><br><em>Example:</em> Look! The bus <strong>is arriving</strong> now.</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    },
+    {
+      id: "l4",
+      part: "Part 4 of 6 · Grammar (p. 28)",
+      title: "Stative Verbs (No -ing Form)",
+      html: `
+        <p><strong>Stative verbs</strong> describe a state, thought, feeling, sense, or possession—not a physical action. Use <strong>Present Simple</strong> with stative verbs, even when you see the word "now".</p>
+        <div class="gloss">
+          <div class="gloss-item"><strong>Thoughts &amp; Mind</strong>know, understand, believe, remember, forget, mean</div>
+          <div class="gloss-item"><strong>Feelings</strong>like, love, hate, want, need, prefer</div>
+          <div class="gloss-item"><strong>Possession</strong>own, belong, have (when it means "own")</div>
+          <div class="gloss-item"><strong>Senses</strong>seem, appear, taste, smell (state)</div>
+        </div>
+        <div class="box">
+          <strong>Correct:</strong> I <strong>know</strong> the answer right now.<br>
+          <strong>Do not write:</strong> I am knowing the answer right now.
+        </div>
+      `
+    },
+    {
+      id: "l5",
+      part: "Part 5 of 6 · Grammar (p. 26–27, 31)",
+      title: "If Conditionals (Type 0 &amp; Type 1) + Will vs. Be Going To",
+      html: `
+        <table class="model-table">
+          <thead><tr><th>Rule</th><th>Formula</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>If Conditional Type 0</strong><br>(Always true / science facts)</td>
+              <td>If + <strong>Present Simple</strong>, <strong>Present Simple</strong></td>
+              <td>If you <strong>heat</strong> ice, it <strong>melts</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>If Conditional Type 1</strong><br>(Real future possibility)</td>
+              <td>If + <strong>Present Simple</strong>, <strong>will + base verb</strong></td>
+              <td>If it <strong>rains</strong> tomorrow, we <strong>will stay</strong> indoors.</td>
+            </tr>
+            <tr>
+              <td><strong>Will + base verb</strong></td>
+              <td>Quick decision at the moment of speaking, promise, or prediction without evidence.</td>
+              <td>I forgot my pen. I <strong>will borrow</strong> one now.</td>
+            </tr>
+            <tr>
+              <td><strong>am/is/are + going to + base verb</strong></td>
+              <td>Already planned before speaking, or prediction with clear present evidence.</td>
+              <td>Look at those dark clouds! It <strong>is going to rain</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+      `
+    },
+    {
+      id: "l6",
+      part: "Part 6 of 6 · Argumentative Writing",
+      title: "Argumentative Essay Structure (School Model)",
+      html: `
+        <p>An <strong>argumentative essay</strong> presents both sides of a debatable topic in four clear paragraphs.</p>
+        <div class="gloss">
+          <div class="gloss-item"><strong>1. Introduction</strong>Hook + mention the debate + thesis statement (both highlights and challenges).</div>
+          <div class="gloss-item"><strong>2. Body 1 (For / Pros)</strong>Start with <em>"On one hand, many proponents believe..."</em> + 1 clear advantage + 1 real example + concluding sentence.</div>
+          <div class="gloss-item"><strong>3. Body 2 (Against / Cons)</strong>Start with <em>"On the other hand, many critics argue..."</em> + 1 clear disadvantage + 1 real example + concluding sentence.</div>
+          <div class="gloss-item"><strong>4. Conclusion</strong>Start with <em>"In conclusion..."</em>, summarize both sides neutrally, and end with a closing question.</div>
+        </div>
+        <div class="box">
+          <strong>School Model Key Phrases ("Silver Lining with Dark Clouds"):</strong>
+          <ul>
+            <li><em>Introduction:</em> "Practicing sports during the scholastic year has sparked many debates among students, parents, and educators."</li>
+            <li><em>Pro side:</em> "On one hand, many proponents believe... For example... Therefore..."</li>
+            <li><em>Con side:</em> "On the other hand, many critics argue... For instance... As a result..."</li>
+            <li><em>Conclusion:</em> "In conclusion, playing sports... is a double-edged sword... Ultimately, the final verdict is yours."</li>
+          </ul>
+        </div>
+      `
+    }
+  ];
+
+  const PASSAGE_HTML = `
+    <div class="passage">
+      <p class="eyebrow">Reading Passage (Use for Questions 1–6)</p>
+      <h3>Solar Microgrids in Desert Villages</h3>
+      <p><strong>Paragraph 1:</strong> For decades, small desert villages far from big cities had no steady electricity. Families used noisy fuel generators that polluted the air and broke down often. In 2018, engineer Nadia Hassan designed a small solar microgrid to bring clean power to remote homes.</p>
+      <p><strong>Paragraph 2:</strong> A microgrid is a local energy network that collects sunlight using rooftop panels and stores it in large batteries. Even when the sun sets, the stored energy keeps lamps glowing and water pumps running. The village grid works like a giant rechargeable power bank for the whole community.</p>
+      <p><strong>Paragraph 3:</strong> At first, building the system was difficult because sandstorms covered the glass panels. Nadia's team solved this problem by tilting the frames so wind sweeps dust away naturally. Today, twelve villages use her <em>sustainable</em> design—one that can continue running for years without harming the environment.</p>
+    </div>
+  `;
+
+  const QUESTIONS = [
+    // Section A: Reading & Figurative Language (1-6)
+    {id:"q1", section:"Section A · Nonfiction Reading", lessonIdx:0, usesPassage:true, type:"mcq",
+      prompt:"1. What genre is the passage \"Solar Microgrids in Desert Villages\"?",
+      options:["Folktale", "Expository text", "Realistic fiction", "Fairy tale"],
+      answer:1,
+      why:"It explains real facts about how solar microgrids work in desert villages."
+    },
+    {id:"q2", section:"Section A · Nonfiction Reading", lessonIdx:0, usesPassage:true, type:"mcq",
+      prompt:"2. Using context clues in Paragraph 3, what does the word \"sustainable\" mean?",
+      options:["Made out of heavy metal and sand", "Too expensive for a small village to buy", "Able to keep working for a long time without harming nature", "Only able to work during the daytime"],
+      answer:2,
+      why:"Paragraph 3 directly defines it right after the dash: \"one that can continue running for years without harming the environment.\""
+    },
+    {id:"q3", section:"Section A · Nonfiction Reading", lessonIdx:1, usesPassage:true, type:"mcq",
+      prompt:"3. In Paragraph 2, \"The village grid works like a giant rechargeable power bank\" is an example of:",
+      options:["A simile", "Personification", "An idiom", "A biography"],
+      answer:0,
+      why:"It compares the village grid to a power bank using the word \"like\"."
+    },
+    {id:"q4", section:"Section A · Nonfiction Reading", lessonIdx:0, usesPassage:true, type:"tf",
+      prompt:"4. True or False: A biography is a nonfiction text about a real person's life written by another person.",
+      options:["True","False"],
+      answer:0,
+      why:"A biography tells the true life story of a real person and is written by someone else."
+    },
+    {id:"q5", section:"Section A · Nonfiction Reading", lessonIdx:1, usesPassage:false, type:"mcq",
+      prompt:"5. \"The desert wind whispered across the silent dunes.\" Which figurative language is used here?",
+      options:["Simile", "Metaphor", "Idiom", "Personification"],
+      answer:3,
+      why:"Whispering is a human action given to the wind, which is personification."
+    },
+    {id:"q6", section:"Section A · Nonfiction Reading", lessonIdx:1, usesPassage:false, type:"mcq",
+      prompt:"6. \"The science project was a piece of cake for the prepared team.\" What does the idiom \"a piece of cake\" mean?",
+      options:["A sweet dessert", "Very hard to finish", "Very easy to do", "Broken into pieces"],
+      answer:2,
+      why:"\"A piece of cake\" is an idiom that means something is very easy."
+    },
+
+    // Section B: Grammar (7-14)
+    {id:"q7", section:"Section B · Grammar", lessonIdx:2, usesPassage:false, type:"mcq",
+      prompt:"7. Our school bus ________ at 7:30 every morning.",
+      options:["is arriving", "arrives", "arriving", "will arrives"],
+      answer:1,
+      why:"\"Every morning\" shows a daily routine, so use Present Simple (arrives)."
+    },
+    {id:"q8", section:"Section B · Grammar", lessonIdx:2, usesPassage:false, type:"mcq",
+      prompt:"8. Listen! The students ________ a new song in the hall right now.",
+      options:["sing", "sings", "sang", "are singing"],
+      answer:3,
+      why:"\"Listen!\" and \"right now\" show an action happening now, so use Present Continuous (are singing)."
+    },
+    {id:"q9", section:"Section B · Grammar", lessonIdx:3, usesPassage:false, type:"mcq",
+      prompt:"9. I ________ the rules of this game very well right now.",
+      options:["understand", "am understanding", "understanding", "are understand"],
+      answer:0,
+      why:"\"Understand\" is a stative verb (about the mind), so it stays in Present Simple even with \"right now\"."
+    },
+    {id:"q10", section:"Section B · Grammar", lessonIdx:3, usesPassage:false, type:"tf",
+      prompt:"10. True or False: We usually add -ing to stative verbs like \"know\" and \"believe\" when talking about right now.",
+      options:["True","False"],
+      answer:1,
+      why:"Stative verbs describe states or thoughts, so we use Present Simple (\"I know\") instead of adding -ing."
+    },
+    {id:"q11", section:"Section B · Grammar", lessonIdx:4, usesPassage:false, type:"mcq",
+      prompt:"11. (If Conditional Type 0) If you ________ water to 0°C, it ________.",
+      options:["will cool / freezes", "cool / freezes", "cool / will froze", "cooled / freeze"],
+      answer:1,
+      why:"Type 0 is for science facts that are always true: If + Present Simple, Present Simple."
+    },
+    {id:"q12", section:"Section B · Grammar", lessonIdx:4, usesPassage:false, type:"mcq",
+      prompt:"12. (If Conditional Type 1) If she ________ tonight, she ________ the grammar quiz tomorrow.",
+      options:["will study / passes", "studied / will pass", "studies / will pass", "studies / pass"],
+      answer:2,
+      why:"Type 1 is for a real future possibility: If + Present Simple (studies), will + base verb (will pass)."
+    },
+    {id:"q13", section:"Section B · Grammar", lessonIdx:4, usesPassage:false, type:"mcq",
+      prompt:"13. Look at those heavy black clouds in the sky! It ________ rain soon.",
+      options:["will be", "goes to", "going to", "is going to"],
+      answer:3,
+      why:"Use \"is going to\" when you make a prediction based on clear evidence you can see now."
+    },
+    {id:"q14", section:"Section B · Grammar", lessonIdx:4, usesPassage:false, type:"mcq",
+      prompt:"14. \"Oh no, I dropped my notebook!\" — \"Don't worry, I ________ pick it up for you.\"",
+      options:["will", "am going to", "am", "going to"],
+      answer:0,
+      why:"Use \"will\" for a quick decision or offer made at the exact moment of speaking."
+    },
+
+    // Section C: Argumentative Writing (15-18, 100% objective)
+    {id:"q15", section:"Section C · Argumentative Writing", lessonIdx:5, usesPassage:false, type:"mcq",
+      prompt:"15. Which sentence is the best transition to start the FOR (proponents) body paragraph?",
+      options:["In conclusion, the final verdict is yours.", "On the other hand, many critics argue that sports waste time.", "On one hand, many proponents believe that school sports have clear benefits.", "Once upon a time, a boy joined a team."],
+      answer:2,
+      why:"\"On one hand, many proponents believe...\" clearly introduces the supporting side."
+    },
+    {id:"q16", section:"Section C · Argumentative Writing", lessonIdx:5, usesPassage:false, type:"mcq",
+      prompt:"16. Which sentence is the best transition to start the AGAINST (critics) body paragraph?",
+      options:["On one hand, many proponents support daily practice.", "On the other hand, many critics argue that daily practice can reduce study time.", "First, let me tell a funny story about yesterday.", "In conclusion, both sides agree completely."],
+      answer:1,
+      why:"\"On the other hand, many critics argue...\" introduces the opposing side clearly."
+    },
+    {id:"q17", section:"Section C · Argumentative Writing", lessonIdx:5, usesPassage:false, type:"mcq",
+      prompt:"17. What belongs in the Conclusion paragraph of a balanced argumentative essay?",
+      options:["A brand-new unrelated topic", "Only the advantages without mentioning the disadvantages", "A list of grammar definitions", "A short summary of both sides and a closing thought or question"],
+      answer:3,
+      why:"The conclusion summarizes both sides neutrally and closes cleanly (for example, inviting the reader to decide)."
+    },
+    {id:"q18", section:"Section C · Argumentative Writing", lessonIdx:5, usesPassage:false, type:"tf",
+      prompt:"18. True or False: Every body paragraph in an argumentative essay should include a specific example (such as \"For example...\" or \"For instance...\").",
+      options:["True","False"],
+      answer:0,
+      why:"A concrete example proves your point and makes the paragraph stronger."
+    }
+  ];
+
+  const state = {
+    view: "start",
+    lessonIdx: 0,
+    completedLessons: {},
+    examMode: "one",
+    qIdx: 0,
+    selected: {},
+    checked: {},
+    showReview: false,
+    theme: "light"
+  };
+
+  function loadSaved(){
+    try{
+      const raw = localStorage.getItem("g6_eng_al_nov2026_v1");
+      if(!raw) return;
+      const d = JSON.parse(raw);
+      if(d.completedLessons) state.completedLessons = d.completedLessons;
+      if(d.selected) state.selected = d.selected;
+      if(d.checked) state.checked = d.checked;
+      if(d.theme) setTheme(d.theme, false);
+    }catch(e){}
+  }
+  function saveState(){
+    try{
+      localStorage.setItem("g6_eng_al_nov2026_v1", JSON.stringify({
+        completedLessons: state.completedLessons,
+        selected: state.selected,
+        checked: state.checked,
+        theme: state.theme
+      }));
+    }catch(e){}
+  }
+
+  function setTheme(name, persist){
+    state.theme = name;
+    document.documentElement.setAttribute("data-theme", name === "light" ? "" : name);
+    document.getElementById("themeLight").setAttribute("aria-pressed", String(name === "light"));
+    document.getElementById("themeCream").setAttribute("aria-pressed", String(name === "cream"));
+    document.getElementById("themeContrast").setAttribute("aria-pressed", String(name === "contrast"));
+    if(persist !== false) saveState();
+  }
+
+  function countCorrect(){
+    return QUESTIONS.filter(q => state.checked[q.id] && state.selected[q.id] === q.answer).length;
+  }
+
+  function renderBlocks(){
+    const lessonCount = Object.keys(state.completedLessons).length;
+    const correctCount = countCorrect();
+    const earned = Math.min(12, lessonCount + Math.floor(correctCount / 3));
+    const bar = document.getElementById("blockBar");
+    let html = `<span style="font-size:14px;color:var(--muted);margin-right:4px;">Blocks: <strong>${earned}/12</strong></span>`;
+    for(let i=0;i<12;i++){
+      html += `<span class="block-pip ${i < earned ? "earned" : ""}" aria-hidden="true"></span>`;
+    }
+    bar.innerHTML = html;
+  }
+
+  function setView(v){
+    state.view = v;
+    stopSpeech();
+    document.getElementById("viewStart").classList.toggle("hidden", v !== "start");
+    document.getElementById("viewLearn").classList.toggle("hidden", v !== "learn");
+    document.getElementById("viewExam").classList.toggle("hidden", v !== "exam");
+    document.getElementById("tabStart").classList.toggle("active", v === "start");
+    document.getElementById("tabLearn").classList.toggle("active", v === "learn");
+    document.getElementById("tabExam").classList.toggle("active", v === "exam");
+
+    if(v === "start"){
+      document.getElementById("whereLabel").textContent = "Step 1 of 3 · Plan & Overview";
+    } else if(v === "learn"){
+      state.completedLessons[LESSONS[state.lessonIdx].id] = true;
+      saveState();
+      renderLesson();
+    } else {
+      renderExam();
+    }
+    renderBlocks();
+  }
+
+  function renderLesson(){
+    const L = LESSONS[state.lessonIdx];
+    document.getElementById("whereLabel").textContent = `Step 2 of 3 · Lesson ${state.lessonIdx + 1} of ${LESSONS.length}`;
+    document.getElementById("lessonCard").innerHTML = `
+      <p class="eyebrow">${L.part}</p>
+      <h2>${L.title}</h2>
+      ${L.html}
+    `;
+    document.getElementById("prevLessonBtn").disabled = state.lessonIdx === 0;
+    document.getElementById("nextLessonBtn").textContent =
+      state.lessonIdx === LESSONS.length - 1 ? "Finish Lessons & Open Mock Exam" : `Next part (${state.lessonIdx + 2} of ${LESSONS.length})`;
+  }
+
+  function renderQuestionCard(q, idx){
+    const sel = state.selected[q.id];
+    const isChecked = !!state.checked[q.id];
+    const isRight = isChecked && sel === q.answer;
+    const letters = ["A","B","C","D"];
+    let optsHtml = q.options.map((opt, oi) => `
+      <button type="button" class="opt-btn ${sel === oi ? "selected" : ""}" data-qid="${q.id}" data-oi="${oi}">
+        <span class="opt-letter">${letters[oi]}</span>
+        <span>${opt}</span>
+      </button>
+    `).join("");
+
+    let fbHtml = "";
+    if(isChecked){
+      if(isRight){
+        fbHtml = `<div class="feedback correct" role="status">
+          <strong>Correct — well done.</strong> ${q.why}
+        </div>`;
+      } else {
+        fbHtml = `<div class="feedback" role="status">
+          <strong>Good try.</strong> The right answer is <strong>${letters[q.answer]}: ${q.options[q.answer]}</strong>.<br>
+          <strong>Why:</strong> ${q.why}
+          <div class="actions" style="margin-top:10px;">
+            <button type="button" class="btn-soft" data-goto-lesson="${q.lessonIdx}">Review this lesson card</button>
+            <button type="button" data-retry-q="${q.id}">Try this question again</button>
+          </div>
+        </div>`;
+      }
+    }
+
+    return `
+      <div class="card" style="margin-bottom:14px;">
+        <p class="eyebrow">${q.section} · Question ${idx + 1} of ${QUESTIONS.length}</p>
+        <p style="font-size:19px;font-weight:700;margin-bottom:10px;">${q.prompt}</p>
+        <div class="option-list">${optsHtml}</div>
+        <div class="actions">
+          <button type="button" class="btn-primary" data-check-q="${q.id}" ${sel === undefined ? "disabled" : ""}>Check my answer</button>
+        </div>
+        ${fbHtml}
+      </div>
+    `;
+  }
+
+  function renderExam(){
+    const answeredCount = Object.keys(state.checked).length;
+    const correctCount = countCorrect();
+    document.getElementById("examScoreBadge").textContent = `Checked: ${answeredCount} / ${QUESTIONS.length} · Correct: ${correctCount}`;
+    document.getElementById("modeOneBtn").setAttribute("aria-pressed", String(state.examMode === "one"));
+    document.getElementById("modeAllBtn").setAttribute("aria-pressed", String(state.examMode === "all"));
+
+    const container = document.getElementById("examContainer");
+    if(state.showReview){
+      document.getElementById("whereLabel").textContent = `Step 3 of 3 · Answer Review (${correctCount} / ${QUESTIONS.length})`;
+      let rows = QUESTIONS.map((q, i) => {
+        const c = state.checked[q.id];
+        const ok = c && state.selected[q.id] === q.answer;
+        const label = !c ? "Not checked yet" : (ok ? "Correct" : "Needs review");
+        return `<div class="review-row">
+          <span><strong>Q${i+1}.</strong> ${q.section}</span>
+          <span><span class="pill">${label}</span> <button type="button" style="padding:6px 10px;min-height:34px;font-size:14px;" data-jump-q="${i}">Open</button></span>
+        </div>`;
+      }).join("");
+      container.innerHTML = `
+        <h2>Answer Review</h2>
+        <p>You checked <strong>${answeredCount} of ${QUESTIONS.length}</strong> questions and got <strong>${correctCount}</strong> correct. You can open any question below to review or try again without losing progress.</p>
+        ${rows}
+        <div class="actions">
+          <button type="button" class="btn-primary" id="backToExamBtn">Back to questions</button>
+          <button type="button" id="resetExamBtn">Reset mock exam answers</button>
+        </div>
+      `;
+      return;
+    }
+
+    if(state.examMode === "one"){
+      const q = QUESTIONS[state.qIdx];
+      document.getElementById("examPartBadge").textContent = q.section;
+      document.getElementById("whereLabel").textContent = `Step 3 of 3 · Question ${state.qIdx + 1} of ${QUESTIONS.length}`;
+      container.innerHTML = `
+        ${q.usesPassage ? PASSAGE_HTML : ""}
+        ${renderQuestionCard(q, state.qIdx)}
+        <div class="actions">
+          <button type="button" id="prevQBtn" ${state.qIdx === 0 ? "disabled" : ""}>Previous question</button>
+          <button type="button" class="btn-primary" id="nextQBtn">${state.qIdx === QUESTIONS.length - 1 ? "Open Answer Review" : `Next question (${state.qIdx + 2} of ${QUESTIONS.length})`}</button>
+          <button type="button" class="btn-soft" id="openReviewBtn">Review all answers</button>
+        </div>
+      `;
+    } else {
+      document.getElementById("examPartBadge").textContent = "All Sections (A, B, C)";
+      document.getElementById("whereLabel").textContent = `Step 3 of 3 · Full Mock Exam (${QUESTIONS.length} Questions)`;
+      container.innerHTML = PASSAGE_HTML + QUESTIONS.map((q, i) => renderQuestionCard(q, i)).join("") + `
+        <div class="actions">
+          <button type="button" class="btn-primary" id="openReviewBtn">Open Answer Review</button>
+          <button type="button" id="resetExamBtn">Reset mock exam answers</button>
+        </div>
+      `;
+    }
+  }
+
+  // Optional Read Aloud (user-started only)
+  let speaking = false;
+  function stopSpeech(){
+    if("speechSynthesis" in window){ window.speechSynthesis.cancel(); }
+    speaking = false;
+    document.getElementById("readAloudBtn").textContent = "Read screen aloud";
+  }
+  document.getElementById("readAloudBtn").addEventListener("click", () => {
+    if(!("speechSynthesis" in window)) return;
+    if(speaking){ stopSpeech(); return; }
+    const activeEl = state.view === "start" ? document.getElementById("viewStart")
+      : state.view === "learn" ? document.getElementById("lessonCard")
+      : document.getElementById("examContainer");
+    const u = new SpeechSynthesisUtterance(activeEl.innerText);
+    u.rate = 0.92;
+    u.onend = () => { speaking = false; document.getElementById("readAloudBtn").textContent = "Read screen aloud"; };
+    speaking = true;
+    document.getElementById("readAloudBtn").textContent = "Stop reading";
+    window.speechSynthesis.speak(u);
+  });
+
+  // Theme buttons
+  document.getElementById("themeLight").addEventListener("click", () => setTheme("light"));
+  document.getElementById("themeCream").addEventListener("click", () => setTheme("cream"));
+  document.getElementById("themeContrast").addEventListener("click", () => setTheme("contrast"));
+
+  // Top nav & start buttons
+  document.getElementById("tabStart").addEventListener("click", () => setView("start"));
+  document.getElementById("tabLearn").addEventListener("click", () => setView("learn"));
+  document.getElementById("tabExam").addEventListener("click", () => { state.showReview = false; setView("exam"); });
+  document.getElementById("startLearnBtn").addEventListener("click", () => { state.lessonIdx = 0; setView("learn"); });
+  document.getElementById("startExamBtn").addEventListener("click", () => { state.showReview = false; setView("exam"); });
+
+  // Lesson nav
+  document.getElementById("prevLessonBtn").addEventListener("click", () => {
+    if(state.lessonIdx > 0){ state.lessonIdx--; state.completedLessons[LESSONS[state.lessonIdx].id] = true; saveState(); renderLesson(); renderBlocks(); }
+  });
+  document.getElementById("nextLessonBtn").addEventListener("click", () => {
+    if(state.lessonIdx < LESSONS.length - 1){
+      state.lessonIdx++;
+      state.completedLessons[LESSONS[state.lessonIdx].id] = true;
+      saveState();
+      renderLesson();
+      renderBlocks();
+    } else {
+      state.showReview = false;
+      setView("exam");
+    }
+  });
+  document.getElementById("jumpExamFromLearn").addEventListener("click", () => { state.showReview = false; setView("exam"); });
+
+  // Exam mode toggle
+  document.getElementById("modeOneBtn").addEventListener("click", () => { state.examMode = "one"; state.showReview = false; renderExam(); });
+  document.getElementById("modeAllBtn").addEventListener("click", () => { state.examMode = "all"; state.showReview = false; renderExam(); });
+
+  // Delegated exam clicks
+  document.getElementById("examContainer").addEventListener("click", (e) => {
+    const optBtn = e.target.closest("[data-qid]");
+    if(optBtn){
+      const qid = optBtn.getAttribute("data-qid");
+      const oi = Number(optBtn.getAttribute("data-oi"));
+      state.selected[qid] = oi;
+      saveState();
+      renderExam();
+      return;
+    }
+    const chkBtn = e.target.closest("[data-check-q]");
+    if(chkBtn){
+      const qid = chkBtn.getAttribute("data-check-q");
+      if(state.selected[qid] !== undefined){
+        state.checked[qid] = true;
+        saveState();
+        renderExam();
+        renderBlocks();
+      }
+      return;
+    }
+    const retryBtn = e.target.closest("[data-retry-q]");
+    if(retryBtn){
+      const qid = retryBtn.getAttribute("data-retry-q");
+      delete state.checked[qid];
+      delete state.selected[qid];
+      saveState();
+      renderExam();
+      renderBlocks();
+      return;
+    }
+    const lessonBtn = e.target.closest("[data-goto-lesson]");
+    if(lessonBtn){
+      state.lessonIdx = Number(lessonBtn.getAttribute("data-goto-lesson"));
+      setView("learn");
+      return;
+    }
+    const jumpQ = e.target.closest("[data-jump-q]");
+    if(jumpQ){
+      state.qIdx = Number(jumpQ.getAttribute("data-jump-q"));
+      state.examMode = "one";
+      state.showReview = false;
+      renderExam();
+      return;
+    }
+    if(e.target.id === "prevQBtn" && state.qIdx > 0){ state.qIdx--; renderExam(); return; }
+    if(e.target.id === "nextQBtn"){
+      if(state.qIdx < QUESTIONS.length - 1){ state.qIdx++; renderExam(); }
+      else { state.showReview = true; renderExam(); }
+      return;
+    }
+    if(e.target.id === "openReviewBtn"){ state.showReview = true; renderExam(); return; }
+    if(e.target.id === "backToExamBtn"){ state.showReview = false; renderExam(); return; }
+    if(e.target.id === "resetExamBtn"){
+      state.selected = {}; state.checked = {}; state.qIdx = 0; state.showReview = false;
+      saveState(); renderExam(); renderBlocks(); return;
+    }
+  });
+
+  loadSaved();
+  setView("start");
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grade 5 · English A-Level (Paper II) Study &amp; Mock Exam</title>
+<style>
+  :root{
+    --bg:#f2f8f7;
+    --surface:#ffffff;
+    --soft:#e3f3f0;
+    --ink:#132a2c;
+    --muted:#476468;
+    --teal:#0b7a75;
+    --teal-dark:#075854;
+    --accent:#e08e26;
+    --border:#c5deda;
+    --ok-bg:#e2f5ec;
+    --ok-border:#0b7a75;
+    --err-bg:#fdf1ec;
+    --err-border:#c95b3c;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  button{
+    font:inherit;cursor:pointer;border-radius:10px;
+    border:2px solid var(--border);background:var(--surface);color:var(--ink);
+    padding:10px 15px;min-height:42px;
+  }
+  button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .btn-primary{background:var(--teal);color:#fff;border-color:var(--teal);font-weight:700}
+  .btn-primary:hover{background:var(--teal-dark)}
+  .btn-soft{background:var(--soft);border-color:var(--teal);color:var(--teal-dark);font-weight:700}
+
+  header{
+    background:linear-gradient(135deg,#075854,#0b7a75);
+    color:#fff;
+    padding:22px 16px;
+  }
+  .head-inner{
+    max-width:920px;margin:0 auto;
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;
+  }
+  header h1{margin:0;font-size:23px;line-height:1.2}
+  header p{margin:4px 0 0;font-size:14px;opacity:.92}
+  .head-btn{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.4);font-size:14px;padding:8px 12px}
+
+  .wrap{max-width:920px;margin:20px auto 48px;padding:0 16px}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .tabs button{flex:1 1 180px;font-weight:700}
+  .tabs button.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+  .card{
+    background:var(--surface);
+    border:2px solid var(--border);
+    border-radius:14px;
+    padding:20px;
+    margin-bottom:16px;
+  }
+  .eyebrow{
+    margin:0 0 6px;font-size:12px;font-weight:800;text-transform:uppercase;
+    letter-spacing:.06em;color:var(--teal);
+  }
+  h2{margin:0 0 12px;font-size:22px}
+  h3{margin:16px 0 8px;font-size:18px;color:var(--teal-dark)}
+  p{margin:0 0 10px}
+  ul{margin:0 0 12px;padding-left:22px}
+  li{margin-bottom:5px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:12px 0}
+  .mini-card{
+    background:var(--soft);border:1px solid var(--border);border-radius:10px;padding:12px;
+  }
+  .mini-card strong{display:block;color:var(--teal-dark);margin-bottom:4px}
+
+  .flash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:12px 0}
+  .flash{
+    text-align:left;padding:14px;border-radius:12px;border:2px solid var(--border);
+    background:var(--surface);min-height:92px;display:flex;flex-direction:column;justify-content:center;
+  }
+  .flash.flipped{background:var(--soft);border-color:var(--teal)}
+  .flash small{color:var(--muted);font-size:12px;margin-top:4px}
+
+  .passage{
+    background:var(--soft);border:2px solid var(--border);border-radius:12px;
+    padding:16px 18px;margin:12px 0 16px;
+  }
+  .opt-list{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+  .opt{
+    text-align:left;display:flex;gap:10px;align-items:flex-start;padding:11px 14px;
+  }
+  .opt.selected{background:var(--soft);border-color:var(--teal);font-weight:700}
+  .letter{
+    width:26px;height:26px;border-radius:6px;flex:0 0 26px;
+    display:inline-flex;align-items:center;justify-content:center;
+    background:var(--soft);border:1px solid var(--border);font-weight:800;font-size:13px;
+  }
+  .opt.selected .letter{background:var(--teal);color:#fff;border-color:var(--teal)}
+
+  .fb{border-radius:10px;padding:12px 14px;margin-top:12px;border:2px solid var(--err-border);background:var(--err-bg)}
+  .fb.ok{border-color:var(--ok-border);background:var(--ok-bg)}
+  .bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+  .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--soft);font-size:13px;font-weight:700;color:var(--teal-dark)}
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
+  .check-list label{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;margin-bottom:6px;cursor:pointer}
+  textarea{
+    width:100%;min-height:130px;padding:12px;border-radius:10px;
+    border:2px solid var(--border);font:inherit;color:var(--ink);background:var(--surface);
+  }
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="head-inner">
+    <div>
+      <h1>Grade 5 · English A-Level (Paper II)</h1>
+      <p>November Monthly Test · Fiction Reading, Prompt 1 &amp; 2 Vocabulary &amp; Narrative Writing</p>
+    </div>
+    <button type="button" class="head-btn" id="readBtn">Read aloud</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="tabs" aria-label="Main sections">
+    <button type="button" id="tabExplain" class="active">1. Explanations</button>
+    <button type="button" id="tabVocab">2. Vocab Flashcards (20 Words)</button>
+    <button type="button" id="tabExam">3. Mock Exam (20 Questions)</button>
+    <button type="button" id="tabWrite">4. Narrative Writing Lab</button>
+  </nav>
+
+  <!-- TAB 1: EXPLANATIONS -->
+  <section id="secExplain">
+    <div class="card">
+      <p class="eyebrow">Wonders Fiction Booklet (p. 3–6, 13–25)</p>
+      <h2>Fiction Genres &amp; Context Clues</h2>
+      <div class="grid">
+        <div class="mini-card"><strong>Realistic Fiction</strong>A made-up story with characters, settings, and problems that <em>could</em> happen in real life (no magic or talking animals).</div>
+        <div class="mini-card"><strong>Folktale</strong>A traditional story passed down over generations. It often has a moral/lesson, clever heroes, or magical elements.</div>
+        <div class="mini-card"><strong>Context Clues</strong>Hints in the surrounding words or sentences (definitions, examples, synonyms, or contrasts) that unlock an unfamiliar word.</div>
+        <div class="mini-card"><strong>Reading Strategy</strong>Always check: <em>Who is the main character? What is the setting? What problem happens? How does the character solve it? What lesson is learned?</em></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Wonders Fiction Booklet</p>
+      <h2>Figurative Language Toolkit</h2>
+      <div class="grid">
+        <div class="mini-card"><strong>Simile</strong>Compares two unlike things using <strong>like</strong> or <strong>as</strong>.<br><em>"The waves roared <strong>like</strong> hungry lions."</em></div>
+        <div class="mini-card"><strong>Metaphor</strong>Compares two unlike things directly <strong>without</strong> like or as.<br><em>"The old ship <strong>was</strong> a sleeping giant."</em></div>
+        <div class="mini-card"><strong>Personification</strong>Gives human actions or feelings to non-human objects.<br><em>"The wooden deck <strong>groaned</strong> under our boots."</em></div>
+        <div class="mini-card"><strong>Idiom</strong>A special expression whose meaning is different from the literal words.<br><em>"Put on a thinking cap"</em> = think carefully.<br><em>"Roll up your sleeves"</em> = get ready to work hard.<br><em>"Like finding a needle in a haystack"</em> = very hard to find.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="eyebrow">Writing Section</p>
+      <h2>Narrative Writing Blueprint (5 Clear Steps)</h2>
+      <div class="grid">
+        <div class="mini-card"><strong>1. Hook &amp; Setting</strong>Start with sound, weather, or action. Name where and when the story happens.</div>
+        <div class="mini-card"><strong>2. Characters &amp; Goal</strong>Introduce who is in the story and what they want to do.</div>
+        <div class="mini-card"><strong>3. Problem / Conflict</strong>Something goes wrong (storm, mess, lost item, tough choice).</div>
+        <div class="mini-card"><strong>4. Climax (Turning Point)</strong>The most exciting or tense moment where the character takes action.</div>
+        <div class="mini-card"><strong>5. Resolution &amp; Lesson</strong>How the problem ends and what the character feels or learns.</div>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn-primary" id="goVocabBtn">Study the 20 Booklet Vocab Words →</button>
+        <button type="button" class="btn-soft" id="goExamBtn">Jump to 20-Question Mock Exam</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 2: VOCABULARY FLASHCARDS (EXACT SCHOOL BOOKLET p.46 & p.49) -->
+  <section id="secVocab" class="hidden">
+    <div class="card">
+      <div class="bar">
+        <div>
+          <p class="eyebrow">Wonders Fiction Booklet · Exact School List (p. 46–51)</p>
+          <h2 style="margin:0;">Vocabulary for Writing — Tap Any Card to Flip</h2>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="btn-soft" id="filterAllBtn">All 20</button>
+          <button type="button" id="filterP1Btn">Prompt 1 (p. 46)</button>
+          <button type="button" id="filterP2Btn">Prompt 2 (p. 49)</button>
+          <button type="button" id="flipAllBtn">Flip all</button>
+        </div>
+      </div>
+      <div class="flash-grid" id="flashGrid"></div>
+    </div>
+  </section>
+
+  <!-- TAB 3: MOCK EXAM (20 QUESTIONS) -->
+  <section id="secExam" class="hidden">
+    <div class="card">
+      <div class="bar">
+        <div>
+          <span class="pill" id="examBadge">Part A · Fiction Reading</span>
+          <span class="pill" id="scoreBadge">Score: 0 / 20</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" id="oneModeBtn" class="btn-soft">One by One</button>
+          <button type="button" id="allModeBtn">Full Exam List</button>
+          <button type="button" id="resetBtn">Reset</button>
+        </div>
+      </div>
+      <div id="examBox"></div>
+    </div>
+  </section>
+
+  <!-- TAB 4: NARRATIVE WRITING LAB -->
+  <section id="secWrite" class="hidden">
+    <div class="card">
+      <p class="eyebrow">Paper II · Narrative Writing Practice</p>
+      <h2>Model Story + Guided Practice</h2>
+      <div class="passage">
+        <p class="eyebrow">Worked Narrative Model (Using Prompt 2 Vocabulary)</p>
+        <p><strong>Dark clouds gathered</strong> above the harbor as <strong>the sea was restless</strong> against the rocky pier. My cousin and I climbed onto the old fishing boat to find my grandfather's brass compass, though searching the cluttered cabin felt <strong>like finding a needle in a haystack</strong>.</p>
+        <p>Beneath our sneakers, the <strong>wooden wreck creaked</strong> in the <strong>gloomy</strong> light. I had to <strong>hold my breath</strong> when I spotted an <strong>ancient</strong> box resting near a pile of <strong>rotting</strong> ropes. As I lifted the rusty lid, a piece of wood <strong>disintegrated</strong> into dust—and inside lay the compass, its needle glowing with a <strong>mesmerizing</strong> silver shine. We raced back to shore beaming with pride, knowing teamwork had saved a family treasure.</p>
+      </div>
+      <h3>Try Your Own Short Narrative (8–10 Sentences)</h3>
+      <p><strong>Prompt:</strong> Write a short story about a team that cleans up a messy neighborhood park (use at least 4 Prompt 1 words) <em>OR</em> explores an old ship before a storm (use at least 4 Prompt 2 words).</p>
+      <textarea id="storyDraft" placeholder="Start with your hook and setting here..."></textarea>
+      <p style="font-size:14px;color:var(--muted);margin-top:6px;">Word count: <strong id="wordCount">0</strong> · Booklet vocab words detected: <strong id="vocabHits">0</strong></p>
+      <h3>Self-Check Rubric</h3>
+      <div class="check-list">
+        <label><input type="checkbox"> Clear beginning with setting (where &amp; when) and main character</label>
+        <label><input type="checkbox"> A clear problem or challenge in the middle</label>
+        <label><input type="checkbox"> At least 4 vocabulary words/expressions from Prompt 1 or Prompt 2</label>
+        <label><input type="checkbox"> At least 1 example of figurative language (simile, metaphor, or personification)</label>
+        <label><input type="checkbox"> A satisfying ending / resolution and lesson learned</label>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  const VOCAB = [
+    // Prompt 1 (p. 46)
+    {p:1, w:"overflowing trash bins", d:"garbage cans that are too full and spilling out"},
+    {p:1, w:"rumbling engines", d:"the loud, deep sound made by cars or trucks when they're running"},
+    {p:1, w:"deafening noise", d:"a sound so loud it almost hurts your ears"},
+    {p:1, w:"put on a thinking cap", d:"start thinking carefully to solve a problem"},
+    {p:1, w:"roll up your sleeves", d:"get ready to work hard and help"},
+    {p:1, w:"dull", d:"boring or without color; not exciting or lively"},
+    {p:1, w:"determined", d:"not giving up; having a strong mind to finish something"},
+    {p:1, w:"beaming", d:"smiling brightly because of pride or happiness"},
+    {p:1, w:"vibrant", d:"full of life, color, and energy"},
+    {p:1, w:"chaos", d:"a state of complete mess, confusion, or noise"},
+    // Prompt 2 (p. 49)
+    {p:2, w:"dark clouds gathered", d:"stormy clouds began to form in the sky"},
+    {p:2, w:"the sea was restless", d:"the ocean was constantly moving and unsettled"},
+    {p:2, w:"wooden wreck creaked", d:"the old, broken ship made cracking sounds"},
+    {p:2, w:"like finding a needle in a haystack", d:"something very hard to find"},
+    {p:2, w:"hold your breath", d:"to pause breathing briefly because of fear, surprise, or tension"},
+    {p:2, w:"rotting", d:"slowly breaking down due to age, moisture, or natural damage"},
+    {p:2, w:"ancient", d:"very old"},
+    {p:2, w:"gloomy", d:"dark, sad, or depressing"},
+    {p:2, w:"disintegrated", d:"broke apart into small pieces"},
+    {p:2, w:"mesmerized / mesmerizing", d:"so fascinating, it's hard to look away"}
+  ];
+
+  const PASSAGE = `
+    <div class="passage">
+      <p class="eyebrow">Fiction Reading Passage (Questions 1–8)</p>
+      <h3 style="margin-top:0;">The Lantern in the Alley</h3>
+      <p>Every afternoon, the alley behind Karim's apartment was full of <strong>chaos</strong>. Delivery trucks roared past with <strong>rumbling engines</strong>, and the <strong>overflowing trash bins</strong> made the whole corner look gray and <strong>dull</strong>. Nobody wanted to walk there.</p>
+      <p>One Friday, Karim saw his elderly neighbor drop her grocery bag near the cracked pavement. He rushed over to help and thought, "We can fix this place." He decided to <strong>put on a thinking cap</strong> and drew a plan to turn the messy corner into a tiny community garden. "Come on," he told his friends on Saturday morning, "let's <strong>roll up our sleeves</strong>!"</p>
+      <p>At first, clearing the tangled weeds felt <em>arduous</em>—the work was so hard and tiring that everyone's arms ached. Still, Karim stayed <strong>determined</strong>. By sunset, painted flower pots lined the wall, and the alley smiled with bright marigolds. Even the sunset glowed like a golden lantern above the <strong>vibrant</strong> street. Karim stood back, <strong>beaming</strong> with pride.</p>
+    </div>
+  `;
+
+  const QUESTIONS = [
+    // Part A: Fiction Reading + Context Clues + Figurative Language (1-8)
+    {id:"q1", sec:"Part A · Fiction Reading", passage:true, q:"1. What genre is \"The Lantern in the Alley\"?",
+      opts:["Folktale", "Realistic fiction", "Biography", "Science textbook"], ans:1,
+      why:"It is a made-up story with characters, setting, and a neighborhood problem that could happen in real life."},
+    {id:"q2", sec:"Part A · Fiction Reading", passage:true, q:"2. Using context clues in Paragraph 3, what does \"arduous\" mean?",
+      opts:["Fast and playful", "Quiet and cold", "Very hard and tiring", "Bright and colorful"], ans:2,
+      why:"Right after the dash, the sentence explains it: \"the work was so hard and tiring that everyone's arms ached.\""},
+    {id:"q3", sec:"Part A · Fiction Reading", passage:true, q:"3. \"The alley smiled with bright marigolds\" is an example of:",
+      opts:["Personification", "Simile", "Metaphor", "Folktale"], ans:0,
+      why:"Smiling is a human action given to an alley, which is personification."},
+    {id:"q4", sec:"Part A · Fiction Reading", passage:true, q:"4. \"The sunset glowed like a golden lantern\" is an example of:",
+      opts:["Metaphor", "Idiom", "Personification", "Simile"], ans:3,
+      why:"It compares the sunset to a golden lantern using the word \"like\"."},
+    {id:"q5", sec:"Part A · Fiction Reading", passage:true, q:"5. What is Karim's main problem at the beginning of the story?",
+      opts:["He loses his lantern in the ocean.", "He cannot find his friends at school.", "The alley behind his building is messy, noisy, and dull.", "A storm destroys his house."], ans:2,
+      why:"Paragraph 1 describes the messy, chaotic, dull alley nobody wanted to walk through."},
+    {id:"q6", sec:"Part A · Fiction Reading", passage:true, q:"6. What lesson (theme) does the story show?",
+      opts:["Never help your neighbors carry bags.", "Teamwork and determination can transform a community.", "Old alleys should always stay empty.", "Only magic can fix a hard problem."], ans:1,
+      why:"Karim and his friends stay determined and work together to turn the alley into a vibrant garden."},
+    {id:"q7", sec:"Part A · Fiction Reading", passage:false, q:"7. Which sentence is a METAPHOR (not a simile)?",
+      opts:["The stormy ocean roared like a monster.", "The waves were as tall as towers.", "The wind whispered softly.", "The stormy ocean was a roaring monster."], ans:3,
+      why:"A metaphor compares two things directly without \"like\" or \"as\" (\"was a roaring monster\")."},
+    {id:"q8", sec:"Part A · Fiction Reading", passage:false, q:"8. True or False: Realistic fiction stories always include talking animals and magic spells.",
+      opts:["True","False"], ans:1,
+      why:"Realistic fiction uses characters, settings, and events that could happen in real life—magic and talking animals belong to fantasy or folktales."},
+
+    // Part B: Prompt 1 & Prompt 2 Vocabulary (9-18)
+    {id:"q9", sec:"Part B · Prompt 1 Vocabulary", passage:false, q:"9. Before building the bridge model, we had to ________ and sketch a smart plan.",
+      opts:["put on a thinking cap", "overflowing trash bins", "hold your breath", "wooden wreck creaked"], ans:0,
+      why:"\"Put on a thinking cap\" means to start thinking carefully to solve a problem."},
+    {id:"q10", sec:"Part B · Prompt 1 Vocabulary", passage:false, q:"10. The concert speakers made a ________ that almost hurt our ears.",
+      opts:["dull", "deafening noise", "beaming", "ancient"], ans:1,
+      why:"\"Deafening noise\" means a sound so loud it almost hurts your ears."},
+    {id:"q11", sec:"Part B · Prompt 1 Vocabulary", passage:false, q:"11. After painting the mural, the once ________ wall became bright and ________.",
+      opts:["vibrant / dull", "rotting / gloomy", "dull / vibrant", "chaos / beaming"], ans:2,
+      why:"\"Dull\" means boring/without color, and \"vibrant\" means full of life, color, and energy."},
+    {id:"q12", sec:"Part B · Prompt 1 Vocabulary", passage:false, q:"12. Even after failing twice, Maya was ________ to finish the puzzle.",
+      opts:["gloomy", "disintegrated", "rotting", "determined"], ans:3,
+      why:"\"Determined\" means not giving up and having a strong mind to finish something."},
+    {id:"q13", sec:"Part B · Prompt 1 Vocabulary", passage:false, q:"13. When the class won first place, every student walked onto the stage ________.",
+      opts:["beaming", "rotting", "gloomy", "dull"], ans:0,
+      why:"\"Beaming\" means smiling brightly because of pride or happiness."},
+    {id:"q14", sec:"Part B · Prompt 2 Vocabulary", passage:false, q:"14. Looking for one tiny silver ring in the deep sand was ________.",
+      opts:["rolling up your sleeves", "rumbling engines", "like finding a needle in a haystack", "putting on a thinking cap"], ans:2,
+      why:"\"Like finding a needle in a haystack\" is an idiom meaning something very hard to find."},
+    {id:"q15", sec:"Part B · Prompt 2 Vocabulary", passage:false, q:"15. As ________ above the harbor, fishermen hurried back to shore.",
+      opts:["overflowing trash bins", "dark clouds gathered", "vibrant colors beamed", "engines put on caps"], ans:1,
+      why:"\"Dark clouds gathered\" means stormy clouds began to form in the sky."},
+    {id:"q16", sec:"Part B · Prompt 2 Vocabulary", passage:false, q:"16. The moment the explorer touched the dry clay scroll, it ________ into dust.",
+      opts:["mesmerized", "beamed", "creaked", "disintegrated"], ans:3,
+      why:"\"Disintegrated\" means broke apart into small pieces."},
+    {id:"q17", sec:"Part B · Prompt 2 Vocabulary", passage:false, q:"17. The museum displayed an ________ statue from 3,000 years ago; visitors were ________ by its glowing jewels.",
+      opts:["ancient / mesmerized", "rotting / deafening", "gloomy / vibrant", "dull / restless"], ans:0,
+      why:"\"Ancient\" means very old, and \"mesmerized\" means so fascinated it's hard to look away."},
+    {id:"q18", sec:"Part B · Prompt 2 Vocabulary", passage:false, q:"18. Moisture had damaged the old pier, leaving its wooden planks soft and ________.",
+      opts:["beaming", "rotting", "determined", "vibrant"], ans:1,
+      why:"\"Rotting\" means slowly breaking down due to age, moisture, or natural damage."},
+
+    // Part C: Narrative Writing Skills (19-20)
+    {id:"q19", sec:"Part C · Narrative Writing", passage:false, q:"19. Which opening sentence is the strongest narrative HOOK for a story?",
+      opts:["This essay is about a boat.", "There are three reasons why boats are old.", "\"Hold your breath!\" whispered Sami as the wooden wreck creaked beneath our boots.", "Boats are made of wood and metal."], ans:2,
+      why:"Starting with dialogue, suspense, and sensory detail immediately pulls the reader into the story."},
+    {id:"q20", sec:"Part C · Narrative Writing", passage:false, q:"20. What should the ENDING (resolution) of a narrative story do?",
+      opts:["Introduce a totally new unrelated character.", "Stop right in the middle of the problem.", "List vocabulary definitions.", "Show how the problem is solved and what the character feels or learns."], ans:3,
+      why:"A complete narrative resolves the main conflict and closes with the character's reaction or lesson learned."}
+  ];
+
+  const st = { tab:"explain", vFilter:"all", flipped:{}, mode:"one", qIdx:0, sel:{}, chk:{} };
+
+  function save(){
+    try{ localStorage.setItem("g5_eng_al_nov2026_v1", JSON.stringify({sel:st.sel, chk:st.chk})); }catch(e){}
+  }
+  function load(){
+    try{
+      const d = JSON.parse(localStorage.getItem("g5_eng_al_nov2026_v1") || "{}");
+      if(d.sel) st.sel = d.sel;
+      if(d.chk) st.chk = d.chk;
+    }catch(e){}
+  }
+
+  function setTab(t){
+    st.tab = t;
+    ["Explain","Vocab","Exam","Write"].forEach(k => {
+      const low = k.toLowerCase();
+      document.getElementById("sec"+k).classList.toggle("hidden", low !== t);
+      document.getElementById("tab"+k).classList.toggle("active", low === t);
+    });
+    if(t === "vocab") renderVocab();
+    if(t === "exam") renderExam();
+  }
+
+  function renderVocab(){
+    const list = VOCAB.filter(v => st.vFilter === "all" || (st.vFilter === "p1" && v.p === 1) || (st.vFilter === "p2" && v.p === 2));
+    document.getElementById("filterAllBtn").className = st.vFilter === "all" ? "btn-soft" : "";
+    document.getElementById("filterP1Btn").className = st.vFilter === "p1" ? "btn-soft" : "";
+    document.getElementById("filterP2Btn").className = st.vFilter === "p2" ? "btn-soft" : "";
+    document.getElementById("flashGrid").innerHTML = list.map((v, i) => {
+      const key = v.w;
+      const isFlip = !!st.flipped[key];
+      return `<button type="button" class="flash ${isFlip ? "flipped" : ""}" data-vk="${key}">
+        <strong>${isFlip ? v.d : v.w}</strong>
+        <small>Prompt ${v.p} · ${isFlip ? "Tap to see word" : "Tap for definition"}</small>
+      </button>`;
+    }).join("");
+  }
+
+  function renderQ(q, i){
+    const letters = ["A","B","C","D"];
+    const s = st.sel[q.id];
+    const c = !!st.chk[q.id];
+    const ok = c && s === q.ans;
+    const opts = q.opts.map((o, oi) => `
+      <button type="button" class="opt ${s === oi ? "selected" : ""}" data-qid="${q.id}" data-oi="${oi}">
+        <span class="letter">${letters[oi]}</span><span>${o}</span>
+      </button>
+    `).join("");
+    const fb = c ? `<div class="fb ${ok ? "ok" : ""}">
+      <strong>${ok ? "Correct!" : "Not quite — Answer: " + letters[q.ans] + " (" + q.opts[q.ans] + ")"}</strong><br>${q.why}
+    </div>` : "";
+    return `<div class="card" style="margin-bottom:14px;">
+      <p class="eyebrow">${q.sec} · Question ${i+1} of ${QUESTIONS.length}</p>
+      <p style="font-size:18px;font-weight:700;">${q.q}</p>
+      <div class="opt-list">${opts}</div>
+      <div class="actions">
+        <button type="button" class="btn-primary" data-chk="${q.id}" ${s === undefined ? "disabled" : ""}>Check Answer</button>
+      </div>
+      ${fb}
+    </div>`;
+  }
+
+  function renderExam(){
+    const score = QUESTIONS.filter(q => st.chk[q.id] && st.sel[q.id] === q.ans).length;
+    document.getElementById("scoreBadge").textContent = `Score: ${score} / ${QUESTIONS.length}`;
+    document.getElementById("oneModeBtn").className = st.mode === "one" ? "btn-soft" : "";
+    document.getElementById("allModeBtn").className = st.mode === "all" ? "btn-soft" : "";
+    const box = document.getElementById("examBox");
+    if(st.mode === "one"){
+      const q = QUESTIONS[st.qIdx];
+      document.getElementById("examBadge").textContent = q.sec;
+      box.innerHTML = `${q.passage ? PASSAGE : ""}${renderQ(q, st.qIdx)}
+        <div class="actions">
+          <button type="button" id="prevQ" ${st.qIdx === 0 ? "disabled" : ""}>← Previous</button>
+          <button type="button" class="btn-primary" id="nextQ" ${st.qIdx === QUESTIONS.length - 1 ? "disabled" : ""}>Next Question →</button>
+        </div>`;
+    } else {
+      document.getElementById("examBadge").textContent = "Full Paper II Mock Exam";
+      box.innerHTML = PASSAGE + QUESTIONS.map((q, i) => renderQ(q, i)).join("");
+    }
+  }
+
+  // Events
+  document.getElementById("tabExplain").addEventListener("click", () => setTab("explain"));
+  document.getElementById("tabVocab").addEventListener("click", () => setTab("vocab"));
+  document.getElementById("tabExam").addEventListener("click", () => setTab("exam"));
+  document.getElementById("tabWrite").addEventListener("click", () => setTab("write"));
+  document.getElementById("goVocabBtn").addEventListener("click", () => setTab("vocab"));
+  document.getElementById("goExamBtn").addEventListener("click", () => setTab("exam"));
+
+  document.getElementById("filterAllBtn").addEventListener("click", () => { st.vFilter = "all"; renderVocab(); });
+  document.getElementById("filterP1Btn").addEventListener("click", () => { st.vFilter = "p1"; renderVocab(); });
+  document.getElementById("filterP2Btn").addEventListener("click", () => { st.vFilter = "p2"; renderVocab(); });
+  document.getElementById("flipAllBtn").addEventListener("click", () => {
+    const anyUnflipped = VOCAB.some(v => !st.flipped[v.w]);
+    VOCAB.forEach(v => { st.flipped[v.w] = anyUnflipped; });
+    renderVocab();
+  });
+  document.getElementById("flashGrid").addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-vk]");
+    if(!btn) return;
+    const k = btn.getAttribute("data-vk");
+    st.flipped[k] = !st.flipped[k];
+    renderVocab();
+  });
+
+  document.getElementById("oneModeBtn").addEventListener("click", () => { st.mode = "one"; renderExam(); });
+  document.getElementById("allModeBtn").addEventListener("click", () => { st.mode = "all"; renderExam(); });
+  document.getElementById("resetBtn").addEventListener("click", () => { st.sel = {}; st.chk = {}; st.qIdx = 0; save(); renderExam(); });
+
+  document.getElementById("examBox").addEventListener("click", (e) => {
+    const o = e.target.closest("[data-qid]");
+    if(o){ st.sel[o.getAttribute("data-qid")] = Number(o.getAttribute("data-oi")); save(); renderExam(); return; }
+    const c = e.target.closest("[data-chk]");
+    if(c){ st.chk[c.getAttribute("data-chk")] = true; save(); renderExam(); return; }
+    if(e.target.id === "prevQ" && st.qIdx > 0){ st.qIdx--; renderExam(); return; }
+    if(e.target.id === "nextQ" && st.qIdx < QUESTIONS.length - 1){ st.qIdx++; renderExam(); return; }
+  });
+
+  // Writing word & vocab detector
+  document.getElementById("storyDraft").addEventListener("input", (e) => {
+    const txt = e.target.value.trim();
+    const words = txt ? txt.split(/\s+/).length : 0;
+    document.getElementById("wordCount").textContent = words;
+    const low = txt.toLowerCase();
+    const hits = VOCAB.filter(v => v.w.split("/").some(part => low.includes(part.trim().toLowerCase()))).length;
+    document.getElementById("vocabHits").textContent = hits;
+  });
+
+  // Read aloud
+  let speaking = false;
+  document.getElementById("readBtn").addEventListener("click", () => {
+    if(!("speechSynthesis" in window)) return;
+    if(speaking){ window.speechSynthesis.cancel(); speaking = false; document.getElementById("readBtn").textContent = "Read aloud"; return; }
+    const active = document.querySelector("main > section:not(.hidden)");
+    const u = new SpeechSynthesisUtterance(active ? active.innerText : "");
+    u.rate = 0.95;
+    u.onend = () => { speaking = false; document.getElementById("readBtn").textContent = "Read aloud"; };
+    speaking = true;
+    document.getElementById("readBtn").textContent = "Stop reading";
+    window.speechSynthesis.speak(u);
+  });
+
+  load();
+  setTab("explain");
+})();
+</script>
+</body>
+</html>
