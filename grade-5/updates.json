@@ -3,6 +3,15 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452276493322584155",
+      "title": "ICT November exam",
+      "description": "Please be informed that the ICT November exam will take place next week during regular class sessions. 📚 Exam topics: Theme 1: Lessons 5 and 6 Theme 2: Lessons 1, 2, 3, and 4 📖 Revision materials: Revision resources have been uploaded. Please ensure you review them thoroughly ahead of your session.",
+      "publishedAt": "2026-11-25T08:17:52.491Z",
+      "updatedAt": "2026-11-25T08:17:52.491Z",
+      "isRead": false,
+      "attachments": []
+    },
+    {
       "id": "451609800610984712",
       "title": "Items to be revised for November 2026 Primary 5",
       "description": "Items to be revised for November 2026 Primary 5",
@@ -294,15 +303,6 @@
       "description": "A kind reminder that the school will not give back any mobile phone unless one of parents picks it up from school premises. A box is provided in each class and students are aware that they are not allowed to keep their phones with them under any condition. Thank you",
       "publishedAt": "2026-10-05T10:34:47.529Z",
       "updatedAt": "2026-10-05T10:34:47.529Z",
-      "isRead": true,
-      "attachments": []
-    },
-    {
-      "id": "432476829324976842",
-      "title": "Important Announcement",
-      "description": "Dear Parents, Please be informed that our PE teachers will be collecting sports certificates from October 4th to October 20th. Kindly ensure that the certificates are from the year 2026. There is no need to submit medals—only the champion certificates are required. Thank you for your cooperation.",
-      "publishedAt": "2026-10-01T16:59:10.056Z",
-      "updatedAt": "2026-10-01T16:59:13.705Z",
       "isRead": true,
       "attachments": []
     }
@@ -691,6 +691,20 @@
           "depth": 1,
           "parentId": null,
           "title": "weekly assessment 5"
+        },
+        {
+          "id": "452274473647771991",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "revision november prim 5",
+          "mimeType": "application/pdf",
+          "fileName": "revision november prim 5",
+          "attachmentId": "452274473542911228",
+          "pdfStatus": "ok",
+          "pdfPages": 4,
+          "docPath": "grade-5/docs/452274473542911228.md",
+          "excerpt": "REVISION prim 5  1. Scanner is used to scan pictures into the computer. (✓ )  2. to organize your different files you have to use folders. ( ✓ )  3. Flash memory is considered a way to store information. (✓ )  4. Using folders help you to organize your information. (✓ )  5. Hacke"
         }
       ]
     },
