@@ -2,6 +2,14 @@
 
 Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
+## New in Last 48 Hours
+- **GRADE-6 · Announcement** — Important Announcement
+- **GRADE-6 · Announcement** — Primary 6 Monthly Tests November 2026 ([PDF](grade-6/docs/452327066164050843.md))
+- **GRADE-6 · Announcement** — ICT November exam
+- **GRADE-5 · Announcement** — Important Announcement
+- **GRADE-5 · Announcement** — Primary 5 Monthly Tests November 2026 ([PDF](grade-5/docs/452326834579749715.md))
+- **GRADE-5 · Announcement** — ICT November exam
+
 ## GRADE-6
 ### Recent School Announcements
 - **2026-11-25** — Important Announcement
