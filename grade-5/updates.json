@@ -3,6 +3,25 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452326758201459527",
+      "title": "Primary 5 Monthly Tests November 2026",
+      "description": "Primary 5 Monthly Tests November 2026",
+      "publishedAt": "2026-11-25T11:35:15.019Z",
+      "updatedAt": "2026-11-25T11:35:15.019Z",
+      "isRead": false,
+      "attachments": [
+        {
+          "id": "452326834579749715",
+          "name": "Primary 5 Monthly Tests November 2026",
+          "mimeType": "application/pdf",
+          "pdfStatus": "ok",
+          "pdfPages": 1,
+          "docPath": "grade-5/docs/452326834579749715.md",
+          "excerpt": "Primary (5) Monthly Tests November 2026  Day Date Subject Lesson  Arabic 2nd & 3rd Sunday 29/11/2026 Religion 4th  Monday 30/11/2026 Math 2nd  English O. Level 2nd Tuesday 1/12/2026 French / German 3rd  Wednesday 2/12/2026 Science 2nd  Thursday 3/12/2026 Social Studies 2nd  ICT t"
+        }
+      ]
+    },
+    {
       "id": "452276493322584155",
       "title": "ICT November exam",
       "description": "Please be informed that the ICT November exam will take place next week during regular class sessions. 📚 Exam topics: Theme 1: Lessons 5 and 6 Theme 2: Lessons 1, 2, 3, and 4 📖 Revision materials: Revision resources have been uploaded. Please ensure you review them thoroughly ahead of your session.",
@@ -294,15 +313,6 @@
       "description": "السادة اولياء الامور الافاضل على من يرغب فى عمل كارنية التأمين الصحى إرسال صورة ٤×٦ مكتوب على ظهرها اسم التلميذ بالكامل والفصل وكلمة التأمين الصحى (لمراحل من اولى حضانة حتى الصف الثالث الثانوى) فى موعد اقصاه ٢٠ اكتوبر ٢٠٢٦",
       "publishedAt": "2026-10-06T08:41:16.603Z",
       "updatedAt": "2026-10-06T08:41:16.603Z",
-      "isRead": true,
-      "attachments": []
-    },
-    {
-      "id": "433829461314550882",
-      "title": "Important Announcement",
-      "description": "A kind reminder that the school will not give back any mobile phone unless one of parents picks it up from school premises. A box is provided in each class and students are aware that they are not allowed to keep their phones with them under any condition. Thank you",
-      "publishedAt": "2026-10-05T10:34:47.529Z",
-      "updatedAt": "2026-10-05T10:34:47.529Z",
       "isRead": true,
       "attachments": []
     }

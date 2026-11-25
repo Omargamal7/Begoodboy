@@ -3,6 +3,25 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452326941022782282",
+      "title": "Primary 6 Monthly Tests November 2026",
+      "description": "Primary 6 Monthly Tests November 2026",
+      "publishedAt": "2026-11-25T11:36:12.110Z",
+      "updatedAt": "2026-11-25T11:36:12.110Z",
+      "isRead": false,
+      "attachments": [
+        {
+          "id": "452327066164050843",
+          "name": "Primary 6 Monthly Tests November 2026",
+          "mimeType": "application/pdf",
+          "pdfStatus": "ok",
+          "pdfPages": 1,
+          "docPath": "grade-6/docs/452327066164050843.md",
+          "excerpt": "Primary (6) Monthly Tests November 2026  Day Date Subject Lesson  Arabic 2nd & 3rd Sunday 29/11/2026 Religion 4th  Monday 30/11/2026 Math 2nd  English O. Level 2nd Tuesday 1/12/2026 French / German 3rd  Wednesday 2/12/2026 Science 2nd  Thursday 3/12/2026 Social Studies 2nd  ICT t"
+        }
+      ]
+    },
+    {
       "id": "452286554988118230",
       "title": "ICT November exam",
       "description": "Please be informed that the ICT monthly exam will take place during regular class sessions starting the week of Sunday, 6 December 2026. 📚 Exam Topics: Theme 1: Lessons 5 and 6 Theme 2: Lessons 1, 2, 3, and 4 📝 Revision Material: The revision sheet has been uploaded to help with exam preparation. Please review all topics thoroughly",
@@ -304,15 +323,6 @@
       "description": "A kind reminder that the school will not give back any mobile phone unless one of parents picks it up from school premises. A box is provided in each class and students are aware that they are not allowed to keep their phones with them under any condition. Thank you",
       "publishedAt": "2026-10-05T10:34:47.529Z",
       "updatedAt": "2026-10-05T10:34:47.529Z",
-      "isRead": true,
-      "attachments": []
-    },
-    {
-      "id": "432497143236829973",
-      "title": "الاسبوع الثالث / دراسات اجتماعية / الصف السادس",
-      "description": "الاسبوع الثالث من ٢٧/ ٩ الي ١/ ١٠ / ٢٠٢٦ الانتهاء من شرح الدرس الثاني ( تضاريس وطننا العربي ) الواجب : حل ص ٢٢ (أ - ب ) ص ٢٣ كلها من كتاب الوزارة",
-      "publishedAt": "2026-10-01T18:20:39.412Z",
-      "updatedAt": "2026-10-01T18:20:39.412Z",
       "isRead": true,
       "attachments": []
     }

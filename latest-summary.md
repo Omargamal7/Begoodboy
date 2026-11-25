@@ -4,6 +4,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## GRADE-6
 ### Recent School Announcements
+- **2026-11-25** — Primary 6 Monthly Tests November 2026 ([PDF](grade-6/docs/452327066164050843.md))
 - **2026-11-25** — ICT November exam
 - **2026-11-23** — Items to be revised for November 2026 Primary 6 ([PDF](grade-6/docs/451610097433484554.md))
 - **2026-11-19** — اليوم العالمي للغة العربية
@@ -11,7 +12,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-18** — Important Announcement
 - **2026-11-12** — ICT
 - **2026-11-11** — Important Announcement
-- **2026-11-04** — Important Announcement ([PDF](grade-6/docs/444696194355082901.md))
 
 ### Course Plan Item Counts
 - **prim6 G Arabic**: 28 items
@@ -25,6 +25,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## GRADE-5
 ### Recent School Announcements
+- **2026-11-25** — Primary 5 Monthly Tests November 2026 ([PDF](grade-5/docs/452326834579749715.md))
 - **2026-11-25** — ICT November exam
 - **2026-11-23** — Items to be revised for November 2026 Primary 5 ([PDF](grade-5/docs/451609875122789578.md))
 - **2026-11-19** — اليوم العالمي للغة العربية
@@ -32,7 +33,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-18** — Important Announcement
 - **2026-11-17** — Delf course for students Who are learning French
 - **2026-11-12** — ICT
-- **2026-11-11** — Important Announcement
 
 ### Course Plan Item Counts
 - **prim5 A Arabic**: 24 items
@@ -46,11 +46,11 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **Prim5 A Social Studies**: 6 items
 
 ## Notification Center (Latest 10)
+- `ANNOUNCEMENTS` (2026-11-25 11:36): Amr ElSayed — Primary 6 Monthly Tests November 2026
+- `ANNOUNCEMENTS` (2026-11-25 11:35): Amr ElSayed — Primary 5 Monthly Tests November 2026
 - `ANNOUNCEMENTS` (2026-11-25 09:07): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-25 08:17): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-24 18:27): Joumana Hamade — Updated Grammar Revision Sheet Answers
-- `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 6
-- `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 5
 - `CLASS_STREAM` (2026-11-25 10:52): 'Week 5 CW'
 - `CLASS_STREAM` (2026-11-25 10:35): 'Quiz 3'
 - `CLASS_STREAM` (2026-11-25 10:32): 'Week 4 CW'
