@@ -3,6 +3,15 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452362241493206163",
+      "title": "Important Announcement",
+      "description": "Dear Parents of Primary 4–6 Students, Kindly be informed that tomorrow’s A-Level monthly test will be conducted over three consecutive sessions: the 2nd, 3rd, and 4th sessions. Your cooperation and understanding are greatly appreciated. Best regards, English Language Arts Department Primary School Administration",
+      "publishedAt": "2026-11-25T13:57:10.309Z",
+      "updatedAt": "2026-11-25T13:57:10.309Z",
+      "isRead": false,
+      "attachments": []
+    },
+    {
       "id": "452326758201459527",
       "title": "Primary 5 Monthly Tests November 2026",
       "description": "Primary 5 Monthly Tests November 2026",
@@ -306,15 +315,6 @@
           "mimeType": "image/jpeg"
         }
       ]
-    },
-    {
-      "id": "434163246061093684",
-      "title": "Important Announcement",
-      "description": "السادة اولياء الامور الافاضل على من يرغب فى عمل كارنية التأمين الصحى إرسال صورة ٤×٦ مكتوب على ظهرها اسم التلميذ بالكامل والفصل وكلمة التأمين الصحى (لمراحل من اولى حضانة حتى الصف الثالث الثانوى) فى موعد اقصاه ٢٠ اكتوبر ٢٠٢٦",
-      "publishedAt": "2026-10-06T08:41:16.603Z",
-      "updatedAt": "2026-10-06T08:41:16.603Z",
-      "isRead": true,
-      "attachments": []
     }
   ],
   "courses": [
