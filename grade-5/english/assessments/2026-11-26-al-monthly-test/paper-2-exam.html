@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grade 5 · English A-Level (Paper II) One-Try Mock Exam</title>
+<style>
+  :root{--bg:#f2f8f7;--surface:#ffffff;--soft:#e3f3f0;--ink:#132a2c;--muted:#476468;--teal:#0b7a75;--teal-dark:#075854;--accent:#e08e26;--border:#c5deda;--ok-bg:#e2f5ec;--ok-border:#0b7a75;--err-bg:#fdf1ec;--err-border:#c95b3c;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.6}
+  button{font:inherit;cursor:pointer;border-radius:10px;border:2px solid var(--border);background:var(--surface);color:var(--ink);padding:10px 15px;min-height:42px}
+  button:disabled{opacity:.6;cursor:not-allowed}
+  button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .btn-primary{background:var(--teal);color:#fff;border-color:var(--teal);font-weight:700}
+  .btn-soft{background:var(--soft);border-color:var(--teal);color:var(--teal-dark);font-weight:700}
+  .btn-warn{background:#fff3e0;border-color:#d68b00;color:#6e4300;font-weight:700}
+  header{background:linear-gradient(135deg,#075854,#0b7a75);color:#fff;padding:22px 16px}
+  .head-inner{max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+  header h1{margin:0;font-size:23px}
+  header p{margin:4px 0 0;font-size:14px;opacity:.92}
+  .wrap{max-width:900px;margin:20px auto 48px;padding:0 16px}
+  .card{background:var(--surface);border:2px solid var(--border);border-radius:14px;padding:20px;margin-bottom:16px}
+  .eyebrow{margin:0 0 6px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--teal)}
+  h2{margin:0 0 12px;font-size:22px}
+  p{margin:0 0 10px}
+  .passage{background:var(--soft);border:2px solid var(--border);border-radius:12px;padding:16px 18px;margin:12px 0 16px}
+  .opt-list{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+  .opt{text-align:left;display:flex;gap:10px;align-items:flex-start;padding:11px 14px}
+  .opt.selected{background:var(--soft);border-color:var(--teal);font-weight:700}
+  .opt.locked-right{background:var(--ok-bg);border-color:var(--ok-border);font-weight:700}
+  .opt.locked-wrong{background:var(--err-bg);border-color:var(--err-border);font-weight:700}
+  .letter{width:26px;height:26px;border-radius:6px;flex:0 0 26px;display:inline-flex;align-items:center;justify-content:center;background:var(--soft);border:1px solid var(--border);font-weight:800;font-size:13px}
+  .opt.selected .letter,.opt.locked-right .letter{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .opt.locked-wrong .letter{background:var(--err-border);color:#fff;border-color:var(--err-border)}
+  .fb{border-radius:10px;padding:12px 14px;margin-top:12px;border:2px solid var(--err-border);background:var(--err-bg)}
+  .fb.ok{border-color:var(--ok-border);background:var(--ok-bg)}
+  .bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+  .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--soft);font-size:13px;font-weight:700;color:var(--teal-dark)}
+  .pill-err{background:var(--err-bg);color:#8f2e14}
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
+  .miss-item{border:1px solid var(--err-border);background:var(--err-bg);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+  .toast{display:inline-block;margin-left:8px;font-size:14px;color:var(--teal-dark);font-weight:700}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="head-inner">
+    <div>
+      <h1>Grade 5 · English A-Level (Paper II) — One-Try Mock Exam</h1>
+      <p>1 Answer Only Per Question (Locked After Submit) · Missed-Words Report for Parent</p>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="card">
+    <div class="bar">
+      <div>
+        <span class="pill" id="roundBadge">Round 1 · Full Exam (20 Questions)</span>
+        <span class="pill" id="scoreBadge">Locked: 0 / 20 · Correct: 0</span>
+      </div>
+      <button type="button" class="btn-soft" id="reportBtn">Parent Report (Missed Words)</button>
+    </div>
+    <div id="examArea"></div>
+  </div>
+</main>
+<script>
+(function(){
+  const PASSAGE = `
+    <div class="passage">
+      <p class="eyebrow">Fiction Reading Passage (Questions 1–6)</p>
+      <h3 style="margin:0 0 8px;color:var(--teal-dark);">The Lantern in the Alley</h3>
+      <p>Every afternoon, the alley behind Karim's apartment was full of <strong>chaos</strong>. Delivery trucks roared past with <strong>rumbling engines</strong>, and the <strong>overflowing trash bins</strong> made the whole corner look gray and <strong>dull</strong>. Nobody wanted to walk there.</p>
+      <p>One Friday, Karim saw his elderly neighbor drop her grocery bag near the cracked pavement. He rushed over to help and thought, "We can fix this place." He decided to <strong>put on a thinking cap</strong> and drew a plan to turn the messy corner into a tiny community garden. "Come on," he told his friends on Saturday morning, "let's <strong>roll up our sleeves</strong>!"</p>
+      <p>At first, clearing the tangled weeds felt <em>arduous</em>—the work was so hard and tiring that everyone's arms ached. Still, Karim stayed <strong>determined</strong>. By sunset, painted flower pots lined the wall, and the alley smiled with bright marigolds. Even the sunset glowed like a golden lantern above the <strong>vibrant</strong> street. Karim stood back, <strong>beaming</strong> with pride.</p>
+    </div>
+  `;
+
+  const QUESTIONS = [
+    {id:"q1", sec:"Fiction Reading", tag:"Genre: Realistic Fiction", passage:true, q:"1. What genre is \"The Lantern in the Alley\"?",
+      opts:["Folktale", "Realistic fiction", "Biography", "Science textbook"], ans:1,
+      why:"It is a made-up story with characters, setting, and a problem that could happen in real life."},
+    {id:"q2", sec:"Fiction Reading", tag:"Context Clues (arduous)", passage:true, q:"2. Using context clues in Paragraph 3, what does \"arduous\" mean?",
+      opts:["Fast and playful", "Quiet and cold", "Very hard and tiring", "Bright and colorful"], ans:2,
+      why:"Right after the dash, the text explains: \"the work was so hard and tiring that everyone's arms ached.\""},
+    {id:"q3", sec:"Fiction Reading", tag:"Personification", passage:true, q:"3. \"The alley smiled with bright marigolds\" is an example of:",
+      opts:["Personification", "Simile", "Metaphor", "Folktale"], ans:0,
+      why:"Smiling is a human action given to an alley (personification)."},
+    {id:"q4", sec:"Fiction Reading", tag:"Simile", passage:true, q:"4. \"The sunset glowed like a golden lantern\" is an example of:",
+      opts:["Metaphor", "Idiom", "Personification", "Simile"], ans:3,
+      why:"It compares the sunset to a golden lantern using \"like\"."},
+    {id:"q5", sec:"Fiction Reading", tag:"Story Problem", passage:true, q:"5. What is Karim's main problem at the beginning of the story?",
+      opts:["He loses his lantern in the ocean.", "He cannot find his friends at school.", "The alley behind his building is messy, noisy, and dull.", "A storm destroys his house."], ans:2,
+      why:"Paragraph 1 describes the messy, chaotic, dull alley nobody wanted to walk through."},
+    {id:"q6", sec:"Fiction Reading", tag:"Theme / Lesson", passage:true, q:"6. What lesson (theme) does the story show?",
+      opts:["Never help your neighbors carry bags.", "Teamwork and determination can transform a community.", "Old alleys should always stay empty.", "Only magic can fix a hard problem."], ans:1,
+      why:"Karim and his friends stay determined and work together to turn the alley into a vibrant garden."},
+    {id:"q7", sec:"Figurative Language", tag:"Metaphor vs. Simile", passage:false, q:"7. Which sentence is a METAPHOR (not a simile)?",
+      opts:["The stormy ocean roared like a monster.", "The waves were as tall as towers.", "The wind whispered softly.", "The stormy ocean was a roaring monster."], ans:3,
+      why:"A metaphor compares two things directly without \"like\" or \"as\"."},
+    {id:"q8", sec:"Fiction Genres", tag:"Realistic Fiction (T/F)", passage:false, q:"8. True or False: Realistic fiction stories always include talking animals and magic spells.",
+      opts:["True","False"], ans:1,
+      why:"Realistic fiction uses real-life situations; magic and talking animals belong to fantasy or folktales."},
+    {id:"q9", sec:"Prompt 1 Vocab", tag:"put on a thinking cap", passage:false, q:"9. Before building the bridge model, we had to ________ and sketch a smart plan.",
+      opts:["put on a thinking cap", "overflowing trash bins", "hold your breath", "wooden wreck creaked"], ans:0,
+      why:"\"Put on a thinking cap\" means to start thinking carefully to solve a problem."},
+    {id:"q10", sec:"Prompt 1 Vocab", tag:"deafening noise", passage:false, q:"10. The concert speakers made a ________ that almost hurt our ears.",
+      opts:["dull", "deafening noise", "beaming", "ancient"], ans:1,
+      why:"\"Deafening noise\" means a sound so loud it almost hurts your ears."},
+    {id:"q11", sec:"Prompt 1 Vocab", tag:"dull / vibrant", passage:false, q:"11. After painting the mural, the once ________ wall became bright and ________.",
+      opts:["vibrant / dull", "rotting / gloomy", "dull / vibrant", "chaos / beaming"], ans:2,
+      why:"\"Dull\" means boring/without color; \"vibrant\" means full of life, color, and energy."},
+    {id:"q12", sec:"Prompt 1 Vocab", tag:"determined", passage:false, q:"12. Even after failing twice, Maya was ________ to finish the puzzle.",
+      opts:["gloomy", "disintegrated", "rotting", "determined"], ans:3,
+      why:"\"Determined\" means not giving up and having a strong mind to finish something."},
+    {id:"q13", sec:"Prompt 1 Vocab", tag:"beaming", passage:false, q:"13. When the class won first place, every student walked onto the stage ________.",
+      opts:["beaming", "rotting", "gloomy", "dull"], ans:0,
+      why:"\"Beaming\" means smiling brightly because of pride or happiness."},
+    {id:"q14", sec:"Prompt 2 Vocab", tag:"like finding a needle in a haystack", passage:false, q:"14. Looking for one tiny silver ring in the deep sand was ________.",
+      opts:["rolling up your sleeves", "rumbling engines", "like finding a needle in a haystack", "putting on a thinking cap"], ans:2,
+      why:"\"Like finding a needle in a haystack\" means something very hard to find."},
+    {id:"q15", sec:"Prompt 2 Vocab", tag:"dark clouds gathered", passage:false, q:"15. As ________ above the harbor, fishermen hurried back to shore.",
+      opts:["overflowing trash bins", "dark clouds gathered", "vibrant colors beamed", "engines put on caps"], ans:1,
+      why:"\"Dark clouds gathered\" means stormy clouds began to form in the sky."},
+    {id:"q16", sec:"Prompt 2 Vocab", tag:"disintegrated", passage:false, q:"16. The moment the explorer touched the dry clay scroll, it ________ into dust.",
+      opts:["mesmerized", "beamed", "creaked", "disintegrated"], ans:3,
+      why:"\"Disintegrated\" means broke apart into small pieces."},
+    {id:"q17", sec:"Prompt 2 Vocab", tag:"ancient / mesmerized", passage:false, q:"17. The museum displayed an ________ statue from 3,000 years ago; visitors were ________ by its glowing jewels.",
+      opts:["ancient / mesmerized", "rotting / deafening", "gloomy / vibrant", "dull / restless"], ans:0,
+      why:"\"Ancient\" means very old; \"mesmerized\" means so fascinated it's hard to look away."},
+    {id:"q18", sec:"Prompt 2 Vocab", tag:"rotting", passage:false, q:"18. Moisture had damaged the old pier, leaving its wooden planks soft and ________.",
+      opts:["beaming", "rotting", "determined", "vibrant"], ans:1,
+      why:"\"Rotting\" means slowly breaking down due to age, moisture, or natural damage."},
+    {id:"q19", sec:"Narrative Writing", tag:"Narrative Hook", passage:false, q:"19. Which opening sentence is the strongest narrative HOOK for a story?",
+      opts:["This essay is about a boat.", "There are three reasons why boats are old.", "\"Hold your breath!\" whispered Sami as the wooden wreck creaked beneath our boots.", "Boats are made of wood and metal."], ans:2,
+      why:"Starting with dialogue, suspense, and sensory detail pulls the reader into the story."},
+    {id:"q20", sec:"Narrative Writing", tag:"Narrative Ending", passage:false, q:"20. What should the ENDING (resolution) of a narrative story do?",
+      opts:["Introduce a totally new unrelated character.", "Stop right in the middle of the problem.", "List vocabulary definitions.", "Show how the problem is solved and what the character feels or learns."], ans:3,
+      why:"A complete narrative resolves the main conflict and closes with the character's reaction or lesson learned."}
+  ];
+
+  const KEY = "g5_eng_al_nov2026_onetry_v1";
+  const st = {
+    round: 1,
+    activeIds: QUESTIONS.map(q => q.id),
+    idx: 0,
+    draftSel: {},   // current unlocked choice before pressing Lock In
+    locked: {},     // qid -> chosen option index (PERMANENT for this round)
+    showReport: false,
+    copiedMsg: ""
+  };
+
+  function save(){
+    try{ localStorage.setItem(KEY, JSON.stringify({round:st.round, activeIds:st.activeIds, idx:st.idx, locked:st.locked})); }catch(e){}
+  }
+  function load(){
+    try{
+      const d = JSON.parse(localStorage.getItem(KEY) || "null");
+      if(d && Array.isArray(d.activeIds) && d.activeIds.length){
+        st.round = d.round || 1;
+        st.activeIds = d.activeIds;
+        st.idx = Math.min(d.idx || 0, st.activeIds.length - 1);
+        st.locked = d.locked || {};
+      }
+    }catch(e){}
+  }
+
+  function activeQuestions(){ return st.activeIds.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean); }
+
+  function render(){
+    const qs = activeQuestions();
+    const lockedCount = qs.filter(q => st.locked[q.id] !== undefined).length;
+    const rightCount = qs.filter(q => st.locked[q.id] === q.ans).length;
+    document.getElementById("roundBadge").textContent = st.round === 1
+      ? `Round 1 · Full Exam (${qs.length} Questions)`
+      : `Redo Round ${st.round} · Missed Only (${qs.length} Questions)`;
+    document.getElementById("scoreBadge").textContent = `Locked: ${lockedCount} / ${qs.length} · Correct: ${rightCount}`;
+    document.getElementById("reportBtn").textContent = st.showReport ? "Back to Exam" : "Parent Report (Missed Words)";
+
+    const area = document.getElementById("examArea");
+    if(st.showReport){
+      const missed = qs.filter(q => st.locked[q.id] !== undefined && st.locked[q.id] !== q.ans);
+      const unanswered = qs.filter(q => st.locked[q.id] === undefined).length;
+      const letters = ["A","B","C","D"];
+      let body = `<h2>Parent Review — Round ${st.round}</h2>
+        <p><strong>Score:</strong> ${rightCount} / ${qs.length} (${Math.round((rightCount / Math.max(qs.length,1))*100)}%) · <strong>Wrong:</strong> ${missed.length} · <strong>Not answered yet:</strong> ${unanswered}</p>`;
+      if(missed.length === 0){
+        body += `<div class="fb ok"><strong>No missed questions in this round!</strong>${unanswered > 0 ? " (" + unanswered + " still unanswered.)" : ""}</div>`;
+      } else {
+        body += `<h3 style="color:#8f2e14;">Missed Words &amp; Questions (${missed.length})</h3>`;
+        body += missed.map(q => `
+          <div class="miss-item">
+            <strong>${q.tag}</strong> <span class="pill pill-err">${q.sec}</span><br>
+            <div style="margin:4px 0;">${q.q}</div>
+            <div><strong>His 1st answer:</strong> ${letters[st.locked[q.id]]}) ${q.opts[st.locked[q.id]]}</div>
+            <div><strong>Correct answer:</strong> ${letters[q.ans]}) ${q.opts[q.ans]}</div>
+            <div style="font-size:14px;color:var(--muted);margin-top:4px;">${q.why}</div>
+          </div>
+        `).join("");
+      }
+      body += `<div class="actions">
+        ${missed.length > 0 ? `<button type="button" class="btn-warn" id="redoMissedBtn">Parent: Redo ${missed.length} Missed Questions Only</button>` : ""}
+        <button type="button" class="btn-soft" id="copyReportBtn">Copy Report Text</button>
+        <button type="button" id="fullResetBtn">Parent: Reset Full 20-Question Exam</button>
+        ${st.copiedMsg ? `<span class="toast">${st.copiedMsg}</span>` : ""}
+      </div>`;
+      area.innerHTML = body;
+      return;
+    }
+
+    const q = qs[st.idx];
+    const isLocked = st.locked[q.id] !== undefined;
+    const chosen = isLocked ? st.locked[q.id] : st.draftSel[q.id];
+    const isRight = isLocked && chosen === q.ans;
+    const letters = ["A","B","C","D"];
+
+    const optsHtml = q.opts.map((o, oi) => {
+      let cls = "opt";
+      if(isLocked){
+        if(oi === q.ans) cls += " locked-right";
+        else if(oi === chosen) cls += " locked-wrong";
+      } else if(chosen === oi){
+        cls += " selected";
+      }
+      return `<button type="button" class="${cls}" data-oi="${oi}" ${isLocked ? "disabled" : ""}>
+        <span class="letter">${letters[oi]}</span><span>${o}</span>
+      </button>`;
+    }).join("");
+
+    const fbHtml = isLocked ? `<div class="fb ${isRight ? "ok" : ""}">
+      <strong>${isRight ? "Correct! (Locked)" : "Wrong — Locked on 1st try. Correct answer: " + letters[q.ans] + ") " + q.opts[q.ans]}</strong><br>${q.why}
+    </div>` : "";
+
+    area.innerHTML = `
+      ${q.passage ? PASSAGE : ""}
+      <p class="eyebrow">${q.sec} · Question ${st.idx + 1} of ${qs.length} · ${isLocked ? "LOCKED (1 try used)" : "Choose carefully — 1 try only"}</p>
+      <p style="font-size:18px;font-weight:700;">${q.q}</p>
+      <div class="opt-list">${optsHtml}</div>
+      <div class="actions">
+        <button type="button" class="btn-primary" id="lockBtn" ${isLocked || chosen === undefined ? "disabled" : ""}>Lock In My Answer (1 Try)</button>
+        <button type="button" id="prevBtn" ${st.idx === 0 ? "disabled" : ""}>← Previous</button>
+        <button type="button" class="btn-soft" id="nextBtn">${st.idx === qs.length - 1 ? "Finish & Open Parent Report →" : "Next Question →"}</button>
+      </div>
+      ${fbHtml}
+    `;
+  }
+
+  document.getElementById("reportBtn").addEventListener("click", () => {
+    st.showReport = !st.showReport; st.copiedMsg = ""; render();
+  });
+
+  document.getElementById("examArea").addEventListener("click", (e) => {
+    const qs = activeQuestions();
+    const q = qs[st.idx];
+    const opt = e.target.closest("[data-oi]");
+    if(opt && q && st.locked[q.id] === undefined){
+      st.draftSel[q.id] = Number(opt.getAttribute("data-oi"));
+      render(); return;
+    }
+    if(e.target.id === "lockBtn" && q && st.locked[q.id] === undefined && st.draftSel[q.id] !== undefined){
+      st.locked[q.id] = st.draftSel[q.id];
+      delete st.draftSel[q.id];
+      save(); render(); return;
+    }
+    if(e.target.id === "prevBtn" && st.idx > 0){ st.idx--; save(); render(); return; }
+    if(e.target.id === "nextBtn"){
+      if(st.idx < qs.length - 1){ st.idx++; save(); render(); }
+      else { st.showReport = true; render(); }
+      return;
+    }
+    if(e.target.id === "redoMissedBtn"){
+      const missedIds = qs.filter(x => st.locked[x.id] !== undefined && st.locked[x.id] !== x.ans).map(x => x.id);
+      if(missedIds.length){
+        st.round += 1;
+        st.activeIds = missedIds;
+        st.idx = 0;
+        st.draftSel = {};
+        st.locked = {};
+        st.showReport = false;
+        save(); render();
+      }
+      return;
+    }
+    if(e.target.id === "fullResetBtn"){
+      st.round = 1;
+      st.activeIds = QUESTIONS.map(x => x.id);
+      st.idx = 0;
+      st.draftSel = {};
+      st.locked = {};
+      st.showReport = false;
+      save(); render(); return;
+    }
+    if(e.target.id === "copyReportBtn"){
+      const missed = qs.filter(x => st.locked[x.id] !== undefined && st.locked[x.id] !== x.ans);
+      const rightCount = qs.filter(x => st.locked[x.id] === x.ans).length;
+      const lines = [`Grade 5 English AL Paper II (Round ${st.round}) — Score: ${rightCount}/${qs.length}`];
+      if(missed.length){
+        lines.push("Missed items:");
+        missed.forEach(x => lines.push(`- ${x.tag}: chose "${x.opts[st.locked[x.id]]}" (correct: "${x.opts[x.ans]}")`));
+      } else {
+        lines.push("No missed items!");
+      }
+      const txt = lines.join("\n");
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).catch(()=>{});
+      }
+      st.copiedMsg = "Copied!";
+      render(); return;
+    }
+  });
+
+  load();
+  render();
+})();
+</script>
+</body>
+</html>
