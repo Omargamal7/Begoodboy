@@ -39,6 +39,15 @@ Centralized, privacy-sanitized study hub for **Grade 6** and **Grade 5** combini
 | **Science** | [`grade-5/science/`](grade-5/science/) | Nov test revision ([Scope PDF](grade-5/docs/451609875122789578.md)) · [English Term 1 Hub](grade-5/science/packs/english-term1/index.html) |
 | **Social Studies** | [`grade-5/social-studies/`](grade-5/social-studies/) | Nov test revision ([Scope PDF](grade-5/docs/451609875122789578.md)) · [Climate Quest](grade-5/social-studies/packs/climate-quest.html) |
 
+### Weekly Quiz & Homework Rhythm (Every Sun–Thu)
+| Day | Grade 6 | Grade 5 |
+| :--- | :--- | :--- |
+| **Sunday** | Arabic **Quiz** | Arabic **Quiz** · Social Studies **HW Due** |
+| **Monday** | Computer (ICT) **Quiz** · Math **Quiz** | Math **Quiz** |
+| **Tuesday** | English **Quiz** · Science **Quiz** | English **Quiz** · Computer (ICT) **Quiz** |
+| **Wednesday** | Social Studies **Quiz** | Social Studies **Quiz** *(German class day)* |
+| **Thursday** | Religion **Quiz** | Science **Quiz** & **HW Due** · Religion **Quiz** |
+
 ### Upcoming — Week 11: November Monthly Tests (29 Nov – 3 Dec 2026)
 Official schedules: **[Grade 6 Schedule PDF](grade-6/docs/452327066164050843.md)** · **[Grade 5 Schedule PDF](grade-5/docs/452326834579749715.md)**
 
