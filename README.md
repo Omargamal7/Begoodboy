@@ -13,6 +13,8 @@ Centralized, privacy-sanitized study hub for **Grade 6** and **Grade 5** combini
 
 ## Active Week — Week 10 (Sun 22 Nov – Thu 26 Nov 2026)
 > *Week numbering note: English AL Weekly Outlines label 15–19 Nov as Week 9, making **22–26 Nov = Week 10** (Math course notes started counting one week earlier, labelling 15–19 Nov as Week 10 / 22–26 Nov as Week 11).*
+>
+> **Week 10 Exam Note**: No regular weekly quizzes this week (monthly exams start next week), **except the English A-Level (AL) Monthly Test on Thursday, 26 Nov 2026 (2nd, 3rd & 4th sessions)** for both Grade 6 and Grade 5. English O-Level (OL) is on **Tuesday, 1 Dec 2026**.
 
 ### Grade 6 — Active Subjects (8)
 | Subject | Folder | This Week / November Revision |
