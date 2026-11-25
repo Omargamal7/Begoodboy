@@ -51,8 +51,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-25 09:07): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-25 08:17): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-24 18:27): Joumana Hamade — Updated Grammar Revision Sheet Answers
-- `CLASS_STREAM` (2026-11-25 10:52): 'Week 5 CW'
-- `CLASS_STREAM` (2026-11-25 10:35): 'Quiz 3'
-- `CLASS_STREAM` (2026-11-25 10:32): 'Week 4 CW'
-- `CLASS_STREAM` (2026-11-25 10:13): 'weekly Assessment 1'
-- `CLASS_STREAM` (2026-11-24 09:16): 'واجبات نوفمبر'
+- `CLASS_STREAM` (2026-11-25 12:41): 'Week 4 Quiz (Week of Oct...'
+- `CLASS_STREAM` (2026-11-25 12:41): 'Week 5 Quiz (Week of Oct...'
+- `CLASS_STREAM` (2026-11-25 12:40): 'Week 9 Quiz (Week of Nov...'
+- `CLASS_STREAM` (2026-11-25 12:40): 'Week 8 Quiz (Week of Nov...'
+- `CLASS_STREAM` (2026-11-25 12:40): 'Week 7 Quiz (Week of Oct...'
