@@ -4,6 +4,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## GRADE-6
 ### Recent School Announcements
+- **2026-11-25** — ICT November exam
 - **2026-11-23** — Items to be revised for November 2026 Primary 6 ([PDF](grade-6/docs/451610097433484554.md))
 - **2026-11-19** — اليوم العالمي للغة العربية
 - **2026-11-18** — Items to be revised Primary 6 AL November Test 2026-2027- English ([PDF](grade-6/docs/449808003416236752.md))
@@ -11,7 +12,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-12** — ICT
 - **2026-11-11** — Important Announcement
 - **2026-11-04** — Important Announcement ([PDF](grade-6/docs/444696194355082901.md))
-- **2026-11-01** — Important Announcement
 
 ### Course Plan Item Counts
 - **prim6 G Arabic**: 28 items
@@ -46,11 +46,11 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **Prim5 A Social Studies**: 6 items
 
 ## Notification Center (Latest 10)
+- `ANNOUNCEMENTS` (2026-11-25 09:07): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-25 08:17): Nesma Emad — ICT November exam
 - `ANNOUNCEMENTS` (2026-11-24 18:27): Joumana Hamade — Updated Grammar Revision Sheet Answers
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 6
 - `ANNOUNCEMENTS` (2026-11-23 12:06): Amr ElSayed — Items to be revised for November 2026 Primary 5
-- `ANNOUNCEMENTS` (2026-11-23 11:12): Abeer Elsayed — مراجعات شهر نوفمبر لغة عربية ودين
 - `CLASS_STREAM` (2026-11-24 09:16): 'واجبات نوفمبر'
 - `CLASS_STREAM` (2026-11-24 09:16): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-24 09:16): 'واجبات شهر ديسمبر'

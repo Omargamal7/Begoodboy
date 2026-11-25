@@ -3,6 +3,15 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452286554988118230",
+      "title": "ICT November exam",
+      "description": "Please be informed that the ICT monthly exam will take place during regular class sessions starting the week of Sunday, 6 December 2026. 📚 Exam Topics: Theme 1: Lessons 5 and 6 Theme 2: Lessons 1, 2, 3, and 4 📝 Revision Material: The revision sheet has been uploaded to help with exam preparation. Please review all topics thoroughly",
+      "publishedAt": "2026-11-25T09:07:06.117Z",
+      "updatedAt": "2026-11-25T09:07:06.117Z",
+      "isRead": false,
+      "attachments": []
+    },
+    {
       "id": "451609969884705549",
       "title": "Items to be revised for November 2026 Primary 6",
       "description": "Items to be revised for November 2026 Primary 6",
@@ -304,15 +313,6 @@
       "description": "الاسبوع الثالث من ٢٧/ ٩ الي ١/ ١٠ / ٢٠٢٦ الانتهاء من شرح الدرس الثاني ( تضاريس وطننا العربي ) الواجب : حل ص ٢٢ (أ - ب ) ص ٢٣ كلها من كتاب الوزارة",
       "publishedAt": "2026-10-01T18:20:39.412Z",
       "updatedAt": "2026-10-01T18:20:39.412Z",
-      "isRead": true,
-      "attachments": []
-    },
-    {
-      "id": "432476829324976842",
-      "title": "Important Announcement",
-      "description": "Dear Parents, Please be informed that our PE teachers will be collecting sports certificates from October 4th to October 20th. Kindly ensure that the certificates are from the year 2026. There is no need to submit medals—only the champion certificates are required. Thank you for your cooperation.",
-      "publishedAt": "2026-10-01T16:59:10.056Z",
-      "updatedAt": "2026-10-01T16:59:13.705Z",
       "isRead": true,
       "attachments": []
     }
