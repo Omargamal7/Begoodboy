@@ -7,11 +7,17 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **GRADE-6 · Announcement** — Important Announcement
 - **GRADE-6 · Announcement** — Primary 6 Monthly Tests November 2026 ([PDF](grade-6/docs/452327066164050843.md))
 - **GRADE-6 · Announcement** — ICT November exam
-- **GRADE-5 · Announcement** — ICT November prim 5
-- **GRADE-5 · Announcement** — Important Announcement
-- **GRADE-5 · Announcement** — Important Announcement
-- **GRADE-5 · Announcement** — Primary 5 Monthly Tests November 2026 ([PDF](grade-5/docs/452326834579749715.md))
-- **GRADE-5 · Announcement** — ICT November exam
+- **GRADE-6 · prim6 G Arabic** — تدريبات على كان وأخواتها ([PDF](grade-6/docs/452681691639619597.md))
+- **GRADE-6 · prim6 G Arabic** — إجابة تدريبات كان وأخواتها ([PDF](grade-6/docs/452681190822944486.md))
+- **GRADE-6 · prim6 G Arabic** — تدريبات كان وأخواتها ([PDF](grade-6/docs/452681190822944485.md))
+- **GRADE-6 · prim6 G Arabic** — ماتم تدريسه من 22/11إلي 26/11 تم الانتهاء من الوحة الثانية ونص الاستماع في الوحدة الثالثة درس كان وأخواتها درس ما وراء الكاميرا
+- **GRADE-6 · prim6 G Computer** — weekly assessment 2
+- **GRADE-6 · prim6 G Computer** — weekly assessment 3
+- **GRADE-6 · prim6 G Computer** — weekly assessment 4
+- **GRADE-6 · prim6 G Computer** — weekly assessment 5
+- **GRADE-6 · Prim6 G English AL** — Week 10
+- **GRADE-6 · Prim6 G English AL** — Gr. 6 Weekly Outline Term 1 Week 10
+- **GRADE-6 · Prim6 G Science** — Monthly_Practice_Test_2_Model_Answers
 
 ## GRADE-6
 ### Recent School Announcements
@@ -25,13 +31,13 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-18** — Important Announcement
 
 ### Course Plan Item Counts
-- **prim6 G Arabic**: 28 items
-- **prim6 G Computer**: 15 items
-- **Prim6 G English AL**: 59 items
+- **prim6 G Arabic**: 30 items
+- **prim6 G Computer**: 19 items
+- **Prim6 G English AL**: 61 items
 - **prim6 G English OL**: 3 items
 - **prim6 G Mathematics**: 49 items
 - **prim6 G Religion**: 4 items
-- **Prim6 G Science**: 23 items
+- **Prim6 G Science**: 25 items
 - **Prim6 G Social Studies**: 21 items
 
 ## GRADE-5
@@ -46,11 +52,11 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-18** — Items to be revised Primary 5 AL November Test 2026-2027- English ([PDF](grade-5/docs/449807784490345089.md))
 
 ### Course Plan Item Counts
-- **prim5 A Arabic**: 24 items
+- **prim5 A Arabic**: 26 items
 - **prim5 A Computer**: 16 items
-- **Prim5 A English AL**: 58 items
+- **Prim5 A English AL**: 60 items
 - **prim5 A English OL**: 4 items
-- **prim5 A German**: 9 items
+- **prim5 A German**: 11 items
 - **prim5 A Mathematics**: 0 items
 - **prim5 A Religion**: 0 items
 - **Prim5 A Science**: 6 items

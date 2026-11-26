@@ -524,6 +524,20 @@
           "title": "مراجعات شهر نوفمبر لغة عربية ودين"
         },
         {
+          "id": "452683228545856695",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "451593885458675583",
+          "title": "شيت الصف الخامس",
+          "mimeType": "application/pdf",
+          "fileName": "شيت الصف الخامس",
+          "attachmentId": "452683228399051596",
+          "pdfStatus": "ok",
+          "pdfPages": 6,
+          "docPath": "grade-5/docs/452683228399051596.md",
+          "excerpt": "‫تدريبات درس ( المفعول به )‬ ‫أعرب ما تحته خط ‪:‬‬ ‫‪ -1‬شرح المعلمانِ درسينِ ‪.....................................................................................‬‬ ‫‪ -2‬تسلم الفائزانِ كأسينِ ‪...................................................................................."
+        },
+        {
           "id": "451594672633067439",
           "type": "FILE",
           "depth": 2,
@@ -573,6 +587,14 @@
           "pdfPages": 8,
           "docPath": "grade-5/docs/451594539371642280.md",
           "excerpt": "‫اﻟﺼﻒ اﻟﺨﺎﻣﺲ‬ ‫اﻟﺘﺮﺑﻴﺔ اﻟﺪﻳﻨﻴﺔ‬  ‫اﻷول‬ ‫اﻟﻨﻤﻮذج‬ ‫ً‬ ‫)اﻟﻘﺮآن اﻟﻜﺮﻳﻢ( أ( أﻛﻤﻞ ﻣﻜﺎن اﻟﻨﻘﺎط ﻓﻲ اﻵﻳﺎت اﻟﻜﺮﻳﻤﺔ‪:‬‬ ‫أوﻻ‬  ‫ﮎﮏﮐﮑﮒﮓﮔﮕﮖ‬ ‫𗤢‪ :‬ﵟﮊﮋﮌ‬ ‫ﮥ‬ ‫ﮟﮠﮡﮢﮣ‬ ‫ﮙﮚﮛﮜﮝ‬ ‫ﮗ‬ ‫ﮫﵞ‬ ‫ﮦﮧ ﮨ ﮩ‬ ‫)ب( ﻫﺎت‪ :‬معںى ﵟﮑﮒﵞ‪:‬‬ ‫)ج( ﺿﻊ ﻋﻼﻣﺔ )( أو )( أﻣﺎم ﻣﺎ ﻳﻠﻲ‪:‬‬ ‫(‬ ‫𗡫 الںفس اللوامة تدل على الفط"
+        },
+        {
+          "id": "452679010132997137",
+          "type": "FILE",
+          "depth": 1,
+          "parentId": null,
+          "title": "ماتم تدريسه من 22/11إلي 26/11 تم الانتهاء من الوحة الثانية ونص الاستماع في الوحدة الثالثة",
+          "fileName": "ماتم تدريسه من 22/11إلي 26/11 تم الانتهاء من الوحة الثانية ونص الاستماع في الوحدة الثالثة"
         }
       ]
     },
@@ -903,6 +925,23 @@
           "depth": 1,
           "parentId": null,
           "title": "Weekly Material Covered"
+        },
+        {
+          "id": "452714105262880868",
+          "type": "FOLDER",
+          "depth": 2,
+          "parentId": "427277165126524154",
+          "title": "Week 10"
+        },
+        {
+          "id": "452714267066546278",
+          "type": "FILE",
+          "depth": 3,
+          "parentId": "452714105262880868",
+          "title": "Gr. 5 Weekly Outline Term 1 Week 10",
+          "mimeType": "application/pdf",
+          "fileName": "Gr. 5 Weekly Outline Term 1 Week 10",
+          "attachmentId": "452714266932318206"
         },
         {
           "id": "450170938764336234",
@@ -1421,6 +1460,21 @@
           "parentId": "447631083027080528",
           "title": "quiz will be in ordinary sessions 5A 5 B Wednesday 18th Nov 5C / 5D Thursday 19th Nov. 5E / 5F Tuesday 17th Nov. Quiz will cover Numbers and Family members from page 28 to 37",
           "fileName": "quiz will be in ordinary sessions 5A 5 B Wednesday 18th Nov 5C / 5D Thursday 19th Nov. 5E / 5F Tuesday 17th Nov. Quiz will cover Numbers and Family members from page 28 to 37"
+        },
+        {
+          "id": "452703120372316035",
+          "type": "FOLDER",
+          "depth": 1,
+          "parentId": null,
+          "title": "Material covered for the week 22nd to 26th Nov."
+        },
+        {
+          "id": "452704180247771026",
+          "type": "FILE",
+          "depth": 2,
+          "parentId": "452703120372316035",
+          "title": "Classes 5 A , B , E , F started the lesson of farm animals S 57 HW study for the exam",
+          "fileName": "Classes 5 A , B , E , F started the lesson of farm animals S 57 HW study for the exam"
         }
       ]
     },
