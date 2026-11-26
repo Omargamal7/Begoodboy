@@ -3,6 +3,15 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452675862865677040",
+      "title": "ICT November prim 5",
+      "description": "Please be informed that the Primary 5 ICT exam has been postponed. The assessment will now take place during the regular class session Sunday, 6 December 2026 Please make sure to review the covered material and come prepared with all required materials.",
+      "publishedAt": "2026-11-26T10:51:04.372Z",
+      "updatedAt": "2026-11-26T10:51:04.372Z",
+      "isRead": false,
+      "attachments": []
+    },
+    {
       "id": "452626660945070039",
       "title": "Important Announcement",
       "description": "السادة اولياء الامور الافاضل برجاء العلم انه قد تم توزيع كارنيهات التأمين الصحى على الطلاب بجميع المراحل (الذين قاموا بإرسال صورة لعمل الكارنية )",
@@ -298,15 +307,6 @@
       "description": "Dear Parents, Kindly note that any homework uploaded to the \"Toddle\" platform after 5:00 PM will automatically have its deadline extended to the day after tomorrow. Thank you for your understanding and cooperation",
       "publishedAt": "2026-10-11T08:45:06.168Z",
       "updatedAt": "2026-10-11T08:45:06.168Z",
-      "isRead": true,
-      "attachments": []
-    },
-    {
-      "id": "434626838556348515",
-      "title": "Weekly Materials Covered",
-      "description": "Chapter 2 Lesson 2.1: How do plants change during the year? Lesson 2.2 Animals and Temperature Chapter 2 column: the fennec fox and traditional clothes Homework: Science Binder pages : 66,67,69,70 & 71",
-      "publishedAt": "2026-10-07T20:26:09.092Z",
-      "updatedAt": "2026-10-07T20:26:09.092Z",
       "isRead": true,
       "attachments": []
     }
