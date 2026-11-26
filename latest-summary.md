@@ -62,8 +62,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-26 07:30): Amr ElSayed — Important Announcement
 - `ANNOUNCEMENTS` (2026-11-26 06:40): Aisha Zaky — دراسات اجتماعية
 - `ANNOUNCEMENTS` (2026-11-25 13:57): Amr ElSayed — Important Announcement
-- `CLASS_STREAM` (2026-11-26 07:07): 'Attendance & Behavior 5'
-- `CLASS_STREAM` (2026-11-26 07:07): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-26 07:07): 'HW 5'
-- `CLASS_STREAM` (2026-11-26 07:07): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-26 07:07): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-26 11:41): 'weekly assessment 5'
+- `CLASS_STREAM` (2026-11-26 11:41): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-26 11:41): 'weekly assessment 4'
+- `CLASS_STREAM` (2026-11-26 11:41): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-26 11:41): 'weekly assessment 3'
