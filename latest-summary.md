@@ -54,11 +54,11 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **Prim5 A Social Studies**: 6 items
 
 ## Notification Center (Latest 10)
+- `ANNOUNCEMENTS` (2026-11-26 06:40): Aisha Zaky — دراسات اجتماعية
 - `ANNOUNCEMENTS` (2026-11-25 13:57): Amr ElSayed — Important Announcement
 - `ANNOUNCEMENTS` (2026-11-25 11:36): Amr ElSayed — Primary 6 Monthly Tests November 2026
 - `ANNOUNCEMENTS` (2026-11-25 11:35): Amr ElSayed — Primary 5 Monthly Tests November 2026
 - `ANNOUNCEMENTS` (2026-11-25 09:07): Nesma Emad — ICT November exam
-- `ANNOUNCEMENTS` (2026-11-25 08:17): Nesma Emad — ICT November exam
 - `CLASS_STREAM` (2026-11-25 17:11): 'Behavior & Attendance'
 - `CLASS_STREAM` (2026-11-25 17:11): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-25 17:06): 'Quiz (5) '
