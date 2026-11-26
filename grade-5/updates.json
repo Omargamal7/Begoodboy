@@ -3,6 +3,15 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452626660945070039",
+      "title": "Important Announcement",
+      "description": "السادة اولياء الامور الافاضل برجاء العلم انه قد تم توزيع كارنيهات التأمين الصحى على الطلاب بجميع المراحل (الذين قاموا بإرسال صورة لعمل الكارنية )",
+      "publishedAt": "2026-11-26T07:30:33.972Z",
+      "updatedAt": "2026-11-26T07:30:33.972Z",
+      "isRead": false,
+      "attachments": []
+    },
+    {
       "id": "452362241493206163",
       "title": "Important Announcement",
       "description": "Dear Parents of Primary 4–6 Students, Kindly be informed that tomorrow’s A-Level monthly test will be conducted over three consecutive sessions: the 2nd, 3rd, and 4th sessions. Your cooperation and understanding are greatly appreciated. Best regards, English Language Arts Department Primary School Administration",
@@ -300,21 +309,6 @@
       "updatedAt": "2026-10-07T20:26:09.092Z",
       "isRead": true,
       "attachments": []
-    },
-    {
-      "id": "434515149752142603",
-      "title": "اجتماع الجمعية العمومية 2026/2027",
-      "description": "اجتماع الجمعية العمومية 2026/2027",
-      "publishedAt": "2026-10-07T07:58:42.258Z",
-      "updatedAt": "2026-10-07T07:58:42.258Z",
-      "isRead": true,
-      "attachments": [
-        {
-          "id": "434515281914665547",
-          "name": "WhatsApp Image 2026-10-07 at 10.54.39",
-          "mimeType": "image/jpeg"
-        }
-      ]
     }
   ],
   "courses": [

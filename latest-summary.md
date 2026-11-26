@@ -4,14 +4,17 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## New in Last 48 Hours
 - **GRADE-6 · Announcement** — Important Announcement
+- **GRADE-6 · Announcement** — Important Announcement
 - **GRADE-6 · Announcement** — Primary 6 Monthly Tests November 2026 ([PDF](grade-6/docs/452327066164050843.md))
 - **GRADE-6 · Announcement** — ICT November exam
+- **GRADE-5 · Announcement** — Important Announcement
 - **GRADE-5 · Announcement** — Important Announcement
 - **GRADE-5 · Announcement** — Primary 5 Monthly Tests November 2026 ([PDF](grade-5/docs/452326834579749715.md))
 - **GRADE-5 · Announcement** — ICT November exam
 
 ## GRADE-6
 ### Recent School Announcements
+- **2026-11-26** — Important Announcement
 - **2026-11-25** — Important Announcement
 - **2026-11-25** — Primary 6 Monthly Tests November 2026 ([PDF](grade-6/docs/452327066164050843.md))
 - **2026-11-25** — ICT November exam
@@ -19,7 +22,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-19** — اليوم العالمي للغة العربية
 - **2026-11-18** — Items to be revised Primary 6 AL November Test 2026-2027- English ([PDF](grade-6/docs/449808003416236752.md))
 - **2026-11-18** — Important Announcement
-- **2026-11-12** — ICT
 
 ### Course Plan Item Counts
 - **prim6 G Arabic**: 28 items
@@ -33,6 +35,7 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## GRADE-5
 ### Recent School Announcements
+- **2026-11-26** — Important Announcement
 - **2026-11-25** — Important Announcement
 - **2026-11-25** — Primary 5 Monthly Tests November 2026 ([PDF](grade-5/docs/452326834579749715.md))
 - **2026-11-25** — ICT November exam
@@ -40,7 +43,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **2026-11-19** — اليوم العالمي للغة العربية
 - **2026-11-18** — Items to be revised Primary 5 AL November Test 2026-2027- English ([PDF](grade-5/docs/449807784490345089.md))
 - **2026-11-18** — Important Announcement
-- **2026-11-17** — Delf course for students Who are learning French
 
 ### Course Plan Item Counts
 - **prim5 A Arabic**: 24 items
@@ -54,13 +56,13 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **Prim5 A Social Studies**: 6 items
 
 ## Notification Center (Latest 10)
+- `ANNOUNCEMENTS` (2026-11-26 07:30): Amr ElSayed — Important Announcement
 - `ANNOUNCEMENTS` (2026-11-26 06:40): Aisha Zaky — دراسات اجتماعية
 - `ANNOUNCEMENTS` (2026-11-25 13:57): Amr ElSayed — Important Announcement
 - `ANNOUNCEMENTS` (2026-11-25 11:36): Amr ElSayed — Primary 6 Monthly Tests November 2026
 - `ANNOUNCEMENTS` (2026-11-25 11:35): Amr ElSayed — Primary 5 Monthly Tests November 2026
-- `ANNOUNCEMENTS` (2026-11-25 09:07): Nesma Emad — ICT November exam
-- `CLASS_STREAM` (2026-11-25 17:11): 'Behavior & Attendance'
-- `CLASS_STREAM` (2026-11-25 17:11): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-25 17:06): 'Quiz (5) '
-- `CLASS_STREAM` (2026-11-25 17:06): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-25 12:41): 'Week 4 Quiz (Week of Oct...'
+- `CLASS_STREAM` (2026-11-26 07:07): 'Attendance & Behavior 5'
+- `CLASS_STREAM` (2026-11-26 07:07): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-26 07:07): 'HW 5'
+- `CLASS_STREAM` (2026-11-26 07:07): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-26 07:07): notif_lock_student_assignment

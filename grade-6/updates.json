@@ -3,6 +3,15 @@
   "academicYear": "2026-2027",
   "announcements": [
     {
+      "id": "452626660945070039",
+      "title": "Important Announcement",
+      "description": "السادة اولياء الامور الافاضل برجاء العلم انه قد تم توزيع كارنيهات التأمين الصحى على الطلاب بجميع المراحل (الذين قاموا بإرسال صورة لعمل الكارنية )",
+      "publishedAt": "2026-11-26T07:30:33.972Z",
+      "updatedAt": "2026-11-26T07:30:33.972Z",
+      "isRead": false,
+      "attachments": []
+    },
+    {
       "id": "452362241493206163",
       "title": "Important Announcement",
       "description": "Dear Parents of Primary 4–6 Students, Kindly be informed that tomorrow’s A-Level monthly test will be conducted over three consecutive sessions: the 2nd, 3rd, and 4th sessions. Your cooperation and understanding are greatly appreciated. Best regards, English Language Arts Department Primary School Administration",
@@ -314,15 +323,6 @@
       "description": "السادة اولياء الامور الافاضل على من يرغب فى عمل كارنية التأمين الصحى إرسال صورة ٤×٦ مكتوب على ظهرها اسم التلميذ بالكامل والفصل وكلمة التأمين الصحى (لمراحل من اولى حضانة حتى الصف الثالث الثانوى) فى موعد اقصاه ٢٠ اكتوبر ٢٠٢٦",
       "publishedAt": "2026-10-06T08:41:16.603Z",
       "updatedAt": "2026-10-06T08:41:16.603Z",
-      "isRead": true,
-      "attachments": []
-    },
-    {
-      "id": "434129446396527055",
-      "title": "Important Announcement",
-      "description": "Dear Parents, Please be informed that the British Section examination will be scheduled for students who wish to transfer to the British Section, Once the dates of the Ministry’s October monthly examinations will be confirmed. Therefore, we kindly ask students who wish to transfer to the British Section to start studying and preparing for the examination. The confirmed examination date will be communicated to you during October. Nb: Exams will be held in October. Thank you for your continued cooperation and support. Best regards, School Administration Thank you for your continued cooperation and support. Best regards, School Administration السادة أولياء الأمور، نود أن نحيطكم علمًا بأنه سيتم تحديد موعد امتحان التحويل للقسم البريطاني للطلاب الراغبين في التحويل إلى القسم البريطاني، وذلك بعد تحديد مواعيد الامتحانات اكتوبر الشهرية للوزارة. لذا، نرجو من الطلاب الراغبين في التحويل البدء في المذاكرة والاستعداد للامتحان، على أن يتم إبلاغكم بالموعد المحدد خلال شهر أكتوبر. علما ان الامتحانات سوف تكون في شهر اكتوبر. شاكرين لكم تعاونكم ودعمكم المستمر. مع خالص التحية، إدارة المدرسة",
-      "publishedAt": "2026-10-06T06:27:11.401Z",
-      "updatedAt": "2026-10-06T06:27:18.111Z",
       "isRead": true,
       "attachments": []
     }
