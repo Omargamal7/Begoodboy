@@ -4,9 +4,6 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 
 ## New in Last 48 Hours
 - **GRADE-6 · Announcement** — Important Announcement
-- **GRADE-6 · Announcement** — Important Announcement
-- **GRADE-6 · Announcement** — Primary 6 Monthly Tests November 2026 ([PDF](grade-6/docs/452327066164050843.md))
-- **GRADE-6 · Announcement** — ICT November exam
 - **GRADE-6 · prim6 G Arabic** — تدريبات على كان وأخواتها ([PDF](grade-6/docs/452681691639619597.md))
 - **GRADE-6 · prim6 G Arabic** — إجابة تدريبات كان وأخواتها ([PDF](grade-6/docs/452681190822944486.md))
 - **GRADE-6 · prim6 G Arabic** — تدريبات كان وأخواتها ([PDF](grade-6/docs/452681190822944485.md))
@@ -18,6 +15,9 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - **GRADE-6 · Prim6 G English AL** — Week 10
 - **GRADE-6 · Prim6 G English AL** — Gr. 6 Weekly Outline Term 1 Week 10
 - **GRADE-6 · Prim6 G Science** — Monthly_Practice_Test_2_Model_Answers
+- **GRADE-6 · Prim6 G Science** — Assessment book model answers p.39 ,40, 41, 42
+- **GRADE-5 · Announcement** — ICT November prim 5
+- **GRADE-5 · Announcement** — Important Announcement
 
 ## GRADE-6
 ### Recent School Announcements
@@ -68,8 +68,8 @@ Auto-synced from Toddle (Announcements, Primary Notices, and Course Plans).
 - `ANNOUNCEMENTS` (2026-11-26 07:30): Amr ElSayed — Important Announcement
 - `ANNOUNCEMENTS` (2026-11-26 06:40): Aisha Zaky — دراسات اجتماعية
 - `ANNOUNCEMENTS` (2026-11-25 13:57): Amr ElSayed — Important Announcement
+- `CLASS_STREAM` (2026-11-27 15:06): notif_lock_student_assignment
+- `CLASS_STREAM` (2026-11-27 15:06): 'Quiz ( 7 )'
+- `CLASS_STREAM` (2026-11-27 15:06): 'Quiz (6)'
+- `CLASS_STREAM` (2026-11-27 15:06): notif_lock_student_assignment
 - `CLASS_STREAM` (2026-11-26 11:41): 'weekly assessment 5'
-- `CLASS_STREAM` (2026-11-26 11:41): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-26 11:41): 'weekly assessment 4'
-- `CLASS_STREAM` (2026-11-26 11:41): notif_lock_student_assignment
-- `CLASS_STREAM` (2026-11-26 11:41): 'weekly assessment 3'
