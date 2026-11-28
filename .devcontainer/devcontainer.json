@@ -1,9 +1,1 @@
-{
-  "name": "Antigravity CLI Workspace",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
-  "remoteUser": "vscode",
-  "remoteEnv": {
-    "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
-  },
-  "postCreateCommand": "bash .devcontainer/setup.sh"
-}
+
